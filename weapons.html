@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapons | Avalorium OT Wiki</title>
+    <meta name="description" content="Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteudo</a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>        </button>
+
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+
+        <form class="top-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>202</strong>
+            <small>online</small>
+        </div>
+
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/GQFKAyydbd" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
+    </div>
+</header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+
+    <form class="drawer-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/GQFKAyydbd" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+
+    <nav class="drawer-menu">
+                                <section class="menu-section ">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a2 2 0 0 0 2 2h2l3 5h2l-2-5h2l8 3V6l-8 3H5a2 2 0 0 0-2 2Z"/><path d="M21 9v6"/></svg></span>
+                    <strong>Novidades e Loja</strong>
+                    <small>1</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="" href="noticias-e-promocoes.html">
+                            <img src="assets/media/menu/noticias-e-promocoes.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Noticias, Promocoes e Pacotes Especiais</strong>
+                                <small>Pacotes ativos e afiliados do Avalorium.</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+                                <section class="menu-section ">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg></span>
+                    <strong>Sistemas do Servidor</strong>
+                    <small>8</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="" href="divergence-system.html">
+                            <img src="assets/media/menu/divergence-system.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Divergence System</strong>
+                                <small>Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="dark-totem-daily.html">
+                            <img src="assets/media/menu/dark-totem-daily.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Dark Totem Daily</strong>
+                                <small>Evento diario com boss, cidades possiveis e recompensas.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="stones-guia-completo.html">
+                            <img src="assets/media/menu/stones-guia-completo.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Stones - Guia Completo</strong>
+                                <small>Raridade, slots, upgrade, elementos e tabelas de referencia de stones.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="rune-system.html">
+                            <img src="assets/media/menu/rune-system.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Rune System</strong>
+                                <small>Enhanced Tables, refils, producao por vocacao e bonus de combate.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="spell-badge-upgrade.html">
+                            <img src="assets/media/menu/spell-badge-upgrade.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Spell Badge Upgrade</strong>
+                                <small>Badges permanentes para aumentar dano de spells especificas.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="sistema-de-craft.html">
+                            <img src="assets/media/menu/sistema-de-craft.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Sistema de Craft</strong>
+                                <small>Receitas, custos e materiais para itens especiais, utilitarios e upgrades.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="character-upgrades.html">
+                            <img src="assets/media/menu/character-upgrades.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Character Upgrades</strong>
+                                <small>Sistemas para fortalecer personagem, spells, itens, reflect, scrolls e stones.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="animus-mastery-soulpit.html">
+                            <img src="assets/media/menu/animus-mastery-soulpit.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Animus Mastery &amp; SoulPit</strong>
+                                <small>Progressao baseada em criaturas, Soul Core, SoulPit e bonus de experiencia.</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+                                <section class="menu-section ">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg></span>
+                    <strong>Guias e Utilidades</strong>
+                    <small>2</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="" href="vocacoes.html">
+                            <img src="assets/media/menu/vocacoes.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Vocações</strong>
+                                <small>Resumo visual das vocações e seus papéis no servidor.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="comandos-do-servidor.html">
+                            <img src="assets/media/menu/comandos-do-servidor.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Comandos do Servidor</strong>
+                                <small>Comandos organizados por categoria, com busca rapida.</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+                                <section class="menu-section is-open">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span>
+                    <strong>Itens e Equipamentos</strong>
+                    <small>12</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="active" href="weapons.html">
+                            <img src="assets/media/menu/weapons.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Weapons</strong>
+                                <small>Armas carregadas do items.xml e weapons.xml.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="armors.html">
+                            <img src="assets/media/menu/armors.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Armors</strong>
+                                <small>Armaduras e atributos extras.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="helmets.html">
+                            <img src="assets/media/menu/helmets.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Helmets</strong>
+                                <small>Capacetes e bonuses defensivos/ofensivos.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="legs.html">
+                            <img src="assets/media/menu/legs.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Legs</strong>
+                                <small>Legs do servidor com atributos extras.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="boots.html">
+                            <img src="assets/media/menu/boots.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Boots</strong>
+                                <small>Botas, velocidade, regen e bonuses.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="shields.html">
+                            <img src="assets/media/menu/shields.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Shields</strong>
+                                <small>Escudos e seus atributos defensivos.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="rings.html">
+                            <img src="assets/media/menu/rings.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Rings</strong>
+                                <small>Aneis e efeitos especiais.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="amulets.html">
+                            <img src="assets/media/menu/amulets.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Amulets</strong>
+                                <small>Amuletos, necklaces e protecoes.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="ammo.html">
+                            <img src="assets/media/menu/ammo.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Ammo</strong>
+                                <small>Municoes, arrows, bolts e atributos.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="dolls.html">
+                            <img src="assets/media/menu/dolls.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Dolls</strong>
+                                <small>Dolls e itens equipaveis especiais.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="backpacks.html">
+                            <img src="assets/media/menu/backpacks.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Backpacks</strong>
+                                <small>Backpacks e quantidade de slots.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="portables.html">
+                            <img src="assets/media/items-wiki/portables/portable arrow.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Portables</strong>
+                                <small>Itens portateis para comprar, vender, recarregar, imbue, teleportar e gerenciar tasks.</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+                                <section class="menu-section ">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 6 6 .9-4.5 4.4 1.1 6.3L12 16.6l-5.6 3 1.1-6.3L3 8.9 9 8l3-6Z"/></svg></span>
+                    <strong>Colecionáveis</strong>
+                    <small>2</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="" href="outfits.html">
+                            <img src="assets/media/menu/outfits.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Outfits</strong>
+                                <small>EM CONSTRUÇÃO</small>
+                            </span>
+                        </a>
+                                            <a class="" href="mounts.html">
+                            <img src="assets/media/menu/mounts.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Montarias</strong>
+                                <small>EM CONSTRUÇÃO</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+            </nav>
+</aside>
+    <div class="wiki-shell">
+        <aside class="wiki-sidebar" aria-label="Menu da wiki">
+    <div class="sidebar-sticky">
+        <div class="sidebar-title">
+            <span>Menu da Wiki</span>
+            <small>25 artigos</small>
+        </div>
+
+                                <section class="menu-section ">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a2 2 0 0 0 2 2h2l3 5h2l-2-5h2l8 3V6l-8 3H5a2 2 0 0 0-2 2Z"/><path d="M21 9v6"/></svg></span>
+                    <strong>Novidades e Loja</strong>
+                    <small>1</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="" href="noticias-e-promocoes.html">
+                            <img src="assets/media/menu/noticias-e-promocoes.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Noticias, Promocoes e Pacotes Especiais</strong>
+                                <small>Pacotes ativos e afiliados do Avalorium.</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+                                <section class="menu-section ">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg></span>
+                    <strong>Sistemas do Servidor</strong>
+                    <small>8</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="" href="divergence-system.html">
+                            <img src="assets/media/menu/divergence-system.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Divergence System</strong>
+                                <small>Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="dark-totem-daily.html">
+                            <img src="assets/media/menu/dark-totem-daily.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Dark Totem Daily</strong>
+                                <small>Evento diario com boss, cidades possiveis e recompensas.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="stones-guia-completo.html">
+                            <img src="assets/media/menu/stones-guia-completo.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Stones - Guia Completo</strong>
+                                <small>Raridade, slots, upgrade, elementos e tabelas de referencia de stones.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="rune-system.html">
+                            <img src="assets/media/menu/rune-system.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Rune System</strong>
+                                <small>Enhanced Tables, refils, producao por vocacao e bonus de combate.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="spell-badge-upgrade.html">
+                            <img src="assets/media/menu/spell-badge-upgrade.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Spell Badge Upgrade</strong>
+                                <small>Badges permanentes para aumentar dano de spells especificas.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="sistema-de-craft.html">
+                            <img src="assets/media/menu/sistema-de-craft.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Sistema de Craft</strong>
+                                <small>Receitas, custos e materiais para itens especiais, utilitarios e upgrades.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="character-upgrades.html">
+                            <img src="assets/media/menu/character-upgrades.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Character Upgrades</strong>
+                                <small>Sistemas para fortalecer personagem, spells, itens, reflect, scrolls e stones.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="animus-mastery-soulpit.html">
+                            <img src="assets/media/menu/animus-mastery-soulpit.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Animus Mastery &amp; SoulPit</strong>
+                                <small>Progressao baseada em criaturas, Soul Core, SoulPit e bonus de experiencia.</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+                                <section class="menu-section ">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg></span>
+                    <strong>Guias e Utilidades</strong>
+                    <small>2</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="" href="vocacoes.html">
+                            <img src="assets/media/menu/vocacoes.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Vocações</strong>
+                                <small>Resumo visual das vocações e seus papéis no servidor.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="comandos-do-servidor.html">
+                            <img src="assets/media/menu/comandos-do-servidor.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Comandos do Servidor</strong>
+                                <small>Comandos organizados por categoria, com busca rapida.</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+                                <section class="menu-section is-open">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span>
+                    <strong>Itens e Equipamentos</strong>
+                    <small>12</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="active" href="weapons.html">
+                            <img src="assets/media/menu/weapons.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Weapons</strong>
+                                <small>Armas carregadas do items.xml e weapons.xml.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="armors.html">
+                            <img src="assets/media/menu/armors.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Armors</strong>
+                                <small>Armaduras e atributos extras.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="helmets.html">
+                            <img src="assets/media/menu/helmets.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Helmets</strong>
+                                <small>Capacetes e bonuses defensivos/ofensivos.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="legs.html">
+                            <img src="assets/media/menu/legs.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Legs</strong>
+                                <small>Legs do servidor com atributos extras.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="boots.html">
+                            <img src="assets/media/menu/boots.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Boots</strong>
+                                <small>Botas, velocidade, regen e bonuses.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="shields.html">
+                            <img src="assets/media/menu/shields.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Shields</strong>
+                                <small>Escudos e seus atributos defensivos.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="rings.html">
+                            <img src="assets/media/menu/rings.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Rings</strong>
+                                <small>Aneis e efeitos especiais.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="amulets.html">
+                            <img src="assets/media/menu/amulets.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Amulets</strong>
+                                <small>Amuletos, necklaces e protecoes.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="ammo.html">
+                            <img src="assets/media/menu/ammo.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Ammo</strong>
+                                <small>Municoes, arrows, bolts e atributos.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="dolls.html">
+                            <img src="assets/media/menu/dolls.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Dolls</strong>
+                                <small>Dolls e itens equipaveis especiais.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="backpacks.html">
+                            <img src="assets/media/menu/backpacks.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Backpacks</strong>
+                                <small>Backpacks e quantidade de slots.</small>
+                            </span>
+                        </a>
+                                            <a class="" href="portables.html">
+                            <img src="assets/media/items-wiki/portables/portable arrow.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Portables</strong>
+                                <small>Itens portateis para comprar, vender, recarregar, imbue, teleportar e gerenciar tasks.</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+                                <section class="menu-section ">
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 6 6 .9-4.5 4.4 1.1 6.3L12 16.6l-5.6 3 1.1-6.3L3 8.9 9 8l3-6Z"/></svg></span>
+                    <strong>Colecionáveis</strong>
+                    <small>2</small>
+                </button>
+                <div class="menu-links">
+                                            <a class="" href="outfits.html">
+                            <img src="assets/media/menu/outfits.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Outfits</strong>
+                                <small>EM CONSTRUÇÃO</small>
+                            </span>
+                        </a>
+                                            <a class="" href="mounts.html">
+                            <img src="assets/media/menu/mounts.gif" alt="" loading="lazy">
+                            <span>
+                                <strong>Montarias</strong>
+                                <small>EM CONSTRUÇÃO</small>
+                            </span>
+                        </a>
+                                    </div>
+            </section>
+            </div>
+</aside>
+        <main class="wiki-main" id="conteudo">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                                                <a href="index.html">Inicio</a>
+                                <span>/</span>                            <a href="category-itens-e-equipamentos.html">Itens e Equipamentos</a>
+                                <span>/</span>                            <strong>Weapons</strong>
+                        </nav>
+        <article class="article-layout">
+        <header class="article-hero">
+            <div>
+                <span class="eyebrow">Itens e Equipamentos</span>
+                <h1>Weapons</h1>
+                <p>Armas carregadas do items.xml e weapons.xml.</p>
+            </div>
+            <div class="article-hero-media">
+                <img src="assets/media/placeholders/under-construction.jpg" alt="Weapons">
+            </div>
+        </header>
+
+        <div class="article-content">
+                <section class="tool-panel">
+        <div class="tool-panel-copy">
+            <span class="eyebrow">Fonte dinamica</span>
+            <h2>Weapons</h2>
+            <p>Esta pagina usa as fontes XML configuradas em <code>app/config/wiki.php</code>. Se o XML nao estiver disponivel neste ambiente, a wiki mostra um estado vazio seguro em vez de quebrar.</p>
+        </div>
+        <label class="local-filter">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" data-filter-input placeholder="Filtrar Weapons">
+        </label>
+    </section>
+
+                <section class="empty-state">
+        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 3 3"/><path d="m19 13 2-2"/></svg></span>
+        <h2>Fonte XML indisponivel</h2>
+        <p>Configure o caminho XML do servidor para listar estes itens automaticamente.</p>    </section>
+                    </div>
+
+            <nav class="article-nav">
+                            <a href="armors.html">
+                <small>Proximo</small>
+                <strong>Armors</strong>
+            </a>
+            </nav>
+        </article>
+            </main>
+    </div>
+    <footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/GQFKAyydbd" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
+<script src="assets/js/wiki.js"></script>
+</body>
+</html>
