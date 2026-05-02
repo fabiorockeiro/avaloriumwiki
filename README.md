@@ -8,7 +8,7 @@ Versao estatica da Avalorium OT Wiki, pronta para GitHub Pages.
 2. Envie esta pasta para o repositorio.
 3. No GitHub, abra `Settings > Pages`.
 4. Em `Build and deployment`, selecione `Deploy from a branch`.
-5. Escolha a branch `main` e a pasta `/root`.
+5. Escolha a branch `main` e a pasta `/ (root)`.
 
 Depois do deploy, a wiki ficara em uma URL parecida com:
 
