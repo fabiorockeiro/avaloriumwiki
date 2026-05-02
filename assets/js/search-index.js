@@ -89,7 +89,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Weapons",
-        "description": "Armas carregadas do items.xml e weapons.xml.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "weapons armas sword axe club distance wand attack",
         "url": "weapons.html",
@@ -97,7 +97,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Armors",
-        "description": "Armaduras e atributos extras.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "armors armor body protection absorb",
         "url": "armors.html",
@@ -105,7 +105,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Helmets",
-        "description": "Capacetes e bonuses defensivos/ofensivos.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "helmets capacetes head armor magic skill",
         "url": "helmets.html",
@@ -113,7 +113,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Legs",
-        "description": "Legs do servidor com atributos extras.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "legs armor protection",
         "url": "legs.html",
@@ -121,7 +121,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Boots",
-        "description": "Botas, velocidade, regen e bonuses.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "boots feet speed regen",
         "url": "boots.html",
@@ -129,7 +129,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Shields",
-        "description": "Escudos e seus atributos defensivos.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "shields escudos defense protection",
         "url": "shields.html",
@@ -137,7 +137,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Rings",
-        "description": "Aneis e efeitos especiais.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "rings aneis ring effects",
         "url": "rings.html",
@@ -145,7 +145,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Amulets",
-        "description": "Amuletos, necklaces e protecoes.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "amulets necklaces protection",
         "url": "amulets.html",
@@ -153,7 +153,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Ammo",
-        "description": "Municoes, arrows, bolts e atributos.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "ammo ammunition arrows bolts attack hit chance",
         "url": "ammo.html",
@@ -161,7 +161,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Dolls",
-        "description": "Dolls e itens equipaveis especiais.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "dolls ammo slot special items",
         "url": "dolls.html",
@@ -169,7 +169,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Backpacks",
-        "description": "Backpacks e quantidade de slots.",
+        "description": "Em construção",
         "category": "Itens e Equipamentos",
         "keywords": "backpacks containers slots",
         "url": "backpacks.html",
