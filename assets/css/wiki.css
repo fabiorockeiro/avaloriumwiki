@@ -1112,14 +1112,8 @@ code {
     justify-content: center;
 }
 
-.hunt-print-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 18px;
-}
-
 .hunt-print-frame {
-    margin: 0;
+    margin: 18px 0 0;
 }
 
 .hunt-print-frame img {
@@ -1131,24 +1125,36 @@ code {
 
 .hunt-overview-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(300px, 430px);
-    gap: 18px;
-    align-items: stretch;
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
+    gap: 22px;
+    align-items: start;
 }
 
-.hunt-overview-layout .hunt-overview-cards {
-    grid-template-columns: 1fr;
+.hunt-overview-copy {
+    min-width: 0;
+    color: var(--muted);
+}
+
+.hunt-overview-copy p {
+    margin: 0;
+}
+
+.hunt-overview-copy p + p {
+    margin-top: 14px;
+}
+
+.hunt-overview-copy strong {
+    color: var(--gold-2);
 }
 
 .hunt-overview-media {
     margin: 0;
-    align-self: start;
 }
 
 .hunt-overview-media img {
     width: 100%;
     height: auto;
-    max-height: 320px;
+    max-height: 420px;
     object-fit: contain;
     background: rgba(8, 9, 11, .7);
 }
@@ -1992,7 +1998,7 @@ tbody tr:hover td {
 
     .hunt-overview-media img {
         min-height: 220px;
-        max-height: 360px;
+        max-height: 420px;
     }
 
     .spawn-carousel {
