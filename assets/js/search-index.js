@@ -198,5 +198,13 @@ window.AVALORIUM_SEARCH_INDEX = [
         "keywords": "mounts montarias clientid",
         "url": "mounts.html",
         "image": "assets/media/menu/mounts.gif"
+    },
+    {
+        "title": "Fábio Rockeiro Scripts",
+        "description": "Script Lua carregável no ZeroBot com Task Book, Rune Refil, Arrow Refil e Auto Forja.",
+        "category": "Scripts ZeroBot",
+        "keywords": "zerobot script lua fabio rockeiro task book rune refil arrow refil auto forja paladin dust slivers exalted core editar adicionar novas tasks vscode notepad documentos scripts carregar recarregar",
+        "url": "fabio-rockeiro-scripts.html",
+        "image": "assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png"
     }
 ];

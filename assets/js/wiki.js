@@ -20,6 +20,56 @@
         button.addEventListener('click', () => setDrawer(false));
     });
 
+    const scriptsZeroBotPages = new Set([
+        'category-scripts-zerobot.html',
+        'fabio-rockeiro-scripts.html',
+    ]);
+
+    function getCurrentPage() {
+        const page = window.location.pathname.split('/').pop();
+        return (page || 'index.html').toLowerCase();
+    }
+
+    function getScriptsZeroBotMenu() {
+        const currentPage = getCurrentPage();
+        const isOpen = scriptsZeroBotPages.has(currentPage);
+        const isActive = currentPage === 'fabio-rockeiro-scripts.html';
+
+        return `
+            <section class="menu-section ${isOpen ? 'is-open' : ''}" data-scripts-zerobot-menu>
+                <button type="button" class="menu-section-button" data-section-toggle>
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/><path d="m13 4-2 16"/></svg></span>
+                    <strong>SCRIPTS ZEROBOT</strong>
+                    <small>1</small>
+                </button>
+                <div class="menu-links">
+                    <a class="${isActive ? 'active' : ''}" href="fabio-rockeiro-scripts.html">
+                        <img src="assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png" alt="" loading="lazy">
+                        <span>
+                            <strong>Fábio Rockeiro Scripts</strong>
+                            <small>Task Book, refils e Auto Forja para ZeroBot.</small>
+                        </span>
+                    </a>
+                </div>
+            </section>
+        `;
+    }
+
+    function injectScriptsZeroBotMenu() {
+        document.querySelectorAll('.drawer-menu, .sidebar-sticky').forEach((container) => {
+            if (container.querySelector('[data-scripts-zerobot-menu]')) return;
+            container.insertAdjacentHTML('beforeend', getScriptsZeroBotMenu());
+        });
+
+        document.querySelectorAll('.sidebar-title small').forEach((counter) => {
+            if (counter.dataset.scriptsZeroBotCounted) return;
+            counter.dataset.scriptsZeroBotCounted = 'true';
+            counter.textContent = counter.textContent.replace(/\d+/, (value) => String(Number(value) + 1));
+        });
+    }
+
+    injectScriptsZeroBotMenu();
+
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') setDrawer(false);
     });
@@ -54,6 +104,13 @@
         let currentIndex = 0;
 
         if (!track || slides.length === 0) return;
+
+        track.style.width = `${slides.length * 100}%`;
+        slides.forEach((slide) => {
+            const slideWidth = `${100 / slides.length}%`;
+            slide.style.flexBasis = slideWidth;
+            slide.style.width = slideWidth;
+        });
 
         function showSlide(index) {
             currentIndex = (index + slides.length) % slides.length;
