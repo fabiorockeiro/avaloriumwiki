@@ -25,6 +25,10 @@
         'fabio-rockeiro-scripts.html',
     ]);
 
+    const huntsCustomPages = new Set([
+        'hunts-custom.html',
+    ]);
+
     function getCurrentPage() {
         const page = window.location.pathname.split('/').pop();
         return (page || 'index.html').toLowerCase();
@@ -39,7 +43,7 @@
             <section class="menu-section ${isOpen ? 'is-open' : ''}" data-scripts-zerobot-menu>
                 <button type="button" class="menu-section-button" data-section-toggle>
                     <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/><path d="m13 4-2 16"/></svg></span>
-                    <strong>SCRIPTS ZEROBOT</strong>
+                    <strong>Scripts Zerobot</strong>
                     <small>1</small>
                 </button>
                 <div class="menu-links">
@@ -69,6 +73,53 @@
     }
 
     injectScriptsZeroBotMenu();
+
+    function getHuntsCustomMenuItem() {
+        const currentPage = getCurrentPage();
+        const isActive = currentPage === 'hunts-custom.html';
+
+        return `
+            <a class="${isActive ? 'active' : ''}" href="hunts-custom.html" data-hunts-custom-link>
+                <img src="assets/media/menu/hunts-custom.gif" alt="" loading="lazy">
+                <span>
+                    <strong>Hunts Custom</strong>
+                    <small>Nightmare, Hazard, Tasks, Void e boss especial.</small>
+                </span>
+            </a>
+        `;
+    }
+
+    function injectHuntsCustomMenu() {
+        const currentPage = getCurrentPage();
+        const isOpen = huntsCustomPages.has(currentPage);
+
+        document.querySelectorAll('.menu-section').forEach((section) => {
+            const sectionTitle = section.querySelector('.menu-section-button strong');
+            const links = section.querySelector('.menu-links');
+            if (!sectionTitle || !links || sectionTitle.textContent.trim() !== 'Guias e Utilidades') return;
+
+            if (!links.querySelector('[data-hunts-custom-link]')) {
+                links.insertAdjacentHTML('beforeend', getHuntsCustomMenuItem());
+            }
+
+            if (isOpen) section.classList.add('is-open');
+
+            if (section.dataset.huntsCustomCounted) return;
+            section.dataset.huntsCustomCounted = 'true';
+            const counter = section.querySelector('.menu-section-button small');
+            if (counter) {
+                counter.textContent = counter.textContent.replace(/\d+/, (value) => String(Number(value) + 1));
+            }
+        });
+
+        document.querySelectorAll('.sidebar-title small').forEach((counter) => {
+            if (counter.dataset.huntsCustomCounted) return;
+            counter.dataset.huntsCustomCounted = 'true';
+            counter.textContent = counter.textContent.replace(/\d+/, (value) => String(Number(value) + 1));
+        });
+    }
+
+    injectHuntsCustomMenu();
 
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') setDrawer(false);

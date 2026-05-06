@@ -88,6 +88,14 @@ window.AVALORIUM_SEARCH_INDEX = [
         "image": "assets/media/menu/comandos-do-servidor.gif"
     },
     {
+        "title": "Hunts Custom",
+        "description": "Hunts Nightmare com requisitos, XP e loot superiores.",
+        "category": "Guias e Utilidades",
+        "keywords": "hunts custom nightmare hazard task tasks void boss zythar loot forja armas",
+        "url": "hunts-custom.html",
+        "image": "assets/media/menu/hunts-custom.gif"
+    },
+    {
         "title": "Weapons",
         "description": "Em construção",
         "category": "Itens e Equipamentos",
@@ -202,7 +210,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     {
         "title": "Fábio Rockeiro Scripts",
         "description": "Script Lua carregável no ZeroBot com Task Book, Rune Refil, Arrow Refil e Auto Forja.",
-        "category": "Scripts ZeroBot",
+        "category": "Scripts Zerobot",
         "keywords": "zerobot script lua fabio rockeiro task book rune refil arrow refil auto forja paladin dust slivers exalted core editar adicionar novas tasks vscode notepad documentos scripts carregar recarregar",
         "url": "fabio-rockeiro-scripts.html",
         "image": "assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png"
