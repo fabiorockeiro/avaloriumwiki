@@ -122,7 +122,10 @@
     injectHuntsCustomMenu();
 
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') setDrawer(false);
+        if (event.key === 'Escape') {
+            setDrawer(false);
+            closeImageLightbox();
+        }
     });
 
     document.querySelectorAll('[data-section-toggle]').forEach((button) => {
@@ -145,6 +148,69 @@
             });
         });
     });
+
+    const lightboxTriggers = document.querySelectorAll('[data-image-lightbox]');
+    let imageLightbox = null;
+    let imageLightboxImage = null;
+    let imageLightboxCloseButton = null;
+    let lastLightboxTrigger = null;
+    let previousBodyOverflow = '';
+
+    function closeImageLightbox() {
+        if (!imageLightbox || imageLightbox.hidden) return;
+        imageLightbox.hidden = true;
+        imageLightboxImage.removeAttribute('src');
+        imageLightboxImage.removeAttribute('alt');
+        document.body.style.overflow = previousBodyOverflow;
+
+        if (lastLightboxTrigger) {
+            lastLightboxTrigger.focus();
+            lastLightboxTrigger = null;
+        }
+    }
+
+    if (lightboxTriggers.length > 0) {
+        imageLightbox = document.createElement('div');
+        imageLightbox.className = 'image-lightbox';
+        imageLightbox.hidden = true;
+        imageLightbox.setAttribute('role', 'dialog');
+        imageLightbox.setAttribute('aria-modal', 'true');
+        imageLightbox.setAttribute('aria-label', 'Imagem ampliada');
+        imageLightbox.innerHTML = `
+            <button class="image-lightbox-backdrop" type="button" data-image-lightbox-close aria-label="Fechar imagem ampliada"></button>
+            <div class="image-lightbox-panel">
+                <button class="image-lightbox-close" type="button" data-image-lightbox-close aria-label="Fechar imagem ampliada">
+                    <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                </button>
+                <img alt="">
+            </div>
+        `;
+
+        document.body.appendChild(imageLightbox);
+        imageLightboxImage = imageLightbox.querySelector('img');
+        imageLightboxCloseButton = imageLightbox.querySelector('.image-lightbox-close');
+
+        imageLightbox.querySelectorAll('[data-image-lightbox-close]').forEach((button) => {
+            button.addEventListener('click', closeImageLightbox);
+        });
+
+        lightboxTriggers.forEach((trigger) => {
+            trigger.addEventListener('click', () => {
+                const triggerImage = trigger.querySelector('img');
+                const imageSrc = trigger.getAttribute('data-image-lightbox') || triggerImage?.currentSrc || triggerImage?.src;
+                const imageAlt = trigger.getAttribute('data-image-lightbox-alt') || triggerImage?.alt || 'Imagem ampliada';
+                if (!imageSrc || !imageLightboxImage) return;
+
+                lastLightboxTrigger = trigger;
+                previousBodyOverflow = document.body.style.overflow;
+                imageLightboxImage.src = imageSrc;
+                imageLightboxImage.alt = imageAlt;
+                imageLightbox.hidden = false;
+                document.body.style.overflow = 'hidden';
+                imageLightboxCloseButton.focus();
+            });
+        });
+    }
 
     document.querySelectorAll('[data-carousel]').forEach((carousel) => {
         const track = carousel.querySelector('[data-carousel-track]');
