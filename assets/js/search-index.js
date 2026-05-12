@@ -17,7 +17,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Dark Totem Daily",
-        "description": "Evento diario com boss, cidades possiveis e recompensas.",
+        "description": "Evento diário com boss, cidades possíveis e recompensas.",
         "category": "Sistemas do Servidor",
         "keywords": "dark totem daily boss evento carlin thais darashia ankrahmun edron",
         "url": "dark-totem-daily.html",
@@ -25,15 +25,15 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Monster Hunter",
-        "description": "Evento de caca com criatura sorteada, ranking por abates e recompensas especiais.",
+        "description": "Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.",
         "category": "Sistemas do Servidor",
-        "keywords": "monster hunter evento caca criatura sorteada ranking abates recompensa horario monsterhunter",
+        "keywords": "monster hunter evento caça caca criatura sorteada ranking abates recompensa horário horario monsterhunter",
         "url": "monster-hunter.html",
         "image": "assets/media/items-wiki/Chests/boss chest/monster box.gif"
     },
     {
         "title": "Stones - Guia Completo",
-        "description": "Raridade, slots, upgrade, elementos e tabelas de referencia de stones.",
+        "description": "Raridade, slots, upgrade, elementos e tabelas de referência de stones.",
         "category": "Sistemas do Servidor",
         "keywords": "stones raridade rare epic legendary mystic slot upgrade chance custo gold",
         "url": "stones-guia-completo.html",
@@ -41,7 +41,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Rune System",
-        "description": "Enhanced Tables, refils, producao por vocacao e bonus de combate.",
+        "description": "Enhanced Tables, refils, produção por vocação e bônus de combate.",
         "category": "Sistemas do Servidor",
         "keywords": "rune system enhanced table refil potion ammo vocacao",
         "url": "rune-system.html",
@@ -49,7 +49,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Spell Badge Upgrade",
-        "description": "Badges permanentes para aumentar dano de spells especificas.",
+        "description": "Badges permanentes para aumentar dano de spells específicas.",
         "category": "Sistemas do Servidor",
         "keywords": "spell badge upgrade dano magia comando badge",
         "url": "spell-badge-upgrade.html",
@@ -57,7 +57,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Sistema de Craft",
-        "description": "Receitas, custos e materiais para itens especiais, utilitarios e upgrades.",
+        "description": "Receitas, custos e materiais para itens especiais, utilitários e upgrades.",
         "category": "Sistemas do Servidor",
         "keywords": "craft materiais tokens barras essencias upgrade custo",
         "url": "sistema-de-craft.html",
@@ -73,7 +73,7 @@ window.AVALORIUM_SEARCH_INDEX = [
     },
     {
         "title": "Animus Mastery & SoulPit",
-        "description": "Progressao baseada em criaturas, Soul Core, SoulPit e bonus de experiencia.",
+        "description": "Progressão baseada em criaturas, Soul Core, SoulPit e bônus de experiência.",
         "category": "Sistemas do Servidor",
         "keywords": "animus mastery soulpit soul core prism fiendish experiencia exiva moe res radar portable",
         "url": "animus-mastery-soulpit.html",
