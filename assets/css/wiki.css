@@ -2011,6 +2011,30 @@ tbody tr:hover td {
     color: var(--muted);
 }
 
+.monster-alert {
+    border: 1px solid rgba(212, 93, 93, .4);
+    background:
+        linear-gradient(135deg, rgba(212, 93, 93, .14), rgba(8, 9, 11, .35)),
+        rgba(21, 23, 28, .82);
+    border-radius: 8px;
+    padding: 16px;
+    color: var(--text);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .03);
+}
+
+.monster-alert strong {
+    display: block;
+    color: #ff8c8c;
+    font-family: Cinzel, Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.monster-alert p {
+    margin: 6px 0 0;
+    color: var(--muted);
+}
+
 [data-filter-row].is-hidden {
     display: none;
 }

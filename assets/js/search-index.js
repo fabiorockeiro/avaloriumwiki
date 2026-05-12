@@ -24,6 +24,14 @@ window.AVALORIUM_SEARCH_INDEX = [
         "image": "assets/media/menu/dark-totem-daily.gif"
     },
     {
+        "title": "Monster Hunter",
+        "description": "Evento de caca com criatura sorteada, ranking por abates e recompensas especiais.",
+        "category": "Sistemas do Servidor",
+        "keywords": "monster hunter evento caca criatura sorteada ranking abates recompensa horario monsterhunter",
+        "url": "monster-hunter.html",
+        "image": "assets/media/items-wiki/Chests/boss chest/monster box.gif"
+    },
+    {
         "title": "Stones - Guia Completo",
         "description": "Raridade, slots, upgrade, elementos e tabelas de referencia de stones.",
         "category": "Sistemas do Servidor",
