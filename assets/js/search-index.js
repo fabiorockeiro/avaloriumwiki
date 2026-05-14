@@ -67,7 +67,7 @@ window.AVALORIUM_SEARCH_INDEX = [
         "title": "Character Upgrades",
         "description": "Sistemas para fortalecer personagem, spells, itens, reflect, scrolls e stones.",
         "category": "Sistemas do Servidor",
-        "keywords": "character upgrades potion reflect spell badge scrolls outfits mounts stones safezone",
+        "keywords": "character upgrades potion reflect spell badge scrolls outfits mounts stones upgrade stone lvl 1 lvl 2 lvl 3 lvl 4 basic medium epic 100 safezone",
         "url": "character-upgrades.html",
         "image": "assets/media/menu/character-upgrades.gif"
     },
