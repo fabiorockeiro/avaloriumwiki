@@ -96,12 +96,44 @@ window.AVALORIUM_SEARCH_INDEX = [
         "image": "assets/media/menu/comandos-do-servidor.gif"
     },
     {
-        "title": "Hunts Custom",
-        "description": "Hunts Nightmare com requisitos, XP e loot superiores.",
-        "category": "Guias e Utilidades",
-        "keywords": "hunts custom nightmare hazard task tasks void boss zythar loot forja armas",
-        "url": "hunts-custom.html",
-        "image": "assets/media/menu/hunts-custom.gif"
+        "title": "Void Corruption Depths (Outer Void)",
+        "description": "Hunt custom level 1000 a 1200 com dano de Energy, Physical e Death.",
+        "category": "Hunts Custom",
+        "keywords": "hunts custom void outer corruption depths riftcaster brute ravager energy death ice earth holy hazard vip soulwar",
+        "url": "void-corruption-depths-outer-void.html",
+        "image": "assets/media/hunts-custom/Void Riftcaster.gif"
+    },
+    {
+        "title": "Void Corruption Depths (Inner Netherbound)",
+        "description": "Hunt custom level 1200 a 1400 com Netherbound Dragon, Brain e Demon.",
+        "category": "Hunts Custom",
+        "keywords": "hunts custom void inner netherbound dragon brain demon earth death holy fire energy hazard vip soulwar",
+        "url": "void-corruption-depths-inner-netherbound.html",
+        "image": "assets/media/hunts-custom/Brain Netherbound.gif"
+    },
+    {
+        "title": "Sanctum of Fire & Ice",
+        "description": "Hunt custom level 600 com lados de Fire e Ice, Firzen, Freezee e Fieren.",
+        "category": "Hunts Custom",
+        "keywords": "hunts custom sanctum fire ice firzen freezee fieren energy earth hazard crazed summer winter vanguard",
+        "url": "sanctum-of-fire-ice.html",
+        "image": "assets/media/hunts-custom/Firzen.gif"
+    },
+    {
+        "title": "Pyramid of Azhr'Khal (Three Asuras)",
+        "description": "Hunt custom level 750 com True Enrage, Blessed e Cursed Asura.",
+        "category": "Hunts Custom",
+        "keywords": "hunts custom pyramid azhr khal three asuras true enrage blessed cursed energy earth death holy hazard",
+        "url": "pyramid-of-azhrkhal-three-asuras.html",
+        "image": "assets/media/hunts-custom/True Enrage Asura.gif"
+    },
+    {
+        "title": "The Fallen Usurpers",
+        "description": "Hunt custom level 1600 com usurpadores corrompidos, lion beast e warlock.",
+        "category": "Hunts Custom",
+        "keywords": "hunts custom fallen usurpers knight commander archer warlock corrupted lion beast physical fire death bleeding life drain root",
+        "url": "the-fallen-usurpers.html",
+        "image": "assets/media/hunts-custom/Fallen Usurper Commander.gif"
     },
     {
         "title": "Weapons",
