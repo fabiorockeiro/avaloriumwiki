@@ -765,7 +765,7 @@ code {
 .item-grid,
 .portable-grid {
     display: grid;
-    gap: 14px;
+    gap: clamp(14px, 1.6vw, 20px);
 }
 
 .metric-strip {
@@ -1556,20 +1556,21 @@ code {
 
 .content-section {
     border-top: 1px solid var(--line);
-    padding-top: 24px;
-    margin-top: 24px;
+    padding-top: clamp(28px, 3vw, 38px);
+    margin-top: clamp(28px, 3vw, 38px);
 }
 
 .content-section:first-child {
     border-top: 0;
     padding-top: 0;
+    margin-top: 0;
 }
 
 .content-section-heading {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    margin-bottom: 16px;
+    margin-bottom: clamp(18px, 2vw, 24px);
 }
 
 .content-section-heading > span {
@@ -1595,6 +1596,10 @@ code {
 
 .info-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.content-section > :where(.stat-grid, .info-grid, .visual-grid, .split-list, .table-wrap, .tag-list, .compact-note, .item-grid, .portable-grid, .media-card-grid) + :where(.stat-grid, .info-grid, .visual-grid, .split-list, .table-wrap, .tag-list, .compact-note, .item-grid, .portable-grid, .media-card-grid) {
+    margin-top: clamp(18px, 2vw, 26px);
 }
 
 .info-card {
