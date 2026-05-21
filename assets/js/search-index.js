@@ -101,7 +101,7 @@ window.AVALORIUM_SEARCH_INDEX = [
         "category": "Hunts Custom",
         "keywords": "hunts custom void outer corruption depths riftcaster brute ravager energy death ice earth holy hazard vip soulwar",
         "url": "void-corruption-depths-outer-void.html",
-        "image": "assets/media/hunts-custom/Void Riftcaster.gif"
+        "image": "assets/media/hunts-custom/VOID CORRUPTION DEPTHS (OUTER VOID).png"
     },
     {
         "title": "Void Corruption Depths (Inner Netherbound)",
@@ -109,7 +109,7 @@ window.AVALORIUM_SEARCH_INDEX = [
         "category": "Hunts Custom",
         "keywords": "hunts custom void inner netherbound dragon brain demon earth death holy fire energy hazard vip soulwar",
         "url": "void-corruption-depths-inner-netherbound.html",
-        "image": "assets/media/hunts-custom/Brain Netherbound.gif"
+        "image": "assets/media/hunts-custom/VOID CORRUPTION DEPTHS (INNER NETHERBOUND).png"
     },
     {
         "title": "Sanctum of Fire & Ice",
@@ -117,7 +117,7 @@ window.AVALORIUM_SEARCH_INDEX = [
         "category": "Hunts Custom",
         "keywords": "hunts custom sanctum fire ice firzen freezee fieren energy earth hazard crazed summer winter vanguard",
         "url": "sanctum-of-fire-ice.html",
-        "image": "assets/media/hunts-custom/Firzen.gif"
+        "image": "assets/media/hunts-custom/SANCTUM OF FIRE & ICE.png"
     },
     {
         "title": "Pyramid of Azhr'Khal (Three Asuras)",
@@ -125,7 +125,7 @@ window.AVALORIUM_SEARCH_INDEX = [
         "category": "Hunts Custom",
         "keywords": "hunts custom pyramid azhr khal three asuras true enrage blessed cursed energy earth death holy hazard",
         "url": "pyramid-of-azhrkhal-three-asuras.html",
-        "image": "assets/media/hunts-custom/True Enrage Asura.gif"
+        "image": "assets/media/hunts-custom/PYRAMID OF AZHR’KHAL (THREE ASURAS).png"
     },
     {
         "title": "The Fallen Usurpers",
@@ -133,7 +133,7 @@ window.AVALORIUM_SEARCH_INDEX = [
         "category": "Hunts Custom",
         "keywords": "hunts custom fallen usurpers knight commander archer warlock corrupted lion beast physical fire death bleeding life drain root",
         "url": "the-fallen-usurpers.html",
-        "image": "assets/media/hunts-custom/Fallen Usurper Commander.gif"
+        "image": "assets/media/hunts-custom/THE FALLEN USURPERS.png"
     },
     {
         "title": "Weapons",

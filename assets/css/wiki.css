@@ -1323,6 +1323,20 @@ code {
     text-wrap: balance;
 }
 
+.hunt-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.hunt-title-icon {
+    width: clamp(42px, 5vw, 66px);
+    height: clamp(42px, 5vw, 66px);
+    object-fit: contain;
+    flex: 0 0 auto;
+    filter: drop-shadow(0 8px 18px var(--hunt-glow));
+}
+
 .hunt-detail-page .eyebrow {
     color: var(--hunt-accent);
 }
@@ -2639,6 +2653,16 @@ tbody tr:hover td {
     .page-hero h1,
     .article-hero h1 {
         font-size: 31px;
+    }
+
+    .hunt-title {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hunt-title-icon {
+        width: 42px;
+        height: 42px;
     }
 
     .script-hero h1 {

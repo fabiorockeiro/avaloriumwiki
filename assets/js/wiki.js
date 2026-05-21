@@ -30,31 +30,31 @@
             url: 'void-corruption-depths-outer-void.html',
             title: 'Void Corruption Depths (Outer Void)',
             description: 'Level recomendado 1000 ~ 1200.',
-            image: 'assets/media/hunts-custom/Void Riftcaster.gif',
+            image: 'assets/media/hunts-custom/VOID CORRUPTION DEPTHS (OUTER VOID).png',
         },
         {
             url: 'void-corruption-depths-inner-netherbound.html',
             title: 'Void Corruption Depths (Inner Netherbound)',
             description: 'Level recomendado 1200 ~ 1400.',
-            image: 'assets/media/hunts-custom/Brain Netherbound.gif',
+            image: 'assets/media/hunts-custom/VOID CORRUPTION DEPTHS (INNER NETHERBOUND).png',
         },
         {
             url: 'sanctum-of-fire-ice.html',
             title: 'Sanctum of Fire &amp; Ice',
             description: 'Level recomendado 600+.',
-            image: 'assets/media/hunts-custom/Firzen.gif',
+            image: 'assets/media/hunts-custom/SANCTUM OF FIRE & ICE.png',
         },
         {
             url: 'pyramid-of-azhrkhal-three-asuras.html',
             title: 'Pyramid of Azhr\'Khal (Three Asuras)',
             description: 'Level recomendado 750+.',
-            image: 'assets/media/hunts-custom/True Enrage Asura.gif',
+            image: 'assets/media/hunts-custom/PYRAMID OF AZHR’KHAL (THREE ASURAS).png',
         },
         {
             url: 'the-fallen-usurpers.html',
             title: 'The Fallen Usurpers',
             description: 'Level recomendado 1600.',
-            image: 'assets/media/hunts-custom/Fallen Usurper Commander.gif',
+            image: 'assets/media/hunts-custom/THE FALLEN USURPERS.png',
         },
     ];
 
