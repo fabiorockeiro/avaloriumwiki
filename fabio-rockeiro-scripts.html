@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábio Rockeiro Scripts | Avalorium OT Wiki</title>
-    <meta name="description" content="Script Lua carregável no ZeroBot com Arrow Refil, Task Book, Rune Refil e Auto Forja.">
+    <meta name="description" content="Scripts Lua carregáveis no ZeroBot com Task Book, Rune Refil, Arrow Refil, Auto Forja e RESET FPS.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -616,12 +616,61 @@
                 </div>
             </section>
 
+            <section class="content-section reset-fps-section">
+                <div class="content-section-heading">
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6l4-4"/><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M12 12 8 16"/></svg></span>
+                    <div>
+                        <h2>RESET FPS</h2>
+                        <p>Script para aliviar o cliente durante a hunt: mesmo com Battle ativo, ele usa a função de <strong>CTRL+L</strong>, volta para a tela do personagem e efetua login novamente para resetar o FPS.</p>
+                    </div>
+                </div>
+
+                <div class="reset-fps-layout">
+                    <div class="reset-fps-copy">
+                        <div class="reset-fps-requirements">
+                            <strong>Configuração obrigatória no ZeroBot</strong>
+                            <p>Para funcionar corretamente, deixe as opções <strong>X-Log</strong> e <strong>Reconectar</strong> ativas dentro do ZeroBot.</p>
+                        </div>
+
+                        <div class="reset-fps-vocation-rules" aria-label="Proteções por vocação no RESET FPS">
+                            <div>
+                                <strong>VOC</strong>
+                                <span>Clique em <strong>VOC</strong> para abrir a janela de seleção da vocação/configuração.</span>
+                            </div>
+                            <div>
+                                <strong>Magos</strong>
+                                <span>Usam <strong>Utamo Vita</strong> antes do comando.</span>
+                            </div>
+                            <div>
+                                <strong>Paladins e Monk</strong>
+                                <span>Equipam <strong>energy ring</strong>, mesmo que ele não esteja na hotkey do personagem.</span>
+                            </div>
+                            <div>
+                                <strong>Knights</strong>
+                                <span>Usam <strong>Utamo Tempo</strong> antes do reset para reduzir risco de morte.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reset-fps-media-grid">
+                        <figure class="media-frame reset-fps-media-frame">
+                            <img src="assets/media/scripts-zerobot/reset-fps-fabio-rockeiro.png" alt="Painel do script RESET FPS com seleção de vocação">
+                            <figcaption>Painel do RESET FPS com seleção de vocação e botão de uso imediato.</figcaption>
+                        </figure>
+                        <figure class="media-frame reset-fps-media-frame">
+                            <img src="assets/media/scripts-zerobot/zerobot-xlog-reconectar.png" alt="ZeroBot com X-Log e Reconectar ativos">
+                            <figcaption>Deixe X-Log e Reconectar ativos no ZeroBot antes de usar o RESET FPS.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
             <section class="content-section zerobot-install-section">
                 <div class="content-section-heading">
                     <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/></svg></span>
                     <div>
                         <h2>Onde colocar e como carregar</h2>
-                        <p>Depois de baixar, coloque o arquivo dentro da pasta <strong>Documentos/ZeroBot/Scripts</strong>.</p>
+                        <p>Depois de baixar, coloque o arquivo desejado dentro da pasta <strong>Documentos/ZeroBot/Scripts</strong>.</p>
                     </div>
                 </div>
 
@@ -630,7 +679,7 @@
                         <ol>
                             <li>Abra a janela do ZeroBot.</li>
                             <li>Vá no menu <strong>Scripts</strong>.</li>
-                            <li>Selecione o arquivo <strong>AVALORIUM OT SCRIPT - Fabio Rockeiro.lua</strong>.</li>
+                            <li>Selecione o arquivo <strong>AVALORIUM OT SCRIPT - Fabio Rockeiro.lua</strong> ou <strong>RESET FPS - Fabio Rockeiro - AvaloriumOT.lua</strong>.</li>
                             <li>Clique no botão <strong>Carregar</strong>.</li>
                         </ol>
                         <p>Se o script não aparecer na lista, confira se ele está realmente dentro da pasta <strong>Documentos/ZeroBot/Scripts</strong> e clique em <strong>Recarregar</strong>.</p>
@@ -644,14 +693,20 @@
             </section>
 
             <section class="content-section final-download-section">
-                <div class="final-download-copy">
+                <div class="final-download-header">
                     <span class="eyebrow">Download</span>
-                    <h2>AVALORIUM OT SCRIPT</h2>
-                    <p>Agora que você já viu como funciona, baixe o arquivo <strong>.lua</strong> e carregue no ZeroBot para usar o pacote completo.</p>
+                    <h2>Baixar scripts</h2>
+                    <p>Baixe os dois arquivos <strong>.lua</strong> separadamente e carregue no ZeroBot conforme a função desejada.</p>
                 </div>
-                <a class="action-button primary script-download-button" href="assets/downloads/avalorium-ot-script-fabio-rockeiro.lua" download>
-                    <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download do Script
-                </a>
+
+                <div class="script-download-actions">
+                    <a class="action-button primary script-download-button" href="assets/downloads/avalorium-ot-script-fabio-rockeiro.lua" download="AVALORIUM OT SCRIPT - Fabio Rockeiro.lua">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download Task / Refil / Arrow / Forja
+                    </a>
+                    <a class="action-button primary script-download-button" href="assets/downloads/reset-fps-fabio-rockeiro-avaloriumot.lua" download="RESET FPS - Fabio Rockeiro - AvaloriumOT.lua">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download RESET FPS
+                    </a>
+                </div>
             </section>
         </div>
         </article>

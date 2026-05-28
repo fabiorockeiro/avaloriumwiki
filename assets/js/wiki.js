@@ -201,7 +201,7 @@
                         <img src="assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png" alt="" loading="lazy">
                         <span>
                             <strong>Fábio Rockeiro Scripts</strong>
-                            <small>Task Book, refils e Auto Forja para ZeroBot.</small>
+                            <small>Task Book, refils, Auto Forja e RESET FPS para ZeroBot.</small>
                         </span>
                     </a>
                 </div>

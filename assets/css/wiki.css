@@ -995,20 +995,93 @@ code {
         rgba(21, 23, 28, .82);
 }
 
-.final-download-section h2 {
+.final-download-header {
+    max-width: 860px;
+}
+
+.final-download-header h2 {
     margin: 0;
     font-family: Cinzel, Georgia, serif;
     color: var(--gold-2);
 }
 
-.final-download-section p {
+.final-download-header p {
     color: var(--muted);
     margin: 8px 0 0;
+}
+
+.script-download-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
 }
 
 .script-download-button {
     justify-content: center;
     min-width: 220px;
+}
+
+.reset-fps-layout {
+    display: grid;
+    grid-template-columns: minmax(260px, .8fr) minmax(320px, 1.2fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.reset-fps-requirements {
+    padding: 14px;
+    border: 1px solid rgba(255, 204, 102, .22);
+    border-radius: 8px;
+    background: rgba(255, 204, 102, .08);
+}
+
+.reset-fps-requirements strong {
+    color: var(--gold-2);
+}
+
+.reset-fps-vocation-rules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.reset-fps-vocation-rules div {
+    padding: 12px;
+    border: 1px solid rgba(53, 215, 255, .14);
+    border-radius: 8px;
+    background: rgba(8, 9, 11, .26);
+}
+
+.reset-fps-vocation-rules strong,
+.reset-fps-vocation-rules span {
+    display: block;
+}
+
+.reset-fps-vocation-rules strong {
+    color: var(--gold-2);
+}
+
+.reset-fps-vocation-rules span {
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+.reset-fps-media-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(220px, .65fr);
+    gap: 12px;
+    align-items: start;
+}
+
+.reset-fps-media-grid .media-frame {
+    margin: 0;
+}
+
+.reset-fps-media-frame img {
+    max-height: 520px;
+    background: #111;
 }
 
 .script-preview-frame img {
@@ -2556,6 +2629,15 @@ tbody tr:hover td {
     }
 
     .final-download-section {
+        grid-template-columns: 1fr;
+    }
+
+    .script-download-actions {
+        justify-content: stretch;
+    }
+
+    .reset-fps-layout,
+    .reset-fps-media-grid {
         grid-template-columns: 1fr;
     }
 
