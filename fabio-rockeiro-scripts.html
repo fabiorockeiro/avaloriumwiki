@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábio Rockeiro Scripts | Avalorium OT Wiki</title>
-    <meta name="description" content="Scripts Lua carregáveis no ZeroBot com Task Book, Rune Refil, Arrow Refil, Auto Forja e RESET FPS.">
+    <meta name="description" content="Script Lua carregável no ZeroBot com Task Book, Rune Refil, Arrow Refil, Auto Forja, Follow, Auto Party e RESET FPS.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -62,472 +62,16 @@
         <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
     </div>
 
-    <nav class="drawer-menu">
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a2 2 0 0 0 2 2h2l3 5h2l-2-5h2l8 3V6l-8 3H5a2 2 0 0 0-2 2Z"/><path d="M21 9v6"/></svg></span>
-                    <strong>Novidades e Loja</strong>
-                    <small>1</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="noticias-e-promocoes.html">
-                            <img src="assets/media/menu/noticias-e-promocoes.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Noticias, Promocoes e Pacotes Especiais</strong>
-                                <small>Pacotes ativos e afiliados do Avalorium.</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg></span>
-                    <strong>Sistemas do Servidor</strong>
-                    <small>9</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="divergence-system.html">
-                            <img src="assets/media/menu/divergence-system.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Divergence System</strong>
-                                <small>Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="dark-totem-daily.html">
-                            <img src="assets/media/menu/dark-totem-daily.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Dark Totem Daily</strong>
-                                <small>Evento diário com boss, cidades possíveis e recompensas.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="monster-hunter.html">
-                            <img src="assets/media/icons/more points wheel.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Monster Hunter</strong>
-                                <small>Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="stones-guia-completo.html">
-                            <img src="assets/media/menu/stones-guia-completo.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Stones - Guia Completo</strong>
-                                <small>Raridade, slots, upgrade, elementos e tabelas de referência de stones.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="rune-system.html">
-                            <img src="assets/media/menu/rune-system.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Rune System</strong>
-                                <small>Enhanced Tables, refils, produção por vocação e bônus de combate.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="spell-badge-upgrade.html">
-                            <img src="assets/media/menu/spell-badge-upgrade.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Spell Badge Upgrade</strong>
-                                <small>Badges permanentes para aumentar dano de spells específicas.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="sistema-de-craft.html">
-                            <img src="assets/media/menu/sistema-de-craft.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Sistema de Craft</strong>
-                                <small>Receitas, custos e materiais para itens especiais, utilitários e upgrades.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="character-upgrades.html">
-                            <img src="assets/media/menu/character-upgrades.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Character Upgrades</strong>
-                                <small>Sistemas para fortalecer personagem, spells, itens, reflect, scrolls e stones.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="animus-mastery-soulpit.html">
-                            <img src="assets/media/menu/animus-mastery-soulpit.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Animus Mastery &amp; SoulPit</strong>
-                                <small>Progressão baseada em criaturas, Soul Core, SoulPit e bônus de experiência.</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg></span>
-                    <strong>Guias e Utilidades</strong>
-                    <small>2</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="vocacoes.html">
-                            <img src="assets/media/menu/vocacoes.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Vocações</strong>
-                                <small>Resumo visual das vocações e seus papéis no servidor.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="comandos-do-servidor.html">
-                            <img src="assets/media/menu/comandos-do-servidor.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Comandos do Servidor</strong>
-                                <small>Comandos organizados por categoria, com busca rapida.</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span>
-                    <strong>Itens e Equipamentos</strong>
-                    <small>12</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="weapons.html">
-                            <img src="assets/media/menu/weapons.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Weapons</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="armors.html">
-                            <img src="assets/media/menu/armors.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Armors</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="helmets.html">
-                            <img src="assets/media/menu/helmets.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Helmets</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="legs.html">
-                            <img src="assets/media/menu/legs.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Legs</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="boots.html">
-                            <img src="assets/media/menu/boots.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Boots</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="shields.html">
-                            <img src="assets/media/menu/shields.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Shields</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="rings.html">
-                            <img src="assets/media/menu/rings.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Rings</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="amulets.html">
-                            <img src="assets/media/menu/amulets.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Amulets</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="ammo.html">
-                            <img src="assets/media/menu/ammo.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Ammo</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="dolls.html">
-                            <img src="assets/media/menu/dolls.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Dolls</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="backpacks.html">
-                            <img src="assets/media/menu/backpacks.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Backpacks</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="portables.html">
-                            <img src="assets/media/items-wiki/portables/portable arrow.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Portables</strong>
-                                <small>Itens portateis para comprar, vender, recarregar, imbue, teleportar e gerenciar tasks.</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 6 6 .9-4.5 4.4 1.1 6.3L12 16.6l-5.6 3 1.1-6.3L3 8.9 9 8l3-6Z"/></svg></span>
-                    <strong>Colecionáveis</strong>
-                    <small>2</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="outfits.html">
-                            <img src="assets/media/menu/outfits.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Outfits</strong>
-                                <small>EM CONSTRUÇÃO</small>
-                            </span>
-                        </a>
-                                            <a class="" href="mounts.html">
-                            <img src="assets/media/menu/mounts.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Montarias</strong>
-                                <small>EM CONSTRUÇÃO</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-            </nav>
+    <nav class="drawer-menu"></nav>
 </aside>
     <div class="wiki-shell">
         <aside class="wiki-sidebar" aria-label="Menu da wiki">
     <div class="sidebar-sticky">
         <div class="sidebar-title">
             <span>Menu da Wiki</span>
-            <small>25 artigos</small>
+            <small>0 artigos</small>
         </div>
-
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a2 2 0 0 0 2 2h2l3 5h2l-2-5h2l8 3V6l-8 3H5a2 2 0 0 0-2 2Z"/><path d="M21 9v6"/></svg></span>
-                    <strong>Novidades e Loja</strong>
-                    <small>1</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="noticias-e-promocoes.html">
-                            <img src="assets/media/menu/noticias-e-promocoes.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Noticias, Promocoes e Pacotes Especiais</strong>
-                                <small>Pacotes ativos e afiliados do Avalorium.</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg></span>
-                    <strong>Sistemas do Servidor</strong>
-                    <small>9</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="divergence-system.html">
-                            <img src="assets/media/menu/divergence-system.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Divergence System</strong>
-                                <small>Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="dark-totem-daily.html">
-                            <img src="assets/media/menu/dark-totem-daily.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Dark Totem Daily</strong>
-                                <small>Evento diário com boss, cidades possíveis e recompensas.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="monster-hunter.html">
-                            <img src="assets/media/icons/more points wheel.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Monster Hunter</strong>
-                                <small>Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="stones-guia-completo.html">
-                            <img src="assets/media/menu/stones-guia-completo.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Stones - Guia Completo</strong>
-                                <small>Raridade, slots, upgrade, elementos e tabelas de referência de stones.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="rune-system.html">
-                            <img src="assets/media/menu/rune-system.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Rune System</strong>
-                                <small>Enhanced Tables, refils, produção por vocação e bônus de combate.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="spell-badge-upgrade.html">
-                            <img src="assets/media/menu/spell-badge-upgrade.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Spell Badge Upgrade</strong>
-                                <small>Badges permanentes para aumentar dano de spells específicas.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="sistema-de-craft.html">
-                            <img src="assets/media/menu/sistema-de-craft.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Sistema de Craft</strong>
-                                <small>Receitas, custos e materiais para itens especiais, utilitários e upgrades.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="character-upgrades.html">
-                            <img src="assets/media/menu/character-upgrades.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Character Upgrades</strong>
-                                <small>Sistemas para fortalecer personagem, spells, itens, reflect, scrolls e stones.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="animus-mastery-soulpit.html">
-                            <img src="assets/media/menu/animus-mastery-soulpit.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Animus Mastery &amp; SoulPit</strong>
-                                <small>Progressão baseada em criaturas, Soul Core, SoulPit e bônus de experiência.</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg></span>
-                    <strong>Guias e Utilidades</strong>
-                    <small>2</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="vocacoes.html">
-                            <img src="assets/media/menu/vocacoes.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Vocações</strong>
-                                <small>Resumo visual das vocações e seus papéis no servidor.</small>
-                            </span>
-                        </a>
-                                            <a class="" href="comandos-do-servidor.html">
-                            <img src="assets/media/menu/comandos-do-servidor.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Comandos do Servidor</strong>
-                                <small>Comandos organizados por categoria, com busca rapida.</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></span>
-                    <strong>Itens e Equipamentos</strong>
-                    <small>12</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="weapons.html">
-                            <img src="assets/media/menu/weapons.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Weapons</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="armors.html">
-                            <img src="assets/media/menu/armors.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Armors</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="helmets.html">
-                            <img src="assets/media/menu/helmets.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Helmets</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="legs.html">
-                            <img src="assets/media/menu/legs.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Legs</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="boots.html">
-                            <img src="assets/media/menu/boots.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Boots</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="shields.html">
-                            <img src="assets/media/menu/shields.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Shields</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="rings.html">
-                            <img src="assets/media/menu/rings.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Rings</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="amulets.html">
-                            <img src="assets/media/menu/amulets.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Amulets</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="ammo.html">
-                            <img src="assets/media/menu/ammo.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Ammo</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="dolls.html">
-                            <img src="assets/media/menu/dolls.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Dolls</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="backpacks.html">
-                            <img src="assets/media/menu/backpacks.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Backpacks</strong>
-                                <small>Em construção</small>
-                            </span>
-                        </a>
-                                            <a class="" href="portables.html">
-                            <img src="assets/media/items-wiki/portables/portable arrow.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Portables</strong>
-                                <small>Itens portateis para comprar, vender, recarregar, imbue, teleportar e gerenciar tasks.</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-                                <section class="menu-section ">
-                <button type="button" class="menu-section-button" data-section-toggle>
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 6 6 .9-4.5 4.4 1.1 6.3L12 16.6l-5.6 3 1.1-6.3L3 8.9 9 8l3-6Z"/></svg></span>
-                    <strong>Colecionáveis</strong>
-                    <small>2</small>
-                </button>
-                <div class="menu-links">
-                                            <a class="" href="outfits.html">
-                            <img src="assets/media/menu/outfits.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Outfits</strong>
-                                <small>EM CONSTRUÇÃO</small>
-                            </span>
-                        </a>
-                                            <a class="" href="mounts.html">
-                            <img src="assets/media/menu/mounts.gif" alt="" loading="lazy">
-                            <span>
-                                <strong>Montarias</strong>
-                                <small>EM CONSTRUÇÃO</small>
-                            </span>
-                        </a>
-                                    </div>
-            </section>
-            </div>
+    </div>
 </aside>
                 <main class="wiki-main" id="conteudo">
                 <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -569,7 +113,7 @@
                     <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg></span>
                     <div>
                         <h2>Funções incluídas</h2>
-                        <p>Automação focada nas rotinas mais repetitivas do Paladin e dos sistemas de task, runas e forja.</p>
+                        <p>Automação focada nas rotinas mais repetitivas do Paladin, dos sistemas de task, runas, forja, party, follow e RESET FPS.</p>
                     </div>
                 </div>
 
@@ -590,29 +134,18 @@
                         <h3>Auto Forja</h3>
                         <p>Automatiza funções de Forja, como aumentar nível de Dust, Slivers e Exalted Core.</p>
                     </article>
-                </div>
-            </section>
-
-            <section class="content-section task-edit-section">
-                <div class="content-section-heading">
-                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17 5-5-5-5"/><path d="M12 19h8"/></svg></span>
-                    <div>
-                        <h2>Editar e adicionar novas tasks</h2>
-                        <p>Para adicionar uma nova task na lista, abra o arquivo Lua com o Bloco de Notas ou com um editor de códigos, como VSCode ou NotePad++.</p>
-                    </div>
-                </div>
-
-                <div class="task-edit-layout">
-                    <figure class="media-frame task-code-frame">
-                        <img src="assets/media/scripts-zerobot/adicionar-novas-tasks.png" alt="Exemplo de lista de tasks no arquivo Lua">
-                        <figcaption>Exemplo da listinha de tasks dentro do arquivo Lua.</figcaption>
-                    </figure>
-
-                    <div class="task-edit-copy">
-                        <p>Dentro do arquivo, procure a lista da dificuldade desejada, como <strong>Nightmare</strong>, e acrescente uma nova linha seguindo o mesmo padrão:</p>
-                        <pre><code>{ name = "nome da task" },</code></pre>
-                        <p>Mantenha a vírgula no final da linha para a lista continuar funcionando corretamente. Depois é só salvar o arquivo e carregar novamente no ZeroBot.</p>
-                    </div>
+                    <article class="info-card">
+                        <h3>Follow</h3>
+                        <p>Mantém o personagem seguindo o alvo configurado para facilitar deslocamento e suporte durante a hunt.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Reset FPS</h3>
+                        <p>Executa o fluxo de reset do cliente para aliviar quedas de FPS durante hunts longas.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Auto Party</h3>
+                        <p>Ajuda a automatizar convites e organização da party para manter o grupo pronto com menos cliques.</p>
+                    </article>
                 </div>
             </section>
 
@@ -654,10 +187,6 @@
 
                     <div class="reset-fps-media-grid">
                         <figure class="media-frame reset-fps-media-frame">
-                            <img src="assets/media/scripts-zerobot/reset-fps-fabio-rockeiro.png" alt="Painel do script RESET FPS com seleção de vocação">
-                            <figcaption>Painel do RESET FPS com seleção de vocação e botão de uso imediato.</figcaption>
-                        </figure>
-                        <figure class="media-frame reset-fps-media-frame">
                             <img src="assets/media/scripts-zerobot/zerobot-xlog-reconectar.png" alt="ZeroBot com X-Log e Reconectar ativos">
                             <figcaption>Deixe X-Log e Reconectar ativos no ZeroBot antes de usar o RESET FPS.</figcaption>
                         </figure>
@@ -679,7 +208,7 @@
                         <ol>
                             <li>Abra a janela do ZeroBot.</li>
                             <li>Vá no menu <strong>Scripts</strong>.</li>
-                            <li>Selecione o arquivo <strong>AVALORIUM OT SCRIPT - Fabio Rockeiro.lua</strong> ou <strong>RESET FPS - Fabio Rockeiro - AvaloriumOT.lua</strong>.</li>
+                            <li>Selecione o arquivo <strong>FabioRockeiroBOT.lua</strong>.</li>
                             <li>Clique no botão <strong>Carregar</strong>.</li>
                         </ol>
                         <p>Se o script não aparecer na lista, confira se ele está realmente dentro da pasta <strong>Documentos/ZeroBot/Scripts</strong> e clique em <strong>Recarregar</strong>.</p>
@@ -695,16 +224,13 @@
             <section class="content-section final-download-section">
                 <div class="final-download-header">
                     <span class="eyebrow">Download</span>
-                    <h2>Baixar scripts</h2>
-                    <p>Baixe os dois arquivos <strong>.lua</strong> separadamente e carregue no ZeroBot conforme a função desejada.</p>
+                    <h2>Baixar script</h2>
+                    <p>Baixe o arquivo <strong>FabioRockeiroBOT.lua</strong> e carregue no ZeroBot.</p>
                 </div>
 
                 <div class="script-download-actions">
-                    <a class="action-button primary script-download-button" href="assets/downloads/avalorium-ot-script-fabio-rockeiro.lua" download="AVALORIUM OT SCRIPT - Fabio Rockeiro.lua">
-                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download Task / Refil / Arrow / Forja
-                    </a>
-                    <a class="action-button primary script-download-button" href="assets/downloads/reset-fps-fabio-rockeiro-avaloriumot.lua" download="RESET FPS - Fabio Rockeiro - AvaloriumOT.lua">
-                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download RESET FPS
+                    <a class="action-button primary script-download-button" href="assets/downloads/FabioRockeiroBOT.lua" download="FabioRockeiroBOT.lua">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download FabioRockeiroBOT.lua
                     </a>
                 </div>
             </section>

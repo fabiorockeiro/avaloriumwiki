@@ -77,12 +77,13 @@
             items: [
                 { url: 'divergence-system.html', title: 'Divergence System', description: 'Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.', image: 'assets/media/menu/divergence-system.gif' },
                 { url: 'dark-totem-daily.html', title: 'Dark Totem Daily', description: 'Evento diário com boss, cidades possíveis e recompensas.', image: 'assets/media/menu/dark-totem-daily.gif' },
-                { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Chests/boss chest/monster box.gif' },
+                { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Consumables/more points wheel.gif' },
                 { url: 'stones-guia-completo.html', title: 'Stones - Guia Completo', description: 'Raridade, slots, upgrade, elementos e tabelas de referência de stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
                 { url: 'rune-system.html', title: 'Rune System', description: 'Enhanced Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
                 { url: 'spell-badge-upgrade.html', title: 'Spell Badge Upgrade', description: 'Badges permanentes para aumentar dano de spells específicas.', image: 'assets/media/menu/spell-badge-upgrade.gif' },
                 { url: 'sistema-de-craft.html', title: 'Sistema de Craft', description: 'Receitas, custos e materiais para itens especiais, utilitários e upgrades.', image: 'assets/media/menu/sistema-de-craft.gif' },
-                { url: 'character-upgrades.html', title: 'Character Upgrades', description: 'Sistemas para fortalecer personagem, spells, itens, reflect, scrolls e stones.', image: 'assets/media/menu/character-upgrades.gif' },
+                { url: 'character-upgrades.html', title: 'UPGRADE POTIONS', description: 'Potions permanentes para cura, reflect e poderes especiais do personagem.', image: 'assets/media/menu/character-upgrades.gif' },
+                { url: 'upgrade-stones.html', title: 'Upgrade Stones', description: 'Chances, limites e efeitos das stones usadas para evoluir equipamentos.', image: 'assets/media/items-wiki/Craft/upgrade stone lvl 1.gif' },
                 { url: 'animus-mastery-soulpit.html', title: 'Animus Mastery &amp; SoulPit', description: 'Progressão baseada em criaturas, Soul Core, SoulPit e bônus de experiência.', image: 'assets/media/menu/animus-mastery-soulpit.gif' },
             ],
         },
@@ -94,32 +95,7 @@
                 { url: 'comandos-do-servidor.html', title: 'Comandos do Servidor', description: 'Comandos organizados por categoria, com busca rapida.', image: 'assets/media/menu/comandos-do-servidor.gif' },
             ],
         },
-        {
-            title: 'Itens e Equipamentos',
-            icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>',
-            items: [
-                { url: 'weapons.html', title: 'Weapons', description: 'Em construção', image: 'assets/media/menu/weapons.gif' },
-                { url: 'armors.html', title: 'Armors', description: 'Em construção', image: 'assets/media/menu/armors.gif' },
-                { url: 'helmets.html', title: 'Helmets', description: 'Em construção', image: 'assets/media/menu/helmets.gif' },
-                { url: 'legs.html', title: 'Legs', description: 'Em construção', image: 'assets/media/menu/legs.gif' },
-                { url: 'boots.html', title: 'Boots', description: 'Em construção', image: 'assets/media/menu/boots.gif' },
-                { url: 'shields.html', title: 'Shields', description: 'Em construção', image: 'assets/media/menu/shields.gif' },
-                { url: 'rings.html', title: 'Rings', description: 'Em construção', image: 'assets/media/menu/rings.gif' },
-                { url: 'amulets.html', title: 'Amulets', description: 'Em construção', image: 'assets/media/menu/amulets.gif' },
-                { url: 'ammo.html', title: 'Ammo', description: 'Em construção', image: 'assets/media/menu/ammo.gif' },
-                { url: 'dolls.html', title: 'Dolls', description: 'Em construção', image: 'assets/media/menu/dolls.gif' },
-                { url: 'backpacks.html', title: 'Backpacks', description: 'Em construção', image: 'assets/media/menu/backpacks.gif' },
-                { url: 'portables.html', title: 'Portables', description: 'Itens portateis para comprar, vender, recarregar, imbue, teleportar e gerenciar tasks.', image: 'assets/media/items-wiki/portables/portable arrow.gif' },
-            ],
-        },
-        {
-            title: 'Colecionáveis',
-            icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 6 6 .9-4.5 4.4 1.1 6.3L12 16.6l-5.6 3 1.1-6.3L3 8.9 9 8l3-6Z"/></svg>',
-            items: [
-                { url: 'outfits.html', title: 'Outfits', description: 'EM CONSTRUÇÃO', image: 'assets/media/menu/outfits.gif' },
-                { url: 'mounts.html', title: 'Montarias', description: 'EM CONSTRUÇÃO', image: 'assets/media/menu/mounts.gif' },
-            ],
-        },
+        // Itens e Equipamentos e Colecionaveis ficam ocultos por enquanto.
     ];
 
     function getCurrentPage() {
@@ -129,7 +105,7 @@
 
     function getBaseMenuSection(section) {
         const currentPage = getCurrentPage();
-        const isOpen = section.items.some((item) => item.url === currentPage);
+        const isOpen = section.title === 'Sistemas do Servidor';
         const links = section.items.map((item) => {
             const isActive = item.url === currentPage;
 
@@ -186,7 +162,7 @@
 
     function getScriptsZeroBotMenu() {
         const currentPage = getCurrentPage();
-        const isOpen = scriptsZeroBotPages.has(currentPage);
+        const isOpen = false;
         const isActive = currentPage === 'fabio-rockeiro-scripts.html';
 
         return `
@@ -201,7 +177,7 @@
                         <img src="assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png" alt="" loading="lazy">
                         <span>
                             <strong>Fábio Rockeiro Scripts</strong>
-                            <small>Task Book, refils, Auto Forja e RESET FPS para ZeroBot.</small>
+                            <small>Task Book, refils, Auto Forja, Follow, Auto Party e RESET FPS.</small>
                         </span>
                     </a>
                 </div>
@@ -226,7 +202,7 @@
 
     function getHuntsCustomMenu() {
         const currentPage = getCurrentPage();
-        const isOpen = currentPage === 'hunts-custom.html' || huntsCustomMenuItems.some((item) => item.url === currentPage);
+        const isOpen = false;
         const links = huntsCustomMenuItems.map((item) => {
             const isActive = currentPage === item.url;
 
@@ -291,6 +267,84 @@
 
     injectHuntsCustomMenu();
     syncSidebarArticleCounters();
+
+    const craftMaterialIcons = [
+        { pattern: /\bgold tokens?\b/i, image: 'assets/media/items-wiki/Craft/Gold_Token.gif' },
+        { pattern: /\b\d+\s*k{2,3}s?\b/i, image: 'assets/media/items-wiki/Craft/Crystal_Coin.gif' },
+        { pattern: /\bsilver tokens?\b/i, image: 'assets/media/items-wiki/Craft/Silver_Token.gif' },
+        { pattern: /\bwarzone tokens?\b/i, image: 'assets/media/items-wiki/Craft/expert wz token.gif' },
+        { pattern: /\bdivergence tokens?\b/i, image: 'assets/media/items-wiki/Others/divergence token.gif' },
+        { pattern: /\bboss tokens?\b/i, image: 'assets/media/items-wiki/Others/boss token.gif' },
+        { pattern: /\bhard task tokens?\b/i, image: 'assets/media/items-wiki/Others/task token.gif' },
+        { pattern: /\btask tokens?\b/i, image: 'assets/media/items-wiki/Others/task token.gif' },
+        { pattern: /\bmajor crystalline tokens?\b/i, image: 'assets/media/items-wiki/Craft/Major_Crystalline_Token.gif' },
+        { pattern: /\btainted hearts?\b/i, image: 'assets/media/items-wiki/Craft/Tainted_Heart.gif' },
+        { pattern: /\bdarklight hearts?\b/i, image: 'assets/media/items-wiki/Craft/Darklight_Heart.gif' },
+        { pattern: /\bthe essence of murcion\b/i, image: 'assets/media/items-wiki/Craft/the essence of Murcion.gif' },
+        { pattern: /\bthe essence of ichgahal\b/i, image: 'assets/media/items-wiki/Craft/the essence of Ichgahal.gif' },
+        { pattern: /\bthe essence of vemiath\b/i, image: 'assets/media/items-wiki/Craft/the essence of Vemiath.gif' },
+        { pattern: /\bthe essence of chagorz\b/i, image: 'assets/media/items-wiki/Craft/the essence of Chagorz.gif' },
+        { pattern: /\bchalice of energy\b/i, image: 'assets/media/items-wiki/Craft/energy chalice.gif' },
+        { pattern: /\bchalice of death\b/i, image: 'assets/media/items-wiki/Craft/deathchalice.gif.gif' },
+        { pattern: /\bchalice of earth\b/i, image: 'assets/media/items-wiki/Craft/earthchalice.gif' },
+        { pattern: /\bchalice of ice\b/i, image: 'assets/media/items-wiki/Craft/icechalice.gif' },
+        { pattern: /\bchalice of holy\b/i, image: 'assets/media/items-wiki/Craft/holychalice.gif' },
+        { pattern: /\bchalice of physical\b/i, image: 'assets/media/items-wiki/Craft/physicalchalice.gif' },
+        { pattern: /\bchalice of fire\b/i, image: 'assets/media/items-wiki/Craft/firechalice.gif' },
+        { pattern: /\bprecious metal bars?\b/i, image: 'assets/media/items-wiki/Craft/precious metal bar.gif' },
+        { pattern: /\bprecious gold bars?\b/i, image: 'assets/media/items-wiki/Craft/precious gold bar.gif' },
+        { pattern: /\belemental cores?\b/i, image: 'assets/media/items-wiki/Craft/elemental_core.gif' },
+        { pattern: /\bsanguine upgrade\b/i, image: 'assets/media/items-wiki/Craft/sanguine upgrade.gif' },
+        { pattern: /\bupgrade stones? lvl 1\b/i, image: 'assets/media/items-wiki/Craft/upgrade stone lvl 1.gif' },
+        { pattern: /\bupgrade stones? lvl 2\b/i, image: 'assets/media/items-wiki/Craft/upgrade stone lvl 2.gif' },
+        { pattern: /\bupgrade stones? lvl 3\b/i, image: 'assets/media/items-wiki/Craft/upgrade stone lvl 3.gif' },
+        { pattern: /\bupgrade stones? lvl 4\b/i, image: 'assets/media/items-wiki/Craft/upgrade stone lvl 4.gif' },
+        { pattern: /\bburningfrost sigil\b/i, image: 'assets/media/items-wiki/Craft/burningfrost sigil.gif' },
+        { pattern: /\bpoisonstorm sigil\b/i, image: 'assets/media/items-wiki/Craft/poisonstorm sigil.gif' },
+        { pattern: /\bsaintdying sigil\b/i, image: 'assets/media/items-wiki/Craft/saintdying sigil.gif' },
+        { pattern: /\bburningfrost pendulet\b/i, image: 'assets/media/items-wiki/Craft/burningfrost pendulet.gif' },
+        { pattern: /\bpoisonstorm pendulet\b/i, image: 'assets/media/items-wiki/Craft/poisonstorm pendulet.gif' },
+        { pattern: /\bsaintdying pendulet\b/i, image: 'assets/media/items-wiki/Craft/saintdying pendulet.gif' },
+    ];
+
+    function escapeHtml(value) {
+        return value
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    function getCraftMaterialIcon(material) {
+        const icon = craftMaterialIcons.find((item) => item.pattern.test(material));
+        return icon ? icon.image : '';
+    }
+
+    function enhanceCraftMaterialCells() {
+        document.querySelectorAll('.craft-recipe-table tbody td:nth-child(4)').forEach((cell) => {
+            if (cell.dataset.materialIconsReady) return;
+            const materials = cell.textContent.split(',').map((material) => material.trim()).filter(Boolean);
+            if (materials.length === 0) return;
+
+            const html = materials.map((material, index) => {
+                const ending = material.match(/[.;]$/)?.[0] || '';
+                const label = ending ? material.slice(0, -1).trim() : material;
+                const icon = getCraftMaterialIcon(label);
+                const separator = index < materials.length - 1 ? ',' : ending;
+                const content = icon
+                    ? `<img src="${icon}" alt="" loading="lazy"> ${escapeHtml(label)}`
+                    : escapeHtml(label);
+
+                return `<span class="craft-material${icon ? ' has-icon' : ''}">${content}${separator}</span>`;
+            }).join('');
+
+            cell.dataset.materialIconsReady = 'true';
+            cell.innerHTML = `<span class="craft-materials">${html}</span>`;
+        });
+    }
+
+    enhanceCraftMaterialCells();
 
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
