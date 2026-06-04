@@ -186,6 +186,7 @@
                 { url: 'divergence-system.html', title: 'Divergence System', description: 'Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.', image: 'assets/media/menu/divergence-system.gif' },
                 { url: 'dark-totem-daily.html', title: 'Dark Totem Daily', description: 'Evento diário com boss, cidades possíveis e recompensas.', image: 'assets/media/menu/dark-totem-daily.gif' },
                 { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Consumables/more points wheel.gif' },
+                { url: 'reliquary-system.html', title: 'Reliquary System', description: 'Progressão em 81 níveis com itens, gold e Kron Cubes por faixa.', image: 'assets/media/reliquary/arcane-kube.png' },
                 { url: 'stones-guia-completo.html', title: 'Stones - Guia Completo', description: 'Raridade, slots, upgrade, elementos e tabelas de referência de stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
                 { url: 'rune-system.html', title: 'Rune System', description: 'Enhanced Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
                 { url: 'spell-badge-upgrade.html', title: 'Spell Badge Upgrade', description: 'Badges permanentes para aumentar dano de spells específicas.', image: 'assets/media/menu/spell-badge-upgrade.gif' },

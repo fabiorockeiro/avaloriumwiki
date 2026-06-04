@@ -33,6 +33,14 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/items-wiki/Consumables/more points wheel.gif"
     },
     {
+        "title":  "Reliquary System",
+        "description":  "Progressao com 81 niveis, itens, gold e Kron Cubes por faixa.",
+        "category":  "Sistemas do Servidor",
+        "keywords":  "reliquary relicary kron cube arcane empowered ascended inicial intermediario avancado bonus permanente hp mana loot treino xp skills enchanted dodge",
+        "url":  "reliquary-system.html",
+        "image":  "assets/media/reliquary/arcane-kube.png"
+    },
+    {
         "title":  "Stones - Guia Completo",
         "description":  "Raridade, slots, upgrade, elementos e tabelas de referência de stones.",
         "category":  "Sistemas do Servidor",

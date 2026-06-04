@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliquary System | Avalorium OT Wiki</title>
+    <meta name="description" content="Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteudo</a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>        </button>
+
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+
+        <form class="top-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>--</strong>
+            <small>online</small>
+        </div>
+
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/GQFKAyydbd" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
+    </div>
+</header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+
+    <form class="drawer-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/GQFKAyydbd" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+
+    <nav class="drawer-menu"></nav>
+</aside>
+    <div class="wiki-shell">
+        <aside class="wiki-sidebar" aria-label="Menu da wiki">
+    <div class="sidebar-sticky">
+        <div class="sidebar-title">
+            <span>Menu da Wiki</span>
+            <small>0 artigos</small>
+        </div>
+    </div>
+</aside>
+        <main class="wiki-main" id="conteudo">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                                                <a href="index.html">Inicio</a>
+                                <span>/</span>                            <a href="category-sistemas-do-servidor.html">Sistemas do Servidor</a>
+                                <span>/</span>                            <strong>Reliquary System</strong>
+                        </nav>
+        <article class="article-layout">
+        <header class="article-hero">
+            <div>
+                <span class="eyebrow">Sistemas do Servidor</span>
+                <h1>Reliquary System</h1>
+                <p>Progressao em 81 niveis com itens, gold e Kron Cubes por faixa.</p>
+            </div>
+            <div class="article-hero-media">
+                <img src="assets/media/reliquary/arcane-kube.png" alt="Arcane Kron Cube">
+            </div>
+        </header>
+
+        <div class="article-content">
+            <section class="content-section">
+                <div class="content-section-heading">
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v12l8 4 8-4V6l-8-4Z"/><path d="M4 6l8 4 8-4"/><path d="M12 10v12"/></svg></span>
+                    <div>
+                        <h2>Como funciona</h2>
+                        <p>O Reliquary e uma progressao 100% sequencial: level por level, sem pular etapas.</p>
+                    </div>
+                </div>
+                <div class="narrative-block">
+                    <p>O Reliquary e uma progressao com 81 niveis em tres faixas: Inicial, Intermediario e Avancado. Cada nivel exige itens especificos e gold. Ao concluir, voce recebe um Kron Cube conforme a faixa.</p>
+                    <p>Na faixa Inicial, o cubo sorteia um dos sete bonus permanentes: HP, mana, loot, treino, XP, skills ou enchanted. Cada bonus possui seu proprio limite maximo.</p>
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-box"><span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/></svg></span><strong>81</strong><small>Niveis</small><em>Progressao 1 em 1</em></div>
+                    <div class="stat-box"><span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M12 3v18"/></svg></span><strong>3</strong><small>Faixas</small><em>Inicial, Intermediario e Avancado</em></div>
+                    <div class="stat-box"><span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg></span><strong>Gold</strong><small>Custo</small><em>Todo nivel exige pagamento</em></div>
+                    <div class="stat-box"><span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 8 7l4 15 4-15-4-5Z"/><path d="M4 9h16"/><path d="M7 22h10"/></svg></span><strong>Cubes</strong><small>Recompensa</small><em>Arcane, Empowered ou Ascended</em></div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-section-heading">
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg></span>
+                    <div>
+                        <h2>Faixas e Kron Cubes</h2>
+                        <p>Cada etapa libera um tipo de cubo de acordo com o nivel concluido.</p>
+                    </div>
+                </div>
+                <div class="info-grid media-card-grid">
+                    <article class="info-card media-info-card"><div class="media-info-art"><img src="assets/media/reliquary/arcane-kube.png" alt="Arcane Kron Cube" loading="lazy"></div><div><h3>Inicial</h3><p>Levels 1 a 27. Recompensa: Arcane Kron Cube.</p></div></article>
+                    <article class="info-card media-info-card"><div class="media-info-art"><img src="assets/media/reliquary/ascended-kube.png" alt="Empowered Kron Cube" loading="lazy"></div><div><h3>Intermediario</h3><p>Levels 28 a 54. Recompensa: Empowered Kron Cube.</p></div></article>
+                    <article class="info-card media-info-card"><div class="media-info-art"><img src="assets/media/reliquary/empowered-kube.png" alt="Ascended Kron Cube" loading="lazy"></div><div><h3>Avancado</h3><p>Levels 55 a 81. Recompensa: Ascended Kron Cube.</p></div></article>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-section-heading">
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M5 5H3v3a4 4 0 0 0 4 4"/><path d="M19 5h2v3a4 4 0 0 1-4 4"/></svg></span>
+                    <div>
+                        <h2>Bonus permanentes</h2>
+                        <p>Os bonus aparecem nos cubos conforme a faixa. A faixa Inicial ja libera bonus permanentes sorteados.</p>
+                    </div>
+                </div>
+                <div class="split-list">
+                    <article><h3>Arcane Kron Cube</h3><ul><li>Health e Mana: +200 por level, limite maximo de 5000.</li><li>Loot, Training e Experience: +1% por level, limite maximo de 10%.</li><li>Skills e Enchanted: +1 por level, limite maximo de 5.</li></ul></article>
+                    <article><h3>Empowered Kron Cube</h3><ul><li>Dodge physical, fire, earth, energy, ice, holy e death (PvE).</li><li>Cada dodge progride de +1% ate +5%.</li></ul></article>
+                    <article><h3>Ascended Kron Cube</h3><ul><li>Ascended Kron Ston: em construcao na pagina oficial.</li><li>A faixa avancada ja possui custos e itens exigidos na tabela completa.</li></ul></article>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-section-heading">
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v12l8 4 8-4V6l-8-4Z"/><path d="M4 6l8 4 8-4"/><path d="M12 10v12"/></svg></span>
+                    <div>
+                        <h2>NPC Avalorium Reliquary</h2>
+                        <p>O NPC fica no DP -1 da Safezone.</p>
+                    </div>
+                </div>
+                <figure class="media-frame" data-image-lightbox="assets/media/items-wiki/Others/reliquary system.png" data-image-lightbox-alt="NPC Avalorium Reliquary no DP -1 da Safezone" tabindex="0" role="button">
+                    <img src="assets/media/items-wiki/Others/reliquary system.png" alt="NPC Avalorium Reliquary no DP -1 da Safezone" loading="lazy">
+                    <figcaption>NPC Avalorium Reliquary no DP -1 da Safezone.</figcaption>
+                </figure>
+            </section>
+
+            <section class="content-section">
+                <div class="content-section-heading">
+                    <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg></span>
+                    <div>
+                        <h2>Progressao completa</h2>
+                        <p>Tabela com custo, cubo e itens exigidos em todos os 81 niveis.</p>
+                    </div>
+                </div>
+                <div class="tool-panel">
+                    <label class="local-filter">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>
+                        <input type="search" data-filter-input placeholder="Filtrar por level, faixa, cubo ou item">
+                    </label>
+                </div>
+                <div class="table-wrap" data-filter-scope>
+                    <table>
+                        <thead>
+                            <tr><th>Level</th><th>Faixa</th><th>Custo</th><th>Cube</th><th>Itens</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr data-filter-row data-filter-text="level 1 initial 500.000 arcane kron cube 25x dragon hammer 25x devil helmet 25x crown helmet 25x strange helmet 25x dragon shield">
+                                <td><strong>1</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x dragon hammer</span><span>25x devil helmet</span><span>25x crown helmet</span><span>25x strange helmet</span><span>25x dragon shield</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 2 initial 1.000.000 arcane kron cube 25x mino shield 25x guardian shield 25x focus cape 25x knight axe 25x warrior helmet">
+                                <td><strong>2</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>1.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x mino shield</span><span>25x guardian shield</span><span>25x focus cape</span><span>25x knight axe</span><span>25x warrior helmet</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 3 initial 1.500.000 arcane kron cube 25x elvish bow 25x beastslayer axe 25x dragonbone staff 25x fire sword 25x knight armor">
+                                <td><strong>3</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>1.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x elvish bow</span><span>25x beastslayer axe</span><span>25x dragonbone staff</span><span>25x fire sword</span><span>25x knight armor</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 4 initial 2.000.000 arcane kron cube 25x glooth axe 25x glooth blade 25x glooth club 25x oriental shoes 25x skull staff">
+                                <td><strong>4</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>2.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x glooth axe</span><span>25x glooth blade</span><span>25x glooth club</span><span>25x oriental shoes</span><span>25x skull staff</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 5 initial 2.500.000 arcane kron cube 25x glacier shoes 25x magma boots 25x spellbook of enlightenment 25x terra boots 25x lightning boots">
+                                <td><strong>5</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>2.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x glacier shoes</span><span>25x magma boots</span><span>25x spellbook of enlightenment</span><span>25x terra boots</span><span>25x lightning boots</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 6 initial 3.000.000 arcane kron cube 25x knight legs 25x tower shield 25x zaoan shoes 25x spiked squelcher 25x magma coat">
+                                <td><strong>6</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>3.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x knight legs</span><span>25x tower shield</span><span>25x Zaoan shoes</span><span>25x spiked squelcher</span><span>25x magma coat</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 7 initial 3.500.000 arcane kron cube 25x terra mantle 25x magma monocle 25x lightning headband 25x terra hood 25x rubber cap">
+                                <td><strong>7</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>3.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x terra mantle</span><span>25x magma monocle</span><span>25x lightning headband</span><span>25x terra hood</span><span>25x rubber cap</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 8 initial 4.000.000 arcane kron cube 25x crown shield 25x blue robe 25x fire axe 25x wooden spellbook 25x zaoan armor">
+                                <td><strong>8</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>4.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x crown shield</span><span>25x blue robe</span><span>25x fire axe</span><span>25x wooden spellbook</span><span>25x Zaoan armor</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 9 initial 4.500.000 arcane kron cube 25x medusa shield 25x spellbook of warding 25x glorious axe 25x titan axe 25x mastermind shield">
+                                <td><strong>9</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>4.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x medusa shield</span><span>25x spellbook of warding</span><span>25x glorious axe</span><span>25x titan axe</span><span>25x mastermind shield</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 10 initial 5.000.000 arcane kron cube 25x angelic axe 25x lightning legs 25x zaoan armor 25x mooh'tah plate 25x spellbook of mind control">
+                                <td><strong>10</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>5.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x angelic axe</span><span>25x lightning legs</span><span>25x Zaoan armor</span><span>25x mooh'tah plate</span><span>25x spellbook of mind control</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 11 initial 5.500.000 arcane kron cube 25x haunted blade 25x crusader helmet 25x crown armor 25x tower shield 25x warrior helmet">
+                                <td><strong>11</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>5.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x haunted blade</span><span>25x crusader helmet</span><span>25x crown armor</span><span>25x tower shield</span><span>25x warrior helmet</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 12 initial 6.000.000 arcane kron cube 25x knight legs 25x terra mantle 25x crown shield 25x skull staff 25x muck rod">
+                                <td><strong>12</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>6.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x knight legs</span><span>25x terra mantle</span><span>25x crown shield</span><span>25x skull staff</span><span>25x muck rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 13 initial 6.500.000 arcane kron cube 25x magma legs 25x zaoan legs 25x wand of everblazing 25x wand of defiance 25x glacial rod">
+                                <td><strong>13</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>6.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x magma legs</span><span>25x Zaoan legs</span><span>25x wand of everblazing</span><span>25x wand of defiance</span><span>25x glacial rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 14 initial 7.000.000 arcane kron cube 25x fire axe 25x terra legs 25x butcher's axe 25x glacier kilt 25x lightning legs">
+                                <td><strong>14</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>7.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x fire axe</span><span>25x terra legs</span><span>25x butcher's axe</span><span>25x glacier kilt</span><span>25x lightning legs</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 15 initial 7.500.000 arcane kron cube 25x blue robe 25x terra mantle 25x glacier robe 25x magma coat 25x zaoan robe">
+                                <td><strong>15</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>7.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x blue robe</span><span>25x terra mantle</span><span>25x glacier robe</span><span>25x magma coat</span><span>25x Zaoan robe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 16 initial 8.000.000 arcane kron cube 25x calopteryx cape 25x crystalline armor 25x spellweaver's robe 25x lightning robe 25x zaoan robe">
+                                <td><strong>16</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>8.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x calopteryx cape</span><span>25x crystalline armor</span><span>25x spellweaver's robe</span><span>25x lightning robe</span><span>25x Zaoan robe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 17 initial 8.500.000 arcane kron cube 25x jade hat 25x epee 25x crystal mace 25x sapphire hammer 25x warrior's shield">
+                                <td><strong>17</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>8.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x jade hat</span><span>25x epee</span><span>25x crystal mace</span><span>25x sapphire hammer</span><span>25x warrior's shield</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 18 initial 9.000.000 arcane kron cube 25x chaos mace 25x hive scythe 25x war axe 25x warrior's axe 25x noble axe">
+                                <td><strong>18</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>9.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x chaos mace</span><span>25x hive scythe</span><span>25x war axe</span><span>25x warrior's axe</span><span>25x noble axe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 19 initial 9.500.000 arcane kron cube 25x haunted blade 25x zaoan sword 25x bonebreaker 25x drakinata 25x shadow sceptre">
+                                <td><strong>19</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>9.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x haunted blade</span><span>25x Zaoan sword</span><span>25x bonebreaker</span><span>25x drakinata</span><span>25x shadow sceptre</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 20 initial 10.000.000 arcane kron cube 25x crown legs 25x crown armor 25x zaoan armor 25x mercenary sword 25x jade hammer">
+                                <td><strong>20</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>10.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x crown legs</span><span>25x crown armor</span><span>25x Zaoan armor</span><span>25x mercenary sword</span><span>25x jade hammer</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 21 initial 10.500.000 arcane kron cube 25x traditional sai 25x ornate crossbow 25x golden armor 25x spellbook of mind control 25x dragon slayer">
+                                <td><strong>21</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>10.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x traditional sai</span><span>25x ornate crossbow</span><span>25x golden armor</span><span>25x spellbook of mind control</span><span>25x dragon slayer</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 22 initial 11.000.000 arcane kron cube 25x paladin armor 25x giant sword 25x dragon lance 25x dreaded cleaver 25x skullcracker armor">
+                                <td><strong>22</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>11.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x paladin armor</span><span>25x giant sword</span><span>25x dragon lance</span><span>25x dreaded cleaver</span><span>25x skullcracker armor</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 23 initial 11.500.000 arcane kron cube 25x assassin dagger 25x vampire shield 25x steel boots 25x relic sword 25x onyx flail">
+                                <td><strong>23</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>11.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x assassin dagger</span><span>25x vampire shield</span><span>25x steel boots</span><span>25x relic sword</span><span>25x onyx flail</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 24 initial 12.000.000 arcane kron cube 25x royal helmet 25x demon shield 25x mastermind shield 25x boots of haste 25x vile axe">
+                                <td><strong>24</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>12.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x royal helmet</span><span>25x demon shield</span><span>25x mastermind shield</span><span>25x boots of haste</span><span>25x vile axe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 25 initial 12.500.000 arcane kron cube 25x rift bow 25x rift lance 25x rift crossbow 25x crystal crossbow 25x crystalline sword">
+                                <td><strong>25</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>12.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x rift bow</span><span>25x rift lance</span><span>25x rift crossbow</span><span>25x crystal crossbow</span><span>25x crystalline sword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 26 initial 13.000.000 arcane kron cube 25x dragon scale mail 25x skull helmet 25x golden legs 25x heavy mace 25x abyss hammer">
+                                <td><strong>26</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>13.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x dragon scale mail</span><span>25x skull helmet</span><span>25x golden legs</span><span>25x heavy mace</span><span>25x abyss hammer</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 27 initial 13.500.000 arcane kron cube 25x magic plate armor 25x ruthless axe 25x hammer of wrath 25x nightmare blade 25x demonrage sword">
+                                <td><strong>27</strong></td>
+                                <td><span class="reliquary-tier initial">INITIAL</span></td>
+                                <td>13.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/arcane-kube.png" alt="" loading="lazy">Arcane Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>25x magic plate armor</span><span>25x ruthless axe</span><span>25x hammer of wrath</span><span>25x nightmare blade</span><span>25x demonrage sword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 28 intermediate 14.000.000 empowered kron cube 7x dragon hammer 7x devil helmet 7x crown helmet 7x strange helmet 7x dragon shield 1x throwing axe 1x lion rod 1x falcon wand">
+                                <td><strong>28</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>14.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x dragon hammer</span><span>7x devil helmet</span><span>7x crown helmet</span><span>7x strange helmet</span><span>7x dragon shield</span><span>1x throwing axe</span><span>1x lion rod</span><span>1x falcon wand</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 29 intermediate 14.500.000 empowered kron cube 7x mino shield 7x guardian shield 7x focus cape 7x knight axe 7x warrior helmet 1x falcon wand 1x eldritch wand 1x lion axe">
+                                <td><strong>29</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>14.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x mino shield</span><span>7x guardian shield</span><span>7x focus cape</span><span>7x knight axe</span><span>7x warrior helmet</span><span>1x falcon wand</span><span>1x eldritch wand</span><span>1x lion axe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 30 intermediate 15.000.000 empowered kron cube 7x elvish bow 7x beastslayer axe 7x dragonbone staff 7x fire sword 7x knight armor 1x eldritch bow 1x makeshift boots 1x cobra axe">
+                                <td><strong>30</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>15.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x elvish bow</span><span>7x beastslayer axe</span><span>7x dragonbone staff</span><span>7x fire sword</span><span>7x knight armor</span><span>1x eldritch bow</span><span>1x makeshift boots</span><span>1x cobra axe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 31 intermediate 15.500.000 empowered kron cube 7x glooth axe 7x glooth blade 7x glooth club 7x oriental shoes 7x skull staff 1x throwing axe 1x jungle flail 1x cobra sword">
+                                <td><strong>31</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>15.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x glooth axe</span><span>7x glooth blade</span><span>7x glooth club</span><span>7x oriental shoes</span><span>7x skull staff</span><span>1x throwing axe</span><span>1x jungle flail</span><span>1x cobra sword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 32 intermediate 16.000.000 empowered kron cube 7x glacier shoes 7x magma boots 7x spellbook of enlightenment 7x terra boots 7x lightning boots 1x jungle bow 1x exotic legs 1x lion wand">
+                                <td><strong>32</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>16.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x glacier shoes</span><span>7x magma boots</span><span>7x spellbook of enlightenment</span><span>7x terra boots</span><span>7x lightning boots</span><span>1x jungle bow</span><span>1x exotic legs</span><span>1x lion wand</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 33 intermediate 16.500.000 empowered kron cube 7x knight legs 7x tower shield 7x zaoan shoes 7x spiked squelcher 7x magma coat 1x cobra axe 1x falcon battleaxe 1x falcon rod">
+                                <td><strong>33</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>16.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x knight legs</span><span>7x tower shield</span><span>7x Zaoan shoes</span><span>7x spiked squelcher</span><span>7x magma coat</span><span>1x cobra axe</span><span>1x falcon battleaxe</span><span>1x falcon rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 34 intermediate 17.000.000 empowered kron cube 7x terra mantle 7x magma monocle 7x lightning headband 7x terra hood 7x rubber cap 1x falcon rod 1x eldritch folio 1x eldritch rod">
+                                <td><strong>34</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>17.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x terra mantle</span><span>7x magma monocle</span><span>7x lightning headband</span><span>7x terra hood</span><span>7x rubber cap</span><span>1x falcon rod</span><span>1x eldritch folio</span><span>1x eldritch rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 35 intermediate 17.500.000 empowered kron cube 7x crown shield 7x blue robe 7x fire axe 7x wooden spellbook 7x zaoan armor 1x eldritch greataxe 1x cobra sword 1x cobra crossbow">
+                                <td><strong>35</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>17.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x crown shield</span><span>7x blue robe</span><span>7x fire axe</span><span>7x wooden spellbook</span><span>7x Zaoan armor</span><span>1x eldritch greataxe</span><span>1x cobra sword</span><span>1x cobra crossbow</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 36 intermediate 18.000.000 empowered kron cube 7x medusa shield 7x spellbook of warding 7x glorious axe 7x titan axe 7x mastermind shield 1x eldritch claymore 1x eldritch shield 1x lion rod">
+                                <td><strong>36</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>18.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x medusa shield</span><span>7x spellbook of warding</span><span>7x glorious axe</span><span>7x titan axe</span><span>7x mastermind shield</span><span>1x eldritch claymore</span><span>1x eldritch shield</span><span>1x lion rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 37 intermediate 18.500.000 empowered kron cube 7x angelic axe 7x lightning legs 7x zaoan armor 7x mooh'tah plate 7x spellbook of mind control 1x midnight tunic 1x cobra club 1x falcon sai">
+                                <td><strong>37</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>18.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x angelic axe</span><span>7x lightning legs</span><span>7x Zaoan armor</span><span>7x mooh'tah plate</span><span>7x spellbook of mind control</span><span>1x midnight tunic</span><span>1x cobra club</span><span>1x falcon sai</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 38 intermediate 19.000.000 empowered kron cube 7x haunted blade 7x crusader helmet 7x crown armor 7x tower shield 7x warrior helmet 1x eldritch warmace 1x cobra boots 1x naga club">
+                                <td><strong>38</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>19.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x haunted blade</span><span>7x crusader helmet</span><span>7x crown armor</span><span>7x tower shield</span><span>7x warrior helmet</span><span>1x eldritch warmace</span><span>1x cobra boots</span><span>1x naga club</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 39 intermediate 19.500.000 empowered kron cube 7x knight legs 7x terra mantle 7x crown shield 7x skull staff 7x muck rod 1x naga wand 1x naga club 1x lion hammer">
+                                <td><strong>39</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>19.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x knight legs</span><span>7x terra mantle</span><span>7x crown shield</span><span>7x skull staff</span><span>7x muck rod</span><span>1x naga wand</span><span>1x naga club</span><span>1x lion hammer</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 40 intermediate 20.000.000 empowered kron cube 7x magma legs 7x zaoan legs 7x wand of everblazing 7x wand of defiance 7x glacial rod 1x lion spellbook 1x lion shield 1x cobra rod">
+                                <td><strong>40</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>20.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x magma legs</span><span>7x Zaoan legs</span><span>7x wand of everblazing</span><span>7x wand of defiance</span><span>7x glacial rod</span><span>1x lion spellbook</span><span>1x lion shield</span><span>1x cobra rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 41 intermediate 20.500.000 empowered kron cube 7x fire axe 7x terra legs 7x butcher's axe 7x glacier kilt 7x lightning legs 1x make-do boots 1x enchanted turtle amulet 1x lion longsword">
+                                <td><strong>41</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>20.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x fire axe</span><span>7x terra legs</span><span>7x butcher's axe</span><span>7x glacier kilt</span><span>7x lightning legs</span><span>1x make-do boots</span><span>1x enchanted turtle amulet</span><span>1x lion longsword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 42 intermediate 21.000.000 empowered kron cube 7x blue robe 7x terra mantle 7x glacier robe 7x magma coat 7x zaoan robe 1x cobra hood 1x throwing axe 1x midnight sarong">
+                                <td><strong>42</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>21.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x blue robe</span><span>7x terra mantle</span><span>7x glacier robe</span><span>7x magma coat</span><span>7x Zaoan robe</span><span>1x cobra hood</span><span>1x throwing axe</span><span>1x midnight sarong</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 43 intermediate 21.500.000 empowered kron cube 7x calopteryx cape 7x crystalline armor 7x spellweaver's robe 7x lightning robe 7x grasshopper legs 1x falcon escutcheon 1x naga quiver 1x eldritch claymore">
+                                <td><strong>43</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>21.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x calopteryx cape</span><span>7x crystalline armor</span><span>7x spellweaver's robe</span><span>7x lightning robe</span><span>7x grasshopper legs</span><span>1x falcon escutcheon</span><span>1x naga quiver</span><span>1x eldritch claymore</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 44 intermediate 22.000.000 empowered kron cube 7x jade hat 7x epee 7x crystal mace 7x sapphire hammer 7x warrior's shield 1x eldritch hood 1x eldritch tome 1x falcon longsword">
+                                <td><strong>44</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>22.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x jade hat</span><span>7x epee</span><span>7x crystal mace</span><span>7x sapphire hammer</span><span>7x warrior's shield</span><span>1x eldritch hood</span><span>1x eldritch tome</span><span>1x falcon longsword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 45 intermediate 22.500.000 empowered kron cube 7x chaos mace 7x hive scythe 7x war axe 7x warrior's axe 7x noble axe 1x eldritch folio 1x dawnfire sherwani 1x naga rod">
+                                <td><strong>45</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>22.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x chaos mace</span><span>7x hive scythe</span><span>7x war axe</span><span>7x warrior's axe</span><span>7x noble axe</span><span>1x eldritch folio</span><span>1x dawnfire sherwani</span><span>1x naga rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 46 intermediate 23.000.000 empowered kron cube 7x haunted blade 7x zaoan sword 7x bonebreaker 7x drakinata 7x shadow sceptre 1x eldritch folio 1x cobra bo 1x naga katar">
+                                <td><strong>46</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>23.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x haunted blade</span><span>7x Zaoan sword</span><span>7x bonebreaker</span><span>7x drakinata</span><span>7x shadow sceptre</span><span>1x eldritch folio</span><span>1x cobra bo</span><span>1x naga katar</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 47 intermediate 23.500.000 empowered kron cube 7x crown legs 7x crown armor 7x zaoan armor 7x mercenary sword 7x jade hammer 1x eldritch breeches 1x jungle wand 1x midnight tunic">
+                                <td><strong>47</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>23.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x crown legs</span><span>7x crown armor</span><span>7x Zaoan armor</span><span>7x mercenary sword</span><span>7x jade hammer</span><span>1x eldritch breeches</span><span>1x jungle wand</span><span>1x midnight tunic</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 48 intermediate 24.000.000 empowered kron cube 7x traditional sai 7x ornate crossbow 7x golden armor 7x spellbook of mind control 7x dragon slayer 1x dawnfire pantaloons 1x eldritch cowl 1x frostflower boots">
+                                <td><strong>48</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>24.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x traditional sai</span><span>7x ornate crossbow</span><span>7x golden armor</span><span>7x spellbook of mind control</span><span>7x dragon slayer</span><span>1x dawnfire pantaloons</span><span>1x eldritch cowl</span><span>1x frostflower boots</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 49 intermediate 24.500.000 empowered kron cube 7x paladin armor 7x giant sword 7x dragon lance 7x dreaded cleaver 7x skullcracker armor 1x falcon shield 1x mutated skin armor 1x falcon mace">
+                                <td><strong>49</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>24.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x paladin armor</span><span>7x giant sword</span><span>7x dragon lance</span><span>7x dreaded cleaver</span><span>7x skullcracker armor</span><span>1x falcon shield</span><span>1x mutated skin armor</span><span>1x falcon mace</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 50 intermediate 25.000.000 empowered kron cube 7x assassin dagger 7x vampire shield 7x steel boots 7x relic sword 7x onyx flail 1x cobra bo 1x naga sword 1x falcon mace">
+                                <td><strong>50</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>25.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x assassin dagger</span><span>7x vampire shield</span><span>7x steel boots</span><span>7x relic sword</span><span>7x onyx flail</span><span>1x cobra bo</span><span>1x naga sword</span><span>1x falcon mace</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 51 intermediate 25.500.000 empowered kron cube 7x royal helmet 7x demon shield 7x mastermind shield 7x boots of haste 7x vile axe 1x cobra crossbow 1x alchemist's boots 1x falcon mace">
+                                <td><strong>51</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>25.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x royal helmet</span><span>7x demon shield</span><span>7x mastermind shield</span><span>7x boots of haste</span><span>7x vile axe</span><span>1x cobra crossbow</span><span>1x alchemist's boots</span><span>1x falcon mace</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 52 intermediate 26.000.000 empowered kron cube 7x rift bow 7x rift lance 7x rift crossbow 7x crystal crossbow 7x crystalline sword 1x throwing axe 1x naga axe 1x lion axe">
+                                <td><strong>52</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>26.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x rift bow</span><span>7x rift lance</span><span>7x rift crossbow</span><span>7x crystal crossbow</span><span>7x crystalline sword</span><span>1x throwing axe</span><span>1x naga axe</span><span>1x lion axe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 53 intermediate 26.500.000 empowered kron cube 7x dragon scale mail 7x skull helmet 7x golden legs 7x heavy mace 7x abyss hammer 1x cobra club 1x eldritch quiver 1x cobra wand">
+                                <td><strong>53</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>26.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x dragon scale mail</span><span>7x skull helmet</span><span>7x golden legs</span><span>7x heavy mace</span><span>7x abyss hammer</span><span>1x cobra club</span><span>1x eldritch quiver</span><span>1x cobra wand</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 54 intermediate 27.000.000 empowered kron cube 7x magic plate armor 7x ruthless axe 7x hammer of wrath 7x nightmare blade 7x demonrage sword 1x cobra club 1x throwing axe 1x midnight sarong">
+                                <td><strong>54</strong></td>
+                                <td><span class="reliquary-tier intermediate">INTERMEDIATE</span></td>
+                                <td>27.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/ascended-kube.png" alt="" loading="lazy">Empowered Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>7x magic plate armor</span><span>7x ruthless axe</span><span>7x hammer of wrath</span><span>7x nightmare blade</span><span>7x demonrage sword</span><span>1x cobra club</span><span>1x throwing axe</span><span>1x midnight sarong</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 55 advanced 27.500.000 ascended kron cube 1x eldritch breeches 1x falcon battleaxe 1x feverbloom boots">
+                                <td><strong>55</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>27.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x eldritch breeches</span><span>1x falcon battleaxe</span><span>1x feverbloom boots</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 56 advanced 28.000.000 ascended kron cube 1x lion amulet 1x falcon wand 1x naga sword">
+                                <td><strong>56</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>28.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x lion amulet</span><span>1x falcon wand</span><span>1x naga sword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 57 advanced 28.500.000 ascended kron cube 1x falcon bow 1x dawnfire sherwani 1x naga rod">
+                                <td><strong>57</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>28.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x falcon bow</span><span>1x dawnfire sherwani</span><span>1x naga rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 58 advanced 29.000.000 ascended kron cube 1x falcon escutcheon 1x lion axe 1x lion plate">
+                                <td><strong>58</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>29.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x falcon escutcheon</span><span>1x lion axe</span><span>1x lion plate</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 59 advanced 29.500.000 ascended kron cube 1x falcon sai 1x cobra club 1x midnight tunic">
+                                <td><strong>59</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>29.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x falcon sai</span><span>1x cobra club</span><span>1x midnight tunic</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 60 advanced 30.000.000 ascended kron cube 1x eldritch shield 1x eldritch claymore 1x cobra axe">
+                                <td><strong>60</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>30.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x eldritch shield</span><span>1x eldritch claymore</span><span>1x cobra axe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 61 advanced 30.500.000 ascended kron cube 1x eldritch folio 1x eldritch rod 1x falcon rod">
+                                <td><strong>61</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>30.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x eldritch folio</span><span>1x eldritch rod</span><span>1x falcon rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 62 advanced 31.000.000 ascended kron cube 1x exotic amulet 1x falcon wand 1x eldritch wand">
+                                <td><strong>62</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>31.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x exotic amulet</span><span>1x falcon wand</span><span>1x eldritch wand</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 63 advanced 31.500.000 ascended kron cube 1x lion spellbook 1x lion longsword 1x cobra rod">
+                                <td><strong>63</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>31.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x lion spellbook</span><span>1x lion longsword</span><span>1x cobra rod</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 64 advanced 32.000.000 ascended kron cube 1x alchemist's notepad 1x lion rod 1x bast legs">
+                                <td><strong>64</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>32.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x alchemist's notepad</span><span>1x lion rod</span><span>1x bast legs</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 65 advanced 32.500.000 ascended kron cube 1x dawnfire pantaloons 1x frostflower boots 1x eldritch cowl">
+                                <td><strong>65</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>32.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x dawnfire pantaloons</span><span>1x frostflower boots</span><span>1x eldritch cowl</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 66 advanced 33.000.000 ascended kron cube 1x lion longbow 1x alchemist's boots 1x falcon mace">
+                                <td><strong>66</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>33.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x lion longbow</span><span>1x alchemist's boots</span><span>1x falcon mace</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 67 advanced 33.500.000 ascended kron cube 1x enchanted turtle amulet 1x lion longsword 1x make-do boots">
+                                <td><strong>67</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>33.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x enchanted turtle amulet</span><span>1x lion longsword</span><span>1x make-do boots</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 68 advanced 34.000.000 ascended kron cube 1x eldritch bow 1x falcon coif 1x makeshift boots">
+                                <td><strong>68</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>34.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x eldritch bow</span><span>1x falcon coif</span><span>1x makeshift boots</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 69 advanced 34.500.000 ascended kron cube 1x eldritch tome 1x eldritch hood 1x falcon longsword">
+                                <td><strong>69</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>34.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x eldritch tome</span><span>1x eldritch hood</span><span>1x falcon longsword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 70 advanced 35.000.000 ascended kron cube 1x cobra crossbow 1x cobra sword 1x eldritch greataxe">
+                                <td><strong>70</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>35.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x cobra crossbow</span><span>1x cobra sword</span><span>1x eldritch greataxe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 71 advanced 35.500.000 ascended kron cube 1x lion hammer 1x naga club 1x naga wand">
+                                <td><strong>71</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>35.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x lion hammer</span><span>1x naga club</span><span>1x naga wand</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 72 advanced 36.000.000 ascended kron cube 1x falcon shield 1x cobra club 1x mutated skin armor">
+                                <td><strong>72</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>36.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x falcon shield</span><span>1x cobra club</span><span>1x mutated skin armor</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 73 advanced 36.500.000 ascended kron cube 1x falcon greaves 1x falcon battleaxe 1x cobra axe">
+                                <td><strong>73</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>36.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x falcon greaves</span><span>1x falcon battleaxe</span><span>1x cobra axe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 74 advanced 37.000.000 ascended kron cube 1x cobra amulet 1x cobra bo 1x naga sword">
+                                <td><strong>74</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>37.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x cobra amulet</span><span>1x cobra bo</span><span>1x naga sword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 75 advanced 37.500.000 ascended kron cube 1x cobra hood 1x falcon plate 1x midnight sarong">
+                                <td><strong>75</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>37.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x cobra hood</span><span>1x falcon plate</span><span>1x midnight sarong</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 76 advanced 38.000.000 ascended kron cube 1x eldritch warmace 1x cobra boots 1x eldritch crescent moon spade">
+                                <td><strong>76</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>38.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x eldritch warmace</span><span>1x cobra boots</span><span>1x eldritch crescent moon spade</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 77 advanced 38.500.000 ascended kron cube 1x lion spangenhelm 1x falcon circlet 1x naga katar">
+                                <td><strong>77</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>38.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x lion spangenhelm</span><span>1x falcon circlet</span><span>1x naga katar</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 78 advanced 39.000.000 ascended kron cube 1x jungle bow 1x exotic legs 1x lion wand">
+                                <td><strong>78</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>39.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x jungle bow</span><span>1x exotic legs</span><span>1x lion wand</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 79 advanced 39.500.000 ascended kron cube 1x eldritch quiver 1x cobra wand 1x lion longsword">
+                                <td><strong>79</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>39.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x eldritch quiver</span><span>1x cobra wand</span><span>1x lion longsword</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 80 advanced 40.000.000 ascended kron cube 1x bambus jo 1x naga axe 1x lion axe">
+                                <td><strong>80</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>40.000.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x bambus jo</span><span>1x naga axe</span><span>1x lion axe</span></span></td>
+                            </tr>
+                            <tr data-filter-row data-filter-text="level 81 advanced 40.500.000 ascended kron cube 1x gilded eldritch claymore 1x gilded eldritch wand 1x gilded eldritch rod">
+                                <td><strong>81</strong></td>
+                                <td><span class="reliquary-tier advanced">ADVANCED</span></td>
+                                <td>40.500.000</td>
+                                <td><span class="reliquary-cube"><img src="assets/media/reliquary/empowered-kube.png" alt="" loading="lazy">Ascended Kron Cube</span></td>
+                                <td><span class="reliquary-items"><span>1x gilded eldritch claymore</span><span>1x gilded eldritch wand</span><span>1x gilded eldritch rod</span></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+        </article>
+            </main>
+    </div>
+    <footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/GQFKAyydbd" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
+<script src="assets/js/wiki.js?v=reliquary-20260604"></script>
+</body>
+</html>

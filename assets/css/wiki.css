@@ -1851,6 +1851,61 @@ code {
     padding: 9px 11px;
 }
 
+.reliquary-cube,
+.reliquary-items {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.reliquary-cube {
+    flex-wrap: nowrap;
+    color: var(--text);
+    font-weight: 800;
+}
+
+.reliquary-cube img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.reliquary-tier,
+.reliquary-items span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 26px;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.reliquary-tier {
+    border: 1px solid rgba(53, 215, 255, .24);
+    background: rgba(53, 215, 255, .08);
+    color: var(--gold-2);
+}
+
+.reliquary-tier.intermediate {
+    border-color: rgba(72, 199, 122, .28);
+    background: rgba(72, 199, 122, .09);
+    color: var(--green);
+}
+
+.reliquary-tier.advanced {
+    border-color: rgba(191, 91, 58, .35);
+    background: rgba(191, 91, 58, .1);
+    color: #ffb08e;
+}
+
+.reliquary-items span {
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, .035);
+    color: var(--muted);
+}
+
 .upgrade-effect-table {
     margin-top: 4px;
 }
