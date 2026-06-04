@@ -46,6 +46,9 @@ UI.defaults = {
         intervalMs = 500,
         candidates = { "Jefimsz" },
     },
+    fungo = {
+        enabled = false,
+    },
 }
 
 UI.colors = {
@@ -67,6 +70,7 @@ UI.tabs = {
     { key = "follow", label = "Follow", icon = 3079 },
     { key = "reset", label = "Reset FPS", icon = 63135 },
     { key = "craft", label = "Craft", icon = 63257 },
+    { key = "fungo", label = "Pisar no Fungo", icon = 39176 },
     { key = "party", label = "Party", icon = 63680 },
 }
 
@@ -123,18 +127,21 @@ UI.layout = {
     headerTextX = 138,
     headerTitleY = 30,
     headerSubY = 52,
+    headerHintX = 330,
+    headerHintY = 34,
+    headerHint2Y = 52,
     logoScale = 1.42,
     minimizedLogoScale = 1.34,
 
     tabX = 54,
     tabGlowX = 54,
     tabTextX = 96,
-    tabBadgeX = 176,
+    tabBadgeX = 202,
     tabY = 118,
     tabStep = 36,
 
-    menuRightX = 224,
-    contentX = 262,
+    menuRightX = 256,
+    contentX = 294,
     contentY = 126,
     contentLineStep = 16,
 
@@ -177,6 +184,9 @@ local function copyDefaults()
             intervalMs = UI.defaults.autoParty.intervalMs,
             candidates = shallowCopy(UI.defaults.autoParty.candidates),
         },
+        fungo = {
+            enabled = UI.defaults.fungo.enabled,
+        },
     }
 end
 
@@ -197,6 +207,12 @@ local function mergeConfig(base, loaded)
 
     if type(base.autoParty.candidates) ~= "table" then
         base.autoParty.candidates = shallowCopy(UI.defaults.autoParty.candidates)
+    end
+
+    if type(loaded.fungo) == "table" then
+        for key, value in pairs(loaded.fungo) do
+            base.fungo[key] = value
+        end
     end
 
     return base
@@ -666,6 +682,12 @@ function UI.buildLegacyModules()
         config = findFirstCallback(followGroup),
     }
 
+    modules.fungo = {
+        key = "fungo",
+        label = "Pisar no Fungo",
+        iconId = 39176,
+    }
+
     modules.party = {
         key = "party",
         label = "Auto Party",
@@ -779,6 +801,10 @@ end
 function UI.moduleStatusText(key)
     if key == "party" then
         return UI.config and UI.config.autoParty and UI.config.autoParty.enabled and "[ON]" or "[OFF]"
+    end
+    if key == "fungo" then
+        local fungo = UI.fungoConfig and UI.fungoConfig() or nil
+        return fungo and fungo.enabled and "[ON]" or "[OFF]"
     end
 
     local module = UI.modules and UI.modules[key] or nil
@@ -936,11 +962,10 @@ function UI.createItemFallbackSkin(x, y)
 
     -- Separadores internos: header, menu lateral e painel de conteudo.
     createHorizontalEdge(skin.header, 16, 76, layout.width - 32, assets.edgeBottom, 0.58, 790)
-    createVerticalEdge(skin.edges, layout.menuRightX, 96, 320, assets.edgeLeft, 0.62, 792)
+    createVerticalEdge(skin.edges, layout.menuRightX, 96, 352, assets.edgeLeft, 0.62, 792)
 
     -- O topo e a lateral esquerda do painel direito ja sao definidos pela moldura principal.
-    createHorizontalEdge(skin.content, 240, 384, 384, assets.edgeBottom, 0.46, 786)
-    createVerticalEdge(skin.content, 592, 96, 320, assets.edgeRight, 0.46, 786)
+    createVerticalEdge(skin.content, 592, 96, 352, assets.edgeRight, 0.46, 786)
 
     -- Apenas a aba ativa exibe o glow 63157 atras do icone.
     for index, _ in ipairs(UI.tabs) do
@@ -1311,6 +1336,16 @@ function UI.createHubHud()
     end)
     if elements.sub.setFontSize then elements.sub:setFontSize(8) end
 
+    elements.hint = UI.createText(x + layout.headerHintX, y + layout.headerHintY, "Clique no Icone do Mago para Minimizar", UI.colors.muted, function()
+        UI.toggleExpanded()
+    end)
+    if elements.hint.setFontSize then elements.hint:setFontSize(7) end
+
+    elements.hint2 = UI.createText(x + layout.headerHintX, y + layout.headerHint2Y, "e arraste pra qualquer canto da tela", UI.colors.muted, function()
+        UI.toggleExpanded()
+    end)
+    if elements.hint2.setFontSize then elements.hint2:setFontSize(7) end
+
     -- Sem botao [_] desenhado na tela. Clicar no icone/titulo minimiza.
     elements.minimize = nil
 
@@ -1366,6 +1401,8 @@ function UI.destroyHubHud()
     destroy(elements.launcher)
     destroy(elements.brand)
     destroy(elements.sub)
+    destroy(elements.hint)
+    destroy(elements.hint2)
     destroy(elements.minimize)
     destroy(elements.contentTitle)
     destroy(elements.contentIcon)
@@ -1605,6 +1642,17 @@ function UI.linesParty(lines)
     UI.addLine(lines, ".party clear / list / on / off", UI.colors.muted)
 end
 
+function UI.linesFungo(lines)
+    local fungo = UI.fungoConfig()
+    local active = fungo.enabled == true
+    local toggle = function() UI.toggleFungoStepper() end
+
+    UI.addLine(lines, active and "Pisar no Fungo: ON" or "Pisar no Fungo: OFF", active and UI.colors.active or UI.colors.inactive, toggle)
+    UI.addLine(lines, "Ative para que ele pise nos fungos da Gnoprona.", UI.colors.neutral)
+    UI.addLine(lines, UI.fungoLastStatus or "Aguardando ativacao.", UI.colors.muted)
+    UI.addLine(lines, active and "[Desativar]" or "[Ativar]", UI.colors.warning, toggle)
+end
+
 function UI.currentLines()
     local tab = UI.currentTabDef()
     local lines = {}
@@ -1615,6 +1663,7 @@ function UI.currentLines()
     elseif tab.key == "follow" then UI.linesFollow(lines)
     elseif tab.key == "reset" then UI.linesReset(lines)
     elseif tab.key == "craft" then UI.linesCraft(lines)
+    elseif tab.key == "fungo" then UI.linesFungo(lines)
     elseif tab.key == "party" then UI.linesParty(lines)
     end
     return lines
@@ -1637,6 +1686,7 @@ function UI.statusStrip()
     add("rune", "Rune", UI.modules.rune and UI.modules.rune.status)
     add("arrow", "Arrow", UI.modules.arrow and UI.modules.arrow.status)
     add("reset", "Reset", UI.modules.reset and UI.modules.reset.status)
+    table.insert(parts, (UI.fungoConfig().enabled and "Fungo ON" or "Fungo OFF"))
     table.insert(parts, (UI.config.autoParty.enabled and "Party ON" or "Party OFF"))
     return table.concat(parts, " | ")
 end
@@ -1659,6 +1709,7 @@ function UI.panelTitle(tab)
     if tab.key == "follow" then return "Follow Module" end
     if tab.key == "reset" then return "Reset FPS Module" end
     if tab.key == "craft" then return "Craft Module" end
+    if tab.key == "fungo" then return "Pisar no Fungo" end
     return tostring(tab.label or "Modulo") .. " Module"
 end
 
@@ -1677,12 +1728,18 @@ function UI.updateHeader(e, x, y, expanded, tab)
 
     setHudPos(e.brand, expanded and (x + layout.headerTextX) or (x + layout.headerIconX + 38), expanded and (y + layout.headerTitleY) or (y + layout.headerIconY - 8))
     setHudPos(e.sub, expanded and (x + layout.headerTextX) or (x + layout.headerIconX + 38), expanded and (y + layout.headerSubY) or (y + layout.headerIconY + 10))
+    setHudPos(e.hint, x + layout.headerHintX, y + layout.headerHintY)
+    setHudPos(e.hint2, x + layout.headerHintX, y + layout.headerHint2Y)
     setHudVisible(e.brand, true)
     setHudVisible(e.sub, true)
+    setHudVisible(e.hint, expanded)
+    setHudVisible(e.hint2, expanded)
     setHudVisible(e.minimize, false)
 
     setHudText(e.brand, UI.scriptDisplayName)
     setHudText(e.sub, expanded and ("Avalorium Hub | " .. tab.label) or "Clique para abrir")
+    setHudText(e.hint, "Clique no Icone do Mago para Minimizar")
+    setHudText(e.hint2, "e arraste pra qualquer canto da tela")
 end
 
 function UI.updateStatusBadges(tabEntry)
@@ -1948,11 +2005,130 @@ function UI.runAutoParty()
     end
 end
 
+UI.fungoItemIds = { 39176, 39533 }
+UI.fungoRange = 8
+UI.fungoLastStatus = UI.fungoLastStatus or "Aguardando ativacao."
+
+function UI.fungoConfig()
+    UI.config = UI.config or copyDefaults()
+    UI.config.fungo = UI.config.fungo or {
+        enabled = UI.defaults.fungo.enabled,
+    }
+    return UI.config.fungo
+end
+
+function UI.setFungoStepperEnabled(enabled)
+    local fungo = UI.fungoConfig()
+    fungo.enabled = enabled == true
+    UI.fungoLastStatus = fungo.enabled and "Procurando fungos." or "Pausado."
+    UI.saveConfig()
+    UI.render()
+end
+
+function UI.toggleFungoStepper()
+    local fungo = UI.fungoConfig()
+    UI.setFungoStepperEnabled(not fungo.enabled)
+end
+
+function UI.fungoDistance(pos1, pos2)
+    return math.abs(pos1.x - pos2.x) + math.abs(pos1.y - pos2.y)
+end
+
+function UI.isFungoItemId(itemId)
+    for _, id in ipairs(UI.fungoItemIds or {}) do
+        if tonumber(itemId) == id then
+            return true
+        end
+    end
+    return false
+end
+
+function UI.hasFungoOnGround(posX, posY, posZ)
+    if not Map or not Map.getThings then return false end
+
+    local items = Map.getThings(posX, posY, posZ)
+    if not items then return false end
+
+    for _, item in ipairs(items) do
+        if item and UI.isFungoItemId(item.id) then
+            return true
+        end
+    end
+
+    return false
+end
+
+function UI.findNearestFungo()
+    if not Map or not Map.getCameraPosition then return nil end
+
+    local playerPos = Map.getCameraPosition()
+    if not playerPos or not playerPos.x or not playerPos.y or not playerPos.z then
+        return nil
+    end
+
+    local found = {}
+    local range = tonumber(UI.fungoRange) or 5
+
+    for dx = -range, range do
+        for dy = -range, range do
+            local pos = {
+                x = playerPos.x + dx,
+                y = playerPos.y + dy,
+                z = playerPos.z,
+            }
+
+            if UI.hasFungoOnGround(pos.x, pos.y, pos.z) then
+                table.insert(found, {
+                    position = pos,
+                    distance = UI.fungoDistance(playerPos, pos),
+                })
+            end
+        end
+    end
+
+    if #found == 0 then return nil end
+
+    table.sort(found, function(a, b)
+        return a.distance < b.distance
+    end)
+
+    return found[1].position
+end
+
+function UI.runFungoStepper()
+    local fungo = UI.fungoConfig()
+    if not fungo.enabled then return end
+    if Client and Client.isConnected and not Client.isConnected() then return end
+    if not Map or not Map.goTo then
+        UI.fungoLastStatus = "Map.goTo indisponivel."
+        return
+    end
+
+    local target = UI.findNearestFungo()
+    if not target then
+        UI.fungoLastStatus = "Nenhum fungo no alcance."
+        return
+    end
+
+    Map.goTo(target.x, target.y, target.z)
+    UI.fungoLastStatus = "Indo ate o fungo mais perto."
+end
+
+function UI.installFungoStepper()
+    if UI.fungoStepperInstalled then return end
+    UI.fungoStepperInstalled = true
+
+    Timer("fabioUiFungoStepper", function()
+        UI.safe("pisar no fungo", UI.runFungoStepper)
+    end, 100)
+end
+
 function UI.build()
     UI.loadConfig()
     UI.buildLegacyModules()
     UI.createHubHud()
     UI.installAutoParty()
+    UI.installFungoStepper()
 
     Timer("fabioUiHubRender", function()
         UI.render()
