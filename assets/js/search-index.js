@@ -148,7 +148,7 @@ window.AVALORIUM_SEARCH_INDEX =
         "title":  "Fábio Rockeiro Scripts",
         "description":  "Script Lua carregável no ZeroBot com Task Book, Rune Refil, Arrow Refil, Auto Forja, Follow, Auto Party e RESET FPS.",
         "category":  "Scripts Zerobot",
-        "keywords":  "zerobot script lua fabio rockeiro task book rune refil arrow refil auto forja follow auto party paladin dust slivers exalted core reset fps x-log reconectar ctrl+l voc utamo vita energy ring utamo tempo documentos scripts carregar recarregar FabioRockeiroBOT",
+        "keywords":  "zerobot script lua fabio rockeiro task book rune refil arrow refil auto forja follow auto party paladin dust slivers exalted core reset fps x-log reconectar ctrl+l voc utamo vita energy ring utamo tempo documentos scripts carregar recarregar FabioRockeiroBot FabioRockeiroBOT",
         "url":  "fabio-rockeiro-scripts.html",
         "image":  "assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png"
     }
