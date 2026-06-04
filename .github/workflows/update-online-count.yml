@@ -1,0 +1,42 @@
+name: Update online player count
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-online-count
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch online count
+        run: node scripts/update-online-count.mjs
+
+      - name: Commit updated count
+        run: |
+          if git diff --quiet -- assets/data/online-count.json; then
+            echo "Online count unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/online-count.json
+          git commit -m "Update online player count"
+          git push

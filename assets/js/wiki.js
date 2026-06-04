@@ -20,6 +20,114 @@
         button.addEventListener('click', () => setDrawer(false));
     });
 
+    const onlineCountCacheKey = 'avalorium-online-count';
+    const onlineCountCacheTtl = 60 * 1000;
+
+    function getOnlineCountTargets() {
+        return Array.from(document.querySelectorAll('.server-pill[title="Players online"]'));
+    }
+
+    function setOnlineCountStatus(status) {
+        getOnlineCountTargets().forEach((pill) => {
+            pill.dataset.onlineStatus = status;
+        });
+    }
+
+    function updateOnlineCountDisplay(count, cached = false) {
+        getOnlineCountTargets().forEach((pill) => {
+            const countElement = pill.querySelector('strong');
+            if (!countElement) return;
+
+            countElement.textContent = String(count);
+            pill.dataset.onlineStatus = cached ? 'cached' : 'live';
+            pill.title = `${count} players online${cached ? ' (cache)' : ''}`;
+        });
+    }
+
+    function readCachedOnlineCount() {
+        try {
+            const cached = JSON.parse(localStorage.getItem(onlineCountCacheKey) || 'null');
+            if (!cached || !Number.isFinite(cached.count) || !Number.isFinite(cached.time)) return null;
+            if (Date.now() - cached.time > onlineCountCacheTtl) return null;
+            return cached.count;
+        } catch (error) {
+            return null;
+        }
+    }
+
+    function writeCachedOnlineCount(count) {
+        try {
+            localStorage.setItem(onlineCountCacheKey, JSON.stringify({
+                count,
+                time: Date.now(),
+            }));
+        } catch (error) {
+            // Local storage may be disabled; live updates still work.
+        }
+    }
+
+    function parseOnlineCountFromHtml(html) {
+        const match = html.match(/Players\s+Online:\s*(\d+)\s+Players\s+Online/i)
+            || html.match(/(\d+)\s+Players\s+Online/i);
+        if (!match) return null;
+
+        const count = Number(match[1]);
+        return Number.isFinite(count) ? count : null;
+    }
+
+    async function fetchOnlineCount() {
+        const localEndpoint = 'assets/data/online-count.json';
+        const localEndpointVersion = Math.floor(Date.now() / onlineCountCacheTtl);
+        const directEndpoint = 'https://avaloriumot.com/index.php/online';
+
+        try {
+            const response = await fetch(`${localEndpoint}?v=${localEndpointVersion}`, { cache: 'no-store' });
+            if (response.ok) {
+                const data = await response.json();
+                if (Number.isFinite(data.online)) return data.online;
+            }
+        } catch (error) {
+            // Try the public page below when the generated JSON is unavailable.
+        }
+
+        const response = await fetch(directEndpoint, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`Online page returned ${response.status}`);
+
+        const html = await response.text();
+        const count = parseOnlineCountFromHtml(html);
+        if (count === null) throw new Error('Online count not found');
+
+        return count;
+    }
+
+    async function refreshOnlineCount() {
+        const targets = getOnlineCountTargets();
+        if (!targets.length) return;
+
+        const cachedCount = readCachedOnlineCount();
+        if (cachedCount !== null) {
+            updateOnlineCountDisplay(cachedCount, true);
+        } else {
+            targets.forEach((pill) => {
+                const countElement = pill.querySelector('strong');
+                if (countElement) {
+                    countElement.textContent = '--';
+                }
+            });
+            setOnlineCountStatus('loading');
+        }
+
+        try {
+            const count = await fetchOnlineCount();
+            updateOnlineCountDisplay(count);
+            writeCachedOnlineCount(count);
+        } catch (error) {
+            setOnlineCountStatus(cachedCount !== null ? 'cached' : 'offline');
+        }
+    }
+
+    refreshOnlineCount();
+
     const scriptsZeroBotPages = new Set([
         'category-scripts-zerobot.html',
         'fabio-rockeiro-scripts.html',
