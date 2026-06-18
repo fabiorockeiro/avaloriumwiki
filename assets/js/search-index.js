@@ -33,6 +33,14 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/items-wiki/Consumables/more points wheel.gif"
     },
     {
+        "title":  "Roulette System",
+        "description":  "Roleta, Slot Machines, Roulette Token e recompensas da Season 1.",
+        "category":  "Sistemas do Servidor",
+        "keywords":  "roulette system roleta roulette machine slot machines season 1 roulette token safezone roleta classica spin turbo recompensas chance",
+        "url":  "roulette-system.html",
+        "image":  "assets/media/roulette-system/63110-roulette-token.gif"
+    },
+    {
         "title":  "Reliquary System",
         "description":  "Progressao com 81 niveis, itens, gold e Kron Cubes por faixa.",
         "category":  "Sistemas do Servidor",
@@ -90,9 +98,9 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "Animus Mastery \u0026 SoulPit",
-        "description":  "Progressão baseada em criaturas, Soul Core, SoulPit e bônus de experiência.",
+        "description":  "Animus, Anonymous Mastery, Soul Cores e bônus de experiência.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "animus mastery soulpit soul core prism fiendish experiencia exiva moe res radar portable",
+        "keywords":  "animus mastery anonymous custom soul core soulpit soul pit prism fiendish experiencia exp customizadas obelisco void netherbound fallen usurpers true asuras sanctum firen firzen frezee exiva moe res radar portable",
         "url":  "animus-mastery-soulpit.html",
         "image":  "assets/media/menu/animus-mastery-soulpit.gif"
     },

@@ -186,6 +186,7 @@
                 { url: 'divergence-system.html', title: 'Divergence System', description: 'Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.', image: 'assets/media/menu/divergence-system.gif' },
                 { url: 'dark-totem-daily.html', title: 'Dark Totem Daily', description: 'Evento diário com boss, cidades possíveis e recompensas.', image: 'assets/media/menu/dark-totem-daily.gif' },
                 { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Consumables/more points wheel.gif' },
+                { url: 'roulette-system.html', title: 'Roulette System', description: 'Roleta, Slot Machines, Roulette Token e recompensas da Season 1.', image: 'assets/media/roulette-system/63110-roulette-token.gif' },
                 { url: 'reliquary-system.html', title: 'Reliquary System', description: 'Progressão em 81 níveis com itens, gold e Kron Cubes por faixa.', image: 'assets/media/reliquary/arcane-kube.png' },
                 { url: 'stones-guia-completo.html', title: 'Stones - Guia Completo', description: 'Raridade, slots, upgrade, elementos e tabelas de referência de stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
                 { url: 'rune-system.html', title: 'Rune System', description: 'Enhanced Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
@@ -193,7 +194,7 @@
                 { url: 'sistema-de-craft.html', title: 'Sistema de Craft', description: 'Receitas, custos e materiais para itens especiais, utilitários e upgrades.', image: 'assets/media/menu/sistema-de-craft.gif' },
                 { url: 'character-upgrades.html', title: 'UPGRADE POTIONS', description: 'Potions permanentes para cura, reflect e poderes especiais do personagem.', image: 'assets/media/menu/character-upgrades.gif' },
                 { url: 'upgrade-stones.html', title: 'Upgrade Stones', description: 'Chances, limites e efeitos das stones usadas para evoluir equipamentos.', image: 'assets/media/items-wiki/Craft/upgrade stone lvl 1.gif' },
-                { url: 'animus-mastery-soulpit.html', title: 'Animus Mastery &amp; SoulPit', description: 'Progressão baseada em criaturas, Soul Core, SoulPit e bônus de experiência.', image: 'assets/media/menu/animus-mastery-soulpit.gif' },
+                { url: 'animus-mastery-soulpit.html', title: 'Animus Mastery &amp; SoulPit', description: 'Animus, Anonymous Mastery, Soul Cores e bônus de experiência.', image: 'assets/media/menu/animus-mastery-soulpit.gif' },
             ],
         },
         {
