@@ -17,3 +17,11 @@ Depois do deploy, a wiki ficara em uma URL parecida com:
 ## Desenvolvimento
 
 Este projeto e estatico. Abra `index.html` ou use um servidor local simples para testar as buscas e links.
+
+## Identidade visual
+
+A interface usa o sistema **Avalorium Codex**, uma direcao editorial de fantasia com geometria chanfrada, navegacao tecnica e componentes responsivos. As regras estao documentadas em `docs/DESIGN-SYSTEM.md`.
+
+Para validar paginas, referencias locais e a integridade do CSS:
+
+`node scripts/validate-wiki.mjs`

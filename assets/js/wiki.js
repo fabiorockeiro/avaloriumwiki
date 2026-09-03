@@ -1,4 +1,26 @@
 (function () {
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    document.body.classList.add(currentPath === 'index.html' ? 'page-home' : 'page-inner');
+    if (currentPath.startsWith('category-') || currentPath === 'hunts-custom.html') {
+        document.body.classList.add('page-category');
+    }
+    if (currentPath === 'search.html') document.body.classList.add('page-search');
+
+    const readingProgress = document.createElement('div');
+    readingProgress.className = 'reading-progress';
+    readingProgress.setAttribute('aria-hidden', 'true');
+    document.body.prepend(readingProgress);
+
+    function updateReadingProgress() {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollable > 0 ? Math.min(1, window.scrollY / scrollable) : 0;
+        readingProgress.style.setProperty('--reading-progress', String(progress));
+    }
+
+    window.addEventListener('scroll', updateReadingProgress, { passive: true });
+    window.addEventListener('resize', updateReadingProgress);
+    updateReadingProgress();
+
     const drawer = document.querySelector('[data-drawer]');
     const backdrop = document.querySelector('[data-drawer-close].drawer-backdrop');
     const openButtons = document.querySelectorAll('[data-drawer-open]');
@@ -174,7 +196,7 @@
                 {
                     url: 'noticias-e-promocoes.html',
                     title: 'Noticias, Promocoes e Pacotes Especiais',
-                    description: 'Pacotes ativos e afiliados do Avalorium.',
+                    description: 'Novidades e futuras promoções oficiais do Avalorium.',
                     image: 'assets/media/menu/noticias-e-promocoes.gif',
                 },
             ],
@@ -184,13 +206,13 @@
             icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg>',
             items: [
                 { url: 'divergence-system.html', title: 'Divergence System', description: 'Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.', image: 'assets/media/menu/divergence-system.gif' },
-                { url: 'dark-totem-daily.html', title: 'Dark Totem Daily', description: 'Evento diário com boss, cidades possíveis e recompensas.', image: 'assets/media/menu/dark-totem-daily.gif' },
+                { url: 'dark-totem-daily.html', title: 'Dark Totem Daily', description: 'Boss diário das 20h com spawn fixo e recompensas por desempenho.', image: 'assets/media/menu/dark-totem-daily.gif' },
                 { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Consumables/more points wheel.gif' },
                 { url: 'roulette-system.html', title: 'Roulette System', description: 'Roleta, Slot Machines, Roulette Token e recompensas da Season 1.', image: 'assets/media/roulette-system/63110-roulette-token.gif' },
                 { url: 'reliquary-system.html', title: 'Reliquary System', description: 'Progressão em 81 níveis com itens, gold e Kron Cubes por faixa.', image: 'assets/media/reliquary/arcane-kube.png' },
                 { url: 'stones-guia-completo.html', title: 'Stones - Guia Completo', description: 'Raridade, slots, upgrade, elementos e tabelas de referência de stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
                 { url: 'rune-system.html', title: 'Rune System', description: 'Enhanced Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
-                { url: 'spell-badge-upgrade.html', title: 'Spell Badge Upgrade', description: 'Badges permanentes para aumentar dano de spells específicas.', image: 'assets/media/menu/spell-badge-upgrade.gif' },
+                { url: 'spell-badge-upgrade.html', title: 'Badge Stones', description: 'Pedras de skills evoluídas até Tier 10 e inseridas em Trinkets craftadas.', image: 'assets/media/menu/spell-badge-upgrade.gif' },
                 { url: 'sistema-de-craft.html', title: 'Sistema de Craft', description: 'Receitas, custos e materiais para itens especiais, utilitários e upgrades.', image: 'assets/media/menu/sistema-de-craft.gif' },
                 { url: 'character-upgrades.html', title: 'UPGRADE POTIONS', description: 'Potions permanentes para cura, reflect e poderes especiais do personagem.', image: 'assets/media/menu/character-upgrades.gif' },
                 { url: 'upgrade-stones.html', title: 'Upgrade Stones', description: 'Chances, limites e efeitos das stones usadas para evoluir equipamentos.', image: 'assets/media/items-wiki/Craft/upgrade stone lvl 1.gif' },
@@ -201,7 +223,6 @@
             title: 'Guias e Utilidades',
             icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg>',
             items: [
-                { url: 'vocacoes.html', title: 'Vocações', description: 'Resumo visual das vocações e seus papéis no servidor.', image: 'assets/media/menu/vocacoes.gif' },
                 { url: 'comandos-do-servidor.html', title: 'Comandos do Servidor', description: 'Comandos organizados por categoria, com busca rapida.', image: 'assets/media/menu/comandos-do-servidor.gif' },
             ],
         },

@@ -2,7 +2,7 @@ window.AVALORIUM_SEARCH_INDEX =
 [
     {
         "title":  "Noticias, Promocoes e Pacotes Especiais",
-        "description":  "Pacotes ativos e afiliados do Avalorium.",
+        "description":  "Novidades e futuras promoções oficiais do Avalorium.",
         "category":  "Novidades e Loja",
         "keywords":  "novidades promocoes noticias banner abertura eventos loja pacotes donate oferta cliente",
         "url":  "noticias-e-promocoes.html",
@@ -18,7 +18,7 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "Dark Totem Daily",
-        "description":  "Evento diário com boss, cidades possíveis e recompensas.",
+        "description":  "Boss diário das 20h com spawn fixo e recompensas por desempenho.",
         "category":  "Sistemas do Servidor",
         "keywords":  "dark totem daily boss evento carlin thais darashia ankrahmun edron",
         "url":  "dark-totem-daily.html",
@@ -65,10 +65,10 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/menu/rune-system.gif"
     },
     {
-        "title":  "Spell Badge Upgrade",
-        "description":  "Badges permanentes para aumentar dano de spells específicas.",
+        "title":  "Badge Stones",
+        "description":  "Pedras de skills evoluídas até Tier 10 e inseridas em Trinkets craftadas.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "spell badge upgrade dano magia comando badge",
+        "keywords":  "badge stones skill trinket craft forja tier 10 nivel evolução bonus magia",
         "url":  "spell-badge-upgrade.html",
         "image":  "assets/media/menu/spell-badge-upgrade.gif"
     },
@@ -103,14 +103,6 @@ window.AVALORIUM_SEARCH_INDEX =
         "keywords":  "animus mastery anonymous custom soul core soulpit soul pit prism fiendish experiencia exp customizadas obelisco void netherbound fallen usurpers true asuras sanctum firen firzen frezee exiva moe res radar portable",
         "url":  "animus-mastery-soulpit.html",
         "image":  "assets/media/menu/animus-mastery-soulpit.gif"
-    },
-    {
-        "title":  "Vocações",
-        "description":  "Resumo visual das vocações e seus papéis no servidor.",
-        "category":  "Guias e Utilidades",
-        "keywords":  "vocacoes druid sorcerer paladin knight monk",
-        "url":  "vocacoes.html",
-        "image":  "assets/media/menu/vocacoes.gif"
     },
     {
         "title":  "Comandos do Servidor",
