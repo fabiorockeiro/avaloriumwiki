@@ -26,7 +26,7 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 | `fabio-rockeiro-scripts.html` | Fábio Rockeiro Scripts | Artigo no menu/busca | Scripts Zerobot | Script Lua carregável no ZeroBot com Task Book, Rune Refil, Arrow Refil, Auto Forja, Follow, Auto Party e RESET FPS. | 5 |
 | `helmets.html` | Helmets | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
 | `hunts-custom.html` | Hunts Custom | Artigo fora do menu/busca | — | Menu das Hunts Custom do Avalorium OT com páginas individuais por hunt. | 6 |
-| `index.html` | Avalorium OT Wiki | Página inicial | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 14 |
+| `index.html` | Avalorium OT Wiki | Página inicial | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 15 |
 | `legs.html` | Legs | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
 | `monster-hunter.html` | Monster Hunter | Artigo no menu/busca | Sistemas do Servidor | Evento Monster Hunter com horários, ranking por abates e recompensas possíveis no Avalorium OT. | 19 |
 | `mounts.html` | Montarias | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
@@ -197,7 +197,7 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 - **Papel atual:** Página inicial.
 - **Descrição:** Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT.
 - **Seções:** # Avalorium OT Wiki · ## Sistemas mais consultados.
-- **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/brand/fenrir-guardian.png`, `assets/media/menu/divergence-system.gif`, `assets/media/menu/dark-totem-daily.gif`, `assets/media/items-wiki/Consumables/more points wheel.gif`, `assets/media/roulette-system/63110-roulette-token.gif`, `assets/media/reliquary/arcane-kube.png`, `assets/media/menu/stones-guia-completo.gif`, `assets/media/menu/rune-system.gif`, `assets/media/menu/spell-badge-upgrade.gif`, `assets/media/menu/sistema-de-craft.gif`, `assets/media/menu/character-upgrades.gif`, `assets/media/items-wiki/Craft/upgrade stone lvl 1.gif`, `assets/media/menu/animus-mastery-soulpit.gif`.
+- **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/brand/avalorium-wordmark.png`, `assets/media/brand/fenrir-guardian-clean.png`, `assets/media/menu/divergence-system.gif`, `assets/media/menu/dark-totem-daily.gif`, `assets/media/items-wiki/Consumables/more points wheel.gif`, `assets/media/roulette-system/63110-roulette-token.gif`, `assets/media/reliquary/arcane-kube.png`, `assets/media/menu/stones-guia-completo.gif`, `assets/media/menu/rune-system.gif`, `assets/media/menu/spell-badge-upgrade.gif`, `assets/media/menu/sistema-de-craft.gif`, `assets/media/menu/character-upgrades.gif`, `assets/media/items-wiki/Craft/upgrade stone lvl 1.gif`, `assets/media/menu/animus-mastery-soulpit.gif`.
 
 ### Legs — `legs.html`
 

@@ -7,7 +7,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | Pasta/grupo | GIF | PNG | JPG | Total | Referenciados | Sem referência |
 |---|---:|---:|---:|---:|---:|---:|
 | `articles` | 6 | 3 | 0 | 9 | 8 | 1 |
-| `brand` | 0 | 3 | 1 | 4 | 2 | 2 |
+| `brand` | 0 | 5 | 1 | 6 | 3 | 3 |
 | `hunts-custom` | 17 | 6 | 0 | 23 | 22 | 1 |
 | `icons` | 47 | 0 | 0 | 47 | 12 | 35 |
 | `icons/character-upgrades` | 1 | 0 | 0 | 1 | 1 | 0 |
@@ -49,7 +49,9 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | Background site.jpg | JPG | `assets/media/brand/Background site.jpg` | **Sem referência literal** |
 | Parcelamento.png | PNG | `assets/media/brand/Parcelamento.png` | **Sem referência literal** |
 | avalorium-logo.png | PNG | `assets/media/brand/avalorium-logo.png` | `ammo.html`, `amulets.html`, `animus-mastery-soulpit.html`, `armors.html`, `backpacks.html`, `boots.html`, `category-colecionaveis.html`, `category-guias-e-utilidades.html`, `category-itens-e-equipamentos.html`, `category-novidades-e-loja.html`, `category-scripts-zerobot.html`, `category-sistemas-do-servidor.html`, `character-upgrades.html`, `comandos-do-servidor.html`, `dark-totem-daily.html`, `divergence-system.html`, `dolls.html`, `fabio-rockeiro-scripts.html`, `helmets.html`, `hunts-custom.html`, `index.html`, `legs.html`, `monster-hunter.html`, `mounts.html`, `noticias-e-promocoes.html`, `outfits.html`, `portables.html`, `pyramid-of-azhrkhal-three-asuras.html`, `reliquary-system.html`, `rings.html`, `roulette-system.html`, `rune-system.html`, `sanctum-of-fire-ice.html`, `search.html`, `shields.html`, `sistema-de-craft.html`, `spell-badge-upgrade.html`, `stones-guia-completo.html`, `the-fallen-usurpers.html`, `upgrade-stones.html`, `void-corruption-depths-inner-netherbound.html`, `void-corruption-depths-outer-void.html`, `weapons.html` |
-| fenrir-guardian.png | PNG | `assets/media/brand/fenrir-guardian.png` | `index.html` |
+| avalorium-wordmark.png | PNG | `assets/media/brand/avalorium-wordmark.png` | `index.html` |
+| fenrir-guardian-clean.png | PNG | `assets/media/brand/fenrir-guardian-clean.png` | `index.html` |
+| fenrir-guardian.png | PNG | `assets/media/brand/fenrir-guardian.png` | **Sem referência literal** |
 | Brain Netherbound.gif | GIF | `assets/media/hunts-custom/Brain Netherbound.gif` | `void-corruption-depths-inner-netherbound.html` |
 | Corrupted Lion Beast.gif | GIF | `assets/media/hunts-custom/Corrupted Lion Beast.gif` | `the-fallen-usurpers.html` |
 | Corrupted Void Brute.gif | GIF | `assets/media/hunts-custom/Corrupted Void Brute.gif` | `void-corruption-depths-outer-void.html` |

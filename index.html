@@ -79,61 +79,81 @@
             <section class="home-hero">
                 <div class="home-hero-copy">
                     <h1 class="sr-only">Avalorium OT Wiki</h1>
-                    <img class="hero-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+                    <img class="hero-wordmark" src="assets/media/brand/avalorium-wordmark.png" alt="Avalorium Wiki">
                     <a class="hero-account-cta" href="https://avaloriumot.com/index.php/account/create" aria-label="Clique aqui e crie sua account no Avalorium">
                         <span class="hero-account-cta-label">Clique aqui e crie sua account</span>
                         <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
                     </a>
+                    <p class="home-hero-tagline">A Wiki oficial do Avalorium / Sistemas · Caçadas · Equipamentos</p>
                 </div>
                     <div class="fenrir-stage" aria-hidden="true">
                         <span class="fenrir-aura"></span>
                         <span class="fenrir-orbit"></span>
-                        <img class="fenrir-guardian" src="assets/media/brand/fenrir-guardian.png" alt="">
+                        <img class="fenrir-guardian" src="assets/media/brand/fenrir-guardian-clean.png" alt="">
                         <svg class="fenrir-collar-magic" viewBox="0 0 1254 1254" aria-hidden="true" focusable="false">
                             <defs>
-                                <linearGradient id="fenrir-collar-energy" x1="118" y1="390" x2="692" y2="716" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0" stop-color="#087eff"/>
-                                    <stop offset=".5" stop-color="#d9fdff"/>
-                                    <stop offset="1" stop-color="#00a8ff"/>
+                                <linearGradient id="fenrir-collar-energy" x1="126" y1="392" x2="692" y2="706" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#096dff"/>
+                                    <stop offset=".24" stop-color="#29cfff"/>
+                                    <stop offset=".5" stop-color="#efffff"/>
+                                    <stop offset=".72" stop-color="#4eeaff"/>
+                                    <stop offset="1" stop-color="#0877ff"/>
                                 </linearGradient>
-                                <radialGradient id="fenrir-collar-gem" cx="42%" cy="32%" r="72%">
+                                <radialGradient id="fenrir-collar-gem" cx="38%" cy="28%" r="78%">
                                     <stop offset="0" stop-color="#ffffff"/>
-                                    <stop offset=".25" stop-color="#8ff8ff"/>
-                                    <stop offset=".68" stop-color="#079aff"/>
-                                    <stop offset="1" stop-color="#0736a9"/>
+                                    <stop offset=".2" stop-color="#adfbff"/>
+                                    <stop offset=".55" stop-color="#14c7ff"/>
+                                    <stop offset=".82" stop-color="#0871ed"/>
+                                    <stop offset="1" stop-color="#071e6d"/>
                                 </radialGradient>
                                 <filter id="fenrir-collar-glow" x="-80%" y="-80%" width="260%" height="260%">
-                                    <feGaussianBlur stdDeviation="14" result="blur"/>
+                                    <feGaussianBlur stdDeviation="8" result="blur"/>
                                     <feMerge>
                                         <feMergeNode in="blur"/>
                                         <feMergeNode in="SourceGraphic"/>
                                     </feMerge>
                                 </filter>
+                                <filter id="fenrir-collar-soft-glow" x="-100%" y="-100%" width="300%" height="300%">
+                                    <feGaussianBlur stdDeviation="20"/>
+                                </filter>
+                                <filter id="fenrir-particle-glow" x="-100%" y="-100%" width="300%" height="300%">
+                                    <feGaussianBlur stdDeviation="4" result="particle-blur"/>
+                                    <feMerge>
+                                        <feMergeNode in="particle-blur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
                             </defs>
                             <g class="fenrir-collar-rig">
-                                <path class="fenrir-collar-haze" d="M126 400 C148 520 218 633 314 704 C420 640 548 552 684 420"/>
-                                <path class="fenrir-collar-flow" d="M126 400 C148 520 218 633 314 704 C420 640 548 552 684 420"/>
-                                <path class="fenrir-collar-branch" d="M205 607 L158 570 L130 506 M250 662 L202 676 L168 648 M402 648 L468 604 L526 542 M486 591 L552 574 L610 501 M566 548 L632 510 L684 420"/>
+                                <path class="fenrir-collar-lightning-halo" d="M139 412 L150 447 L141 475 L166 501 L157 529 L190 548 L181 576 L220 595 L211 624 L255 645 L286 674 M342 674 L374 652 L402 632 L438 621 L454 591 L490 580 L506 548 L543 540 L559 508 L598 494 L612 459 L651 445 L682 407"/>
+                                <path class="fenrir-collar-bolt fenrir-collar-bolt--main" d="M139 412 L150 447 L141 475 L166 501 L157 529 L190 548 L181 576 L220 595 L211 624 L255 645 L286 674 M342 674 L374 652 L402 632 L438 621 L454 591 L490 580 L506 548 L543 540 L559 508 L598 494 L612 459 L651 445 L682 407"/>
+                                <path class="fenrir-collar-bolt fenrir-collar-bolt--secondary" d="M151 421 L167 456 L160 487 L184 511 L176 539 L207 558 L198 588 L235 607 L231 629 L274 653 L296 679 M332 681 L359 660 L391 648 L416 617 L447 610 L466 576 L500 567 L518 531 L551 526 L571 492 L606 481 L626 448 L666 427"/>
+                                <path class="fenrir-collar-bolt fenrir-collar-bolt--branches" d="M166 501 L132 492 L146 520 L119 534 M190 548 L156 565 L181 573 M220 595 L190 620 L223 616 M438 621 L468 604 L459 632 M506 548 L538 562 L526 532 M598 494 L632 505 L617 475"/>
+                                <path class="fenrir-collar-bolt fenrir-collar-bolt--tendril" d="M139 412 C113 396 109 372 127 352 C144 333 137 313 116 300 M682 407 C711 386 719 361 704 340 C691 320 705 300 733 286"/>
+                                <path class="fenrir-collar-bolt fenrir-collar-bolt--link" d="M286 674 L314 638 L342 674"/>
                                 <g class="fenrir-collar-gem">
-                                    <path class="fenrir-collar-gem-halo" d="M314 642 L368 704 L314 790 L260 704 Z"/>
-                                    <path class="fenrir-collar-gem-shell" d="M314 653 L357 704 L314 775 L271 704 Z"/>
-                                    <path class="fenrir-collar-gem-core" d="M314 670 L342 704 L314 754 L286 704 Z"/>
-                                    <path class="fenrir-collar-gem-shine" d="M314 670 L314 754 M286 704 L342 704"/>
+                                    <path class="fenrir-collar-gem-halo" d="M314 625 L386 703 L314 815 L242 703 Z"/>
+                                    <path class="fenrir-collar-gem-crown" d="M274 666 L314 628 L354 666 L338 686 L314 661 L290 686 Z"/>
+                                    <path class="fenrir-collar-gem-frame" d="M314 642 L372 703 L314 797 L256 703 Z"/>
+                                    <path class="fenrir-collar-gem-shell" d="M314 655 L357 704 L314 779 L271 704 Z"/>
+                                    <path class="fenrir-collar-gem-left" d="M314 670 L314 760 L285 704 Z"/>
+                                    <path class="fenrir-collar-gem-right" d="M314 670 L344 704 L314 760 Z"/>
+                                    <path class="fenrir-collar-gem-shine" d="M314 668 L314 760 M285 704 L344 704 M314 668 L285 704 L314 760 L344 704 Z"/>
                                 </g>
-                                <circle class="fenrir-collar-spark fenrir-collar-spark--1" cx="167" cy="550" r="10"/>
-                                <circle class="fenrir-collar-spark fenrir-collar-spark--2" cx="239" cy="649" r="7"/>
-                                <circle class="fenrir-collar-spark fenrir-collar-spark--3" cx="469" cy="595" r="9"/>
-                                <circle class="fenrir-collar-spark fenrir-collar-spark--4" cx="603" cy="495" r="8"/>
+                            </g>
+                            <g class="fenrir-ice-particles">
+                                <path class="fenrir-ice-particle fenrir-ice-particle--star" style="--ice-x:-80%; --ice-y:-360%; --ice-spin:150deg; --ice-time:4.6s; --ice-delay:-1.2s;" d="M130 311 L135 325 L149 330 L135 335 L130 349 L125 335 L111 330 L125 325 Z"/>
+                                <circle class="fenrir-ice-particle" style="--ice-x:75%; --ice-y:-330%; --ice-spin:-120deg; --ice-time:4.1s; --ice-delay:-2.8s;" cx="91" cy="466" r="8"/>
+                                <path class="fenrir-ice-particle fenrir-ice-particle--star" style="--ice-x:55%; --ice-y:-410%; --ice-spin:-165deg; --ice-time:5.2s; --ice-delay:-4.2s;" d="M246 245 L250 256 L261 260 L250 264 L246 275 L242 264 L231 260 L242 256 Z"/>
+                                <circle class="fenrir-ice-particle" style="--ice-x:-70%; --ice-y:-360%; --ice-spin:135deg; --ice-time:4.8s; --ice-delay:-.6s;" cx="181" cy="409" r="7"/>
+                                <circle class="fenrir-ice-particle" style="--ice-x:80%; --ice-y:-390%; --ice-spin:-145deg; --ice-time:5.5s; --ice-delay:-3.4s;" cx="408" cy="310" r="9"/>
+                                <path class="fenrir-ice-particle fenrir-ice-particle--star" style="--ice-x:-65%; --ice-y:-350%; --ice-spin:180deg; --ice-time:4.4s; --ice-delay:-2.1s;" d="M540 323 L545 335 L557 340 L545 345 L540 357 L535 345 L523 340 L535 335 Z"/>
+                                <circle class="fenrir-ice-particle" style="--ice-x:90%; --ice-y:-320%; --ice-spin:-130deg; --ice-time:5s; --ice-delay:-4.6s;" cx="655" cy="462" r="8"/>
+                                <path class="fenrir-ice-particle fenrir-ice-particle--star" style="--ice-x:70%; --ice-y:-380%; --ice-spin:-170deg; --ice-time:5.7s; --ice-delay:-1.8s;" d="M720 372 L725 385 L738 390 L725 395 L720 408 L715 395 L702 390 L715 385 Z"/>
+                                <circle class="fenrir-ice-particle" style="--ice-x:-85%; --ice-y:-340%; --ice-spin:140deg; --ice-time:4.7s; --ice-delay:-3.7s;" cx="600" cy="584" r="10"/>
+                                <circle class="fenrir-ice-particle" style="--ice-x:-70%; --ice-y:-370%; --ice-spin:155deg; --ice-time:5.3s; --ice-delay:-.9s;" cx="257" cy="620" r="8"/>
                             </g>
                         </svg>
-                        <span class="fenrir-particle" style="--x: 20%; --y: 62%; --size: 5px; --drift: -22px; --duration: 3.8s; --delay: -1.2s;"></span>
-                        <span class="fenrir-particle" style="--x: 34%; --y: 48%; --size: 7px; --drift: 18px; --duration: 4.6s; --delay: -3.1s;"></span>
-                        <span class="fenrir-particle" style="--x: 47%; --y: 68%; --size: 4px; --drift: -12px; --duration: 3.2s; --delay: -2.4s;"></span>
-                        <span class="fenrir-particle" style="--x: 60%; --y: 44%; --size: 6px; --drift: 24px; --duration: 4.2s; --delay: -.8s;"></span>
-                        <span class="fenrir-particle" style="--x: 72%; --y: 58%; --size: 8px; --drift: -16px; --duration: 5s; --delay: -3.7s;"></span>
-                        <span class="fenrir-particle" style="--x: 82%; --y: 72%; --size: 4px; --drift: 14px; --duration: 3.5s; --delay: -1.9s;"></span>
-                        <span class="fenrir-particle" style="--x: 54%; --y: 76%; --size: 5px; --drift: 28px; --duration: 4.8s; --delay: -4.1s;"></span>
-                        <span class="fenrir-particle" style="--x: 28%; --y: 78%; --size: 6px; --drift: -28px; --duration: 4.4s; --delay: -2.7s;"></span>
                     </div>
             </section>
 

@@ -50,6 +50,18 @@ Três ideias orientam a linguagem:
 - **Mobile:** drawer próprio, conteúdo em uma coluna e redução controlada da escala tipográfica.
 - **Progresso de leitura:** linha de 2px no topo que acompanha a página.
 
+## Fenrir guardião da página inicial
+
+O personagem é deliberadamente dividido em duas camadas para permitir evolução visual sem recriar a arte inteira:
+
+- `assets/media/brand/fenrir-guardian-clean.png`: raster estático com apenas o lobo e a pedra da testa. Não deve receber colar, pingente ou partículas incorporadas.
+- `index.html` (`.fenrir-collar-magic`): SVG alinhado ao mesmo `viewBox` 1254 × 1254 do PNG. Desenha raios irregulares que envolvem o pescoço, ramificações elétricas conectadas à pedra e o pingente facetado.
+- `.fenrir-ice-particles`: pequenos cristais e estrelas vetoriais com tempos e trajetórias independentes; aparecem, ascendem e desaparecem ao redor do colar.
+- `assets/css/wiki.css`: controla brilho, fluxo, pulsação e intensidade. O Fenrir permanece imóvel; somente energia e partículas são animadas.
+- `prefers-reduced-motion`: interrompe o fluxo e remove as partículas não essenciais para usuários que solicitam movimento reduzido.
+
+Ao alterar o PNG, preserve canvas, enquadramento e registro 1254 × 1254. Caso contrário, os paths do colar deixarão de coincidir com o pescoço.
+
 ## Arquivos responsáveis
 
 - `assets/css/wiki.css`: tokens, componentes, responsividade e camada de compatibilidade do tema anterior.

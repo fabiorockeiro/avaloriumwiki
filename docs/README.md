@@ -7,9 +7,9 @@
 - Implementação: site estático em HTML, CSS e JavaScript, publicado diretamente pelo GitHub Pages.
 - Páginas HTML: **43**.
 - Entradas no menu e índice de busca: **20**.
-- Imagens catalogadas: **457** (426 GIF, 29 PNG e 2 JPG).
-- Assets referenciados no código: **257**.
-- Assets sem referência direta: **200**. Eles podem ser reserva, conteúdo futuro ou legado; não devem ser descartados sem revisão.
+- Imagens catalogadas: **459** (426 GIF, 31 PNG e 2 JPG).
+- Assets referenciados no código: **258**.
+- Assets sem referência direta: **201**. Eles podem ser reserva, conteúdo futuro ou legado; não devem ser descartados sem revisão.
 
 ## Documentos
 
@@ -31,4 +31,4 @@
 
 ## Regra de preservação
 
-Antes da reconstrução, mantenha os slugs/URLs atuais ou crie redirecionamentos. Preserve também uma cópia integral de `assets/media`, pois **200 arquivos não aparecem como referência literal no código atual** e podem conter material ainda útil.
+Antes da reconstrução, mantenha os slugs/URLs atuais ou crie redirecionamentos. Preserve também uma cópia integral de `assets/media`, pois **201 arquivos não aparecem como referência literal no código atual** e podem conter material ainda útil.

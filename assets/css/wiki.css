@@ -516,34 +516,31 @@ code {
 }
 
 .home-hero::after {
-    content: "A WIKI OFICIAL DO AVALORIUM  /  SISTEMAS · CAÇADAS · EQUIPAMENTOS";
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: clamp(20px, 3vw, 38px);
-    width: calc(100% - 48px);
-    text-align: center;
-    transform: translateX(-50%);
-    color: var(--gold);
-    font-size: clamp(8px, .8vw, 11px);
-    font-weight: 800;
-    letter-spacing: .24em;
+    content: none;
 }
 
 .home-hero-copy {
-    width: min(92%, 1040px);
+    position: relative;
+    z-index: 2;
+    width: calc(100% - clamp(280px, 29vw, 380px));
     min-width: 0;
-    max-width: 100%;
+    max-width: none;
+    min-height: inherit;
+    margin-right: auto;
     align-items: center;
-    padding: clamp(28px, 4vw, 56px) clamp(24px, 5vw, 72px) clamp(64px, 7vw, 88px);
+    justify-content: center;
+    padding: clamp(28px, 3.4vw, 48px) clamp(22px, 3vw, 44px);
 }
 
-.hero-logo {
-    width: min(100%, 930px);
+.hero-wordmark {
+    display: block;
+    width: min(100%, 760px);
+    height: auto;
     min-width: 0;
-    max-height: 235px;
+    max-height: 188px;
+    object-fit: contain;
     object-position: center;
-    filter: drop-shadow(0 20px 34px rgba(0,0,0,.55)) drop-shadow(0 0 20px rgba(67,217,255,.12));
+    filter: drop-shadow(0 18px 30px rgba(0,0,0,.58)) drop-shadow(0 0 18px rgba(67,217,255,.1));
 }
 
 .hero-account-cta {
@@ -653,6 +650,19 @@ code {
     line-height: 1.7;
 }
 
+.home-hero .home-hero-tagline {
+    width: calc(100% + 96px);
+    max-width: 620px;
+    margin: clamp(18px, 2.4vw, 30px) auto 0;
+    color: var(--gold);
+    font-size: clamp(8px, .8vw, 11px);
+    font-weight: 800;
+    line-height: 1.55;
+    letter-spacing: .22em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .article-hero-media { position: relative; }
 .article-hero-media::before {
     content: "";
@@ -724,7 +734,7 @@ code {
     z-index: 3;
     right: clamp(8px, 1.6vw, 24px);
     bottom: 0;
-    width: clamp(190px, 16vw, 220px);
+    width: clamp(270px, 28vw, 355px);
     aspect-ratio: 1;
     pointer-events: none;
 }
@@ -771,83 +781,146 @@ code {
     transform-origin: 314px 704px;
 }
 
-.fenrir-collar-haze,
-.fenrir-collar-flow,
-.fenrir-collar-branch {
+.fenrir-collar-lightning-halo,
+.fenrir-collar-bolt {
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
 
-.fenrir-collar-haze {
-    stroke: #087eff;
-    stroke-width: 42;
-    opacity: .38;
-    filter: url(#fenrir-collar-glow);
-    animation: fenrir-collar-haze-pulse 2.7s ease-in-out infinite;
+.fenrir-collar-lightning-halo {
+    stroke: #087cff;
+    stroke-width: 34;
+    opacity: .28;
+    filter: url(#fenrir-collar-soft-glow);
+    animation: fenrir-collar-lightning-halo-pulse 3.1s ease-in-out infinite;
 }
 
-.fenrir-collar-flow {
+.fenrir-collar-bolt {
     stroke: url(#fenrir-collar-energy);
-    stroke-width: 14;
-    stroke-dasharray: 54 25 10 20;
+    opacity: .9;
     filter: url(#fenrir-collar-glow);
-    animation: fenrir-collar-current 2.2s linear infinite;
 }
 
-.fenrir-collar-branch {
-    stroke: #6af1ff;
+.fenrir-collar-bolt--main {
+    stroke-width: 11;
+    stroke-dasharray: 108 8 24 7;
+    animation:
+        fenrir-collar-current 2.1s linear infinite,
+        fenrir-collar-bolt-flicker 3.7s steps(1, end) infinite;
+}
+
+.fenrir-collar-bolt--secondary {
+    stroke-width: 7;
+    stroke-dasharray: 46 10 15 9;
+    opacity: .76;
+    animation:
+        fenrir-collar-current 2.85s linear infinite reverse,
+        fenrir-collar-bolt-flicker 4.3s steps(1, end) infinite -.7s;
+}
+
+.fenrir-collar-bolt--branches {
+    stroke-width: 6;
+    stroke-dasharray: 34 7 12 8;
+    opacity: .78;
+    animation:
+        fenrir-collar-current 2.5s linear infinite,
+        fenrir-collar-bolt-flicker 3.2s steps(1, end) infinite -1.3s;
+}
+
+.fenrir-collar-bolt--tendril {
+    stroke-width: 5.5;
+    stroke-dasharray: 28 10 8 9;
+    opacity: .72;
+    animation:
+        fenrir-collar-current 3.4s linear infinite reverse,
+        fenrir-collar-bolt-flicker 4.8s steps(1, end) infinite -2s;
+}
+
+.fenrir-collar-bolt--link {
     stroke-width: 10;
-    stroke-dasharray: 31 17 8 14;
-    filter: url(#fenrir-collar-glow);
-    animation: fenrir-collar-current 3s linear infinite reverse;
+    opacity: .98;
+    animation: fenrir-collar-link-pulse 2.8s ease-in-out infinite;
 }
 
 .fenrir-collar-gem {
     transform-box: fill-box;
     transform-origin: center;
     filter: url(#fenrir-collar-glow);
-    animation: fenrir-collar-gem-pulse 2.2s ease-in-out infinite;
+    animation: fenrir-collar-gem-pulse 2.8s ease-in-out infinite;
 }
 
 .fenrir-collar-gem-halo {
-    fill: rgba(0, 151, 255, .24);
-    stroke: #0aaeff;
-    stroke-width: 22;
+    fill: rgba(0, 151, 255, .22);
+    stroke: rgba(18, 181, 255, .5);
+    stroke-width: 18;
+    filter: url(#fenrir-collar-soft-glow);
+}
+
+.fenrir-collar-gem-crown {
+    fill: #041438;
+    stroke: #45dcff;
+    stroke-width: 9;
+    stroke-linejoin: round;
+}
+
+.fenrir-collar-gem-frame {
+    fill: #02091d;
+    stroke: #0b72ec;
+    stroke-width: 15;
+    stroke-linejoin: round;
 }
 
 .fenrir-collar-gem-shell {
-    fill: #031c54;
-    stroke: #78f5ff;
-    stroke-width: 11;
+    fill: url(#fenrir-collar-gem);
+    stroke: #9ffaff;
+    stroke-width: 9;
+    stroke-linejoin: round;
 }
 
-.fenrir-collar-gem-core {
-    fill: url(#fenrir-collar-gem);
-    stroke: #dcfeff;
-    stroke-width: 6;
+.fenrir-collar-gem-left {
+    fill: rgba(224, 254, 255, .52);
+}
+
+.fenrir-collar-gem-right {
+    fill: rgba(0, 105, 242, .34);
 }
 
 .fenrir-collar-gem-shine {
     fill: none;
-    stroke: rgba(234, 254, 255, .86);
+    stroke: rgba(235, 255, 255, .92);
     stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
-.fenrir-collar-spark {
+.fenrir-ice-particles {
+    pointer-events: none;
+}
+
+.fenrir-ice-particle {
+    color: #aef9ff;
+    fill: currentColor;
+    stroke: #078dff;
+    stroke-width: 3;
     opacity: 0;
-    fill: #d7fcff;
-    stroke: #08aaff;
-    stroke-width: 5;
-    filter: url(#fenrir-collar-glow);
+    filter: url(#fenrir-particle-glow);
+    paint-order: stroke fill;
     transform-box: fill-box;
     transform-origin: center;
-    animation: fenrir-collar-spark-rise 3.5s ease-out infinite;
+    mix-blend-mode: screen;
+    animation: fenrir-ice-particle-rise var(--ice-time) cubic-bezier(.19, .72, .28, 1) infinite var(--ice-delay);
 }
 
-.fenrir-collar-spark--2 { animation-delay: -.9s; }
-.fenrir-collar-spark--3 { animation-delay: -1.8s; }
-.fenrir-collar-spark--4 { animation-delay: -2.65s; }
+.fenrir-ice-particle:nth-child(3n + 2) { color: #39d7ff; }
+.fenrir-ice-particle:nth-child(4n) { color: #e8ffff; }
+
+.fenrir-ice-particle--star {
+    fill: #e8ffff;
+    stroke: #0d9dff;
+    stroke-width: 4;
+    stroke-linejoin: round;
+}
 
 .fenrir-aura {
     position: absolute;
@@ -873,39 +946,36 @@ code {
     animation: fenrir-orbit-spin 8s linear infinite;
 }
 
-.fenrir-particle {
-    position: absolute;
-    z-index: 3;
-    left: var(--x);
-    top: var(--y);
-    width: var(--size);
-    height: var(--size);
-    opacity: 0;
-    background: #bff8ff;
-    clip-path: polygon(50% 0, 64% 36%, 100% 50%, 64% 64%, 50% 100%, 36% 64%, 0 50%, 36% 36%);
-    box-shadow: 0 0 5px #e8fdff, 0 0 11px #1cc8ff, 0 0 20px rgba(0, 102, 255, .72);
-    animation: fenrir-particle-rise var(--duration) linear infinite var(--delay);
-}
-
 @keyframes fenrir-collar-current {
-    to { stroke-dashoffset: -220; }
+    to { stroke-dashoffset: -278; }
 }
 
-@keyframes fenrir-collar-haze-pulse {
-    0%, 100% { opacity: .24; stroke-width: 34; }
-    50% { opacity: .56; stroke-width: 49; }
+@keyframes fenrir-collar-lightning-halo-pulse {
+    0%, 100% { opacity: .16; stroke-width: 27; }
+    50% { opacity: .32; stroke-width: 39; }
+}
+
+@keyframes fenrir-collar-bolt-flicker {
+    0%, 18%, 22%, 63%, 67%, 100% { opacity: .9; }
+    20%, 65% { opacity: .48; }
+}
+
+@keyframes fenrir-collar-link-pulse {
+    0%, 100% { opacity: .72; stroke-width: 8; }
+    50% { opacity: 1; stroke-width: 11; }
 }
 
 @keyframes fenrir-collar-gem-pulse {
-    0%, 100% { transform: scale(.92); opacity: .82; }
-    48% { transform: scale(1.09); opacity: 1; }
+    0%, 100% { transform: scale(.96); opacity: .88; }
+    48% { transform: scale(1.045); opacity: 1; }
 }
 
-@keyframes fenrir-collar-spark-rise {
-    0% { opacity: 0; transform: translate3d(0, 18px, 0) scale(.3) rotate(0); }
-    24% { opacity: 1; }
-    72% { opacity: .72; }
-    100% { opacity: 0; transform: translate3d(18px, -82px, 0) scale(1.18) rotate(190deg); }
+@keyframes fenrir-ice-particle-rise {
+    0% { opacity: 0; transform: translate3d(0, 45%, 0) rotate(-12deg) scale(.22); }
+    14% { opacity: .98; }
+    46% { opacity: 1; transform: translate3d(0, -160%, 0) rotate(32deg) scale(.82); }
+    76% { opacity: .72; }
+    100% { opacity: 0; transform: translate3d(var(--ice-x), var(--ice-y), 0) rotate(var(--ice-spin)) scale(1.18); }
 }
 
 @keyframes fenrir-aura-pulse {
@@ -915,13 +985,6 @@ code {
 
 @keyframes fenrir-orbit-spin {
     to { transform: rotate(360deg); }
-}
-
-@keyframes fenrir-particle-rise {
-    0% { opacity: 0; transform: translate3d(0, 15px, 0) rotate(0deg) scale(.25); }
-    14% { opacity: 1; }
-    68% { opacity: .82; }
-    100% { opacity: 0; transform: translate3d(var(--drift), -105px, 0) rotate(190deg) scale(1.15); }
 }
 
 .content-section { margin-top: clamp(42px, 5vw, 72px); }
@@ -1377,9 +1440,10 @@ tbody tr:hover td { background: rgba(67, 217, 255, .045); color: var(--text); }
     .article-hero,
     .page-hero { clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px)); }
     .home-hero { min-height: 300px; }
-    .home-hero-copy { flex: 1 1 0; width: 0; min-width: 0; max-width: none; padding: 34px 24px 70px; overflow: hidden; }
+    .home-hero-copy { flex: 0 0 auto; width: 100%; min-width: 0; max-width: 100%; padding: 34px 24px 70px; overflow: hidden; }
     .home-hero::after { left: 50%; right: auto; width: calc(100% - 44px); line-height: 1.6; }
-    .hero-logo { width: 100%; max-width: 100%; height: auto; object-fit: contain; }
+    .hero-wordmark { width: 100%; max-width: 100%; height: auto; object-fit: contain; }
+    .home-hero .home-hero-tagline { width: auto; max-width: calc(100% - 118px); margin-top: 22px; }
     .hero-account-cta { left: -38px; gap: 10px; max-width: 100%; margin-top: 6px; padding: 11px 20px 12px 24px; }
     .hero-account-cta-label { font-size: clamp(11px, 3.4vw, 14px); }
     .hero-account-cta .ui-icon { width: 20px; height: 20px; }
@@ -1399,7 +1463,7 @@ tbody tr:hover td { background: rgba(67, 217, 255, .045); color: var(--text); }
     .section-heading h2,
     .content-section-heading h2 { font-size: clamp(23px, 7vw, 31px); overflow-wrap: anywhere; word-break: break-word; }
     .fenrir-stage { right: -4px; bottom: -3px; width: 118px; }
-    .fenrir-particle { animation-duration: calc(var(--duration) * 1.15); }
+    .fenrir-ice-particle { filter: url(#fenrir-particle-glow); }
     .feature-grid { grid-template-columns: 1fr; }
     .article-card { grid-template-columns: 76px minmax(0, 1fr); min-height: 120px; padding: 14px; }
     .article-card-thumb { width: 76px; height: 76px; }
@@ -1433,11 +1497,10 @@ tbody tr:hover td { background: rgba(67, 217, 255, .045); color: var(--text); }
     *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     .fenrir-collar-magic,
     .fenrir-collar-rig,
-    .fenrir-collar-haze,
-    .fenrir-collar-flow,
-    .fenrir-collar-branch,
+    .fenrir-collar-lightning-halo,
+    .fenrir-collar-bolt,
     .fenrir-collar-gem { animation: none !important; }
-    .fenrir-collar-spark { display: none; }
+    .fenrir-ice-particles { display: none; }
 }
 
 /* The previous theme stays available as a low-priority compatibility layer. */
