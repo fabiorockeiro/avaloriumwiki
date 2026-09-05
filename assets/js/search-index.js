@@ -1,6 +1,14 @@
 window.AVALORIUM_SEARCH_INDEX =
 [
     {
+        "title": "Tasks System",
+        "description": "Bounty Tasks, baús por dificuldade, bônus do Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop.",
+        "category": "Sistemas do Servidor",
+        "keywords": "tasks task board bounty talisman weekly hunting task shop beginner adept expert master bau recompensa bonus outfit montaria semanal kill delivery",
+        "url": "tasks-system.html",
+        "image": "assets/media/items-wiki/portables/portable task book.gif"
+    },
+    {
         "title":  "Noticias, Promocoes e Pacotes Especiais",
         "description":  "Novidades e futuras promoções oficiais do Avalorium.",
         "category":  "Novidades e Loja",
