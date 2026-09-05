@@ -212,7 +212,7 @@
                 { url: 'reliquary-system.html', title: 'Reliquary System', description: 'Progressão em 81 níveis com itens, gold e Kron Cubes por faixa.', image: 'assets/media/reliquary/arcane-kube.png' },
                 { url: 'stones-guia-completo.html', title: 'Stones - Guia Completo', description: 'Raridade, slots, upgrade, elementos e tabelas de referência de stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
                 { url: 'rune-system.html', title: 'Rune System', description: 'Enhanced Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
-                { url: 'spell-badge-upgrade.html', title: 'Badge Stones', description: 'Pedras de skills evoluídas até Tier 10 e inseridas em Trinkets craftadas.', image: 'assets/media/menu/spell-badge-upgrade.gif' },
+                { url: 'spell-badge-upgrade.html', title: 'Trinket Badges', description: 'Badges para trinkets: compra com Golden Raid Tokens e evolução na Forja.', image: 'assets/media/menu/spell-badge-upgrade.gif' },
                 { url: 'sistema-de-craft.html', title: 'Sistema de Craft', description: 'Receitas, custos e materiais para itens especiais, utilitários e upgrades.', image: 'assets/media/menu/sistema-de-craft.gif' },
                 { url: 'character-upgrades.html', title: 'UPGRADE POTIONS', description: 'Potions permanentes para cura, reflect e poderes especiais do personagem.', image: 'assets/media/menu/character-upgrades.gif' },
                 { url: 'upgrade-stones.html', title: 'Upgrade Stones', description: 'Chances, limites e efeitos das stones usadas para evoluir equipamentos.', image: 'assets/media/items-wiki/Craft/upgrade stone lvl 1.gif' },

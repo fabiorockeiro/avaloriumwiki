@@ -65,10 +65,10 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/menu/rune-system.gif"
     },
     {
-        "title":  "Badge Stones",
-        "description":  "Pedras de skills evoluídas até Tier 10 e inseridas em Trinkets craftadas.",
+        "title":  "Trinket Badges",
+        "description":  "Badges para trinkets: compra com Golden Raid Tokens e evolução na Forja.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "badge stones skill trinket craft forja tier 10 nivel evolução bonus magia",
+        "keywords":  "trinket badges badge stones spell badge golden raid tokens invasao mini boss store inbox character upgrade slots forja tier 10 skill",
         "url":  "spell-badge-upgrade.html",
         "image":  "assets/media/menu/spell-badge-upgrade.gif"
     },
