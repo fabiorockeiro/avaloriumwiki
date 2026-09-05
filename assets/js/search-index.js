@@ -171,7 +171,7 @@ window.AVALORIUM_SEARCH_INDEX =
     {
         "title":  "FABIO ROCKEIRO - SCRIPTS e DOWNLOADS",
         "description":  "Em breve, atualizações de scripts customizados para Zerobot. Baixe o GIF para sua live na Twitch e saiba como ser parceiro do servidor.",
-        "category":  "Scripts Zerobot",
+        "category":  "SCRIPTS e DOWNLOADS",
         "keywords":  "fabio rockeiro scripts downloads zerobot customizados em breve gif twitch live parceria parceiro discord",
         "url":  "fabio-rockeiro-scripts.html",
         "image":  "assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png"

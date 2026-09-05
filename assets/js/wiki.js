@@ -302,7 +302,7 @@
             <section class="menu-section ${isOpen ? 'is-open' : ''}" data-scripts-zerobot-menu>
                 <button type="button" class="menu-section-button" data-section-toggle>
                     <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/><path d="m13 4-2 16"/></svg></span>
-                    <strong>Scripts Zerobot</strong>
+                    <strong>SCRIPTS e DOWNLOADS</strong>
                     <small>1</small>
                 </button>
                 <div class="menu-links">
