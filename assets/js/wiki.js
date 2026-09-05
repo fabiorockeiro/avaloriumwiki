@@ -207,6 +207,7 @@
             items: [
                 { url: 'divergence-system.html', title: 'Divergence System', description: 'Divergence: level 400, Hazard 3, bosses elementais, custos e recompensas por faixa.', image: 'assets/media/menu/divergence-system.gif' },
                 { url: 'tasks-system.html', title: 'Tasks System', description: 'Bounty Tasks, baús por dificuldade, Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop.', image: 'assets/media/items-wiki/portables/portable task book.gif' },
+                { url: 'outfit-mount-bonus.html', title: 'Outfit & Mount Bônus', description: 'Obtenha cosméticos e use !outfitbonus para distribuir pontos em bônus de Cosmetic Mastery.', image: 'assets/media/menu/outfits.gif' },
                 { url: 'dark-totem-daily.html', title: 'Dark Totem Daily', description: 'Boss diário das 20h com spawn fixo e recompensas por desempenho.', image: 'assets/media/menu/dark-totem-daily.gif' },
                 { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Consumables/more points wheel.gif' },
                 { url: 'roulette-system.html', title: 'Roulette System', description: 'Roleta, Slot Machines, Roulette Token e recompensas da Season 1.', image: 'assets/media/roulette-system/63110-roulette-token.gif' },

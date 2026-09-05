@@ -1,6 +1,14 @@
 window.AVALORIUM_SEARCH_INDEX =
 [
     {
+        "title": "Outfit & Mount Bônus",
+        "description": "Obtenha outfits e montarias no mapa global, quests, Store e Hunting Task Shop. Use !outfitbonus para investir em Cosmetic Mastery.",
+        "category": "Sistemas do Servidor",
+        "keywords": "outfit mount bonus cosmetic mastery outfitbonus masterycosmetic pontos montarias addons addon box mount box free store tibia coins hunting task points skills elemental damage defense stats",
+        "url": "outfit-mount-bonus.html",
+        "image": "assets/media/menu/outfits.gif"
+    },
+    {
         "title": "Tasks System",
         "description": "Bounty Tasks, baús por dificuldade, bônus do Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop.",
         "category": "Sistemas do Servidor",
