@@ -65,10 +65,10 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/reliquary/arcane-kube.png"
     },
     {
-        "title":  "Stones - Guia Completo",
-        "description":  "Raridade, slots, upgrade, elementos e tabelas de referência de stones.",
+        "title":  "RARITY & ELEMENTAL STONES SYSTEM",
+        "description":  "Identificação progressiva, slots, ferramentas e bônus das elemental stones.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "stones raridade rare epic legendary mystic slot upgrade chance custo gold",
+        "keywords":  "rarity elemental stones system raridade rare epic legendary mystic slots identification potion progressivo chance remover rarity mystic hammer precious metal gold bar elemental core bags hunts divergence store inbox",
         "url":  "stones-guia-completo.html",
         "image":  "assets/media/menu/stones-guia-completo.gif"
     },

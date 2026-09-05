@@ -1,0 +1,7 @@
+/* Compact sprites shared by task rewards and Divergence loot. */
+.reward-item { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; vertical-align: middle; }
+.reward-item > img { width: 24px; height: 24px; flex: 0 0 24px; object-fit: contain; image-rendering: pixelated; }
+.reward-item > span { min-width: 0; overflow-wrap: anywhere; }
+@media (min-width:1101px) and (max-width:1400px) {
+ .divergence-page .quick-actions a span { display: none; }
+}

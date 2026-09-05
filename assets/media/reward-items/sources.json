@@ -1,0 +1,37 @@
+{
+  "Earth Amplification": {
+    "file": "assets/media/reward-items/earth-amplification.gif",
+    "page": "https://www.tibiawiki.com.br/wiki/Earth_Amplification",
+    "source": "https://www.tibiawiki.com.br/images/7/7e/Earth_Amplification.gif"
+  },
+  "Energy Amplification": {
+    "file": "assets/media/reward-items/energy-amplification.gif",
+    "page": "https://www.tibiawiki.com.br/wiki/Energy_Amplification",
+    "source": "https://www.tibiawiki.com.br/images/e/e5/Energy_Amplification.gif"
+  },
+  "Holy Amplification": {
+    "file": "assets/media/reward-items/holy-amplification.gif",
+    "page": "https://www.tibiawiki.com.br/wiki/Holy_Amplification",
+    "source": "https://www.tibiawiki.com.br/images/7/79/Holy_Amplification.gif"
+  },
+  "Physical Amplification": {
+    "file": "assets/media/reward-items/physical-amplification.gif",
+    "page": "https://www.tibiawiki.com.br/wiki/Physical_Amplification",
+    "source": "https://www.tibiawiki.com.br/images/1/1d/Physical_Amplification.gif"
+  },
+  "Earth Resilience": {
+    "file": "assets/media/reward-items/earth-resilience.gif",
+    "page": "https://www.tibiawiki.com.br/wiki/Earth_Resilience",
+    "source": "https://www.tibiawiki.com.br/images/5/50/Earth_Resilience.gif"
+  },
+  "Energy Resilience": {
+    "file": "assets/media/reward-items/energy-resilience.gif",
+    "page": "https://www.tibiawiki.com.br/wiki/Energy_Resilience",
+    "source": "https://www.tibiawiki.com.br/images/8/86/Energy_Resilience.gif"
+  },
+  "Holy Resilience": {
+    "file": "assets/media/reward-items/holy-resilience.gif",
+    "page": "https://www.tibiawiki.com.br/wiki/Holy_Resilience",
+    "source": "https://www.tibiawiki.com.br/images/e/ea/Holy_Resilience.gif"
+  }
+}

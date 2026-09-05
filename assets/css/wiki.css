@@ -455,6 +455,7 @@ code {
 .menu-links a.active::before { transform: scaleY(1); }
 .menu-links img { width: 42px; height: 42px; border-radius: 0; filter: drop-shadow(0 6px 10px rgba(0,0,0,.5)); }
 .menu-links strong { color: inherit; font-size: 12px; letter-spacing: .01em; }
+.menu-links a[href^="stones-guia-completo"] strong { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.4; }
 .menu-links small { color: var(--soft); font-size: 10px; line-height: 1.35; }
 
 .breadcrumbs {
