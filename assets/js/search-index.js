@@ -90,9 +90,9 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "Sistema de Craft",
-        "description":  "Receitas, custos e materiais para itens especiais, utilitários e upgrades.",
+        "description":  "Receitas e materiais de upgrades, trinkets, anéis, amuletos, Ironblood Backpack e utilitários. Itens T1 level 800+ em breve.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "craft materiais tokens barras essencias upgrade custo",
+        "keywords":  "craft materiais tokens barras essencias upgrade custo sanguine grand sanguine corrupted void ancient void razor hatchet battleaxe cudgel bludgeon bow crossbow rod coil claws megalomania divergence trinket v1 v2 v3 buff stone critical stone leech stone badge slots monk knight paladin sorcerer druid rings amulets aneis amuletos burningfrost poisonstorm saintdying sigil pendulet ring amulet lords ironblood poison lothlorien corrupted backpack upgrade stone lesser greater fragment double task scroll dust bottle refill tool tier transfer T1 level 800 em breve",
         "url":  "sistema-de-craft.html",
         "image":  "assets/media/menu/sistema-de-craft.gif"
     },
@@ -106,14 +106,14 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "Upgrade Stones",
-        "description":  "Chances, limites e efeitos das stones usadas para evoluir equipamentos.",
+        "description":  "Chances de sucesso, limites e efeitos das Upgrade Stones em armas, wands e rods elegíveis.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "upgrade stones stone lvl 1 lvl 2 lvl 3 lvl 4 chance equipamento armor shield weapon wand rod",
+        "keywords":  "upgrade stones pedras chances sucesso level lvl 1 2 3 4 armas wand rod aprimorar +12",
         "url":  "upgrade-stones.html",
         "image":  "assets/media/items-wiki/Craft/upgrade stone lvl 1.gif"
     },
     {
-        "title":  "Animus Mastery \u0026 SoulPit",
+        "title":  "Animus Mastery & SoulPit",
         "description":  "Animus, Anonymous Mastery, Soul Cores e bônus de experiência.",
         "category":  "Sistemas do Servidor",
         "keywords":  "animus mastery anonymous custom soul core soulpit soul pit prism fiendish experiencia exp customizadas obelisco void netherbound fallen usurpers true asuras sanctum firen firzen frezee exiva moe res radar portable",
@@ -145,15 +145,15 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/hunts-custom/VOID CORRUPTION DEPTHS (INNER NETHERBOUND).png"
     },
     {
-        "title":  "Sanctum of Fire \u0026 Ice",
+        "title":  "Sanctum of Fire & Ice",
         "description":  "Hunt custom level 600 com lados de Fire e Ice, Firzen, Freezee e Fieren.",
         "category":  "Hunts Custom",
         "keywords":  "hunts custom sanctum fire ice firzen freezee fieren energy earth hazard crazed summer winter vanguard",
         "url":  "sanctum-of-fire-ice.html",
-        "image":  "assets/media/hunts-custom/SANCTUM OF FIRE \u0026 ICE.png"
+        "image":  "assets/media/hunts-custom/SANCTUM OF FIRE & ICE.png"
     },
     {
-        "title":  "Pyramid of Azhr\u0027Khal (Three Asuras)",
+        "title":  "Pyramid of Azhr'Khal (Three Asuras)",
         "description":  "Hunt custom level 750 com True Enrage, Blessed e Cursed Asura.",
         "category":  "Hunts Custom",
         "keywords":  "hunts custom pyramid azhr khal three asuras true enrage blessed cursed energy earth death holy hazard",

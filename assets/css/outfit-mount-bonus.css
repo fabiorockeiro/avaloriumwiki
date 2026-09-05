@@ -4,7 +4,7 @@
 .om-hero em { display: block; color: var(--gold-2); font-style: normal; }
 .om-hero-art { display: grid; justify-items: center; gap: 22px; text-align: center; }
 .om-hero-art > div { display: flex; align-items: center; gap: 12px; }
-.om-hero-art img { width: 96px; height: 110px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 0 22px rgba(215,175,97,.18)); }
+.om-hero-art img { width: 160px; height: 180px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 0 22px rgba(215,175,97,.18)); }
 .om-hero-art > span, .om-overview > div > span, .om-heading > span { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
 .om-button { display: inline-block; background: var(--gold); color: var(--bg); padding: 14px 20px; margin-top: 20px; font-size: 13px; font-weight: 800; clip-path: polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%); }
 .om-button:hover { color: var(--bg); background: var(--gold-2); }
@@ -97,7 +97,7 @@
 }
 @media (max-width:1100px) {
  .om-page .om-hero { grid-template-columns: minmax(0,1fr) 140px; }
- .om-hero-art img { width: 60px; height: 80px; }
+ .om-hero-art img { width: 120px; height: 140px; }
  .om-overview > div { padding: 16px; }
  .om-command-panel { grid-template-columns: 1fr; }
 }

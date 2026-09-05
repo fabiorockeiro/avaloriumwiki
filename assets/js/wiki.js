@@ -402,8 +402,12 @@
     syncSidebarArticleCounters();
 
     const craftMaterialIcons = [
+        { pattern: /\bironblood backpack\b/i, image: 'assets/media/craft-utilities/ironblood.png' },
+        { pattern: /\bpoison backpack\b/i, image: 'assets/media/craft-utilities/poison.png' },
+        { pattern: /\blothlorien backpack\b/i, image: 'assets/media/craft-utilities/lothlorien.png' },
+        { pattern: /\bcorrupted backpack\b/i, image: 'assets/media/craft-utilities/corrupted.png' },
         { pattern: /\bgold tokens?\b/i, image: 'assets/media/items-wiki/Craft/Gold_Token.gif' },
-        { pattern: /\b\d+\s*k{2,3}s?\b/i, image: 'assets/media/items-wiki/Craft/Crystal_Coin.gif' },
+        { pattern: /\b\d+\s*k{2,3}s?\b|\bcrystal coins?\b/i, image: 'assets/media/items-wiki/Craft/Crystal_Coin.gif' },
         { pattern: /\bsilver tokens?\b/i, image: 'assets/media/items-wiki/Craft/Silver_Token.gif' },
         { pattern: /\bwarzone tokens?\b/i, image: 'assets/media/items-wiki/Craft/expert wz token.gif' },
         { pattern: /\bdivergence tokens?\b/i, image: 'assets/media/items-wiki/Others/divergence token.gif' },
@@ -438,6 +442,18 @@
         { pattern: /\bburningfrost pendulet\b/i, image: 'assets/media/items-wiki/Craft/burningfrost pendulet.gif' },
         { pattern: /\bpoisonstorm pendulet\b/i, image: 'assets/media/items-wiki/Craft/poisonstorm pendulet.gif' },
         { pattern: /\bsaintdying pendulet\b/i, image: 'assets/media/items-wiki/Craft/saintdying pendulet.gif' },
+        { pattern: /\bdefense ring of death\b/i, image: 'assets/media/items-wiki/Craft/defring1.gif' },
+        { pattern: /\bdefense ring of energy\b/i, image: 'assets/media/items-wiki/Craft/defring2.gif' },
+        { pattern: /\bdefense ring of holy\b/i, image: 'assets/media/items-wiki/Craft/defring3.gif' },
+        { pattern: /\bdefense ring of ice\b/i, image: 'assets/media/items-wiki/Craft/defring4.gif' },
+        { pattern: /\bdefense ring of fire\b/i, image: 'assets/media/items-wiki/Craft/defring5.gif' },
+        { pattern: /\bdefense ring of earth\b/i, image: 'assets/media/items-wiki/Craft/defring6.gif' },
+        { pattern: /\bdefense amulet of fire\b/i, image: 'assets/media/items-wiki/Craft/defamulet3.gif' },
+        { pattern: /\bdefense amulet of holy\b/i, image: 'assets/media/items-wiki/Craft/defamulet4.gif' },
+        { pattern: /\bdefense amulet of energy\b/i, image: 'assets/media/items-wiki/Craft/defamulet5.gif' },
+        { pattern: /\bdefense amulet of death\b/i, image: 'assets/media/items-wiki/Craft/defamuletdeath.gif' },
+        { pattern: /\bdefense amulet of earth\b/i, image: 'assets/media/items-wiki/Craft/defamuletearth.gif' },
+        { pattern: /\bdefense amulet of ice\b/i, image: 'assets/media/items-wiki/Craft/defamuletice.gif' },
     ];
 
     function escapeHtml(value) {
@@ -478,6 +494,24 @@
     }
 
     enhanceCraftMaterialCells();
+
+    // Preserve ingredient links and quantities when decorating the newer recipe lists.
+    document.querySelectorAll('.craft-progression-page :is(.cv-materials, .ct-recipes ul) > li > :is(span, a)').forEach((label) => {
+        if (label.querySelector('img')) return;
+        const source = getCraftMaterialIcon(label.textContent);
+        if (!source) return;
+        const icon = document.createElement('img');
+        icon.src = source;
+        icon.alt = '';
+        icon.width = 24;
+        icon.height = 24;
+        icon.loading = 'lazy';
+        icon.className = 'craft-ingredient-icon';
+        const text = document.createElement('span');
+        while (label.firstChild) text.append(label.firstChild);
+        label.classList.add('craft-ingredient-label');
+        label.append(icon, text);
+    });
 
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
