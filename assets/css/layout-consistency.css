@@ -1,0 +1,51 @@
+/* Shared finishing rules; dedicated system layouts keep their own components. */
+.menu-links strong { white-space: normal; line-height: 1.4; }
+.page-inner .article-nav { gap: 16px; }
+.page-inner .article-nav a { min-width: 0; }
+.page-inner .article-nav strong { overflow-wrap: anywhere; font-size: 14px; }
+.page-inner .breadcrumbs strong { overflow-wrap: anywhere; }
+.layout-standard .article-hero { display: grid; grid-template-columns: minmax(0,1fr) 110px; align-items: center; gap: 24px; padding: clamp(22px,3vw,36px); background: radial-gradient(ellipse at 95% 15%,#64cfe515,transparent 65%),var(--surface); border: 1px solid var(--line); border-bottom: 2px solid var(--gold); }
+.layout-standard .article-hero h1 { font-size: clamp(28px,3.4vw,44px); line-height: 1.2; margin: 10px 0 14px; text-transform: none; }
+.layout-standard .article-hero p { font-size: 14px; line-height: 1.8; max-width: 80ch; }
+.layout-standard .article-hero-media img { width: 88px; height: 88px; object-fit: contain; image-rendering: pixelated; }
+.layout-standard .article-hero-symbol { width: 100%; max-width: 100%; }
+.layout-standard .article-content { display: grid; gap: 28px; }
+.layout-standard .content-section { min-width: 0; margin: 0; padding: 24px 0 0; border-top: 1px solid var(--line); scroll-margin-top: 110px; }
+.layout-standard .content-section:first-child { border-top: 0; padding-top: 0; }
+.layout-standard .content-section-heading { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 18px; }
+.layout-standard .content-section-heading > span { flex: 0 0 32px; width: 32px; height: 32px; color: var(--gold); background: transparent; }
+.layout-standard .content-section-heading h2 { font: 700 clamp(22px,2.5vw,30px)/1.35 Inter,sans-serif; text-transform: none; }
+.layout-standard .content-section-heading p { font-size: 13px; margin: 8px 0 0; color: var(--muted); }
+.layout-standard .narrative-block { max-width: none; padding: 0; background: transparent; border: 0; }
+.layout-standard .narrative-block p { font-size: 14px; line-height: 1.85; color: var(--muted); margin: 0 0 14px; }
+.layout-standard .narrative-block strong { color: var(--text); }
+.layout-standard .narrative-block p::first-letter { float: none; font: inherit; color: inherit; padding: 0; margin: 0; }
+.layout-standard :is(.info-grid,.split-list,.visual-grid) { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr)); gap: 18px; align-items: stretch; }
+.layout-standard .visual-grid { grid-template-columns: repeat(auto-fit,minmax(min(100%,170px),1fr)); }
+.layout-standard :is(.info-card,.split-list > article,.visual-card) { min-width: 0; padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 0; }
+.layout-standard :is(.info-card,.split-list > article,.visual-card) { clip-path: none; }
+.layout-standard :is(.info-card,.split-list > article) h3 { font: 700 17px/1.5 Inter,sans-serif; margin: 10px 0 12px; }
+.layout-standard :is(.info-card,.split-list > article) :is(p,li) { font-size: 13px; line-height: 1.8; }
+.layout-standard .visual-card { display: grid; justify-items: center; align-content: start; gap: 8px; text-align: center; }
+.layout-standard .visual-card img { width: 56px; height: 56px; object-fit: contain; image-rendering: pixelated; }
+.layout-standard .table-wrap { border: 1px solid var(--line); margin: 20px 0 0; overflow: auto; }
+.layout-standard .table-wrap table { min-width: 0; width: 100%; }
+.layout-standard .table-wrap :is(th,td) { padding: 12px 14px; font-size: 13px; white-space: normal; }
+.layout-standard .inline-item-icon { width: 28px; height: 28px; object-fit: contain; image-rendering: pixelated; }
+.layout-standard .media-frame { max-width: 900px; margin: 22px auto 0; border: 1px solid var(--line); padding: 12px; background: var(--surface); }
+.layout-standard .media-frame img { max-width: 100%; height: auto; margin: auto; }
+.layout-standard .media-frame figcaption { color: var(--muted); font-size: 11px; margin-top: 10px; }
+.guide-section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 28px; }
+.guide-section-nav a { padding: 8px 12px; color: var(--cyan); border: 1px solid var(--line); background: var(--surface); font-size: 12px; }
+.guide-section-nav a:hover { border-color: var(--cyan); }
+.guide-section-nav a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+@media(min-width:1101px) and (max-width:1400px) { .quick-actions a span { display: none; } }
+@media(max-width:700px) {
+ .layout-standard .article-hero { grid-template-columns: minmax(0,1fr) 64px; gap: 14px; padding: 20px; }
+ .layout-standard .article-hero-media img { width: 60px; height: 60px; }
+ .layout-standard .article-hero h1 { font-size: 27px; overflow-wrap: anywhere; }
+ .layout-standard :is(.info-grid,.split-list) { grid-template-columns: minmax(0,1fr); }
+ .layout-standard .table-wrap :is(th,td) { padding: 10px 8px; font-size: 12px; }
+ .layout-standard :is(.info-card,.split-list > article,.visual-card) { padding: 16px; }
+ .layout-standard .article-content { gap: 24px; }
+}

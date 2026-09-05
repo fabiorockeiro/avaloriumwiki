@@ -208,16 +208,16 @@
                 { url: 'divergence-system.html', title: 'Divergence System', description: 'Divergence: level 400, Hazard 3, bosses elementais, custos e recompensas por faixa.', image: 'assets/media/menu/divergence-system.gif' },
                 { url: 'tasks-system.html', title: 'Tasks System', description: 'Bounty Tasks, baús por dificuldade, Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop.', image: 'assets/media/items-wiki/portables/portable task book.gif' },
                 { url: 'outfit-mount-bonus.html', title: 'Outfit & Mount Bônus', description: 'Obtenha cosméticos e use !outfitbonus para distribuir pontos em bônus de Cosmetic Mastery.', image: 'assets/media/menu/outfits.gif' },
+                { url: 'stones-guia-completo.html', title: 'Rarity & Elemental Stones System', description: 'Identificação progressiva, slots, ferramentas e bônus das elemental stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
+                { url: 'reliquary-system.html', title: 'Reliquary System', description: 'Progressão em 81 níveis com itens, gold e Kron Cubes por faixa.', image: 'assets/media/reliquary/arcane-kube.png' },
+                { url: 'spell-badge-upgrade.html', title: 'Trinket Badges', description: 'Badges para trinkets: compra com Golden Raid Tokens e evolução na Forja.', image: 'assets/media/menu/spell-badge-upgrade.gif' },
+                { url: 'sistema-de-craft.html', title: 'Sistema de Craft', description: 'Receitas, custos e materiais para itens especiais, utilitários e upgrades.', image: 'assets/media/menu/sistema-de-craft.gif' },
+                { url: 'upgrade-stones.html', title: 'Upgrade Stones', description: 'Chances, limites e efeitos das stones usadas para evoluir equipamentos.', image: 'assets/media/items-wiki/Craft/upgrade stone lvl 1.gif' },
+                { url: 'character-upgrades.html', title: 'Upgrade Potions', description: 'Potions permanentes para cura, reflect e poderes especiais do personagem.', image: 'assets/media/menu/character-upgrades.gif' },
                 { url: 'dark-totem-daily.html', title: 'Dark Totem Daily', description: 'Boss diário das 20h com spawn fixo e recompensas por desempenho.', image: 'assets/media/menu/dark-totem-daily.gif' },
                 { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Consumables/more points wheel.gif' },
                 { url: 'roulette-system.html', title: 'Roulette System', description: 'Roleta, Slot Machines, Roulette Token e recompensas da Season 1.', image: 'assets/media/roulette-system/63110-roulette-token.gif' },
-                { url: 'reliquary-system.html', title: 'Reliquary System', description: 'Progressão em 81 níveis com itens, gold e Kron Cubes por faixa.', image: 'assets/media/reliquary/arcane-kube.png' },
-                { url: 'stones-guia-completo.html', title: 'RARITY & ELEMENTAL STONES SYSTEM', description: 'Identificação progressiva, slots, ferramentas e bônus das elemental stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
                 { url: 'rune-system.html', title: 'Rune System', description: 'Enhanced Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
-                { url: 'spell-badge-upgrade.html', title: 'Trinket Badges', description: 'Badges para trinkets: compra com Golden Raid Tokens e evolução na Forja.', image: 'assets/media/menu/spell-badge-upgrade.gif' },
-                { url: 'sistema-de-craft.html', title: 'Sistema de Craft', description: 'Receitas, custos e materiais para itens especiais, utilitários e upgrades.', image: 'assets/media/menu/sistema-de-craft.gif' },
-                { url: 'character-upgrades.html', title: 'UPGRADE POTIONS', description: 'Potions permanentes para cura, reflect e poderes especiais do personagem.', image: 'assets/media/menu/character-upgrades.gif' },
-                { url: 'upgrade-stones.html', title: 'Upgrade Stones', description: 'Chances, limites e efeitos das stones usadas para evoluir equipamentos.', image: 'assets/media/items-wiki/Craft/upgrade stone lvl 1.gif' },
                 { url: 'animus-mastery-soulpit.html', title: 'Animus Mastery &amp; SoulPit', description: 'Animus, Anonymous Mastery, Soul Cores e bônus de experiência.', image: 'assets/media/menu/animus-mastery-soulpit.gif' },
             ],
         },
@@ -309,8 +309,8 @@
                     <a class="${isActive ? 'active' : ''}" href="fabio-rockeiro-scripts.html">
                         <img src="assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png" alt="" loading="lazy">
                         <span>
-                            <strong>Fábio Rockeiro Scripts</strong>
-                            <small>Task Book, refils, Auto Forja, Follow, Auto Party e RESET FPS.</small>
+                            <strong>FABIO ROCKEIRO - SCRIPTS e DOWNLOADS</strong>
+                            <small>Scripts customizados em breve e GIF para lives na Twitch.</small>
                         </span>
                     </a>
                 </div>

@@ -65,7 +65,7 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/reliquary/arcane-kube.png"
     },
     {
-        "title":  "RARITY & ELEMENTAL STONES SYSTEM",
+        "title":  "Rarity & Elemental Stones System",
         "description":  "Identificação progressiva, slots, ferramentas e bônus das elemental stones.",
         "category":  "Sistemas do Servidor",
         "keywords":  "rarity elemental stones system raridade rare epic legendary mystic slots identification potion progressivo chance remover rarity mystic hammer precious metal gold bar elemental core bags hunts divergence store inbox",
@@ -99,7 +99,7 @@ window.AVALORIUM_SEARCH_INDEX =
     {
         "category":  "Sistemas do Servidor",
         "url":  "character-upgrades.html",
-        "title":  "UPGRADE POTIONS",
+        "title":  "Upgrade Potions",
         "description":  "Potions permanentes para cura, reflect e poderes especiais do personagem.",
         "keywords":  "upgrade potions potion reflect cura fatal momentum ruse transcendence safezone character upgrade",
         "image":  "assets/media/menu/character-upgrades.gif"
@@ -169,10 +169,10 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/hunts-custom/THE FALLEN USURPERS.png"
     },
     {
-        "title":  "Fábio Rockeiro Scripts",
-        "description":  "Script Lua carregável no ZeroBot com Task Book, Rune Refil, Arrow Refil, Auto Forja, Follow, Auto Party e RESET FPS.",
+        "title":  "FABIO ROCKEIRO - SCRIPTS e DOWNLOADS",
+        "description":  "Em breve, atualizações de scripts customizados para Zerobot. Baixe o GIF para sua live na Twitch e saiba como ser parceiro do servidor.",
         "category":  "Scripts Zerobot",
-        "keywords":  "zerobot script lua fabio rockeiro task book rune refil arrow refil auto forja follow auto party paladin dust slivers exalted core reset fps x-log reconectar ctrl+l voc utamo vita energy ring utamo tempo documentos scripts carregar recarregar FabioRockeiroBot FabioRockeiroBOT",
+        "keywords":  "fabio rockeiro scripts downloads zerobot customizados em breve gif twitch live parceria parceiro discord",
         "url":  "fabio-rockeiro-scripts.html",
         "image":  "assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png"
     }
