@@ -10,9 +10,9 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "Divergence System",
-        "description":  "Dungeon progressiva com bosses elementais, custo por stage e recompensas por tier.",
+        "description":  "Divergence: level 400, Hazard 3, bosses elementais, custos e recompensas por faixa. Tokens para o Seller e craft.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "divergence dungeon boss elemental stage tokens rewards custo",
+        "keywords":  "divergence dungeon boss elemental faixa tokens recompensas custo hazard 400 safezone free vip seller craft",
         "url":  "divergence-system.html",
         "image":  "assets/media/menu/divergence-system.gif"
     },

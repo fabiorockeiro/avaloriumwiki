@@ -54,7 +54,7 @@ Três ideias orientam a linguagem:
 
 O personagem é deliberadamente dividido em duas camadas para permitir evolução visual sem recriar a arte inteira:
 
-- `assets/media/brand/fenrir-guardian-clean.png`: raster estático com apenas o lobo e a pedra da testa. Não deve receber colar, pingente ou partículas incorporadas.
+- `assets/media/brand/fenrir-guardian-clean-v2.png`: raster estático com apenas o lobo e a pedra da testa. Não deve receber colar, pingente ou partículas incorporadas.
 - `index.html` (`.fenrir-collar-magic`): SVG alinhado ao mesmo `viewBox` 1254 × 1254 do PNG. Desenha raios irregulares que envolvem o pescoço, ramificações elétricas conectadas à pedra e o pingente facetado.
 - `.fenrir-ice-particles`: pequenos cristais e estrelas vetoriais com tempos e trajetórias independentes; aparecem, ascendem e desaparecem ao redor do colar.
 - `assets/css/wiki.css`: controla brilho, fluxo, pulsação e intensidade. O Fenrir permanece imóvel; somente energia e partículas são animadas.
