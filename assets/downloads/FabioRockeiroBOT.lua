@@ -38,7 +38,7 @@ UI.defaults = {
         x = 420,
         y = 70,
         expanded = true,
-        activeTab = "task",
+        activeTab = "rune",
         logoItemId = 50786,
     },
     autoParty = {
@@ -48,6 +48,10 @@ UI.defaults = {
     },
     fungo = {
         enabled = false,
+    },
+    fireFeet = {
+        cooldownSeconds = 30,
+        retryMilliseconds = 1000,
     },
 }
 
@@ -63,15 +67,14 @@ UI.colors = {
 }
 
 UI.tabs = {
-    { key = "task", label = "Task", icon = 63053 },
     { key = "rune", label = "Rune", icon = 63052 },
     { key = "arrow", label = "Arrow", icon = 63050 },
     { key = "forge", label = "Forja", icon = 63054 },
     { key = "follow", label = "Follow", icon = 3079 },
     { key = "reset", label = "Reset FPS", icon = 63135 },
-    { key = "craft", label = "Craft", icon = 63257 },
-    { key = "fungo", label = "Pisar no Fungo", icon = 39176 },
+    { key = "fungo", label = "Fungo", icon = 39176 },
     { key = "party", label = "Party", icon = 63680 },
+    { key = "fireFeet", label = "FIRE NO PÉ", icon = 3192 },
 }
 
 UI.itemSkinAssets = {
@@ -113,7 +116,7 @@ UI.itemSkinAssets = {
 
 UI.layout = {
     -- Multiples of 32 keep the item-sprite border pieces connected.
-    width = 640,
+    width = 672,
     height = 448,
 
     -- O launcher virou o icone principal do header e tambem e o ponto de arraste.
@@ -121,29 +124,30 @@ UI.layout = {
     dragOffsetY = 42,
     headerIconX = 76,
     headerIconY = 42,
-    expandedHeaderIconX = 96,
+    expandedHeaderIconX = 54,
     expandedHeaderIconY = 32,
     minimizedHeaderIconY = 32,
-    headerTextX = 138,
+    headerTextX = 100,
     headerTitleY = 30,
     headerSubY = 52,
-    headerHintX = 330,
+    headerHintX = 398,
     headerHintY = 34,
     headerHint2Y = 52,
     logoScale = 1.42,
     minimizedLogoScale = 1.34,
 
-    tabX = 54,
-    tabGlowX = 54,
-    tabTextX = 96,
-    tabBadgeX = 202,
-    tabY = 118,
-    tabStep = 36,
+    tabX = 40,
+    tabGlowX = 40,
+    tabTextX = 82,
+    tabBadgeX = 184,
+    tabY = 110,
+    tabStep = 40,
 
-    menuRightX = 256,
-    contentX = 294,
-    contentY = 126,
-    contentLineStep = 16,
+    menuRightX = 224,
+    contentX = 266,
+    contentY = 110,
+    contentLineStep = 19,
+    contentTextOffsetY = 40,
 
     -- Mantidos para compatibilidade, mas o rodape foi removido visualmente.
     statusY = 392,
@@ -187,6 +191,10 @@ local function copyDefaults()
         fungo = {
             enabled = UI.defaults.fungo.enabled,
         },
+        fireFeet = {
+            cooldownSeconds = UI.defaults.fireFeet.cooldownSeconds,
+            retryMilliseconds = UI.defaults.fireFeet.retryMilliseconds,
+        },
     }
 end
 
@@ -212,6 +220,17 @@ local function mergeConfig(base, loaded)
     if type(loaded.fungo) == "table" then
         for key, value in pairs(loaded.fungo) do
             base.fungo[key] = value
+        end
+    end
+
+    if type(loaded.fireFeet) == "table" then
+        local cooldown = tonumber(loaded.fireFeet.cooldownSeconds)
+        local retry = tonumber(loaded.fireFeet.retryMilliseconds)
+        if cooldown and cooldown >= 1 and cooldown <= 3600 then
+            base.fireFeet.cooldownSeconds = math.floor(cooldown)
+        end
+        if retry and retry >= 100 and retry <= 10000 then
+            base.fireFeet.retryMilliseconds = math.floor(retry)
         end
     end
 
@@ -269,6 +288,16 @@ function UI.loadConfig()
             config = mergeConfig(config, decoded)
         end
     end
+
+    -- Configuracoes antigas podem apontar para a aba TASK removida.
+    local validTab = false
+    for _, tab in ipairs(UI.tabs) do
+        if tab.key == config.window.activeTab then
+            validTab = true
+            break
+        end
+    end
+    if not validTab then config.window.activeTab = UI.defaults.window.activeTab end
 
     UI.config = config
     return config
@@ -799,6 +828,9 @@ function UI.statusColor(text)
 end
 
 function UI.moduleStatusText(key)
+    if key == "fireFeet" then
+        return UI.fireFeetState and UI.fireFeetState.enabled and "[ON]" or "[OFF]"
+    end
     if key == "party" then
         return UI.config and UI.config.autoParty and UI.config.autoParty.enabled and "[ON]" or "[OFF]"
     end
@@ -953,7 +985,7 @@ function UI.createItemFallbackSkin(x, y)
         layout.width - 32,
         layout.height - 32,
         assets.panelFill,
-        0.74,
+        0.86,
         735
     )
 
@@ -962,10 +994,7 @@ function UI.createItemFallbackSkin(x, y)
 
     -- Separadores internos: header, menu lateral e painel de conteudo.
     createHorizontalEdge(skin.header, 16, 76, layout.width - 32, assets.edgeBottom, 0.58, 790)
-    createVerticalEdge(skin.edges, layout.menuRightX, 96, 352, assets.edgeLeft, 0.62, 792)
-
-    -- O topo e a lateral esquerda do painel direito ja sao definidos pela moldura principal.
-    createVerticalEdge(skin.content, 592, 96, 352, assets.edgeRight, 0.46, 786)
+    createVerticalEdge(skin.edges, layout.menuRightX, 96, layout.height - 128, assets.edgeLeft, 0.62, 792)
 
     -- Apenas a aba ativa exibe o glow 63157 atras do icone.
     for index, _ in ipairs(UI.tabs) do
@@ -1141,165 +1170,6 @@ function UI.openActionPanel(title, iconId, actions)
     end
 end
 
-function UI.taskLevels()
-    if type(FabioTaskLevelOptions) == "table" then
-        return FabioTaskLevelOptions
-    end
-    return { "Easy", "Medium", "Hard", "Nightmare", "Master" }
-end
-
-function UI.taskCatalog(level)
-    if type(FabioTaskCatalog) == "table" and type(FabioTaskCatalog[level]) == "table" then
-        return FabioTaskCatalog[level]
-    end
-    return {}
-end
-
-function UI.writeTaskPanelConfig(data)
-    if not JSON then
-        pcall(function() dofile("core/json.lua") end)
-    end
-    if not JSON or not JSON.encode then
-        UI.showMessage("JSON indisponivel para salvar task.")
-        return false
-    end
-
-    data = data or {}
-    data.updatedAt = os.time()
-    local ok, encoded = pcall(function()
-        return JSON.encode(data)
-    end)
-    if ok and encoded then
-        UI.writeTextFile("TaskBookController.config.json", encoded)
-        return true
-    end
-    UI.showMessage("Falha ao salvar config da task.")
-    return false
-end
-
-function UI.selectTask(level, task)
-    if not task then return end
-    UI.writeTaskPanelConfig({
-        level = level,
-        task = task.name,
-        match = task.match or task.name,
-    })
-    UI.destroyModal()
-    UI.showMessage("Task selecionada: " .. tostring(level) .. " / " .. tostring(task.name))
-end
-
-function UI.openTaskLevelPanel()
-    local actions = {}
-    for _, level in ipairs(UI.taskLevels()) do
-        table.insert(actions, {
-            label = level,
-            iconId = 63053,
-            color = UI.colors.info,
-            callback = function()
-                UI.openTaskListPanel(level, 1)
-            end,
-        })
-    end
-    table.insert(actions, {
-        label = "Voltar",
-        iconId = 6529,
-        color = UI.colors.warning,
-        callback = function() UI.openTaskPanel() end,
-    })
-    UI.openActionPanel("Escolher nivel", 63053, actions)
-end
-
-function UI.openTaskListPanel(level, page)
-    local tasks = UI.taskCatalog(level)
-    if #tasks == 0 then
-        UI.showMessage("Sem catalogo para " .. tostring(level))
-        UI.openTaskLevelPanel()
-        return
-    end
-
-    page = tonumber(page) or 1
-    local perPage = 5
-    local totalPages = math.max(1, math.ceil(#tasks / perPage))
-    if page < 1 then page = totalPages end
-    if page > totalPages then page = 1 end
-
-    local actions = {}
-    local first = ((page - 1) * perPage) + 1
-    local last = math.min(#tasks, first + perPage - 1)
-    for index = first, last do
-        local task = tasks[index]
-        table.insert(actions, {
-            label = tostring(index) .. ". " .. tostring(task.name),
-            iconId = 63053,
-            color = UI.colors.info,
-            callback = function()
-                UI.selectTask(level, task)
-            end,
-        })
-    end
-
-    table.insert(actions, {
-        label = "Pagina " .. tostring(page) .. "/" .. tostring(totalPages) .. "  >",
-        iconId = 3533,
-        color = UI.colors.warning,
-        callback = function() UI.openTaskListPanel(level, page + 1) end,
-    })
-    table.insert(actions, {
-        label = "< Voltar niveis",
-        iconId = 6529,
-        color = UI.colors.warning,
-        callback = function() UI.openTaskLevelPanel() end,
-    })
-
-    UI.openActionPanel("Tasks: " .. tostring(level), 63053, actions)
-end
-
-function UI.openTaskPanel()
-    local m = UI.modules.task
-    if not m then
-        UI.showMessage("Task Book nao carregado.")
-        return
-    end
-
-    UI.openActionPanel("FabioRockeiro Task", UI.tabIcon(UI.tabs[1]) or 63053, {
-        {
-            label = UI.metaText(m.toggle, "Ativar / Pausar"),
-            iconId = 63053,
-            color = UI.colors.warning,
-            primary = true,
-            callback = function()
-                UI.invoke(m.toggle)
-                UI.destroyModal()
-            end,
-        },
-        {
-            label = "Checar agora",
-            iconId = 63053,
-            color = UI.colors.info,
-            callback = function()
-                UI.invoke(m.check)
-                UI.destroyModal()
-            end,
-        },
-        {
-            label = "Selecionar task / nivel",
-            iconId = 63053,
-            color = UI.colors.info,
-            callback = function()
-                UI.openTaskLevelPanel()
-            end,
-        },
-        {
-            label = "Fechar painel",
-            iconId = 6529,
-            color = UI.colors.inactive,
-            callback = function()
-                UI.destroyModal()
-            end,
-        },
-    })
-end
-
 function UI.createHubHud()
     if UI.elements then
         UI.destroyHubHud()
@@ -1336,12 +1206,12 @@ function UI.createHubHud()
     end)
     if elements.sub.setFontSize then elements.sub:setFontSize(8) end
 
-    elements.hint = UI.createText(x + layout.headerHintX, y + layout.headerHintY, "Clique no Icone do Mago para Minimizar", UI.colors.muted, function()
+    elements.hint = UI.createText(x + layout.headerHintX, y + layout.headerHintY, "Clique no mago para minimizar", UI.colors.muted, function()
         UI.toggleExpanded()
     end)
     if elements.hint.setFontSize then elements.hint:setFontSize(7) end
 
-    elements.hint2 = UI.createText(x + layout.headerHintX, y + layout.headerHint2Y, "e arraste pra qualquer canto da tela", UI.colors.muted, function()
+    elements.hint2 = UI.createText(x + layout.headerHintX, y + layout.headerHint2Y, "Arraste o mago para mover", UI.colors.muted, function()
         UI.toggleExpanded()
     end)
     if elements.hint2.setFontSize then elements.hint2:setFontSize(7) end
@@ -1372,12 +1242,12 @@ function UI.createHubHud()
 
     elements.contentTitle = UI.createText(x + layout.contentX + 42, y + layout.contentY, "", UI.colors.title)
     if elements.contentTitle.setFontSize then elements.contentTitle:setFontSize(12) end
-    elements.contentIcon = UI.createItem(x + layout.contentX, y + layout.contentY + 8, 63053, noop, 0.96)
+    elements.contentIcon = UI.createItem(x + layout.contentX, y + layout.contentY + 8, UI.tabs[1].icon, noop, 0.96)
     elements.contentStateIcon = nil
 
     for index = 1, 14 do
-        elements.lines[index] = UI.createText(x + layout.contentX + 42, y + layout.contentY + 34 + ((index - 1) * layout.contentLineStep), "", UI.colors.neutral)
-        if elements.lines[index].setFontSize then elements.lines[index]:setFontSize(8) end
+        elements.lines[index] = UI.createText(x + layout.contentX, y + layout.contentY + layout.contentTextOffsetY + ((index - 1) * layout.contentLineStep), "", UI.colors.neutral)
+        if elements.lines[index].setFontSize then elements.lines[index]:setFontSize(9) end
     end
 
     -- Rodape antigo removido: os estados agora ficam nos badges do menu.
@@ -1435,6 +1305,7 @@ end
 
 function UI.setActiveTab(key)
     UI.destroyModal()
+    if key == "fireFeet" then UI.toggleFireFeet() end
     UI.config.window.activeTab = key
     UI.config.window.expanded = true
     UI.saveConfig()
@@ -1487,20 +1358,6 @@ function UI.addLine(lines, text, color, callback)
         color = color or UI.colors.neutral,
         callback = callback,
     })
-end
-
-function UI.linesTask(lines)
-    local m = UI.modules.task
-    if not m or not m.status then
-        UI.addLine(lines, "Task Book nao carregado.", UI.colors.inactive)
-        return
-    end
-    UI.addLine(lines, UI.metaText(m.status), UI.statusColor(UI.metaText(m.status)))
-    UI.addLine(lines, UI.metaText(m.selected), UI.colors.neutral)
-    UI.addLine(lines, UI.metaText(m.progress), UI.colors.info)
-    UI.addLine(lines, UI.metaText(m.toggle, "[Ativar/Pausar]"), UI.colors.warning, function() UI.invoke(m.toggle) end)
-    UI.addLine(lines, "[Painel custom da task]", UI.colors.info, function() UI.openTaskPanel() end)
-    UI.addLine(lines, "[Checar agora]", UI.colors.info, function() UI.invoke(m.check) end)
 end
 
 function UI.linesRune(lines)
@@ -1656,8 +1513,7 @@ end
 function UI.currentLines()
     local tab = UI.currentTabDef()
     local lines = {}
-    if tab.key == "task" then UI.linesTask(lines)
-    elseif tab.key == "rune" then UI.linesRune(lines)
+    if tab.key == "rune" then UI.linesRune(lines)
     elseif tab.key == "arrow" then UI.linesArrow(lines)
     elseif tab.key == "forge" then UI.linesForge(lines)
     elseif tab.key == "follow" then UI.linesFollow(lines)
@@ -1665,6 +1521,7 @@ function UI.currentLines()
     elseif tab.key == "craft" then UI.linesCraft(lines)
     elseif tab.key == "fungo" then UI.linesFungo(lines)
     elseif tab.key == "party" then UI.linesParty(lines)
+    elseif tab.key == "fireFeet" then UI.linesFireFeet(lines)
     end
     return lines
 end
@@ -1682,7 +1539,6 @@ function UI.statusStrip()
         end
     end
 
-    add("task", "Task", UI.modules.task and UI.modules.task.status)
     add("rune", "Rune", UI.modules.rune and UI.modules.rune.status)
     add("arrow", "Arrow", UI.modules.arrow and UI.modules.arrow.status)
     add("reset", "Reset", UI.modules.reset and UI.modules.reset.status)
@@ -1700,17 +1556,18 @@ function UI.badgeTextAndColor(key)
 end
 
 function UI.panelTitle(tab)
-    if not tab then return "Modulo" end
-    if tab.key == "party" then return "Party Module" end
-    if tab.key == "task" then return "Task Module" end
-    if tab.key == "rune" then return "Rune Module" end
-    if tab.key == "arrow" then return "Arrow Module" end
-    if tab.key == "forge" then return "Forja Module" end
-    if tab.key == "follow" then return "Follow Module" end
-    if tab.key == "reset" then return "Reset FPS Module" end
-    if tab.key == "craft" then return "Craft Module" end
-    if tab.key == "fungo" then return "Pisar no Fungo" end
-    return tostring(tab.label or "Modulo") .. " Module"
+    local titles = {
+        party = "Auto Party",
+        rune = "Compra de runas",
+        arrow = "Compra de municao",
+        forge = "Auto Forja",
+        follow = "Follow",
+        reset = "Reset FPS",
+        craft = "Craft House",
+        fungo = "Pisar no Fungo",
+        fireFeet = "FIRE NO PÉ",
+    }
+    return tab and (titles[tab.key] or tab.label) or "Modulo"
 end
 
 function UI.updateHeader(e, x, y, expanded, tab)
@@ -1738,8 +1595,8 @@ function UI.updateHeader(e, x, y, expanded, tab)
 
     setHudText(e.brand, UI.scriptDisplayName)
     setHudText(e.sub, expanded and ("Avalorium Hub | " .. tab.label) or "Clique para abrir")
-    setHudText(e.hint, "Clique no Icone do Mago para Minimizar")
-    setHudText(e.hint2, "e arraste pra qualquer canto da tela")
+    setHudText(e.hint, "Clique no mago para minimizar")
+    setHudText(e.hint2, "Arraste o mago para mover")
 end
 
 function UI.updateStatusBadges(tabEntry)
@@ -1801,7 +1658,7 @@ function UI.updateContent(e, x, y, expanded, tab)
     local lines = UI.currentLines()
     for index, lineHud in ipairs(e.lines or {}) do
         local data = lines[index]
-        setHudPos(lineHud, x + layout.contentX + 42, y + layout.contentY + 34 + ((index - 1) * layout.contentLineStep))
+        setHudPos(lineHud, x + layout.contentX, y + layout.contentY + layout.contentTextOffsetY + ((index - 1) * layout.contentLineStep))
         setHudVisible(lineHud, expanded and data ~= nil)
         if data then
             setHudText(lineHud, shorten(data.text, 54))
@@ -1833,6 +1690,7 @@ function UI.render()
 end
 
 function UI.clear()
+    if UI.fireFeetTimer then UI.fireFeetTimer:stop() end
     UI.destroyHubHud()
 end
 
@@ -2123,12 +1981,127 @@ function UI.installFungoStepper()
     end, 100)
 end
 
+-- Fire Bomb no SQM atual: confirma consumo antes de iniciar o cooldown.
+function UI.fireFeetConfig()
+    UI.config.fireFeet = UI.config.fireFeet or {
+        cooldownSeconds = UI.defaults.fireFeet.cooldownSeconds,
+        retryMilliseconds = UI.defaults.fireFeet.retryMilliseconds,
+    }
+    return UI.config.fireFeet
+end
+
+function UI.getFireFeetState()
+    UI.fireFeetState = UI.fireFeetState or {
+        enabled = false, nextUseAt = 0, nextTryAt = 0,
+        lastStatus = "Aguardando ativacao.",
+    }
+    return UI.fireFeetState
+end
+
+function UI.toggleFireFeet()
+    local state = UI.getFireFeetState()
+    state.enabled = not state.enabled
+    state.pendingCount = nil
+    state.lastStatus = state.enabled and "Aguardando uso no seu SQM." or "Pausado."
+    UI.render()
+end
+
+function UI.adjustFireFeetCooldown(delta)
+    local config = UI.fireFeetConfig()
+    config.cooldownSeconds = math.max(1, math.min(3600, config.cooldownSeconds + delta))
+    local state = UI.getFireFeetState()
+    if state.lastConfirmedAt then
+        state.nextUseAt = state.lastConfirmedAt + config.cooldownSeconds * 1000
+    end
+    UI.saveConfig()
+    UI.render()
+end
+
+function UI.linesFireFeet(lines)
+    local state = UI.getFireFeetState()
+    local config = UI.fireFeetConfig()
+    UI.addLine(lines, state.enabled and "Fire Bomb: ON" or "Fire Bomb: OFF",
+        state.enabled and UI.colors.active or UI.colors.inactive, UI.toggleFireFeet)
+    UI.addLine(lines, "Alvo: SQM atual do seu personagem.", UI.colors.neutral)
+    UI.addLine(lines, "Runas: " .. tostring(Game.getItemCount(3192) or 0), UI.colors.info)
+    UI.addLine(lines, state.lastStatus, UI.colors.muted)
+    UI.addLine(lines, "Cooldown: " .. config.cooldownSeconds .. " segundos", UI.colors.title)
+    UI.addLine(lines, "[-1 segundo]", UI.colors.info, function() UI.adjustFireFeetCooldown(-1) end)
+    UI.addLine(lines, "[+1 segundo]", UI.colors.info, function() UI.adjustFireFeetCooldown(1) end)
+    UI.addLine(lines, "[-5 segundos]", UI.colors.info, function() UI.adjustFireFeetCooldown(-5) end)
+    UI.addLine(lines, "[+5 segundos]", UI.colors.info, function() UI.adjustFireFeetCooldown(5) end)
+    UI.addLine(lines, "Repete ate a quantidade de runas diminuir.", UI.colors.neutral)
+    UI.addLine(lines, "Tentativas: " .. config.retryMilliseconds .. " ms", UI.colors.muted)
+    UI.addLine(lines, "Cooldown inicia apos confirmar o consumo.", UI.colors.muted)
+end
+
+function UI.runFireFeet()
+    local state = UI.getFireFeetState()
+    if not state.enabled then return end
+    if not Client.isConnected() then
+        state.pendingCount = nil
+        state.lastStatus = "Aguardando conexao."
+        return
+    end
+    local playerId = Player.getId()
+    if not playerId or playerId == 0 then
+        state.pendingCount = nil
+        return
+    end
+    local count = Game.getItemCount(3192)
+    if type(count) ~= "number" or count < 0 then return end
+    local now = os.clock() * 1000
+    local config = UI.fireFeetConfig()
+    if state.pendingCount then
+        if count < state.pendingCount then
+            state.pendingCount = nil
+            state.lastConfirmedAt = now
+            state.nextUseAt = now + config.cooldownSeconds * 1000
+            state.lastStatus = "Uso confirmado! Iniciando cooldown."
+            return
+        end
+        state.pendingCount = count
+    end
+    if now < state.nextUseAt then
+        state.lastStatus = "Proximo uso em " .. math.ceil((state.nextUseAt - now) / 1000) .. "s."
+        return
+    end
+    if count < 1 then
+        state.lastStatus = "Sem Fire Bomb Rune."
+        return
+    end
+    if now < state.nextTryAt then return end
+    local pos = Creature(playerId):getPosition()
+    if not pos or not pos.x or not pos.y or not pos.z then return end
+    state.pendingCount = count
+    state.nextTryAt = now + config.retryMilliseconds
+    state.lastStatus = "Tentando usar; aguardando consumo."
+    Game.useItemOnGround(3192, pos.x, pos.y, pos.z)
+end
+
+function UI.installFireFeet()
+    -- Evita duplicar tentativas caso o script avulso esteja carregado.
+    if FireBombNoPe then
+        FireBombNoPe.enabled = false
+        if FireBombNoPe.timer then FireBombNoPe.timer:stop() end
+        if FireBombNoPe.hudTimer then FireBombNoPe.hudTimer:stop() end
+        if FireBombNoPe.hud then FireBombNoPe.hud:destroy() end
+        if FireBombNoPe.icon then FireBombNoPe.icon:destroy() end
+        FireBombNoPe = nil
+    end
+    UI.getFireFeetState().pendingCount = nil
+    UI.fireFeetTimer = Timer("fabioUiFireFeet", function()
+        UI.safe("fire no pe", UI.runFireFeet)
+    end, 100)
+end
+
 function UI.build()
     UI.loadConfig()
     UI.buildLegacyModules()
     UI.createHubHud()
     UI.installAutoParty()
     UI.installFungoStepper()
+    UI.installFireFeet()
 
     Timer("fabioUiHubRender", function()
         UI.render()
@@ -2156,7 +2129,7 @@ FabioUI.suppressLegacyHud = true
 FabioUI.loadConfig()
 
 FabioRockeiroBOT = {
-    version = "1.8.0-unificado",
+    version = "1.8.1-fire-no-pe",
     author = "Fabio Rockeiro",
     running = false,
 }
@@ -2167,7 +2140,6 @@ function FabioRockeiroBOT.loadModules()
         { key = "avalorium", loader = FabioRockeiroBOT.loadAvaloriumModule },
         { key = "follow", loader = FabioRockeiroBOT.loadFollowModule },
         { key = "resetfps", loader = FabioRockeiroBOT.loadResetFpsModule },
-        { key = "crafthouse", loader = FabioRockeiroBOT.loadCraftHouseModule },
     }
 
     for _, module in ipairs(modules) do
@@ -2193,6 +2165,7 @@ end
 
 function FabioRockeiroBOT.shutdown()
     FabioRockeiroBOT.running = false
+    if FabioUI.fireFeetState then FabioUI.fireFeetState.pendingCount = nil end
     FabioUI.saveConfig()
 end
 
@@ -4978,944 +4951,6 @@ Timer("logoutFabioRockeiroAuto", function()
 end, 1000)
 
 showMessage("Script carregado. Icone minimiza/expande. Status liga/desliga. [VOC] configura.")
-
-end
-
-end
-
--- =========================
--- Modulo embutido: Craft House
--- =========================
-function FabioRockeiroBOT.loadCraftHouseModule()
---[[
-=========================================================
- CRAFT HOUSE AVALORIUM - Fabio Rockeiro - V6 USE GROUND STATION
-=========================================================
-Script para ZeroBot / OTC-style Lua API.
-Versao blindada + conversa com NPC + uso real da mesa no chao.
-
-Fluxo:
-1) Clique no icone lateral grande para abrir/fechar o painel.
-2) Clique em uma mesinha pequena para ATIVAR o craft dela.
-3) A mesinha ativada vira o icone lateral grande.
-4) O bot verifica o refill necessario na backpack.
-5) Se estiver abaixo do MIN, fala com o NPC da house e compra ate o MAX.
-6) Usa a mesinha para iniciar/continuar o craft.
-7) Se a mesa disser que ja esta em uso, o bot nao faz nada e aguarda.
-
-Criado por: Fabio Rockeiro
-=========================================================
-]]
-
-do
-
--- =========================
--- CONFIGURACAO GERAL
--- =========================
-local SCRIPT_NAME = "CRAFT HOUSE AVALORIUM - Fabio Rockeiro"
-local SCRIPT_VERSION = "V6 USE GROUND STATION"
-
--- posicao inicial do HUD
-local hudStartX = 420
-local hudStartY = 455
-
--- tamanhos dos icones
-local bigIconScale = 2.25
-local smallIconScale = 1.35
-local selectedSmallIconScale = 1.55
-
--- intervalos
-local checkIntervalMs = 5000          -- checagem geral
-local afterUseDelayMs = 8000          -- tempo para tentar usar a mesa novamente
-local afterBuyDelayMs = 1500          -- tempo depois de comprar
-local stationSearchRadius = 7          -- quantos SQMs ao redor procurar pela mesa
-local npcTalkDelayMs = 700            -- delay entre falas no NPC
-local npcFirstReplyDelayMs = 1200      -- delay maior depois do hi, pois abre a aba/chat do NPC
-local TALKTYPE_NPC = (Enums and Enums.TalkTypes and Enums.TalkTypes.TALKTYPE_PRIVATE_PN) or 12 -- chat de NPC
-
--- quantidades padrao
-local minRefillAmount = 100           -- se tiver <= isso, compra
-local maxRefillAmount = 300           -- tenta completar ate isso
-local minStep = 50                    -- clique no MIN muda de 50 em 50
-local maxStep = 50                    -- clique no MAX muda de 50 em 50
-
--- icone inicial antes de selecionar mesa
-local defaultIconItemId = 63257
-
--- falas do NPC de house
-local npcMessages = {
-    "hi",
-    "service",
-    "goods",
-    "tools",
-}
-
--- Ordem informada do NPC:
--- 1 = black ammo refill
--- 2 = black flask refill
--- 3 = black rune refill
-local refillItems = {
-    ammo =  { id = 63223, name = "black ammo refill",  npcOrder = 1 },
-    flask = { id = 63225, name = "black flask refill", npcOrder = 2 },
-    rune =  { id = 63224, name = "black rune refill",  npcOrder = 3 },
-}
-
-local stations = {
-    -- RUNES - usa black rune refill 63224
-    { id = 63257, label = "SD",            fullName = "enhanced sudden death rune station",       refillType = "rune" },
-    { id = 63261, label = "GFB",           fullName = "enhanced great fireball rune station",      refillType = "rune" },
-    { id = 63263, label = "Avalanche",     fullName = "enhanced avalanche rune station",           refillType = "rune" },
-    { id = 63255, label = "Thunder",       fullName = "enhanced thunderstorm rune station",        refillType = "rune" },
-    { id = 63256, label = "Stone",         fullName = "enhanced stone shower rune station",        refillType = "rune" },
-    { id = 63253, label = "UH",            fullName = "enhanced ultimate healing rune station",    refillType = "rune" },
-
-    -- POTIONS - usa black flask refill 63225
-    { id = 63258, label = "Supreme HP",    fullName = "enhanced supreme health potion station",    refillType = "flask" },
-    { id = 63264, label = "Berserk",       fullName = "enhanced berserk potion station",           refillType = "flask" },
-    { id = 63250, label = "USP",           fullName = "enhanced ultimate spirit potion station",   refillType = "flask" },
-    { id = 63254, label = "UMP",           fullName = "enhanced ultimate mana potion station",     refillType = "flask" },
-    { id = 63259, label = "Mastermind",    fullName = "enhanced mastermind potion station",        refillType = "flask" },
-    { id = 63262, label = "Bullseye",      fullName = "enhanced bullseye potion station",          refillType = "flask" },
-
-    -- AMMO - usa black ammo refill 63223
-    { id = 63252, label = "Spectral",      fullName = "enhanced spectral bolt station",            refillType = "ammo" },
-    { id = 63251, label = "Diamond",       fullName = "enhanced diamond arrow station",            refillType = "ammo" },
-}
-
--- =========================
--- ESTADO
--- =========================
-local enabled = false
-local expanded = false
-local selectedStationIndex = nil
-
-local lastActionAt = 0
-local nextActionAt = 0
-local isBuying = false
-local lastStatus = "Desativado"
-local lastNpcStepAt = 0
-local npcStepIndex = 0
-local pendingBuyType = nil
-
-local hud = { stationEntries = {} }
-local attachedHudElements = {}
-
--- =========================
--- HELPERS
--- =========================
-local function nowMs()
-    return math.floor(os.clock() * 1000)
-end
-
-local function lower(value)
-    return string.lower(tostring(value or ""))
-end
-
-local function log(message)
-    print("[CRAFT HOUSE AVALORIUM] " .. tostring(message))
-end
-
-local function showMessage(message)
-    log(message)
-    if Client and Client.showMessage then
-        Client.showMessage("[CRAFT HOUSE]\n" .. tostring(message))
-    end
-end
-
-local function safeCall(label, fn)
-    local ok, err = pcall(fn)
-    if not ok then
-        lastStatus = "Erro: " .. tostring(label)
-        log("ERRO em " .. tostring(label) .. ": " .. tostring(err))
-        if Client and Client.showMessage then
-            Client.showMessage("[CRAFT HOUSE]\nErro em " .. tostring(label) .. "\n" .. tostring(err))
-        end
-    end
-    return ok
-end
-
-local function safeSetText(item, text)
-    if item and item.setText then item:setText(tostring(text or "")) end
-end
-
-local function safeSetItemId(item, itemId)
-    if item and item.setItemId and itemId then item:setItemId(itemId) end
-end
-
-local function safeSetScale(item, scale)
-    if item and item.setScale then item:setScale(scale) end
-end
-
-
-local function getSelectedStation()
-    if not selectedStationIndex then return nil end
-    return stations[selectedStationIndex]
-end
-
-local function getRefillForStation(station)
-    if not station then return nil end
-    return refillItems[station.refillType]
-end
-
-local function getItemCount(itemId)
-    if Game and Game.getItemCount then
-        return Game.getItemCount(itemId) or 0
-    end
-
-    return 0
-end
-
-local function setHudColor(item, r, g, b)
-    if item then item:setColor(r, g, b) end
-end
-
-local function setHudVisible(item, visible)
-    if not item then return end
-
-    if visible then
-        item:show()
-    else
-        item:hide()
-    end
-end
-
-local function attachHudElement(item, offsetX, offsetY)
-    table.insert(attachedHudElements, {
-        item = item,
-        offsetX = offsetX,
-        offsetY = offsetY,
-    })
-end
-
-local function createText(offsetX, offsetY, text, r, g, b, callback)
-    local item = HUD.new(hudStartX + offsetX, hudStartY + offsetY, text, true)
-    item:setDraggable(false)
-    item:setColor(r or 255, g or 255, b or 255)
-
-    if callback then
-        item:setCallback(callback)
-    end
-
-    attachHudElement(item, offsetX, offsetY)
-    return item
-end
-
-local function createItem(offsetX, offsetY, itemId, callback)
-    local item = HUD.new(hudStartX + offsetX, hudStartY + offsetY, itemId, true)
-    item:setDraggable(false)
-
-    if callback then
-        item:setCallback(callback)
-    end
-
-    attachHudElement(item, offsetX, offsetY)
-    return item
-end
-
-local function updateHudVisibility()
-    for _, element in ipairs(attachedHudElements) do
-        setHudVisible(element.item, expanded)
-    end
-end
-
-local function sendNpcText(text)
-    text = tostring(text or "")
-    if text == "" then return false end
-
-    -- IMPORTANTE:
-    -- No ZeroBot, fala de NPC usa TALKTYPE_PRIVATE_PN (12).
-    -- Isso faz o texto ir para a aba/chat do NPC depois do "hi".
-    local function try(label, fn)
-        local ok, err = pcall(fn)
-        if ok then
-            return true
-        end
-        log("Falha ao falar NPC via " .. tostring(label) .. ": " .. tostring(err))
-        return false
-    end
-
-    if Game and Game.talk then
-        if try("Game.talk(text, TALKTYPE_PRIVATE_PN)", function()
-            Game.talk(text, TALKTYPE_NPC)
-        end) then return true end
-    end
-
-    -- Fallbacks apenas para nao travar em versoes diferentes.
-    -- O fluxo correto continua sendo o TALKTYPE_PRIVATE_PN acima.
-    if Npc and Npc.say then
-        if try("Npc.say", function() Npc.say(text) end) then return true end
-    end
-
-    if NPC and NPC.say then
-        if try("NPC.say", function() NPC.say(text) end) then return true end
-    end
-
-    if Client and Client.sendMessage then
-        if try("Client.sendMessage", function() Client.sendMessage(text) end) then return true end
-    end
-
-    return false
-end
-
-local function tryNpcBuy(itemId, amount)
-    itemId = tonumber(itemId or 0) or 0
-    amount = tonumber(amount or 0) or 0
-    if itemId <= 0 or amount <= 0 then return false end
-
-    local function try(label, fn)
-        local ok, err = pcall(fn)
-        if ok then
-            log("Compra tentou via " .. tostring(label))
-            return true
-        end
-        log("Falha compra via " .. tostring(label) .. ": " .. tostring(err))
-        return false
-    end
-
-    -- Varia conforme a API do bot. As tentativas ficam protegidas para nao remover o script.
-    -- Na documentacao atual do ZeroBot, o namespace correto e Npc.buy.
-    if Npc and Npc.buy then
-        if try("Npc.buy(id, qtd, false, false)", function() Npc.buy(itemId, amount, false, false) end) then return true end
-        if try("Npc.buy(id, qtd)", function() Npc.buy(itemId, amount) end) then return true end
-    end
-
-    -- Compatibilidade com scripts antigos que usam NPC maiusculo.
-    if NPC and NPC.buy then
-        if try("NPC.buy(id, qtd, false, false)", function() NPC.buy(itemId, amount, false, false) end) then return true end
-        if try("NPC.buy(id, qtd)", function() NPC.buy(itemId, amount) end) then return true end
-    end
-
-    if Game and Game.npcBuy then
-        if try("Game.npcBuy(id, qtd, false, false)", function() Game.npcBuy(itemId, amount, false, false) end) then return true end
-        if try("Game.npcBuy(id, qtd)", function() Game.npcBuy(itemId, amount) end) then return true end
-    end
-
-    if Game and Game.buyItem then
-        if try("Game.buyItem(id, qtd)", function() Game.buyItem(itemId, amount) end) then return true end
-        if try("Game.buyItem(id, qtd, false, false)", function() Game.buyItem(itemId, amount, false, false) end) then return true end
-    end
-
-    if NPC and NPC.buyItem then
-        if try("NPC.buyItem(id, qtd)", function() NPC.buyItem(itemId, amount) end) then return true end
-        if try("NPC.buyItem(id, qtd, false, false)", function() NPC.buyItem(itemId, amount, false, false) end) then return true end
-    end
-
-    return false
-end
-
-local scheduleNext
-
-local function getPlayerPosition()
-    local function try(label, fn)
-        local ok, result = pcall(fn)
-        if ok and result and result.x and result.y and result.z then
-            return result
-        end
-        if not ok then
-            log("Falha pegando posicao via " .. tostring(label) .. ": " .. tostring(result))
-        end
-        return nil
-    end
-
-    if Player and Player.getId and Creature and Creature.new then
-        local pos = try("Creature.new(Player.getId()):getPosition", function()
-            local creature = Creature.new(Player.getId())
-            return creature and creature:getPosition()
-        end)
-        if pos then return pos end
-    end
-
-    if Player and Player.getId and Creature then
-        local pos = try("Creature(Player.getId()):getPosition", function()
-            local creature = Creature(Player.getId())
-            return creature and creature:getPosition()
-        end)
-        if pos then return pos end
-    end
-
-    if Map and Map.getCameraPosition then
-        local pos = try("Map.getCameraPosition", function()
-            return Map.getCameraPosition()
-        end)
-        if pos then return pos end
-    end
-
-    return nil
-end
-
-local function getThingId(thing)
-    if type(thing) ~= "table" then return nil end
-
-    local candidates = {
-        thing.id,
-        thing.itemId,
-        thing.itemid,
-        thing.clientId,
-        thing.clientID,
-        thing.type,
-        thing.typeId,
-        thing.typeID,
-    }
-
-    for _, value in ipairs(candidates) do
-        local id = nil
-        if type(value) == "number" then
-            id = value
-        elseif type(value) == "string" then
-            id = tonumber(value)
-        end
-        if id and id > 0 then return id end
-    end
-
-    if thing.item and type(thing.item) == "table" then
-        return getThingId(thing.item)
-    end
-
-    return nil
-end
-
-local function tileHasItemId(x, y, z, itemId)
-    if not Map or not Map.getThings then return false end
-
-    local ok, things = pcall(function()
-        return Map.getThings(x, y, z)
-    end)
-
-    if not ok or not things then return false end
-
-    for _, thing in pairs(things) do
-        local id = getThingId(thing)
-        if id == itemId then
-            return true
-        end
-    end
-
-    return false
-end
-
-local function findStationPosition(stationId)
-    stationId = tonumber(stationId or 0) or 0
-    if stationId <= 0 then return nil end
-
-    local playerPos = getPlayerPosition()
-    if not playerPos then
-        lastStatus = "Nao consegui ler posicao"
-        return nil
-    end
-
-    -- Primeiro tenta pelo Map.getThings em volta do personagem.
-    if Map and Map.getThings then
-        for radius = 0, stationSearchRadius do
-            for dx = -radius, radius do
-                for dy = -radius, radius do
-                    if math.max(math.abs(dx), math.abs(dy)) == radius then
-                        local x = playerPos.x + dx
-                        local y = playerPos.y + dy
-                        local z = playerPos.z
-                        if tileHasItemId(x, y, z, stationId) then
-                            return { x = x, y = y, z = z }
-                        end
-                    end
-                end
-            end
-        end
-    end
-
-    -- Fallback: tenta vasculhar tiles visiveis, se a API trouxer things/position no retorno.
-    if Map and Map.getTiles then
-        local ok, tiles = pcall(function()
-            return Map.getTiles()
-        end)
-
-        if ok and tiles then
-            for _, tile in pairs(tiles) do
-                local pos = tile.position or tile.pos or tile
-                local things = tile.things or tile.items or tile
-
-                if pos and pos.x and pos.y and pos.z and things then
-                    for _, thing in pairs(things) do
-                        local id = getThingId(thing)
-                        if id == stationId then
-                            return { x = pos.x, y = pos.y, z = pos.z }
-                        end
-                    end
-                end
-            end
-        end
-    end
-
-    return nil
-end
-
-local function useGroundAtPosition(itemId, pos)
-    if not pos then return false end
-
-    local function try(label, fn)
-        local ok, result = pcall(fn)
-        if ok and result ~= false then
-            log("Usou mesa via " .. tostring(label) .. " em " .. pos.x .. "," .. pos.y .. "," .. pos.z)
-            return true
-        end
-        if not ok then
-            log("Falha use ground via " .. tostring(label) .. ": " .. tostring(result))
-        end
-        return false
-    end
-
-    -- Botao direito/use diretamente no item que esta no chao.
-    if Game and Game.useItemFromGround then
-        if try("Game.useItemFromGround(x,y,z)", function()
-            return Game.useItemFromGround(pos.x, pos.y, pos.z)
-        end) then return true end
-    end
-
-    -- Fallback: usa o ID informado na coordenada do chao.
-    if Game and Game.useItemOnGround then
-        if try("Game.useItemOnGround(id,x,y,z)", function()
-            return Game.useItemOnGround(itemId, pos.x, pos.y, pos.z)
-        end) then return true end
-    end
-
-    return false
-end
-
-local function useSelectedStationOnGround()
-    local station = getSelectedStation()
-    if not station then
-        lastStatus = "Selecione uma mesa"
-        scheduleNext(checkIntervalMs)
-        return
-    end
-
-    local pos = findStationPosition(station.id)
-    if not pos then
-        lastStatus = "Mesa nao encontrada perto"
-        showMessage("Nao encontrei a mesa " .. station.label .. " perto do personagem. Chegue perto dela ou aumente stationSearchRadius.")
-        scheduleNext(checkIntervalMs)
-        return
-    end
-
-    lastStatus = "Usando mesa no chao: " .. station.label
-    if useGroundAtPosition(station.id, pos) then
-        lastActionAt = nowMs()
-        scheduleNext(afterUseDelayMs)
-    else
-        lastStatus = "Falha ao usar mesa no chao"
-        scheduleNext(checkIntervalMs)
-    end
-end
-
-scheduleNext = function(delayMs)
-    nextActionAt = nowMs() + (delayMs or checkIntervalMs)
-end
-
-local function selectedRefillCount()
-    local station = getSelectedStation()
-    local refill = getRefillForStation(station)
-    if not refill then return 0 end
-    return getItemCount(refill.id)
-end
-
-local function getBuyAmount()
-    local current = selectedRefillCount()
-    local amount = maxRefillAmount - current
-    if amount < 1 then amount = 0 end
-    return amount
-end
-
-local function needBuy()
-    local station = getSelectedStation()
-    local refill = getRefillForStation(station)
-    if not station or not refill then return false end
-
-    return getItemCount(refill.id) <= minRefillAmount
-end
-
-local function startNpcBuyFlow()
-    local station = getSelectedStation()
-    local refill = getRefillForStation(station)
-
-    if not station or not refill then
-        lastStatus = "Nenhuma mesa selecionada"
-        return
-    end
-
-    local amount = getBuyAmount()
-    if amount <= 0 then
-        lastStatus = "Qtd atual acima do MAX"
-        scheduleNext(checkIntervalMs)
-        return
-    end
-
-    isBuying = true
-    pendingBuyType = station.refillType
-    npcStepIndex = 1
-    lastNpcStepAt = 0
-    lastStatus = "Falando no chat NPC"
-    showMessage("Comprando " .. amount .. "x " .. refill.name .. " pelo chat do NPC...")
-end
-
-local function processNpcBuyFlow()
-    if not isBuying then return end
-
-    local time = nowMs()
-    local requiredDelay = npcTalkDelayMs
-
-    -- Depois do "hi", da um tempo maior para o cliente abrir a aba/chat do NPC.
-    if npcStepIndex == 2 then
-        requiredDelay = npcFirstReplyDelayMs
-    end
-
-    if lastNpcStepAt > 0 and time - lastNpcStepAt < requiredDelay then
-        return
-    end
-
-    lastNpcStepAt = time
-
-    if npcStepIndex <= #npcMessages then
-        local msg = npcMessages[npcStepIndex]
-        if sendNpcText(msg) then
-            lastStatus = "NPC: " .. msg
-            npcStepIndex = npcStepIndex + 1
-        else
-            lastStatus = "Nao consegui falar com NPC"
-            showMessage("Nao consegui enviar fala para o NPC. Confira a API de talk do bot.")
-            isBuying = false
-            pendingBuyType = nil
-            npcStepIndex = 0
-            scheduleNext(checkIntervalMs)
-        end
-        return
-    end
-
-    local station = getSelectedStation()
-    local refill = getRefillForStation(station)
-    local amount = getBuyAmount()
-
-    if refill and amount > 0 then
-        local ok = tryNpcBuy(refill.id, amount)
-
-        if ok then
-            lastStatus = "Compra enviada: " .. amount .. "x"
-            showMessage("Compra enviada: " .. amount .. "x " .. refill.name)
-        else
-            lastStatus = "API de compra nao encontrada"
-            showMessage("Nao encontrei a funcao de compra do NPC nesta API. O dialogo foi aberto, mas talvez precise clicar manual ou ajustar NPC.buy/Game.buyItem.")
-        end
-    else
-        lastStatus = "Nao precisa comprar"
-    end
-
-    isBuying = false
-    pendingBuyType = nil
-    npcStepIndex = 0
-    scheduleNext(afterBuyDelayMs)
-end
-
-local function useSelectedStation()
-    -- Nao usa Game.useItem(station.id), porque isso tenta usar item da BP pelo ID.
-    -- Aqui e botao direito/use na mesa que esta no chao perto do personagem.
-    useSelectedStationOnGround()
-end
-
-local function selectStation(index)
-    selectedStationIndex = index
-    enabled = true
-    expanded = true
-
-    local station = getSelectedStation()
-    if station then
-        safeSetItemId(hud.anchor, station.id)
-        safeSetScale(hud.anchor, bigIconScale)
-        lastStatus = "ON: " .. station.label
-        showMessage("Craft ativado: " .. station.fullName)
-    end
-
-    scheduleNext(500)
-end
-
-local function toggleEnabled()
-    enabled = not enabled
-
-    if enabled then
-        if not selectedStationIndex then
-            selectedStationIndex = 1
-        end
-
-        local station = getSelectedStation()
-        if station then
-            safeSetItemId(hud.anchor, station.id)
-        end
-
-        safeSetScale(hud.anchor, bigIconScale)
-        lastStatus = "Ativado"
-        scheduleNext(500)
-        showMessage("Craft House ativado.")
-    else
-        isBuying = false
-        pendingBuyType = nil
-        lastStatus = "Desativado"
-        showMessage("Craft House desativado.")
-    end
-end
-
-local function toggleExpanded()
-    expanded = not expanded
-end
-
-local function changeMin()
-    minRefillAmount = minRefillAmount + minStep
-    if minRefillAmount > 1000 then
-        minRefillAmount = 0
-    end
-
-    if maxRefillAmount <= minRefillAmount then
-        maxRefillAmount = minRefillAmount + maxStep
-    end
-
-    lastStatus = "MIN: " .. minRefillAmount
-end
-
-local function changeMax()
-    maxRefillAmount = maxRefillAmount + maxStep
-    if maxRefillAmount > 2000 then
-        maxRefillAmount = minRefillAmount + maxStep
-    end
-
-    lastStatus = "MAX: " .. maxRefillAmount
-end
-
-local function updateHud()
-    local station = getSelectedStation()
-    local refill = getRefillForStation(station)
-    local refillCount = refill and getItemCount(refill.id) or 0
-
-    if station then
-        safeSetItemId(hud.anchor, station.id)
-    else
-        safeSetItemId(hud.anchor, defaultIconItemId)
-    end
-
-    safeSetScale(hud.anchor, bigIconScale)
-
-    safeSetText(hud.title, SCRIPT_NAME .. " " .. SCRIPT_VERSION)
-    setHudColor(hud.title, 255, 224, 128)
-
-    safeSetText(hud.status, (enabled and "[ON] " or "[OFF] ") .. lastStatus)
-    if enabled then
-        setHudColor(hud.status, 80, 255, 140)
-    else
-        setHudColor(hud.status, 255, 90, 90)
-    end
-
-    safeSetText(hud.selected, "Mesa: " .. (station and station.label or "nenhuma"))
-    setHudColor(hud.selected, 220, 230, 240)
-
-    safeSetText(hud.refill, "Refill: " .. (refill and refill.name or "-") .. " | BP: " .. refillCount)
-    setHudColor(hud.refill, 150, 210, 255)
-
-    safeSetText(hud.min, "[MIN " .. minRefillAmount .. "]")
-    setHudColor(hud.min, 255, 210, 120)
-
-    safeSetText(hud.max, "[MAX " .. maxRefillAmount .. "]")
-    setHudColor(hud.max, 255, 210, 120)
-
-    safeSetText(hud.toggle, enabled and "[PAUSAR]" or "[ATIVAR]")
-    setHudColor(hud.toggle, enabled and 255 or 80, enabled and 120 or 255, enabled and 120 or 140)
-
-    for index, entry in ipairs(hud.stationEntries) do
-        local currentStation = stations[index]
-        local selected = index == selectedStationIndex
-
-        safeSetItemId(entry.icon, currentStation.id)
-        safeSetScale(entry.icon, selected and selectedSmallIconScale or smallIconScale)
-
-        safeSetText(entry.text, currentStation.label)
-        setHudColor(entry.text, selected and 80 or 210, selected and 255 or 210, selected and 140 or 210)
-
-        safeSetText(entry.state, selected and "ON" or "OFF")
-        if selected then
-            setHudColor(entry.state, 80, 255, 140)
-        else
-            setHudColor(entry.state, 255, 80, 80)
-        end
-    end
-
-    updateHudVisibility()
-end
-
--- =========================
--- HUD
--- =========================
-hud.anchor = HUD.new(hudStartX, hudStartY, defaultIconItemId, true)
-hud.anchor:setDraggable(true)
-safeSetScale(hud.anchor, bigIconScale)
-hud.anchor:setCallback(function() safeCall("toggleExpanded", toggleExpanded) end)
-
-hud.title = createText(60, -14, SCRIPT_NAME, 255, 224, 128, function() safeCall("toggleExpanded", toggleExpanded) end)
-hud.status = createText(60, 4, "", 255, 90, 90, function() safeCall("toggleEnabled", toggleEnabled) end)
-hud.selected = createText(60, 22, "", 220, 230, 240, function() safeCall("toggleExpanded", toggleExpanded) end)
-hud.refill = createText(60, 40, "", 150, 210, 255, function() safeCall("toggleExpanded", toggleExpanded) end)
-hud.min = createText(60, 62, "", 255, 210, 120, function() safeCall("changeMin", changeMin) end)
-hud.max = createText(145, 62, "", 255, 210, 120, function() safeCall("changeMax", changeMax) end)
-hud.toggle = createText(230, 62, "", 80, 255, 140, function() safeCall("toggleEnabled", toggleEnabled) end)
-
--- grade de mesinhas pequenas
-local cols = 7
-local startX = 0
-local startY = 112
-local spacingX = 54
-local spacingY = 72
-
-for index, station in ipairs(stations) do
-    local col = (index - 1) % cols
-    local row = math.floor((index - 1) / cols)
-    local x = startX + (col * spacingX)
-    local y = startY + (row * spacingY)
-    local currentIndex = index
-
-    local icon = createItem(x, y, station.id, function()
-        safeCall("selectStation", function() selectStation(currentIndex) end)
-    end)
-    safeSetScale(icon, smallIconScale)
-
-    local text = createText(x - 4, y + 28, station.label, 210, 210, 210, function()
-        safeCall("selectStation", function() selectStation(currentIndex) end)
-    end)
-
-    local state = createText(x + 4, y + 44, "OFF", 255, 80, 80, function()
-        safeCall("selectStation", function() selectStation(currentIndex) end)
-    end)
-
-    hud.stationEntries[index] = {
-        icon = icon,
-        text = text,
-        state = state,
-    }
-end
-
--- =========================
--- MODAL HANDLER
--- =========================
-local function findButtonByText(buttons, text)
-    if not buttons then return nil end
-    local wanted = lower(text)
-
-    for i = 1, #buttons do
-        local b = buttons[i]
-        if lower(b.text) == wanted then
-            return b.id
-        end
-    end
-
-    for i = 1, #buttons do
-        local b = buttons[i]
-        if lower(b.text):find(wanted, 1, true) then
-            return b.id
-        end
-    end
-
-    return nil
-end
-
-local function clickModalButton(data, buttonText)
-    local buttonId = findButtonByText(data.buttons, buttonText)
-    if not buttonId then return false end
-
-    Game.modalWindowAnswer(data.id, buttonId, 0)
-    return true
-end
-
-Game.registerEvent(Game.Events.MODAL_WINDOW, function(data)
-    safeCall("modal", function()
-    if not data then return end
-
-    local title = lower(data.title or "")
-    local body = lower(data.message or data.text or data.info or data.description or "")
-
-    -- Protecao generica: se a mesa informar que ja esta usando/craftando, aguarda.
-    if title:find("station", 1, true)
-        or body:find("already", 1, true)
-        or body:find("ja esta", 1, true)
-        or body:find("já está", 1, true)
-        or body:find("using", 1, true)
-        or body:find("craft", 1, true)
-    then
-        if body:find("already", 1, true)
-            or body:find("using", 1, true)
-            or body:find("ja esta", 1, true)
-            or body:find("já está", 1, true)
-        then
-            lastStatus = "Mesa ja esta em uso"
-            clickModalButton(data, "Close")
-            scheduleNext(checkIntervalMs)
-            return
-        end
-    end
-
-    -- Se abrir uma janela com Start, aperta Start automaticamente.
-    if findButtonByText(data.buttons, "Start") then
-        lastStatus = "Iniciando craft"
-        clickModalButton(data, "Start")
-        scheduleNext(afterUseDelayMs)
-        return
-    end
-
-    -- Fechamento basico para mensagens informativas.
-    if findButtonByText(data.buttons, "Close") then
-        clickModalButton(data, "Close")
-    end
-    end)
-end)
-
--- =========================
--- TIMER PRINCIPAL
--- =========================
-Timer("craftHouseAvaloriumHud", function()
-    safeCall("hudTimer", function()
-    local pos = hud.anchor:getPos()
-
-    if pos and (pos.x ~= 0 or pos.y ~= 0) then
-        for _, element in ipairs(attachedHudElements) do
-            element.item:setPos(pos.x + element.offsetX, pos.y + element.offsetY)
-        end
-    end
-
-    updateHud()
-    end)
-end, 500)
-
-Timer("craftHouseAvaloriumMain", function()
-    safeCall("mainTimer", function()
-    if isBuying then
-        processNpcBuyFlow()
-        return
-    end
-
-    if not enabled then return end
-
-    if not getSelectedStation() then
-        lastStatus = "Selecione uma mesa"
-        return
-    end
-
-    if nextActionAt > 0 and nowMs() < nextActionAt then
-        return
-    end
-
-    if needBuy() then
-        startNpcBuyFlow()
-        return
-    end
-
-    useSelectedStation()
-    end)
-end, checkIntervalMs)
-
--- inicializacao
-expanded = true
-updateHud()
-showMessage("Script iniciado. Clique em uma mesinha para ativar. A mesa ON vira o icone lateral grande. Ele usa a MESA NO CHAO, nao o refill da BP.")
 
 end
 

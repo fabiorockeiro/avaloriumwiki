@@ -1,0 +1,92 @@
+[
+  {
+    "index": 1,
+    "sprite": "Grand Commander Soeren",
+    "url": "https://www.tibiawiki.com.br/images/2/2e/Grand_Commander_Soeren.gif",
+    "bytes": 4916
+  },
+  {
+    "index": 2,
+    "sprite": "The Old Widow",
+    "url": "https://www.tibiawiki.com.br/images/4/42/The_Old_Widow.gif",
+    "bytes": 8637
+  },
+  {
+    "index": 3,
+    "sprite": "The Handmaiden",
+    "url": "https://www.tibiawiki.com.br/images/7/73/The_Handmaiden.gif",
+    "bytes": 3580
+  },
+  {
+    "index": 4,
+    "sprite": "Tyrn",
+    "url": "https://www.tibiawiki.com.br/images/7/7c/Tyrn.gif",
+    "bytes": 5210
+  },
+  {
+    "index": 5,
+    "sprite": "Grand Canon Dominus",
+    "url": "https://www.tibiawiki.com.br/images/a/ae/Grand_Canon_Dominus.gif",
+    "bytes": 3913
+  },
+  {
+    "index": 6,
+    "sprite": "Orc",
+    "url": "https://www.tibiawiki.com.br/images/2/21/Orc.gif",
+    "bytes": 4371
+  },
+  {
+    "index": 7,
+    "sprite": "Custodian",
+    "url": "https://www.tibiawiki.com.br/images/d/db/Custodian.gif",
+    "bytes": 8208
+  },
+  {
+    "index": 8,
+    "sprite": "Orc Warlord",
+    "url": "https://www.tibiawiki.com.br/images/4/44/Orc_Warlord.gif",
+    "bytes": 2264
+  },
+  {
+    "index": 9,
+    "sprite": "Massacre",
+    "url": "https://www.tibiawiki.com.br/images/9/9d/Massacre.gif",
+    "bytes": 7413
+  },
+  {
+    "index": 10,
+    "sprite": "Bragrumol",
+    "url": "https://www.tibiawiki.com.br/images/b/b0/Bragrumol.gif",
+    "bytes": 20238
+  },
+  {
+    "index": 11,
+    "sprite": "Thawing Dragon Lord",
+    "url": "https://www.tibiawiki.com.br/images/c/ca/Thawing_Dragon_Lord.gif",
+    "bytes": 14734
+  },
+  {
+    "index": 12,
+    "sprite": "Weakened Shlorg",
+    "url": "https://www.tibiawiki.com.br/images/2/28/Weakened_Shlorg.gif",
+    "bytes": 3959
+  },
+  {
+    "index": 13,
+    "sprite": "Dracola",
+    "url": "https://www.tibiawiki.com.br/images/5/53/Dracola.gif",
+    "bytes": 12484
+  },
+  {
+    "index": 14,
+    "sprite": "Gaffir",
+    "url": "https://www.tibiawiki.com.br/images/c/cb/Gaffir.gif",
+    "bytes": 7781
+  },
+  {
+    "index": 15,
+    "sprite": "The Welter",
+    "url": "https://www.tibiawiki.com.br/images/a/a3/The_Welter.gif",
+    "bytes": 25341
+  }
+]

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FABIO ROCKEIRO - SCRIPTS e DOWNLOADS | Avalorium OT Wiki</title>
-    <meta name="description" content="Em breve, atualizações de scripts customizados para Zerobot. Baixe o GIF para sua live na Twitch e saiba como ser parceiro do servidor.">
+    <meta name="description" content="Baixe o FabioRockeiroBOT para ZeroBot e veja como instalar e usar Rune, Arrow, Forja, Follow, Reset FPS, Fungo, Party e Fire no Pé. GIF para lives e parceria com o servidor.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -85,7 +85,46 @@
                         </nav>
         <article class="article-layout fr-downloads">
 <header class="fr-header"><span class="eyebrow">FABIO ROCKEIRO</span><h1>FABIO ROCKEIRO - SCRIPTS e DOWNLOADS</h1></header>
-<div class="fr-announcement"><span>EM BREVE</span><p>Em breve, novas atualizações de <strong>scripts customizados para Zerobot</strong>. Acompanhe esta página!</p></div>
+<section class="fr-script" aria-labelledby="script-title">
+<span class="eyebrow">AUTOMAÇÕES PARA AVALORIUM OT</span>
+<h2 id="script-title">FabioRockeiroBOT</h2>
+<p>Runas, flechas, forja e apoio para sua hunt em um único painel. Clique no mago para minimizar o menu ou arraste-o para mover pela tela.</p>
+<div class="fr-script-actions"><a class="fr-download-button" href="assets/downloads/FabioRockeiroBOT.lua?v=b995a27797c3" download="FabioRockeiroBOT.lua">Baixar FabioRockeiroBOT.lua <span aria-hidden="true">↓</span></a><a href="#instalar-script">Como instalar</a></div>
+<small class="fr-file-info">Arquivo Lua · 176 KB · Uso exclusivo no ZeroBot</small>
+<aside class="fr-zerobot" aria-label="ZeroBot e licença">
+<a href="https://zerobot.net/" target="_blank" rel="noopener"><img src="assets/media/scripts-zerobot/zerobot-logo.png" width="128" height="128" alt="ZeroBot — acessar o site oficial"></a>
+<div><h3>Precisa do ZeroBot para funcionar</h3><p>Este script só funciona quando importado no <strong>ZeroBot</strong>, com uma licença ativa. Para adquirir sua licença, acesse diretamente o site oficial.</p><a href="https://zerobot.net/" target="_blank" rel="noopener">Acessar o site oficial do ZeroBot ↗</a></div>
+</aside>
+<figure class="fr-script-preview"><a href="assets/media/scripts-zerobot/fabio-rockeiro-bot-fire-no-pe.png" target="_blank" rel="noopener"><img src="assets/media/scripts-zerobot/fabio-rockeiro-bot-fire-no-pe.png" alt="FabioRockeiroBOT com o menu FIRE NO PÉ aberto, contagem de runas e ajuste de cooldown" width="841" height="563"></a><figcaption>FabioRockeiroBOT com o painel FIRE NO PÉ e os controles de cooldown. Clique na imagem para ampliar.</figcaption></figure>
+</section>
+<section class="fr-script" aria-labelledby="funcoes-script">
+<span class="eyebrow">CONHEÇA O MENU</span><h2 id="funcoes-script">O que cada função faz</h2>
+<dl class="fr-functions">
+<div><dt>Rune</dt><dd>Compra runas automaticamente usando o <strong>Rune Portable</strong>. Selecione a runa e configure o reabastecimento no painel.</dd></div>
+<div><dt>Arrow</dt><dd>Compra automaticamente a flecha selecionada e abastece diretamente o <strong>quiver</strong>.</dd></div>
+<div><dt>Forja</dt><dd>Automatiza a geração de <strong>Slivers</strong> e <strong>Exalted Core</strong> e o aumento do nível máximo de <strong>Dust</strong>. Ative as opções desejadas no menu.</dd></div>
+<div><dt>Follow</dt><dd>Configura o tipo de Follow que você quer usar para seguir um personagem.</dd></div>
+<div><dt>Reset FPS</dt><dd>Reconecta o personagem para resetar o FPS e aliviar a lentidão em telas pesadas depois de horas de hunt. Requer <strong>X-Log</strong> e <strong>Reconectar</strong> selecionados no ZeroBot. Antes da ação, prepara a proteção conforme a vocação: <strong>Utamo Vita</strong> para MS/ED, <strong>Energy Ring</strong> para RP/MK ou <strong>Utamo Tempo</strong> para EK, ajudando a evitar mortes durante o processo.</dd></div>
+<div><dt>Fungo</dt><dd>Automatiza o movimento para pisar nos fungos durante a hunt de <strong>Gnoprona</strong>.</dd></div>
+<div><dt>Party</dt><dd>Automatiza os convites do líder para os personagens da lista de players criada no painel.</dd></div>
+<div><dt>Fire no Pé</dt><dd>Usa <strong>Fire Bomb</strong> no SQM atual do personagem. Clique na última opção do menu para ativar ou desativar e ajuste o <strong>cooldown</strong> no painel com os botões de ±1 ou ±5 segundos. O intervalo padrão é de 30 segundos e só começa quando a contagem de runas diminui; enquanto isso, repete a tentativa a cada segundo.</dd></div>
+</dl>
+<h3 id="config-reset-fps">Configuração do ZeroBot para Reset FPS</h3>
+<p>No ZeroBot, deixe <strong>X-Log</strong> e <strong>Reconectar</strong> selecionados antes de ativar o Reset FPS no script.</p>
+<figure class="fr-install-image"><a href="assets/media/scripts-zerobot/zerobot-xlog-reconectar-atual.png" target="_blank" rel="noopener"><img src="assets/media/scripts-zerobot/zerobot-xlog-reconectar-atual.png" alt="Configuração do ZeroBot com X-Log e Reconectar selecionados para usar o Reset FPS" width="478" height="430" loading="lazy"></a><figcaption>X-Log e Reconectar selecionados no ZeroBot. Clique na imagem para ampliar.</figcaption></figure>
+</section>
+<section class="fr-script" aria-labelledby="instalar-script">
+<span class="eyebrow">PASSO A PASSO</span><h2 id="instalar-script">Como instalar no ZeroBot</h2>
+<ol class="fr-install-steps">
+<li>Baixe o arquivo <strong>FabioRockeiroBOT.lua</strong> pelo botão acima.</li>
+<li>Coloque o arquivo na pasta <code>Documentos/ZeroBot/Scripts</code>.</li>
+<li>Dentro de <code>Scripts</code>, crie uma pasta chamada <code>FabioUI</code>, caso ela ainda não exista. Ela é usada para salvar as preferências do painel.</li>
+<li>Abra o ZeroBot, vá ao menu <strong>Scripts</strong>, selecione <strong>FabioRockeiroBOT.lua</strong> e clique em <strong>Carregar</strong>. Se ele não aparecer, clique em <strong>Recarregar</strong> e confira a pasta onde salvou o arquivo.</li>
+<li>Use somente este arquivo para carregar o hub e configure as funções desejadas. Para o <strong>Reset FPS</strong>, deixe <strong>X-Log</strong> e <strong>Reconectar</strong> selecionados no ZeroBot, como na <a href="#config-reset-fps">imagem de configuração do Reset FPS</a>.</li>
+</ol>
+<p class="fr-install-note">Os módulos já estão reunidos neste Lua: não é necessário importar outros scripts do Fabio Rockeiro. Mantenha a pasta <code>core</code> da instalação do ZeroBot, que fornece as bibliotecas usadas pelo script. O arquivo de preferências é salvo pelo próprio painel na pasta <code>FabioUI</code>.</p>
+<figure class="fr-install-image"><img src="assets/media/scripts-zerobot/zerobot-carregar-script.png" alt="Menu Scripts do ZeroBot com seleção do arquivo Lua e botão Carregar" loading="lazy"><figcaption>Selecione o arquivo no menu Scripts e clique em Carregar.</figcaption></figure>
+</section>
 <section class="fr-live" aria-labelledby="live-title"><div class="fr-live-heading"><span class="eyebrow">PARA SUA TRANSMISSÃO</span><h2 id="live-title">GIF para live da Twitch</h2></div>
 <figure><img src="assets/media/scripts-zerobot/gif-para-live-twitch.gif" alt="GIF animado de divulgação do Avalorium OT para lives na Twitch"></figure>
 <a class="fr-download-button" href="assets/media/scripts-zerobot/gif-para-live-twitch.gif" download="GIF PRA LIVE.gif">Baixar GIF para live <span aria-hidden="true">↓</span></a><small class="fr-file-info">GIF animado · 10,9 MB</small>

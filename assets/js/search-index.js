@@ -1,5 +1,13 @@
 window.AVALORIUM_SEARCH_INDEX =
 [
+{
+    "title": "INVASÃO DE MINIBOSSES",
+    "description": "Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 15 bosses, seus respawns e os minimapas.",
+    "category": "Sistemas do Servidor",
+    "keywords": "invasao minibosses mini bosses raid golden token upgrade potions trinket badge 30 minutos Grand Commander Soeren Falcon Bastion The Old Widow Venore The Handmaiden Pits of Inferno Tyrn Drefia Wyrms Grand Canon Dominus Falcon Bastion Orc Sambackpack Orc Fortress Custodian Cobra Bastion Orc Armor Torre de Thais Massacre Pits of Inferno Bragrumol Issavi Thawing Dragon Lord Falcon Bastion Weakened Shlorg TP Earth Elemental Dracola Pits of Inferno Gaffir Cobra Bastion The Welther TP Hydras",
+    "url": "invasao-de-minibosses.html",
+    "image": "assets/media/trinket-badges/golden-raid-token.gif"
+},
     {
         "title": "Outfit & Mount Bônus",
         "description": "Obtenha outfits e montarias no mapa global, quests, Store e Hunting Task Shop. Use !outfitbonus para investir em Cosmetic Mastery.",
@@ -170,9 +178,9 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "FABIO ROCKEIRO - SCRIPTS e DOWNLOADS",
-        "description":  "Em breve, atualizações de scripts customizados para Zerobot. Baixe o GIF para sua live na Twitch e saiba como ser parceiro do servidor.",
+        "description":  "Baixe o FabioRockeiroBOT para ZeroBot e veja como instalar e usar Rune, Arrow, Forja, Follow, Reset FPS, Fungo, Party e Fire no Pé. GIF para lives e parceria com o servidor.",
         "category":  "SCRIPTS e DOWNLOADS",
-        "keywords":  "fabio rockeiro scripts downloads zerobot customizados em breve gif twitch live parceria parceiro discord",
+        "keywords":  "fabio rockeiro bot scripts downloads zerobot instalar rune portable runas arrow quiver flecha forja slivers exalted core dust follow reset fps x-log reconectar fungo gnoprona party fire bomb fogo no pe cooldown gif twitch live parceria discord",
         "url":  "fabio-rockeiro-scripts.html",
         "image":  "assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png"
     }

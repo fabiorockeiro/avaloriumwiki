@@ -1,0 +1,257 @@
+[
+  {
+    "boss": "Grand Commander Soeren",
+    "location": "Falcon Bastion",
+    "screenshot": "01-original.png",
+    "game": [
+      0,
+      0,
+      1016,
+      743
+    ],
+    "minimap": [
+      1388,
+      27,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "The Old Widow",
+    "location": "Venore",
+    "screenshot": "02-original.png",
+    "game": [
+      0,
+      0,
+      1017,
+      747
+    ],
+    "minimap": [
+      1389,
+      30,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "The Handmaiden",
+    "location": "Pits of Inferno",
+    "screenshot": "03-original.png",
+    "game": [
+      0,
+      0,
+      1016,
+      746
+    ],
+    "minimap": [
+      1388,
+      29,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Tyrn",
+    "location": "Drefia Wyrms",
+    "screenshot": "04-original.png",
+    "game": [
+      0,
+      0,
+      1017,
+      746
+    ],
+    "minimap": [
+      1389,
+      29,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Grand Canon Dominus",
+    "location": "Falcon Bastion",
+    "screenshot": "05-original.png",
+    "game": [
+      0,
+      0,
+      1018,
+      748
+    ],
+    "minimap": [
+      1390,
+      32,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Orc Sambackpack",
+    "location": "Orc Fortress",
+    "screenshot": "06-original.png",
+    "game": [
+      0,
+      0,
+      1013,
+      741
+    ],
+    "minimap": [
+      1385,
+      27,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Custodian",
+    "location": "Cobra Bastion",
+    "screenshot": "07-original.png",
+    "game": [
+      0,
+      0,
+      1015,
+      739
+    ],
+    "minimap": [
+      1387,
+      27,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Orc Armor",
+    "location": "Torre de Thais",
+    "screenshot": "08-original.png",
+    "game": [
+      0,
+      0,
+      1011,
+      736
+    ],
+    "minimap": [
+      1383,
+      22,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Massacre",
+    "location": "Pits of Inferno",
+    "screenshot": "09-original.png",
+    "game": [
+      0,
+      0,
+      1015,
+      737
+    ],
+    "minimap": [
+      1387,
+      27,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Bragrumol",
+    "location": "Issavi",
+    "screenshot": "10-original.png",
+    "game": [
+      0,
+      0,
+      1015,
+      741
+    ],
+    "minimap": [
+      1387,
+      27,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Thawing Dragon Lord",
+    "location": "Falcon Bastion",
+    "screenshot": "11-original.png",
+    "game": [
+      0,
+      0,
+      1017,
+      742
+    ],
+    "minimap": [
+      1389,
+      29,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Weakened Shlorg",
+    "location": "TP Earth Elemental",
+    "screenshot": "12-original.png",
+    "game": [
+      0,
+      0,
+      1016,
+      741
+    ],
+    "minimap": [
+      1388,
+      27,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Dracola",
+    "location": "Pits of Inferno",
+    "screenshot": "13-original.png",
+    "game": [
+      0,
+      0,
+      1016,
+      745
+    ],
+    "minimap": [
+      1388,
+      30,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "Gaffir",
+    "location": "Cobra Bastion",
+    "screenshot": "14-original.png",
+    "game": [
+      0,
+      0,
+      1016,
+      740
+    ],
+    "minimap": [
+      1388,
+      26,
+      106,
+      106
+    ]
+  },
+  {
+    "boss": "The Welther",
+    "location": "TP Hydras",
+    "screenshot": "15-original.png",
+    "game": [
+      0,
+      0,
+      1016,
+      746
+    ],
+    "minimap": [
+      1388,
+      28,
+      106,
+      106
+    ]
+  }
+]

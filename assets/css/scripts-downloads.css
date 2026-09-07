@@ -17,4 +17,27 @@
 .fr-partnership p { font-size: 14px; color: var(--muted); }
 .fr-partnership a { color: var(--cyan); font-size: 14px; }
 .fr-downloads a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
+.fr-script { margin: 32px 0; }
+.fr-script h2 { font: 700 clamp(23px,3vw,30px)/1.35 Inter,sans-serif; margin: 10px 0 18px; }
+.fr-script p, .fr-functions dd, .fr-install-steps { color: var(--muted); font-size: 15px; line-height: 1.8; }
+.fr-script strong { color: var(--text); }
+.fr-script a:not(.fr-download-button) { color: var(--cyan); }
+.fr-script-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; }
+.fr-script-actions .fr-download-button { max-width: 100%; overflow-wrap: anywhere; }
+.fr-zerobot { display: grid; grid-template-columns: 88px minmax(0,1fr); gap: 22px; align-items: center; padding: 22px; margin: 26px 0; background: var(--bg-2); border: 1px solid var(--line); }
+.fr-zerobot img { display: block; width: 88px; height: auto; }
+.fr-zerobot h3 { margin: 0 0 8px; font-size: 19px; }
+.fr-zerobot p { margin: 0 0 10px; }
+.fr-script figure { margin: 24px 0; padding: 12px; border: 1px solid var(--line); background: var(--bg-2); }
+.fr-script figure img { display: block; max-width: 100%; height: auto; margin: auto; }
+.fr-script figcaption { margin-top: 12px; color: var(--muted); font-size: 12px; line-height: 1.7; text-align: center; }
+.fr-functions { margin: 0; }
+.fr-functions > div { display: grid; grid-template-columns: 110px minmax(0,1fr); gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.fr-functions dt { color: var(--gold); font-weight: 800; }
+.fr-functions dd { margin: 0; }
+.fr-install-steps { padding-left: 24px; }
+.fr-install-steps li { padding: 0 0 14px 8px; }
+.fr-script code { overflow-wrap: anywhere; }
+.fr-install-note { padding-left: 18px; border-left: 2px solid var(--gold); }
+@media(max-width:700px) { .fr-zerobot { grid-template-columns: 1fr; padding: 16px; } .fr-functions > div { grid-template-columns: 1fr; gap: 8px; } .fr-script-actions { align-items: flex-start; flex-direction: column; } }
 @media(max-width:700px) { .fr-announcement { flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px; } .fr-live figure { padding: 10px; } }
