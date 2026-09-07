@@ -1,7 +1,7 @@
 window.AVALORIUM_SEARCH_INDEX =
 [
 {
-    "title": "INVASÃO DE MINIBOSSES",
+    "title": "Invasão de Minibosses",
     "description": "Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 15 bosses, seus respawns e os minimapas.",
     "category": "Sistemas do Servidor",
     "keywords": "invasao minibosses mini bosses raid golden token upgrade potions trinket badge 30 minutos Grand Commander Soeren Falcon Bastion The Old Widow Venore The Handmaiden Pits of Inferno Tyrn Drefia Wyrms Grand Canon Dominus Falcon Bastion Orc Sambackpack Orc Fortress Custodian Cobra Bastion Orc Armor Torre de Thais Massacre Pits of Inferno Bragrumol Issavi Thawing Dragon Lord Falcon Bastion Weakened Shlorg TP Earth Elemental Dracola Pits of Inferno Gaffir Cobra Bastion The Welther TP Hydras",
