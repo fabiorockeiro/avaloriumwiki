@@ -2,9 +2,9 @@ window.AVALORIUM_SEARCH_INDEX =
 [
 {
     "title": "Invasão de Minibosses",
-    "description": "Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 15 bosses, seus respawns e os minimapas.",
+    "description": "Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 30 bosses, seus respawns e os minimapas.",
     "category": "Sistemas do Servidor",
-    "keywords": "invasao minibosses mini bosses raid golden token upgrade potions trinket badge 30 minutos Grand Commander Soeren Falcon Bastion The Old Widow Venore The Handmaiden Pits of Inferno Tyrn Drefia Wyrms Grand Canon Dominus Falcon Bastion Orc Sambackpack Orc Fortress Custodian Cobra Bastion Orc Armor Torre de Thais Massacre Pits of Inferno Bragrumol Issavi Thawing Dragon Lord Falcon Bastion Weakened Shlorg TP Earth Elemental Dracola Pits of Inferno Gaffir Cobra Bastion The Welther TP Hydras",
+    "keywords": "invasao minibosses mini bosses raid golden token upgrade potions trinket badge 30 minutos Grand Commander Soeren Falcon Bastion The Old Widow Venore The Handmaiden Pits of Inferno Tyrn Drefia Wyrms Grand Canon Dominus Falcon Bastion Orc Sambackpack Orc Fortress Custodian Cobra Bastion Orc Armor Torre de Thais Massacre Pits of Inferno Bragrumol Issavi Thawing Dragon Lord Falcon Bastion Weakened Shlorg TP Earth Elemental Dracola Pits of Inferno Gaffir Cobra Bastion The Welther TP Hydras Preceptor Lazare Falcon Bastion Grand Chaplain Gaunder Falcon Bastion Jailer Falcon Bastion Orc Shield Torre Thais Orc Helmet Torre Thais White Pale TP Rotworm Mozradek Issavi Guard Captain Quaid Cobra Bastion Feroxa TP Wereboar Zarabustor TP Warlock The Horned Fox TP Minotaur Countess Sorrow Quest POI Mr. Punish Quest POI The Imperor Quest POI The Plasmother Quest POI Pits of Inferno",
     "url": "invasao-de-minibosses.html",
     "image": "assets/media/trinket-badges/golden-raid-token.gif"
 },
