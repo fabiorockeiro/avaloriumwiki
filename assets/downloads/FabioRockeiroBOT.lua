@@ -44,7 +44,7 @@ UI.defaults = {
     autoParty = {
         enabled = false,
         intervalMs = 500,
-        candidates = { "Jefimsz" },
+        candidates = {},
     },
     fungo = {
         enabled = false,
@@ -4383,7 +4383,7 @@ function FabioRockeiroBOT.loadFollowModule()
 
 -- set custom telport ids.
 -- eg.: { 1020, 3304, 63206 }
-local TELPORT_IDS = {63206, 63118}
+local TELPORT_IDS = {63077, 63117, 63118, 63206}
 
 -- set ids to not walk on.
 -- ATTENTION: this only applies to the destination SQM, it does not work on the path SQMs (sqms in the way of "map click")
