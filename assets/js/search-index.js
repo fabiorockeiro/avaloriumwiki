@@ -1,6 +1,14 @@
 window.AVALORIUM_SEARCH_INDEX =
 [
 {
+    "title": "Exalted Forge",
+    "description": "Forja custom do Avalorium: bônus até Tier 10, chances, proteção com Exalted Core e custos de ouro e dust.",
+    "category": "Sistemas do Servidor",
+    "keywords": "exalted exaltation forge forja core tier fusao transferencia convergence dust onslaught ruse momentum transcendence amplification botas arma armadura capacete pernas",
+    "url": "exalted-forge.html",
+    "image": "assets/media/exalted-forge/exalted-core.gif"
+},
+{
     "title": "Invasão de Minibosses",
     "description": "Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 30 bosses, seus respawns e os minimapas.",
     "category": "Sistemas do Servidor",
@@ -42,7 +50,7 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "Dark Totem Daily",
-        "description":  "Boss diário das 20h com spawn fixo e recompensas por desempenho.",
+        "description":  "Boss diário das 20h no Teleport de Eventos, com loot, prêmio de maior dano e sorteio.",
         "category":  "Sistemas do Servidor",
         "keywords":  "dark totem daily boss evento carlin thais darashia ankrahmun edron",
         "url":  "dark-totem-daily.html",

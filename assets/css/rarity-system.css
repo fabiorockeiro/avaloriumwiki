@@ -59,26 +59,39 @@
 .rs-table-wrap caption { padding: 12px; text-align: left; color: var(--muted); font-size: 11px; background: var(--surface); }
 .rarity-page .rs-table-wrap :is(th,td) { padding: 12px; font-size: 12px; white-space: normal; }
 .rs-table-wrap tbody th { color: var(--text); font-weight: 600; }
-.rs-bottom-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px; }
-.rs-bottom-grid .rs-section { padding: 22px; background: var(--surface); border: 1px solid var(--line); }
-.rs-bottom-grid .rs-heading h2 { font-size: 23px; }
 .rs-bags { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; margin: 20px 0; }
 .rs-bags > div { display: grid; justify-items: center; gap: 10px; padding: 12px 6px; background: var(--bg-2); border: 1px solid var(--line); }
 .rs-bags img { image-rendering: pixelated; object-fit: contain; }
 .rs-bags span { font-size: 10px; text-align: center; }
 .rs-link { display: inline-block; padding: 12px 14px; border: 1px solid var(--line-strong); font-size: 12px; }
-.rs-hunts { margin-top: 20px; border-top: 1px solid var(--line); }
-.rs-hunts summary { cursor: pointer; padding: 16px 0; font-size: 13px; font-weight: 700; color: var(--text); }
-.rs-hunts h3 { font-size: 16px; margin: 16px 0 12px; }
-.rs-hunts .tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.rs-hunts .tag-list > span { font-size: 10px; padding: 6px 8px; }
-.rs-hunts .tag-list svg { display: none; }
+.rs-drops { border-top: 2px solid var(--gold); padding-top: 24px; }
+.rs-drops > h3 { font: 700 19px/1.5 Inter,sans-serif; margin: 30px 0 12px; }
+.rs-drop-totals { display: grid; grid-template-columns: 1fr 1fr 1.6fr; gap: 1px; border: 1px solid var(--line); background: var(--line); margin: 24px 0; }
+.rs-drop-totals > div { padding: 22px; background: var(--surface); }
+.rs-drop-totals strong { display: block; font-size: clamp(21px,2.2vw,30px); color: var(--gold); }
+.rs-drop-totals span, .rs-drop-distribution span { display: block; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.rs-drop-item { display: flex; align-items: center; gap: 18px; margin: 22px 0; }
+.rs-drop-item img { flex: 0 0 48px; image-rendering: pixelated; }
+.rs-drop-item h3 { margin: 0 0 6px; font: 700 18px/1.5 Inter,sans-serif; }
+.rs-drop-item p { margin: 0; font-size: 13px; color: var(--muted); }
+.rs-drop-notice { padding: 18px; border-left: 2px solid var(--cyan); background: var(--surface); font-size: 13px; line-height: 1.8; }
+.rs-drop-distribution { display: grid; grid-template-columns: repeat(auto-fit,minmax(115px,1fr)); gap: 10px; margin: 18px 0 28px; }
+.rs-drop-distribution > div { padding: 16px; border: 1px solid var(--line); background: var(--surface); }
+.rs-drop-distribution strong, .rarity-page .rs-drop-pct { color: var(--cyan); font-variant-numeric: tabular-nums; font-weight: 700; }
+.rs-drop-filters { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; padding: 18px; background: var(--surface); border: 1px solid var(--line); }
+.rs-drop-filters label { flex: 1 1 180px; min-width: 0; font-size: 12px; color: var(--muted); }
+.rs-drop-filters :is(input,select) { display: block; width: 100%; min-width: 0; margin-top: 8px; padding: 12px; border: 1px solid var(--line-strong); background: var(--bg); color: var(--text); font: inherit; }
+.rs-drop-filters button { padding: 12px; border: 1px solid var(--line-strong); background: var(--bg); color: var(--cyan); font: inherit; font-size: 12px; cursor: pointer; }
+.rarity-page .rs-drop-table table { min-width: 680px; }
+.rs-drop-table td { font-variant-numeric: tabular-nums; }
+.rs-drop-table th { letter-spacing: .02em; }
+.rs-drop-table [hidden], .rs-drops > [hidden] { display: none; }
+.rs-drops :is(input,select,.rs-table-wrap):focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
 .rs-content :is(a,button,summary):focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
 @media(min-width:1101px) and (max-width:1400px) { .rarity-page .quick-actions a span { display: none; } }
 @media(max-width:1200px) { .rs-rarity { gap: 10px; padding: 16px 10px; } .rs-tools-layout { grid-template-columns: minmax(0,1fr) 210px; } }
 @media(max-width:900px) {
  .rs-rarities { grid-template-columns: repeat(2,minmax(0,1fr)); }
- .rs-bottom-grid { grid-template-columns: minmax(0,1fr); gap: 0; }
  .rs-example { grid-template-columns: 1fr; }
  .rs-tools-layout { grid-template-columns: minmax(0,1fr); }
  .rs-npc { width: min(100%,280px); justify-self: center; }
@@ -86,7 +99,10 @@
 @media(max-width:600px) {
  .rarity-page .article-hero { grid-template-columns: 1fr; padding: 20px; }
  .rarity-page .article-hero-media { display: none; }
- .rs-example, .rs-bottom-grid .rs-section { padding: 16px; }
+ .rs-example { padding: 16px; }
+ .rs-drop-totals { grid-template-columns: 1fr; }
+ .rs-drop-totals > div { padding: 16px; }
+ .rs-drop-filters { display: grid; grid-template-columns: minmax(0,1fr); }
  .rs-example ul, .rs-rules { grid-template-columns: 1fr; }
  .rs-example li { gap: 4px; }
  .rs-conversion-grid { grid-template-columns: 1fr; gap: 18px; }
