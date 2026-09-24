@@ -190,18 +190,6 @@
 
     const baseMenuSections = [
         {
-            title: 'Novidades e Loja',
-            icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a2 2 0 0 0 2 2h2l3 5h2l-2-5h2l8 3V6l-8 3H5a2 2 0 0 0-2 2Z"/><path d="M21 9v6"/></svg>',
-            items: [
-                {
-                    url: 'noticias-e-promocoes.html',
-                    title: 'Noticias, Promocoes e Pacotes Especiais',
-                    description: 'Novidades e futuras promoções oficiais do Avalorium.',
-                    image: 'assets/media/menu/noticias-e-promocoes.gif',
-                },
-            ],
-        },
-        {
             title: 'Sistemas do Servidor',
             icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg>',
             items: [
@@ -220,6 +208,7 @@
                 { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Consumables/more points wheel.gif' },
                 { url: 'roulette-system.html', title: 'Roulette System', description: 'Roleta, Slot Machines, Roulette Token e recompensas da Season 1.', image: 'assets/media/roulette-system/63110-roulette-token.gif' },
                 { url: 'rune-system.html', title: 'Rune System', description: 'Enhanced Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
+                { url: 'hireling-enchanter.html', title: 'Hireling Enchanter', description: 'Produção enchanted offline, tiers de maestria e até três Workshop Slots.', image: 'assets/media/hireling-enchanter/hireling-enchanter.png' },
                 { url: 'animus-mastery-soulpit.html', title: 'Animus Mastery &amp; SoulPit', description: 'Animus, Anonymous Mastery, Soul Cores e bônus de experiência.', image: 'assets/media/menu/animus-mastery-soulpit.gif' },
             ],
         },

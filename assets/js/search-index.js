@@ -33,14 +33,6 @@ window.AVALORIUM_SEARCH_INDEX =
         "image": "assets/media/items-wiki/portables/portable task book.gif"
     },
     {
-        "title":  "Noticias, Promocoes e Pacotes Especiais",
-        "description":  "Novidades e futuras promoções oficiais do Avalorium.",
-        "category":  "Novidades e Loja",
-        "keywords":  "novidades promocoes noticias banner abertura eventos loja pacotes donate oferta cliente",
-        "url":  "noticias-e-promocoes.html",
-        "image":  "assets/media/menu/noticias-e-promocoes.gif"
-    },
-    {
         "title":  "Divergence System",
         "description":  "Divergence: level 400, Hazard 3, bosses elementais, custos e recompensas por faixa. Tokens para o Seller e craft.",
         "category":  "Sistemas do Servidor",
@@ -95,6 +87,14 @@ window.AVALORIUM_SEARCH_INDEX =
         "keywords":  "rune system enhanced table refil potion ammo vocacao",
         "url":  "rune-system.html",
         "image":  "assets/media/menu/rune-system.gif"
+    },
+    {
+        "title": "Hireling Enchanter",
+        "description": "Produção automática de itens enchanted, progresso offline, tiers de maestria e Workshop Slots.",
+        "category": "Sistemas do Servidor",
+        "keywords": "hireling enchanter enchanted produção producao offline maestria tier workshop slot house store tibia coins armazem ciclos fabricacao",
+        "url": "hireling-enchanter.html",
+        "image": "assets/media/hireling-enchanter/hireling-enchanter.png"
     },
     {
         "title":  "Trinket Badges",

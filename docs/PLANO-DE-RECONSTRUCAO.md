@@ -12,7 +12,6 @@ Criar uma fonte única por artigo com: ID, slug, título, descrição, categoria
 
 ## 3. Taxonomia sugerida
 
-- Novidades e Loja
 - Sistemas do Servidor
 - Guias e Utilidades
 - Hunts Custom

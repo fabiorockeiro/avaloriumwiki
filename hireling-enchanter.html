@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hireling Enchanter | Avalorium OT Wiki</title>
+    <meta name="description" content="Guia completo do Hireling Enchanter: produção offline, tiers de maestria, Workshop Slots, custos e regras no Avalorium OT.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css">
+    <link rel="stylesheet" href="assets/css/layout-consistency.css">
+    <link rel="stylesheet" href="assets/css/hireling-enchanter.css">
+</head>
+<body class="layout-standard hireling-enchanter-page">
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <form class="top-search" action="search.html" method="get">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>
+            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>--</strong>
+            <small>online</small>
+        </div>
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg><span>YouTube</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
+    </div>
+</header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <form class="drawer-search" action="search.html" method="get">
+        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>
+        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg> YouTube</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+    <nav class="drawer-menu"></nav>
+</aside>
+<div class="wiki-shell">
+    <aside class="wiki-sidebar" aria-label="Menu da wiki">
+        <div class="sidebar-sticky">
+            <div class="sidebar-title">
+                <span>Menu da Wiki</span>
+                <small>0 artigos</small>
+            </div>
+        </div>
+    </aside>
+    <main class="wiki-main" id="conteudo">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Início</a>
+            <span>/</span>
+            <a href="category-sistemas-do-servidor.html">Sistemas do Servidor</a>
+            <span>/</span>
+            <strong>Hireling Enchanter</strong>
+        </nav>
+        <article class="article-layout">
+            <header class="article-hero he-hero">
+                <div>
+                    <span class="eyebrow">Produção encantada · Maestria · Automação</span>
+                    <h1>Hireling <em>Enchanter</em></h1>
+                    <p>Automatize a fabricação de itens enchanted, produza mesmo offline e evolua cada hireling até o grau máximo de eficiência.</p>
+                </div>
+                <div class="article-hero-media">
+                    <img src="assets/media/hireling-enchanter/hireling-enchanter.png" alt="Hireling Enchanter">
+                </div>
+            </header>
+
+            <div class="he-metrics" aria-label="Resumo do sistema">
+                <article><span>Produção</span><strong>Continua offline</strong><small>Pedidos seguem ativos sem o personagem conectado.</small></article>
+                <article><span>Maestria</span><strong>5 tiers</strong><small>Do Iniciante ao Grão-Mestre.</small></article>
+                <article><span>Oficina máxima</span><strong>3 produções</strong><small>Com Workshop Slot III.</small></article>
+                <article><span>Armazém máximo</span><strong>4.000 ciclos</strong><small>Capacidade compartilhada da oficina.</small></article>
+            </div>
+
+            <nav class="guide-section-nav" aria-label="Nesta página">
+                <a href="#funcionamento">Como funciona</a>
+                <a href="#store">Store e upgrades</a>
+                <a href="#maestria">Tiers de maestria</a>
+                <a href="#workshop">Workshop Slots</a>
+                <a href="#regras">Regras</a>
+                <a href="#como-usar">Como usar</a>
+            </nav>
+
+            <div class="article-content">
+                <section class="content-section" id="funcionamento">
+                    <div class="content-section-heading">
+                        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v12l8 4 8-4V6l-8-4Z"/><path d="M4 6l8 4 8-4"/><path d="M12 10v12"/></svg></span>
+                        <div><h2>Produza, acumule e evolua</h2><p>A produção gera progresso para a maestria do hireling atribuído à oficina.</p></div>
+                    </div>
+                    <div class="he-intro-grid">
+                        <article class="he-step" data-step="01"><b>Produza</b><p>Escolha uma receita e deixe o Hireling Enchanter fabricar os itens automaticamente.</p></article>
+                        <article class="he-step" data-step="02"><b>Acumule</b><p>Cada ciclo realmente concluído aumenta o progresso daquele hireling.</p></article>
+                        <article class="he-step" data-step="03"><b>Treine</b><p>Alcance a meta de ciclos e pague o treinamento exigido pelo próximo tier.</p></article>
+                        <article class="he-step" data-step="04"><b>Evolua</b><p>Os tiers reduzem tempo e custo enquanto aumentam a produção obtida.</p></article>
+                    </div>
+                    <div class="he-callout">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 1 0 7 7"/><path d="M12 7v5l3 2"/><path d="M17 3h4v4"/></svg>
+                        <div><strong>Produção offline</strong><br>Depois de confirmar o pedido, o Hireling Enchanter continua trabalhando mesmo quando você está desconectado.</div>
+                    </div>
+                </section>
+
+                <section class="content-section" id="store">
+                    <div class="content-section-heading">
+                        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg></span>
+                        <div><h2>Adquira na Store do jogo</h2><p>O Hireling Enchanter e seus dois upgrades de oficina são compras permanentes do personagem.</p></div>
+                    </div>
+                    <div class="he-store-layout">
+                        <div class="he-products">
+                            <article class="he-product">
+                                <div class="he-product-art"><img src="assets/media/hireling-enchanter/hireling-enchanter.png" alt=""></div>
+                                <div class="he-product-copy">
+                                    <header>
+                                        <h3>Hireling Enchanter</h3>
+                                        <span class="he-price"><img src="assets/media/hireling-enchanter/tibia-coins.gif" alt="">3.000 TC</span>
+                                    </header>
+                                    <p>Desbloqueia permanentemente a produção automatizada de itens enchanted neste personagem.</p>
+                                    <ul>
+                                        <li>Inclui Workshop Slot I</li>
+                                        <li>1 produção simultânea</li>
+                                        <li>Armazém para 2.000 ciclos</li>
+                                        <li>Expansível até 3 produções e 4.000 ciclos</li>
+                                    </ul>
+                                    <span class="he-product-badge">Ativação imediata na compra</span>
+                                </div>
+                            </article>
+                            <article class="he-product">
+                                <div class="he-product-art"><img src="assets/media/hireling-enchanter/workshop-slot-2.png" alt=""></div>
+                                <div class="he-product-copy">
+                                    <header>
+                                        <h3>Hireling Workshop Slot II</h3>
+                                        <span class="he-price"><img src="assets/media/hireling-enchanter/tibia-coins.gif" alt="">1.500 TC</span>
+                                    </header>
+                                    <p>Expande permanentemente a oficina para duas produções simultâneas.</p>
+                                    <ul>
+                                        <li>Requer Hireling Enchanter</li>
+                                        <li>Requer pelo menos 2 hirelings</li>
+                                        <li>Capacidade aumenta para 3.000 ciclos</li>
+                                        <li>Reduz 5 segundos de cada ciclo</li>
+                                    </ul>
+                                    <span class="he-product-badge">Upgrade único por personagem</span>
+                                </div>
+                            </article>
+                            <article class="he-product">
+                                <div class="he-product-art"><img src="assets/media/hireling-enchanter/workshop-slot-3.png" alt=""></div>
+                                <div class="he-product-copy">
+                                    <header>
+                                        <h3>Hireling Workshop Slot III</h3>
+                                        <span class="he-price"><img src="assets/media/hireling-enchanter/tibia-coins.gif" alt="">1.500 TC</span>
+                                    </header>
+                                    <p>Leva a oficina ao máximo de três produções simultâneas.</p>
+                                    <ul>
+                                        <li>Requer Workshop Slot II</li>
+                                        <li>Requer pelo menos 3 hirelings</li>
+                                        <li>Capacidade aumenta para 4.000 ciclos</li>
+                                        <li>Redução total de 10 segundos por ciclo</li>
+                                    </ul>
+                                    <span class="he-product-badge">Upgrade único por personagem</span>
+                                </div>
+                            </article>
+                        </div>
+                        <figure class="he-store-shot">
+                            <button type="button" data-image-lightbox="assets/media/hireling-enchanter/store-hireling-enchanter.png" data-image-lightbox-alt="Hireling Enchanter disponível na Store do jogo" aria-label="Ampliar captura da Store">
+                                <img src="assets/media/hireling-enchanter/store-hireling-enchanter.png" alt="Hireling Enchanter disponível na Store do jogo" loading="lazy">
+                            </button>
+                            <figcaption>Na Store do jogo, abra <strong>Houses → Hirelings</strong> e selecione <strong>Hireling Enchanter</strong>. Clique na imagem para ampliar.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="he-callout">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+                        <div><strong>Capacidade compartilhada:</strong> ciclos em produção e produtos prontos ainda não coletados ocupam espaço. Ter hirelings extras não libera novas produções sem comprar o Workshop Slot correspondente.</div>
+                    </div>
+                </section>
+
+                <section class="content-section" id="maestria">
+                    <div class="content-section-heading">
+                        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M5 5H3v3a4 4 0 0 0 4 4"/><path d="M19 5h2v3a4 4 0 0 1-4 4"/></svg></span>
+                        <div><h2>Tiers de Maestria</h2><p>Cada hireling possui progresso próprio e precisa cumprir as metas na ordem, sem pular tiers.</p></div>
+                    </div>
+                    <div class="he-mastery-wrap">
+                        <table class="he-mastery">
+                            <thead><tr><th>Tier</th><th>Grau</th><th>Ciclos exigidos</th><th>Treinamento</th><th>Tempo-base</th><th>Produção</th><th>Desconto</th></tr></thead>
+                            <tbody>
+                                <tr><td><span class="he-tier">T1</span></td><td><strong>Iniciante</strong></td><td>0</td><td>Grátis</td><td>40s</td><td>Base</td><td>0%</td></tr>
+                                <tr><td><span class="he-tier">T2</span></td><td><strong>Aprendiz</strong></td><td>1.000</td><td>200kk</td><td>37s</td><td class="he-positive">+10%</td><td class="he-positive">−5%</td></tr>
+                                <tr><td><span class="he-tier">T3</span></td><td><strong>Especialista</strong></td><td>5.000</td><td>500kk</td><td>34s</td><td class="he-positive">+20%</td><td class="he-positive">−10%</td></tr>
+                                <tr><td><span class="he-tier">T4</span></td><td><strong>Mestre Encantador</strong></td><td>12.000</td><td>1kkk</td><td>31s</td><td class="he-positive">+30%</td><td class="he-positive">−15%</td></tr>
+                                <tr><td><span class="he-tier">T5</span></td><td><strong>Grão-Mestre Encantador</strong></td><td>25.000</td><td>1,7kkk</td><td>29s</td><td class="he-positive">+40%</td><td class="he-positive">−20%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="he-total"><span>Custo total de treinamento para alcançar o T5</span><strong>3,4kkk</strong></div>
+                </section>
+
+                <section class="content-section" id="workshop">
+                    <div class="content-section-heading">
+                        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m14.7 6.3-1-3.3h-3.4l-1 3.3-2.8 1.9-3.3-.8-1.7 3 2.3 2.5v3.2l-2.3 2.5 1.7 3 3.3-.8 2.8 1.9 1 3.3h3.4l1-3.3 2.8-1.9 3.3.8 1.7-3-2.3-2.5v-3.2l2.3-2.5-1.7-3-3.3.8-2.8-1.9Z"/><circle cx="12" cy="14.5" r="3"/></svg></span>
+                        <div><h2>Workshop Slots</h2><p>Cada produção simultânea deve ser atribuída a um hireling diferente.</p></div>
+                    </div>
+                    <div class="he-slot-grid">
+                        <article class="he-slot"><small>Incluso na compra-base</small><h3>Slot I</h3><strong>1 produção</strong><span>2.000 ciclos compartilhados</span><span>Sem redução adicional de tempo</span></article>
+                        <article class="he-slot"><small>Primeiro upgrade</small><h3>Slot II</h3><strong>2 produções</strong><span>3.000 ciclos compartilhados</span><span>−5 segundos em cada ciclo</span></article>
+                        <article class="he-slot"><small>Oficina completa</small><h3>Slot III</h3><strong>3 produções</strong><span>4.000 ciclos compartilhados</span><span>−10 segundos em cada ciclo</span></article>
+                    </div>
+                    <div class="he-callout">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 9-12h-7l1-8Z"/></svg>
+                        <div><strong>Configuração máxima:</strong> no T5 com Workshop Slot III, o tempo calculado chega a 19 segundos por ciclo — aproximadamente 20 segundos na experiência de jogo.</div>
+                    </div>
+                </section>
+
+                <section class="content-section" id="regras">
+                    <div class="content-section-heading">
+                        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                        <div><h2>Regras importantes</h2><p>Confira o que conta para o progresso antes de iniciar pedidos longos.</p></div>
+                    </div>
+                    <ol class="he-rules">
+                        <li>Somente fabricações realmente concluídas geram progresso.</li>
+                        <li>Ao cancelar uma produção, apenas os ciclos já concluídos contam.</li>
+                        <li>Coletar itens prontos não concede progresso adicional.</li>
+                        <li>O treinamento pago é permanente e não pode ser desfeito.</li>
+                        <li>Os tiers devem ser desbloqueados em sequência.</li>
+                        <li>Cada hireling mantém sua própria progressão de maestria.</li>
+                        <li>Pedidos iniciados antes do treinamento continuam usando os valores do tier anterior.</li>
+                        <li>A produção pausa enquanto o hireling atribuído estiver guardado na lâmpada.</li>
+                    </ol>
+                </section>
+
+                <section class="content-section" id="como-usar">
+                    <div class="content-section-heading">
+                        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg></span>
+                        <div><h2>Como usar</h2><p>Da conversa com o hireling até a retirada dos produtos.</p></div>
+                    </div>
+                    <ol class="he-use-steps">
+                        <li><b>01</b>Fale com o Hireling Enchanter instalado na sua house.</li>
+                        <li><b>02</b>Abra o menu de <strong>Produção Encantada</strong>.</li>
+                        <li><b>03</b>Confira seu progresso em <strong>Treinamento / Tier</strong>.</li>
+                        <li><b>04</b>Escolha a receita, defina a quantidade e confirme o pedido.</li>
+                        <li><b>05</b>Retire os itens produzidos no armazém compartilhado da oficina.</li>
+                    </ol>
+                    <div class="he-panel-options" aria-label="Opções do menu Produção Encantada">
+                        <span><b>01</b>Iniciar nova produção</span>
+                        <span><b>02</b>Ver produção ativa</span>
+                        <span><b>03</b>Coletar itens produzidos</span>
+                        <span><b>04</b>Ver armazém</span>
+                        <span><b>05</b>Cancelar produção</span>
+                        <span><b>06</b>Histórico de produção</span>
+                        <span><b>07</b>Treinamento / Tier</span>
+                    </div>
+                    <div class="he-callout">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4"/><path d="M8.5 14.5A6 6 0 1 1 15.5 14.5c-1 .7-1.5 1.5-1.5 2.5h-4c0-1-.5-1.8-1.5-2.5Z"/></svg>
+                        <div>Ao iniciar um pedido, escolha qualquer receita enchanted disponível. <strong>Não é necessário ter a vocação correspondente nem desbloquear a receita.</strong></div>
+                    </div>
+                </section>
+            </div>
+            <nav class="article-nav"><a href="rune-system.html"><small>Anterior</small><strong>Rune System</strong></a><a href="animus-mastery-soulpit.html"><small>Próximo</small><strong>Animus Mastery &amp; SoulPit</strong></a></nav>
+        </article>
+    </main>
+</div>
+<footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
+<script src="assets/js/wiki.js?v=reliquary-20260604"></script>
+</body>
+</html>

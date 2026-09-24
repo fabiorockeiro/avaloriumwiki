@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avalorium — Winter Ice · Pacotes de apoio</title>
+  <style>
+    * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; color: #dceaf4; background: #070e19; font-family: Arial, sans-serif; }
+    main { max-width: 1000px; margin: auto; padding: 12vh 28px; } .brand { font: 24px Georgia, serif; letter-spacing: .25em; color: #c5e9f9; }
+    small { display: block; margin-top: 70px; color: #8cc4d9; letter-spacing: .2em; } h1 { max-width: 650px; font: 60px/1.1 Georgia, serif; } p { max-width: 550px; color: #9db2c5; line-height: 1.8; }
+    button { margin-top: 20px; padding: 17px 25px; border: 1px solid #7ba7be; background: #132a3d; color: #d2eefa; font: inherit; cursor: pointer; } button:hover { background: #24455e; } a { color: #b6dfee; } .note { margin-top: 70px; font-size: 12px; }
+    @media(max-width: 600px) { h1 { font-size: 42px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">AVALORIUM</div>
+    <small>WINTER ICE · PACOTES DE APOIO</small>
+    <h1>O próximo capítulo da sua lenda.</h1>
+    <p>Entre no mundo de Avalorium. Escolha seu pacote de apoio e descubra as recompensas que vão acompanhar sua jornada.</p>
+    <button id="open" type="button">Explorar os pacotes →</button>
+    <p class="note">Demonstração interativa · Nenhum pagamento é realizado.<br><a href="README.md">Documentação de integração</a></p>
+    <p id="error" role="alert"></p>
+  </main>
+  <script src="packs-data.js"></script>
+  <script src="popup.js"></script>
+  <script>
+    function showPacks() { AvaloriumPacks.open().catch(error => { document.querySelector('#error').textContent = error.message; }); }
+    document.querySelector('#open').addEventListener('click', showPacks);
+    showPacks();
+  </script>
+</body>
+</html>
