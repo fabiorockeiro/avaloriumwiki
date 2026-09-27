@@ -4550,6 +4550,158 @@ tbody tr:hover td {
     }
 }
 }
+/* Home — "Sistemas mais consultados": cards 3D verticais (icone + nome na mesma peca).
+   MANTER FORA de @layer legacy: declaracoes em layer perdem sempre para as nao camadizadas. */
+.home-systems-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 172px), 1fr));
+    perspective: 1100px;
+}
+
+.home-systems-grid .article-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
+    justify-items: stretch;
+    gap: 0;
+    min-height: auto;
+    padding: 0;
+    text-align: center;
+    box-shadow: inset 0 0 0 1px rgba(145, 183, 227, .14), inset 0 1px rgba(255, 255, 255, .06);
+    transform: rotateX(0deg) translateY(0) translateZ(0);
+    transform-origin: 50% 100%;
+    filter: drop-shadow(0 12px 18px rgba(0, 0, 0, .5));
+    transition: transform .42s cubic-bezier(.2, .8, .2, 1), filter .42s ease, background .3s ease;
+    overflow: hidden;
+}
+
+/* Linha de luz no topo (substitui a barra de acento a esquerda) */
+.home-systems-grid .article-card::before {
+    inset: 0 0 auto;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--component-accent, var(--cyan)) 85%, transparent), transparent);
+    opacity: .8;
+}
+
+/* Vinheta de acento que acende no hover */
+.home-systems-grid .article-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 52%, color-mix(in srgb, var(--component-accent, var(--cyan)) 20%, transparent) 100%);
+    opacity: 0;
+    transition: opacity .42s ease;
+    pointer-events: none;
+}
+
+.home-systems-grid .article-card:hover,
+.home-systems-grid .article-card:focus-visible {
+    transform: rotateX(10deg) translateY(-12px) translateZ(26px);
+    filter:
+        drop-shadow(0 26px 34px rgba(0, 0, 0, .6))
+        drop-shadow(0 0 20px color-mix(in srgb, var(--component-accent, var(--cyan)) 45%, transparent));
+}
+
+.home-systems-grid .article-card:hover::after,
+.home-systems-grid .article-card:focus-visible::after {
+    opacity: 1;
+}
+
+.home-systems-grid .article-card:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 4px;
+}
+
+/* Icone em painel recuado (topo da peca) */
+.home-systems-grid .article-card-thumb {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    clip-path: none;
+    padding: 14px;
+    background:
+        radial-gradient(ellipse at 32% 22%, color-mix(in srgb, var(--component-accent, var(--cyan)) 22%, transparent), transparent 68%),
+        linear-gradient(180deg, rgba(4, 7, 12, .62), rgba(4, 7, 12, .26));
+    box-shadow: inset 0 -14px 26px rgba(0, 0, 0, .38);
+}
+
+.home-systems-grid .article-card-thumb::after {
+    inset: 9px;
+    border-color: rgba(145, 183, 227, .1);
+}
+
+.home-systems-grid .article-card-thumb img {
+    width: 62%;
+    height: 62%;
+    max-width: 112px;
+    max-height: 112px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 12px rgba(0, 0, 0, .6));
+    transition: transform .42s cubic-bezier(.2, .8, .2, 1);
+}
+
+.home-systems-grid .article-card:hover .article-card-thumb img,
+.home-systems-grid .article-card:focus-visible .article-card-thumb img {
+    transform: translateY(-5px) scale(1.12);
+}
+
+/* Nome do sistema encaixado na base da mesma peca */
+.home-systems-grid .article-card-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    min-height: 56px;
+    padding: 12px 12px 14px;
+    border-top: 1px solid rgba(145, 183, 227, .1);
+}
+
+.home-systems-grid .article-card-title {
+    font-family: Cinzel, Georgia, serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 1.28;
+    letter-spacing: .01em;
+    text-wrap: balance;
+}
+
+@media (max-width: 1240px) {
+    .home-systems-grid {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .home-systems-grid {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 132px), 1fr));
+    }
+
+    .home-systems-grid .article-card-thumb {
+        padding: 12px;
+    }
+
+    .home-systems-grid .article-card-copy {
+        min-height: 50px;
+        padding: 10px 8px 12px;
+    }
+
+    .home-systems-grid .article-card-title {
+        font-size: 12.5px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-systems-grid .article-card,
+    .home-systems-grid .article-card-thumb img {
+        transition: none;
+    }
+
+    .home-systems-grid .article-card:hover,
+    .home-systems-grid .article-card:focus-visible {
+        transform: translateY(-6px);
+    }
+}
 
 .back-to-top {
     position: fixed;
