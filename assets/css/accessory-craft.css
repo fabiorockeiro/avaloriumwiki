@@ -13,7 +13,7 @@
 .ac-piece h6 { font-family: 'Inter',sans-serif; font-size: 12px; line-height: 1.5; margin: 16px 0 10px; color: var(--text); }
 .ac-piece .cv-materials li { grid-template-columns: 26px minmax(0,1fr); padding-inline: 10px; }
 .ac-piece .cv-attributes { grid-template-columns: repeat(3,minmax(0,1fr)); }
-.ac-piece .cv-attributes > div { padding: 8px; }
+.ac-piece .cv-attributes > div { grid-template-columns: auto auto; justify-content: start; gap: 8px; padding: 8px; }
 .ac-piece .cv-attributes dt { overflow-wrap: anywhere; }
 .ac-scene { display: grid; grid-template-columns: minmax(0,300px) minmax(0,1fr); gap: 28px; padding: 24px; background: var(--surface); border: 1px solid var(--line); margin-top: 24px; align-items: center; }
 .ac-scene h4 { font-size: 24px; margin: 12px 0; }

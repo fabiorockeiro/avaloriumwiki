@@ -9,20 +9,33 @@
 .cu-card header small { color: var(--gold); font-size: 10px; letter-spacing: .12em; }
 .cu-card h3 { margin: 6px 0 0; font: 700 19px/1.4 Inter,sans-serif; }
 .cu-card > p { font-size: 13px; color: var(--muted); }
+#craft-upgrade-stones .cu-grid, #outras-receitas .cu-grid { grid-template-columns: minmax(0,1fr); gap: 12px; }
+#craft-upgrade-stones .cu-card, #outras-receitas .cu-card { display: grid; grid-template-columns: minmax(220px,280px) minmax(0,1fr); grid-template-rows: auto 1fr; column-gap: 18px; padding: 16px; }
+#craft-upgrade-stones .cu-card header, #outras-receitas .cu-card header { grid-column: 1; grid-row: 1; gap: 10px; padding: 0 18px 10px 0; border: 0; border-right: 1px solid var(--line); }
+#craft-upgrade-stones .cu-card header { grid-row: 1 / span 2; align-self: center; padding-bottom: 0; }
+#craft-upgrade-stones .cu-card header img, #outras-receitas .cu-card header img { width: 40px; height: 40px; flex-basis: 40px; }
+#craft-upgrade-stones .cu-card h3, #outras-receitas .cu-card h3 { font-size: 16px; }
+#craft-upgrade-stones .cu-card > p, #outras-receitas .cu-card > p { grid-column: 1; grid-row: 2; margin: 0; padding: 4px 18px 0 0; border-right: 1px solid var(--line); }
+#craft-upgrade-stones .cu-card .cv-materials, #outras-receitas .cu-card .cv-materials { grid-column: 2; grid-row: 1 / span 2; grid-template-columns: repeat(3,minmax(0,1fr)); align-self: center; width: 100%; }
+#craft-upgrade-stones .cu-card .cv-materials li, #outras-receitas .cu-card .cv-materials li { grid-template-columns: 42px minmax(0,1fr); align-items: center; gap: 6px; min-height: 42px; padding: 8px; }
+#craft-upgrade-stones .cu-card .cv-materials li > strong, #outras-receitas .cu-card .cv-materials li > strong { align-self: center; }
 .cu-section a { color: var(--cyan); }
 .cu-link { display: inline-block; margin: 0 0 24px; padding: 12px 18px; border: 1px solid var(--line-strong); background: var(--bg-2); font-size: 14px; }
 .cu-backpack-info { padding: 26px; background: linear-gradient(135deg,var(--surface),var(--bg-2)); border: 1px solid var(--line-strong); }
 .cu-backpack-info h3 { margin: 12px 0 24px; }
 .cu-backpack-info .cv-attributes { grid-template-columns: repeat(2,minmax(0,1fr)); }
-.cu-coming { border: 1px solid var(--line-strong); background: var(--surface); padding: 28px; }
-.cu-status { display: inline-block; padding: 7px 12px; color: var(--gold); background: #d5b56a12; border: 1px solid #d5b56a55; font-size: 12px; letter-spacing: .15em; font-weight: 800; }
-.cu-coming h3 { font-size: 24px; margin: 18px 0 10px; }
-.cu-preview { display: grid; grid-template-columns: 1.5fr 1fr; gap: 18px; margin-top: 24px; align-items: start; }
-.cu-preview button { padding: 0; border: 1px solid var(--line); background: var(--bg-2); cursor: zoom-in; }
-.cu-preview img { display: block; width: 100%; height: auto; }
 .cu-section :is(a,button):focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
+@media(max-width:1200px) {
+ #craft-upgrade-stones .cu-card, #outras-receitas .cu-card { grid-template-columns: minmax(200px,240px) minmax(0,1fr); }
+ #craft-upgrade-stones .cu-card .cv-materials, #outras-receitas .cu-card .cv-materials { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
 @media(max-width:800px) {
- .cu-grid, .cu-preview { grid-template-columns: minmax(0,1fr); }
- .cu-card, .cu-backpack-info, .cu-coming { padding: 18px; }
+ .cu-grid { grid-template-columns: minmax(0,1fr); }
+ #craft-upgrade-stones .cu-grid, #outras-receitas .cu-grid { grid-template-columns: minmax(0,1fr); }
+ .cu-card, .cu-backpack-info { padding: 18px; }
+ #craft-upgrade-stones .cu-card, #outras-receitas .cu-card { display: block; }
+ #craft-upgrade-stones .cu-card header, #outras-receitas .cu-card header { padding: 0 0 12px; border-right: 0; border-bottom: 1px solid var(--line); }
+ #craft-upgrade-stones .cu-card > p, #outras-receitas .cu-card > p { padding: 0; border-right: 0; }
+ #craft-upgrade-stones .cu-card .cv-materials, #outras-receitas .cu-card .cv-materials { grid-template-columns: minmax(0,1fr); }
  .cu-card h3 { font-size: 17px; }
 }

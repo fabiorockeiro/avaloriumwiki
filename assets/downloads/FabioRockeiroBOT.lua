@@ -1244,6 +1244,10 @@ function UI.createHubHud()
     if elements.contentTitle.setFontSize then elements.contentTitle:setFontSize(12) end
     elements.contentIcon = UI.createItem(x + layout.contentX, y + layout.contentY + 8, UI.tabs[1].icon, noop, 0.96)
     elements.contentStateIcon = nil
+    elements.enchantedIcon = UI.createItem(x, y, 63248, function()
+        local extra = FabioRockeiroBOT.enchantedAmmo
+        if extra then extra.toggle() end
+    end, 0.75)
 
     for index = 1, 14 do
         elements.lines[index] = UI.createText(x + layout.contentX, y + layout.contentY + layout.contentTextOffsetY + ((index - 1) * layout.contentLineStep), "", UI.colors.neutral)
@@ -1279,6 +1283,7 @@ function UI.destroyHubHud()
     destroy(elements.contentStateIcon)
     destroy(elements.status)
     destroy(elements.help)
+    destroy(elements.enchantedIcon)
 
     UI.destroyItemFallbackSkin(elements.itemSkin)
 
@@ -1387,6 +1392,14 @@ function UI.linesArrow(lines)
     UI.addLine(lines, "[Diamond Arrow]", UI.colors.info, function() UI.invoke(m.diamond) end)
     UI.addLine(lines, "[Spectral Bolt]", UI.colors.info, function() UI.invoke(m.spectral) end)
     UI.addLine(lines, UI.metaText(m.others, "[Outros]"), UI.colors.info, function() UI.invoke(m.others) end)
+    UI.addLine(lines, "EXTRA:", UI.colors.title)
+    local extra = FabioRockeiroBOT.enchantedAmmo
+    UI.addLine(lines, "      Enchanted Diamond: " .. (extra and extra.enabled and "ON" or "OFF"),
+        extra and extra.enabled and UI.colors.active or UI.colors.inactive,
+        function() if extra then extra.toggle() end end)
+    UI.addLine(lines, extra and extra.status or "Aguardando modulo.", UI.colors.info)
+    UI.addLine(lines, "Min: 200 | Max: 1200 | Alicorn Quiver", UI.colors.muted)
+    UI.addLine(lines, "Mantenha quiver e bags das arrows abertas.", UI.colors.muted)
 end
 
 function UI.linesForge(lines)
@@ -1655,6 +1668,9 @@ function UI.updateContent(e, x, y, expanded, tab)
     setHudText(e.status, "")
     setHudText(e.help, "")
 
+    setHudVisible(e.enchantedIcon, expanded and tab.key == "arrow")
+    setHudPos(e.enchantedIcon, x + layout.contentX,
+        y + layout.contentY + layout.contentTextOffsetY + (7 * layout.contentLineStep) - 5)
     local lines = UI.currentLines()
     for index, lineHud in ipairs(e.lines or {}) do
         local data = lines[index]
@@ -4017,6 +4033,11 @@ local ammunition = {
     { id = 762, name = "shiver arrow", label = "Shiver Arrow" },
     { id = 7364, name = "sniper arrow", label = "Sniper Arrow" },
     { id = 14251, name = "tarsal arrow", label = "Tarsal Arrow" },
+    { id = 53168, name = "shatterstorm arrow", label = "Shatterstorm Arrow" },
+    { id = 53169, name = "firestorm arrow", label = "Firestorm Arrow" },
+    { id = 53170, name = "terrastorm arrow", label = "Terrastorm Arrow" },
+    { id = 53171, name = "froststorm arrow", label = "Froststorm Arrow" },
+    { id = 53172, name = "thunderstorm arrow", label = "Thunderstorm Arrow" },
     { id = 3446, name = "bolt", label = "Bolt" },
     { id = 16142, name = "drill bolt", label = "Drill Bolt" },
     { id = 6528, name = "infernal bolt", label = "Infernal Bolt" },
@@ -4125,6 +4146,152 @@ local function findAmmoIndexByName(name)
     end
 
     return nil
+end
+
+-- Extra opcional: os containers de origem e a Alicorn devem estar abertos.
+-- Apenas uma Alicorn aberta evita confundir uma reserva com a quiver em uso.
+local enchanted = {
+    enabled = false, filling = false, fallback = false,
+    status = "Enchanted desativado.", itemId = 63248, quiverId = 39150,
+    minimum = 200, maximum = 1200,
+}
+FabioRockeiroBOT.enchantedAmmo = enchanted
+
+local function findEnchantedQuiver()
+    local equipped = Player.getInventorySlot(Enums.InventorySlot.CONST_SLOT_RIGHT)
+    if equipped and equipped.id ~= 0 and equipped.id ~= enchanted.quiverId then
+        return nil, "Equipe a Alicorn Quiver (39150)."
+    end
+    local found
+    for _, cid in pairs(Player.getContainers() or {}) do
+        local container = Container(cid)
+        if lower(container:getName()):find("alicorn quiver", 1, true) then
+            if found then return nil, "Deixe apenas uma Alicorn Quiver aberta." end
+            found = container
+        end
+    end
+    return found, "Abra a Alicorn Quiver e as bags das arrows."
+end
+
+local function countEnchantedArrows(quiver)
+    local total = 0
+    local sourceCount = 0
+
+    for _, cid in pairs(Player.getContainers() or {}) do
+        local container = Container(cid)
+        local count = container:getItemCountById(enchanted.itemId) or 0
+        total = total + count
+
+        if not quiver or cid ~= quiver:getIndex() then
+            sourceCount = sourceCount + count
+        end
+    end
+
+    return total, sourceCount
+end
+
+local function hasEnchantedArrows(quiver)
+    local total = countEnchantedArrows(quiver)
+    return total > 0
+end
+
+local function enchantedAllowsPurchase()
+    if not enchanted.enabled then return true end
+    local quiver = findEnchantedQuiver()
+    local selected = getSelectedAmmo()
+    return quiver ~= nil and enchanted.fallback
+        and selected ~= nil and selected.id == 35901
+        and not hasEnchantedArrows(quiver)
+end
+
+function enchanted.toggle()
+    enchanted.enabled = not enchanted.enabled
+    enchanted.filling = false
+    enchanted.target = nil
+    enchanted.fallback = false
+    if enchanted.enabled then
+        enchanted.previousIndex = selectedAmmoIndex
+        enchanted.previousEnabled = autoRefillEnabled
+        autoRefillEnabled = false
+        enchanted.status = "Aguardando leitura da Alicorn Quiver."
+    else
+        selectedAmmoIndex = enchanted.previousIndex
+        autoRefillEnabled = enchanted.previousEnabled or false
+        enchanted.status = "Enchanted desativado."
+    end
+end
+
+local function checkEnchantedAmmo()
+    if not enchanted.enabled then return end
+    if Client and Client.isConnected and not Client.isConnected() then
+        enchanted.filling = false
+        enchanted.target = nil
+        return
+    end
+    local quiver, message = findEnchantedQuiver()
+    if not quiver then
+        enchanted.filling = false
+        enchanted.target = nil
+        enchanted.fallback = false
+        autoRefillEnabled = false
+        enchanted.status = message
+        return
+    end
+    if enchanted.target ~= quiver:getIndex() then
+        enchanted.target = quiver:getIndex()
+        enchanted.filling = false
+    end
+    -- Conta toda a municao, incluindo arrows normais que ocupam espaco.
+    local items = quiver:getItems()
+    if not items then
+        enchanted.filling = false
+        enchanted.fallback = false
+        autoRefillEnabled = false
+        enchanted.status = "Aguardando conteudo da Alicorn Quiver."
+        return
+    end
+    local total = 0
+    for _, item in pairs(items) do
+        total = total + (tonumber(item.count) or 1)
+    end
+    local customCount = quiver:getItemCountById(enchanted.itemId) or 0
+    local _, reserveCount = countEnchantedArrows(quiver)
+    if customCount <= 0 and reserveCount <= 0 then
+        enchanted.filling = false
+        enchanted.fallback = true
+        selectedAmmoIndex = findAmmoIndexByName("diamond arrow")
+        autoRefillEnabled = true
+        enchanted.status = "Sem enchanted: compra de Diamond ATIVA."
+        return
+    end
+    enchanted.fallback = false
+    autoRefillEnabled = false
+    if total <= enchanted.minimum then enchanted.filling = true end
+    if total >= enchanted.maximum then enchanted.filling = false end
+    enchanted.status = "Alicorn: " .. total .. "/1200 | Reserva: " .. reserveCount
+    if not enchanted.filling then return end
+
+    -- Uma pilha por ciclo: rele a quantidade confirmada antes de mover mais.
+    for _, cid in pairs(Player.getContainers() or {}) do
+        if cid ~= quiver:getIndex() then
+            local source = Container(cid)
+            for index, item in ipairs(source:getItems() or {}) do
+                if item.id == enchanted.itemId then
+                    local amount = math.min(tonumber(item.count) or 0, enchanted.maximum - total, 100)
+                    if amount > 0 then
+                        local moved = source:moveItemToContainer(index - 1, amount, quiver:getIndex(), 0)
+                        if moved then
+                            enchanted.status = "Repondo Alicorn: " .. total .. "/1200"
+                        else
+                            enchanted.status = "Falha ao mover; confira as bags abertas."
+                        end
+                        return
+                    end
+                end
+            end
+        end
+    end
+    enchanted.status = "Alicorn: " .. total .. "/1200 | Sem reserva aberta"
 end
 
 local function updateHud()
@@ -4284,7 +4451,7 @@ local function findButtonByText(buttons, text)
 end
 
 local function handleRefillModal(data)
-    if not autoRefillEnabled then return end
+    if not autoRefillEnabled or not enchantedAllowsPurchase() then return end
 
     local selectedAmmo = getSelectedAmmo()
     if not selectedAmmo then return end
@@ -4340,8 +4507,10 @@ Timer("arrowRefilFabioCombinedHud", function()
     updateHud()
 end, 500)
 
+Timer("arrowRefilFabioEnchanted", checkEnchantedAmmo, 500)
+
 Timer("arrowRefilFabioCombinedCheck", function()
-    if not autoRefillEnabled then return end
+    if not autoRefillEnabled or not enchantedAllowsPurchase() then return end
 
     if Client and Client.isConnected and not Client.isConnected() then
         return

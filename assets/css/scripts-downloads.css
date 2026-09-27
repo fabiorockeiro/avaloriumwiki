@@ -31,6 +31,15 @@
 .fr-script figure { margin: 24px 0; padding: 12px; border: 1px solid var(--line); background: var(--bg-2); }
 .fr-script figure img { display: block; max-width: 100%; height: auto; margin: auto; }
 .fr-script figcaption { margin-top: 12px; color: var(--muted); font-size: 12px; line-height: 1.7; text-align: center; }
+.fr-preview-layout { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(280px,.65fr); gap: 20px; align-items: stretch; max-width: 1100px; margin: 24px auto; }
+.fr-preview-layout .fr-script-preview, .fr-preview-layout .fr-update { margin: 0; }
+.fr-preview-layout .fr-script-preview { align-self: start; }
+.fr-preview-layout .fr-script-preview img { width: 100%; }
+.fr-update { display: grid; grid-template-columns: 110px minmax(0,1fr); gap: 20px; align-items: start; margin: 24px 0; padding: 20px; border: 1px solid rgba(67,217,255,.32); border-left: 3px solid var(--cyan); background: rgba(67,217,255,.06); }
+.fr-preview-layout .fr-update { grid-template-columns: 1fr; align-content: center; }
+.fr-update > span { color: var(--cyan); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+.fr-update h3 { margin: 0 0 8px; color: var(--text); font-size: 19px; line-height: 1.35; }
+.fr-update p { margin: 0; }
 .fr-functions { margin: 0; }
 .fr-functions > div { display: grid; grid-template-columns: 110px minmax(0,1fr); gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); }
 .fr-functions dt { color: var(--gold); font-weight: 800; }
@@ -39,5 +48,6 @@
 .fr-install-steps li { padding: 0 0 14px 8px; }
 .fr-script code { overflow-wrap: anywhere; }
 .fr-install-note { padding-left: 18px; border-left: 2px solid var(--gold); }
-@media(max-width:700px) { .fr-zerobot { grid-template-columns: 1fr; padding: 16px; } .fr-functions > div { grid-template-columns: 1fr; gap: 8px; } .fr-script-actions { align-items: flex-start; flex-direction: column; } }
+@media(max-width:800px) { .fr-preview-layout { grid-template-columns: 1fr; } }
+@media(max-width:700px) { .fr-zerobot, .fr-update { grid-template-columns: 1fr; padding: 16px; } .fr-functions > div { grid-template-columns: 1fr; gap: 8px; } .fr-script-actions { align-items: flex-start; flex-direction: column; } }
 @media(max-width:700px) { .fr-announcement { flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px; } .fr-live figure { padding: 10px; } }

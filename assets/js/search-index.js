@@ -25,7 +25,7 @@ window.AVALORIUM_SEARCH_INDEX =
         "image": "assets/media/menu/outfits.gif"
     },
     {
-        "title": "Tasks System",
+        "title": "Tasks",
         "description": "Bounty Tasks, baús por dificuldade, bônus do Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop.",
         "category": "Sistemas do Servidor",
         "keywords": "tasks task board bounty talisman weekly hunting task shop beginner adept expert master bau recompensa bonus outfit montaria semanal kill delivery",
@@ -33,7 +33,7 @@ window.AVALORIUM_SEARCH_INDEX =
         "image": "assets/media/items-wiki/portables/portable task book.gif"
     },
     {
-        "title":  "Divergence System",
+        "title":  "Divergence",
         "description":  "Divergence: level 400, Hazard 3, bosses elementais, custos e recompensas por faixa. Tokens para o Seller e craft.",
         "category":  "Sistemas do Servidor",
         "keywords":  "divergence dungeon boss elemental faixa tokens recompensas custo hazard 400 safezone free vip seller craft",
@@ -57,15 +57,15 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/items-wiki/Consumables/more points wheel.gif"
     },
     {
-        "title":  "Roulette System",
+        "title":  "Roulette",
         "description":  "Roleta, Slot Machines, Roulette Token e recompensas da Season 1.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "roulette system roleta roulette machine slot machines season 1 roulette token safezone roleta classica spin turbo recompensas chance",
+        "keywords":  "Roulette roleta roulette machine slot machines season 1 roulette token safezone roleta classica spin turbo recompensas chance",
         "url":  "roulette-system.html",
         "image":  "assets/media/roulette-system/63110-roulette-token.gif"
     },
     {
-        "title":  "Reliquary System",
+        "title":  "Reliquary",
         "description":  "Progressao com 81 niveis, itens, gold e Kron Cubes por faixa.",
         "category":  "Sistemas do Servidor",
         "keywords":  "reliquary relicary kron cube arcane empowered ascended inicial intermediario avancado bonus permanente hp mana loot treino xp skills enchanted dodge",
@@ -73,7 +73,7 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/reliquary/arcane-kube.png"
     },
     {
-        "title":  "Rarity & Elemental Stones System",
+        "title":  "Rarity & Elemental Stones",
         "description":  "Identificação progressiva, slots, ferramentas e bônus das elemental stones.",
         "category":  "Sistemas do Servidor",
         "keywords":  "rarity elemental stones system raridade rare epic legendary mystic slots identification potion progressivo chance remover rarity mystic hammer precious metal gold bar elemental core bags hunts divergence store inbox",
@@ -81,10 +81,10 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/menu/stones-guia-completo.gif"
     },
     {
-        "title":  "Rune System",
+        "title":  "Rune",
         "description":  "Enhanced Tables, refils, produção por vocação e bônus de combate.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "rune system enhanced table refil potion ammo vocacao",
+        "keywords":  "Rune enhanced table refil potion ammo vocacao",
         "url":  "rune-system.html",
         "image":  "assets/media/menu/rune-system.gif"
     },
