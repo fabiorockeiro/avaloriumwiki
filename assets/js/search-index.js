@@ -81,12 +81,20 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/menu/stones-guia-completo.gif"
     },
     {
-        "title":  "Rune",
-        "description":  "Enhanced Tables, refils, produção por vocação e bônus de combate.",
+        "title":  "Enchanted Refil",
+        "description":  "Enchanted Tables, refils, produção por vocação e bônus de combate.",
         "category":  "Sistemas do Servidor",
-        "keywords":  "Rune enhanced table refil potion ammo vocacao",
+        "keywords":  "Enchanted Refil rune enchanted table refil potion ammo vocacao",
         "url":  "rune-system.html",
         "image":  "assets/media/menu/rune-system.gif"
+    },
+    {
+        "title": "Voucher",
+        "description": "Ative, pause e controle bônus temporários de EXP, loot, skills, bestiary, task kill e stamina protegida.",
+        "category": "Sistemas do Servidor",
+        "keywords": "voucher vouchers comando !voucher exp loot skills bestiary task kill stamina protegida free vip pausar reativar tempo restante kit semanal",
+        "url": "voucher-system.html",
+        "image": "assets/media/voucher-system/golden-newspaper.gif"
     },
     {
         "title": "Hireling Enchanter",
@@ -138,7 +146,7 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "Comandos do Servidor",
-        "description":  "Comandos organizados por categoria, com busca rapida.",
+        "description":  "Lista completa de comandos, organizada por categoria e função.",
         "category":  "Guias e Utilidades",
         "keywords":  "commands comandos serverinfo online deposit withdraw badge vip autoloot",
         "url":  "comandos-do-servidor.html",

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher | Avalorium OT Wiki</title>
+    <meta name="description" content="Sistema de Voucher do Avalorium: bônus de EXP, loot, skills, bestiary, task kill e stamina protegida.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css">
+    <link rel="stylesheet" href="assets/css/voucher-system.css">
+    <link rel="stylesheet" href="assets/css/layout-consistency.css">
+</head>
+<body class="layout-standard voucher-page">
+<a class="skip-link" href="#conteudo">Ir para o conteudo</a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>        </button>
+
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+
+        <form class="top-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>--</strong>
+            <small>online</small>
+        </div>
+
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg><span>YouTube</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
+    </div>
+</header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+
+    <form class="drawer-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg> YouTube</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+
+    <nav class="drawer-menu"></nav>
+</aside>
+    <div class="wiki-shell">
+        <aside class="wiki-sidebar" aria-label="Menu da wiki">
+    <div class="sidebar-sticky">
+        <div class="sidebar-title">
+            <span>Menu da Wiki</span>
+            <small>0 artigos</small>
+        </div>
+    </div>
+</aside>
+        <main class="wiki-main" id="conteudo">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                                                <a href="index.html">Inicio</a>
+                                <span>/</span>                            <a href="index.html">Sistemas do Servidor</a>
+                                <span>/</span>                            <strong>Voucher</strong>
+                        </nav>
+        <article class="article-layout">
+        <header class="article-hero">
+            <div>
+                <span class="eyebrow">Sistemas do Servidor</span>
+                <h1>Voucher</h1>
+                <p>Ative bônus temporários de EXP, loot, skills, bestiary, task kill e stamina protegida.</p>
+            </div>
+            <div class="article-hero-media">
+                <img src="assets/media/voucher-system/golden-newspaper.gif" alt="Golden Newspaper">
+            </div>
+        </header>
+
+        <nav class="voucher-nav" aria-label="Nesta página"><a href="#visao-geral">Visão geral</a><a href="#vouchers-disponiveis">Vouchers</a><a href="#como-usar">Como usar</a><a href="#regras">Regras</a></nav>
+        <div class="article-content">
+            <section class="content-section" id="visao-geral">
+                <div class="voucher-overview">
+                    <div class="voucher-command">
+                        <span>NOVO COMANDO</span>
+                        <h2>Controle seus vouchers</h2>
+                        <p>Use o comando para ativar, pausar, reativar e consultar o tempo restante de todos os vouchers disponíveis.</p>
+                        <code>!voucher</code>
+                    </div>
+                    <div class="voucher-menu" aria-label="Opções do sistema de Voucher">
+                        <h3>Sistema de Voucher</h3>
+                        <ol>
+                            <li>Ativar voucher</li>
+                            <li>Tempo restante</li>
+                            <li>Ajuda</li>
+                            <li>Pausar voucher ativo</li>
+                            <li>Reativar voucher pausado</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="voucher-stats">
+                    <div class="voucher-stat"><strong>6 tipos</strong><span>de bônus disponíveis</span></div>
+                    <div class="voucher-stat"><strong>Sex a dom</strong><span>kit semanal disponível</span></div>
+                    <div class="voucher-stat"><strong>2 kits</strong><span>por ciclo de duas semanas</span></div>
+                    <div class="voucher-stat"><strong>Simultâneos</strong><span>tipos diferentes podem coexistir</span></div>
+                </div>
+            </section>
+
+            <section class="voucher-section" id="vouchers-disponiveis">
+                <div class="voucher-section-heading"><h2>KIT SEMANAL</h2><p>De sexta a domingo, cada personagem pode receber um kit uma vez por semana.</p></div>
+                <div class="voucher-table"><table>
+                    <thead><tr><th>Voucher</th><th>Quantidade</th><th>Free</th><th>VIP</th><th>Efeito</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>50% EXP</strong></td><td>2</td><td>1 hora</td><td class="vip">2 horas</td><td>+50% de experiência</td></tr>
+                        <tr><td><strong>Double Bestiary</strong></td><td>2</td><td>2 horas</td><td class="vip">3 horas</td><td>Progresso dobrado no Bestiary</td></tr>
+                        <tr><td><strong>Double Task Kill</strong></td><td>2</td><td>2 horas</td><td class="vip">3 horas</td><td>Abates dobrados nas tasks</td></tr>
+                        <tr><td><strong>50% Skills</strong></td><td>1</td><td>2 horas</td><td class="vip">6 horas</td><td>+50% de progresso em skills</td></tr>
+                        <tr><td><strong>Double Loot</strong></td><td>1</td><td>1 hora</td><td class="vip">2 horas</td><td>Loot dobrado</td></tr>
+                        <tr><td><strong>Stamina Protegida</strong></td><td>2</td><td>1 hora</td><td class="vip">2 horas</td><td>Impede o consumo de stamina</td></tr>
+                    </tbody>
+                </table></div>
+                <div class="voucher-note"><strong>Bônus adicional de EXP:</strong> personagens até o level 600 recebem <strong>+2 vouchers</strong>; do level 601 ao 800 recebem <strong>+1 voucher</strong> por kit.</div>
+            </section>
+
+            <section class="voucher-section" id="como-usar">
+                <div class="voucher-section-heading"><h2>ATIVAÇÃO E CONTROLE</h2><p>O tempo é consumido somente enquanto o voucher estiver ativo.</p></div>
+                <div class="voucher-flow">
+                    <article><h3>Abra o painel</h3><p>Digite <strong>!voucher</strong> para acessar todas as opções do sistema.</p></article>
+                    <article><h3>Escolha o bônus</h3><p>Entre em <strong>Ativar voucher</strong> e selecione um dos vouchers disponíveis.</p></article>
+                    <article><h3>Acompanhe o tempo</h3><p>Use <strong>Tempo restante</strong> para consultar a duração de cada bônus ativo.</p></article>
+                    <article><h3>Pause ou reative</h3><p>Interrompa o consumo quando necessário e use <strong>Reativar</strong> para continuar.</p></article>
+                </div>
+            </section>
+
+            <section class="voucher-section" id="regras">
+                <div class="voucher-section-heading"><h2>REGRAS IMPORTANTES</h2><p>Estas regras evitam perda de tempo e ajudam a planejar cada ativação.</p></div>
+                <div class="voucher-rules">
+                    <article class="voucher-rule"><span>01</span><div><h3>Ciclo semanal</h3><p>São dois kits por ciclo de duas semanas. No fim de semana seguinte, o ciclo anterior é zerado.</p></div></article>
+                    <article class="voucher-rule"><span>02</span><div><h3>Pausa automática</h3><p>Deslogar ou morrer pausa o voucher. O tempo deixa de correr e o bônus não é aplicado.</p></div></article>
+                    <article class="voucher-rule"><span>03</span><div><h3>Retorno manual</h3><p>Ao entrar novamente, o voucher não é retomado automaticamente. Use a opção <strong>Reativar voucher pausado</strong>.</p></div></article>
+                    <article class="voucher-rule"><span>04</span><div><h3>Reconnect de FPS</h3><p>O reconnect de FPS mantém os vouchers ativos e não executa a pausa automática.</p></div></article>
+                    <article class="voucher-rule"><span>05</span><div><h3>Tipos simultâneos</h3><p>Vouchers de tipos diferentes podem permanecer ativos ao mesmo tempo.</p></div></article>
+                    <article class="voucher-rule"><span>06</span><div><h3>Stamina Protegida</h3><p>Impede o gasto de stamina durante o efeito, mas não recupera stamina já consumida.</p></div></article>
+                </div>
+            </section>
+        </div>
+            <nav class="article-nav"><a href="rune-system.html"><small>Anterior</small><strong>Rune</strong></a><a href="hireling-enchanter.html"><small>Próximo</small><strong>Hireling Enchanter</strong></a></nav>
+        </article>
+            </main>
+    </div>
+    <footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
+<script src="assets/js/wiki.js?v=reliquary-20260604"></script>
+</body>
+</html>

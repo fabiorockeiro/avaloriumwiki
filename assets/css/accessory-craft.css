@@ -22,6 +22,15 @@
 .ac-lord-stats h4 { font-size: 18px; margin: 0 0 16px; }
 .ac-lord-stats .cv-attributes { grid-template-columns: repeat(auto-fit,minmax(min(100%,185px),1fr)); }
 .ac-accessories a { color: var(--cyan); }
+.ac-family > summary { grid-template-columns: minmax(0,1fr); cursor: default; pointer-events: none; }
+.ac-family-title { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; font-size: 20px; }
+.ac-family-title > b { color: var(--muted); font-size: 14px; }
+.ac-element-name { display: inline-flex; align-items: center; gap: 5px; color: var(--text); }
+.ac-element-icon { display: inline-grid; place-items: center; width: 23px; height: 23px; }
+.ac-element-icon svg { display: block; width: 23px; height: 23px; fill: var(--icon-color); stroke: var(--icon-color); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.ac-element-icon .icon-cut { fill: none; }
+.ac-element-icon .icon-death-attack { color: #f4f7fb; fill: none; stroke: currentColor; }
+.ac-element-icon .icon-death-attack circle { fill: currentColor; stroke: none; }
 @media (max-width:1100px) {
  .ac-pieces { grid-template-columns: 1fr; }
  .ac-lord-stats { grid-template-columns: 1fr; }
@@ -30,9 +39,8 @@
 }
 @media (max-width:700px) {
  .ac-common, .ac-piece, .ac-lord-stats { padding: 14px; }
- .ac-family summary { grid-template-columns: minmax(0,1fr) 18px; }
- .ac-family summary .ct-version-tag { grid-column: 1; font-size: 11px; }
- .ac-family summary .ct-toggle { grid-column: 2; grid-row: 1 / span 2; }
+ .ac-family > summary { grid-template-columns: minmax(0,1fr); }
+ .ac-family-title { gap: 7px; font-size: 17px; }
  .ac-scene { grid-template-columns: 1fr; padding: 18px; }
  .ac-scene > .ct-figure { width: min(100%,300px); margin-inline: auto; }
 }

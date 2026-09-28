@@ -243,7 +243,8 @@
                 { url: 'dark-totem-daily.html', title: 'Dark Totem Daily', description: 'Boss diário das 20h no Teleport de Eventos, com loot, prêmio de maior dano e sorteio.', image: 'assets/media/menu/dark-totem-daily.gif' },
                 { url: 'monster-hunter.html', title: 'Monster Hunter', description: 'Evento de caça com criatura sorteada, ranking por abates e recompensas especiais.', image: 'assets/media/items-wiki/Consumables/more points wheel.gif' },
                 { url: 'roulette-system.html', title: 'Roulette', description: 'Roleta, Slot Machines, Roulette Token e recompensas da Season 1.', image: 'assets/media/roulette-system/63110-roulette-token.gif' },
-                { url: 'rune-system.html', title: 'Rune', description: 'Enhanced Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
+                { url: 'rune-system.html', title: 'Enchanted Refil', description: 'Enchanted Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
+                { url: 'voucher-system.html', title: 'Voucher', description: 'Ative e controle bônus temporários de EXP, loot, skills, bestiary, task kill e stamina protegida.', image: 'assets/media/voucher-system/golden-newspaper.gif' },
                 { url: 'hireling-enchanter.html', title: 'Hireling Enchanter', description: 'Produção enchanted offline, tiers de maestria e até três Workshop Slots.', image: 'assets/media/hireling-enchanter/hireling-enchanter.png' },
                 { url: 'animus-mastery-soulpit.html', title: 'Animus Mastery &amp; SoulPit', description: 'Animus, Anonymous Mastery, Soul Cores e bônus de experiência.', image: 'assets/media/menu/animus-mastery-soulpit.gif' },
             ],
@@ -252,7 +253,7 @@
             title: 'Guias e Utilidades',
             icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg>',
             items: [
-                { url: 'comandos-do-servidor.html', title: 'Comandos do Servidor', description: 'Comandos organizados por categoria, com busca rapida.', image: 'assets/media/menu/comandos-do-servidor.gif' },
+                { url: 'comandos-do-servidor.html', title: 'Comandos do Servidor', description: 'Lista completa de comandos, organizada por categoria e função.', image: 'assets/media/menu/comandos-do-servidor.gif' },
             ],
         },
         // Itens e Equipamentos e Colecionaveis ficam ocultos por enquanto.
@@ -577,6 +578,20 @@
         { pattern: /\bburningfrost pendulet\b/i, image: 'assets/media/items-wiki/Craft/burningfrost pendulet.gif' },
         { pattern: /\bpoisonstorm pendulet\b/i, image: 'assets/media/items-wiki/Craft/poisonstorm pendulet.gif' },
         { pattern: /\bsaintdying pendulet\b/i, image: 'assets/media/items-wiki/Craft/saintdying pendulet.gif' },
+        { pattern: /\bdamage ring of fire\b/i, image: 'assets/media/accessory-craft/damage/damage-ring-fire.gif' },
+        { pattern: /\bdamage ring of ice\b/i, image: 'assets/media/accessory-craft/damage/damage-ring-ice.gif' },
+        { pattern: /\bdamage ring of earth\b/i, image: 'assets/media/accessory-craft/damage/damage-ring-earth.gif' },
+        { pattern: /\bdamage ring of energy\b/i, image: 'assets/media/accessory-craft/damage/damage-ring-energy.gif' },
+        { pattern: /\bdamage ring of holy\b/i, image: 'assets/media/accessory-craft/damage/damage-ring-holy.gif' },
+        { pattern: /\bdamage ring of death\b/i, image: 'assets/media/accessory-craft/damage/damage-ring-death.gif' },
+        { pattern: /\bdamage ring of physical\b/i, image: 'assets/media/accessory-craft/damage/damage-ring-physical.gif' },
+        { pattern: /\bdamage amulet of fire\b/i, image: 'assets/media/accessory-craft/damage/damage-amulet-fire.gif' },
+        { pattern: /\bdamage amulet of ice\b/i, image: 'assets/media/accessory-craft/damage/damage-amulet-ice.gif' },
+        { pattern: /\bdamage amulet of earth\b/i, image: 'assets/media/accessory-craft/damage/damage-amulet-earth.gif' },
+        { pattern: /\bdamage amulet of energy\b/i, image: 'assets/media/accessory-craft/damage/damage-amulet-energy.gif' },
+        { pattern: /\bdamage amulet of holy\b/i, image: 'assets/media/accessory-craft/damage/damage-amulet-holy.gif' },
+        { pattern: /\bdamage amulet of death\b/i, image: 'assets/media/accessory-craft/damage/damage-amulet-death.gif' },
+        { pattern: /\bdamage amulet of physical\b/i, image: 'assets/media/accessory-craft/damage/damage-amulet-physical.gif' },
         { pattern: /\bdefense ring of death\b/i, image: 'assets/media/items-wiki/Craft/defring1.gif' },
         { pattern: /\bdefense ring of energy\b/i, image: 'assets/media/items-wiki/Craft/defring2.gif' },
         { pattern: /\bdefense ring of holy\b/i, image: 'assets/media/items-wiki/Craft/defring3.gif' },
@@ -630,7 +645,7 @@
 
     enhanceCraftMaterialCells();
 
-    const craftSectionLinks = [...document.querySelectorAll('.cv-section-nav a[href^="#"]')];
+    const craftSectionLinks = [...document.querySelectorAll('.cv-section-nav a[href^="#"], .system-section-nav a[href^="#"]')];
     const craftCollapsibleSections = [...document.querySelectorAll('[data-craft-collapse]')];
     const craftMobile = window.matchMedia('(max-width: 700px)');
 
@@ -699,6 +714,7 @@
         mana: '<svg class="icon-mana" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8S5.3 10.8 5.3 15a6.7 6.7 0 0 0 13.4 0c0-4.2-6.7-12.2-6.7-12.2Z"/></svg>',
         magic: '<svg class="icon-magic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m4 20 11-11 2 2L6 22 4 20Z"/><path d="m18 2 .7 2.3L21 5l-2.3.7L18 8l-.7-2.3L15 5l2.3-.7L18 2Z"/><path d="M9 3v3M7.5 4.5h3M20 13v2M19 14h2"/></svg>',
         range: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+        deathAttack: '<svg class="icon-death-attack" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 11.2a6.5 6.5 0 1 1 13 0c0 2.4-1.1 4.3-3 5.5V21h-7v-4.3c-1.9-1.2-3-3.1-3-5.5Z"/><circle cx="9.3" cy="11.2" r="1.35"/><circle cx="14.7" cy="11.2" r="1.35"/><path d="m12 13.2-1 1.6h2l-1-1.6ZM9.5 18h5M11 18v3m2-3v3"/></svg>',
     };
 
     const elementColors = {
@@ -732,6 +748,19 @@
         return `<svg class="icon-element" style="--icon-color:${color}" viewBox="0 0 24 24" aria-hidden="true">${symbol}</svg>`;
     }
 
+    document.querySelectorAll('.ac-family').forEach((family) => {
+        family.open = true;
+        family.querySelector('summary')?.addEventListener('click', (event) => event.preventDefault());
+        family.querySelectorAll('.ac-element-name[data-element]').forEach((label) => {
+            const icon = document.createElement('span');
+            icon.className = 'ac-element-icon';
+            icon.innerHTML = label.dataset.element === 'death'
+                ? craftAttributeSvgIcons.deathAttack
+                : getElementIcon(label.dataset.element);
+            label.prepend(icon);
+        });
+    });
+
     function getMagicElementIcon(element) {
         return `<span class="icon-magic-up">${getElementIcon(element)}<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 10V2M2.5 5.5 6 2l3.5 3.5"/></svg></span>`;
     }
@@ -740,6 +769,7 @@
         const element = getElementName(`${label} ${value}`);
         if (/prote/i.test(label)) return element ? getElementIcon(element, 'shield') : craftAttributeSvgIcons.shield;
         if (/magic level/i.test(label) && element) return getMagicElementIcon(element);
+        if (/ataque/i.test(label) && element === 'death') return craftAttributeSvgIcons.deathAttack;
         if ((/ataque|bond/i.test(label) || element) && element) return getElementIcon(element);
         if (/defesa|shield|dodge/i.test(label)) return craftAttributeSvgIcons.shield;
         if (/life leech/i.test(label)) return craftAttributeSvgIcons.life;
@@ -777,10 +807,11 @@
     });
 
     const trinketVocationSprites = {
-        monk: ['monk-v1.png', 'monk-v2.png', 'monk-v3.png'],
-        knight: ['knight-v1.png', 'knight-v2.png', 'knight-v3.png'],
-        paladin: ['paladin-v1.png', 'paladin-v2.png', 'paladin-v3.png'],
-        sorcerer: ['sorcerer-v1.png', 'sorcerer-v2.png', 'sorcerer-v3.png'],
+        monk: ['monk-v1.gif', 'monk-v2.gif', 'monk-v3.gif'],
+        knight: ['knight-v1.gif', 'knight-v2.gif', 'knight-v3.gif'],
+        paladin: ['paladin-v1.gif', 'paladin-v2.gif', 'paladin-v3.gif'],
+        sorcerer: ['sorcerer-v1.gif', 'sorcerer-v2.gif', 'sorcerer-v3.gif'],
+        druid: ['druid-v1.gif', 'druid-v2.gif', 'druid-v3.gif'],
     };
 
     Object.entries(trinketVocationSprites).forEach(([vocation, sprites]) => {
@@ -788,7 +819,7 @@
         const version = summary?.querySelector('.ct-version-tag');
         if (!summary || !version || summary.querySelector('.ct-trinket-sprites')) return;
         const group = document.createElement('span');
-        group.className = 'ct-trinket-sprites';
+        group.className = `ct-trinket-sprites ct-trinket-sprites--${vocation}`;
         group.setAttribute('aria-label', `Trinkets ${vocation} v1, v2 e v3`);
         sprites.forEach((sprite, index) => {
             const item = document.createElement('span');
@@ -808,16 +839,16 @@
     });
 
     const ancientWeaponImages = {
-        'Ancient Void Razor': 'ancient-void-razor.png',
-        'Ancient Void Hatchet': 'ancient-void-hatchet.png',
-        'Ancient Void Battleaxe': 'ancient-void-battleaxe.png',
-        'Ancient Void Cudgel': 'ancient-void-cudgel.png',
-        'Ancient Void Bludgeon': 'ancient-void-bludgeon.png',
-        'Ancient Void Bow': 'ancient-void-bow.png',
-        'Ancient Void Crossbow': 'ancient-void-crossbow.png',
-        'Ancient Void Rod': 'ancient-void-rod.png',
-        'Ancient Void Coil': 'ancient-void-coil.png',
-        'Ancient Void Claws': 'ancient-void-claws.png',
+        'Ancient Void Razor': 'ancient-void-razor.gif',
+        'Ancient Void Hatchet': 'ancient-void-hatchet.gif',
+        'Ancient Void Battleaxe': 'ancient-void-battleaxe.gif',
+        'Ancient Void Cudgel': 'ancient-void-cudgel.gif',
+        'Ancient Void Bludgeon': 'ancient-void-bludgeon.gif',
+        'Ancient Void Bow': 'ancient-void-bow.gif',
+        'Ancient Void Crossbow': 'ancient-void-crossbow.gif',
+        'Ancient Void Rod': 'ancient-void-rod.gif',
+        'Ancient Void Coil': 'ancient-void-coil.gif',
+        'Ancient Void Claws': 'ancient-void-claws.gif',
     };
 
     document.querySelectorAll('.cv-weapon > header').forEach((header) => {
@@ -957,6 +988,24 @@
             });
         });
     }
+
+    document.querySelectorAll('[data-command-list] li').forEach((item) => {
+        const separatorIndex = item.textContent.indexOf(' - ');
+        if (separatorIndex < 0) return;
+
+        const command = item.textContent.slice(0, separatorIndex).trim();
+        const description = item.textContent.slice(separatorIndex + 3).trim();
+        item.replaceChildren();
+
+        const commandElement = document.createElement('code');
+        commandElement.textContent = command;
+        const separator = document.createElement('span');
+        separator.className = 'command-separator';
+        separator.textContent = ' - ';
+        const descriptionElement = document.createElement('span');
+        descriptionElement.textContent = description;
+        item.append(commandElement, separator, descriptionElement);
+    });
 
     document.querySelectorAll('[data-carousel]').forEach((carousel) => {
         const track = carousel.querySelector('[data-carousel-track]');

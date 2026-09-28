@@ -29,6 +29,8 @@ GIFs copiados sem alterações. Fontes consultadas em 17/09/2026.
 - 3439: `assets/media/dark-totem/items/3439-phoenix_shield.gif` — https://www.tibiawiki.com.br/images/e/ef/Phoenix_Shield.gif
 - 7411: `assets/media/dark-totem/items/7411-ornamented_axe.gif` — https://www.tibiawiki.com.br/images/d/d4/Ornamented_Axe.gif
 - 30278: `assets/media/dark-totem/items/30278-flames_of_the_percht_queen.gif` — https://www.tibiawiki.com.br/images/f/f4/Flames_of_the_Percht_Queen.gif
+- 30275: `assets/media/dark-totem/items/30275-the_crown_of_the_percht_queen_fire.gif` — https://www.tibiawiki.com.br/images/0/0f/The_Crown_of_the_Percht_Queen_(Fire).gif
+- 30276: `assets/media/dark-totem/items/30276-the_crown_of_the_percht_queen_ice.gif` — https://www.tibiawiki.com.br/images/e/e5/The_Crown_of_the_Percht_Queen_(Ice).gif
 - 36827: `assets/media/icons/dromecube.gif` — Asset existente no projeto
 - 30055: `assets/media/dark-totem/items/30055-crunor_idol.gif` — https://www.tibiawiki.com.br/images/a/ac/Crunor_Idol.gif
 - 32622: `assets/media/dark-totem/items/32622-giant_amethyst.gif` — https://www.tibiawiki.com.br/images/8/8a/Giant_Amethyst.gif
@@ -56,3 +58,12 @@ GIFs copiados sem alterações. Fontes consultadas em 17/09/2026.
 - 63312: `assets/media/items-wiki/addons&mount/staff fire addon.gif` — Asset existente no projeto
 - 43895: `assets/media/dark-totem/items/43895-bag_you_covet.gif` — https://www.tibiawiki.com.br/images/f/fb/Bag_You_Covet.gif
 - 63200: `assets/media/dark-totem/items/63200_reset_boss_stone.gif` — GIF custom fornecido: 63200_reset_boss_stone.gif
+
+## Adições de 27/09/2026
+
+As duas entradas de coroa da Percht Queen no loot do Dark Totem passaram a ter nome completo e ícone próprio. IDs confirmados em https://tibia.fandom.com/wiki/Item_IDs:
+
+- 30275 = The Crown of the Percht Queen (Fire) → `assets/media/dark-totem/items/30275-the_crown_of_the_percht_queen_fire.gif`
+- 30276 = The Crown of the Percht Queen (Ice) → `assets/media/dark-totem/items/30276-the_crown_of_the_percht_queen_ice.gif`
+
+Quantidade (1) e chance (50%) das duas entradas não foram alteradas. O card de aviso do Gold Raid Token foi removido porque a tabela já mostra 3–6 unidades com 5%.

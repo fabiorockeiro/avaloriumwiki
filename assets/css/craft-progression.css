@@ -55,6 +55,13 @@
 .cv-final-gallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; align-items: center; }
 .cv-final-gallery button { min-width: 0; padding: 0; border: 1px solid var(--line); background: var(--bg-2); cursor: zoom-in; }
 .cv-final-gallery img { display: block; width: 100%; max-height: 220px; object-fit: contain; }
+.cv-corrupted-showcase { margin: 22px 0; border: 1px solid var(--line-strong); background: var(--surface); }
+.cv-corrupted-showcase > header { padding: 16px 18px; border-bottom: 1px solid var(--line); }
+.cv-corrupted-showcase h3 { margin: 0; font-size: 18px; }
+.cv-corrupted-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(112px, 1fr)); }
+.cv-corrupted-grid figure { display: grid; justify-items: center; align-content: center; gap: 8px; min-width: 0; min-height: 106px; margin: 0; padding: 12px 8px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.cv-corrupted-grid img { display: block; width: 48px; height: 48px; object-fit: contain; image-rendering: pixelated; }
+.cv-corrupted-grid figcaption { color: var(--muted); font-size: 10px; line-height: 1.35; text-align: center; overflow-wrap: anywhere; }
 .cv-final-recipe { padding: 22px; background: var(--surface); border: 1px solid var(--line-strong); }
 .cv-recipe-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 14px; }
 .cv-recipe-heading h4 { font-size: 17px; margin: 0; }
@@ -93,6 +100,8 @@
 .cv-attribute-icon .icon-life { color: #f25c68; fill: rgba(242,92,104,.34); stroke: #ff7b84; }
 .cv-attribute-icon .icon-mana { color: #a96dff; fill: rgba(169,109,255,.34); stroke: #c192ff; }
 .cv-attribute-icon .icon-magic { color: #b36dff; fill: rgba(179,109,255,.18); stroke: #c899ff; }
+.cv-attribute-icon .icon-death-attack { color: #f4f7fb; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.cv-attribute-icon .icon-death-attack circle { fill: currentColor; stroke: none; }
 .icon-magic-up { position: relative; display: block; width: 22px; height: 22px; }
 .icon-magic-up > svg:first-child { width: 19px; height: 19px; }
 .icon-magic-up > svg:last-child { position: absolute; right: -3px; bottom: -2px; width: 11px; height: 11px; padding: 1px; border-radius: 50%; background: var(--surface); color: var(--green); fill: none; stroke: currentColor; stroke-width: 2; }

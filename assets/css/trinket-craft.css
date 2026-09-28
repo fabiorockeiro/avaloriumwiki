@@ -77,6 +77,8 @@
 .ct-trinket-version small { color: var(--gold-2); font-size: 9px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 .ct-trinket-sprites img { display: block; width: 44px; height: 44px; object-fit: contain; image-rendering: pixelated; }
 .ct-trinket-version:first-child img { transform: translateY(-4px); }
+.ct-trinket-sprites--monk .ct-trinket-version:first-child img { transform: translateY(-19px) scale(1.8); }
+.ct-trinket-sprites--paladin .ct-trinket-version:first-child img { transform: translate(-20px, -19px) scale(1.9); }
 .ct-toggle::before { content: '+'; font-size: 26px; color: var(--cyan); }
 .ct-vocation[open] .ct-toggle::before { content: '−'; }
 .ct-vocation-body { border-top: 1px solid var(--line); padding: 18px 22px; }
