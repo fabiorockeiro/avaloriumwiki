@@ -161,6 +161,14 @@ window.AVALORIUM_SEARCH_INDEX =
         "image": "assets/media/items-wiki/Consumables/stamina bottler.gif"
     },
     {
+        "title": "Cadeia",
+        "description": "Penas administrativas, valores de fiança, Jail Warden, recursos bloqueados e comandos.",
+        "category": "Guias e Utilidades",
+        "keywords": "cadeia prisao jail jailtime warnings jail warden fianca gold tibia coin tc pena cela preso",
+        "url": "cadeia.html",
+        "image": "assets/media/cadeia/prisoner.png"
+    },
+    {
         "title":  "Void Corruption Depths (Outer Void)",
         "description":  "Hunt custom level 1000 a 1200 com dano de Energy, Physical e Death.",
         "category":  "Hunts Custom",

@@ -255,6 +255,7 @@
             items: [
                 { url: 'comandos-do-servidor.html', title: 'Comandos do Servidor', description: 'Lista completa de comandos, organizada por categoria e função.', image: 'assets/media/menu/comandos-do-servidor.gif' },
                 { url: 'stamina.html', title: 'Stamina', description: 'Faixas, recuperação, banheiras e a quest de Stamina Bottle e Extension.', image: 'assets/media/items-wiki/Consumables/stamina bottler.gif' },
+                { url: 'cadeia.html', title: 'Cadeia', description: 'Penas administrativas, fiança, Jail Warden, bloqueios e comandos.', image: 'assets/media/cadeia/prisoner.png' },
             ],
         },
         // Itens e Equipamentos e Colecionaveis ficam ocultos por enquanto.

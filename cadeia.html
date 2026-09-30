@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadeia | Avalorium OT Wiki</title>
+    <meta name="description" content="Entenda as penas administrativas, fianças, bloqueios e comandos da Cadeia do Avalorium OT.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css">
+    <link rel="stylesheet" href="assets/css/cadeia.css">
+    <link rel="stylesheet" href="assets/css/layout-consistency.css">
+</head>
+<body class="layout-standard jail-page">
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<header class="topbar"><div class="topbar-inner">
+    <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <a class="brand" href="index.html"><img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT"><span class="sr-only">Avalorium OT Wiki</span></a>
+    <form class="top-search" action="search.html" method="get"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg><input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos"></form>
+    <div class="server-pill" title="Players online"><span class="pulse-dot online"></span><strong>--</strong><small>online</small></div>
+    <nav class="quick-actions" aria-label="Atalhos do servidor">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 17c2 1 6 1 8 0M7 8c3-2 7-2 10 0M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/></svg><span>Instagram</span></a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg><span>YouTube</span></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+        <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2h12l2 7H4l2-7ZM5 9v11h14V9M9 13h6"/></svg><span>Donate</span></a>
+    </nav>
+</div></header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head"><a class="brand" href="index.html"><img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT"><span class="sr-only">Avalorium OT Wiki</span></a><button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+    <form class="drawer-search" action="search.html" method="get"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg><input type="search" name="q" placeholder="Buscar na wiki"></form>
+    <div class="drawer-actions"><a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener">Download</a><a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener">Discord</a><a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener">Instagram</a><a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener">YouTube</a><a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener">WhatsApp</a></div>
+    <nav class="drawer-menu"></nav>
+</aside>
+
+<div class="wiki-shell">
+<aside class="wiki-sidebar" aria-label="Menu da wiki"><div class="sidebar-sticky"><div class="sidebar-title"><span>Menu da Wiki</span><small>0 artigos</small></div></div></aside>
+<main class="wiki-main" id="conteudo">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Início</a><span>/</span><span>Server Info</span><span>/</span><strong>Cadeia</strong></nav>
+<article class="article-layout">
+<header class="article-hero"><div><span class="eyebrow">Server Info</span><h1>Cadeia</h1><p>Entenda como funcionam as penas administrativas, os bloqueios e o pagamento da fiança para sair da prisão.</p></div><div class="article-hero-media"><img src="assets/media/cadeia/prisoner.png" alt="Prisioneiro"></div></header>
+<nav class="system-section-nav" aria-label="Nesta página"><a href="#visao-geral">Visão geral</a><a href="#penas">Penas</a><a href="#pagamento">Pagamento</a><a href="#comandos">Comandos</a></nav>
+<div class="article-content">
+
+<section class="content-section" id="visao-geral">
+    <div class="jail-alert"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3Zm0 6v5m0 4h.01"/></svg><div><strong>A única saída é pagar a fiança</strong><p>O tempo da pena fica disponível para consulta, mas esperar esse tempo terminar não solta o personagem. O pagamento é feito ao Jail Warden em gold ou Tibia Coin transferível e também remove 2 horas de stamina.</p></div></div>
+    <div class="jail-heading"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 3v18m6-18v18"/></svg><h2>O que acontece ao ser preso</h2></div>
+    <div class="jail-overview-grid">
+        <article class="jail-card"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3v18M19 3v18M9 3v18M15 3v18"/></svg><h3>Retorno à cela</h3><p>Ao sair da área, o personagem é puxado de volta. Ao entrar novamente no jogo, quem continua preso retorna para a cadeia.</p></article>
+        <article class="jail-card"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><h3>Aviso no servidor</h3><p>A prisão é anunciada para todos, mostrando o nome do personagem e o número da pena aplicada.</p></article>
+        <article class="jail-card"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 8 8 8m0-8-8 8"/></svg><h3>Recursos bloqueados</h3><p>Teleport Scroll, teleporte de templo da Store e market de outfits não funcionam enquanto a pena estiver ativa.</p></article>
+    </div>
+    <figure class="jail-location"><img src="assets/media/cadeia/prison-area.png" alt="Área interna da cadeia com celas, camas e portões" width="1388" height="1133" loading="lazy"><figcaption>Área interna da cadeia do Avalorium.</figcaption></figure>
+</section>
+
+<section class="content-section" id="penas">
+    <div class="jail-heading"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M7 20V8l5-4 5 4v12M9 12h6M9 16h6"/></svg><h2>Penas e valores da fiança</h2></div>
+    <p>Cada nova prisão aumenta o nível da pena até a quinta. O histórico não é zerado após o pagamento. Em gold, o valor é calculado pelo level do personagem multiplicado pelo valor da tabela; em TC transferível, o preço é fixo.</p>
+    <div class="table-wrap jail-table"><table><thead><tr><th>Prisão</th><th>Tempo mostrado</th><th>Gold</th><th>TC transferível</th></tr></thead><tbody>
+        <tr><td><strong>1ª</strong></td><td>6 horas</td><td>Level × 800k</td><td>300 TC</td></tr>
+        <tr><td><strong>2ª</strong></td><td>12 horas</td><td>Level × 1,2kk</td><td>600 TC</td></tr>
+        <tr><td><strong>3ª</strong></td><td>24 horas</td><td>Level × 2kk</td><td>1.000 TC</td></tr>
+        <tr><td><strong>4ª</strong></td><td>48 horas</td><td>Level × 3,5kk</td><td>1.500 TC</td></tr>
+        <tr><td><strong>5ª e seguintes</strong></td><td>72 horas</td><td>Level × 5kk</td><td>2.500 TC</td></tr>
+    </tbody></table></div>
+    <div class="jail-note"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg><div><strong>Exemplo no level 1000:</strong> a primeira prisão custa 800kk ou 300 TC. Na quinta, custa 5kkk ou 2.500 TC. O gold é retirado do banco e o TC precisa ser transferível.</div></div>
+</section>
+
+<section class="content-section" id="pagamento">
+    <div class="jail-heading"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8m-4-4v8"/></svg><h2>Como pagar</h2></div>
+    <div class="jail-payment"><div class="jail-warden"><span class="eyebrow">Jail Warden</span><h3>Escolha a forma de pagamento</h3><p>Fale com o NPC dentro da cadeia. Os dois métodos pedem confirmação antes de concluir.</p><div class="jail-release-flow"><div><span>01</span><strong>Fale com o NPC</strong></div><div><span>02</span><strong>Confirme a fiança</strong></div><div><span>03</span><strong>Retorne ao templo</strong></div></div><p>Após o pagamento, você é solto e enviado ao templo. A stamina perde 2 horas e o histórico permanece.</p></div>
+        <div class="jail-commands"><div class="jail-command"><code>pay kks</code><p>Paga a fiança em gold retirado do banco.</p></div><div class="jail-command"><code>pay tc</code><p>Paga a fiança em Tibia Coin transferível.</p></div></div>
+    </div>
+</section>
+
+<section class="content-section" id="comandos">
+    <div class="jail-heading"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m4 17 6-5-6-5M12 19h8"/></svg><h2>Comandos úteis</h2></div>
+    <div class="jail-overview-grid">
+        <article class="jail-card"><h3><code>!jailtime</code></h3><p>Mostra se você está preso, o tempo restante, o número da prisão e os dois valores da fiança.</p></article>
+        <article class="jail-card"><h3><code>!warnings</code></h3><p>Mostra quantas vezes o personagem já foi preso por este sistema.</p></article>
+    </div>
+</section>
+</div>
+<nav class="article-nav"><a href="stamina.html"><small>Anterior</small><strong>Stamina</strong></a></nav>
+</article>
+</main></div>
+<footer class="site-footer"><div><img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT"><strong class="sr-only">Avalorium OT Wiki</strong><span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span><span class="footer-credit">Designed by Fábio Rockeiro</span></div></footer>
+<script src="assets/js/wiki.js?v=reliquary-20260604"></script>
+</body>
+</html>
