@@ -105,14 +105,6 @@ window.AVALORIUM_SEARCH_INDEX =
         "image": "assets/media/hireling-enchanter/hireling-enchanter.png"
     },
     {
-        "title":  "Trinket Badges",
-        "description":  "Badges para trinkets: compra com Golden Raid Tokens e evolução na Forja.",
-        "category":  "Sistemas do Servidor",
-        "keywords":  "trinket badges badge stones spell badge golden raid tokens invasao mini boss store inbox character upgrade slots forja tier 10 skill",
-        "url":  "spell-badge-upgrade.html",
-        "image":  "assets/media/menu/spell-badge-upgrade.gif"
-    },
-    {
         "title":  "Sistema de Craft",
         "description":  "Receitas e materiais de upgrades, trinkets, anéis, amuletos, Ironblood Backpack e utilitários. Itens T1 level 800+ em breve.",
         "category":  "Sistemas do Servidor",
@@ -123,10 +115,10 @@ window.AVALORIUM_SEARCH_INDEX =
     {
         "category":  "Sistemas do Servidor",
         "url":  "character-upgrades.html",
-        "title":  "Upgrade Potions",
-        "description":  "Potions permanentes para cura, reflect e poderes especiais do personagem.",
-        "keywords":  "upgrade potions potion reflect cura fatal momentum ruse transcendence safezone character upgrade",
-        "image":  "assets/media/menu/character-upgrades.gif"
+        "title":  "Character Upgrades",
+        "description":  "Spell Badges, Upgrade Potions e Golden Raid Tokens no NPC Avalorium Character Upgrade.",
+        "keywords":  "character upgrades upgrade potions potion reflect cura fatal momentum ruse transcendence spell badge trinket badges golden raid token miniboss hunting task shop zahir 1500 task points 40kk safezone forja tier 10",
+        "image":  "assets/media/character-upgrades/character-upgrades.gif"
     },
     {
         "title":  "Upgrade Stones",
