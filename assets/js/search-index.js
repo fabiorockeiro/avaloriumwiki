@@ -153,6 +153,14 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/menu/comandos-do-servidor.gif"
     },
     {
+        "title": "Stamina",
+        "description": "Faixas de stamina, recuperação, banheiras e quest de Stamina Bottle e Extension.",
+        "category": "Guias e Utilidades",
+        "keywords": "stamina bottle bottler extension quest ticket 100kk cooldown 24h banheira bath recovery recuperacao pz house training dummy premium experiencia",
+        "url": "stamina.html",
+        "image": "assets/media/items-wiki/Consumables/stamina bottler.gif"
+    },
+    {
         "title":  "Void Corruption Depths (Outer Void)",
         "description":  "Hunt custom level 1000 a 1200 com dano de Energy, Physical e Death.",
         "category":  "Hunts Custom",
