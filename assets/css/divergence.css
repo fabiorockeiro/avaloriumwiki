@@ -135,6 +135,21 @@
 .dv-group-update li + li { margin-top: 8px; }
 .dv-group-update strong { color: var(--text); }
 
+.dv-reset { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(230px, .7fr); gap: 28px; margin: 22px 0; padding: clamp(20px, 3vw, 30px); border: 1px solid var(--line); border-top: 2px solid var(--gold); background: var(--surface); scroll-margin-top: calc(var(--topbar) + 20px); }
+.dv-reset > div { min-width: 0; }
+.dv-reset h3 { margin: 10px 0 12px; font-size: clamp(20px, 2vw, 25px); }
+.dv-reset p { margin: 0 0 14px; font-size: 14px; }
+.dv-reset ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.dv-reset li + li { margin-top: 7px; }
+.dv-reset strong { color: var(--text); }
+.dv-reset-prices h4 { margin: 0 0 12px; color: var(--gold-2); font-size: 15px; }
+.dv-reset-prices table { width: 100%; min-width: 0; table-layout: fixed; border-collapse: collapse; font-size: 13px; }
+.dv-reset-prices th, .dv-reset-prices td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+.dv-reset-prices th { color: var(--muted); font-size: 11px; }
+.dv-reset-prices th:last-child, .dv-reset-prices td:last-child { text-align: right; }
+.dv-reset-prices td:last-child { color: var(--gold-2); font-weight: 700; white-space: nowrap; }
+
 @media (max-width: 760px) {
  .dv-group-update { grid-template-columns: minmax(0,1fr); }
+ .dv-reset { grid-template-columns: minmax(0,1fr); }
 }
