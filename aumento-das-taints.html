@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento das Taints | Avalorium OT Wiki</title>
+    <meta name="description" content="Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard no Avalorium.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css">
+    <link rel="stylesheet" href="assets/css/layout-consistency.css">
+    <link rel="stylesheet" href="assets/css/content-guides.css">
+</head>
+<body class="layout-standard">
+<a class="skip-link" href="#conteudo">Ir para o conteudo</a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>        </button>
+
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+
+        <form class="top-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>--</strong>
+            <small>online</small>
+        </div>
+
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg><span>YouTube</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
+    </div>
+</header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+
+    <form class="drawer-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg> YouTube</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+
+    <nav class="drawer-menu"></nav>
+</aside>
+    <div class="wiki-shell">
+        <aside class="wiki-sidebar" aria-label="Menu da wiki">
+    <div class="sidebar-sticky">
+        <div class="sidebar-title">
+            <span>Menu da Wiki</span>
+            <small>0 artigos</small>
+        </div>
+    </div>
+</aside>
+        <main class="wiki-main" id="conteudo">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Início</a><span>/</span><a href="index.html">Server Info</a><span>/</span><strong>Aumento das Taints</strong></nav>
+<article class="content-guide taints-guide">
+<h1>Aumento das Taints</h1>
+<p class="lead">Como o bônus de experiência, loot e a dificuldade sobem em Soul War, Sanguine (Rotten Blood), Hazard de Gnomprona e Void Hazard. O valor usado na caçada é o da tabela abaixo.</p>
+<nav>
+<a href="#soul">Soul War</a>
+<a href="#sanguine">Sanguine</a>
+<a href="#hazard">Hazard</a>
+<a href="#void">Void Hazard</a>
+<a href="#party">Regra da party</a>
+</nav>
+<div class="note">
+    Em party, o bônus de experiência e de loot da Soul War, da Sanguine e do Void usa a <strong>menor taint ativa</strong> entre quem está caçando junto: vivo, no mesmo andar, a até 15 sqm do líder e dentro da hunt. Se alguém elegível estiver com 0, o bônus daquela kill fica 0.
+  </div><figure class="taints-npc"><img alt="NPC Tainter no jogo, que adiciona ou remove taints do personagem" height="220" loading="lazy" src="assets/media/taints/taints-tainter-npc.png" width="513"/><figcaption>NPC Tainter: adiciona ou remove taints desbloqueadas.</figcaption></figure>
+<section id="soul">
+<h2 class="soul"><img alt="" class="taint-icon" src="assets/media/taints/goshnar-taint.gif"/>Soul War</h2>
+<p>São 5 taints, nesta ordem: <strong>Goshnar's Malice</strong>, <strong>Hatred</strong>, <strong>Spite</strong>, <strong>Cruelty</strong> e <strong>Greed</strong>. Cada boss libera a taint correspondente. O ciclo dura <strong>14 dias</strong> a partir da primeira taint; depois disso elas são limpas. O NPC Tainter adiciona ou remove taints já desbloqueadas.</p>
+<p>Experiência e loot geral usam o <em>Goshnar's Tribute</em>: a menor taint da party na zona. Vale nas criaturas das hunts da Soul War (Claustrophobic Inferno, Mirrored Nightmare, Ebb and Flow, Furious Crater e Rotten Wasteland) e nos bosses Goshnar.</p>
+<h3>Bônus por taint</h3>
+<div class="guide-table-scroll"><table>
+<thead>
+<tr><th>Taint</th><th class="num">Experiência</th><th class="num">Loot</th><th>Penalidade ativa na hunt</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td class="num">+4,5%</td><td class="num">+4,5%</td><td>Sobe o tribute. Sem penalidade extra de dano.</td></tr>
+<tr><td>2</td><td class="num">+9,2%</td><td class="num">+9%</td><td>Sobe o tribute. Sem penalidade extra de dano.</td></tr>
+<tr><td>3</td><td class="num">+14,1%</td><td class="num">+13,5%</td><td>Monstros causam <strong>+12%</strong> de dano.</td></tr>
+<tr><td>4</td><td class="num">+19,2%</td><td class="num">+18%</td><td>Mantém os +12% de dano. No golpe que mataria a criatura, há <strong>10%</strong> de chance de ela se curar por completo.</td></tr>
+<tr><td>5</td><td class="num">+24,6%</td><td class="num">+22,5%</td><td>Mantém as penalidades anteriores. A cada <strong>10 segundos</strong>, perde 10% da vida atual e 10% da mana atual.</td></tr>
+</tbody>
+</table></div>
+<p>O loot sobe a chance dos itens dessas criaturas em +4,5% por taint (multiplicativo). Itens com chance muito baixa, abaixo de 0,08%, não entram nesse bônus. A experiência é o valor da tabela, aplicado em cima da exp da criatura.</p>
+</section>
+<section id="sanguine">
+<h2 class="blood"><img alt="" class="taint-icon" src="assets/media/taints/bakragore-taint.gif"/>Sanguine (Rotten Blood)</h2>
+<p>Quatro taints normais, uma por boss, sempre no próximo espaço livre: <strong>Vemiath</strong>, <strong>Chagorz</strong>, <strong>Murcion</strong> e <strong>Ichgahal</strong>. O ciclo das taints normais dura <strong>68 horas</strong> a partir da primeira. Para entrar no Bakragore é preciso ter as 4. Ao derrotar o Bakragore, as 4 taints normais são limpas e o jogador recebe a <strong>Final Taint</strong>, que permanece. Para usar o bônus máximo de novo, é preciso refazer as 4 taints dentro de um novo ciclo de 68 horas, já com a Final Taint.</p>
+<p>Experiência e loot valem nas criaturas das hunts sanguine (Jaded Roots, Putrefactory, Gloom Pillars e Darklight). A exp usa só as taints normais da party. O extra de loot da Final Taint é de quem está rolando o loot, e só entra se a party já estiver nas 4 taints.</p>
+<h3>Bônus por taint</h3>
+<div class="guide-table-scroll"><table>
+<thead>
+<tr><th>Taint</th><th class="num">Experiência</th><th class="num">Loot</th><th>Efeito na hunt</th></tr>
+</thead>
+<tbody>
+<tr><td>1 — Brawling</td><td class="num">+6%</td><td class="num">+9%</td><td>Chance baixa de trocar de lugar com o monstro ao ser atingido (1 em 340).</td></tr>
+<tr><td>2 — Bloodjaw</td><td class="num">+12%</td><td class="num">+18%</td><td>Mantém a troca de lugar (1 em 330). Ao morrer, a criatura tem <strong>6,25%</strong> (1 em 16) de nascer um Bloodjaw.</td></tr>
+<tr><td>3 — Root</td><td class="num">+18%</td><td class="num">+27%</td><td>Troca de lugar fica 1 em 320. Passam a valer as magias de root, dano elemental e poças de agony da área.</td></tr>
+<tr><td>4 — Vulnerability</td><td class="num">+24%</td><td class="num">+36%</td><td>Troca de lugar fica 1 em 310. Monstros causam <strong>+20%</strong> de dano.</td></tr>
+<tr><td>4 + Final Taint</td><td class="num">+24%</td><td class="num">+44%</td><td>A exp não sobe além dos 24%. O loot ganha +8% extras. O dano recebido vai para <strong>+25%</strong>. A troca de lugar fica 1 em 300.</td></tr>
+</tbody>
+</table></div>
+<p>O loot é multiplicativo sobre a chance do item (+9% por taint normal, teto de 44% com a Final). A Final Taint sozinha, sem as 4 taints normais, não dá bônus de exp nem de loot.</p>
+</section>
+<section id="hazard">
+<h2 class="hazard">Hazard (Gnomprona)</h2>
+<p>O hazard vai do nível <strong>1 ao 18</strong>. O nível atual pode ser baixado no Tainter, até o máximo já desbloqueado. Para subir o máximo, é preciso matar <strong>The Primal Menace</strong> com o hazard da luta igual ao seu máximo atual. A sala do Magma Bubble não entra no hazard.</p>
+<p>Cada nível soma os valores abaixo. Dano, crítico e esquiva usam o <strong>menor hazard da party inteira</strong>. Experiência e o roll extra de loot usam o hazard de quem ganhou a exp ou é dono do corpo.</p>
+<h3>Por nível</h3>
+<div class="guide-table-scroll"><table>
+<thead>
+<tr>
+<th>Efeito</th>
+<th>A cada nível</th>
+<th class="num">Nível 1</th>
+<th class="num">Nível 12</th>
+<th class="num">Nível 18</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Experiência</td><td>+3,5%</td><td class="num">+3,5%</td><td class="num">+42%</td><td class="num">+63%</td></tr>
+<tr><td>Dano recebido</td><td>+2%</td><td class="num">+2%</td><td class="num">+24%</td><td class="num">+36%</td></tr>
+<tr><td>Crítico do monstro</td><td>7,5% de chance, no máximo 1 a cada 2s. O golpe crítico causa cerca de +50% e sobe +0,25% por nível acima do 1. O +2% de dano por nível também entra nesse golpe.</td><td class="num">+50%</td><td class="num">+52,75%</td><td class="num">+54,25%</td></tr>
+<tr><td>Esquiva do monstro</td><td>+0,85% de anular o seu golpe</td><td class="num">0,85%</td><td class="num">10,2%</td><td class="num">15,3%</td></tr>
+<tr><td>Roll extra de loot</td><td>+4% de chance de um roll a mais</td><td class="num">4%</td><td class="num">48%</td><td class="num">72%</td></tr>
+<tr><td>Primal Pod</td><td>+0,87% de chance na morte</td><td class="num">0,87%</td><td class="num">10,44%</td><td class="num">15,66%</td></tr>
+<tr><td>Plunder Patriarch</td><td>Sobe até o nível 12 e para. Só é testado se o pod não nasceu.</td><td class="num">1 em 32.000</td><td class="num">1 em 2.667</td><td class="num">1 em 2.667</td></tr>
+</tbody>
+</table></div>
+<p>Para achar o seu nível: experiência = nível × 3,5%; dano recebido = nível × 2%; esquiva = nível × 0,85%; chance de um roll extra = nível × 4%; chance de pod = nível × 0,87%. Do nível 13 ao 18 o Plunder continua com a mesma chance do nível 12.</p>
+<p>O pod explode se for pisado entre 2 e 4 segundos: 5% da vida máxima, aumentada pelo hazard, mais 500 de dano. Aos 4 segundos, se ninguém pisou, nasce um Fungosaurus. Boss de recompensa não gera pod nem Plunder.</p>
+</section>
+<section id="void">
+<h2 class="void">Void Hazard</h2>
+<p>São 4 taints, ganhas uma a uma ao matar o <strong>Zy'Thar</strong>: <strong>Depth</strong>, <strong>Pressure</strong>, <strong>Corrosion</strong> e <strong>Void</strong>. Não expiram. O Void Warden deixa baixar o nível ativo, de 0 até o que já foi desbloqueado. Nível 0 desliga bônus e penalidade. O nível ativo é o que conta, não só o desbloqueado.</p>
+<p>Vale nas criaturas Void (Void Brute Corrupted, Void Demon Ravager, Void Riftcaster) e Netherbound (Netherbound Brain, Netherbound Demon, Netherbound Dragon). Experiência e loot usam a menor taint ativa da party dentro da área. O dano extra é o da taint de quem está apanhando.</p>
+<h3>Bônus por taint</h3>
+<div class="guide-table-scroll"><table>
+<thead>
+<tr><th>Taint</th><th>Nome</th><th class="num">Experiência</th><th class="num">Loot</th><th class="num">Dano dos monstros</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Depth</td><td class="num">+5%</td><td class="num">+5%</td><td class="num">+4%</td></tr>
+<tr><td>2</td><td>Pressure</td><td class="num">+10%</td><td class="num">+10%</td><td class="num">+8%</td></tr>
+<tr><td>3</td><td>Corrosion</td><td class="num">+15%</td><td class="num">+15%</td><td class="num">+12%</td></tr>
+<tr><td>4</td><td>Void</td><td class="num">+20%</td><td class="num">+20%</td><td class="num">+16%</td></tr>
+</tbody>
+</table></div>
+<p>O loot soma +5% por taint na chance dos itens dessas criaturas, até +20%. Itens com chance abaixo de 0,08% não entram nesse aumento.</p>
+</section>
+<section id="party">
+<h2>Quem define o número da kill</h2>
+<div class="guide-table-scroll"><table>
+<thead>
+<tr><th>Sistema</th><th>Experiência e loot</th><th>Dificuldade</th></tr>
+</thead>
+<tbody>
+<tr><td>Soul War</td><td>Menor taint da party na hunt, até 15 sqm do líder.</td><td>Penalidade é de quem tem a taint e está na zona.</td></tr>
+<tr><td>Sanguine</td><td>Menor taint normal da party. O +8% de loot da Final Taint é individual e só com a party já nas 4.</td><td>Dano extra, Bloodjaw, root e troca de lugar são da taint de quem está na hunt.</td></tr>
+<tr><td>Hazard</td><td>Hazard de quem recebe a exp e de quem é dono do corpo.</td><td>Dano, crítico, esquiva, pod e Plunder usam o menor hazard do grupo.</td></tr>
+<tr><td>Void Hazard</td><td>Menor taint ativa da party dentro da Void Zone.</td><td>+4% de dano por taint ativa de quem está apanhando.</td></tr>
+</tbody>
+</table></div>
+</section>
+</article>
+</main>
+    </div>
+    <footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
+<script src="assets/js/wiki.js?v=reliquary-20260604"></script>
+</body>
+</html>

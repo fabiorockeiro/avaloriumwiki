@@ -7,23 +7,36 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | Pasta/grupo | GIF | PNG | JPG | Total | Referenciados | Sem referência |
 |---|---:|---:|---:|---:|---:|---:|
 | `accessory-craft` | 0 | 3 | 0 | 3 | 3 | 0 |
+| `accessory-craft/damage` | 14 | 0 | 0 | 14 | 14 | 0 |
+| `animus-mastery-soulpit` | 0 | 1 | 0 | 1 | 1 | 0 |
 | `articles` | 6 | 3 | 0 | 9 | 6 | 3 |
 | `brand` | 0 | 6 | 1 | 7 | 3 | 4 |
-| `craft-progression` | 0 | 4 | 0 | 4 | 4 | 0 |
-| `craft-utilities` | 0 | 6 | 0 | 6 | 6 | 0 |
+| `cadeia` | 0 | 2 | 0 | 2 | 2 | 0 |
+| `castle-war` | 0 | 2 | 0 | 2 | 1 | 1 |
+| `character-upgrades` | 1 | 2 | 0 | 3 | 3 | 0 |
+| `craft-progression` | 0 | 7 | 0 | 7 | 4 | 3 |
+| `craft-progression/ancient-items` | 11 | 10 | 0 | 21 | 0 | 21 |
+| `craft-progression/ancient-items/_transparent` | 0 | 11 | 0 | 11 | 0 | 11 |
+| `craft-progression/corrupted-items` | 11 | 0 | 0 | 11 | 11 | 0 |
+| `craft-progression/essences` | 5 | 0 | 0 | 5 | 5 | 0 |
+| `craft-progression/figurines` | 6 | 0 | 0 | 6 | 6 | 0 |
+| `craft-progression/fragments` | 2 | 0 | 0 | 2 | 2 | 0 |
+| `craft-progression/materials` | 9 | 0 | 0 | 9 | 9 | 0 |
+| `craft-utilities` | 0 | 6 | 0 | 6 | 4 | 2 |
 | `dark-totem` | 0 | 1 | 0 | 1 | 1 | 0 |
-| `dark-totem/items` | 42 | 0 | 0 | 42 | 42 | 0 |
+| `dark-totem/items` | 44 | 0 | 0 | 44 | 44 | 0 |
 | `divergence` | 0 | 5 | 0 | 5 | 5 | 0 |
 | `exalted-forge` | 5 | 5 | 0 | 10 | 10 | 0 |
 | `hireling-enchanter` | 1 | 4 | 0 | 5 | 5 | 0 |
-| `hunts-custom` | 17 | 6 | 0 | 23 | 22 | 1 |
+| `hunts-custom` | 17 | 0 | 0 | 17 | 17 | 0 |
 | `icons` | 47 | 0 | 0 | 47 | 20 | 27 |
+| `icons/animus-mastery-soulpit` | 1 | 0 | 0 | 1 | 1 | 0 |
 | `icons/character-upgrades` | 1 | 0 | 0 | 1 | 1 | 0 |
 | `icons/divergence-system` | 0 | 6 | 0 | 6 | 0 | 6 |
 | `icons/sistema-de-craft` | 2 | 0 | 0 | 2 | 2 | 0 |
 | `icons/stones-guia-completo` | 10 | 0 | 0 | 10 | 10 | 0 |
 | `items-wiki/addons&mount` | 18 | 0 | 0 | 18 | 0 | 18 |
-| `items-wiki/Character Upgrade items` | 12 | 0 | 0 | 12 | 7 | 5 |
+| `items-wiki/Character Upgrade items` | 12 | 0 | 0 | 12 | 8 | 4 |
 | `items-wiki/Chests` | 20 | 0 | 0 | 20 | 2 | 18 |
 | `items-wiki/Chests/boss chest` | 17 | 0 | 0 | 17 | 0 | 17 |
 | `items-wiki/Consumables` | 31 | 0 | 0 | 31 | 12 | 19 |
@@ -35,8 +48,8 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | `items-wiki/portables` | 9 | 0 | 0 | 9 | 9 | 0 |
 | `items-wiki/Rarity System + Stone system` | 11 | 0 | 0 | 11 | 2 | 9 |
 | `items-wiki/Rarity System + Stone system/Stones elementais` | 14 | 0 | 0 | 14 | 0 | 14 |
-| `menu` | 29 | 0 | 0 | 29 | 28 | 1 |
-| `miniboss-invasions` | 15 | 46 | 0 | 61 | 61 | 0 |
+| `menu` | 29 | 0 | 0 | 29 | 26 | 3 |
+| `miniboss-invasions` | 21 | 52 | 0 | 73 | 73 | 0 |
 | `outfit-mount-bonus` | 0 | 4 | 0 | 4 | 4 | 0 |
 | `placeholders` | 1 | 0 | 1 | 2 | 1 | 1 |
 | `rarity-system` | 0 | 2 | 0 | 2 | 1 | 1 |
@@ -44,17 +57,36 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | `reward-items` | 7 | 0 | 0 | 7 | 7 | 0 |
 | `roulette-system` | 69 | 0 | 0 | 69 | 69 | 0 |
 | `scripts-zerobot` | 1 | 11 | 0 | 12 | 6 | 6 |
+| `stamina` | 0 | 4 | 0 | 4 | 4 | 0 |
+| `taints` | 2 | 1 | 0 | 3 | 3 | 0 |
 | `tasks-system` | 0 | 12 | 0 | 12 | 8 | 4 |
 | `trinket-badges` | 1 | 2 | 0 | 3 | 3 | 0 |
 | `trinket-craft` | 0 | 5 | 0 | 5 | 5 | 0 |
+| `trinket-craft/vocations` | 15 | 14 | 0 | 29 | 0 | 29 |
+| `voucher-system` | 1 | 0 | 0 | 1 | 1 | 0 |
 
 ## Catálogo completo
 
 | Nome do ícone/imagem | Tipo | Caminho | Uso detectado |
 |---|---|---|---|
+| damage-amulet-death.gif | GIF | `assets/media/accessory-craft/damage/damage-amulet-death.gif` | `assets/js/wiki.js` |
+| damage-amulet-earth.gif | GIF | `assets/media/accessory-craft/damage/damage-amulet-earth.gif` | `assets/js/wiki.js` |
+| damage-amulet-energy.gif | GIF | `assets/media/accessory-craft/damage/damage-amulet-energy.gif` | `assets/js/wiki.js` |
+| damage-amulet-fire.gif | GIF | `assets/media/accessory-craft/damage/damage-amulet-fire.gif` | `assets/js/wiki.js` |
+| damage-amulet-holy.gif | GIF | `assets/media/accessory-craft/damage/damage-amulet-holy.gif` | `assets/js/wiki.js` |
+| damage-amulet-ice.gif | GIF | `assets/media/accessory-craft/damage/damage-amulet-ice.gif` | `assets/js/wiki.js` |
+| damage-amulet-physical.gif | GIF | `assets/media/accessory-craft/damage/damage-amulet-physical.gif` | `assets/js/wiki.js` |
+| damage-ring-death.gif | GIF | `assets/media/accessory-craft/damage/damage-ring-death.gif` | `assets/js/wiki.js` |
+| damage-ring-earth.gif | GIF | `assets/media/accessory-craft/damage/damage-ring-earth.gif` | `assets/js/wiki.js` |
+| damage-ring-energy.gif | GIF | `assets/media/accessory-craft/damage/damage-ring-energy.gif` | `assets/js/wiki.js` |
+| damage-ring-fire.gif | GIF | `assets/media/accessory-craft/damage/damage-ring-fire.gif` | `assets/js/wiki.js` |
+| damage-ring-holy.gif | GIF | `assets/media/accessory-craft/damage/damage-ring-holy.gif` | `assets/js/wiki.js` |
+| damage-ring-ice.gif | GIF | `assets/media/accessory-craft/damage/damage-ring-ice.gif` | `assets/js/wiki.js` |
+| damage-ring-physical.gif | GIF | `assets/media/accessory-craft/damage/damage-ring-physical.gif` | `assets/js/wiki.js` |
 | level-2.png | PNG | `assets/media/accessory-craft/level-2.png` | `sistema-de-craft.html` |
 | lords.png | PNG | `assets/media/accessory-craft/lords.png` | `sistema-de-craft.html` |
 | store.png | PNG | `assets/media/accessory-craft/store.png` | `sistema-de-craft.html` |
+| soulcore-seller.png | PNG | `assets/media/animus-mastery-soulpit/soulcore-seller.png` | `animus-mastery-soulpit.html` |
 | avalorinews.png | PNG | `assets/media/articles/avalorinews.png` | **Sem referência literal** |
 | dark-totem-daily.png | PNG | `assets/media/articles/dark-totem-daily.png` | **Sem referência literal** |
 | divergence-system.png | PNG | `assets/media/articles/divergence-system.png` | **Sem referência literal** |
@@ -66,21 +98,96 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | spell-badge-upgrade.gif | GIF | `assets/media/articles/spell-badge-upgrade.gif` | `spell-badge-upgrade.html` |
 | Background site.jpg | JPG | `assets/media/brand/Background site.jpg` | **Sem referência literal** |
 | Parcelamento.png | PNG | `assets/media/brand/Parcelamento.png` | **Sem referência literal** |
-| avalorium-logo.png | PNG | `assets/media/brand/avalorium-logo.png` | `ammo.html`, `amulets.html`, `animus-mastery-soulpit.html`, `armors.html`, `backpacks.html`, `boots.html`, `category-colecionaveis.html`, `category-guias-e-utilidades.html`, `category-itens-e-equipamentos.html`, `category-scripts-zerobot.html`, `category-sistemas-do-servidor.html`, `character-upgrades.html`, `comandos-do-servidor.html`, `dark-totem-daily.html`, `divergence-system.html`, `dolls.html`, `exalted-forge.html`, `fabio-rockeiro-scripts.html`, `helmets.html`, `hireling-enchanter.html`, `hunts-custom.html`, `index.html`, `invasao-de-minibosses.html`, `legs.html`, `monster-hunter.html`, `mounts.html`, `outfit-mount-bonus.html`, `outfits.html`, `portables.html`, `pyramid-of-azhrkhal-three-asuras.html`, `reliquary-system.html`, `rings.html`, `roulette-system.html`, `rune-system.html`, `sanctum-of-fire-ice.html`, `search.html`, `shields.html`, `sistema-de-craft.html`, `spell-badge-upgrade.html`, `stones-guia-completo.html`, `tasks-system.html`, `the-fallen-usurpers.html`, `upgrade-stones.html`, `void-corruption-depths-inner-netherbound.html`, `void-corruption-depths-outer-void.html`, `weapons.html` |
+| avalorium-logo.png | PNG | `assets/media/brand/avalorium-logo.png` | `ammo.html`, `amulets.html`, `animus-mastery-soulpit.html`, `armors.html`, `aumento-das-taints.html`, `backpacks.html`, `boots.html`, `cadeia.html`, `castle-war.html`, `category-colecionaveis.html`, `category-guias-e-utilidades.html`, `category-itens-e-equipamentos.html`, `category-scripts-zerobot.html`, `category-sistemas-do-servidor.html`, `character-upgrades.html`, `comandos-do-servidor.html`, `dark-totem-daily.html`, `divergence-system.html`, `dolls.html`, `exalted-forge.html`, `fabio-rockeiro-scripts.html`, `helmets.html`, `hireling-enchanter.html`, `hunts-custom.html`, `index.html`, `invasao-de-minibosses.html`, `legs.html`, `monster-hunter.html`, `mounts.html`, `outfit-mount-bonus.html`, `outfits.html`, `portables.html`, `reliquary-system.html`, `rings.html`, `roulette-system.html`, `rune-system.html`, `search.html`, `shields.html`, `sistema-de-craft.html`, `spell-badge-upgrade.html`, `stamina.html`, `stones-guia-completo.html`, `tasks-system.html`, `upgrade-stones.html`, `voucher-system.html`, `weapons.html` |
 | avalorium-wordmark.png | PNG | `assets/media/brand/avalorium-wordmark.png` | `index.html` |
 | fenrir-guardian-clean-v2.png | PNG | `assets/media/brand/fenrir-guardian-clean-v2.png` | `index.html` |
 | fenrir-guardian-clean.png | PNG | `assets/media/brand/fenrir-guardian-clean.png` | **Sem referência literal** |
 | fenrir-guardian.png | PNG | `assets/media/brand/fenrir-guardian.png` | **Sem referência literal** |
+| prison-area.png | PNG | `assets/media/cadeia/prison-area.png` | `cadeia.html` |
+| prisoner.png | PNG | `assets/media/cadeia/prisoner.png` | `cadeia.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| castle-war-icon-transparent.png | PNG | `assets/media/castle-war/castle-war-icon-transparent.png` | `castle-war.html`, `category-sistemas-do-servidor.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| castle-war-icon.png | PNG | `assets/media/castle-war/castle-war-icon.png` | **Sem referência literal** |
+| character-upgrades.gif | GIF | `assets/media/character-upgrades/character-upgrades.gif` | `category-sistemas-do-servidor.html`, `character-upgrades.html`, `index.html`, `invasao-de-minibosses.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| hunting-task-shop-token.png | PNG | `assets/media/character-upgrades/hunting-task-shop-token.png` | `character-upgrades.html` |
+| zahir-golden-raid-token.png | PNG | `assets/media/character-upgrades/zahir-golden-raid-token.png` | `character-upgrades.html` |
 | ancient-claws.png | PNG | `assets/media/craft-progression/ancient-claws.png` | `sistema-de-craft.html` |
+| ancient-item-reference.png | PNG | `assets/media/craft-progression/ancient-item-reference.png` | **Sem referência literal** |
+| ancient-items-preview.png | PNG | `assets/media/craft-progression/ancient-items-preview.png` | **Sem referência literal** |
+| ancient-void-battleaxe.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-battleaxe.png` | **Sem referência literal** |
+| ancient-void-bludgeon.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-bludgeon.png` | **Sem referência literal** |
+| ancient-void-bow.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-bow.png` | **Sem referência literal** |
+| ancient-void-claws.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-claws.png` | **Sem referência literal** |
+| ancient-void-coil.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-coil.png` | **Sem referência literal** |
+| ancient-void-crossbow.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-crossbow.png` | **Sem referência literal** |
+| ancient-void-cudgel.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-cudgel.png` | **Sem referência literal** |
+| ancient-void-hatchet.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-hatchet.png` | **Sem referência literal** |
+| ancient-void-razor.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-razor.png` | **Sem referência literal** |
+| ancient-void-rod.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/ancient-void-rod.png` | **Sem referência literal** |
+| preview.png | PNG | `assets/media/craft-progression/ancient-items/_transparent/preview.png` | **Sem referência literal** |
+| ancient-void-battleaxe.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-battleaxe.gif` | **Sem referência literal** |
+| ancient-void-battleaxe.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-battleaxe.png` | **Sem referência literal** |
+| ancient-void-blade.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-blade.gif` | **Sem referência literal** |
+| ancient-void-bludgeon.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-bludgeon.gif` | **Sem referência literal** |
+| ancient-void-bludgeon.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-bludgeon.png` | **Sem referência literal** |
+| ancient-void-bow.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-bow.gif` | **Sem referência literal** |
+| ancient-void-bow.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-bow.png` | **Sem referência literal** |
+| ancient-void-claws.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-claws.gif` | **Sem referência literal** |
+| ancient-void-claws.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-claws.png` | **Sem referência literal** |
+| ancient-void-coil.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-coil.gif` | **Sem referência literal** |
+| ancient-void-coil.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-coil.png` | **Sem referência literal** |
+| ancient-void-crossbow.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-crossbow.gif` | **Sem referência literal** |
+| ancient-void-crossbow.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-crossbow.png` | **Sem referência literal** |
+| ancient-void-cudgel.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-cudgel.gif` | **Sem referência literal** |
+| ancient-void-cudgel.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-cudgel.png` | **Sem referência literal** |
+| ancient-void-hatchet.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-hatchet.gif` | **Sem referência literal** |
+| ancient-void-hatchet.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-hatchet.png` | **Sem referência literal** |
+| ancient-void-razor.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-razor.gif` | **Sem referência literal** |
+| ancient-void-razor.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-razor.png` | **Sem referência literal** |
+| ancient-void-rod.gif | GIF | `assets/media/craft-progression/ancient-items/ancient-void-rod.gif` | **Sem referência literal** |
+| ancient-void-rod.png | PNG | `assets/media/craft-progression/ancient-items/ancient-void-rod.png` | **Sem referência literal** |
 | ancient-weapons.png | PNG | `assets/media/craft-progression/ancient-weapons.png` | `sistema-de-craft.html` |
+| corrupted-void-battleaxe.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-battleaxe.gif` | `sistema-de-craft.html` |
+| corrupted-void-blade.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-blade.gif` | `sistema-de-craft.html` |
+| corrupted-void-bludgeon.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-bludgeon.gif` | `sistema-de-craft.html` |
+| corrupted-void-bow.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-bow.gif` | `sistema-de-craft.html` |
+| corrupted-void-claws.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-claws.gif` | `sistema-de-craft.html` |
+| corrupted-void-coil.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-coil.gif` | `sistema-de-craft.html` |
+| corrupted-void-crossbow.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-crossbow.gif` | `sistema-de-craft.html` |
+| corrupted-void-cudgel.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-cudgel.gif` | `sistema-de-craft.html` |
+| corrupted-void-hatchet.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-hatchet.gif` | `sistema-de-craft.html` |
+| corrupted-void-razor.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-razor.gif` | `sistema-de-craft.html` |
+| corrupted-void-rod.gif | GIF | `assets/media/craft-progression/corrupted-items/corrupted-void-rod.gif` | `sistema-de-craft.html` |
+| megalomanias-essence.gif | GIF | `assets/media/craft-progression/essences/megalomanias-essence.gif` | `sistema-de-craft.html` |
+| the-essence-of-chagorz.gif | GIF | `assets/media/craft-progression/essences/the-essence-of-chagorz.gif` | `sistema-de-craft.html` |
+| the-essence-of-ichgahal.gif | GIF | `assets/media/craft-progression/essences/the-essence-of-ichgahal.gif` | `sistema-de-craft.html` |
+| the-essence-of-murcion.gif | GIF | `assets/media/craft-progression/essences/the-essence-of-murcion.gif` | `sistema-de-craft.html` |
+| the-essence-of-vemiath.gif | GIF | `assets/media/craft-progression/essences/the-essence-of-vemiath.gif` | `sistema-de-craft.html` |
+| figurine-of-cruelty.gif | GIF | `assets/media/craft-progression/figurines/figurine-of-cruelty.gif` | `sistema-de-craft.html` |
+| figurine-of-greed.gif | GIF | `assets/media/craft-progression/figurines/figurine-of-greed.gif` | `sistema-de-craft.html` |
+| figurine-of-hatred.gif | GIF | `assets/media/craft-progression/figurines/figurine-of-hatred.gif` | `sistema-de-craft.html` |
+| figurine-of-malice.gif | GIF | `assets/media/craft-progression/figurines/figurine-of-malice.gif` | `sistema-de-craft.html` |
+| figurine-of-megalomania.gif | GIF | `assets/media/craft-progression/figurines/figurine-of-megalomania.gif` | `sistema-de-craft.html` |
+| figurine-of-spite.gif | GIF | `assets/media/craft-progression/figurines/figurine-of-spite.gif` | `sistema-de-craft.html` |
+| greater-fragment.gif | GIF | `assets/media/craft-progression/fragments/greater-fragment.gif` | `assets/js/wiki.js` |
+| lesser-fragment.gif | GIF | `assets/media/craft-progression/fragments/lesser-fragment.gif` | `assets/js/wiki.js` |
+| countess-sorrows-frozen-tear.gif | GIF | `assets/media/craft-progression/materials/countess-sorrows-frozen-tear.gif` | `assets/js/wiki.js` |
+| demonic-essence.gif | GIF | `assets/media/craft-progression/materials/demonic-essence.gif` | `assets/js/wiki.js` |
+| dracolas-eye.gif | GIF | `assets/media/craft-progression/materials/dracolas-eye.gif` | `assets/js/wiki.js` |
+| exalted-core.gif | GIF | `assets/media/craft-progression/materials/exalted-core.gif` | `assets/js/wiki.js` |
+| handmaidens-protector.gif | GIF | `assets/media/craft-progression/materials/handmaidens-protector.gif` | `assets/js/wiki.js` |
+| imperors-trident.gif | GIF | `assets/media/craft-progression/materials/imperors-trident.gif` | `assets/js/wiki.js` |
+| mr-punishs-handcuffs.gif | GIF | `assets/media/craft-progression/materials/mr-punishs-handcuffs.gif` | `assets/js/wiki.js` |
+| piece-of-massacres-shell.gif | GIF | `assets/media/craft-progression/materials/piece-of-massacres-shell.gif` | `assets/js/wiki.js` |
+| plasmothers-remains.gif | GIF | `assets/media/craft-progression/materials/plasmothers-remains.gif` | `assets/js/wiki.js` |
 | megalomania-station.png | PNG | `assets/media/craft-progression/megalomania-station.png` | `sistema-de-craft.html` |
+| razor-transparent-test.png | PNG | `assets/media/craft-progression/razor-transparent-test.png` | **Sem referência literal** |
 | upgrade-station.png | PNG | `assets/media/craft-progression/upgrade-station.png` | `sistema-de-craft.html` |
 | corrupted.png | PNG | `assets/media/craft-utilities/corrupted.png` | `tasks-system.html`, `assets/js/wiki.js` |
 | ironblood.png | PNG | `assets/media/craft-utilities/ironblood.png` | `sistema-de-craft.html`, `assets/js/wiki.js` |
 | lothlorien.png | PNG | `assets/media/craft-utilities/lothlorien.png` | `tasks-system.html`, `assets/js/wiki.js` |
 | poison.png | PNG | `assets/media/craft-utilities/poison.png` | `tasks-system.html`, `assets/js/wiki.js` |
-| t1-equipment.png | PNG | `assets/media/craft-utilities/t1-equipment.png` | `sistema-de-craft.html` |
-| t1-room.png | PNG | `assets/media/craft-utilities/t1-room.png` | `sistema-de-craft.html` |
+| t1-equipment.png | PNG | `assets/media/craft-utilities/t1-equipment.png` | **Sem referência literal** |
+| t1-room.png | PNG | `assets/media/craft-utilities/t1-room.png` | **Sem referência literal** |
 | batalha-dark-totem.png | PNG | `assets/media/dark-totem/batalha-dark-totem.png` | `dark-totem-daily.html` |
 | 12603-wand_of_dimensions.gif | GIF | `assets/media/dark-totem/items/12603-wand_of_dimensions.gif` | `dark-totem-daily.html` |
 | 19366-icy_culottes.gif | GIF | `assets/media/dark-totem/items/19366-icy_culottes.gif` | `dark-totem-daily.html` |
@@ -90,6 +197,8 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | 30061-giant_sapphire.gif | GIF | `assets/media/dark-totem/items/30061-giant_sapphire.gif` | `dark-totem-daily.html` |
 | 3010-emerald_bangle.gif | GIF | `assets/media/dark-totem/items/3010-emerald_bangle.gif` | `dark-totem-daily.html` |
 | 3026-white_pearl.gif | GIF | `assets/media/dark-totem/items/3026-white_pearl.gif` | `dark-totem-daily.html` |
+| 30275-the_crown_of_the_percht_queen_fire.gif | GIF | `assets/media/dark-totem/items/30275-the_crown_of_the_percht_queen_fire.gif` | `dark-totem-daily.html` |
+| 30276-the_crown_of_the_percht_queen_ice.gif | GIF | `assets/media/dark-totem/items/30276-the_crown_of_the_percht_queen_ice.gif` | `dark-totem-daily.html` |
 | 30278-flames_of_the_percht_queen.gif | GIF | `assets/media/dark-totem/items/30278-flames_of_the_percht_queen.gif` | `dark-totem-daily.html` |
 | 3029-small_sapphire.gif | GIF | `assets/media/dark-totem/items/3029-small_sapphire.gif` | `dark-totem-daily.html` |
 | 3033-small_amethyst.gif | GIF | `assets/media/dark-totem/items/3033-small_amethyst.gif` | `dark-totem-daily.html` |
@@ -144,29 +253,23 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | tibia-coins.gif | GIF | `assets/media/hireling-enchanter/tibia-coins.gif` | `hireling-enchanter.html` |
 | workshop-slot-2.png | PNG | `assets/media/hireling-enchanter/workshop-slot-2.png` | `hireling-enchanter.html` |
 | workshop-slot-3.png | PNG | `assets/media/hireling-enchanter/workshop-slot-3.png` | `hireling-enchanter.html` |
-| Brain Netherbound.gif | GIF | `assets/media/hunts-custom/Brain Netherbound.gif` | `void-corruption-depths-inner-netherbound.html` |
-| Corrupted Lion Beast.gif | GIF | `assets/media/hunts-custom/Corrupted Lion Beast.gif` | `the-fallen-usurpers.html` |
-| Corrupted Void Brute.gif | GIF | `assets/media/hunts-custom/Corrupted Void Brute.gif` | `void-corruption-depths-outer-void.html` |
-| Fallen Usurper Arche.gif | GIF | `assets/media/hunts-custom/Fallen Usurper Arche.gif` | `the-fallen-usurpers.html` |
-| Fallen Usurper Commander.gif | GIF | `assets/media/hunts-custom/Fallen Usurper Commander.gif` | `the-fallen-usurpers.html` |
-| Fallen Usurper Knight.gif | GIF | `assets/media/hunts-custom/Fallen Usurper Knight.gif` | `the-fallen-usurpers.html` |
-| Fallen Usurper Warlock.gif | GIF | `assets/media/hunts-custom/Fallen Usurper Warlock.gif` | `the-fallen-usurpers.html` |
-| Fieren.gif | GIF | `assets/media/hunts-custom/Fieren.gif` | `sanctum-of-fire-ice.html` |
-| Firzen.gif | GIF | `assets/media/hunts-custom/Firzen.gif` | `sanctum-of-fire-ice.html` |
-| Freezee.gif | GIF | `assets/media/hunts-custom/Freezee.gif` | `sanctum-of-fire-ice.html` |
-| Netherbound Demon.gif | GIF | `assets/media/hunts-custom/Netherbound Demon.gif` | `void-corruption-depths-inner-netherbound.html` |
-| Netherbound Dragon.gif | GIF | `assets/media/hunts-custom/Netherbound Dragon.gif` | `void-corruption-depths-inner-netherbound.html` |
-| PYRAMID OF AZHR’KHAL (THREE ASURAS).png | PNG | `assets/media/hunts-custom/PYRAMID OF AZHR’KHAL (THREE ASURAS).png` | `hunts-custom.html`, `pyramid-of-azhrkhal-three-asuras.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
-| SANCTUM OF FIRE & ICE.png | PNG | `assets/media/hunts-custom/SANCTUM OF FIRE & ICE.png` | `assets/js/wiki.js`, `assets/js/search-index.js` |
-| THE FALLEN USURPERS.png | PNG | `assets/media/hunts-custom/THE FALLEN USURPERS.png` | `hunts-custom.html`, `the-fallen-usurpers.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
-| True Blessed Asura.gif | GIF | `assets/media/hunts-custom/True Blessed Asura.gif` | `pyramid-of-azhrkhal-three-asuras.html` |
-| True Cursed Asura.gif | GIF | `assets/media/hunts-custom/True Cursed Asura.gif` | `pyramid-of-azhrkhal-three-asuras.html` |
-| True Enrage Asura.gif | GIF | `assets/media/hunts-custom/True Enrage Asura.gif` | `pyramid-of-azhrkhal-three-asuras.html` |
-| VOID CORRUPTION DEPTHS (INNER NETHERBOUND).png | PNG | `assets/media/hunts-custom/VOID CORRUPTION DEPTHS (INNER NETHERBOUND).png` | `hunts-custom.html`, `void-corruption-depths-inner-netherbound.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
-| VOID CORRUPTION DEPTHS (OUTER VOID).png | PNG | `assets/media/hunts-custom/VOID CORRUPTION DEPTHS (OUTER VOID).png` | `hunts-custom.html`, `void-corruption-depths-outer-void.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
-| Void Demon Ravager.gif | GIF | `assets/media/hunts-custom/Void Demon Ravager.gif` | `void-corruption-depths-outer-void.html` |
-| Void Riftcaster.gif | GIF | `assets/media/hunts-custom/Void Riftcaster.gif` | `void-corruption-depths-outer-void.html` |
-| void-forge-items.png | PNG | `assets/media/hunts-custom/void-forge-items.png` | **Sem referência literal** |
+| Brain Netherbound.gif | GIF | `assets/media/hunts-custom/Brain Netherbound.gif` | `hunts-custom.html` |
+| Corrupted Lion Beast.gif | GIF | `assets/media/hunts-custom/Corrupted Lion Beast.gif` | `hunts-custom.html` |
+| Corrupted Void Brute.gif | GIF | `assets/media/hunts-custom/Corrupted Void Brute.gif` | `hunts-custom.html` |
+| Fallen Usurper Arche.gif | GIF | `assets/media/hunts-custom/Fallen Usurper Arche.gif` | `hunts-custom.html` |
+| Fallen Usurper Commander.gif | GIF | `assets/media/hunts-custom/Fallen Usurper Commander.gif` | `hunts-custom.html` |
+| Fallen Usurper Knight.gif | GIF | `assets/media/hunts-custom/Fallen Usurper Knight.gif` | `hunts-custom.html` |
+| Fallen Usurper Warlock.gif | GIF | `assets/media/hunts-custom/Fallen Usurper Warlock.gif` | `hunts-custom.html` |
+| Fieren.gif | GIF | `assets/media/hunts-custom/Fieren.gif` | `hunts-custom.html` |
+| Firzen.gif | GIF | `assets/media/hunts-custom/Firzen.gif` | `hunts-custom.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| Freezee.gif | GIF | `assets/media/hunts-custom/Freezee.gif` | `hunts-custom.html` |
+| Netherbound Demon.gif | GIF | `assets/media/hunts-custom/Netherbound Demon.gif` | `hunts-custom.html` |
+| Netherbound Dragon.gif | GIF | `assets/media/hunts-custom/Netherbound Dragon.gif` | `hunts-custom.html` |
+| True Blessed Asura.gif | GIF | `assets/media/hunts-custom/True Blessed Asura.gif` | `hunts-custom.html` |
+| True Cursed Asura.gif | GIF | `assets/media/hunts-custom/True Cursed Asura.gif` | `hunts-custom.html` |
+| True Enrage Asura.gif | GIF | `assets/media/hunts-custom/True Enrage Asura.gif` | `hunts-custom.html` |
+| Void Demon Ravager.gif | GIF | `assets/media/hunts-custom/Void Demon Ravager.gif` | `hunts-custom.html` |
+| Void Riftcaster.gif | GIF | `assets/media/hunts-custom/Void Riftcaster.gif` | `hunts-custom.html` |
 | 10m exp potion.gif | GIF | `assets/media/icons/10m exp potion.gif` | `monster-hunter.html` |
 | 20m exp potion.gif | GIF | `assets/media/icons/20m exp potion.gif` | `monster-hunter.html` |
 | 20x prey.gif | GIF | `assets/media/icons/20x prey.gif` | **Sem referência literal** |
@@ -177,6 +280,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | amplfire.gif | GIF | `assets/media/icons/amplfire.gif` | `tasks-system.html` |
 | amplice.gif | GIF | `assets/media/icons/amplice.gif` | `tasks-system.html` |
 | amplideath.gif | GIF | `assets/media/icons/amplideath.gif` | `tasks-system.html` |
+| soul-prism.gif | GIF | `assets/media/icons/animus-mastery-soulpit/soul-prism.gif` | `animus-mastery-soulpit.html` |
 | blood_expert_backpack.gif | GIF | `assets/media/icons/blood_expert_backpack.gif` | **Sem referência literal** |
 | Reflect potion upgrade.gif | GIF | `assets/media/icons/character-upgrades/Reflect potion upgrade.gif` | `monster-hunter.html` |
 | divergencedeath.png | PNG | `assets/media/icons/divergence-system/divergencedeath.png` | **Sem referência literal** |
@@ -236,11 +340,11 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | Reflect potion upgrade.gif | GIF | `assets/media/items-wiki/Character Upgrade items/Reflect potion upgrade.gif` | `character-upgrades.html` |
 | exorigran badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/exorigran badge.gif` | **Sem referência literal** |
 | fatal special potion.gif | GIF | `assets/media/items-wiki/Character Upgrade items/fatal special potion.gif` | `character-upgrades.html` |
-| mas frigo badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mas frigo badge.gif` | `spell-badge-upgrade.html` |
+| mas frigo badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mas frigo badge.gif` | `character-upgrades.html`, `spell-badge-upgrade.html` |
 | mas pug badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mas pug badge.gif` | **Sem referência literal** |
 | mas san badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mas san badge.gif` | **Sem referência literal** |
 | momentum special potion.gif | GIF | `assets/media/items-wiki/Character Upgrade items/momentum special potion.gif` | `character-upgrades.html` |
-| mysterious badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mysterious badge.gif` | **Sem referência literal** |
+| mysterious badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mysterious badge.gif` | `character-upgrades.html` |
 | ruse special potion.gif | GIF | `assets/media/items-wiki/Character Upgrade items/ruse special potion.gif` | `character-upgrades.html` |
 | transcendencespecial potion.gif.gif | GIF | `assets/media/items-wiki/Character Upgrade items/transcendencespecial potion.gif.gif` | `character-upgrades.html` |
 | upgrade potions.gif | GIF | `assets/media/items-wiki/Character Upgrade items/upgrade potions.gif` | `character-upgrades.html` |
@@ -310,7 +414,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | powerfull resilience.gif | GIF | `assets/media/items-wiki/Consumables/powerfull resilience.gif` | **Sem referência literal** |
 | rare promotion scroll30+.gif | GIF | `assets/media/items-wiki/Consumables/rare promotion scroll30+.gif` | **Sem referência literal** |
 | removered.gif | GIF | `assets/media/items-wiki/Consumables/removered.gif` | `portables.html` |
-| stamina bottler.gif | GIF | `assets/media/items-wiki/Consumables/stamina bottler.gif` | `tasks-system.html` |
+| stamina bottler.gif | GIF | `assets/media/items-wiki/Consumables/stamina bottler.gif` | `stamina.html`, `tasks-system.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | tier transfer.gif | GIF | `assets/media/items-wiki/Consumables/tier transfer.gif` | `sistema-de-craft.html` |
 | void upgrade.gif | GIF | `assets/media/items-wiki/Consumables/void upgrade.gif` | `sistema-de-craft.html` |
 | Crystal_Coin.gif | GIF | `assets/media/items-wiki/Craft/Crystal_Coin.gif` | `dark-totem-daily.html`, `assets/js/wiki.js` |
@@ -467,7 +571,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | faster_enhanced tabble.gif | GIF | `assets/media/items-wiki/enhanced tables/faster_enhanced tabble.gif` | `rune-system.html` |
 | reffil flask.gif | GIF | `assets/media/items-wiki/enhanced tables/reffil flask.gif` | `rune-system.html` |
 | reffil rune.gif | GIF | `assets/media/items-wiki/enhanced tables/reffil rune.gif` | `rune-system.html` |
-| Bossdaily radar and fiendish.gif | GIF | `assets/media/items-wiki/portables/Bossdaily radar and fiendish.gif` | `portables.html` |
+| Bossdaily radar and fiendish.gif | GIF | `assets/media/items-wiki/portables/Bossdaily radar and fiendish.gif` | `animus-mastery-soulpit.html`, `portables.html` |
 | portable arrow.gif | GIF | `assets/media/items-wiki/portables/portable arrow.gif` | `category-itens-e-equipamentos.html`, `portables.html` |
 | portable food.gif | GIF | `assets/media/items-wiki/portables/portable food.gif` | `portables.html` |
 | portable forge.gif | GIF | `assets/media/items-wiki/portables/portable forge.gif` | `portables.html` |
@@ -482,8 +586,8 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | armors.gif | GIF | `assets/media/menu/armors.gif` | `category-itens-e-equipamentos.html` |
 | backpacks.gif | GIF | `assets/media/menu/backpacks.gif` | `category-itens-e-equipamentos.html` |
 | boots.gif | GIF | `assets/media/menu/boots.gif` | `category-itens-e-equipamentos.html` |
-| character-upgrades.gif | GIF | `assets/media/menu/character-upgrades.gif` | `category-sistemas-do-servidor.html`, `character-upgrades.html`, `index.html`, `invasao-de-minibosses.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
-| comandos-do-servidor.gif | GIF | `assets/media/menu/comandos-do-servidor.gif` | `category-guias-e-utilidades.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| character-upgrades.gif | GIF | `assets/media/menu/character-upgrades.gif` | **Sem referência literal** |
+| comandos-do-servidor.gif | GIF | `assets/media/menu/comandos-do-servidor.gif` | `category-guias-e-utilidades.html`, `comandos-do-servidor.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | dark-totem-daily.gif | GIF | `assets/media/menu/dark-totem-daily.gif` | `category-sistemas-do-servidor.html`, `dark-totem-daily.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | divergence-system.gif | GIF | `assets/media/menu/divergence-system.gif` | `category-sistemas-do-servidor.html`, `divergence-system.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | divergencedeath.gif | GIF | `assets/media/menu/divergencedeath.gif` | `divergence-system.html` |
@@ -502,7 +606,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | rune-system.gif | GIF | `assets/media/menu/rune-system.gif` | `category-sistemas-do-servidor.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | shields.gif | GIF | `assets/media/menu/shields.gif` | `category-itens-e-equipamentos.html` |
 | sistema-de-craft.gif | GIF | `assets/media/menu/sistema-de-craft.gif` | `category-sistemas-do-servidor.html`, `index.html`, `sistema-de-craft.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
-| spell-badge-upgrade.gif | GIF | `assets/media/menu/spell-badge-upgrade.gif` | `category-sistemas-do-servidor.html`, `index.html`, `invasao-de-minibosses.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| spell-badge-upgrade.gif | GIF | `assets/media/menu/spell-badge-upgrade.gif` | **Sem referência literal** |
 | stones-guia-completo.gif | GIF | `assets/media/menu/stones-guia-completo.gif` | `category-sistemas-do-servidor.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | weapons.gif | GIF | `assets/media/menu/weapons.gif` | `category-itens-e-equipamentos.html` |
 | 01-original.png | PNG | `assets/media/miniboss-invasions/01-original.png` | `invasao-de-minibosses.html` |
@@ -536,16 +640,26 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | 15-original.png | PNG | `assets/media/miniboss-invasions/15-original.png` | `invasao-de-minibosses.html` |
 | 15-sprite.gif | GIF | `assets/media/miniboss-invasions/15-sprite.gif` | `invasao-de-minibosses.html` |
 | 16-original.png | PNG | `assets/media/miniboss-invasions/16-original.png` | `invasao-de-minibosses.html` |
+| adlerauge-original.png | PNG | `assets/media/miniboss-invasions/adlerauge-original.png` | `invasao-de-minibosses.html` |
+| adlerauge-sprite.gif | GIF | `assets/media/miniboss-invasions/adlerauge-sprite.gif` | `invasao-de-minibosses.html` |
+| ancient-lion-knight-original.png | PNG | `assets/media/miniboss-invasions/ancient-lion-knight-original.png` | `invasao-de-minibosses.html` |
+| ancient-lion-knight-sprite.gif | GIF | `assets/media/miniboss-invasions/ancient-lion-knight-sprite.gif` | `invasao-de-minibosses.html` |
 | countess-sorrow-original.png | PNG | `assets/media/miniboss-invasions/countess-sorrow-original.png` | `invasao-de-minibosses.html` |
 | countess-sorrow-sprite.png | PNG | `assets/media/miniboss-invasions/countess-sorrow-sprite.png` | `invasao-de-minibosses.html` |
 | feroxa-original.png | PNG | `assets/media/miniboss-invasions/feroxa-original.png` | `invasao-de-minibosses.html` |
 | feroxa-sprite.png | PNG | `assets/media/miniboss-invasions/feroxa-sprite.png` | `invasao-de-minibosses.html` |
+| gralvalon-original.png | PNG | `assets/media/miniboss-invasions/gralvalon-original.png` | `invasao-de-minibosses.html` |
+| gralvalon-sprite.gif | GIF | `assets/media/miniboss-invasions/gralvalon-sprite.gif` | `invasao-de-minibosses.html` |
 | grand-chaplain-gaunder-original.png | PNG | `assets/media/miniboss-invasions/grand-chaplain-gaunder-original.png` | `invasao-de-minibosses.html` |
 | grand-chaplain-gaunder-sprite.png | PNG | `assets/media/miniboss-invasions/grand-chaplain-gaunder-sprite.png` | `invasao-de-minibosses.html` |
 | guard-captain-quaid-original.png | PNG | `assets/media/miniboss-invasions/guard-captain-quaid-original.png` | `invasao-de-minibosses.html` |
 | guard-captain-quaid-sprite.png | PNG | `assets/media/miniboss-invasions/guard-captain-quaid-sprite.png` | `invasao-de-minibosses.html` |
 | jailer-original.png | PNG | `assets/media/miniboss-invasions/jailer-original.png` | `invasao-de-minibosses.html` |
 | jailer-sprite.png | PNG | `assets/media/miniboss-invasions/jailer-sprite.png` | `invasao-de-minibosses.html` |
+| malvaroth-original.png | PNG | `assets/media/miniboss-invasions/malvaroth-original.png` | `invasao-de-minibosses.html` |
+| malvaroth-sprite.gif | GIF | `assets/media/miniboss-invasions/malvaroth-sprite.gif` | `invasao-de-minibosses.html` |
+| michael-the-stalwart-original.png | PNG | `assets/media/miniboss-invasions/michael-the-stalwart-original.png` | `invasao-de-minibosses.html` |
+| michael-the-stalwart-sprite.gif | GIF | `assets/media/miniboss-invasions/michael-the-stalwart-sprite.gif` | `invasao-de-minibosses.html` |
 | mozradek-original.png | PNG | `assets/media/miniboss-invasions/mozradek-original.png` | `invasao-de-minibosses.html` |
 | mozradek-sprite.png | PNG | `assets/media/miniboss-invasions/mozradek-sprite.png` | `invasao-de-minibosses.html` |
 | mr-punish-original.png | PNG | `assets/media/miniboss-invasions/mr-punish-original.png` | `invasao-de-minibosses.html` |
@@ -562,6 +676,8 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | the-imperor-sprite.png | PNG | `assets/media/miniboss-invasions/the-imperor-sprite.png` | `invasao-de-minibosses.html` |
 | the-plasmother-original.png | PNG | `assets/media/miniboss-invasions/the-plasmother-original.png` | `invasao-de-minibosses.html` |
 | the-plasmother-sprite.png | PNG | `assets/media/miniboss-invasions/the-plasmother-sprite.png` | `invasao-de-minibosses.html` |
+| twisterror-original.png | PNG | `assets/media/miniboss-invasions/twisterror-original.png` | `invasao-de-minibosses.html` |
+| twisterror-sprite.gif | GIF | `assets/media/miniboss-invasions/twisterror-sprite.gif` | `invasao-de-minibosses.html` |
 | white-pale-original.png | PNG | `assets/media/miniboss-invasions/white-pale-original.png` | `invasao-de-minibosses.html` |
 | white-pale-sprite.png | PNG | `assets/media/miniboss-invasions/white-pale-sprite.png` | `invasao-de-minibosses.html` |
 | zarabustor-original.png | PNG | `assets/media/miniboss-invasions/zarabustor-original.png` | `invasao-de-minibosses.html` |
@@ -665,6 +781,13 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | zerobot-logo.png | PNG | `assets/media/scripts-zerobot/zerobot-logo.png` | `fabio-rockeiro-scripts.html` |
 | zerobot-xlog-reconectar-atual.png | PNG | `assets/media/scripts-zerobot/zerobot-xlog-reconectar-atual.png` | `fabio-rockeiro-scripts.html` |
 | zerobot-xlog-reconectar.png | PNG | `assets/media/scripts-zerobot/zerobot-xlog-reconectar.png` | **Sem referência literal** |
+| avalorium-special-supplies.png | PNG | `assets/media/stamina/avalorium-special-supplies.png` | `stamina.html` |
+| deluxe-complete-bath.png | PNG | `assets/media/stamina/deluxe-complete-bath.png` | `stamina.html` |
+| exercise-bath.png | PNG | `assets/media/stamina/exercise-bath.png` | `stamina.html` |
+| stamina-bath.png | PNG | `assets/media/stamina/stamina-bath.png` | `stamina.html` |
+| bakragore-taint.gif | GIF | `assets/media/taints/bakragore-taint.gif` | `aumento-das-taints.html` |
+| goshnar-taint.gif | GIF | `assets/media/taints/goshnar-taint.gif` | `aumento-das-taints.html`, `category-guias-e-utilidades.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| taints-tainter-npc.png | PNG | `assets/media/taints/taints-tainter-npc.png` | `aumento-das-taints.html` |
 | bounty-board.png | PNG | `assets/media/tasks-system/bounty-board.png` | `tasks-system.html` |
 | chest-1.png | PNG | `assets/media/tasks-system/chest-1.png` | `tasks-system.html` |
 | chest-2.png | PNG | `assets/media/tasks-system/chest-2.png` | `tasks-system.html` |
@@ -677,11 +800,41 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | shop-bonuses.png | PNG | `assets/media/tasks-system/shop-bonuses.png` | `tasks-system.html` |
 | shop-mounts.png | PNG | `assets/media/tasks-system/shop-mounts.png` | `tasks-system.html` |
 | weekly-board.png | PNG | `assets/media/tasks-system/weekly-board.png` | `tasks-system.html` |
-| golden-raid-token.gif | GIF | `assets/media/trinket-badges/golden-raid-token.gif` | `category-sistemas-do-servidor.html`, `dark-totem-daily.html`, `index.html`, `invasao-de-minibosses.html`, `spell-badge-upgrade.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
-| npc.png | PNG | `assets/media/trinket-badges/npc.png` | `spell-badge-upgrade.html` |
-| trinket-slots.png | PNG | `assets/media/trinket-badges/trinket-slots.png` | `spell-badge-upgrade.html` |
+| golden-raid-token.gif | GIF | `assets/media/trinket-badges/golden-raid-token.gif` | `category-sistemas-do-servidor.html`, `character-upgrades.html`, `dark-totem-daily.html`, `index.html`, `invasao-de-minibosses.html`, `spell-badge-upgrade.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| npc.png | PNG | `assets/media/trinket-badges/npc.png` | `character-upgrades.html`, `spell-badge-upgrade.html` |
+| trinket-slots.png | PNG | `assets/media/trinket-badges/trinket-slots.png` | `character-upgrades.html`, `spell-badge-upgrade.html` |
 | badge-slot.png | PNG | `assets/media/trinket-craft/badge-slot.png` | `sistema-de-craft.html` |
 | craft-display.png | PNG | `assets/media/trinket-craft/craft-display.png` | `sistema-de-craft.html` |
 | critical-quest.png | PNG | `assets/media/trinket-craft/critical-quest.png` | `sistema-de-craft.html` |
 | leech-quest.png | PNG | `assets/media/trinket-craft/leech-quest.png` | `sistema-de-craft.html` |
 | store.png | PNG | `assets/media/trinket-craft/store.png` | `sistema-de-craft.html` |
+| _source-sheet.png | PNG | `assets/media/trinket-craft/vocations/_source-sheet.png` | **Sem referência literal** |
+| druid-v1.gif | GIF | `assets/media/trinket-craft/vocations/druid-v1.gif` | **Sem referência literal** |
+| druid-v2.gif | GIF | `assets/media/trinket-craft/vocations/druid-v2.gif` | **Sem referência literal** |
+| druid-v3.gif | GIF | `assets/media/trinket-craft/vocations/druid-v3.gif` | **Sem referência literal** |
+| knight-v1.gif | GIF | `assets/media/trinket-craft/vocations/knight-v1.gif` | **Sem referência literal** |
+| knight-v1.png | PNG | `assets/media/trinket-craft/vocations/knight-v1.png` | **Sem referência literal** |
+| knight-v2.gif | GIF | `assets/media/trinket-craft/vocations/knight-v2.gif` | **Sem referência literal** |
+| knight-v2.png | PNG | `assets/media/trinket-craft/vocations/knight-v2.png` | **Sem referência literal** |
+| knight-v3.gif | GIF | `assets/media/trinket-craft/vocations/knight-v3.gif` | **Sem referência literal** |
+| knight-v3.png | PNG | `assets/media/trinket-craft/vocations/knight-v3.png` | **Sem referência literal** |
+| monk-v1.gif | GIF | `assets/media/trinket-craft/vocations/monk-v1.gif` | **Sem referência literal** |
+| monk-v1.png | PNG | `assets/media/trinket-craft/vocations/monk-v1.png` | **Sem referência literal** |
+| monk-v2.gif | GIF | `assets/media/trinket-craft/vocations/monk-v2.gif` | **Sem referência literal** |
+| monk-v2.png | PNG | `assets/media/trinket-craft/vocations/monk-v2.png` | **Sem referência literal** |
+| monk-v3.gif | GIF | `assets/media/trinket-craft/vocations/monk-v3.gif` | **Sem referência literal** |
+| monk-v3.png | PNG | `assets/media/trinket-craft/vocations/monk-v3.png` | **Sem referência literal** |
+| paladin-v1.gif | GIF | `assets/media/trinket-craft/vocations/paladin-v1.gif` | **Sem referência literal** |
+| paladin-v1.png | PNG | `assets/media/trinket-craft/vocations/paladin-v1.png` | **Sem referência literal** |
+| paladin-v2.gif | GIF | `assets/media/trinket-craft/vocations/paladin-v2.gif` | **Sem referência literal** |
+| paladin-v2.png | PNG | `assets/media/trinket-craft/vocations/paladin-v2.png` | **Sem referência literal** |
+| paladin-v3.gif | GIF | `assets/media/trinket-craft/vocations/paladin-v3.gif` | **Sem referência literal** |
+| paladin-v3.png | PNG | `assets/media/trinket-craft/vocations/paladin-v3.png` | **Sem referência literal** |
+| preview.png | PNG | `assets/media/trinket-craft/vocations/preview.png` | **Sem referência literal** |
+| sorcerer-v1.gif | GIF | `assets/media/trinket-craft/vocations/sorcerer-v1.gif` | **Sem referência literal** |
+| sorcerer-v1.png | PNG | `assets/media/trinket-craft/vocations/sorcerer-v1.png` | **Sem referência literal** |
+| sorcerer-v2.gif | GIF | `assets/media/trinket-craft/vocations/sorcerer-v2.gif` | **Sem referência literal** |
+| sorcerer-v2.png | PNG | `assets/media/trinket-craft/vocations/sorcerer-v2.png` | **Sem referência literal** |
+| sorcerer-v3.gif | GIF | `assets/media/trinket-craft/vocations/sorcerer-v3.gif` | **Sem referência literal** |
+| sorcerer-v3.png | PNG | `assets/media/trinket-craft/vocations/sorcerer-v3.png` | **Sem referência literal** |
+| golden-newspaper.gif | GIF | `assets/media/voucher-system/golden-newspaper.gif` | `index.html`, `voucher-system.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |

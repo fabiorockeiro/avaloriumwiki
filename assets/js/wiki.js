@@ -13,7 +13,7 @@
     }
 
     document.body.classList.add(currentPath === 'index.html' ? 'page-home' : 'page-inner');
-    if (currentPath.startsWith('category-') || currentPath === 'hunts-custom.html') {
+    if (currentPath.startsWith('category-')) {
         document.body.classList.add('page-category');
     }
     if (currentPath === 'search.html') document.body.classList.add('page-search');
@@ -194,34 +194,10 @@
 
     const huntsCustomMenuItems = [
         {
-            url: 'void-corruption-depths-outer-void.html',
-            title: 'Void Corruption Depths (Outer Void)',
-            description: 'Level recomendado 1000 ~ 1200.',
-            image: 'assets/media/hunts-custom/VOID CORRUPTION DEPTHS (OUTER VOID).png',
-        },
-        {
-            url: 'void-corruption-depths-inner-netherbound.html',
-            title: 'Void Corruption Depths (Inner Netherbound)',
-            description: 'Level recomendado 1200 ~ 1400.',
-            image: 'assets/media/hunts-custom/VOID CORRUPTION DEPTHS (INNER NETHERBOUND).png',
-        },
-        {
-            url: 'sanctum-of-fire-ice.html',
-            title: 'Sanctum of Fire &amp; Ice',
-            description: 'Level recomendado 600+.',
-            image: 'assets/media/hunts-custom/SANCTUM OF FIRE & ICE.png',
-        },
-        {
-            url: 'pyramid-of-azhrkhal-three-asuras.html',
-            title: 'Pyramid of Azhr\'Khal (Three Asuras)',
-            description: 'Level recomendado 750+.',
-            image: 'assets/media/hunts-custom/PYRAMID OF AZHR’KHAL (THREE ASURAS).png',
-        },
-        {
-            url: 'the-fallen-usurpers.html',
-            title: 'The Fallen Usurpers',
-            description: 'Level recomendado 1600.',
-            image: 'assets/media/hunts-custom/THE FALLEN USURPERS.png',
+            url: 'hunts-custom.html',
+            title: 'Guia de Hunts Custom',
+            description: 'Acessos, criaturas, resistências, loot e bosses de todas as hunts custom.',
+            image: 'assets/media/hunts-custom/Firzen.gif',
         },
     ];
 
@@ -246,6 +222,7 @@
                 { url: 'rune-system.html', title: 'Enchanted Refil', description: 'Enchanted Tables, refils, produção por vocação e bônus de combate.', image: 'assets/media/menu/rune-system.gif' },
                 { url: 'voucher-system.html', title: 'Voucher', description: 'Ative e controle bônus temporários de EXP, loot, skills, bestiary, task kill e stamina protegida.', image: 'assets/media/voucher-system/golden-newspaper.gif' },
                 { url: 'hireling-enchanter.html', title: 'Hireling Enchanter', description: 'Produção enchanted offline, tiers de maestria e até três Workshop Slots.', image: 'assets/media/hireling-enchanter/hireling-enchanter.png' },
+                { url: 'castle-war.html', title: 'Castle War', description: 'Guerra diária de guilds pelo trono, Blood Coins e bônus de domínio.', image: 'assets/media/castle-war/castle-war-icon-transparent.png' },
                 { url: 'animus-mastery-soulpit.html', title: 'Animus Mastery &amp; SoulPit', description: 'Animus, Anonymous Mastery, Soul Cores e bônus de experiência.', image: 'assets/media/menu/animus-mastery-soulpit.gif' },
             ],
         },
@@ -256,6 +233,7 @@
                 { url: 'cadeia.html', title: 'Cadeia', description: 'Penas administrativas, fiança, Jail Warden, bloqueios e comandos.', image: 'assets/media/cadeia/prisoner.png' },
                 { url: 'comandos-do-servidor.html', title: 'Comandos do Servidor', description: 'Lista completa de comandos, organizada por categoria e função.', image: 'assets/media/menu/comandos-do-servidor.gif' },
                 { url: 'stamina.html', title: 'Stamina', description: 'Faixas, recuperação, banheiras e a quest de Stamina Bottle e Extension.', image: 'assets/media/items-wiki/Consumables/stamina bottler.gif' },
+                { url: 'aumento-das-taints.html', title: 'Aumento das Taints', description: 'Experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard.', image: 'assets/media/taints/goshnar-taint.gif' },
             ],
         },
         // Itens e Equipamentos e Colecionaveis ficam ocultos por enquanto.
@@ -311,17 +289,10 @@
                         </div>
                     </div>
 
-                    <div class="desktop-nav-group ${huntsActive ? 'active' : ''}">
-                        <button type="button" class="desktop-nav-trigger" aria-expanded="false">
-                            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6M16 16l3 3M19 13l2-2"/></svg>
-                            <span>Hunt Custom</span>
-                            <svg class="desktop-nav-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-                        </button>
-                        <div class="desktop-nav-dropdown desktop-nav-hunts">
-                            <div class="desktop-nav-heading"><strong>Hunt Custom</strong><span>Áreas exclusivas do servidor</span></div>
-                            ${getDesktopMenuLinks(huntsCustomMenuItems)}
-                        </div>
-                    </div>
+                    <a class="desktop-nav-direct ${huntsActive ? 'active' : ''}" href="hunts-custom.html">
+                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6M16 16l3 3M19 13l2-2"/></svg>
+                        <span>Hunt Custom</span>
+                    </a>
 
                     <a class="desktop-nav-direct ${scriptsActive ? 'active' : ''}" href="fabio-rockeiro-scripts.html">
                         <img src="assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png" alt="">
@@ -463,30 +434,12 @@
 
     function getHuntsCustomMenu() {
         const currentPage = getCurrentPage();
-        const isOpen = false;
-        const links = huntsCustomMenuItems.map((item) => {
-            const isActive = currentPage === item.url;
-
-            return `
-                    <a class="${isActive ? 'active' : ''}" href="${item.url}" data-hunts-custom-link>
-                        <img src="${item.image}" alt="" loading="lazy">
-                        <span>
-                            <strong>${item.title}</strong>
-                        </span>
-                    </a>
-                `;
-        }).join('');
-
         return `
-            <section class="menu-section ${isOpen ? 'is-open' : ''}" data-hunts-custom-menu>
-                <button type="button" class="menu-section-button" data-section-toggle>
+            <section class="menu-section" data-hunts-custom-menu>
+                <a class="menu-section-button ${currentPage === 'hunts-custom.html' ? 'active' : ''}" href="hunts-custom.html" data-hunts-custom-link>
                     <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 3 3"/><path d="m19 13 2-2"/></svg></span>
                     <strong>Hunts Custom</strong>
-                    <small>${huntsCustomMenuItems.length}</small>
-                </button>
-                <div class="menu-links">
-                    ${links}
-                </div>
+                </a>
             </section>
         `;
     }

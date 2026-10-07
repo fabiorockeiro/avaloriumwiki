@@ -47,3 +47,16 @@ Sprites obtidos da Tibia Wiki em GIF e convertidos para PNG transparente (primei
 - `the-plasmother-sprite.png`: [The Plasmother](https://www.tibiawiki.com.br/images/9/98/The_Plasmother.gif). Captura: `the-plasmother-original.png`; seção 30, The Plasmother — Quest POI.
 
 Orc Shield e Orc Helmet não foram encontrados como criaturas na Tibia Wiki. Ambos usam Orc Warlord como referência visual, conforme a aparência nas capturas; seus nomes no Avalorium foram mantidos. Feroxa usa a forma Humana, correspondente à captura. Locais de respawn seguem os dados do servidor fornecidos pelo usuário.
+
+## Minibosses adicionados em 2026-10-07
+
+As seis capturas foram fornecidas pelo usuário na ordem das seções 31 a 36. Cada captura original é preservada; a área do jogo e o minimapa usam recortes em CSS, como nas seções anteriores. Os nomes das áreas seguem a localização das criaturas na Tibia Wiki; os minimapas das capturas são a referência visual para os pontos de respawn no Avalorium.
+
+Sprites obtidos da Tibia Wiki em GIF. Arte Tibia / CipSoft.
+
+- `ancient-lion-knight-sprite.gif`: [Ancient Lion Knight](https://www.tibiawiki.com.br/images/2/2d/Ancient_Lion_Knight.gif). Captura: `ancient-lion-knight-original.png`; seção 31 — Bounac.
+- `adlerauge-sprite.gif`: [Adlerauge](https://www.tibiawiki.com.br/images/f/f3/Adlerauge.gif). Captura: `adlerauge-original.png`; seção 32 — Isle of Ada.
+- `michael-the-stalwart-sprite.gif`: [Michael the Stalwart](https://www.tibiawiki.com.br/images/2/23/Michael_the_Stalwart.gif). Captura: `michael-the-stalwart-original.png`; seção 33 — Isle of Ada.
+- `gralvalon-sprite.gif`: [Gralvalon](https://www.tibiawiki.com.br/images/5/58/Gralvalon.gif). Captura: `gralvalon-original.png`; seção 34 — Azzilon Catacombs.
+- `twisterror-sprite.gif`: [Twisterror](https://www.tibiawiki.com.br/images/0/08/Twisterror.gif). Captura: `twisterror-original.png`; seção 35 — Azzilon Catacombs.
+- `malvaroth-sprite.gif`: [Malvaroth](https://www.tibiawiki.com.br/images/1/13/Malvaroth.gif). Captura: `malvaroth-original.png`; seção 36 — Azzilon Catacombs.

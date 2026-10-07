@@ -4,72 +4,1085 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunts Custom | Avalorium OT Wiki</title>
-    <meta name="description" content="Menu das Hunts Custom do Avalorium OT com páginas individuais por hunt.">
+    <meta name="description" content="Guia completo das hunts custom do Avalorium: acesso, criaturas, dano, resistências, loot e bosses de Firzen a Azkalon.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/wiki.css">
     <link rel="stylesheet" href="assets/css/layout-consistency.css">
+    <link rel="stylesheet" href="assets/css/content-guides.css">
 </head>
-<body>
+<body class="layout-standard">
 <a class="skip-link" href="#conteudo">Ir para o conteudo</a>
 <header class="topbar">
     <div class="topbar-inner">
-        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-        <a class="brand" href="index.html"><img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT"><span class="sr-only">Avalorium OT Wiki</span></a>
-        <form class="top-search" action="search.html" role="search"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg><input name="q" type="search" placeholder="Buscar na wiki"></form>
-        <span class="server-pill"><span class="pulse-dot online"></span><strong>Hunts Custom</strong><small>Menu</small></span>
-        <nav class="quick-actions" aria-label="Acoes rapidas"><a href="index.html">Inicio</a><a href="search.html">Busca</a></nav>
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>        </button>
+
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+
+        <form class="top-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>--</strong>
+            <small>online</small>
+        </div>
+
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg><span>YouTube</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
     </div>
 </header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
 
-<button class="drawer-backdrop" type="button" data-drawer-close hidden aria-label="Fechar menu"></button>
-<aside class="mobile-drawer" data-drawer aria-hidden="true" aria-label="Menu mobile">
-    <div class="drawer-head"><a class="brand" href="index.html"><img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT"></a><button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
-    <nav class="drawer-menu" aria-label="Menu da wiki"></nav>
+    <form class="drawer-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg> YouTube</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+
+    <nav class="drawer-menu"></nav>
 </aside>
-
-<div class="wiki-shell">
-    <aside class="wiki-sidebar" aria-label="Menu da wiki"><div class="sidebar-sticky">
+    <div class="wiki-shell">
+        <aside class="wiki-sidebar" aria-label="Menu da wiki">
+    <div class="sidebar-sticky">
         <div class="sidebar-title">
             <span>Menu da Wiki</span>
             <small>0 artigos</small>
         </div>
     </div>
 </aside>
-    <main class="wiki-main" id="conteudo">
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Inicio</a><span>/</span><strong>Hunts Custom</strong></nav>
-        <section class="page-hero compact">
-            <span class="eyebrow">Menu</span>
-            <h1>Hunts Custom</h1>
-            <p>Escolha uma hunt para abrir a página dedicada, com lore, elementos, acesso, estratégia e criaturas com imagens grandes.</p>
-        </section>
-
-        <div class="feature-grid hunt-menu-grid">
-            <a class="article-card" href="void-corruption-depths-outer-void.html">
-                <span class="article-card-thumb"><img src="assets/media/hunts-custom/VOID CORRUPTION DEPTHS (OUTER VOID).png" alt="Void Corruption Depths (Outer Void)" loading="lazy"></span>
-                <span class="article-card-copy"><span class="article-card-title">Void Corruption Depths (Outer Void)</span><span class="article-card-desc">Level recomendado 1000 ~ 1200.</span><span class="article-card-meta">Hunts Custom</span></span>
-            </a>
-            <a class="article-card" href="void-corruption-depths-inner-netherbound.html">
-                <span class="article-card-thumb"><img src="assets/media/hunts-custom/VOID CORRUPTION DEPTHS (INNER NETHERBOUND).png" alt="Void Corruption Depths (Inner Netherbound)" loading="lazy"></span>
-                <span class="article-card-copy"><span class="article-card-title">Void Corruption Depths (Inner Netherbound)</span><span class="article-card-desc">Level recomendado 1200 ~ 1400.</span><span class="article-card-meta">Hunts Custom</span></span>
-            </a>
-            <a class="article-card" href="sanctum-of-fire-ice.html">
-                <span class="article-card-thumb"><img src="assets/media/hunts-custom/SANCTUM OF FIRE &amp; ICE.png" alt="Sanctum of Fire &amp; Ice" loading="lazy"></span>
-                <span class="article-card-copy"><span class="article-card-title">Sanctum of Fire &amp; Ice</span><span class="article-card-desc">Level recomendado 600+.</span><span class="article-card-meta">Hunts Custom</span></span>
-            </a>
-            <a class="article-card" href="pyramid-of-azhrkhal-three-asuras.html">
-                <span class="article-card-thumb"><img src="assets/media/hunts-custom/PYRAMID OF AZHR’KHAL (THREE ASURAS).png" alt="Pyramid of Azhr'Khal (Three Asuras)" loading="lazy"></span>
-                <span class="article-card-copy"><span class="article-card-title">Pyramid of Azhr'Khal (Three Asuras)</span><span class="article-card-desc">Level recomendado 750+.</span><span class="article-card-meta">Hunts Custom</span></span>
-            </a>
-            <a class="article-card" href="the-fallen-usurpers.html">
-                <span class="article-card-thumb"><img src="assets/media/hunts-custom/THE FALLEN USURPERS.png" alt="The Fallen Usurpers" loading="lazy"></span>
-                <span class="article-card-copy"><span class="article-card-title">The Fallen Usurpers</span><span class="article-card-desc">Level recomendado 1600.</span><span class="article-card-meta">Hunts Custom</span></span>
-            </a>
-        </div>
-    </main>
+        <main class="wiki-main" id="conteudo">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Início</a><span>/</span><strong>Hunts Custom</strong></nav>
+<article class="content-guide hc-guide"><section class="hero" id="topo">
+<p class="kicker">AvaloriumOT</p>
+<h1>Hunts custom, do Firzen aos Fallen</h1>
+<p class="lead">Guia das hunts exclusivas, na ordem de acesso: Sanctum of Fire &amp; Ice, Pyramid of Azhr'khal, Outer Void, Netherbound e The Fallen Usurpers. Cada bloco traz criaturas, mix de dano, resistências, cura e a tabela de loot.</p>
+</section><nav class="hc-toc" aria-label="Ir para uma hunt"><a href="#como-ler">Como ler</a><a href="#mapa">Acesso</a><a href="#sanctum">Sanctum</a><a href="#asuras">Pyramid</a><a href="#void">Outer Void</a><a href="#nether">Netherbound</a><a href="#zythar">Zy'Thar</a><a href="#fallen">Fallen Usurpers</a><a href="#azkalon">Azkalon</a></nav><section id="como-ler">
+<h2>Como ler os números</h2>
+<div class="note">
+    A chance de loot usa a base do servidor: 100.000 = 100%. O valor entre parênteses no dano é o teto do golpe, não a média por segundo. A fatia de cada elemento vem do comentário de balanceamento do monstro. Resistência positiva reduz o dano recebido; valor negativo aumenta. Hazard exigido nos portais é o de Gnomprona Gardens. Todos esses acessos pedem conta VIP.
+  </div>
+</section><section id="mapa">
+<h2>Mapa de acesso</h2>
+<div class="guide-table-scroll"><table>
+<thead>
+<tr><th>Hunt</th><th>Level</th><th>Hazard</th><th>Criaturas</th></tr>
+</thead>
+<tbody>
+<tr><td>Sanctum of Fire &amp; Ice</td><td>300</td><td>—</td><td>Frezee, Firen, Firzen</td></tr>
+<tr><td>New Elfs Firzen</td><td>800</td><td>10</td><td>mesmo bestiário do Sanctum</td></tr>
+<tr><td>Pyramid of Azhr'khal</td><td>900</td><td>10</td><td>True Cursed, Blessed e Enrage Asura</td></tr>
+<tr><td>Outer Void + Netherbound</td><td>1.000</td><td>12</td><td>Void e Netherbound, mais o boss Zy'Thar</td></tr>
+<tr><td>The Fallen Usurpers</td><td>1.200</td><td>10</td><td>Knight, Archer, Warlock, Commander, Lion Beast e Azkalon</td></tr>
+</tbody>
+</table></div>
+</section><section class="hunt" id="sanctum">
+<p class="kicker">Hunt 1 · level 300 · VIP</p>
+<h2>Sanctum of Fire &amp; Ice</h2>
+<p>Zona de humanoides de fogo e gelo. O portal “elf fire e ice” abre no level 300. O portal “New Elfs Firzen” pede level 800 e hazard 10. O bestiário das três criaturas aponta para o Sanctum of Fire &amp; Ice. Firzen é o alvo mais perigoso: mistura os dois elementos, paralisa e se cura.</p>
+<p>Os três compartilham o mesmo perfil elemental: <span class="neg">físico, energia e terra −5%</span>, fogo e gelo +15%. Imunes a paralisia e enxergam invisibilidade. Stone bag nível 1 sai a 0,02% em todos.</p>
+<article class="creature" id="frezee">
+<header>
+<h3>Frezee</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Frezee" loading="lazy" src="assets/media/hunts-custom/Freezee.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>22.860</strong></div>
+<div class="stat"><span>Vida</span><strong>31.000</strong></div>
+<div class="stat"><span>Velocidade</span><strong>230</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>105 / 105</strong></div>
+<div class="stat"><span>Mitigação</span><strong>3,00</strong></div>
 </div>
-<footer class="site-footer"><div><img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT"><span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span><span class="footer-credit">Designed by Fábio Rockeiro</span></div></footer>
+<div class="split">
+<div>
+<p><b>Dano.</b> Teto perto de 900 por segundo. Mix aproximado: gelo 57%, físico 43%.</p>
+<ul class="clean">
+<li>Melee físico até 1.000</li>
+<li>Ice strike 900–1.200, alcance 7</li>
+<li>Icicle berserker 1.100–1.400, área raio 3</li>
+<li>Smokeball de gelo 900–1.200, área no alvo</li>
+<li>Feixe de gelo 900–1.200, comprimento 5</li>
+<li>Ice chain 1.100–1.400</li>
+</ul>
+<p>Sem cura. Imune a troca de outfit.</p>
+</div>
+<div>
+<div class="elem"><span>Físico</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Terra</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Gelo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Sagrado / morte</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">44,80%</td><td>1–2</td></tr>
+<tr><td>Small enchanted sapphire</td><td class="chance">29,50%</td><td>2–3</td></tr>
+<tr><td>Cyan crystal fragment</td><td class="chance">14,75%</td><td>1–3</td></tr>
+<tr><td>Avalanche rune</td><td class="chance">9,95%</td><td>5–9</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">9,31%</td><td>1</td></tr>
+<tr><td>Blue gem</td><td class="chance">7,08%</td><td>1–2</td></tr>
+<tr><td>Ice flower</td><td class="chance">5,31%</td><td>1–3</td></tr>
+<tr><td>Glacier mask</td><td class="chance">3,54%</td><td>1</td></tr>
+<tr><td>Moonlight rod</td><td class="chance">3,19%</td><td>1</td></tr>
+<tr><td>Glacier shoes</td><td class="chance">3,10%</td><td>1</td></tr>
+<tr><td>Glacier amulet</td><td class="chance">1,73%</td><td>1</td></tr>
+<tr><td>Northwind rod</td><td class="chance">1,39%</td><td>1</td></tr>
+<tr><td>Ring of blue plasma</td><td class="chance">0,53%</td><td>1</td></tr>
+<tr><td>Collar of blue plasma</td><td class="chance">0,53%</td><td>1</td></tr>
+<tr><td>Glacier robe</td><td class="chance">0,20%</td><td>1</td></tr>
+<tr><td>Glacier kilt</td><td class="chance">0,20%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="firen">
+<header>
+<h3>Firen</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Firen" loading="lazy" src="assets/media/hunts-custom/Fieren.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>20.150</strong></div>
+<div class="stat"><span>Vida</span><strong>31.500</strong></div>
+<div class="stat"><span>Velocidade</span><strong>230</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>105 / 105</strong></div>
+<div class="stat"><span>Mitigação</span><strong>3,00</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Teto perto de 900 por segundo. Mix aproximado: fogo 67%, físico 33%.</p>
+<ul class="clean">
+<li>Melee físico até 1.000</li>
+<li>Flame strike 900–1.200 a cada 1 s, alcance 7</li>
+<li>Fireball em cruz 1.100–1.400, raio 2</li>
+<li>Blast ball 900–1.200, área raio 3</li>
+<li>Fire berserk 900–1.200, área raio 3</li>
+<li>Fire chain 1.100–1.400</li>
+</ul>
+<p>Sem cura. Imune a troca de outfit. Troca de alvo com peso em quem está com pouca vida e em quem causa mais dano.</p>
+</div>
+<div>
+<div class="elem"><span>Físico</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Terra</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Gelo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Sagrado / morte</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">42,67%</td><td>1–2</td></tr>
+<tr><td>Small enchanted ruby</td><td class="chance">27,36%</td><td>2–3</td></tr>
+<tr><td>Red crystal fragment</td><td class="chance">13,68%</td><td>1–2</td></tr>
+<tr><td>Great fireball rune</td><td class="chance">9,95%</td><td>3–7</td></tr>
+<tr><td>Ultimate health potion</td><td class="chance">9,31%</td><td>1</td></tr>
+<tr><td>Red gem</td><td class="chance">5,47%</td><td>1–2</td></tr>
+<tr><td>Wand of dragonbreath</td><td class="chance">2,96%</td><td>1</td></tr>
+<tr><td>Magma monocle</td><td class="chance">2,88%</td><td>1</td></tr>
+<tr><td>Magma boots</td><td class="chance">2,88%</td><td>1</td></tr>
+<tr><td>Magma amulet</td><td class="chance">1,61%</td><td>1</td></tr>
+<tr><td>Collar of red plasma</td><td class="chance">0,49%</td><td>1</td></tr>
+<tr><td>Ring of red plasma</td><td class="chance">0,49%</td><td>1</td></tr>
+<tr><td>Magma legs</td><td class="chance">0,18%</td><td>1</td></tr>
+<tr><td>Magma coat</td><td class="chance">0,18%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="firzen">
+<header>
+<h3>Firzen</h3>
+<span class="tag melee">híbrido fogo e gelo</span>
+</header><figure class="creature-clip"><img alt="Firzen" loading="lazy" src="assets/media/hunts-custom/Firzen.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>24.290</strong></div>
+<div class="stat"><span>Vida</span><strong>32.500</strong></div>
+<div class="stat"><span>Velocidade</span><strong>230</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>110 / 110</strong></div>
+<div class="stat"><span>Mitigação</span><strong>3,10</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Teto perto de 1.100 por segundo. Mix aproximado: gelo 39%, fogo 32%, físico 29%.</p>
+<ul class="clean">
+<li>Melee físico até 1.100</li>
+<li>Ice strike 1.000–1.300</li>
+<li>Icicle berserker 1.100–1.400, área raio 3</li>
+<li>Smokeball de gelo 900–1.200</li>
+<li>Feixe de gelo 900–1.200</li>
+<li>Flame strike 900–1.200 a cada 1 s</li>
+<li>Fireball em cruz 1.000–1.300</li>
+<li>Blast ball e fire berserk 900–1.200</li>
+<li>Fireice chain: 500–800 por salto, alternando gelo e fogo, até 4 saltos</li>
+<li>Paralisia −600 de velocidade por 20 s</li>
+</ul>
+<p><b>Defesa.</b> Cura 600–1.100 com 25% de chance a cada 2 s. Pode ser iludido.</p>
+</div>
+<div>
+<div class="elem"><span>Físico</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Terra</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Gelo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Sagrado / morte</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">38,69%</td><td>1–2</td></tr>
+<tr><td>Small enchanted sapphire</td><td class="chance">24,18%</td><td>2–5</td></tr>
+<tr><td>Small enchanted ruby</td><td class="chance">24,18%</td><td>2–5</td></tr>
+<tr><td>Avalanche rune</td><td class="chance">16,85%</td><td>7–15</td></tr>
+<tr><td>Great fireball rune</td><td class="chance">16,85%</td><td>7–15</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">15,78%</td><td>1</td></tr>
+<tr><td>Ultimate health potion</td><td class="chance">15,78%</td><td>1</td></tr>
+<tr><td>Cyan crystal fragment</td><td class="chance">4,84%</td><td>2–5</td></tr>
+<tr><td>Red crystal fragment</td><td class="chance">4,84%</td><td>2–3</td></tr>
+<tr><td>Ice flower</td><td class="chance">4,35%</td><td>1–5</td></tr>
+<tr><td>Blue gem</td><td class="chance">3,87%</td><td>1–2</td></tr>
+<tr><td>Red gem</td><td class="chance">3,87%</td><td>1–3</td></tr>
+<tr><td>Glacier mask</td><td class="chance">2,90%</td><td>1</td></tr>
+<tr><td>Moonlight rod / wand of dragonbreath</td><td class="chance">2,61%</td><td>1</td></tr>
+<tr><td>Glacier shoes / magma monocle / magma boots</td><td class="chance">2,54%</td><td>1</td></tr>
+<tr><td>Glacier amulet / magma amulet</td><td class="chance">1,42%</td><td>1</td></tr>
+<tr><td>Northwind rod</td><td class="chance">1,14%</td><td>1</td></tr>
+<tr><td>Ring e collar de plasma azul ou vermelho</td><td class="chance">0,44% cada</td><td>1</td></tr>
+<tr><td>Glacier robe, glacier kilt, magma legs, magma coat</td><td class="chance">0,16% cada</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+</section><section class="hunt" id="asuras">
+<p class="kicker">Hunt 2 · level 900 · hazard 10 · VIP</p>
+<h2>Pyramid of Azhr'khal</h2>
+<p>Três asuras verdadeiras, cada uma com um elemento dominante e uma fraqueza clara. Vida alta para o nível de experiência: 49.200 de HP e 24.300 de exp nas três. Armadura 110, defesa 110, mitigação 3,10, velocidade 250 a 265. Stone bag nível 1 a 0,03%.</p>
+<article class="creature" id="cursed">
+<header>
+<h3>True Cursed Asura</h3>
+<span class="tag melee">morte</span>
+</header><figure class="creature-clip"><img alt="True Cursed Asura" loading="lazy" src="assets/media/hunts-custom/True Cursed Asura.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Vida / exp</span><strong>49.200 / 24.300</strong></div>
+<div class="stat"><span>Velocidade</span><strong>260</strong></div>
+<div class="stat"><span>Teto de dano</span><strong>~1.620 /s</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Morte 55%, físico 30%, life drain 15%.</p>
+<ul class="clean">
+<li>Melee até 2.060 e maldição de 11.200 ao longo do tempo</li>
+<li>Death no alvo 2.300–2.900, alcance 7</li>
+<li>Death em área raio 3, 2.300–2.900</li>
+<li>Life drain em cruz 1.460–2.060</li>
+</ul>
+<p><b>Defesa.</b> Acelera +320 por 5 s com 50% de chance a cada 2 s. Sem cura direta.</p>
+</div>
+<div>
+<div class="elem"><span>Morte</span><span class="pos">+80%</span></div>
+<div class="elem"><span>Físico</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Sagrado</span><span class="neg">−10%</span></div>
+<div class="elem"><span>Energia, terra, fogo, gelo</span><span class="neg">−5%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">44,12%</td><td>1–2</td></tr>
+<tr><td>Gold ingot</td><td class="chance">14,71%</td><td>1</td></tr>
+<tr><td>Undead heart</td><td class="chance">11,61%</td><td>4–8</td></tr>
+<tr><td>Demonic essence</td><td class="chance">9,75%</td><td>4–9</td></tr>
+<tr><td>Knight armor</td><td class="chance">6,97%</td><td>1</td></tr>
+<tr><td>Golden lotus brooch</td><td class="chance">3,48%</td><td>1</td></tr>
+<tr><td>Peacock feather fan</td><td class="chance">3,14%</td><td>1–3</td></tr>
+<tr><td>Skullcracker armor</td><td class="chance">0,52%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,03%</td><td>1</td></tr>
+<tr><td>Tainted heart</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="blessed">
+<header>
+<h3>True Blessed Asura</h3>
+<span class="tag melee">sagrado</span>
+</header><figure class="creature-clip"><img alt="True Blessed Asura" loading="lazy" src="assets/media/hunts-custom/True Blessed Asura.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Vida / exp</span><strong>49.200 / 24.300</strong></div>
+<div class="stat"><span>Velocidade</span><strong>250</strong></div>
+<div class="stat"><span>Teto de dano</span><strong>~1.620 /s</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico 50%, sagrado 42%, life drain 8%.</p>
+<ul class="clean">
+<li>Melee até 2.020</li>
+<li>Holy no alvo 1.950–2.490</li>
+<li>Holy em área 1.300–1.660, raio 4</li>
+<li>Holy em cruz 2.130–2.490</li>
+<li>Life drain em onda 1.130–1.420</li>
+<li>Lentidão −100 por 3 s</li>
+</ul>
+<p><b>Defesa.</b> Cura 200–400 (15%) e acelera +320 por 5 s (15%).</p>
+</div>
+<div>
+<div class="elem"><span>Sagrado</span><span class="pos">+80%</span></div>
+<div class="elem"><span>Físico</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−20%</span></div>
+<div class="elem"><span>Energia, terra, fogo, gelo</span><span class="neg">−5%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Platinum coin</td><td class="chance">42,66%</td><td>20–32</td></tr>
+<tr><td>Crystal coin</td><td class="chance">42,66%</td><td>1–2</td></tr>
+<tr><td>Small topaz</td><td class="chance">14,22%</td><td>4–13</td></tr>
+<tr><td>Gold ingot</td><td class="chance">14,22%</td><td>1</td></tr>
+<tr><td>Golden lotus brooch</td><td class="chance">6,74%</td><td>1</td></tr>
+<tr><td>Golden armor / crusader helmet</td><td class="chance">3,41% cada</td><td>1</td></tr>
+<tr><td>Demonic essence</td><td class="chance">3,37%</td><td>1–3</td></tr>
+<tr><td>Peacock feather fan / small diamond</td><td class="chance">3,03%</td><td>1–3 / 3–9</td></tr>
+<tr><td>Yellow gem</td><td class="chance">2,43%</td><td>1–5</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,03%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="enrage">
+<header>
+<h3>True Enrage Asura</h3>
+<span class="tag melee">físico</span>
+</header><figure class="creature-clip"><img alt="True Enrage Asura" loading="lazy" src="assets/media/hunts-custom/True Enrage Asura.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Vida / exp</span><strong>49.200 / 24.300</strong></div>
+<div class="stat"><span>Velocidade</span><strong>265</strong></div>
+<div class="stat"><span>Teto de dano</span><strong>~1.620 /s</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico 65%, life drain 35%. Derruba magic walls.</p>
+<ul class="clean">
+<li>Melee até 1.770</li>
+<li>Físico no alvo 2.130–2.710</li>
+<li>Físico em área raio 4, 1.660–2.240</li>
+<li>Life drain em área 1.230–1.840</li>
+<li>Sparks chain 1.660–2.240</li>
+</ul>
+<p><b>Defesa.</b> Cura 250–500 (15%) e acelera +320 por 5 s (15%).</p>
+</div>
+<div>
+<div class="elem"><span>Físico</span><span class="pos">+30%</span></div>
+<div class="elem"><span>Energia, terra, fogo, gelo</span><span class="neg">−10%</span></div>
+<div class="elem"><span>Sagrado / morte</span><span class="neg">−10%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Platinum coin</td><td class="chance">47,69%</td><td>13–32</td></tr>
+<tr><td>Crystal coin</td><td class="chance">47,68%</td><td>1–2</td></tr>
+<tr><td>Golden lotus brooch</td><td class="chance">15,90%</td><td>1–6</td></tr>
+<tr><td>Peacock feather fan</td><td class="chance">10,54%</td><td>1–3</td></tr>
+<tr><td>Bloodshot giant eye</td><td class="chance">10,50%</td><td>1</td></tr>
+<tr><td>Crown legs</td><td class="chance">3,77%</td><td>1</td></tr>
+<tr><td>Crusader helmet</td><td class="chance">3,39%</td><td>1</td></tr>
+<tr><td>Giant sword</td><td class="chance">0,56%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,03%</td><td>1</td></tr>
+<tr><td>Darklight heart</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+</section><section class="hunt" id="void">
+<p class="kicker">Hunt 3 · level 1.000 · hazard 12 · VIP</p>
+<h2>Void Corruption Depths — Outer Void</h2>
+<p>Primeira zona do abismo. Mortos-vivos com morte em +50% e gelo ou terra como fraqueza. Armadura 120, defesa 120, mitigação 2,75. Bag You Desire a 0,005% e stone bag nível 1 a 0,04% nas três.</p>
+<article class="creature" id="ravager">
+<header>
+<h3>Void Demon Ravager</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Void Demon Ravager" loading="lazy" src="assets/media/hunts-custom/Void Demon Ravager.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>37.908</strong></div>
+<div class="stat"><span>Vida</span><strong>53.630</strong></div>
+<div class="stat"><span>Velocidade</span><strong>260</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico 62,5%, fogo 18,5%, energia 14%, life drain 5%. Derruba magic walls.</p>
+<ul class="clean">
+<li>Melee até 2.250</li>
+<li>Broodriderewave 2.540–3.250</li>
+<li>Life drain em linha 2.540–3.250</li>
+<li>Físico em área 2.830–3.300, raio 4</li>
+<li>Energia à distância 2.590–3.300</li>
+</ul>
+<p><b>Defesa.</b> Cura 100–625 com 50% a cada 2 s e acelera +800 por 5 s (35%).</p>
+</div>
+<div>
+<div class="elem"><span>Morte</span><span class="pos">+50%</span></div>
+<div class="elem"><span>Físico</span><span class="pos">+30%</span></div>
+<div class="elem"><span>Energia</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+10%</span></div>
+<div class="elem"><span>Sagrado</span><span class="neg">−15%</span></div>
+<div class="elem"><span>Terra / gelo</span><span class="neg">−20%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Ultimate health potion</td><td class="chance">43,75%</td><td>1–5</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">37,50%</td><td>1–4</td></tr>
+<tr><td>Crystal coin</td><td class="chance">29,95%</td><td>1–2</td></tr>
+<tr><td>Small ruby</td><td class="chance">20,59%</td><td>1–25</td></tr>
+<tr><td>Small sapphire, red gem, blue gem, green gem</td><td class="chance">18,72% cada</td><td>1–25 / 1–4</td></tr>
+<tr><td>Shadow sceptre</td><td class="chance">8,89%</td><td>1</td></tr>
+<tr><td>Golden armor</td><td class="chance">3,74%</td><td>1</td></tr>
+<tr><td>Skull helmet</td><td class="chance">2,34%</td><td>1</td></tr>
+<tr><td>Demon shield</td><td class="chance">1,87%</td><td>1</td></tr>
+<tr><td>Bloody edge</td><td class="chance">1,69%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,04%</td><td>1</td></tr>
+<tr><td>Pinkdemon heart</td><td class="chance">0,013%</td><td>1</td></tr>
+<tr><td>Bag You Desire</td><td class="chance">0,005%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="brute">
+<header>
+<h3>Void Brute Corrupted</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Void Brute Corrupted" loading="lazy" src="assets/media/hunts-custom/Corrupted Void Brute.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>39.488</strong></div>
+<div class="stat"><span>Vida</span><strong>55.860</strong></div>
+<div class="stat"><span>Velocidade</span><strong>200</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico 60%, morte 18%, energia 14%, life drain 8%.</p>
+<ul class="clean">
+<li>Melee até 2.050</li>
+<li>Físico em área 2.840–3.620, raio 4</li>
+<li>Energia no alvo 2.230–3.020</li>
+<li>Death chain 2.230–3.020</li>
+<li>Sparks chain 1.700–2.530</li>
+<li>Lentidão −800 por 30 s</li>
+</ul>
+<p><b>Defesa.</b> Cura 100–625 com 50% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Morte</span><span class="pos">+50%</span></div>
+<div class="elem"><span>Físico</span><span class="pos">+30%</span></div>
+<div class="elem"><span>Energia</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+10%</span></div>
+<div class="elem"><span>Sagrado</span><span class="neg">−15%</span></div>
+<div class="elem"><span>Terra / gelo</span><span class="neg">−20%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Ultimate mana potion</td><td class="chance">39,00%</td><td>1–4</td></tr>
+<tr><td>Darklight basalt chunk</td><td class="chance">35,75%</td><td>1</td></tr>
+<tr><td>Crystal coin</td><td class="chance">29,10%</td><td>1–2</td></tr>
+<tr><td>Strange helmet</td><td class="chance">28,37%</td><td>1</td></tr>
+<tr><td>Small topaz</td><td class="chance">19,86%</td><td>1–26</td></tr>
+<tr><td>Blue gem / small emerald</td><td class="chance">18,91%</td><td>1–4 / 1–26</td></tr>
+<tr><td>Knight legs</td><td class="chance">12,77%</td><td>1</td></tr>
+<tr><td>Magma clump</td><td class="chance">12,29%</td><td>1–7</td></tr>
+<tr><td>White gem</td><td class="chance">11,35%</td><td>1–4</td></tr>
+<tr><td>Knight armor</td><td class="chance">8,98%</td><td>1</td></tr>
+<tr><td>Tower shield</td><td class="chance">4,73%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,04%</td><td>1</td></tr>
+<tr><td>Bag You Desire</td><td class="chance">0,005%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="rift">
+<header>
+<h3>Void Riftcaster</h3>
+<span class="tag ranged">distância 3</span>
+</header><figure class="creature-clip"><img alt="Void Riftcaster" loading="lazy" src="assets/media/hunts-custom/Void Riftcaster.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>41.067</strong></div>
+<div class="stat"><span>Vida</span><strong>55.970</strong></div>
+<div class="stat"><span>Velocidade</span><strong>300</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Energia 60%, físico 25%, morte 11%, fogo 4%. O caster de maior alcance da zona.</p>
+<ul class="clean">
+<li>Melee até 2.480</li>
+<li>Death em onda 3.320–4.200</li>
+<li>Energia no alvo 3.210–4.060, raio 4</li>
+<li>Energia em área raio 8, 2.020–2.850</li>
+<li>Extended energy chain 2.040–2.880</li>
+<li>Large pink ring 3.270–4.130</li>
+<li>Energy barrage 2.080–2.930</li>
+</ul>
+<p><b>Defesa.</b> Cura forte: 1.000–2.225 com 20% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Morte</span><span class="pos">+50%</span></div>
+<div class="elem"><span>Energia</span><span class="pos">+35%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+10%</span></div>
+<div class="elem"><span>Físico</span><span class="zero">0%</span></div>
+<div class="elem"><span>Sagrado</span><span class="neg">−15%</span></div>
+<div class="elem"><span>Terra</span><span class="neg">−20%</span></div>
+<div class="elem"><span>Gelo</span><span class="neg">−25%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Dark obsidian splinter</td><td class="chance">33,75%</td><td>1</td></tr>
+<tr><td>Ultimate health potion</td><td class="chance">33,75%</td><td>1–4</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">30,38%</td><td>1–4</td></tr>
+<tr><td>Crystal coin</td><td class="chance">28,11%</td><td>1–2</td></tr>
+<tr><td>Blue gem</td><td class="chance">20,88%</td><td>1–4</td></tr>
+<tr><td>Violet gem</td><td class="chance">19,17%</td><td>1–4</td></tr>
+<tr><td>Onyx chip</td><td class="chance">11,39%</td><td>1–27</td></tr>
+<tr><td>Small sapphire</td><td class="chance">8,54%</td><td>1–27</td></tr>
+<tr><td>White gem</td><td class="chance">5,69%</td><td>1–4</td></tr>
+<tr><td>Spellbook of enlightenment</td><td class="chance">4,84%</td><td>1</td></tr>
+<tr><td>Skull helmet / oriental shoes</td><td class="chance">1,90%</td><td>1</td></tr>
+<tr><td>Golden armor</td><td class="chance">1,14%</td><td>1</td></tr>
+<tr><td>Crystalline armor</td><td class="chance">0,24%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,04%</td><td>1</td></tr>
+<tr><td>Bag You Desire</td><td class="chance">0,005%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+</section><section class="hunt" id="nether">
+<p class="kicker">Hunt 4 · mesmo portal · level 1.000 · hazard 12</p>
+<h2>Void Corruption Depths — Netherbound</h2>
+<p>Segunda zona, mais vida e golpes mais altos. O dragão e o cérebro usam terra; o demônio usa sagrado e físico. Crystal coin a 60% (2–4) nas três. Primal bag a 0,01% e stone bag nível 1 a 0,05%.</p>
+<article class="creature" id="ndemon">
+<header>
+<h3>Netherbound Demon</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Netherbound Demon" loading="lazy" src="assets/media/hunts-custom/Netherbound Demon.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>45.490</strong></div>
+<div class="stat"><span>Vida</span><strong>63.760</strong></div>
+<div class="stat"><span>Velocidade</span><strong>320</strong></div>
+<div class="stat"><span>Armadura</span><strong>120</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Sagrado 45%, físico 35%, life drain 20%. Derruba magic walls.</p>
+<ul class="clean">
+<li>Melee até 2.810</li>
+<li>Holy em área raio 8, 3.180–4.060</li>
+<li>Holy no alvo 3.160–4.030</li>
+<li>Físico em área raio 6, 3.590–4.200</li>
+<li>Life drain em linha 3.130–3.990</li>
+</ul>
+<p><b>Defesa.</b> Cura 105–656 (50%) e acelera +840 por 5 s (35%).</p>
+</div>
+<div>
+<div class="elem"><span>Morte</span><span class="pos">+50%</span></div>
+<div class="elem"><span>Sagrado</span><span class="pos">+40%</span></div>
+<div class="elem"><span>Terra</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+10%</span></div>
+<div class="elem"><span>Físico</span><span class="neg">−15%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−25%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">60%</td><td>2–4</td></tr>
+<tr><td>Underworld rod</td><td class="chance">40,20%</td><td>1</td></tr>
+<tr><td>Supreme health potion</td><td class="chance">31,25%</td><td>1–6</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">28,75%</td><td>1–5</td></tr>
+<tr><td>Blue gem</td><td class="chance">21,75%</td><td>1–4</td></tr>
+<tr><td>Red gem</td><td class="chance">19,50%</td><td>1–4</td></tr>
+<tr><td>Small ruby</td><td class="chance">18,75%</td><td>1–31</td></tr>
+<tr><td>Small sapphire / green gem</td><td class="chance">17,25%</td><td>1–31 / 1–4</td></tr>
+<tr><td>Demon shield</td><td class="chance">3,45%</td><td>1</td></tr>
+<tr><td>Golden armor</td><td class="chance">3,08%</td><td>1</td></tr>
+<tr><td>Giant sword / heavy mace</td><td class="chance">2,93%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,05%</td><td>1</td></tr>
+<tr><td>Verdant heart</td><td class="chance">0,013%</td><td>1</td></tr>
+<tr><td>Primal bag</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="ndragon">
+<header>
+<h3>Netherbound Dragon</h3>
+<span class="tag melee">terra</span>
+</header><figure class="creature-clip"><img alt="Netherbound Dragon" loading="lazy" src="assets/media/hunts-custom/Netherbound Dragon.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>49.360</strong></div>
+<div class="stat"><span>Vida</span><strong>68.540</strong></div>
+<div class="stat"><span>Velocidade</span><strong>300</strong></div>
+<div class="stat"><span>Armadura / mitigação</span><strong>125 / 2,30</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Terra 55%, físico 30%, morte 15%. O ataque básico já é terra. Derruba magic walls.</p>
+<ul class="clean">
+<li>Golpe de terra até 2.670</li>
+<li>Terra em área raio 6, 4.010–5.130</li>
+<li>Físico em área 2.950–3.990</li>
+<li>Extended death chain 3.100–4.190</li>
+<li>Lentidão −800 por 20 s</li>
+</ul>
+<p><b>Defesa.</b> Cura 200–700 com 40% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Terra</span><span class="pos">+30%</span></div>
+<div class="elem"><span>Físico</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Morte</span><span class="pos">+10%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−10%</span></div>
+<div class="elem"><span>Fogo</span><span class="neg">−25%</span></div>
+<div class="elem"><span>Sagrado</span><span class="neg">−25%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin / small emerald / small topaz</td><td class="chance">60%</td><td>2–4 / 1–26</td></tr>
+<tr><td>Magma clump</td><td class="chance">42,86%</td><td>1–5</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">30,94%</td><td>1–7</td></tr>
+<tr><td>Darklight basalt chunk</td><td class="chance">29,45%</td><td>1</td></tr>
+<tr><td>Blue gem</td><td class="chance">16,77%</td><td>1–7</td></tr>
+<tr><td>White gem</td><td class="chance">14,98%</td><td>1–7</td></tr>
+<tr><td>Dragon lance</td><td class="chance">1,08%</td><td>1</td></tr>
+<tr><td>Royal helmet</td><td class="chance">9,77%</td><td>1</td></tr>
+<tr><td>Dragon slayer</td><td class="chance">9,59%</td><td>1</td></tr>
+<tr><td>Dragon scale mail</td><td class="chance">3,18%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,05%</td><td>1</td></tr>
+<tr><td>Primal bag</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="nbrain">
+<header>
+<h3>Netherbound Brain</h3>
+<span class="tag ranged">distância 4</span>
+</header><figure class="creature-clip"><img alt="Netherbound Brain" loading="lazy" src="assets/media/hunts-custom/Brain Netherbound.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>53.387</strong></div>
+<div class="stat"><span>Vida</span><strong>72.060</strong></div>
+<div class="stat"><span>Velocidade</span><strong>315</strong></div>
+<div class="stat"><span>Armadura</span><strong>120</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Terra 70%, morte 20%, físico 10%. Prioriza quem está ferido e quem causa mais dano.</p>
+<ul class="clean">
+<li>Melee até 3.350</li>
+<li>Terra no alvo 4.190–5.300</li>
+<li>Terra em área raio 5, 4.680–5.910</li>
+<li>Death em onda a cada 4 s, 4.380–5.530</li>
+<li>Large death ring 4.640–5.870</li>
+<li>Earth barrage 2.860–4.020</li>
+<li>Extended death chain 2.740–3.850</li>
+</ul>
+<p><b>Defesa.</b> Cura 1.100–2.300 com 18% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Terra</span><span class="pos">+40%</span></div>
+<div class="elem"><span>Morte</span><span class="pos">+30%</span></div>
+<div class="elem"><span>Físico</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Sagrado</span><span class="neg">−15%</span></div>
+<div class="elem"><span>Fogo</span><span class="neg">−25%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">60%</td><td>2–4</td></tr>
+<tr><td>Terra rod</td><td class="chance">37,58%</td><td>1</td></tr>
+<tr><td>Dark obsidian splinter</td><td class="chance">31,05%</td><td>1</td></tr>
+<tr><td>Ultimate health potion</td><td class="chance">29,70%</td><td>1–5</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">28,35%</td><td>1–5</td></tr>
+<tr><td>Blue gem</td><td class="chance">21,06%</td><td>1–7</td></tr>
+<tr><td>Onyx chip</td><td class="chance">20,25%</td><td>1–20</td></tr>
+<tr><td>Violet gem</td><td class="chance">18,63%</td><td>1–7</td></tr>
+<tr><td>Small sapphire</td><td class="chance">17,01%</td><td>1–7</td></tr>
+<tr><td>White gem</td><td class="chance">14,58%</td><td>1–3</td></tr>
+<tr><td>Inkwell</td><td class="chance">12,31%</td><td>1–5</td></tr>
+<tr><td>Skull helmet</td><td class="chance">3,40%</td><td>1</td></tr>
+<tr><td>Spellbook of enlightenment</td><td class="chance">3,08%</td><td>1</td></tr>
+<tr><td>Golden armor</td><td class="chance">2,84%</td><td>1</td></tr>
+<tr><td>Piece of dead brain</td><td class="chance">1,75%</td><td>1</td></tr>
+<tr><td>Greenwood coat</td><td class="chance">0,73%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,05%</td><td>1</td></tr>
+<tr><td>Primal bag</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+</section><section class="hunt" id="zythar">
+<p class="kicker">Boss da Void Corruption Depths · archfoe</p>
+<h2>Zy'Thar</h2>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>15.000.000</strong></div>
+<div class="stat"><span>Vida</span><strong>5.500.000</strong></div>
+<div class="stat"><span>Velocidade</span><strong>450</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>135 / 135</strong></div>
+</div>
+<p>Todos os elementos em +25%. Imune a paralisia e enxerga invisibilidade. Cura 6.250–8.750 (30% a cada 2 s) e acelera +700 por 6 s. Invoca até 4 criaturas: Netherbound Demon e Void Demon Ravager.</p>
+<p><b>Dano base.</b> Mix aproximado morte 50%, gelo 40%, físico 10%. Teto perto de 3.040 por segundo, fora do Doom.</p>
+<ul class="clean">
+<li>Melee 3.170–4.420</li>
+<li>Ice cataclysm 3.100–4.790, área raio 6 no alvo</li>
+<li>Death beam 3.380–5.070, linha de 8 sqm</li>
+<li>Ring of ice 4.030–6.050</li>
+<li>Frozen spear 4.110–5.890 no alvo</li>
+<li>Soul rupture 3.930–5.900, área raio 6</li>
+</ul>
+<p><b>Doom</b>, a cada cerca de 6 s, escolhe um dos quatro ataques telegrafados:</p>
+<ul class="clean">
+<li><b>Abyssal Meteor</b> (morte): marca a área do alvo e cai 5.600–9.600 em 5×5.</li>
+<li><b>Frozen Downpour</b> (gelo): 6 impactos de 3.680–6.170 em 3×3 que seguem o alvo. Com 30% de vida ou menos, sobe para 8 impactos.</li>
+<li><b>Blighted Bloom</b> (terra): anéis que abrem a partir do alvo, 3.900–6.900. O primeiro anel é um 3×3 cheio; os seguintes são só a borda, até raio 4. A folga entre os anéis é o espaço seguro.</li>
+<li><b>Void Cataclysm</b> (morte): só com 30% de vida ou menos. Cinco ondas de impactos aleatórios num raio de 6 sqm ao redor do boss, 4.680–8.580 por golpe.</li>
+</ul>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">60%</td><td>até 200</td></tr>
+<tr><td>Supreme health potion</td><td class="chance">55%</td><td>até 300</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">55%</td><td>até 300</td></tr>
+<tr><td>Ultimate spirit potion</td><td class="chance">52%</td><td>até 300</td></tr>
+<tr><td>Blue, red, violet e yellow gem; giant amethyst, emerald, ruby, sapphire e topaz</td><td class="chance">50% cada</td><td>até 20</td></tr>
+<tr><td>Cobalt ridge, darklight figurine, dragon figurine</td><td class="chance">50%</td><td>1</td></tr>
+<tr><td>Fiery tear</td><td class="chance">50%</td><td>até 10</td></tr>
+<tr><td>Golden raid token</td><td class="chance">1,20%</td><td>1–5</td></tr>
+<tr><td>Pinkdemon heart / verdant heart</td><td class="chance">1,00% cada</td><td>1</td></tr>
+<tr><td>Primal bag / Bag You Desire</td><td class="chance">0,70%</td><td>1</td></tr>
+<tr><td>Special bag / Bag You Covet</td><td class="chance">0,50%</td><td>1</td></tr>
+<tr><td>Void upgrade</td><td class="chance">0,10%</td><td>1</td></tr>
+<tr><td>Corrupted void bag</td><td class="chance">0,05%</td><td>1, unique</td></tr>
+</tbody>
+</table></div>
+</section><section class="hunt" id="fallen">
+<p class="kicker">Hunt 5 · level 1.200 · hazard 10 · VIP</p>
+<h2>The Fallen Usurpers</h2>
+<p>Humanos e a fera do leão caído. A defesa elemental é baixa: a pressão vem da cura alta e dos números de dano. Quase todos curam milhares por tick. Morte é a fraqueza recorrente (−5% ou −10%). Special stone material sai por volta de 0,02% e stone bag nível 1 a 0,06%.</p>
+<article class="creature" id="knight">
+<header>
+<h3>Fallen Usurper Knight</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Fallen Usurper Knight" loading="lazy" src="assets/media/hunts-custom/Fallen Usurper Knight.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>58.409</strong></div>
+<div class="stat"><span>Vida</span><strong>80.060</strong></div>
+<div class="stat"><span>Velocidade</span><strong>280</strong></div>
+<div class="stat"><span>Armadura / mitigação</span><strong>135 / 3,20</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico ~86%, fogo ~14%. Troca de alvo com frequência (40%).</p>
+<ul class="clean">
+<li>Melee até 3.510</li>
+<li>Físico no alvo 4.010–5.120</li>
+<li>Fogo em área raio 4, 3.940–5.030</li>
+<li>Físico em área raio 3, 4.340–5.080</li>
+</ul>
+<p><b>Defesa.</b> Cura 7.750–13.950 com 35% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Físico / fogo</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Demais</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>Lion crest</td><td class="chance">70%</td><td>19–44</td></tr>
+<tr><td>Gold ingot</td><td class="chance">48,82%</td><td>1</td></tr>
+<tr><td>Red gem / blue gem</td><td class="chance">24,50%</td><td>1–9</td></tr>
+<tr><td>Green gem</td><td class="chance">19,25%</td><td>1–9</td></tr>
+<tr><td>Violet gem</td><td class="chance">15,75%</td><td>1–9</td></tr>
+<tr><td>Lion cloak patch</td><td class="chance">9,79%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,019%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="archer">
+<header>
+<h3>Fallen Usurper Archer</h3>
+<span class="tag ranged">distância 3</span>
+</header><figure class="creature-clip"><img alt="Fallen Usurper Archer" loading="lazy" src="assets/media/hunts-custom/Fallen Usurper Arche.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>64.785</strong></div>
+<div class="stat"><span>Vida</span><strong>92.090</strong></div>
+<div class="stat"><span>Velocidade</span><strong>280</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>128 / 125</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico ~78%, fogo ~22%. O ataque básico já é um tiro físico até 3.470.</p>
+<ul class="clean">
+<li>Fogo no alvo 4.920–6.290, alcance 7</li>
+<li>Físico em área no alvo 4.960–6.340, raio 4</li>
+</ul>
+<p><b>Defesa.</b> Cura 7.700–11.550 com 28% a cada 2 s. Mitigação 3,10.</p>
+</div>
+<div>
+<div class="elem"><span>Físico / fogo / gelo / sagrado</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−10%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Ultimate health potion</td><td class="chance">100%</td><td>até 4</td></tr>
+<tr><td>Meat</td><td class="chance">80,62%</td><td>1</td></tr>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>Elvish bow</td><td class="chance">27,35%</td><td>1</td></tr>
+<tr><td>Red gem / blue gem</td><td class="chance">25,48%</td><td>1–9</td></tr>
+<tr><td>Assassin dagger</td><td class="chance">20,12%</td><td>1</td></tr>
+<tr><td>Green gem</td><td class="chance">20,02%</td><td>1–9</td></tr>
+<tr><td>Broken longbow</td><td class="chance">17,27%</td><td>3–7</td></tr>
+<tr><td>Violet gem</td><td class="chance">16,38%</td><td>1–9</td></tr>
+<tr><td>Lion cloak patch</td><td class="chance">11,99%</td><td>1</td></tr>
+<tr><td>Black pearl</td><td class="chance">10,39%</td><td>7–20</td></tr>
+<tr><td>Ornate crossbow</td><td class="chance">9,31%</td><td>1</td></tr>
+<tr><td>Emerald bangle</td><td class="chance">9,15%</td><td>1</td></tr>
+<tr><td>Coral brooch</td><td class="chance">2,08%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="commander">
+<header>
+<h3>Fallen Usurper Commander</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Fallen Usurper Commander" loading="lazy" src="assets/media/hunts-custom/Fallen Usurper Commander.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>73.567</strong></div>
+<div class="stat"><span>Vida</span><strong>103.590</strong></div>
+<div class="stat"><span>Velocidade</span><strong>360</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>145 / 150</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico ~72%, life drain ~28%. Derruba magic walls. Mitigação 3,40, a mais alta da hunt.</p>
+<ul class="clean">
+<li>Melee até 4.520</li>
+<li>Físico em onda 6.060–7.670</li>
+<li>Físico em área raio 3, 6.060–7.670</li>
+<li>Life drain em X, 5.860–7.410</li>
+<li>Sparks chain 3.850–5.420</li>
+</ul>
+<p><b>Defesa.</b> Cura 7.650–14.540 com 40% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Físico / terra</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−5%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>War axe</td><td class="chance">27,41%</td><td>1</td></tr>
+<tr><td>Red gem / blue gem</td><td class="chance">26,46%</td><td>1–20</td></tr>
+<tr><td>Green gem</td><td class="chance">20,79%</td><td>1–20</td></tr>
+<tr><td>Violet gem</td><td class="chance">17,01%</td><td>1–20</td></tr>
+<tr><td>Lion crest</td><td class="chance">15,12%</td><td>1</td></tr>
+<tr><td>Golden legs</td><td class="chance">8,51%</td><td>1</td></tr>
+<tr><td>Magic plate armor</td><td class="chance">5,67%</td><td>1</td></tr>
+<tr><td>Giant sword</td><td class="chance">4,73%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="lion">
+<header>
+<h3>Fallen Lion Beast</h3>
+<span class="tag melee">sangramento</span>
+</header><figure class="creature-clip"><img alt="Fallen Lion Beast" loading="lazy" src="assets/media/hunts-custom/Corrupted Lion Beast.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>74.261</strong></div>
+<div class="stat"><span>Vida</span><strong>104.490</strong></div>
+<div class="stat"><span>Velocidade</span><strong>320</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>128 / 125</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico ~54%, sangramento ~46%.</p>
+<ul class="clean">
+<li>Melee até 3.470</li>
+<li>Físico em área 4.920–6.290 (45% a cada 2 s)</li>
+<li>Lentidão −900 por 5 s, raio 2</li>
+<li>Sangramento em área raio 3: 28.380</li>
+</ul>
+<p><b>Defesa.</b> Cura 4.940–9.170 com 28% a cada 2 s. Imune a sangramento. Fraqueza em fogo.</p>
+</div>
+<div>
+<div class="elem"><span>Terra</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Fogo</span><span class="neg">−10%</span></div>
+<div class="elem"><span>Demais</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>Red gem</td><td class="chance">20,79%</td><td>1–3</td></tr>
+<tr><td>Blue gem</td><td class="chance">18,90%</td><td>1–3</td></tr>
+<tr><td>Green gem</td><td class="chance">17,01%</td><td>1–3</td></tr>
+<tr><td>Lion crest</td><td class="chance">10,40%</td><td>20–47</td></tr>
+<tr><td>Warrior helmet</td><td class="chance">5,67%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="warlock">
+<header>
+<h3>Fallen Usurper Warlock</h3>
+<span class="tag ranged">distância 3</span>
+</header><figure class="creature-clip"><img alt="Fallen Usurper Warlock" loading="lazy" src="assets/media/hunts-custom/Fallen Usurper Warlock.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>74.955</strong></div>
+<div class="stat"><span>Vida</span><strong>105.390</strong></div>
+<div class="stat"><span>Velocidade</span><strong>280</strong></div>
+<div class="stat"><span>Armadura / mitigação</span><strong>120 / 3,00</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Energia ~65%, fogo ~35%. O ataque básico é energia até 4.520. Foca quem causa mais dano.</p>
+<ul class="clean">
+<li>Fogo no alvo 5.810–7.350, raio 4</li>
+<li>Energia no alvo 6.060–7.670, raio 4</li>
+<li>Extended energy chain 3.790–5.330</li>
+</ul>
+<p><b>Defesa.</b> Cura 10.010–17.880 com 35% a cada 2 s e fica invisível (20%).</p>
+</div>
+<div>
+<div class="elem"><span>Energia / fogo</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−5%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>Underworld rod</td><td class="chance">70%</td><td>1</td></tr>
+<tr><td>Blue robe</td><td class="chance">70%</td><td>1</td></tr>
+<tr><td>Red gem</td><td class="chance">20,79%</td><td>1–3</td></tr>
+<tr><td>Blue gem</td><td class="chance">18,90%</td><td>1–3</td></tr>
+<tr><td>Green gem</td><td class="chance">17,01%</td><td>1–3</td></tr>
+<tr><td>Lion cloak patch</td><td class="chance">7,98%</td><td>1</td></tr>
+<tr><td>Lion crest</td><td class="chance">7,77%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+</section><section class="hunt" id="azkalon">
+<p class="kicker">Boss · archfoe · 10.000.000 de vida</p>
+<h2>Azkalon, The Fallen Usurper King</h2>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>60.000.000</strong></div>
+<div class="stat"><span>Velocidade</span><strong>620</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>180 / 180</strong></div>
+<div class="stat"><span>Mitigação</span><strong>5,50</strong></div>
+</div>
+<p>Todos os elementos em +25%. Cura 12.000–25.000 (25% a cada 2 s) e acelera +1.200 por 7 s. Durante a luta invoca até 4 criaturas entre Knight, Archer e Warlock.</p>
+<p><b>Dano.</b> Mix aproximado: morte 40%, gelo 25%, físico 20%, life drain 8%, mana drain 7%. Teto perto de 12.500 por segundo.</p>
+<ul class="clean">
+<li>Melee 4.500–8.200</li>
+<li>Death explosion 6.500–9.800, raio 6</li>
+<li>Ice wave 6.200–9.200, comprimento 8</li>
+<li>Fallen nova física 5.800–8.800, raio 7</li>
+<li>Death beam 7.000–10.500, linha de 10 sqm</li>
+<li>Ice prison 5.500–8.500 no alvo, raio 5</li>
+<li>Soul rupture 8.000–12.000, raio 8</li>
+<li>Void consumption: mana drain 5.000–8.000, raio 8</li>
+<li>Blood of the Fallen: life drain 7.000–10.000, raio 9</li>
+<li>Crushing blow físico 6.000–9.000</li>
+</ul>
+<h3>Fases da guarda real</h3>
+<p>Ao chegar em <b>60%</b> e de novo em <b>30%</b> de vida, Azkalon fica imune a dano e chama quatro Fallen Royal Broodlings. A imunidade cai quando os quatro morrem. Se um broodling morre com o boss dentro da explosão, Azkalon recupera <b>10% da vida máxima</b> (“Azkalon absorbs the fallen essence!”). Matar a guarda longe do rei evita essa cura.</p>
+<article class="creature" id="broodling">
+<header>
+<h3>Fallen Royal Broodling</h3>
+<span class="tag boss">invocação de fase</span>
+</header>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>0</strong></div>
+<div class="stat"><span>Vida</span><strong>400.000</strong></div>
+<div class="stat"><span>Velocidade</span><strong>480</strong></div>
+<div class="stat"><span>Armadura</span><strong>90</strong></div>
+</div>
+<p>Sem loot e sem corpo. Dano em cerca de metade do rei: waves longas de gelo, fogo, energia e morte, mais áreas de terra, sagrado, mana drain e life drain. Melee 2.250–4.100. O golpe mais alto da ficha é Soul Rupture, 4.000–6.000 em raio 8. Cura 6.000–12.500. Todos os elementos em +15%. Ao morrer, explode numa área larga.</p>
+</article>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop de Azkalon</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Master usurper essence</td><td class="chance">100%</td><td>1</td></tr>
+<tr><td>Crystal coin (duas pilhas)</td><td class="chance">100% cada</td><td>85–100 e 82–100</td></tr>
+<tr><td>Giant ruby, emerald, sapphire, amethyst e topaz</td><td class="chance">50% cada</td><td>5–15</td></tr>
+<tr><td>Boss token</td><td class="chance">25%</td><td>7–15</td></tr>
+<tr><td>Expert WZ token</td><td class="chance">25%</td><td>1–2</td></tr>
+<tr><td>Primal bag / Bag You Desire</td><td class="chance">0,70%</td><td>1</td></tr>
+<tr><td>Bag You Covet</td><td class="chance">0,50%</td><td>1</td></tr>
+<tr><td>Special bag</td><td class="chance">0,30%</td><td>1</td></tr>
+<tr><td>Sanguine upgrade</td><td class="chance">0,08%</td><td>1</td></tr>
+<tr><td>Corrupted void bag</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</section><footer>
+  Números tirados dos scripts de monstro em <code>data-otservbr-global/monster/01_custom</code> e dos portais em <code>special_tiles_custom.lua</code>. Chance de loot na base 100.000.
+</footer></article>
+</main>
+    </div>
+    <footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
 <script src="assets/js/wiki.js?v=reliquary-20260604"></script>
 </body>
 </html>

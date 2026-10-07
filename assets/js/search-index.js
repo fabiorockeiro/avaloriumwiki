@@ -10,9 +10,9 @@ window.AVALORIUM_SEARCH_INDEX =
 },
 {
     "title": "Invasão de Minibosses",
-    "description": "Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 30 bosses, seus respawns e os minimapas.",
+    "description": "Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 36 bosses, seus respawns e os minimapas.",
     "category": "Sistemas do Servidor",
-    "keywords": "invasao minibosses mini bosses raid golden token upgrade potions trinket badge 30 minutos Grand Commander Soeren Falcon Bastion The Old Widow Venore The Handmaiden Pits of Inferno Tyrn Drefia Wyrms Grand Canon Dominus Falcon Bastion Orc Sambackpack Orc Fortress Custodian Cobra Bastion Orc Armor Torre de Thais Massacre Pits of Inferno Bragrumol Issavi Thawing Dragon Lord Falcon Bastion Weakened Shlorg TP Earth Elemental Dracola Pits of Inferno Gaffir Cobra Bastion The Welther TP Hydras Preceptor Lazare Falcon Bastion Grand Chaplain Gaunder Falcon Bastion Jailer Falcon Bastion Orc Shield Torre Thais Orc Helmet Torre Thais White Pale TP Rotworm Mozradek Issavi Guard Captain Quaid Cobra Bastion Feroxa TP Wereboar Zarabustor TP Warlock The Horned Fox TP Minotaur Countess Sorrow Quest POI Mr. Punish Quest POI The Imperor Quest POI The Plasmother Quest POI Pits of Inferno",
+    "keywords": "invasao minibosses mini bosses raid golden token upgrade potions trinket badge 30 minutos Grand Commander Soeren Falcon Bastion The Old Widow Venore The Handmaiden Pits of Inferno Tyrn Drefia Wyrms Grand Canon Dominus Falcon Bastion Orc Sambackpack Orc Fortress Custodian Cobra Bastion Orc Armor Torre de Thais Massacre Pits of Inferno Bragrumol Issavi Thawing Dragon Lord Falcon Bastion Weakened Shlorg TP Earth Elemental Dracola Pits of Inferno Gaffir Cobra Bastion The Welther TP Hydras Preceptor Lazare Falcon Bastion Grand Chaplain Gaunder Falcon Bastion Jailer Falcon Bastion Orc Shield Torre Thais Orc Helmet Torre Thais White Pale TP Rotworm Mozradek Issavi Guard Captain Quaid Cobra Bastion Feroxa TP Wereboar Zarabustor TP Warlock The Horned Fox TP Minotaur Countess Sorrow Quest POI Mr. Punish Quest POI The Imperor Quest POI The Plasmother Quest POI Pits of Inferno Ancient Lion Knight Bounac Adlerauge Isle of Ada Michael the Stalwart Isle of Ada Gralvalon Azzilon Catacombs Twisterror Azzilon Catacombs Malvaroth Azzilon Catacombs",
     "url": "invasao-de-minibosses.html",
     "image": "assets/media/trinket-badges/golden-raid-token.gif"
 },
@@ -97,6 +97,14 @@ window.AVALORIUM_SEARCH_INDEX =
         "image": "assets/media/voucher-system/golden-newspaper.gif"
     },
     {
+        "title": "Castle War",
+        "description": "Evento diário de guilds pelo trono: pontuação, Blood Coins, bônus, outfit e Guildhouse PVP.",
+        "category": "Sistemas do Servidor",
+        "keywords": "castle war guild guerra trono 21:30 100 pontos blood coin guildhouse pvp outfit castle warrior bonus experiencia loot treino",
+        "url": "castle-war.html",
+        "image": "assets/media/castle-war/castle-war-icon-transparent.png"
+    },
+    {
         "title": "Hireling Enchanter",
         "description": "Produção automática de itens enchanted, progresso offline, tiers de maestria e Workshop Slots.",
         "category": "Sistemas do Servidor",
@@ -137,6 +145,14 @@ window.AVALORIUM_SEARCH_INDEX =
         "image":  "assets/media/menu/animus-mastery-soulpit.gif"
     },
     {
+        "title": "Aumento das Taints",
+        "description": "Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard.",
+        "category": "Guias e Utilidades",
+        "keywords": "aumento taints soul war goshnar sanguine rotten blood bakragore hazard gnomprona void hazard tainter npc experiencia loot party",
+        "url": "aumento-das-taints.html",
+        "image": "assets/media/taints/goshnar-taint.gif"
+    },
+    {
         "title":  "Comandos do Servidor",
         "description":  "Lista completa de comandos, organizada por categoria e função.",
         "category":  "Guias e Utilidades",
@@ -161,44 +177,12 @@ window.AVALORIUM_SEARCH_INDEX =
         "image": "assets/media/cadeia/prisoner.png"
     },
     {
-        "title":  "Void Corruption Depths (Outer Void)",
-        "description":  "Hunt custom level 1000 a 1200 com dano de Energy, Physical e Death.",
-        "category":  "Hunts Custom",
-        "keywords":  "hunts custom void outer corruption depths riftcaster brute ravager energy death ice earth holy hazard vip soulwar",
-        "url":  "void-corruption-depths-outer-void.html",
-        "image":  "assets/media/hunts-custom/VOID CORRUPTION DEPTHS (OUTER VOID).png"
-    },
-    {
-        "title":  "Void Corruption Depths (Inner Netherbound)",
-        "description":  "Hunt custom level 1200 a 1400 com Netherbound Dragon, Brain e Demon.",
-        "category":  "Hunts Custom",
-        "keywords":  "hunts custom void inner netherbound dragon brain demon earth death holy fire energy hazard vip soulwar",
-        "url":  "void-corruption-depths-inner-netherbound.html",
-        "image":  "assets/media/hunts-custom/VOID CORRUPTION DEPTHS (INNER NETHERBOUND).png"
-    },
-    {
-        "title":  "Sanctum of Fire & Ice",
-        "description":  "Hunt custom level 600 com lados de Fire e Ice, Firzen, Freezee e Fieren.",
-        "category":  "Hunts Custom",
-        "keywords":  "hunts custom sanctum fire ice firzen freezee fieren energy earth hazard crazed summer winter vanguard",
-        "url":  "sanctum-of-fire-ice.html",
-        "image":  "assets/media/hunts-custom/SANCTUM OF FIRE & ICE.png"
-    },
-    {
-        "title":  "Pyramid of Azhr'Khal (Three Asuras)",
-        "description":  "Hunt custom level 750 com True Enrage, Blessed e Cursed Asura.",
-        "category":  "Hunts Custom",
-        "keywords":  "hunts custom pyramid azhr khal three asuras true enrage blessed cursed energy earth death holy hazard",
-        "url":  "pyramid-of-azhrkhal-three-asuras.html",
-        "image":  "assets/media/hunts-custom/PYRAMID OF AZHR’KHAL (THREE ASURAS).png"
-    },
-    {
-        "title":  "The Fallen Usurpers",
-        "description":  "Hunt custom level 1600 com usurpadores corrompidos, lion beast e warlock.",
-        "category":  "Hunts Custom",
-        "keywords":  "hunts custom fallen usurpers knight commander archer warlock corrupted lion beast physical fire death bleeding life drain root",
-        "url":  "the-fallen-usurpers.html",
-        "image":  "assets/media/hunts-custom/THE FALLEN USURPERS.png"
+        "title": "Hunts Custom",
+        "description": "Guia completo das hunts custom: acesso, dano, resistências, loot e bosses de Firzen a Azkalon.",
+        "category": "Hunts Custom",
+        "keywords": "hunts custom sanctum fire ice firzen frezee firen pyramid asuras true cursed blessed enrage outer void netherbound zythar fallen usurpers azkalon criaturas dano resistencias loot boss vip hazard",
+        "url": "hunts-custom.html",
+        "image": "assets/media/hunts-custom/Firzen.gif"
     },
     {
         "title":  "FABIO ROCKEIRO - SCRIPTS e DOWNLOADS",

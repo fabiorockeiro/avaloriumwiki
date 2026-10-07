@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/wiki.css">
     <link rel="stylesheet" href="assets/css/layout-consistency.css">
+    <link rel="stylesheet" href="assets/css/hireling-producao.css">
     <link rel="stylesheet" href="assets/css/hireling-enchanter.css">
 </head>
 <body class="layout-standard hireling-enchanter-page">
@@ -199,43 +200,77 @@
                     </div>
                 </section>
 
-                <section class="content-section" id="maestria">
-                    <div class="content-section-heading">
-                        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M5 5H3v3a4 4 0 0 0 4 4"/><path d="M19 5h2v3a4 4 0 0 1-4 4"/></svg></span>
-                        <div><h2>Tiers de Maestria</h2><p>Cada hireling possui progresso próprio e precisa cumprir as metas na ordem, sem pular tiers.</p></div>
-                    </div>
-                    <div class="he-mastery-wrap">
-                        <table class="he-mastery">
-                            <thead><tr><th>Tier</th><th>Grau</th><th>Ciclos exigidos</th><th>Treinamento</th><th>Tempo-base</th><th>Produção</th><th>Desconto</th></tr></thead>
-                            <tbody>
-                                <tr><td><span class="he-tier">T1</span></td><td><strong>Iniciante</strong></td><td>0</td><td>Grátis</td><td>40s</td><td>Base</td><td>0%</td></tr>
-                                <tr><td><span class="he-tier">T2</span></td><td><strong>Aprendiz</strong></td><td>1.000</td><td>200kk</td><td>37s</td><td class="he-positive">+10%</td><td class="he-positive">−5%</td></tr>
-                                <tr><td><span class="he-tier">T3</span></td><td><strong>Especialista</strong></td><td>5.000</td><td>500kk</td><td>34s</td><td class="he-positive">+20%</td><td class="he-positive">−10%</td></tr>
-                                <tr><td><span class="he-tier">T4</span></td><td><strong>Mestre Encantador</strong></td><td>12.000</td><td>1kkk</td><td>31s</td><td class="he-positive">+30%</td><td class="he-positive">−15%</td></tr>
-                                <tr><td><span class="he-tier">T5</span></td><td><strong>Grão-Mestre Encantador</strong></td><td>25.000</td><td>1,7kkk</td><td>29s</td><td class="he-positive">+40%</td><td class="he-positive">−20%</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="he-total"><span>Custo total de treinamento para alcançar o T5</span><strong>3,4kkk</strong></div>
-                </section>
-
-                <section class="content-section" id="workshop">
-                    <div class="content-section-heading">
-                        <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m14.7 6.3-1-3.3h-3.4l-1 3.3-2.8 1.9-3.3-.8-1.7 3 2.3 2.5v3.2l-2.3 2.5 1.7 3 3.3-.8 2.8 1.9 1 3.3h3.4l1-3.3 2.8-1.9 3.3.8 1.7-3-2.3-2.5v-3.2l2.3-2.5-1.7-3-3.3.8-2.8-1.9Z"/><circle cx="12" cy="14.5" r="3"/></svg></span>
-                        <div><h2>Workshop Slots</h2><p>Cada produção simultânea deve ser atribuída a um hireling diferente.</p></div>
-                    </div>
-                    <div class="he-slot-grid">
-                        <article class="he-slot"><small>Incluso na compra-base</small><h3>Slot I</h3><strong>1 produção</strong><span>2.000 ciclos compartilhados</span><span>Sem redução adicional de tempo</span></article>
-                        <article class="he-slot"><small>Primeiro upgrade</small><h3>Slot II</h3><strong>2 produções</strong><span>3.000 ciclos compartilhados</span><span>−5 segundos em cada ciclo</span></article>
-                        <article class="he-slot"><small>Oficina completa</small><h3>Slot III</h3><strong>3 produções</strong><span>4.000 ciclos compartilhados</span><span>−10 segundos em cada ciclo</span></article>
-                    </div>
-                    <div class="he-callout">
-                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 9-12h-7l1-8Z"/></svg>
-                        <div><strong>Configuração máxima:</strong> no T5 com Workshop Slot III, o tempo calculado chega a 19 segundos por ciclo — aproximadamente 20 segundos na experiência de jogo.</div>
-                    </div>
-                </section>
-
-                <section class="content-section" id="regras">
+                <section class="content-section he-production" id="maestria">
+<section class="panel">
+<header>
+<h2 class="kicker">
+<svg aria-hidden="true" height="28" viewbox="0 0 28 28" width="28">
+<rect fill="#5c4de0" height="24" rx="7" width="24" x="2" y="2"></rect>
+<path d="M8 18.5h12M9 18.5l1.2-7h7.6l1.2 7M12 11.5V8.8h4v2.7" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+</svg>
+					Produção do Hireling
+				</h2>
+<p class="lead">Um pedido cheio são 1.000 fabricações, o máximo de uma vez. O hireling precisa ficar fora da lâmpada. Cada hireling sobe o próprio tier, na ordem, sem pular.</p>
+</header>
+<div class="controls">
+<div aria-label="Tipo de item" class="tabs" role="group">
+<button aria-pressed="true" data-cat="arrows" type="button">Flechas e bolts</button>
+<button aria-pressed="false" data-cat="runes" type="button">Runas</button>
+<button aria-pressed="false" data-cat="potions" type="button">Poções</button>
+</div>
+<div aria-label="Oficina" class="modes" role="group">
+<button aria-pressed="true" data-shop="off" type="button">Sem oficina extra</button>
+<button aria-pressed="false" data-shop="on" type="button">Oficina completa</button>
+</div>
+</div>
+<p class="summary" id="summary"></p>
+<div class="table-scroll">
+<table class="prod">
+<thead>
+<tr>
+<th>TIER</th>
+<th>GRAU</th>
+<th>ITENS NO PEDIDO</th>
+<th>TEMPO</th>
+<th>POR HORA</th>
+</tr>
+</thead>
+<tbody id="rows"></tbody>
+</table>
+</div>
+<p class="meta" id="meta"></p>
+</section>
+<div class="grid">
+<section class="card">
+<h2>Treinamento</h2>
+<p>O ouro do treino é pago uma vez, no hireling. O pedido que já está rodando não muda de tier. O próximo pedido usa o tier novo.</p>
+<table>
+<thead>
+<tr>
+<th>TIER</th>
+<th>GRAU</th>
+<th>CICLOS</th>
+<th>CUSTO</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><span class="badge">T1</span></td><td>Iniciante</td><td>0</td><td>Grátis</td></tr>
+<tr><td><span class="badge">T2</span></td><td>Aprendiz</td><td>1.000</td><td>200kk</td></tr>
+<tr><td><span class="badge">T3</span></td><td>Especialista</td><td>5.000</td><td>500kk</td></tr>
+<tr><td><span class="badge">T4</span></td><td>Mestre Encantador</td><td>12.000</td><td>1kkk</td></tr>
+<tr><td><span class="badge">T5</span></td><td>Grão-Mestre Encantador</td><td>25.000</td><td>1,7kkk</td></tr>
+</tbody>
+</table>
+<p class="note">Do T2 ao T5 o treino soma 3,4kkk. Os ciclos são acumulados naquele hireling.</p>
+</section>
+<section class="card" id="workshop">
+<h2>Oficina</h2>
+<p>Slot 2 e Slot 3 tiram 5 segundos cada um do ciclo. O piso é 20 segundos. A oficina não aumenta a quantidade do pedido. Ela só encurta o tempo.</p>
+<p class="note">Com a oficina completa, T4 e T5 ficam no piso de 20s. O mesmo pedido cheio leva 5h 33min nos dois. O T5 entrega mais itens no mesmo tempo: flechas 12.000 contra 11.200, runas 9.000 contra 8.400, poções 4.500 contra 4.200.</p>
+</section>
+</div>
+</section>
+<section class="content-section" id="regras">
                     <div class="content-section-heading">
                         <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
                         <div><h2>Regras importantes</h2><p>Confira o que conta para o progresso antes de iniciar pedidos longos.</p></div>
@@ -298,5 +333,6 @@
     </nav>
 </footer>
 <script src="assets/js/wiki.js?v=reliquary-20260604"></script>
+<script src="assets/js/hireling-producao.js"></script>
 </body>
 </html>

@@ -467,6 +467,7 @@ code {
 
 .menu-section-button:hover,
 .menu-section.is-open .menu-section-button { color: var(--text); padding-left: 22px; }
+.menu-section-button.active { color: var(--cyan); background: rgba(82, 202, 229, .08); }
 .menu-section-button:hover::before,
 .menu-section.is-open .menu-section-button::before { transform: scaleX(1); }
 .menu-section-button span { color: var(--gold); }
@@ -4831,6 +4832,7 @@ tbody tr:hover td {
 }
 
 .desktop-nav-trigger > .ui-icon,
+.desktop-nav-direct > .ui-icon,
 .desktop-nav-direct img {
     width: 22px;
     height: 22px;
