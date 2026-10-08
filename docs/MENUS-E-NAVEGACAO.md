@@ -2,11 +2,10 @@
 
 O menu lateral e o drawer mobile recebem as mesmas seções via `assets/js/wiki.js`. As entradas abaixo também constam no índice de busca.
 
-## Sistemas do Servidor (18)
+## Sistemas do Servidor (17)
 
 | Ícone/imagem | Página | URL | Descrição |
 |---|---|---|---|
-| `assets/media/exalted-forge/exalted-core.gif` | Exalted Forge | `exalted-forge.html` | Forja custom do Avalorium: bônus até Tier 10, chances, proteção com Exalted Core e custos de ouro e dust. |
 | `assets/media/trinket-badges/golden-raid-token.gif` | Invasão de Minibosses | `invasao-de-minibosses.html` | Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 36 bosses, seus respawns e os minimapas. |
 | `assets/media/menu/outfits.gif` | Outfit & Mount Bônus | `outfit-mount-bonus.html` | Obtenha outfits e montarias no mapa global, quests, Store e Hunting Task Shop. Use !outfitbonus para investir em Cosmetic Mastery. |
 | `assets/media/items-wiki/portables/portable task book.gif` | Tasks | `tasks-system.html` | Bounty Tasks, baús por dificuldade, bônus do Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop. |
@@ -25,10 +24,11 @@ O menu lateral e o drawer mobile recebem as mesmas seções via `assets/js/wiki.
 | `assets/media/items-wiki/Craft/upgrade stone lvl 1.gif` | Upgrade Stones | `upgrade-stones.html` | Chances de sucesso, limites e efeitos das Upgrade Stones em armas, wands e rods elegíveis. |
 | `assets/media/menu/animus-mastery-soulpit.gif` | Animus Mastery & SoulPit | `animus-mastery-soulpit.html` | Animus, Anonymous Mastery, Soul Cores e bônus de experiência. |
 
-## Guias e Utilidades (4)
+## Server Info (5)
 
 | Ícone/imagem | Página | URL | Descrição |
 |---|---|---|---|
+| `assets/media/exalted-forge/exalted-core.gif` | Tiers | `exalted-forge.html` | Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja. |
 | `assets/media/taints/goshnar-taint.gif` | Aumento das Taints | `aumento-das-taints.html` | Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard. |
 | `assets/media/menu/comandos-do-servidor.gif` | Comandos do Servidor | `comandos-do-servidor.html` | Lista completa de comandos, organizada por categoria e função. |
 | `assets/media/items-wiki/Consumables/stamina bottler.gif` | Stamina | `stamina.html` | Faixas de stamina, recuperação, banheiras e quest de Stamina Bottle e Extension. |
@@ -54,7 +54,7 @@ O menu lateral e o drawer mobile recebem as mesmas seções via `assets/js/wiki.
 - `backpacks.html` — Backpacks (Artigo fora do menu/busca)
 - `boots.html` — Boots (Artigo fora do menu/busca)
 - `category-colecionaveis.html` — Colecionáveis (Categoria)
-- `category-guias-e-utilidades.html` — Guias e Utilidades (Categoria)
+- `category-guias-e-utilidades.html` — Server Info (Categoria)
 - `category-itens-e-equipamentos.html` — Itens e Equipamentos (Categoria)
 - `category-scripts-zerobot.html` — SCRIPTS e DOWNLOADS (Categoria)
 - `category-sistemas-do-servidor.html` — Sistemas do Servidor (Categoria)

@@ -10,22 +10,22 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 | `amulets.html` | Amulets | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
 | `animus-mastery-soulpit.html` | Animus Mastery & SoulPit | Artigo no menu/busca | Sistemas do Servidor | Animus Mastery, Anonymous Mastery, Soul Core customizado, SoulPit e bônus de experiência no Avalorium OT. | 5 |
 | `armors.html` | Armors | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
-| `aumento-das-taints.html` | Aumento das Taints | Artigo no menu/busca | Guias e Utilidades | Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard no Avalorium. | 4 |
+| `aumento-das-taints.html` | Aumento das Taints | Artigo no menu/busca | Server Info | Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard no Avalorium. | 4 |
 | `backpacks.html` | Backpacks | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
 | `boots.html` | Boots | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
-| `cadeia.html` | Cadeia | Artigo no menu/busca | Guias e Utilidades | Entenda as penas administrativas, fianças, bloqueios e comandos da Cadeia do Avalorium OT. | 3 |
+| `cadeia.html` | Cadeia | Artigo no menu/busca | Server Info | Entenda as penas administrativas, fianças, bloqueios e comandos da Cadeia do Avalorium OT. | 3 |
 | `castle-war.html` | Castle War | Artigo no menu/busca | Sistemas do Servidor | Evento diário de guilds pelo trono: horários, pontuação, regras, Blood Coins, bônus e Guildhouse PVP. | 2 |
 | `category-colecionaveis.html` | Colecionáveis | Categoria | Página agregadora | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 3 |
-| `category-guias-e-utilidades.html` | Guias e Utilidades | Categoria | Página agregadora | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 3 |
+| `category-guias-e-utilidades.html` | Server Info | Categoria | Página agregadora | Tiers, comandos e informações para a rotina dos players. | 3 |
 | `category-itens-e-equipamentos.html` | Itens e Equipamentos | Categoria | Página agregadora | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 13 |
 | `category-scripts-zerobot.html` | SCRIPTS e DOWNLOADS | Categoria | Página agregadora | Baixe o FabioRockeiroBOT para ZeroBot e veja como instalar e usar Rune, Arrow, Forja, Follow, Reset FPS, Fungo, Party e Fire no Pé. GIF para lives e parceria com o servidor. | 2 |
 | `category-sistemas-do-servidor.html` | Sistemas do Servidor | Categoria | Página agregadora | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 18 |
 | `character-upgrades.html` | Character Upgrades | Artigo no menu/busca | Sistemas do Servidor | Spell Badges, Upgrade Potions e Golden Raid Tokens no NPC Avalorium Character Upgrade. | 15 |
-| `comandos-do-servidor.html` | Comandos do Servidor | Artigo no menu/busca | Guias e Utilidades | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
+| `comandos-do-servidor.html` | Comandos do Servidor | Artigo no menu/busca | Server Info | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
 | `dark-totem-daily.html` | Dark Totem Daily | Artigo no menu/busca | Sistemas do Servidor | Dark Totem: todos os dias às 20h no Teleport de Eventos, a sudoeste da Safezone. Loot completo e prêmios de top damage e participação. | 72 |
 | `divergence-system.html` | Divergence System | Artigo no menu/busca | Sistemas do Servidor | Divergence System: acesso no level 400 e Hazard 3, bosses elementais, custos, dificuldade e recompensas de todas as faixas. Saiba como usar seus Tokens no craft. | 23 |
 | `dolls.html` | Dolls | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
-| `exalted-forge.html` | Exalted Forge | Artigo no menu/busca | Sistemas do Servidor | Exalted Forge do Avalorium: bônus customizados até Tier 10, Exalted Core, chances de fusão, proteção, dust e custos de ouro. | 11 |
+| `exalted-forge.html` | Tiers | Artigo no menu/busca | Server Info | Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja do Avalorium. | 12 |
 | `fabio-rockeiro-scripts.html` | FABIO ROCKEIRO - SCRIPTS e DOWNLOADS | Artigo no menu/busca | SCRIPTS e DOWNLOADS | Baixe o FabioRockeiroBOT para ZeroBot e veja como instalar e usar Rune, Arrow, Forja, Follow, Reset FPS, Fungo, Party e Fire no Pé. GIF para lives e parceria com o servidor. | 6 |
 | `helmets.html` | Helmets | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
 | `hireling-enchanter.html` | Hireling Enchanter | Artigo no menu/busca | Sistemas do Servidor | Guia completo do Hireling Enchanter: produção offline, tiers de maestria, Workshop Slots, custos e regras no Avalorium OT. | 6 |
@@ -48,7 +48,7 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 | `shields.html` | Shields | Artigo fora do menu/busca | — | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 2 |
 | `sistema-de-craft.html` | Sistema de Craft | Artigo no menu/busca | Sistemas do Servidor | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 57 |
 | `spell-badge-upgrade.html` | Trinket Badges | Artigo fora do menu/busca | — | Trinket Badges: compre por 10 Golden Raid Tokens no Avalorium Character Upgrade, encaixe nas trinkets e evolua badges iguais na Forja. | 6 |
-| `stamina.html` | Stamina | Artigo no menu/busca | Guias e Utilidades | Faixas, recuperação e quest de Stamina Bottle e Stamina Extension no Avalorium OT. | 6 |
+| `stamina.html` | Stamina | Artigo no menu/busca | Server Info | Faixas, recuperação e quest de Stamina Bottle e Stamina Extension no Avalorium OT. | 6 |
 | `stones-guia-completo.html` | Rarity & Elemental Stones System | Artigo no menu/busca | Sistemas do Servidor | Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT. | 22 |
 | `tasks-system.html` | Tasks System | Artigo no menu/busca | Sistemas do Servidor | Bounty Tasks, baús por dificuldade, bônus do Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop. | 40 |
 | `the-fallen-usurpers.html` | Hunts Custom | Artigo fora do menu/busca | — | Sem meta description | 0 |
@@ -90,7 +90,7 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 
 ### Aumento das Taints — `aumento-das-taints.html`
 
-- **Papel atual:** Artigo no menu/busca; categoria “Guias e Utilidades”.
+- **Papel atual:** Artigo no menu/busca; categoria “Server Info”.
 - **Descrição:** Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard no Avalorium.
 - **Seções:** # Aumento das Taints · ## Soul War · ### Bônus por taint · ## Sanguine (Rotten Blood) · ### Bônus por taint · ## Hazard (Gnomprona) · ### Por nível · ## Void Hazard · ### Bônus por taint · ## Quem define o número da kill.
 - **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/taints/taints-tainter-npc.png`, `assets/media/taints/goshnar-taint.gif`, `assets/media/taints/bakragore-taint.gif`.
@@ -111,7 +111,7 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 
 ### Cadeia — `cadeia.html`
 
-- **Papel atual:** Artigo no menu/busca; categoria “Guias e Utilidades”.
+- **Papel atual:** Artigo no menu/busca; categoria “Server Info”.
 - **Descrição:** Entenda as penas administrativas, fianças, bloqueios e comandos da Cadeia do Avalorium OT.
 - **Seções:** # Cadeia · ## O que acontece ao ser preso · ### Retorno à cela · ### Aviso no servidor · ### Recursos bloqueados · ## Penas e valores da fiança · ## Como pagar · ### Escolha a forma de pagamento · ## Comandos úteis · ### !jailtime · ### !warnings.
 - **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/cadeia/prisoner.png`, `assets/media/cadeia/prison-area.png`.
@@ -130,12 +130,12 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 - **Seções:** # Colecionáveis.
 - **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/menu/outfits.gif`, `assets/media/menu/mounts.gif`.
 
-### Guias e Utilidades — `category-guias-e-utilidades.html`
+### Server Info — `category-guias-e-utilidades.html`
 
 - **Papel atual:** Categoria; categoria “Página agregadora”.
-- **Descrição:** Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT.
-- **Seções:** # Guias e Utilidades.
-- **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/taints/goshnar-taint.gif`, `assets/media/menu/comandos-do-servidor.gif`.
+- **Descrição:** Tiers, comandos e informações para a rotina dos players do Avalorium OT.
+- **Seções:** # Server Info.
+- **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/exalted-forge/exalted-core.gif`, `assets/media/taints/goshnar-taint.gif`, `assets/media/menu/comandos-do-servidor.gif`.
 
 ### Itens e Equipamentos — `category-itens-e-equipamentos.html`
 
@@ -162,12 +162,12 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 
 - **Papel atual:** Artigo no menu/busca; categoria “Sistemas do Servidor”.
 - **Descrição:** Spell Badges, Upgrade Potions e Golden Raid Tokens no NPC Avalorium Character Upgrade.
-- **Seções:** # Character Upgrades · ## Avalorium Character Upgrade · ### Spell Badge · ### Upgrade Potion · ### Reflect Upgrade · ## Golden Raid Token · ### Invasão de Minibosses · ### Hunting Task Shop · ## Upgrade Potions · ### Upgrade Potion · ### Reflect Potion Upgrade · ### Fatal Special Potion · ### Momentum Special Potion · ### Ruse Special Potion · ### Transcendence Special Potion · ## Spell Badges · ### Como evoluir · ### Druid Badges · ### Sorcerer Badges · ### Paladin Badges · ### Knight Badges · ### Monk Badges.
-- **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/character-upgrades/character-upgrades.gif`, `assets/media/items-wiki/Character Upgrade items/mysterious badge.gif`, `assets/media/items-wiki/Character Upgrade items/upgrade potions.gif`, `assets/media/items-wiki/Character Upgrade items/Reflect potion upgrade.gif`, `assets/media/trinket-badges/npc.png`, `assets/media/trinket-badges/golden-raid-token.gif`, `assets/media/character-upgrades/hunting-task-shop-token.png`, `assets/media/character-upgrades/zahir-golden-raid-token.png`, `assets/media/items-wiki/Character Upgrade items/fatal special potion.gif`, `assets/media/items-wiki/Character Upgrade items/momentum special potion.gif`, `assets/media/items-wiki/Character Upgrade items/ruse special potion.gif`, `assets/media/items-wiki/Character Upgrade items/transcendencespecial potion.gif.gif`, `assets/media/items-wiki/Character Upgrade items/mas frigo badge.gif`, `assets/media/trinket-badges/trinket-slots.png`.
+- **Seções:** # Character Upgrades · ## Avalorium Character Upgrade · ### Spell Badge · ### Upgrade Potion · ### Reflect Upgrade · ## Golden Raid Token · ### Invasão de Minibosses · ### Hunting Task Shop · ## Upgrade Potions · ### Upgrade Potion · ### Reflect Potion Upgrade · ### Fatal Special Potion · ### Momentum Special Potion · ### Ruse Special Potion · ### Transcendence Special Potion · ## Spell Badges · ### Onde usá-las · ### Druid Badges · ### Sorcerer Badges · ### Paladin Badges · ### Knight Badges · ### Monk Badges.
+- **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/character-upgrades/character-upgrades.gif`, `assets/media/items-wiki/Character Upgrade items/mysterious badge.gif`, `assets/media/items-wiki/Character Upgrade items/upgrade potions.gif`, `assets/media/items-wiki/Character Upgrade items/Reflect potion upgrade.gif`, `assets/media/trinket-badges/npc.png`, `assets/media/trinket-badges/golden-raid-token.gif`, `assets/media/character-upgrades/hunting-task-shop-token.png`, `assets/media/character-upgrades/zahir-golden-raid-token.png`, `assets/media/items-wiki/Character Upgrade items/fatal special potion.gif`, `assets/media/items-wiki/Character Upgrade items/momentum special potion.gif`, `assets/media/items-wiki/Character Upgrade items/ruse special potion.gif`, `assets/media/items-wiki/Character Upgrade items/transcendencespecial potion.gif.gif`, `assets/media/trinket-badges/trinket-slots.png`.
 
 ### Comandos do Servidor — `comandos-do-servidor.html`
 
-- **Papel atual:** Artigo no menu/busca; categoria “Guias e Utilidades”.
+- **Papel atual:** Artigo no menu/busca; categoria “Server Info”.
 - **Descrição:** Guias, sistemas exclusivos, itens e utilidades para evoluir melhor dentro do Avalorium OT.
 - **Seções:** # Comandos do Servidor · ### Comandos Gerais · ### Economia e Itens · ### Progressao e Combate · ### Party e Social · ### Casas · ### Sistemas e Utilidades · ### VIP e Extras.
 - **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/menu/comandos-do-servidor.gif`.
@@ -193,12 +193,12 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 - **Seções:** # Dolls · ## Em construção.
 - **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/placeholders/under-construction.jpg`.
 
-### Exalted Forge — `exalted-forge.html`
+### Tiers — `exalted-forge.html`
 
-- **Papel atual:** Artigo no menu/busca; categoria “Sistemas do Servidor”.
-- **Descrição:** Exalted Forge do Avalorium: bônus customizados até Tier 10, Exalted Core, chances de fusão, proteção, dust e custos de ouro.
-- **Seções:** # Exalted Forge · ## ACESSO À FORJA · ## O que cada equipamento recebe · ### Onslaught · ### Ruse · ### Momentum · ### Transcendence · ### Amplification · ### Classificação e limite · ## Bônus de cada tier · ## FUSÃO REGULAR · ## CONVERGENCE · ## FORJA EM QUALQUER LUGAR · ## AUTOMAÇÃO · ## Bônus extras ao obter sucesso · ## Custos da classificação 4 · ### Transferência de tiers · ## Como os bônus são calculados.
-- **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/exalted-forge/exalted-core.gif`, `assets/media/exalted-forge/torres-de-forja.png`, `assets/media/exalted-forge/onslaught.gif`, `assets/media/exalted-forge/ruse.gif`, `assets/media/exalted-forge/momentum.gif`, `assets/media/exalted-forge/transcendence.gif`, `assets/media/exalted-forge/fusao-normal.png`, `assets/media/exalted-forge/convergence-fusion.png`, `assets/media/exalted-forge/portable-exaltation-forge.png`, `assets/media/exalted-forge/fabio-rockeiro-auto-forja.png`.
+- **Papel atual:** Artigo no menu/busca; categoria “Server Info”.
+- **Descrição:** Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja do Avalorium.
+- **Seções:** # Tiers · ## ACESSO À FORJA · ## O que cada equipamento recebe · ### Onslaught · ### Ruse · ### Momentum · ### Transcendence · ### Amplification · ### Classificação e limite · ## Bônus de cada tier · ## Stone Badges: bônus por tier · ## FUSÃO REGULAR · ## CONVERGENCE · ## FORJA EM QUALQUER LUGAR · ## AUTOMAÇÃO · ## Bônus extras ao obter sucesso · ## Custos da classificação 4 · ### Transferência de tiers · ## Como os bônus são calculados.
+- **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/exalted-forge/exalted-core.gif`, `assets/media/exalted-forge/torres-de-forja.png`, `assets/media/exalted-forge/onslaught.gif`, `assets/media/exalted-forge/ruse.gif`, `assets/media/exalted-forge/momentum.gif`, `assets/media/exalted-forge/transcendence.gif`, `assets/media/items-wiki/Character Upgrade items/mas frigo badge.gif`, `assets/media/exalted-forge/fusao-normal.png`, `assets/media/exalted-forge/convergence-fusion.png`, `assets/media/exalted-forge/portable-exaltation-forge.png`, `assets/media/exalted-forge/fabio-rockeiro-auto-forja.png`.
 
 ### FABIO ROCKEIRO - SCRIPTS e DOWNLOADS — `fabio-rockeiro-scripts.html`
 
@@ -356,7 +356,7 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 
 ### Stamina — `stamina.html`
 
-- **Papel atual:** Artigo no menu/busca; categoria “Guias e Utilidades”.
+- **Papel atual:** Artigo no menu/busca; categoria “Server Info”.
 - **Descrição:** Faixas, recuperação e quest de Stamina Bottle e Stamina Extension no Avalorium OT.
 - **Seções:** # Stamina · ## Como a stamina funciona · ## Formas de recuperação · ### Offline · ### PZ ou House · ### Training Dummy · ## Banheiras e bônus · ### Exercise Bath · ### Stamina Bath · ### Deluxe Complete Bath · ## Bottle e Extension · ### Stamina Extension no NPC.
 - **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/items-wiki/Consumables/stamina bottler.gif`, `assets/media/stamina/exercise-bath.png`, `assets/media/stamina/stamina-bath.png`, `assets/media/stamina/deluxe-complete-bath.png`, `assets/media/stamina/avalorium-special-supplies.png`.

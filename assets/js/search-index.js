@@ -1,10 +1,10 @@
 window.AVALORIUM_SEARCH_INDEX =
 [
 {
-    "title": "Exalted Forge",
-    "description": "Forja custom do Avalorium: bônus até Tier 10, chances, proteção com Exalted Core e custos de ouro e dust.",
-    "category": "Sistemas do Servidor",
-    "keywords": "exalted exaltation forge forja core tier fusao transferencia convergence dust onslaught ruse momentum transcendence amplification botas arma armadura capacete pernas",
+    "title": "Tiers",
+    "description": "Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja do Avalorium.",
+    "category": "Server Info",
+    "keywords": "tiers exalted exaltation forge forja core tier fusao transferencia convergence dust onslaught ruse momentum transcendence amplification botas arma armadura capacete pernas stone badge spell badge trinket bonus dano magia",
     "url": "exalted-forge.html",
     "image": "assets/media/exalted-forge/exalted-core.gif"
 },
@@ -147,7 +147,7 @@ window.AVALORIUM_SEARCH_INDEX =
     {
         "title": "Aumento das Taints",
         "description": "Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard.",
-        "category": "Guias e Utilidades",
+        "category": "Server Info",
         "keywords": "aumento taints soul war goshnar sanguine rotten blood bakragore hazard gnomprona void hazard tainter npc experiencia loot party",
         "url": "aumento-das-taints.html",
         "image": "assets/media/taints/goshnar-taint.gif"
@@ -155,7 +155,7 @@ window.AVALORIUM_SEARCH_INDEX =
     {
         "title":  "Comandos do Servidor",
         "description":  "Lista completa de comandos, organizada por categoria e função.",
-        "category":  "Guias e Utilidades",
+        "category":  "Server Info",
         "keywords":  "commands comandos serverinfo online deposit withdraw badge vip autoloot",
         "url":  "comandos-do-servidor.html",
         "image":  "assets/media/menu/comandos-do-servidor.gif"
@@ -163,7 +163,7 @@ window.AVALORIUM_SEARCH_INDEX =
     {
         "title": "Stamina",
         "description": "Faixas de stamina, recuperação, banheiras e quest de Stamina Bottle e Extension.",
-        "category": "Guias e Utilidades",
+        "category": "Server Info",
         "keywords": "stamina bottle bottler extension quest ticket 100kk cooldown 24h banheira bath recovery recuperacao pz house training dummy premium experiencia",
         "url": "stamina.html",
         "image": "assets/media/items-wiki/Consumables/stamina bottler.gif"
@@ -171,7 +171,7 @@ window.AVALORIUM_SEARCH_INDEX =
     {
         "title": "Cadeia",
         "description": "Penas administrativas, valores de fiança, Jail Warden, recursos bloqueados e comandos.",
-        "category": "Guias e Utilidades",
+        "category": "Server Info",
         "keywords": "cadeia prisao jail jailtime warnings jail warden fianca gold tibia coin tc pena cela preso",
         "url": "cadeia.html",
         "image": "assets/media/cadeia/prisoner.png"

@@ -12,6 +12,7 @@
 .forge-stats small { display: block; color: var(--muted); font-size: 12px; }
 .forge-stats strong { display: block; color: var(--gold); font-size: 28px; margin-top: 6px; }
 .forge-page .content-section > h2 { font: 700 clamp(22px,2.5vw,30px)/1.35 Inter,sans-serif; margin-bottom: 16px; }
+.forge-page .content-section { scroll-margin-top: calc(var(--topbar) + 72px); }
 .forge-page p, .forge-steps li, .forge-formulas li { line-height: 1.85; }
 .forge-note { padding: 18px 20px; border-left: 3px solid var(--gold); background: var(--surface); margin: 20px 0; }
 .forge-effect { display: block; width: 48px; height: 48px; object-fit: contain; image-rendering: pixelated; margin-bottom: 16px; }
@@ -19,6 +20,10 @@
 .forge-page .table-wrap table { min-width: 620px; border-collapse: collapse; }
 .forge-page .table-wrap th { letter-spacing: .025em; }
 .forge-page .table-wrap .num { text-align: right; font-variant-numeric: tabular-nums; }
+.forge-page .table-wrap .forge-badge-table { min-width: 420px; }
+.forge-badge-table th,.forge-badge-table td { text-align: center; vertical-align: middle; }
+.forge-badge-table td img { display:block; width:32px; height:32px; margin:auto; object-fit:contain; image-rendering:pixelated; }
+.forge-badge-table tbody th { font-weight:600; }
 .forge-page .pct { color: var(--green, #68d7a0); font-weight: 700; }
 .forge-page tbody tr:last-child td { border-bottom: 0; }
 .forge-caption { font-size: 12px; color: var(--muted); margin-top: 14px; }

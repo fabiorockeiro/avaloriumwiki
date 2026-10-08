@@ -212,7 +212,6 @@
                 { url: 'outfit-mount-bonus.html', title: 'Outfit & Mount Bônus', description: 'Obtenha cosméticos e use !outfitbonus para distribuir pontos em bônus de Cosmetic Mastery.', image: 'assets/media/menu/outfits.gif' },
                 { url: 'stones-guia-completo.html', title: 'Rarity & Elemental Stones', description: 'Identificação progressiva, slots, ferramentas e bônus das elemental stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
                 { url: 'reliquary-system.html', title: 'Reliquary', description: 'Progressão em 81 níveis com itens, gold e Kron Cubes por faixa.', image: 'assets/media/reliquary/arcane-kube.png' },
-                { url: 'exalted-forge.html', title: 'Exalted Forge', description: 'Forja custom: tiers, Exalted Core, chances de fusão e custos.', image: 'assets/media/exalted-forge/exalted-core.gif' },
                 { url: 'sistema-de-craft.html', title: 'Sistema de Craft', description: 'Receitas, custos e materiais para itens especiais, utilitários e upgrades.', image: 'assets/media/menu/sistema-de-craft.gif' },
                 { url: 'upgrade-stones.html', title: 'Upgrade Stones', description: 'Chances, limites e efeitos das stones usadas para evoluir equipamentos.', image: 'assets/media/items-wiki/Craft/upgrade stone lvl 1.gif' },
                 { url: 'character-upgrades.html', title: 'Character Upgrades', description: 'Spell Badges, Upgrade Potions e Golden Raid Tokens no Avalorium Character Upgrade.', image: 'assets/media/character-upgrades/character-upgrades.gif' },
@@ -227,9 +226,10 @@
             ],
         },
         {
-            title: 'Guias e Utilidades',
+            title: 'Server Info',
             icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a3 3 0 0 1 3-3h13v18H7a3 3 0 0 0-3 3V5Z"/><path d="M4 19a3 3 0 0 1 3-3h13"/></svg>',
             items: [
+                { url: 'exalted-forge.html', title: 'Tiers', description: 'Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja.', image: 'assets/media/exalted-forge/exalted-core.gif' },
                 { url: 'cadeia.html', title: 'Cadeia', description: 'Penas administrativas, fiança, Jail Warden, bloqueios e comandos.', image: 'assets/media/cadeia/prisoner.png' },
                 { url: 'comandos-do-servidor.html', title: 'Comandos do Servidor', description: 'Lista completa de comandos, organizada por categoria e função.', image: 'assets/media/menu/comandos-do-servidor.gif' },
                 { url: 'stamina.html', title: 'Stamina', description: 'Faixas, recuperação, banheiras e a quest de Stamina Bottle e Extension.', image: 'assets/media/items-wiki/Consumables/stamina bottler.gif' },
@@ -459,7 +459,7 @@
 
             const guideSection = Array.from(container.querySelectorAll('.menu-section')).find((section) => {
                 const sectionTitle = section.querySelector('.menu-section-button strong');
-                return sectionTitle && sectionTitle.textContent.trim() === 'Guias e Utilidades';
+                return sectionTitle && sectionTitle.textContent.trim() === 'Server Info';
             });
 
             if (guideSection) {

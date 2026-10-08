@@ -239,7 +239,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | faixas.png | PNG | `assets/media/divergence/faixas.png` | `divergence-system.html` |
 | seller.png | PNG | `assets/media/divergence/seller.png` | `divergence-system.html` |
 | convergence-fusion.png | PNG | `assets/media/exalted-forge/convergence-fusion.png` | `exalted-forge.html` |
-| exalted-core.gif | GIF | `assets/media/exalted-forge/exalted-core.gif` | `category-sistemas-do-servidor.html`, `exalted-forge.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| exalted-core.gif | GIF | `assets/media/exalted-forge/exalted-core.gif` | `category-guias-e-utilidades.html`, `exalted-forge.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | fabio-rockeiro-auto-forja.png | PNG | `assets/media/exalted-forge/fabio-rockeiro-auto-forja.png` | `exalted-forge.html` |
 | fusao-normal.png | PNG | `assets/media/exalted-forge/fusao-normal.png` | `exalted-forge.html` |
 | momentum.gif | GIF | `assets/media/exalted-forge/momentum.gif` | `exalted-forge.html` |
@@ -340,7 +340,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | Reflect potion upgrade.gif | GIF | `assets/media/items-wiki/Character Upgrade items/Reflect potion upgrade.gif` | `character-upgrades.html` |
 | exorigran badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/exorigran badge.gif` | **Sem referência literal** |
 | fatal special potion.gif | GIF | `assets/media/items-wiki/Character Upgrade items/fatal special potion.gif` | `character-upgrades.html` |
-| mas frigo badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mas frigo badge.gif` | `character-upgrades.html`, `spell-badge-upgrade.html` |
+| mas frigo badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mas frigo badge.gif` | `exalted-forge.html`, `spell-badge-upgrade.html` |
 | mas pug badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mas pug badge.gif` | **Sem referência literal** |
 | mas san badge.gif | GIF | `assets/media/items-wiki/Character Upgrade items/mas san badge.gif` | **Sem referência literal** |
 | momentum special potion.gif | GIF | `assets/media/items-wiki/Character Upgrade items/momentum special potion.gif` | `character-upgrades.html` |
