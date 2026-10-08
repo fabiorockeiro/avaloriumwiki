@@ -57,6 +57,11 @@
 .cu-slot-figure .tb-image { padding:18px 12px 38px; }
 .cu-slot-figure img { display:block; width:100%; height:auto; image-rendering:pixelated; }
 .cu-slot-figure figcaption { padding:9px 2px 0; color:var(--muted); font-size:12px; }
+.cu-slots-title { margin:0 0 12px; color:var(--gold-2); font-size:20px; }
+.cu-slots-wrap { margin-bottom:28px; }
+.cu-slots-table { min-width:0; }
+.cu-slots-table th:first-child { width:115px; white-space:nowrap; }
+.cu-slots-table td strong { color:var(--text); }
 .cu-page .cu-badge-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
 .cu-page .cu-badge-list > article { min-height:0; padding:18px; }
 .cu-page .cu-badge-list h3 { margin:0 0 12px; }
