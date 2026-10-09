@@ -1,14 +1,14 @@
 # Documentação da Avalorium Wiki
 
-> Inventário do estado atual, gerado em 2026-10-07. Serve como mapa de migração para a reconstrução da wiki.
+> Inventário do estado atual, gerado em 2026-10-09. Serve como mapa de migração para a reconstrução da wiki.
 
 ## Visão geral
 
 - Implementação: site estático em HTML, CSS e JavaScript, publicado diretamente pelo GitHub Pages.
 - Páginas HTML: **51**.
 - Entradas no menu e índice de busca: **24**.
-- Imagens catalogadas: **769** (582 GIF, 185 PNG e 2 JPG).
-- Assets referenciados no código: **502**.
+- Imagens catalogadas: **772** (582 GIF, 188 PNG e 2 JPG).
+- Assets referenciados no código: **505**.
 - Assets sem referência direta: **267**. Eles podem ser reserva, conteúdo futuro ou legado; não devem ser descartados sem revisão.
 
 ## Documentos

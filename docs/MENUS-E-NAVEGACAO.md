@@ -2,6 +2,16 @@
 
 O menu lateral e o drawer mobile recebem as mesmas seções via `assets/js/wiki.js`. As entradas abaixo também constam no índice de busca.
 
+## Server Info (5)
+
+| Ícone/imagem | Página | URL | Descrição |
+|---|---|---|---|
+| `assets/media/exalted-forge/exalted-core.gif` | Tiers | `exalted-forge.html` | Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja do Avalorium. |
+| `assets/media/taints/goshnar-taint.gif` | Aumento das Taints | `aumento-das-taints.html` | Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard. |
+| `assets/media/menu/comandos-do-servidor.gif` | Comandos do Servidor | `comandos-do-servidor.html` | Lista completa de comandos, organizada por categoria e função. |
+| `assets/media/items-wiki/Consumables/stamina bottler.gif` | Stamina | `stamina.html` | Faixas de stamina, recuperação, banheiras e quest de Stamina Bottle e Extension. |
+| `assets/media/cadeia/prisoner.png` | Cadeia | `cadeia.html` | Penas administrativas, valores de fiança, Jail Warden, recursos bloqueados e comandos. |
+
 ## Sistemas do Servidor (17)
 
 | Ícone/imagem | Página | URL | Descrição |
@@ -24,16 +34,6 @@ O menu lateral e o drawer mobile recebem as mesmas seções via `assets/js/wiki.
 | `assets/media/items-wiki/Craft/upgrade stone lvl 1.gif` | Upgrade Stones | `upgrade-stones.html` | Chances de sucesso, limites e efeitos das Upgrade Stones em armas, wands e rods elegíveis. |
 | `assets/media/menu/animus-mastery-soulpit.gif` | Animus Mastery & SoulPit | `animus-mastery-soulpit.html` | Animus, Anonymous Mastery, Soul Cores e bônus de experiência. |
 
-## Server Info (5)
-
-| Ícone/imagem | Página | URL | Descrição |
-|---|---|---|---|
-| `assets/media/exalted-forge/exalted-core.gif` | Tiers | `exalted-forge.html` | Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja. |
-| `assets/media/taints/goshnar-taint.gif` | Aumento das Taints | `aumento-das-taints.html` | Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard. |
-| `assets/media/menu/comandos-do-servidor.gif` | Comandos do Servidor | `comandos-do-servidor.html` | Lista completa de comandos, organizada por categoria e função. |
-| `assets/media/items-wiki/Consumables/stamina bottler.gif` | Stamina | `stamina.html` | Faixas de stamina, recuperação, banheiras e quest de Stamina Bottle e Extension. |
-| `assets/media/cadeia/prisoner.png` | Cadeia | `cadeia.html` | Penas administrativas, valores de fiança, Jail Warden, recursos bloqueados e comandos. |
-
 ## Hunts Custom (1)
 
 | Ícone/imagem | Página | URL | Descrição |
@@ -44,7 +44,7 @@ O menu lateral e o drawer mobile recebem as mesmas seções via `assets/js/wiki.
 
 | Ícone/imagem | Página | URL | Descrição |
 |---|---|---|---|
-| `assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png` | FABIO ROCKEIRO - SCRIPTS e DOWNLOADS | `fabio-rockeiro-scripts.html` | Baixe o FabioRockeiroBOT para ZeroBot e veja como instalar e usar Rune, Arrow, Forja, Follow, Reset FPS, Fungo, Party e Fire no Pé. GIF para lives e parceria com o servidor. |
+| `assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png` | FABIO ROCKEIRO - SCRIPTS e DOWNLOADS | `fabio-rockeiro-scripts.html` | Baixe o FabioRockeiroBOT atualizado para ZeroBot e conheça o Party Plus: escolha entre Líder e Membro, adicione jogadores visíveis pelo painel e automatize convites ou aceites. |
 
 ## Páginas que existem, mas não estão no menu/índice
 

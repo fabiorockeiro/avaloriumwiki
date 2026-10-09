@@ -22,7 +22,7 @@ FabioUI = FabioUI or {}
 if not FabioUI.__libraryLoaded then
 local UI = FabioUI
 UI.__libraryLoaded = true
-UI.version = "2026-06-03-premium-03"
+UI.version = "2026-10-09-party-plus"
 UI.scriptDisplayName = "FabioRockeiroBOT"
 UI.entryScriptName = UI.scriptDisplayName
 
@@ -43,6 +43,8 @@ UI.defaults = {
     },
     autoParty = {
         enabled = false,
+        role = "unset",
+        leaderName = "",
         intervalMs = 500,
         candidates = {},
     },
@@ -73,7 +75,7 @@ UI.tabs = {
     { key = "follow", label = "Follow", icon = 3079 },
     { key = "reset", label = "Reset FPS", icon = 63135 },
     { key = "fungo", label = "Fungo", icon = 39176 },
-    { key = "party", label = "Party", icon = 63680 },
+    { key = "party", label = "Party Plus", icon = 63680 },
     { key = "fireFeet", label = "FIRE NO PÉ", icon = 3192 },
 }
 
@@ -185,6 +187,8 @@ local function copyDefaults()
         },
         autoParty = {
             enabled = UI.defaults.autoParty.enabled,
+            role = UI.defaults.autoParty.role,
+            leaderName = UI.defaults.autoParty.leaderName,
             intervalMs = UI.defaults.autoParty.intervalMs,
             candidates = shallowCopy(UI.defaults.autoParty.candidates),
         },
@@ -215,6 +219,13 @@ local function mergeConfig(base, loaded)
 
     if type(base.autoParty.candidates) ~= "table" then
         base.autoParty.candidates = shallowCopy(UI.defaults.autoParty.candidates)
+    end
+    if base.autoParty.role ~= "leader" and base.autoParty.role ~= "member" then
+        base.autoParty.role = "unset"
+        base.autoParty.enabled = false
+    end
+    if type(base.autoParty.leaderName) ~= "string" then
+        base.autoParty.leaderName = ""
     end
 
     if type(loaded.fungo) == "table" then
@@ -719,7 +730,7 @@ function UI.buildLegacyModules()
 
     modules.party = {
         key = "party",
-        label = "Auto Party",
+        label = "Party Plus",
         iconId = 63680,
     }
 
@@ -994,7 +1005,10 @@ function UI.createItemFallbackSkin(x, y)
 
     -- Separadores internos: header, menu lateral e painel de conteudo.
     createHorizontalEdge(skin.header, 16, 76, layout.width - 32, assets.edgeBottom, 0.58, 790)
-    createVerticalEdge(skin.edges, layout.menuRightX, 96, layout.height - 128, assets.edgeLeft, 0.62, 792)
+    -- Onze pecas de 32 px: a ultima cobre a ponta transparente e encontra a borda inferior.
+    createVerticalEdge(skin.edges, layout.menuRightX, 96, layout.height - 96, assets.edgeLeft, 0.82, 792)
+    createHorizontalEdge(skin.content, layout.menuRightX + 32, 136,
+        layout.width - layout.menuRightX - 64, assets.edgeBottom, 0.28, 789)
 
     -- Apenas a aba ativa exibe o glow 63157 atras do icone.
     for index, _ in ipairs(UI.tabs) do
@@ -1122,7 +1136,7 @@ function UI.openActionPanel(title, iconId, actions)
     }
     UI.modal = modal
 
-    local mx = x + 82
+    local mx = x + math.floor((UI.layout.width - 384) / 2)
     local my = y + 86
     local width = 384
     local height = math.min(318, math.max(206, 78 + (#(actions or {}) * 29)))
@@ -1492,24 +1506,158 @@ function UI.partyListText()
     return table.concat(candidates, ", ")
 end
 
+function UI.partyCanStart()
+    local party = UI.config.autoParty
+    if party.role == "leader" then
+        return #(party.candidates or {}) > 0, "Adicione membros a lista."
+    end
+    if party.role == "member" then
+        return trim(party.leaderName) ~= "", "Escolha o nick do lider."
+    end
+    return false, "Escolha Lider ou Membro."
+end
+
+function UI.setPartyRole(role)
+    if role ~= "leader" and role ~= "member" then return end
+    if UI.config.autoParty.role == role then return end
+    UI.config.autoParty.role = role
+    UI.config.autoParty.enabled = false
+    UI.partyLastAttempt = {}
+    UI.autoPartyLastStatus = role == "leader" and "Modo Lider: convide membros da lista." or "Modo Membro: escolha o lider."
+    UI.saveConfig()
+    UI.render()
+end
+
+function UI.setPartyLeader(name)
+    name = trim(name)
+    if name == "" then return false end
+    if Player and Player.getName and lower(name) == lower(Player.getName()) then
+        UI.autoPartyLastStatus = "Seu proprio nick nao pode ser lider."
+        return false
+    end
+    UI.config.autoParty.leaderName = name
+    UI.partyLastAttempt = {}
+    UI.autoPartyLastStatus = "Lider definido: " .. name
+    UI.saveConfig()
+    UI.render()
+    return true
+end
+
+function UI.partyVisiblePlayers()
+    local names, seen = {}, {}
+    if not Map or not Map.getCreatureIds then return names end
+    local ownName = Player and Player.getName and lower(Player.getName()) or ""
+    for _, id in ipairs(Map.getCreatureIds(true, true) or {}) do
+        local creature = Creature(id)
+        local name = creature and creature.getName and creature:getName() or nil
+        if name and name ~= "" and lower(name) ~= ownName and not seen[lower(name)] then
+            seen[lower(name)] = true
+            table.insert(names, name)
+        end
+    end
+    table.sort(names, function(a, b) return lower(a) < lower(b) end)
+    return names
+end
+
+function UI.openPartyPlayerPicker(kind, page)
+    local names = UI.partyVisiblePlayers()
+    if kind == "add" then
+        local available = {}
+        for _, name in ipairs(names) do
+            if not UI.findCandidate(name) then table.insert(available, name) end
+        end
+        names = available
+    end
+    local perPage = 6
+    local totalPages = math.max(1, math.ceil(#names / perPage))
+    page = math.min(math.max(1, page or 1), totalPages)
+    local actions = {}
+    for index = (page - 1) * perPage + 1, math.min(page * perPage, #names) do
+        local name = names[index]
+        table.insert(actions, { label = name, iconId = 63680, callback = function()
+            if kind == "leader" then
+                UI.setPartyLeader(name)
+                UI.destroyModal()
+            else
+                UI.addPartyCandidate(name)
+                UI.render()
+                UI.openPartyPlayerPicker("add", page)
+            end
+        end })
+    end
+    if #names == 0 then
+        table.insert(actions, { label = "Nenhum jogador disponivel na tela.", color = UI.colors.muted })
+    end
+    if page > 1 then
+        table.insert(actions, { label = "[Pagina anterior]", callback = function() UI.openPartyPlayerPicker(kind, page - 1) end })
+    end
+    if page < totalPages then
+        table.insert(actions, { label = "[Proxima pagina]", callback = function() UI.openPartyPlayerPicker(kind, page + 1) end })
+    end
+    UI.openActionPanel(kind == "leader" and "Escolher lider" or "Adicionar membro", 63680, actions)
+end
+
+function UI.openPartyMemberList(page)
+    local names = UI.config.autoParty.candidates or {}
+    local perPage = 6
+    local totalPages = math.max(1, math.ceil(#names / perPage))
+    page = math.min(math.max(1, page or 1), totalPages)
+    local actions = {}
+    for index = (page - 1) * perPage + 1, math.min(page * perPage, #names) do
+        local name = names[index]
+        table.insert(actions, { label = "Remover: " .. name, color = UI.colors.warning, callback = function()
+            UI.removePartyCandidate(name)
+            UI.render()
+            UI.openPartyMemberList(page)
+        end })
+    end
+    if #names == 0 then
+        table.insert(actions, { label = "Lista vazia.", color = UI.colors.muted })
+    end
+    if page > 1 then
+        table.insert(actions, { label = "[Pagina anterior]", callback = function() UI.openPartyMemberList(page - 1) end })
+    end
+    if page < totalPages then
+        table.insert(actions, { label = "[Proxima pagina]", callback = function() UI.openPartyMemberList(page + 1) end })
+    end
+    UI.openActionPanel("Membros da Party Plus", 63680, actions)
+end
+
 function UI.linesParty(lines)
     local party = UI.config.autoParty
-    UI.addLine(lines, party.enabled and "Auto Party: ON" or "Auto Party: OFF", party.enabled and UI.colors.active or UI.colors.inactive)
-    UI.addLine(lines, "Players: " .. shorten(UI.partyListText(), 46), UI.colors.neutral)
-    UI.addLine(lines, UI.autoPartyLastStatus or "Aguardando comandos.", UI.colors.muted)
-    UI.addLine(lines, party.enabled and "[Desativar]" or "[Ativar]", UI.colors.warning, function()
+    local role = party.role == "leader" and "LIDER" or (party.role == "member" and "MEMBRO" or "ESCOLHER")
+    UI.addLine(lines, "PARTY PLUS  |  " .. (party.enabled and "ATIVA" or "PAUSADA"), party.enabled and UI.colors.active or UI.colors.inactive)
+    UI.addLine(lines, "Seu papel: " .. role, UI.colors.title)
+    UI.addLine(lines, "[Sou LIDER]", party.role == "leader" and UI.colors.active or UI.colors.info, function() UI.setPartyRole("leader") end)
+    UI.addLine(lines, "[Sou MEMBRO]", party.role == "member" and UI.colors.active or UI.colors.info, function() UI.setPartyRole("member") end)
+    if party.role == "leader" then
+        UI.addLine(lines, "Membros: " .. shorten(UI.partyListText(), 42), UI.colors.neutral)
+        UI.addLine(lines, "[Adicionar jogador visivel]", UI.colors.info, function() UI.openPartyPlayerPicker("add", 1) end)
+        UI.addLine(lines, "[Ver / remover membros]", UI.colors.info, function() UI.openPartyMemberList(1) end)
+        UI.addLine(lines, "Nick fora da tela: .party add Nome", UI.colors.muted)
+    elseif party.role == "member" then
+        UI.addLine(lines, "Lider: " .. shorten(trim(party.leaderName) ~= "" and party.leaderName or "nao definido", 42), UI.colors.neutral)
+        UI.addLine(lines, "[Escolher lider visivel]", UI.colors.info, function() UI.openPartyPlayerPicker("leader", 1) end)
+        UI.addLine(lines, "Nick fora da tela: .party leader Nome", UI.colors.muted)
+        UI.addLine(lines, "Aceita somente convite do lider definido.", UI.colors.muted)
+    else
+        UI.addLine(lines, "Defina o papel para configurar a party.", UI.colors.neutral)
+    end
+    UI.addLine(lines, party.enabled and "[Pausar Party Plus]" or "[Ativar Party Plus]", UI.colors.warning, function()
+        if not party.enabled then
+            local ready, message = UI.partyCanStart()
+            if not ready then
+                UI.autoPartyLastStatus = message
+                UI.render()
+                return
+            end
+        end
         party.enabled = not party.enabled
-        UI.autoPartyLastStatus = party.enabled and "Auto Party ativada." or "Auto Party pausada."
+        UI.autoPartyLastStatus = party.enabled and "Party Plus ativada." or "Party Plus pausada."
         UI.saveConfig()
         UI.render()
     end)
-    UI.addLine(lines, "[Listar players]", UI.colors.info, function()
-        UI.showMessage("Auto Party: " .. UI.partyListText())
-    end)
-    UI.addLine(lines, "Comandos:", UI.colors.muted)
-    UI.addLine(lines, ".party add Nome", UI.colors.muted)
-    UI.addLine(lines, ".party remove Nome", UI.colors.muted)
-    UI.addLine(lines, ".party clear / list / on / off", UI.colors.muted)
+    UI.addLine(lines, shorten(UI.autoPartyLastStatus or "Aguardando configuracao.", 48), UI.colors.muted)
 end
 
 function UI.linesFungo(lines)
@@ -1556,7 +1704,7 @@ function UI.statusStrip()
     add("arrow", "Arrow", UI.modules.arrow and UI.modules.arrow.status)
     add("reset", "Reset", UI.modules.reset and UI.modules.reset.status)
     table.insert(parts, (UI.fungoConfig().enabled and "Fungo ON" or "Fungo OFF"))
-    table.insert(parts, (UI.config.autoParty.enabled and "Party ON" or "Party OFF"))
+    table.insert(parts, (UI.config.autoParty.enabled and "Party Plus ON" or "Party Plus OFF"))
     return table.concat(parts, " | ")
 end
 
@@ -1570,7 +1718,7 @@ end
 
 function UI.panelTitle(tab)
     local titles = {
-        party = "Auto Party",
+        party = "Party Plus",
         rune = "Compra de runas",
         arrow = "Compra de municao",
         forge = "Auto Forja",
@@ -1719,7 +1867,7 @@ end
 function UI.installAutoParty()
     if UI.autoPartyInstalled then return end
     UI.autoPartyInstalled = true
-    UI.autoPartyLastStatus = UI.autoPartyLastStatus or "Auto Party pronta."
+    UI.autoPartyLastStatus = UI.autoPartyLastStatus or "Party Plus pronta."
 
     if Game and Game.registerEvent and Game.Events and Game.Events.TALK then
         Game.registerEvent(Game.Events.TALK, function(authorName, authorLevel, talkType, x, y, z, text, channelId)
@@ -1733,9 +1881,9 @@ function UI.installAutoParty()
 end
 
 function UI.isOwnTalk(authorName)
-    if not Player or not Player.getName then return true end
+    if not Player or not Player.getName then return false end
     local ownName = Player.getName()
-    if not ownName or ownName == "" then return true end
+    if not ownName or ownName == "" then return false end
     return lower(authorName) == lower(ownName)
 end
 
@@ -1752,6 +1900,10 @@ end
 function UI.addPartyCandidate(name)
     name = trim(name)
     if name == "" then return false end
+    if Player and Player.getName and lower(name) == lower(Player.getName()) then
+        UI.autoPartyLastStatus = "Seu proprio nick nao pode ser membro."
+        return false
+    end
     if UI.findCandidate(name) then
         UI.autoPartyLastStatus = name .. " ja esta na lista."
         return false
@@ -1780,12 +1932,10 @@ function UI.handlePartyCommand(authorName, text)
     if not UI.isOwnTalk(authorName) then return end
 
     local lowerText = lower(text)
-    local prefix = lowerText:match("^([!.]party)")
-    if not prefix then return end
-
-    local escapedPrefix = prefix:gsub("%.", "%%.")
-    local command = lowerText:match("^" .. escapedPrefix .. "%s+(%S+)")
-    local rawRest = text:match("^" .. escapedPrefix .. "%s+%S+%s*(.*)$") or ""
+    if not lowerText:match("^[!.]party%s") and lowerText ~= ".party" and lowerText ~= "!party" then return end
+    local command, rawRest = text:sub(7):match("^%s+(%S+)%s*(.*)$")
+    command = lower(command)
+    rawRest = rawRest or ""
 
     if command == "add" then
         UI.addPartyCandidate(rawRest)
@@ -1796,42 +1946,33 @@ function UI.handlePartyCommand(authorName, text)
         UI.autoPartyLastStatus = "Lista limpa."
         UI.saveConfig()
     elseif command == "list" or not command then
-        UI.showMessage("Auto Party: " .. UI.partyListText())
+        UI.showMessage("Party Plus: " .. UI.partyListText())
+    elseif command == "leader" then
+        UI.setPartyLeader(rawRest)
+    elseif command == "role" then
+        local role = lower(trim(rawRest))
+        if role == "lider" or role == "leader" then UI.setPartyRole("leader")
+        elseif role == "membro" or role == "member" then UI.setPartyRole("member")
+        else UI.showMessage("Use .party role lider ou .party role membro") end
     elseif command == "on" then
-        UI.config.autoParty.enabled = true
-        UI.autoPartyLastStatus = "Auto Party ativada."
-        UI.saveConfig()
+        local ready, message = UI.partyCanStart()
+        if ready then
+            UI.config.autoParty.enabled = true
+            UI.autoPartyLastStatus = "Party Plus ativada."
+            UI.saveConfig()
+        else
+            UI.autoPartyLastStatus = message
+            UI.showMessage(message)
+        end
     elseif command == "off" then
         UI.config.autoParty.enabled = false
-        UI.autoPartyLastStatus = "Auto Party pausada."
+        UI.autoPartyLastStatus = "Party Plus pausada."
         UI.saveConfig()
     else
-        UI.showMessage("Comandos: .party add Nome | remove Nome | clear | list | on | off")
+        UI.showMessage(".party role lider/membro | leader Nome | add Nome | remove Nome | clear | list | on | off")
     end
 
     UI.render()
-end
-
-function UI.partyExcludedIcons()
-    local icons = Enums and Enums.PartyIcons or {}
-    local excluded = {}
-    local function mark(value)
-        if value ~= nil then excluded[value] = true end
-    end
-    mark(icons.SHIELD_GRAY)
-    mark(icons.SHIELD_BLUE)
-    mark(icons.SHIELD_YELLOW)
-    mark(icons.SHIELD_BLUE_SHAREDEXP)
-    mark(icons.SHIELD_YELLOW_SHAREDEXP)
-    mark(icons.SHIELD_BLUE_NOSHAREDEXP_BLINK)
-    mark(icons.SHIELD_YELLOW_NOSHAREDEXP_BLINK)
-    mark(icons.SHIELD_BLUE_NOSHAREDEXP)
-    mark(icons.SHIELD_YELLOW_NOSHAREDEXP)
-    return excluded
-end
-
-function UI.isCandidateName(name)
-    return UI.findCandidate(name) ~= nil
 end
 
 function UI.runAutoParty()
@@ -1839,41 +1980,55 @@ function UI.runAutoParty()
     if not party or not party.enabled then return end
     if Client and Client.isConnected and not Client.isConnected() then return end
     if not Map or not Map.getCreatureIds then return end
+    local ready, message = UI.partyCanStart()
+    if not ready then UI.autoPartyLastStatus = message return end
 
-    local candidates = party.candidates or {}
-    if #candidates == 0 then
-        UI.autoPartyLastStatus = "Lista vazia."
-        return
-    end
-
-    local excluded = UI.partyExcludedIcons()
+    local icons = Enums and Enums.PartyIcons or {}
     local players = Map.getCreatureIds(true, true) or {}
+    local ownId = Player and Player.getId and Player.getId() or nil
+    local now = os.time()
+    UI.partyLastAttempt = UI.partyLastAttempt or {}
 
     for _, playerId in ipairs(players) do
-        local player = Creature(playerId)
-        if player and player.getName and player.getId then
-            local name = player:getName()
-            if name and UI.isCandidateName(name) then
-                local icon = player.getPartyIcon and player:getPartyIcon() or nil
-                if icon and not excluded[icon] and Player and Player.inviteParty then
-                    Player.inviteParty(player:getId())
-                    UI.autoPartyLastStatus = "Invite: " .. name
+        if playerId ~= ownId then
+            local player = Creature(playerId)
+            if player and player.getName and player.getId and player.getPartyIcon then
+                local name = player:getName()
+                local icon = player:getPartyIcon()
+                local action
+                if party.role == "leader" and name and UI.findCandidate(name)
+                    and type(icon) == "number" and icons.SHIELD_NONE ~= nil and icon == icons.SHIELD_NONE then
+                    action = "invite"
+                elseif party.role == "member" and name and lower(name) == lower(trim(party.leaderName))
+                    and type(icon) == "number" and icons.SHIELD_WHITEYELLOW ~= nil
+                    and icon == icons.SHIELD_WHITEYELLOW then
+                    action = "join"
                 end
-
-                local icons = Enums and Enums.PartyIcons or {}
-                if icon == icons.SHIELD_WHITEYELLOW and Player and Player.joinParty then
-                    Player.joinParty(player:getId())
-                    UI.autoPartyLastStatus = "Entrando na party de " .. name
+                if action then
+                    local key = action .. ":" .. lower(name)
+                    local previous = UI.partyLastAttempt[key] or 0
+                    if now - previous >= 3 then
+                        UI.partyLastAttempt[key] = now
+                        if action == "invite" and Player and Player.inviteParty then
+                            Player.inviteParty(player:getId())
+                            UI.autoPartyLastStatus = "Convite enviado: " .. name
+                        elseif action == "join" and Player and Player.joinParty then
+                            Player.joinParty(player:getId())
+                            UI.autoPartyLastStatus = "Aceitando convite de " .. name
+                        end
+                    end
                 end
             end
         end
     end
 
-    if Player and Player.getId and Player.enableSharedExpParty then
-        local ownCreature = Creature(Player.getId())
-        local icons = Enums and Enums.PartyIcons or {}
+    if party.role == "leader" and ownId and Player and Player.enableSharedExpParty then
+        local ownCreature = Creature(ownId)
         local ownIcon = ownCreature and ownCreature.getPartyIcon and ownCreature:getPartyIcon() or nil
-        if ownIcon and ownIcon ~= icons.SHIELD_NONE then
+        local isLeader = type(ownIcon) == "number" and (ownIcon == icons.SHIELD_YELLOW
+            or ownIcon == icons.SHIELD_YELLOW_NOSHAREDEXP_BLINK or ownIcon == icons.SHIELD_YELLOW_NOSHAREDEXP)
+        if isLeader and now - (UI.partyLastSharedExpAttempt or 0) >= 10 then
+            UI.partyLastSharedExpAttempt = now
             Player.enableSharedExpParty(true)
         end
     end

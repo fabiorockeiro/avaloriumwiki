@@ -186,9 +186,9 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title":  "FABIO ROCKEIRO - SCRIPTS e DOWNLOADS",
-        "description":  "Baixe o FabioRockeiroBOT para ZeroBot e veja como instalar e usar Rune, Arrow, Forja, Follow, Reset FPS, Fungo, Party e Fire no Pé. GIF para lives e parceria com o servidor.",
+        "description":  "Baixe o FabioRockeiroBOT atualizado para ZeroBot e conheça o Party Plus: escolha entre Líder e Membro, adicione jogadores visíveis pelo painel e automatize convites ou aceites.",
         "category":  "SCRIPTS e DOWNLOADS",
-        "keywords":  "fabio rockeiro bot scripts downloads zerobot instalar rune portable runas arrow quiver flecha forja slivers exalted core dust follow reset fps x-log reconectar fungo gnoprona party fire bomb fogo no pe cooldown gif twitch live parceria discord",
+        "keywords":  "fabio rockeiro bot scripts downloads zerobot instalar rune portable runas arrow quiver flecha forja slivers exalted core dust follow reset fps x-log reconectar fungo gnoprona party plus lider membro convite aceitar jogadores visiveis fire bomb fogo no pe cooldown gif twitch live parceria discord",
         "url":  "fabio-rockeiro-scripts.html",
         "image":  "assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png"
     }

@@ -56,7 +56,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | `reliquary` | 0 | 3 | 0 | 3 | 3 | 0 |
 | `reward-items` | 7 | 0 | 0 | 7 | 7 | 0 |
 | `roulette-system` | 69 | 0 | 0 | 69 | 69 | 0 |
-| `scripts-zerobot` | 1 | 11 | 0 | 12 | 6 | 6 |
+| `scripts-zerobot` | 1 | 14 | 0 | 15 | 9 | 6 |
 | `stamina` | 0 | 4 | 0 | 4 | 4 | 0 |
 | `taints` | 2 | 1 | 0 | 3 | 3 | 0 |
 | `tasks-system` | 0 | 12 | 0 | 12 | 8 | 4 |
@@ -776,6 +776,9 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | fabio-rockeiro-bot.png | PNG | `assets/media/scripts-zerobot/fabio-rockeiro-bot.png` | **Sem referência literal** |
 | fabio-rockeiro-scripts-preview.png | PNG | `assets/media/scripts-zerobot/fabio-rockeiro-scripts-preview.png` | **Sem referência literal** |
 | gif-para-live-twitch.gif | GIF | `assets/media/scripts-zerobot/gif-para-live-twitch.gif` | `fabio-rockeiro-scripts.html` |
+| party-plus-adicionar-membro.png | PNG | `assets/media/scripts-zerobot/party-plus-adicionar-membro.png` | `fabio-rockeiro-scripts.html` |
+| party-plus-lider.png | PNG | `assets/media/scripts-zerobot/party-plus-lider.png` | `fabio-rockeiro-scripts.html` |
+| party-plus-membro.png | PNG | `assets/media/scripts-zerobot/party-plus-membro.png` | `fabio-rockeiro-scripts.html` |
 | reset-fps-fabio-rockeiro.png | PNG | `assets/media/scripts-zerobot/reset-fps-fabio-rockeiro.png` | **Sem referência literal** |
 | zerobot-carregar-script.png | PNG | `assets/media/scripts-zerobot/zerobot-carregar-script.png` | `fabio-rockeiro-scripts.html` |
 | zerobot-logo.png | PNG | `assets/media/scripts-zerobot/zerobot-logo.png` | `fabio-rockeiro-scripts.html` |
