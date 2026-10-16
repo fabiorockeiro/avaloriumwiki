@@ -7,7 +7,7 @@ O menu lateral e o drawer mobile recebem as mesmas seções via `assets/js/wiki.
 | Ícone/imagem | Página | URL | Descrição |
 |---|---|---|---|
 | `assets/media/exalted-forge/exalted-core.gif` | Tiers | `exalted-forge.html` | Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja do Avalorium. |
-| `assets/media/taints/goshnar-taint.gif` | Aumento das Taints | `aumento-das-taints.html` | Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard. |
+| `assets/media/taints/goshnar-taint.gif` | Aumento das Taints | `aumento-das-taints.html` | Soul War, Sanguine, Hazard, Void Hazard e Radiant Taints: bônus de XP, loot e chance de Devoted. |
 | `assets/media/menu/comandos-do-servidor.gif` | Comandos do Servidor | `comandos-do-servidor.html` | Lista completa de comandos, organizada por categoria e função. |
 | `assets/media/items-wiki/Consumables/stamina bottler.gif` | Stamina | `stamina.html` | Faixas de stamina, recuperação, banheiras e quest de Stamina Bottle e Extension. |
 | `assets/media/cadeia/prisoner.png` | Cadeia | `cadeia.html` | Penas administrativas, valores de fiança, Jail Warden, recursos bloqueados e comandos. |

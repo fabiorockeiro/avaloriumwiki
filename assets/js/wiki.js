@@ -383,7 +383,7 @@
                 { url: 'cadeia.html', title: 'Cadeia', description: 'Penas administrativas, fiança, Jail Warden, bloqueios e comandos.', image: 'assets/media/cadeia/prisoner.png' },
                 { url: 'comandos-do-servidor.html', title: 'Comandos do Servidor', description: 'Lista completa de comandos, organizada por categoria e função.', image: 'assets/media/menu/comandos-do-servidor.gif' },
                 { url: 'stamina.html', title: 'Stamina', description: 'Faixas, recuperação, banheiras e a quest de Stamina Bottle e Extension.', image: 'assets/media/items-wiki/Consumables/stamina bottler.gif' },
-                { url: 'aumento-das-taints.html', title: 'Aumento das Taints', description: 'Experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard.', image: 'assets/media/taints/goshnar-taint.gif' },
+                { url: 'aumento-das-taints.html', title: 'Aumento das Taints', description: 'Soul War, Sanguine, Hazard, Void Hazard e Radiant Taints: bônus de XP, loot e chance de Devoted.', image: 'assets/media/taints/goshnar-taint.gif' },
             ],
         },
         // Itens e Equipamentos e Colecionaveis ficam ocultos por enquanto.

@@ -146,9 +146,9 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title": "Aumento das Taints",
-        "description": "Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard.",
+        "description": "Taints de Soul War, Sanguine, Hazard, Void Hazard e Radiant: bônus de XP, loot e chance de Devoted.",
         "category": "Server Info",
-        "keywords": "aumento taints soul war goshnar sanguine rotten blood bakragore hazard gnomprona void hazard tainter npc experiencia loot party",
+        "keywords": "aumento taints soul war goshnar sanguine rotten blood bakragore hazard gnomprona void hazard radiant hunts devoted moon tainter npc experiencia loot party",
         "url": "aumento-das-taints.html",
         "image": "assets/media/taints/goshnar-taint.gif"
     },

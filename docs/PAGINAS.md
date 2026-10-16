@@ -91,8 +91,8 @@ Legenda: “no menu/busca” indica artigo publicado na navegação gerada por J
 ### Aumento das Taints — `aumento-das-taints.html`
 
 - **Papel atual:** Artigo no menu/busca; categoria “Server Info”.
-- **Descrição:** Bônus de experiência, loot e dificuldade em Soul War, Sanguine, Hazard e Void Hazard no Avalorium.
-- **Seções:** # Aumento das Taints · ## Soul War · ### Bônus por taint · ## Sanguine (Rotten Blood) · ### Bônus por taint · ## Hazard (Gnomprona) · ### Por nível · ## Void Hazard · ### Bônus por taint · ## Quem define o número da kill.
+- **Descrição:** Taints de Soul War, Sanguine, Hazard, Void Hazard e Radiant: bônus de XP, loot e chance de Devoted no Avalorium.
+- **Seções:** # Aumento das Taints · ## Soul War · ### Bônus por taint · ## Sanguine (Rotten Blood) · ### Bônus por taint · ## Hazard (Gnomprona) · ### Por nível · ## Void Hazard · ### Bônus por taint · ## Radiant Taints · ### Radiant Hunts — NOVAS HUNTS LIBERADAS! · ### Sistema de Taint · ## Quem define o número da kill.
 - **Imagens próprias/referenciadas:** `assets/media/brand/avalorium-logo.png`, `assets/media/taints/taints-tainter-npc.png`, `assets/media/taints/goshnar-taint.gif`, `assets/media/taints/bakragore-taint.gif`.
 
 ### Backpacks — `backpacks.html`
