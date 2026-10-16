@@ -134,55 +134,33 @@
                 ? data.channelUrl : null;
             if (channelUrl) changelogDiscord.href = channelUrl;
 
-            const entries = data.messages.slice(0, 12).map((message) => {
-                const article = document.createElement('article');
-                article.className = 'changelog-widget-entry';
-
-                const date = document.createElement('time');
-                const timestamp = new Date(message.timestamp);
-                if (!Number.isNaN(timestamp.getTime())) {
-                    date.dateTime = timestamp.toISOString();
-                    date.textContent = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' }).format(timestamp);
-                    article.appendChild(date);
-                }
-
-                if (message.title) {
-                    const title = document.createElement('h3');
-                    title.textContent = message.title;
-                    article.appendChild(title);
-                }
-
-                if (message.content) {
-                    const content = document.createElement('p');
-                    content.textContent = message.content;
-                    article.appendChild(content);
-                }
-
-                if (Array.isArray(message.attachments)) {
-                    message.attachments.forEach((attachment) => {
-                        if (!/^https:\/\//.test(attachment.url || '')) return;
-                        const link = document.createElement('a');
-                        link.className = 'changelog-widget-attachment';
-                        link.href = attachment.url;
-                        link.target = '_blank';
-                        link.rel = 'noopener noreferrer';
-                        link.textContent = attachment.name || 'Ver anexo';
-                        article.appendChild(link);
-                    });
-                }
-
-                if (channelUrl && /^\d+$/.test(message.id || '')) {
-                    const link = document.createElement('a');
-                    link.className = 'changelog-widget-message-link';
-                    link.href = `${channelUrl}/${message.id}`;
-                    link.target = '_blank';
-                    link.rel = 'noopener noreferrer';
-                    link.textContent = 'Ver mensagem no Discord ↗';
-                    article.appendChild(link);
-                }
-                return article;
+            const renderer = window.AvaloriumDiscordChangelog;
+            if (!renderer) throw new Error('Discord changelog renderer unavailable');
+            const groups = renderer.groupByDate(data.messages.slice(0, 12));
+            const picker = document.createElement('div');
+            picker.className = 'changelog-widget-date-picker';
+            const pickerLabel = document.createElement('label');
+            pickerLabel.htmlFor = 'changelog-date-select';
+            pickerLabel.textContent = 'Atualizações de';
+            const select = document.createElement('select');
+            select.id = 'changelog-date-select';
+            groups.forEach((group) => {
+                const option = document.createElement('option');
+                option.value = group.key;
+                option.textContent = group.label + ' · ' + group.messages.length
+                    + (group.messages.length === 1 ? ' publicação' : ' publicações');
+                select.appendChild(option);
             });
-            changelogList.replaceChildren(...entries);
+            picker.append(pickerLabel, select);
+            changelogList.before(picker);
+            const showDate = () => {
+                const selected = groups.find((group) => group.key === select.value) || groups[0];
+                changelogList.replaceChildren(...selected.messages.map((message) =>
+                    renderer.renderEntry(message, channelUrl)));
+                changelogList.scrollTop = 0;
+            };
+            select.addEventListener('change', showDate);
+            showDate();
         } catch {
             showChangelogStatus('Não foi possível carregar as atualizações. Acesse o Discord para ver as novidades.');
         }

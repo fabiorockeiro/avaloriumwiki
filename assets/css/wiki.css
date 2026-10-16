@@ -5067,7 +5067,7 @@ tbody tr:hover td {
     clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
 }
 .changelog-widget[hidden] { display: none; }
-.changelog-widget-body { min-height: 0; overflow-y: auto; }
+.changelog-widget-body { display: flex; flex-direction: column; min-height: 0; overflow: hidden; }
 
 .changelog-widget-header {
     display: flex;
@@ -5101,13 +5101,68 @@ tbody tr:hover td {
     font: 500 24px/1 Inter, sans-serif;
 }
 .changelog-widget-toggle:hover { color: var(--cyan-2); border-color: var(--cyan); }
-.changelog-widget-list { max-height: min(360px, max(100px, calc(100dvh - var(--topbar) - 210px))); overflow-y: auto; overscroll-behavior: contain; }
+.changelog-widget-date-picker {
+    display: grid;
+    gap: 6px;
+    flex: none;
+    padding: 12px 18px;
+    background: rgba(67, 217, 255, .05);
+    border-bottom: 1px solid var(--line);
+}
+.changelog-widget-date-picker label {
+    color: var(--gold-2);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.changelog-widget-date-picker select {
+    width: 100%;
+    min-width: 0;
+    padding: 9px 11px;
+    color: var(--text);
+    background: #101b2d;
+    border: 1px solid var(--line-strong);
+    font: 600 13px/1.3 Inter, sans-serif;
+    cursor: pointer;
+}
+.changelog-widget-list {
+    min-height: 0;
+    max-height: min(420px, max(100px, calc(100dvh - var(--topbar) - 250px)));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
 .changelog-widget-status { margin: 0; padding: 20px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .changelog-widget-entry { padding: 16px 19px; border-bottom: 1px solid var(--line); }
-.changelog-widget-entry time { display: block; margin-bottom: 8px; color: var(--gold-2); font-size: 11px; font-weight: 700; text-transform: uppercase; }
-.changelog-widget-entry h3 { margin: 0 0 7px; color: var(--text); font: 700 15px/1.35 Cinzel, Georgia, serif; }
-.changelog-widget-entry p { margin: 0 0 9px; color: var(--muted); font-size: 13px; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
-.changelog-widget-entry a { display: inline-block; margin: 4px 12px 0 0; color: var(--cyan-2); font-size: 12px; overflow-wrap: anywhere; }
+.changelog-widget-entry:last-child { border-bottom: 0; }
+.changelog-widget-entry time { display: block; margin-bottom: 12px; color: var(--gold-2); font-size: 11px; font-weight: 700; }
+.changelog-widget-entry > h3 { margin: 0 0 9px; color: var(--text); font: 700 15px/1.35 Cinzel, Georgia, serif; }
+.changelog-widget-entry > a { display: inline-block; margin: 8px 12px 0 0; color: var(--cyan-2); font-size: 12px; overflow-wrap: anywhere; }
+.changelog-md { color: var(--muted); font-size: 13px; line-height: 1.55; overflow-wrap: anywhere; }
+.changelog-md :is(h3, h4, h5) { margin: 16px 0 7px; color: var(--text); line-height: 1.35; }
+.changelog-md :first-child:is(h3, h4, h5) { margin-top: 0; }
+.changelog-md h3 { font: 700 15px/1.35 Cinzel, Georgia, serif; }
+.changelog-md h4 { font: 700 14px/1.4 Inter, sans-serif; }
+.changelog-md h5 { font: 700 13px/1.4 Inter, sans-serif; }
+.changelog-md :is(p, ul, ol, blockquote, pre) { margin: 0 0 10px; }
+.changelog-md :is(ul, ol) { padding-left: 21px; }
+.changelog-md li + li { margin-top: 5px; }
+.changelog-md strong { color: var(--text); }
+.changelog-md a { color: var(--cyan-2); text-decoration: underline; text-underline-offset: 2px; }
+.changelog-md code { padding: 1px 4px; color: var(--cyan-2); background: rgba(67, 217, 255, .1); border: 0; font-size: .92em; }
+.changelog-md pre { padding: 10px; overflow-x: auto; background: #07101c; border: 1px solid var(--line); }
+.changelog-md pre code { padding: 0; background: none; white-space: pre; }
+.changelog-md blockquote { padding-left: 10px; border-left: 2px solid var(--gold); }
+.changelog-md small { display: block; margin-bottom: 9px; color: var(--soft); }
+.changelog-md-emoji { display: inline-block; width: 20px; height: 20px; vertical-align: -4px; object-fit: contain; }
+.changelog-md-spoiler button {
+    padding: 0 5px;
+    color: var(--muted);
+    background: var(--line-strong);
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+}
 .changelog-widget-discord {
     display: flex;
     align-items: center;
@@ -5148,5 +5203,5 @@ tbody tr:hover td {
     .changelog-mobile-trigger { width: 34px; height: 34px; font-size: 21px; }
     .topbar-inner { gap: 5px; padding-inline: 9px; }
     .topbar .brand img { width: 112px; }
-    .changelog-widget-list { max-height: min(280px, max(100px, calc(100dvh - var(--topbar) - 210px))); }
+    .changelog-widget-list { max-height: min(300px, max(100px, calc(100dvh - var(--topbar) - 250px))); }
 }

@@ -20,7 +20,7 @@ Este projeto e estatico. Abra `index.html` ou use um servidor local simples para
 
 ## Changelog do Discord
 
-A janela de atualizações aparece em todas as páginas e lê `assets/data/changelog.json`. Ela abre na primeira visita abaixo do menu superior, à direita; ao minimizar, continua acessível pelo botão **Atualizações** ao lado de **Scripts Fabio Rockeiro**. No celular, o atalho fica na barra superior. A preferência de minimização fica salva no navegador. Enquanto o arquivo não tiver mensagens, a janela oferece um link para o Discord.
+A janela de atualizações aparece em todas as páginas e lê `assets/data/changelog.json`. Ela abre na primeira visita abaixo do menu superior, à direita; ao minimizar, continua acessível pelo botão **Atualizações** ao lado de **Scripts Fabio Rockeiro**. No celular, o atalho fica na barra superior. A preferência de minimização fica salva no navegador. As mensagens são agrupadas pela data indicada no changelog (ou pela data da publicação) e o seletor mostra um dia por vez. O texto usa a formatação do Discord e exibe emojis personalizados. Ao abrir a wiki como arquivo local, a janela lê o JSON publicado no GitHub Pages. Enquanto não houver mensagens, ela oferece um link para o Discord.
 
 Para sincronizar as mensagens do canal `#atualizações`:
 
