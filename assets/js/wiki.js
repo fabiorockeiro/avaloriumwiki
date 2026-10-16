@@ -461,6 +461,9 @@
         const changelogNavTrigger = topbar.querySelector('.desktop-nav-changelog');
         changelogNavTrigger?.addEventListener('click', toggleChangelogFromTrigger);
         function positionChangelog() {
+            const panelTop = Math.ceil(topbar.getBoundingClientRect().bottom + 8);
+            changelog.style.top = `${panelTop}px`;
+            changelog.style.maxHeight = `${Math.max(160, window.innerHeight - panelTop - 12)}px`;
             if (window.matchMedia('(min-width: 1021px)').matches && changelogNavTrigger) {
                 changelog.style.right = `${Math.max(12, window.innerWidth - changelogNavTrigger.getBoundingClientRect().right)}px`;
             } else {
@@ -468,6 +471,7 @@
             }
         }
         window.addEventListener('resize', positionChangelog);
+        document.fonts?.ready.then(positionChangelog);
         positionChangelog();
         setChangelogMinimized(changelogMinimized);
 

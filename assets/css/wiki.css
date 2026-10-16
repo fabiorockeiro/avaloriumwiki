@@ -4256,10 +4256,6 @@ tbody tr:hover td {
 }
 
 @media (max-width: 1240px) {
-    .topbar-inner {
-        grid-template-columns: auto minmax(220px, 1fr) auto;
-    }
-
     .quick-actions a span {
         display: none;
     }
@@ -5023,10 +5019,8 @@ tbody tr:hover td {
 
 /* Janela de atualizações sincronizada com o Discord. */
 .desktop-nav-changelog {
-    margin-left: 8px;
     color: var(--gold-2);
     background: linear-gradient(110deg, rgba(215, 175, 97, .17), rgba(67, 217, 255, .08));
-    border-left: 1px solid rgba(215, 175, 97, .35);
     border-right: 1px solid rgba(215, 175, 97, .35);
     text-shadow: 0 0 14px rgba(215, 175, 97, .24);
 }
@@ -5058,11 +5052,12 @@ tbody tr:hover td {
     z-index: 530;
     display: flex;
     flex-direction: column;
-    width: min(380px, calc(100vw - 32px));
+    width: min(420px, calc(100vw - 32px));
     max-height: calc(100dvh - var(--topbar) - 80px);
     color: var(--text);
     background: #0a111e;
     border: 1px solid var(--line-strong);
+    border-top: 2px solid var(--gold);
     box-shadow: 0 20px 60px rgba(0, 0, 0, .6), 0 0 28px rgba(67, 217, 255, .08);
     clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
 }
@@ -5196,7 +5191,7 @@ tbody tr:hover td {
     .changelog-mobile-trigger:hover,
     .changelog-mobile-trigger:focus-visible,
     .changelog-mobile-trigger.is-active { border-color: var(--gold-2); color: #fff5d9; }
-    .changelog-widget { right: 12px; width: min(380px, calc(100vw - 24px)); }
+    .changelog-widget { right: 12px; width: min(420px, calc(100vw - 24px)); }
 }
 
 @media (max-width: 440px) {
@@ -5204,4 +5199,9 @@ tbody tr:hover td {
     .topbar-inner { gap: 5px; padding-inline: 9px; }
     .topbar .brand img { width: 112px; }
     .changelog-widget-list { max-height: min(300px, max(100px, calc(100dvh - var(--topbar) - 250px))); }
+}
+
+/* Keep the search, server status and shortcuts on one row beside the desktop menu. */
+@media (min-width: 1021px) and (max-width: 1240px) {
+    .topbar-inner { grid-template-columns: auto minmax(220px, 1fr) auto auto; }
 }
