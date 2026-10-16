@@ -107,9 +107,24 @@
 
     async function loadChangelog() {
         try {
-            const response = await fetch('assets/data/changelog.json', { cache: 'no-cache' });
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            const data = await response.json();
+            const sources = [
+                new URL('assets/data/changelog.json', document.baseURI).href,
+                'https://fabiorockeiro.github.io/avaloriumwiki/assets/data/changelog.json',
+            ];
+            let data;
+            let lastError;
+            for (const source of new Set(sources)) {
+                try {
+                    const response = await fetch(source, { cache: 'no-cache' });
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    data = await response.json();
+                    if (!Array.isArray(data.messages)) throw new Error('Changelog inválido');
+                    break;
+                } catch (error) {
+                    lastError = error;
+                }
+            }
+            if (!data) throw lastError;
             if (!Array.isArray(data.messages) || data.messages.length === 0) {
                 showChangelogStatus('As atualizações ainda não foram sincronizadas. Veja o canal no Discord.');
                 return;
