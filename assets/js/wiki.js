@@ -18,6 +18,163 @@
     }
     if (currentPath === 'search.html') document.body.classList.add('page-search');
 
+    const changelog = document.createElement('aside');
+    changelog.id = 'changelog-widget';
+    changelog.className = 'changelog-widget';
+    changelog.setAttribute('aria-label', 'Atualizações do Avalorium');
+    changelog.innerHTML = `
+        <div class="changelog-widget-header">
+            <span class="changelog-widget-mark" aria-hidden="true">✦</span>
+            <div class="changelog-widget-heading">
+                <strong>Atualizações</strong>
+                <small>Changelog do Discord</small>
+            </div>
+            <button class="changelog-widget-toggle" type="button" aria-label="Minimizar atualizações" title="Minimizar atualizações">−</button>
+        </div>
+        <div class="changelog-widget-body" id="changelog-widget-body">
+            <div class="changelog-widget-list" aria-live="polite"><p class="changelog-widget-status">Carregando atualizações…</p></div>
+            <a class="changelog-widget-discord" href="https://discord.com/channels/1379133420395036712/1494025735122452630" target="_blank" rel="noopener noreferrer">Abrir canal no Discord <span aria-hidden="true">↗</span></a>
+        </div>
+    `;
+    document.body.appendChild(changelog);
+
+    const changelogToggle = changelog.querySelector('.changelog-widget-toggle');
+    const changelogList = changelog.querySelector('.changelog-widget-list');
+    const changelogDiscord = changelog.querySelector('.changelog-widget-discord');
+    let changelogMinimized = false;
+    try {
+        changelogMinimized = localStorage.getItem('avalorium-changelog-minimized') === 'true';
+    } catch {
+        // A janela continua utilizável quando o armazenamento do navegador está bloqueado.
+    }
+
+    function setChangelogMinimized(minimized) {
+        changelogMinimized = minimized;
+        changelog.hidden = minimized;
+        document.querySelectorAll('[data-changelog-open]').forEach((button) => {
+            button.classList.toggle('is-active', !minimized);
+            button.setAttribute('aria-expanded', String(!minimized));
+            button.setAttribute('aria-label', minimized ? 'Abrir atualizações' : 'Minimizar atualizações');
+        });
+        try {
+            localStorage.setItem('avalorium-changelog-minimized', String(minimized));
+        } catch {
+            // O estado fica disponível somente nesta página.
+        }
+    }
+
+    function focusChangelogTrigger() {
+        const desktop = window.matchMedia('(min-width: 1021px)').matches;
+        const trigger = document.querySelector(desktop ? '.desktop-nav-changelog' : '.changelog-mobile-trigger');
+        trigger?.focus();
+    }
+
+    changelogToggle.addEventListener('click', () => {
+        setChangelogMinimized(true);
+        focusChangelogTrigger();
+    });
+    setChangelogMinimized(changelogMinimized);
+
+    const mobileChangelogTrigger = document.createElement('button');
+    mobileChangelogTrigger.type = 'button';
+    mobileChangelogTrigger.className = 'changelog-mobile-trigger';
+    mobileChangelogTrigger.setAttribute('data-changelog-open', '');
+    mobileChangelogTrigger.setAttribute('aria-controls', 'changelog-widget');
+    mobileChangelogTrigger.setAttribute('aria-label', 'Abrir atualizações');
+    mobileChangelogTrigger.title = 'Atualizações';
+    mobileChangelogTrigger.innerHTML = '<span aria-hidden="true">✦</span>';
+    document.querySelector('.topbar-inner .server-pill')?.before(mobileChangelogTrigger);
+
+    function toggleChangelogFromTrigger() {
+        setChangelogMinimized(!changelogMinimized);
+    }
+
+    mobileChangelogTrigger.addEventListener('click', toggleChangelogFromTrigger);
+    setChangelogMinimized(changelogMinimized);
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape' || changelogMinimized) return;
+        setChangelogMinimized(true);
+        focusChangelogTrigger();
+    });
+
+    function showChangelogStatus(message) {
+        const status = document.createElement('p');
+        status.className = 'changelog-widget-status';
+        status.textContent = message;
+        changelogList.replaceChildren(status);
+    }
+
+    async function loadChangelog() {
+        try {
+            const response = await fetch('assets/data/changelog.json', { cache: 'no-cache' });
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const data = await response.json();
+            if (!Array.isArray(data.messages) || data.messages.length === 0) {
+                showChangelogStatus('As atualizações ainda não foram sincronizadas. Veja o canal no Discord.');
+                return;
+            }
+
+            const channelUrl = /^https:\/\/discord\.com\/channels\/\d+\/\d+$/.test(data.channelUrl || '')
+                ? data.channelUrl : null;
+            if (channelUrl) changelogDiscord.href = channelUrl;
+
+            const entries = data.messages.slice(0, 12).map((message) => {
+                const article = document.createElement('article');
+                article.className = 'changelog-widget-entry';
+
+                const date = document.createElement('time');
+                const timestamp = new Date(message.timestamp);
+                if (!Number.isNaN(timestamp.getTime())) {
+                    date.dateTime = timestamp.toISOString();
+                    date.textContent = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' }).format(timestamp);
+                    article.appendChild(date);
+                }
+
+                if (message.title) {
+                    const title = document.createElement('h3');
+                    title.textContent = message.title;
+                    article.appendChild(title);
+                }
+
+                if (message.content) {
+                    const content = document.createElement('p');
+                    content.textContent = message.content;
+                    article.appendChild(content);
+                }
+
+                if (Array.isArray(message.attachments)) {
+                    message.attachments.forEach((attachment) => {
+                        if (!/^https:\/\//.test(attachment.url || '')) return;
+                        const link = document.createElement('a');
+                        link.className = 'changelog-widget-attachment';
+                        link.href = attachment.url;
+                        link.target = '_blank';
+                        link.rel = 'noopener noreferrer';
+                        link.textContent = attachment.name || 'Ver anexo';
+                        article.appendChild(link);
+                    });
+                }
+
+                if (channelUrl && /^\d+$/.test(message.id || '')) {
+                    const link = document.createElement('a');
+                    link.className = 'changelog-widget-message-link';
+                    link.href = `${channelUrl}/${message.id}`;
+                    link.target = '_blank';
+                    link.rel = 'noopener noreferrer';
+                    link.textContent = 'Ver mensagem no Discord ↗';
+                    article.appendChild(link);
+                }
+                return article;
+            });
+            changelogList.replaceChildren(...entries);
+        } catch {
+            showChangelogStatus('Não foi possível carregar as atualizações. Acesse o Discord para ver as novidades.');
+        }
+    }
+
+    loadChangelog();
+
     const readingProgress = document.createElement('div');
     readingProgress.className = 'reading-progress';
     readingProgress.setAttribute('aria-hidden', 'true');
@@ -298,9 +455,28 @@
                         <img src="assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png" alt="">
                         <span>Scripts Fabio Rockeiro</span>
                     </a>
+
+                    <button type="button" class="desktop-nav-direct desktop-nav-changelog" data-changelog-open aria-controls="changelog-widget" aria-expanded="${!changelogMinimized}">
+                        <span class="desktop-nav-changelog-icon" aria-hidden="true">✦</span>
+                        <span>Atualizações</span>
+                        <span class="desktop-nav-changelog-dot" aria-hidden="true"></span>
+                    </button>
                 </div>
             </nav>
         `);
+
+        const changelogNavTrigger = topbar.querySelector('.desktop-nav-changelog');
+        changelogNavTrigger?.addEventListener('click', toggleChangelogFromTrigger);
+        function positionChangelog() {
+            if (window.matchMedia('(min-width: 1021px)').matches && changelogNavTrigger) {
+                changelog.style.right = `${Math.max(12, window.innerWidth - changelogNavTrigger.getBoundingClientRect().right)}px`;
+            } else {
+                changelog.style.removeProperty('right');
+            }
+        }
+        window.addEventListener('resize', positionChangelog);
+        positionChangelog();
+        setChangelogMinimized(changelogMinimized);
 
         const groups = Array.from(topbar.querySelectorAll('.desktop-nav-group'));
         const closeDesktopMenus = (exception) => {

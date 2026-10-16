@@ -1,0 +1,46 @@
+name: Update Discord changelog
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-discord-changelog
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch changelog
+        if: env.DISCORD_BOT_TOKEN != ''
+        run: node scripts/update-changelog.mjs
+
+      - name: Commit updated changelog
+        if: env.DISCORD_BOT_TOKEN != ''
+        run: |
+          if git diff --quiet -- assets/data/changelog.json; then
+            echo "Changelog unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/changelog.json
+          git commit -m "Update Discord changelog"
+          git push
