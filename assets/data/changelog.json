@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1563030186260168735",
+      "timestamp": "2026-10-23T03:23:56.101000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 20/10  -||@here||\n\n**1.** 🌀 **MAPA**  \n✨ Adicionado **TP para a criatura Fury**.  \n\n---\n\n**2.** 🌿 **MELHORIAS NA VOCAÇÃO DRUID**  \n❄️🌱 **Elemental Synthesis** → A stance agora dá **15% do magic level** como bônus de gelo e terra (antes era 10%).  \n\n💥 **UEs (Druid)** → Dano mínimo e máximo **+12%**.  \n- Eternal Winter  \n- Wrath of Nature  \n\n🧊 **ULUS (Druid)** → Dano mínimo e máximo **+18%**.  \n- Ice Burst  \n- Terra Burst  \n\n---\n\n**3.** 🪙 **SPELL BADGES**  \n⚠️ Não entram no sistema de raridade.  \n- Badge não nasce com raridade  \n- Poção de identificação, gema de raridade, pedra elemental e hammer de raridade não funcionam nela  \n- Classificação da badge continua igual  \n- O bônus da spell também não muda  \n\n---\n\n**4.** 🧍 **CORPOS DOS MITMAH**  \n- Mitmah Scout e Mitmah Seer agora deixam o corpo certo ao morrer  \n- O corpo decai normalmente, como o dos outros monstros  \n- O loot continua no corpo enquanto ele ainda pode ser aberto  \n\n---\n\n**5.** ❄️ **CORPOS DO SILVERFROST SENTINEL E ICEPLUME STRIDER**  \n- Agora deixam o próprio corpo no chão  \n- O corpo do Silverfrost Sentinel não fica mais parado no mapa  \n- O corpo do Iceplume Strider passa a aparecer e some junto com o do Silverfrost  \n- Cada fase do corpo dura **10 segundos**  \n- O loot fica disponível por cerca de **30 segundos** e depois o resto visual some em mais **10 segundos**  \n\n\n📢 **AVISOS IMPORTANTES**  \n🎟️ **Vouchers renovados** → já disponíveis para uso!",
+      "attachments": []
+    },
+    {
       "id": "1562668617353527428",
       "timestamp": "2026-10-22T03:27:11.356000+00:00",
       "title": "",
@@ -76,13 +83,6 @@
       "timestamp": "2026-10-10T03:28:40.027000+00:00",
       "title": "",
       "content": "# 🛠️ CHANGELOG OTC — 10/10\n\n### 🗝️ The New POI Quest\n* Cooldown reduzido de **7 dias para 6 dias e 20 horas**.\n* Mensagens do baú e da Quest Room atualizadas. O novo tempo vale a partir do próximo resgate.\n\n### 🎒 Seller Pouch\n* Corrigido o embaralhamento dos itens restantes na Loot Pouch após vender.\n\n### 👹 Invasão Unificada\n* O **Golden Raid Token** não é mais garantido ao derrotar mini bosses. Um novo evento para obtenção dos tokens será implementado em breve.\n\n### 🗺️ TP Room e Montarias\n* Adicionados teleports para as hunts **Deathling Spellsinger, Lost Thrower, Forest Fury e Gnarlhound**.\n* As montarias **Hibernal Moth** e **Lacewing Moth** foram adicionadas às suas respectivas hunts. ||@here||",
-      "attachments": []
-    },
-    {
-      "id": "1557954643479232576",
-      "timestamp": "2026-10-09T03:15:32.403000+00:00",
-      "title": "",
-      "content": "# 🛠️ CHANGELOG — 09/10/2026\n\n### 👹 Invasão Unificada — Tempo Aleatório\n\n* Cada invasão agora dura entre **30 e 50 minutos**, com duração aleatória.\n* Os mini bosses permanecem vivos até o fim da invasão. Quando o tempo acaba, desaparecem e um novo ciclo começa.\n* 🔕 Os avisos globais foram removidos. Não haverá mensagens no chat quando a invasão começar, quando os mini bosses desaparecerem ou quando todos forem derrotados.\n* 📡 Utilize o **Daily Radar** para acompanhar a invasão.\n\n### 📡 Daily Radar — Invasão\n\n* Mostra cada mini boss vivo, sua direção, distância em relação ao jogador e o tempo restante da invasão.\n* Consulte o radar novamente sempre que quiser atualizar as posições.\n\n### 🎭 Cosmetic Mastery — Outfit Mage\n* O outfit **Mage**, masculino e feminino, agora vale **50 pontos**, em vez de 10.\n* Ainda não possui o outfit completo? Complete os **3 addons** para garantir os 50 pontos.\n* Já tinha o Mage completo? Receberá automaticamente **+40 pontos no próximo login**.\n* Utilize `!masterycosmetic` para distribuir seus pontos.\n\n### 💬 Correção na Conversa com NPCs\n* Corrigido o problema que fazia dois NPCs próximos responderem ao mesmo tempo.\n* Ao clicar em **Talk** ou cumprimentar um NPC, somente ele iniciará a conversa.\n* As mensagens e interações pelo painel serão direcionadas exclusivamente ao NPC selecionado.\n\n### 🌌 Radiant Hunts — NOVAS HUNTS LIBERADAS!\n\n* As novas hunts **Radiant** estão liberadas, com foco em XP! 🚀\n* 🔥 Aproveite para fazer muito XP e evoluir seu personagem!\n  **Sistema de Taint**\n\n* 🩸 **Taint 1:** +5% de XP e 5% de chance de Devoted.\n* 🩸 **Taint 2:** +10% de XP e 15% de chance de Devoted.\n* 🩸 **Taint 3:** +15% de XP e 30% de chance de Devoted.\n  **💎 Devoted dropam novos materiais, para o futuro craft dos itens novos ( Moon )**\n\n\n### 👑 Novos Bosses das Radiant Hunts\n* Os bosses das novas hunts também estão **liberados**!\n* Explore as áreas e enfrente os novos desafios.\n\n### 🎰 Roleta — Itens Raros\n* Melhorada a mensagem exibida ao obter um **item raro na roleta**, deixando o anúncio do drop muito mais destacado e especial. ||@here||",
       "attachments": []
     }
   ]
