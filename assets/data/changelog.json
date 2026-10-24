@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1563405631925395507",
+      "timestamp": "2026-10-24T04:15:49.323000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 21/10   ||@here||\n\n**1.** ⚔️ **MONK — WINDWALKER'S SCYTHES (T1)**  \n- Agora reduzem o tempo de espera de duas magias:  \n  - 🌀 **Exori Gran Mas Pug (Greater Flurry of Blows)** → −4 segundos  \n  - 🌌 **Exori Gran Mas Nia (Spiritual Outburst)** → −6 segundos  \n- O bônus aparece no *look* da arma e só vale com ela equipada.  \n\n---\n\n**2.** 🏆 **MONSTER HUNTER**  \n- O prêmio do campeão não cai mais no chão quando a backpack está cheia ou sem capacidade.  \n- Se couber, o item vai para a backpack.  \n- Se não couber, vai para o inbox do depot.  \n- O vencedor recebe um aviso dizendo onde o prêmio foi parar.  \n\n---\n\n**3.** 🔮 **MONK'S TRINKET V2 E V3**  \n- Agora podem receber **imbuement**.  \n- Cada um tem **1 slot**.  \n- Só entra defesa elemental: morte, terra, fogo, gelo, energia e sagrado.  \n- O nível máximo é **Powerful**.  \n- Critical, life leech, mana leech, skill e outros imbuements continuam bloqueados nesses itens.  \n\n---\n\n**4.** 💎 **ELEMENTAL STONES**  \n- Agora podem ser **agrupadas**.  \n\n---\n\n📢 **AVISO IMPORTANTE**  \n🖥️ **Lembrem-se de atualizar o launcher do cliente!**  \n💾 Salvem suas configurações para evitar perder qualquer ajuste.",
+      "attachments": []
+    },
+    {
       "id": "1563030186260168735",
       "timestamp": "2026-10-23T03:23:56.101000+00:00",
       "title": "",
@@ -76,13 +83,6 @@
       "timestamp": "2026-10-11T03:23:19.751000+00:00",
       "title": "",
       "content": "# 🛠️ CHANGELOG OTC — 11/10\n\n### 👹 Warzone\n* Corrigido o crédito de kill dos **6 bosses da Warzone** para todos os participantes, incluindo quem ataca com summons e jogadores de suporte.\n\n### 🎟️ Preferências de Voucher\n* Novo menu de preferências pelo comando `!voucher`.\n* Configure a pausa ao entrar em PZ, a retomada ao sair e a ativação automática de outro voucher quando o atual acabar.\n* As preferências ficam salvas no personagem.\n\n### 🐎 Mount Quest\n* A montaria da recompensa agora é sorteada entre as que você ainda não possui.\n* Quem já possui todas tem **25% de chance de receber uma Mount Box** na Store Inbox.\n* O baú só pode ser aberto após completar a quest e sobreviver aos 3 minutos.\n\n### 🪨 Reset Boss Stone\n* A pedra não reseta mais o cooldown dos bosses **Maior Domus, Mimar Haffar e Phosphorus**.\n\n### 💪 Voucher de Skills\n* O voucher de **50% Skills** não pausa mais automaticamente ao entrar em PZ, pois o treino continua normalmente nessa área.\n* O tempo continua contando dentro da PZ. Os demais vouchers mantêm o comportamento de pausa.\n* Pausas manuais, por morte ou logout continuam funcionando normalmente. ||@here||",
-      "attachments": []
-    },
-    {
-      "id": "1558320334879461459",
-      "timestamp": "2026-10-10T03:28:40.027000+00:00",
-      "title": "",
-      "content": "# 🛠️ CHANGELOG OTC — 10/10\n\n### 🗝️ The New POI Quest\n* Cooldown reduzido de **7 dias para 6 dias e 20 horas**.\n* Mensagens do baú e da Quest Room atualizadas. O novo tempo vale a partir do próximo resgate.\n\n### 🎒 Seller Pouch\n* Corrigido o embaralhamento dos itens restantes na Loot Pouch após vender.\n\n### 👹 Invasão Unificada\n* O **Golden Raid Token** não é mais garantido ao derrotar mini bosses. Um novo evento para obtenção dos tokens será implementado em breve.\n\n### 🗺️ TP Room e Montarias\n* Adicionados teleports para as hunts **Deathling Spellsinger, Lost Thrower, Forest Fury e Gnarlhound**.\n* As montarias **Hibernal Moth** e **Lacewing Moth** foram adicionadas às suas respectivas hunts. ||@here||",
       "attachments": []
     }
   ]
