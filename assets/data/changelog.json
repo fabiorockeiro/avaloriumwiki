@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1563757933320216597",
+      "timestamp": "2026-10-25T03:35:44.521000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 22/10  -- ||@here||\n\n**1.** 👥 **!LEAVEPARTY**  \n- Ao sair da party, a mensagem de aviso some e o personagem faz o efeito *poff*.  \n- Se o comando ainda estiver em espera, o aviso de tempo aparece com o ícone de status, sem o símbolo de cancelamento.  \n\n---\n\n**2.** 🔧 **REPARO**  \n- O anel e o amuleto **Evolved T1** saíram da lista do `!repair`.  \n- Entrou um **amuleto novo**: reparar custa **5 elemental cores** e ele volta carregado.  \n\n---\n\n**3.** 📦 **QUEST — IN SERVICE OF YALAHAR**  \n- Os baús agora entregam a peça que está exposta ao lado de cada um:  \n  - 🧙 Wisdom of the Yalahari → **yalahari mask**  \n  - ⚔️ Strength of the Yalahari → **yalahari armor**  \n  - 🏹 Skill of the Yalahari → **yalahari leg piece**  \n  - 👣 Footwraps → baú ao lado entrega a bota  \n\n---\n\n**4.** 🩸 **TAINTER E TAINTS DA SANGUINE**  \n- As taints da **Sanguine** e da **Soul War** agora são separadas.  \n- Cada taint da Sanguine é independente (Vemiath, Chagorz, Murcion, Ichgahal, Bakragore).  \n- A Bloodjaw na hunt só aparece se você tiver a taint do Chagorz.  \n- Matar um boss da Sanguine concede apenas a taint daquele boss.  \n- No Tainter:  \n  - Diga **sanguine** ou **rotten blood** para Sanguine.  \n  - Diga **soul war** para Soul War.  \n  - Também pode dizer o nome do boss ou efeito.  \n- O NPC mostra quais taints da Sanguine estão ativas.  \n- Nas salas dos bosses, os Bloodjaws continuam aparecendo normalmente.  \n\n---\n\n**5.** 🏟️ **ARENA DE SVARGROND (HARDCORE)**  \n- Correção na recompensa:  \n  - O baú da **crossbow of destruction** agora entrega a crossbow correta.  \n  - O baú ao lado continua entregando o **nunchaku of destruction** (arma de monk).  \n- As imagens estavam trocadas, agora cada arma aparece com o visual certo.  \n\n---\n\n**6.** ✨ **GOLDEN RAID EVENT RESET**  ( Para o evento Golden Event.  )\n- Novo item: **Golden Raid Event Reset**.  \n- Use nele mesmo para recuperar o tempo do personagem na mina do evento.  \n  - VIP → volta a ter **1 hora**.  \n  - Não VIP → volta a ter **30 minutos**.  \n- Se não resgatou tokens do dia, os bosses já contados continuam valendo.  \n- Se já resgatou, o dia abre de novo e a contagem reinicia.  \n- O item permanece no inventário mesmo com tempo cheio.  \n\n---\n\n**7.** 📜 **REROLL TASK SCROLL**  \n- Usar o pergaminho dá **5 reroll tasks** na Task Board.  \n- Máximo: **50**.  \n- Se já estiver no limite, o pergaminho não é gasto.  \n- Se faltar menos de 5, você recebe só o que ainda couber.",
+      "attachments": []
+    },
+    {
       "id": "1563405631925395507",
       "timestamp": "2026-10-24T04:15:49.323000+00:00",
       "title": "",
@@ -76,13 +83,6 @@
       "timestamp": "2026-10-12T03:06:49.253000+00:00",
       "title": "",
       "content": "# 🛠️ CHANGELOG — 12/10 ||@here||\n\n### 🎭 Outfit Summoner\n* A outfit Summoner feminina agora concede **50 pontos de bônus** ao desbloquear os dois addons, igual à outfit Mage.\n\n### ⚔️ Sala do Phosphorus\n* Removido o ícone de Hazard da fila e da primeira sala.\n* Os monstros dessa luta não ficam mais fortes por causa do Hazard e não podem mais dropar Primal Pod ou Plunder Patriarch.\n* A segunda sala do Phosphorus e as salas do Maior Domus e Mimar Haffar permanecem inalteradas.\n\n### 🧪 Enchanted Potions\n* Agora só é possível manter uma poção de buff de skill ativa por vez: **Berserk, Mastermind ou Bullseye**.\n* Tentar usar outra poção durante o efeito não consome o item e exibe um aviso.\n* Quando o bônus terminar, será possível usar outra normalmente.",
-      "attachments": []
-    },
-    {
-      "id": "1558681379410018496",
-      "timestamp": "2026-10-11T03:23:19.751000+00:00",
-      "title": "",
-      "content": "# 🛠️ CHANGELOG OTC — 11/10\n\n### 👹 Warzone\n* Corrigido o crédito de kill dos **6 bosses da Warzone** para todos os participantes, incluindo quem ataca com summons e jogadores de suporte.\n\n### 🎟️ Preferências de Voucher\n* Novo menu de preferências pelo comando `!voucher`.\n* Configure a pausa ao entrar em PZ, a retomada ao sair e a ativação automática de outro voucher quando o atual acabar.\n* As preferências ficam salvas no personagem.\n\n### 🐎 Mount Quest\n* A montaria da recompensa agora é sorteada entre as que você ainda não possui.\n* Quem já possui todas tem **25% de chance de receber uma Mount Box** na Store Inbox.\n* O baú só pode ser aberto após completar a quest e sobreviver aos 3 minutos.\n\n### 🪨 Reset Boss Stone\n* A pedra não reseta mais o cooldown dos bosses **Maior Domus, Mimar Haffar e Phosphorus**.\n\n### 💪 Voucher de Skills\n* O voucher de **50% Skills** não pausa mais automaticamente ao entrar em PZ, pois o treino continua normalmente nessa área.\n* O tempo continua contando dentro da PZ. Os demais vouchers mantêm o comportamento de pausa.\n* Pausas manuais, por morte ou logout continuam funcionando normalmente. ||@here||",
       "attachments": []
     }
   ]
