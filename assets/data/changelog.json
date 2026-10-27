@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1564480798365716593",
+      "timestamp": "2026-10-27T03:28:08.978000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 27/10  -- @here\n\n**1.** 📜 **REFINED PREY SCROLL**  \n- Ao usar o scroll, uma das suas preys recebe um bônus extra por **2 horas**.  \n- O tipo e a porcentagem são sorteados:  \n  - Tipos: Improved Loot, Damage Boost, Damage Reduction ou Bonus XP  \n  - Extra: de **5% a 20%**, somado ao bônus que a prey já tem  \n- Só é possível ter **um boost por vez**.  \n- Se usar outro scroll antes de acabar, o jogo avisa qual tipo está ativo, em quantos %, e quanto tempo falta. Você escolhe:  \n  - **Nova tentativa** → sorteia outro tipo e porcentagem, e as 2h recomeçam  \n  - **Manter** → continua com o boost atual e o scroll não é gasto  \n- No OTClient, a prey daquele tipo mostra o extra e o total, com brilho dourado e tempo restante separado da duração normal da prey.  \n\n--Logo iremos colocar uma forma de obtelas!\n\n---\n\n**2.** 🩸 **NPC TAINTER — TAINTS DA ROTTEN BLOOD**  \n- Mensagens mais claras ao pedir “all”:  \n  - **Adicionadas agora** → taints que você acabou de ganhar  \n  - **Já ativas** → taints que você já tinha  \n  - **Ainda bloqueadas** → pedem a derrota do boss, com o nome do boss  \n- Se já tiver todas, o NPC avisa e sugere usar “remove” para limpar alguma.  \n- A resposta antiga “Defeat the bosses first or you already have them” foi removida.  \n- Lembrete: a taint é ganha automaticamente ao derrotar o boss (Vemiath, Chagorz, Murcion, Ichgahal ou Bakragore).  \n\n---\n\n**3.** 🛠️ **QUEST — IN SERVICE OF YALAHAR (CORREÇÕES)**  \n- Cada baú da recompensa final agora entrega a peça certa:  \n  - Wisdom → **Yalahari Mask**  \n  - Strength → **Yalahari Armor**  \n  - Skill → **Yalahari Leg Piece**  \n  - Footwraps → **Yalahari Footwraps**  \n- Os baús da quest não podem mais ser arrastados pelos jogadores.  \n- Correção geral: objetos especiais do mapa (baús, alavancas, portas de quest) não devem mais carregar com defeito.  \n\n---\n\n**4.** ⚔️ **NOVAS HUNTS — GNOMPRONA (CUSTOM)**  \n- Novas hunts adicionadas em **Gnomprona**.  \n- Necessitam de **hazards** e nível mínimo para acesso.",
+      "attachments": []
+    },
+    {
       "id": "1563757933320216597",
       "timestamp": "2026-10-25T03:35:44.521000+00:00",
       "title": "",
@@ -76,13 +83,6 @@
       "timestamp": "2026-10-13T03:11:38.913000+00:00",
       "title": "",
       "content": "# 🛠️ CHANGELOG — 13/10 ||@here||\n\n### 🧪 Enchanted Potions\n* Corrigido o bloqueio indevido de outras poções após usar Enchanted Berserk, Mastermind ou Bullseye.\n* Poções da mesma linha não podem ser usadas simultaneamente, mas poções de linhas diferentes continuam compatíveis.\n* Poções de vida, mana e spirit continuam funcionando normalmente.\n* O bloqueio termina junto com o buff ou quando ele é removido.\n\n### 🥋 Monk — Balanced Brawl\n* A magia `exori mas res` agora puxa monstros em **todas as direções**, em um raio de até **5 SQMs**, sem precisar estar virado para eles.\n* Mana, cooldown e duração permanecem iguais.\n\n### ⏱️ Comando !boost\n* Corrigida a exibição do tempo das Enchanted Potions. Agora, o comando mostra o tempo restante real e remove os efeitos expirados da lista.\n\n### 🗺️  Mapa\n* Diversas hunts adicionadas nos teleports, onde faltavam algumas criaturas.\n\n### 👹 Boss Timira the Many-Headed\n* Corrigido o desaparecimento inesperado do boss durante a luta.\n\n### 🔒 Prisão Administrativa\n* A fiança só pode ser paga após cumprir **todo o tempo da pena**.\n* O tempo continua contando mesmo com o jogador offline.\n* O carcereiro informa quanto tempo falta caso o pagamento seja tentado antecipadamente.\n\n### 🎉 Promoção Avalorium — 20% OFF\n📅 **De 13/10 a 19/10/2026**\n\n* 🎭 **Avalorium Addon Doll:** libera todos os outfits da Store oficial do Tibia com addons completos.\n* 🐎 **Avalorium Mount Scroll:** libera todas as montarias da Store oficial do Tibia.\n\n📍 Disponível em **Store → Cosmetics → Avalorium Collection**.\n\n⏰ Promoção válida das **00:00 de 13/10 até 23:59 de 19/10**. Aproveite!",
-      "attachments": []
-    },
-    {
-      "id": "1559039612825899039",
-      "timestamp": "2026-10-12T03:06:49.253000+00:00",
-      "title": "",
-      "content": "# 🛠️ CHANGELOG — 12/10 ||@here||\n\n### 🎭 Outfit Summoner\n* A outfit Summoner feminina agora concede **50 pontos de bônus** ao desbloquear os dois addons, igual à outfit Mage.\n\n### ⚔️ Sala do Phosphorus\n* Removido o ícone de Hazard da fila e da primeira sala.\n* Os monstros dessa luta não ficam mais fortes por causa do Hazard e não podem mais dropar Primal Pod ou Plunder Patriarch.\n* A segunda sala do Phosphorus e as salas do Maior Domus e Mimar Haffar permanecem inalteradas.\n\n### 🧪 Enchanted Potions\n* Agora só é possível manter uma poção de buff de skill ativa por vez: **Berserk, Mastermind ou Bullseye**.\n* Tentar usar outra poção durante o efeito não consome o item e exibe um aviso.\n* Quando o bônus terminar, será possível usar outra normalmente.",
       "attachments": []
     }
   ]
