@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1564843573101199513",
+      "timestamp": "2026-10-28T03:29:41.215000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 28/10  -- ||@here||\n\n**1.** 🔧 **CORREÇÃO — NPC TAINTER**  \n- Corrigido o problema que impedia a exibição do ícone ao receber taints da Rotten Blood pelo Tainter.  \n- O ícone agora aparece em qualquer local, incluindo o da **Final Taint**.  \n- Ao remover as taints, o ícone é atualizado ou removido automaticamente.  \n\n---\n\n**2.** ✨ **CORREÇÃO — DIVINE BARRAGE E ETHEREAL BARRAGE**  \n- **Exori dir san (Divine Barrage)** e **Exori dir moe (Ethereal Barrage)** agora caem no lugar que você mirar com o crosshair ou o cursor, como o **Death Echo**.  \n- Antes iam sempre no monstro atacado e não saíam sem alvo. Agora você escolhe onde a área explode, dentro do alcance da magia e com visão livre até o local.  \n- Se usar sem mirar, a magia vai no alvo atacado, como antes.  \n- Com a opção *Aim at Target* ligada na Cyclopedia, elas continuam indo sempre no alvo.  \n- O dano, a área e os bônus da Roda permanecem iguais.  \n\n---\n\n**3.** 🧑‍🍳 **NPC JEAN PIERRE**  \n- Agora conversa com todos os jogadores durante o ano inteiro.  \n- Não é mais necessário acesso especial ou esperar até agosto.",
+      "attachments": []
+    },
+    {
       "id": "1564480798365716593",
       "timestamp": "2026-10-27T03:28:08.978000+00:00",
       "title": "",
@@ -76,13 +83,6 @@
       "timestamp": "2026-10-15T03:10:48.086000+00:00",
       "title": "",
       "content": "# 🛠️ CHANGELOG — 15/10 ||@here||\n\n### 🎭 Outfit — Correção após Server Save\n* Corrigido o problema que fazia o personagem voltar para o outfit **Citizen branco**, perdendo as cores escolhidas após o Server Save.\n* Não é mais possível reutilizar magias de Avatar enquanto o efeito já estiver ativo.\n* O visual do Avatar não é mais salvo como outfit original, preservando as cores do personagem.\n\n### 🥾 Bunnyslippers — Raridade\n* A **Bunnyslippers** com raridade indefinida agora pode ser revelada com a **Tool Identification**.\n* Também é possível usar o **Hammer** para retornar a bota ao estado de raridade indefinida.\n\n### 🍗 Comidas Especiais — Bônus Acumuláveis\n* Os bônus das comidas especiais agora **acumulam com os bônus das poções de skills**.\n* Comidas de skills diferentes também podem ficar ativas simultaneamente.\n* Comer o mesmo prato novamente renova a duração de **1 hora**, mantendo o mesmo bônus.\n* O intervalo de **10 minutos entre comidas especiais** continua igual.\n* Quem já estava com uma comida ativa precisa consumi-la novamente para receber o novo bônus.\n\n**Comidas e bônus:**\n* 🌴 Tropical Fried Terrorbird: +5 Magic Level, acumulando com Mastermind.\n* 🍗 Roasted Dragon Wings: +10 Shielding, acumulando com Bullseye e Berserk.\n* 🥘 Veggie Casserole: +10 Melee, acumulando com Berserk.\n* 🥕 Carrot Cake e 🧁 Lemon Cupcake: +10 Distance, acumulando com Bullseye.\n* 🌶️ Zaoan Sauce: +10 Fist, junto ao bônus de Melee.\n* 🐟 Northern Fishburger: +50 Fishing, mantendo seu funcionamento próprio.\n\n### 🐾 Novas Hunts e Adições de Criaturas\n\n* 🦇 **Bat:** adicionado às hunts de Trolls.\n* 🕷️ **Spider:** adicionada à hunt de Bugs.\n* 🔥 **Infernalist:** adicionado à hunt de Warlocks.\n\n### ⚔️ Novas Hunts\n* 👹 Usurper\n* 💀 Deathlings\n* 👺 Goblin\n* 🐺 Gnarlhound\n* ⚰️ Gravedigger\n\nExplore os novos respawns e aproveite as opções adicionais de caça! 🎯",
-      "attachments": []
-    },
-    {
-      "id": "1559403215613599805",
-      "timestamp": "2026-10-13T03:11:38.913000+00:00",
-      "title": "",
-      "content": "# 🛠️ CHANGELOG — 13/10 ||@here||\n\n### 🧪 Enchanted Potions\n* Corrigido o bloqueio indevido de outras poções após usar Enchanted Berserk, Mastermind ou Bullseye.\n* Poções da mesma linha não podem ser usadas simultaneamente, mas poções de linhas diferentes continuam compatíveis.\n* Poções de vida, mana e spirit continuam funcionando normalmente.\n* O bloqueio termina junto com o buff ou quando ele é removido.\n\n### 🥋 Monk — Balanced Brawl\n* A magia `exori mas res` agora puxa monstros em **todas as direções**, em um raio de até **5 SQMs**, sem precisar estar virado para eles.\n* Mana, cooldown e duração permanecem iguais.\n\n### ⏱️ Comando !boost\n* Corrigida a exibição do tempo das Enchanted Potions. Agora, o comando mostra o tempo restante real e remove os efeitos expirados da lista.\n\n### 🗺️  Mapa\n* Diversas hunts adicionadas nos teleports, onde faltavam algumas criaturas.\n\n### 👹 Boss Timira the Many-Headed\n* Corrigido o desaparecimento inesperado do boss durante a luta.\n\n### 🔒 Prisão Administrativa\n* A fiança só pode ser paga após cumprir **todo o tempo da pena**.\n* O tempo continua contando mesmo com o jogador offline.\n* O carcereiro informa quanto tempo falta caso o pagamento seja tentado antecipadamente.\n\n### 🎉 Promoção Avalorium — 20% OFF\n📅 **De 13/10 a 19/10/2026**\n\n* 🎭 **Avalorium Addon Doll:** libera todos os outfits da Store oficial do Tibia com addons completos.\n* 🐎 **Avalorium Mount Scroll:** libera todas as montarias da Store oficial do Tibia.\n\n📍 Disponível em **Store → Cosmetics → Avalorium Collection**.\n\n⏰ Promoção válida das **00:00 de 13/10 até 23:59 de 19/10**. Aproveite!",
       "attachments": []
     }
   ]
