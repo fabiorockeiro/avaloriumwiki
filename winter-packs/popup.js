@@ -50,7 +50,7 @@
     dialog = element('dialog');
     dialog.setAttribute('aria-labelledby', 'av-title');
     dialog.setAttribute('aria-describedby', 'av-description');
-    dialog.innerHTML = `<div class="surface"><div class="snow" aria-hidden="true"></div>
+    dialog.innerHTML = `<div class="surface"><div class="embers" aria-hidden="true"></div>
       <svg class="filter-definitions" width="0" height="0" aria-hidden="true"><defs>
         <filter id="av-remove-white" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">
           <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -8 -8 -8 0 22.8" result="key"/>
@@ -58,7 +58,7 @@
         </filter>
       </defs></svg>
       <button class="close" type="button" aria-label="Fechar pacotes">×</button>
-      <header class="heading"><img class="logo" alt="Avalorium OT" width="124" height="124"><div class="title-row"><h1 id="av-title">PACOTES AVALORIUM</h1></div><p id="av-description">APOIE O SERVIDOR E RECEBA RECOMPENSAS EXCLUSIVAS</p></header>
+      <header class="heading"><img class="logo" alt="Avalorium OT" width="124" height="124"><div class="title-row"><h1 id="av-title">PACOTES AVALORIUM <span class="halloween" aria-label="HALLOWEEN">HALL<img src="${asset('assets/pumpkin-o.png')}" alt="" aria-hidden="true">WEEN</span></h1></div><p id="av-description">🎃 APOIE O SERVIDOR E RECEBA RECOMPENSAS EXCLUSIVAS 🎃</p></header>
       <nav class="pack-nav" aria-label="Ir para pacote"></nav>
       <div class="cards" role="region" aria-label="Comparação dos seis pacotes" tabindex="0"></div>
     </div>`;
@@ -76,7 +76,7 @@
       card.append(border);
       const title = element('h2', '', pack.name);
       const hero = element('div', 'artifact'); hero.setAttribute('aria-hidden', 'true');
-      const chest = element('img', 'chest'); chest.src = asset('assets/chest.webp'); chest.alt = ''; chest.width = 160; chest.height = 160;
+      const chest = element('img', 'chest'); chest.src = asset('assets/chests/' + pack.id + '.png'); chest.alt = ''; chest.width = 160; chest.height = 160;
       hero.append(chest);
       const credits = element('div', 'credits');
       credits.append(icon('tibia-coins.gif', 'coin'), element('strong', '', number(pack.tc)), element('span', '', 'TC'));
