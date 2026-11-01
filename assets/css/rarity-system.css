@@ -147,7 +147,7 @@
 .rs-drops :is(input,select,.rs-table-wrap):focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
 .rs-content :is(a,button,summary):focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
 @media(min-width:1101px) and (max-width:1400px) { .rarity-page .quick-actions a span { display: none; } }
-@media(max-width:1250px) {
+@media(max-width:1050px) {
  .rs-rarities { grid-template-columns: repeat(3,minmax(0,1fr)); }
  .rs-tools-layout { grid-template-columns: minmax(0,1fr); }
  .rs-tools-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); }
