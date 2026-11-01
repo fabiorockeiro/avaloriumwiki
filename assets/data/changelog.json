@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1566300941303549998",
+      "timestamp": "2026-11-01T04:00:44.871000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 01/11 - ||@here||\n\n**1. 🩸 BAKRAGORE**\n- O boss **Bakragore** agora possui a mesma chance dos minibosses de dropar **essências de todos minibosses**.\n\n---\n\n**2. 📋 TASK BOARD**\n- Adicionados cerca de **15 novos itens** às tasks.\n- A quantidade máxima por tarefa foi aumentada para **40 unidades**.\n\n---\n\n**3. 🛠️ CORREÇÃO — AURAS**\n- Corrigidos os símbolos exibidos nas auras **Sapped Strength** e **Exposed Weakness**.\n- Os ícones estavam invertidos entre si.\n- Os efeitos e valores das habilidades permanecem inalterados.\n\n---\n\n**4. 🎯 PREFERÊNCIAS DE TAREFAS**\n- ✅ Criaturas marcadas como preferidas agora possuem maior chance de aparecer.\n- ❌ Criaturas evitadas aparecem com menor frequência, mas ainda podem ser sorteadas.\n- As opções continuam respeitando a dificuldade selecionada.\n- Não há repetição de criaturas no mesmo sorteio.\n\n---\n\n**5. 🏹 ENCHANTED SPECIALIZED TASK AMULET**\n- Agora pode ser obtido no último baú das tasks (**Master**).\n- Quem já abriu esse baú poderá utilizá-lo novamente para receber apenas o amuleto.\n\n✨ Efeitos:\n- Equipado no slot de amuleto, cada abate conta em dobro para:\n  - Hunting Tasks\n  - Bounty Tasks\n  - Weekly Kill Tasks\n- O bônus acumula com:\n  - Voucher de Task\n  - Double Task Scroll\n\n⏳ Informações:\n- Duração de 1 hora.\n- Fora do slot, o tempo fica pausado.\n- Ao acabar a carga, o bônus é desativado.\n- Pode ser recarregado no **!repair** utilizando **5 Elemental Cores**.\n- Nível mínimo: **500**.\n\n---\n\n**6. 🦵 SISTEMA DE RARIDADE NAS PERNEIRAS**\n- Perneiras de classificação **3 e 4** agora participam do sistema de raridade.\n\n✨ Funcionamento:\n- Passam a nascer com raridade indefinida.\n- A alteração vale para itens na:\n  - Backpack\n  - Corpo do personagem\n  - Depot\n  - House\n  - Chão\n  - Stash\n\n🔮 Agora é possível utilizar:\n- Revelation Potions\n- Identificações de raridade\n\n📌 Os slots vazios poderão aparecer normalmente.\n\n⚠️ As Bonus Stones ainda não funcionam em perneiras até que os bônus desse equipamento sejam definidos.\n\n---\n\n**7. 🏪 STORE**\n- Adicionado o **Task Reroll Scroll** à Store.\n\n📜 Ao utilizar:\n- Concede **5 Task Rerolls**.\n- O limite máximo continua sendo **50 rerolls**.",
+      "attachments": []
+    },
+    {
       "id": "1565928895818113085",
       "timestamp": "2026-10-31T03:22:22.315000+00:00",
       "title": "",
@@ -9,11 +16,11 @@
       "attachments": [
         {
           "name": "Gravando_2026-10-29_012454.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6ae7592e&is=6ae607ae&hm=807d5256fd35939d02b21bd3998bc820af8e9ebec92d8a1567e0ef3f8b397cb9&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6ae801ee&is=6ae6b06e&hm=dc8b9bfe3f7f9e2bb6716d02a74bd93f7f4f506a546de27a1030d096fc75a549&"
         },
         {
           "name": "rarity_celestial_gem.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6ae7592e&is=6ae607ae&hm=764ba15228c9bac0cba2e71a309a15ec99e6f3b016a69aa25759bcf20ffa2d8c&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6ae801ee&is=6ae6b06e&hm=a73c986c88c2a76f9e8611c7be8b62c0b89d45e4f5a6f99d6a00c113cbf1c644&"
         }
       ]
     },
@@ -85,13 +92,6 @@
       "timestamp": "2026-10-20T03:07:54.296000+00:00",
       "title": "",
       "content": "# 📜 CHANGELOG — 19/10 ||@here||\n\n\n🏪 **STORE**  \n🐶 Correção no outfit **Sea Dog**:  \n- O outfit completo podia ser cobrado e logo aparecer como *Refund* no histórico.  \n- Isso acontecia porque os visuais masculino e feminino estavam cadastrados trocados.  \n- Agora a compra entrega o outfit certo.  \n- Quem já tinha o outfit continua com ele. Quem comprou e recebeu *Refund* não perdeu coins.  \n- Se você já tiver o **Sea Dog**, a store avisa e não cobra novamente.  \n\n\n📦 **THE NEW POI**  \n- Ao receber a recompensa do baú, o personagem vira o item por **60 segundos** e depois volta ao visual normal, como já acontece no baú da **Soul War**.  \n\n\n🌿 **VOCAÇÕES — CORREÇÕES E MELHORIAS**  \n\n🧙‍♂️ **Druid**  \n- ❄️ **Ice Burst (exevo ulus frigo)** → corrigido o cooldown de **10s** no nível máximo.  \n- 🌨️ **Forked Glacier (exevo fur frigo)** e 🌱 **Forked Thorns (exevo fur tera)** → cooldown reduzido de **6s para 4s**.  \n- 🔄 Agora, ao aumentar na roda de habilidade, você poderá usar apenas **1 elemento**.  \n\n🙏 **Monk**  \n- 🌌 **Exevo gran mas nia** → corrigida a corrente:  \n  - Agora acerta até **9 alvos**.  \n  - Sai **3 vezes a corrente**.  \n  - Concede **+2 pontos de Harmonia**.  \n\n\n⚔️ **HUNTS**  \n- 👾 Nerf nas hunts **Voids** e **Netherbound**: criaturas causam **15% menos dano**.  \n\n\n💙 **Aproveitem as novidades!**",
-      "attachments": []
-    },
-    {
-      "id": "1561578471627563113",
-      "timestamp": "2026-10-19T03:15:20.361000+00:00",
-      "title": "",
-      "content": "📊 **GANHOS SEMANAIS E TOKENS**\n🏰 **Castelo** → 21 Blood Coins  \n⚔️ **ARAM** → 42 Blood Coins  \n✅ **Total** → 63 Blood Coins/semana  \n\n💰 **Valores definidos dos Tokens:**  \n- ⚪ Silver Token → 1  \n- 🟡 Gold Token → 2  \n- 👑 Boss Token → 2  \n- ⚔️ Expert Warzone Token → 4  \n- 🌟 Golden Raid Token → 10  \n- 🎲 Roulette Token → 15  \n\n📌 **Quantos tokens dá para comprar em 1 semana (63 Blood Coins):**  \n- Silver → até 63  \n- Gold → até 31  \n- Boss → até 31  \n- Expert Warzone → até 15  \n- Golden Raid → até 6 *(sobra 3)*  \n- Roulette → até 4 *(sobra 3)*  \n\n||@here||",
       "attachments": []
     }
   ]
