@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1566650137080627361",
+      "timestamp": "2026-11-02T03:08:19.632000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 01/11 - @here\n\n**1. 💰 IGNORE SELL — SLOTS MAIS BARATOS**\n- Cada slot extra do Ignore Sell agora custa **10kk** (antes 75kk).\n- Mantidas as regras atuais:\n  - 50 slots gratuitos\n  - Até 100 slots comprados\n  - Máximo de 150 slots\n  - Compra permanente por personagem\n  - Sem reembolso\n- O pagamento é feito primeiro pela mochila e depois pelo banco.\n- O novo valor aparece na interface do Ignore Sell e no comando **!ignoresell slots**.\n\n---\n\n**2. 🎁 PRIMAL BAG E BAG YOU DESIRE**\n- Ao abrir uma **Primal Bag** ou **Bag You Desire (Soul War)**, seu personagem se transforma no item recebido por **10 segundos**.\n- O item continua sendo enviado normalmente para a **Store Inbox**.\n\n---\n\n**3. ✨ GEMA AUG. DIVINE BARRAGE**\n- Corrigido o efeito da gema **Aug. Divine Barrage (+Dano e +Dano Crítico Extra)**.\n- Agora o bônus fortalece corretamente a magia **Divine Barrage (exori dir san)**.\n- Antes o bônus era aplicado incorretamente à **Divine Missile (exori san)**.\n\n🎨 **Correção visual**\n- O ícone da gema foi atualizado.\n- Agora utiliza a imagem correta da **Divine Barrage**.\n\n⚠️ Jogadores que utilizavam essa gema para fortalecer o **exori san** perceberão que o bônus não será mais aplicado nessa magia.",
+      "attachments": []
+    },
+    {
       "id": "1566300941303549998",
       "timestamp": "2026-11-01T04:00:44.871000+00:00",
       "title": "",
@@ -16,11 +23,11 @@
       "attachments": [
         {
           "name": "Gravando_2026-10-29_012454.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6ae8aaae&is=6ae7592e&hm=8eb0dbeab2cea585619a381872fb4898190463fc3b14930759cb0b5222af37e6&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6ae9536e&is=6ae801ee&hm=18a8d9942e0a794034a4671c9dd3eb05c70f56f2454ff8189e7909a212b78bc4&"
         },
         {
           "name": "rarity_celestial_gem.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6ae8aaae&is=6ae7592e&hm=0b9f22422f71a331ebef6861c4b21b946b79b2eef1474433e29daa5217d7c85a&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6ae9536e&is=6ae801ee&hm=103c37ef8b6a4e89e475bc1e8595c3e13fab28b02c03f910062e3873198d3a1c&"
         }
       ]
     },
@@ -85,13 +92,6 @@
       "timestamp": "2026-10-21T03:15:37.684000+00:00",
       "title": "",
       "content": "# 📜 CHANGELOG — 19/10  - @here\n \n\n**1.** 🍺 **ENCHANTED BERSERK POTION**  \n✨ Agora também aumenta **Fist Fighting em +10** por 30 minutos.  \n⚔️ Club, axe e sword continuam com +10, e 🛡️ shield com -15.  \n⏳ Quem já estiver com a poção ativa precisa esperar o efeito acabar e beber novamente para ganhar o bônus de fist.  \n\n\n**2.** ⚔️ **EXORI GRAN (FIERCE BERSERK)**  \n⏱️ O tempo de recarga agora pode baixar até **2 segundos**.  \n- Sem bônus → 6s  \n- Com Trinket Knight v3 ou arma Titan → 4s  \n- Com Trinket Knight v3 + arma Titan (Razor, Battleaxe ou Warmace) → 2s  \n- Com Trinket + arma Ancient Void → 3s  \n\n\n**3.** 🌰 **BLESSED ACORN**  \n🌱 Funciona a partir do **nível 80**.  \n❤️ Recupera vida e 🔮 mana e desaparece.  \n♻️ Pode ser usado novamente após **1 hora**.  \n\n\n**4.** 🌶️ **FILLED JALAPEÑO PEPPERS**  \n⚡ Aumentam a velocidade em **+100** por **1 hora**.  \n\n\n**5.** 🍶 **POT OF BLACKJACK**  \n🥤 Rende de **2 a 4 goles**, cada um curando **5.000 de vida**.  \n⏳ Entre um gole e outro é preciso esperar **10 minutos**.  \n📦 Se estiver empilhado, é necessário separar um pote antes de beber.  \n\n\n**6.** 🍬 **DEMONIC CANDY BALL**  \n🎲 Sorteia um efeito por **1 hora**: +6 melee, +6 distance, +6 shielding, +3 magic level ou +100 velocidade.  \n💡 Também pode dar luz (2h), 👻 invisibilidade (10min) ou 🎃 abóbora (5h).  \n⏳ Cooldown para outra comida de skill: **10 minutos**.  \n\n\n**7.** 🥤 **SWEET MANGONAISE ELIXIR**  \n✨ Copia **10 vezes** o anel de duração equipado (inclusive plasma).  \n📦 Se não houver cap ou espaço, o elixir não é gasto.  \n\n\n**8.** 🐙 **THE ROOTKRAKEN**  \n💥 Agora é possível **boostar o boss**.",
-      "attachments": []
-    },
-    {
-      "id": "1561938988560949322",
-      "timestamp": "2026-10-20T03:07:54.296000+00:00",
-      "title": "",
-      "content": "# 📜 CHANGELOG — 19/10 ||@here||\n\n\n🏪 **STORE**  \n🐶 Correção no outfit **Sea Dog**:  \n- O outfit completo podia ser cobrado e logo aparecer como *Refund* no histórico.  \n- Isso acontecia porque os visuais masculino e feminino estavam cadastrados trocados.  \n- Agora a compra entrega o outfit certo.  \n- Quem já tinha o outfit continua com ele. Quem comprou e recebeu *Refund* não perdeu coins.  \n- Se você já tiver o **Sea Dog**, a store avisa e não cobra novamente.  \n\n\n📦 **THE NEW POI**  \n- Ao receber a recompensa do baú, o personagem vira o item por **60 segundos** e depois volta ao visual normal, como já acontece no baú da **Soul War**.  \n\n\n🌿 **VOCAÇÕES — CORREÇÕES E MELHORIAS**  \n\n🧙‍♂️ **Druid**  \n- ❄️ **Ice Burst (exevo ulus frigo)** → corrigido o cooldown de **10s** no nível máximo.  \n- 🌨️ **Forked Glacier (exevo fur frigo)** e 🌱 **Forked Thorns (exevo fur tera)** → cooldown reduzido de **6s para 4s**.  \n- 🔄 Agora, ao aumentar na roda de habilidade, você poderá usar apenas **1 elemento**.  \n\n🙏 **Monk**  \n- 🌌 **Exevo gran mas nia** → corrigida a corrente:  \n  - Agora acerta até **9 alvos**.  \n  - Sai **3 vezes a corrente**.  \n  - Concede **+2 pontos de Harmonia**.  \n\n\n⚔️ **HUNTS**  \n- 👾 Nerf nas hunts **Voids** e **Netherbound**: criaturas causam **15% menos dano**.  \n\n\n💙 **Aproveitem as novidades!**",
       "attachments": []
     }
   ]
