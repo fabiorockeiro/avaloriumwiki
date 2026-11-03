@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1567012468134518807",
+      "timestamp": "2026-11-03T03:08:06.087000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 02/11 - @here\n\n**1. 👕 CORREÇÃO — OUTFIT VOLTANDO PARA CITIZEN**\n- Corrigido o problema que fazia alguns personagens aparecerem com o outfit **Citizen** após determinados reinícios do servidor.\n- O servidor agora preserva a escolha de outfit mesmo quando não consegue exibi-lo temporariamente.\n- Quando o problema for resolvido internamente, o outfit correto voltará automaticamente no próximo login.\n- Caso você troque de outfit nesse período, a nova escolha será salva normalmente.\n\n---\n\n**2. ⚡ CORREÇÃO — EXPERIÊNCIA EM PARTY E STAMINA**\n- Corrigido o problema que impedia o ganho de experiência em party após recuperar stamina.\n- Agora personagens que recuperarem stamina através de:\n  - Stamina Bottle\n  - Regeneração\n  - Concoction\n  - Banho\n- Voltarão a ganhar experiência normalmente.\n- A stamina também voltará a ser consumida corretamente.\n\n📊 **Janela de Skills**\n- O XP Rate agora mostra o valor real do bônus de experiência.\n- Quando o personagem não puder receber experiência, a taxa aparecerá como **0% em vermelho**.\n\n---\n\n**3. 🏆 HIGHSCORE DE CHARM POINTS**\n- O ranking agora considera apenas os Charm Points obtidos através do **Bestiário**.\n- Charm Points recebidos por itens da Store não contam mais para o ranking.\n\n✅ Nada mudou no funcionamento dos charms:\n- Os pontos da Store continuam podendo ser usados normalmente.\n- Desbloqueios e upgrades de charms continuam funcionando.\n\n👑 O título **Prince Charming / Princess Charming** agora também utiliza apenas os pontos obtidos no Bestiário.\n\n🔄 Todos os personagens foram recalculados automaticamente com base no progresso atual do Bestiário.\n\n---\n\n📢 **IMPORTANTE — ATUALIZAÇÃO DO CLIENTE**\n- É necessário **atualizar o cliente** para receber todas as correções e alterações desta atualização.\n- Recomendamos salvar suas configurações antes de atualizar o launcher.\n- Caso encontre qualquer problema visual ou funcional, feche completamente o cliente e realize uma nova atualização.",
+      "attachments": []
+    },
+    {
       "id": "1566650137080627361",
       "timestamp": "2026-11-02T03:08:19.632000+00:00",
       "title": "",
@@ -23,11 +30,11 @@
       "attachments": [
         {
           "name": "Gravando_2026-10-29_012454.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6ae9fc2e&is=6ae8aaae&hm=7ba55dc2d5eca7555dbea9081f55c79b8a518cbc1ee43bd76abcc015f89117db&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6aeaa4ee&is=6ae9536e&hm=d4c3b3402e97b725396e45c9baece3a14f8a99432159f9addd3ac5a2eda9574e&"
         },
         {
           "name": "rarity_celestial_gem.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6ae9fc2e&is=6ae8aaae&hm=7e0308591163146f4df327852de5e32c29c22247dfa84be23f5396e784e5f546&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6aeaa4ee&is=6ae9536e&hm=01dd7dfe2ea3ec9d931bfedc15d93386e5cbdc37acf471a093f9c21f916a6c6c&"
         }
       ]
     },
@@ -85,13 +92,6 @@
       "timestamp": "2026-10-22T03:27:11.356000+00:00",
       "title": "",
       "content": "# 📜 CHANGELOG — 19/10  ||@here||\n\n**1.** 🍄 **MUSHROOM — BOSSES SANGUINE**  \n🛡️ Fixado o **Mushroom** dos bosses sanguine, agora são **imunes a dano**.  \n\n\n**2.** 🛒 **AVALORIUM SPECIAL SUPPLIES**  \n🍖 Agora passou a vender **Boostable Food**.  \n\n\n📢 **AVISOS IMPORTANTES**  \n🔔 Evento dos **Golden Raid Tokens** → já está **85% concluído**, logo será liberado no servidor!  \n🛍️ **Bazaar** → está **100% testado** e em breve estará disponível no site!",
-      "attachments": []
-    },
-    {
-      "id": "1562303320016691246",
-      "timestamp": "2026-10-21T03:15:37.684000+00:00",
-      "title": "",
-      "content": "# 📜 CHANGELOG — 19/10  - @here\n \n\n**1.** 🍺 **ENCHANTED BERSERK POTION**  \n✨ Agora também aumenta **Fist Fighting em +10** por 30 minutos.  \n⚔️ Club, axe e sword continuam com +10, e 🛡️ shield com -15.  \n⏳ Quem já estiver com a poção ativa precisa esperar o efeito acabar e beber novamente para ganhar o bônus de fist.  \n\n\n**2.** ⚔️ **EXORI GRAN (FIERCE BERSERK)**  \n⏱️ O tempo de recarga agora pode baixar até **2 segundos**.  \n- Sem bônus → 6s  \n- Com Trinket Knight v3 ou arma Titan → 4s  \n- Com Trinket Knight v3 + arma Titan (Razor, Battleaxe ou Warmace) → 2s  \n- Com Trinket + arma Ancient Void → 3s  \n\n\n**3.** 🌰 **BLESSED ACORN**  \n🌱 Funciona a partir do **nível 80**.  \n❤️ Recupera vida e 🔮 mana e desaparece.  \n♻️ Pode ser usado novamente após **1 hora**.  \n\n\n**4.** 🌶️ **FILLED JALAPEÑO PEPPERS**  \n⚡ Aumentam a velocidade em **+100** por **1 hora**.  \n\n\n**5.** 🍶 **POT OF BLACKJACK**  \n🥤 Rende de **2 a 4 goles**, cada um curando **5.000 de vida**.  \n⏳ Entre um gole e outro é preciso esperar **10 minutos**.  \n📦 Se estiver empilhado, é necessário separar um pote antes de beber.  \n\n\n**6.** 🍬 **DEMONIC CANDY BALL**  \n🎲 Sorteia um efeito por **1 hora**: +6 melee, +6 distance, +6 shielding, +3 magic level ou +100 velocidade.  \n💡 Também pode dar luz (2h), 👻 invisibilidade (10min) ou 🎃 abóbora (5h).  \n⏳ Cooldown para outra comida de skill: **10 minutos**.  \n\n\n**7.** 🥤 **SWEET MANGONAISE ELIXIR**  \n✨ Copia **10 vezes** o anel de duração equipado (inclusive plasma).  \n📦 Se não houver cap ou espaço, o elixir não é gasto.  \n\n\n**8.** 🐙 **THE ROOTKRAKEN**  \n💥 Agora é possível **boostar o boss**.",
       "attachments": []
     }
   ]
