@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1567375366148988949",
+      "timestamp": "2026-11-04T03:10:07.716000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 03/11 - @here\n\n**1. 👥 PARTY HUNT — LOOT CORRIGIDO**\n- O Party Hunt agora calcula o loot utilizando os mesmos preços do **Hunt Analyser**.\n- Corrigido o problema que podia exibir valores muito acima do real.\n\n📊 **Preços da Cyclopedia**\n- Quando a party estiver usando **Use Leader Prices**, todos utilizam os preços definidos pelo líder.\n- Itens sem preço configurado passam a utilizar o valor pago por NPC, como acontece no Hunt Analyser.\n- Alterações de preço feitas pelo líder são atualizadas automaticamente após alguns segundos.\n\n🎒 **Loot Parcial**\n- Agora conta apenas os itens realmente obtidos pelo jogador.\n- Casos de backpack cheia ou falta de capacidade não inflarão mais os valores.\n\n---\n\n**2. 🦵 ELEMENTAL STONES NAS LEGS**\n- As legs agora participam do sistema de raridade.\n- Também passam a aceitar **Elemental Stones**, assim como elmos, armaduras e botas.\n- Não é possível utilizar duas stones do mesmo elemento na mesma legs.\n\n🔥 **Fire**\n- Proteção contra Life Drain.\n- Nível 1: 2%\n- Nível 5: 10%\n- Nível 10: 20%\n\n❄️ **Ice**\n- Proteção contra Mana Drain.\n- Nível 1: 2%\n- Nível 5: 10%\n- Nível 10: 20%\n\n🌿 **Earth**\n- Chance de resistir a Root.\n- Nível 1: 4%\n- Nível 5: 20%\n- Nível 10: 40%\n\n💀 **Death**\n- Chance de resistir a Fear.\n- Nível 1: 4%\n- Nível 5: 20%\n- Nível 10: 40%\n\n✨ **Holy**\n- Proteção contra Agony.\n- Nível 1: 1%\n- Nível 5: 5%\n- Nível 10: 10%\n\n⚔️ **Physical**\n- Chance de Evasion.\n- Nível 1: 1%\n- Nível 5: 5%\n- Nível 10: 10%\n\n⚡ **Energy**\n- Regeneração de vida e mana.\n- Nível 1: +10/s\n- Nível 5: +50/s\n- Nível 10: +100/s\n\n📌 **Informações**\n- Evasion funciona de forma semelhante ao Dodge, mas contra qualquer criatura.\n- Resistências a Root e Fear exibem mensagem quando ativadas.\n- O bônus de Energy recupera vida e mana a cada 3 segundos.\n- Os bônus podem ser visualizados no look do item e no tooltip do OTClient.\n\n---\n\n**3. 🔧 ATUALIZAÇÃO DE ESTABILIDADE**\n\n🛠️ **Correções**\n- Corrigido um erro que podia ocorrer ao utilizar uma **Soul Core** no **Soul Pit** em determinados alvos.\n\n⚡ **Desempenho**\n- Melhorado o tempo de login para personagens que carregam muitas mochilas e itens.\n- Reduzida a chance de travamentos quando muitos jogadores entram simultaneamente após o restart.\n\n---\n\n**4. 🏆 GOLD EVENT — ATUALIZAÇÃO**\n- Agora é permitido utilizar múltiplos personagens do mesmo IP dentro da mina do evento.\n\n✅ **Multi Client Liberado**\n- É possível entrar com mais de um personagem simultaneamente.\n\n🔇 **Aviso Removido**\n- A mensagem relacionada ao uso de follow do bot não aparece mais ao entrar na mina.\n\n📌 Todo o restante do evento permanece igual:\n- Tempo diário.\n- Limite de bosses.\n- Resgate de tokens.",
+      "attachments": []
+    },
+    {
       "id": "1567012468134518807",
       "timestamp": "2026-11-03T03:08:06.087000+00:00",
       "title": "",
@@ -30,11 +37,11 @@
       "attachments": [
         {
           "name": "Gravando_2026-10-29_012454.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6aeb4dae&is=6ae9fc2e&hm=1220a0f077529a7b841ba2dd0c8896d99e87077f40f05eee15687ccb1026f21a&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6aebf66e&is=6aeaa4ee&hm=acf2fcacde8f16ffd678199911cddf8b79c6cb5a58ee53a9cedeb31cba1c88fd&"
         },
         {
           "name": "rarity_celestial_gem.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6aeb4dae&is=6ae9fc2e&hm=2320c7692b27d134dd8df4526e761c2f8670a12cdf5d860d28070ebfd476f9c4&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6aebf66e&is=6aeaa4ee&hm=ae215de52871f6d8f6aad29721fa5451731dd5ca996a2c22fdcef4b239855efc&"
         }
       ]
     },
@@ -85,13 +92,6 @@
       "timestamp": "2026-10-23T03:23:56.101000+00:00",
       "title": "",
       "content": "# 📜 CHANGELOG — 20/10  -||@here||\n\n**1.** 🌀 **MAPA**  \n✨ Adicionado **TP para a criatura Fury**.  \n\n---\n\n**2.** 🌿 **MELHORIAS NA VOCAÇÃO DRUID**  \n❄️🌱 **Elemental Synthesis** → A stance agora dá **15% do magic level** como bônus de gelo e terra (antes era 10%).  \n\n💥 **UEs (Druid)** → Dano mínimo e máximo **+12%**.  \n- Eternal Winter  \n- Wrath of Nature  \n\n🧊 **ULUS (Druid)** → Dano mínimo e máximo **+18%**.  \n- Ice Burst  \n- Terra Burst  \n\n---\n\n**3.** 🪙 **SPELL BADGES**  \n⚠️ Não entram no sistema de raridade.  \n- Badge não nasce com raridade  \n- Poção de identificação, gema de raridade, pedra elemental e hammer de raridade não funcionam nela  \n- Classificação da badge continua igual  \n- O bônus da spell também não muda  \n\n---\n\n**4.** 🧍 **CORPOS DOS MITMAH**  \n- Mitmah Scout e Mitmah Seer agora deixam o corpo certo ao morrer  \n- O corpo decai normalmente, como o dos outros monstros  \n- O loot continua no corpo enquanto ele ainda pode ser aberto  \n\n---\n\n**5.** ❄️ **CORPOS DO SILVERFROST SENTINEL E ICEPLUME STRIDER**  \n- Agora deixam o próprio corpo no chão  \n- O corpo do Silverfrost Sentinel não fica mais parado no mapa  \n- O corpo do Iceplume Strider passa a aparecer e some junto com o do Silverfrost  \n- Cada fase do corpo dura **10 segundos**  \n- O loot fica disponível por cerca de **30 segundos** e depois o resto visual some em mais **10 segundos**  \n\n\n📢 **AVISOS IMPORTANTES**  \n🎟️ **Vouchers renovados** → já disponíveis para uso!",
-      "attachments": []
-    },
-    {
-      "id": "1562668617353527428",
-      "timestamp": "2026-10-22T03:27:11.356000+00:00",
-      "title": "",
-      "content": "# 📜 CHANGELOG — 19/10  ||@here||\n\n**1.** 🍄 **MUSHROOM — BOSSES SANGUINE**  \n🛡️ Fixado o **Mushroom** dos bosses sanguine, agora são **imunes a dano**.  \n\n\n**2.** 🛒 **AVALORIUM SPECIAL SUPPLIES**  \n🍖 Agora passou a vender **Boostable Food**.  \n\n\n📢 **AVISOS IMPORTANTES**  \n🔔 Evento dos **Golden Raid Tokens** → já está **85% concluído**, logo será liberado no servidor!  \n🛍️ **Bazaar** → está **100% testado** e em breve estará disponível no site!",
       "attachments": []
     }
   ]
