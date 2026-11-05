@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1567744565039861783",
+      "timestamp": "2026-11-05T03:37:11.591000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 04/11\n\n**1. ⚔️ WARZONE — TOKENS NOS BOSSES**\n- Os bosses das Warzones agora podem dropar **Expert Warzone Token**.\n\n👑 **The Count of the Core**, **The Duke of the Depths** e **The Baron from Below**\n- 70% de chance de dropar entre **2 e 4 Expert Warzone Tokens**.\n\n💀 **Deathstrike**, **Gnomevil** e **Abyssador**\n- 50% de chance de dropar entre **1 e 3 Expert Warzone Tokens**.\n\n📦 O restante do loot desses bosses permanece inalterado.\n\n---\n\n**2. 🔧 CORREÇÃO — DESCONEXÃO**\n- Agora, caso o jogador perca a conexão e o personagem permaneça vivo, ele será removido do jogo automaticamente após **5 minutos**.\n- A remoção acontece mesmo em combate ou com PZ Lock.\n- Caso reconecte antes desse prazo, poderá continuar jogando normalmente.\n\n---\n\n**3. 🌿 HAZARD (GNOMPRONA)**\n- Quando não houver espaço livre próximo ao local da morte do monstro, os **Primal Pods** passarão a surgir exatamente onde o monstro morreu.\n\n---\n\n**4. 🏦 BANCO**\n- Os comandos:\n  - `!deposit`\n  - `!withdraw`\n  - `!transfer`\n\nAgora recusam:\n- Valores zerados.\n- Valores negativos.\n- Valores quebrados.\n- Valores acima do limite permitido.\n\n---\n\n**5. 🛒 LOJA (STORE)**\n- Corrigido problema em alguns itens de decoração que entregavam objetos incorretos.\n\n✅ Agora as compras entregam corretamente:\n- Oven → Oven\n- Heart Table → Heart Table\n- Volcanic Spire → Volcanic Spire\n- Colourful Carpet → Colourful Carpet\n- Flowery Carpet → Flowery Carpet\n\n---\n\n**6. 💬 NPCs**\n- A janela de conversa dos NPCs não fecha mais sozinha durante os diálogos.\n\n---\n\n**7. 🏠 ITENS**\n- Os itens:\n  - Folded Artefact Carpet II\n  - Folded Artefact Carpet III\n  - Folded Artefact Carpet IV\n  - Folded Artefact Carpet VI\n\nAgora são corretamente classificados como decorações de chão.\n\n---\n\n**8. 👹 MONSTROS**\n📈 Ajustada a experiência dos True Asuras:\n\n🔥 **True Dawnfire Asura**\n- XP aumentada de **7.475 → 8.100**.\n\n🌙 **True Midnight Asura**\n- XP aumentada de **7.313 → 8.200**.\n\n---\n\n**9. 🪄 ARCANUM WAND (T1)**\n- Fortalecida para ficar no mesmo nível da **Earthharmony Rod (T1)**.\n\n✅ Alterações:\n- Life Leech: **2% → 25%**\n- Mana Leech: **1% → 4%**\n- Alcance: **6 → 7**\n- Mana por ataque: **35 → 30**\n- Ganhou **+8% de proteção contra Death**\n- Mantém **+7% de proteção contra Ice**\n\n⚠️ O imbuement de Life Leech foi removido, pois a arma já possui esse efeito nativamente.\n\n---\n\n**10. 🌎 EARTHHARMONY ROD (T1)**\n- Recebeu melhorias para acompanhar os ajustes da Arcanum Wand.\n\n✅ Alterações:\n- Dano do ataque básico: **199-237 → 222-242**\n- Critical Extra Damage: **6% → 8%**\n\n📌 Permanecem inalterados:\n- Life Leech\n- Mana Leech\n- Alcance\n- Custo de mana\n- Proteções elementais\n- Magic Level\n- Bônus elementais da vocação\n- Slots\n- Raridade\n- Upgrade\n- Tier\n||@here||",
+      "attachments": []
+    },
+    {
       "id": "1567375366148988949",
       "timestamp": "2026-11-04T03:10:07.716000+00:00",
       "title": "",
@@ -37,11 +44,11 @@
       "attachments": [
         {
           "name": "Gravando_2026-10-29_012454.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6aec9f2e&is=6aeb4dae&hm=b5cd59687019ed4781da06bcba5d1afc2a133673f57f076d5017737e60518646&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6aed47ee&is=6aebf66e&hm=134d9a0a142f4c3d2a6c7dbdddda6ecfc89ce24452ad6c2360e81bbb042ca4e5&"
         },
         {
           "name": "rarity_celestial_gem.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6aec9f2e&is=6aeb4dae&hm=a94541d9c8e90d387dc08562e1e3bfd29fb881f15afe4a6f890e8deeda3368d4&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6aed47ee&is=6aebf66e&hm=f19f58e434d0d38066c19362b97f58f60406a1a9cd61e124455cd9bd0c032535&"
         }
       ]
     },
@@ -85,13 +92,6 @@
       "timestamp": "2026-10-24T04:15:49.323000+00:00",
       "title": "",
       "content": "# 📜 CHANGELOG — 21/10   ||@here||\n\n**1.** ⚔️ **MONK — WINDWALKER'S SCYTHES (T1)**  \n- Agora reduzem o tempo de espera de duas magias:  \n  - 🌀 **Exori Gran Mas Pug (Greater Flurry of Blows)** → −4 segundos  \n  - 🌌 **Exori Gran Mas Nia (Spiritual Outburst)** → −6 segundos  \n- O bônus aparece no *look* da arma e só vale com ela equipada.  \n\n---\n\n**2.** 🏆 **MONSTER HUNTER**  \n- O prêmio do campeão não cai mais no chão quando a backpack está cheia ou sem capacidade.  \n- Se couber, o item vai para a backpack.  \n- Se não couber, vai para o inbox do depot.  \n- O vencedor recebe um aviso dizendo onde o prêmio foi parar.  \n\n---\n\n**3.** 🔮 **MONK'S TRINKET V2 E V3**  \n- Agora podem receber **imbuement**.  \n- Cada um tem **1 slot**.  \n- Só entra defesa elemental: morte, terra, fogo, gelo, energia e sagrado.  \n- O nível máximo é **Powerful**.  \n- Critical, life leech, mana leech, skill e outros imbuements continuam bloqueados nesses itens.  \n\n---\n\n**4.** 💎 **ELEMENTAL STONES**  \n- Agora podem ser **agrupadas**.  \n\n---\n\n📢 **AVISO IMPORTANTE**  \n🖥️ **Lembrem-se de atualizar o launcher do cliente!**  \n💾 Salvem suas configurações para evitar perder qualquer ajuste.",
-      "attachments": []
-    },
-    {
-      "id": "1563030186260168735",
-      "timestamp": "2026-10-23T03:23:56.101000+00:00",
-      "title": "",
-      "content": "# 📜 CHANGELOG — 20/10  -||@here||\n\n**1.** 🌀 **MAPA**  \n✨ Adicionado **TP para a criatura Fury**.  \n\n---\n\n**2.** 🌿 **MELHORIAS NA VOCAÇÃO DRUID**  \n❄️🌱 **Elemental Synthesis** → A stance agora dá **15% do magic level** como bônus de gelo e terra (antes era 10%).  \n\n💥 **UEs (Druid)** → Dano mínimo e máximo **+12%**.  \n- Eternal Winter  \n- Wrath of Nature  \n\n🧊 **ULUS (Druid)** → Dano mínimo e máximo **+18%**.  \n- Ice Burst  \n- Terra Burst  \n\n---\n\n**3.** 🪙 **SPELL BADGES**  \n⚠️ Não entram no sistema de raridade.  \n- Badge não nasce com raridade  \n- Poção de identificação, gema de raridade, pedra elemental e hammer de raridade não funcionam nela  \n- Classificação da badge continua igual  \n- O bônus da spell também não muda  \n\n---\n\n**4.** 🧍 **CORPOS DOS MITMAH**  \n- Mitmah Scout e Mitmah Seer agora deixam o corpo certo ao morrer  \n- O corpo decai normalmente, como o dos outros monstros  \n- O loot continua no corpo enquanto ele ainda pode ser aberto  \n\n---\n\n**5.** ❄️ **CORPOS DO SILVERFROST SENTINEL E ICEPLUME STRIDER**  \n- Agora deixam o próprio corpo no chão  \n- O corpo do Silverfrost Sentinel não fica mais parado no mapa  \n- O corpo do Iceplume Strider passa a aparecer e some junto com o do Silverfrost  \n- Cada fase do corpo dura **10 segundos**  \n- O loot fica disponível por cerca de **30 segundos** e depois o resto visual some em mais **10 segundos**  \n\n\n📢 **AVISOS IMPORTANTES**  \n🎟️ **Vouchers renovados** → já disponíveis para uso!",
       "attachments": []
     }
   ]
