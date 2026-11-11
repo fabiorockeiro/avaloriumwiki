@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1569913321996681259",
+      "timestamp": "2026-11-11T03:15:03.543000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 11/11 -- @here\n\n**1. 🎁 DROME CUBE**\n- Ao abrir um **Drome Cube**, a poção recebida agora é enviada diretamente para a **Store Inbox**.\n- Caso a entrega falhe por algum motivo, basta utilizar o cubo novamente.\n\n---\n\n**2. 🩸 GOLD EVENT — GOLDFORGE MASTER E MISTRESS**\n- Ajustado o funcionamento do efeito de sangramento dos mini bosses.\n\n🔧 Antes:\n- Cada lançamento da magia de sangramento causava um golpe direto adicional.\n- Quando vários mini bosses utilizavam a magia ao mesmo tempo, os danos podiam se acumular e causar cerca de **10.000 de dano instantâneo**.\n\n✅ Agora:\n- Se o personagem já estiver sangrando, novos lançamentos apenas renovam a duração do efeito.\n- Nenhum golpe direto adicional será aplicado enquanto o sangramento estiver ativo.\n- O golpe inicial volta a acontecer normalmente após o término do sangramento.\n\n---\n\n**3. 🛡️ PROTEÇÃO CONTRA PERDA DE EXP E SKILLS POR LAG**\n\n🔧 **Correção**\n- Corrigido um problema onde determinadas quedas de conexão não eram detectadas corretamente pelo servidor.\n- Em alguns casos, mortes que deveriam ser protegidas eram tratadas como mortes normais.\n\n⚡ **Melhoria**\n- Durante o combate, a verificação de conexão agora acontece a cada **1 segundo**.\n- Antes, essa verificação era feita a cada **5 segundos**.\n- Isso permite detectar travamentos curtos e oscilações de aproximadamente 2 segundos ou mais.\n\n📌 **Como funciona agora**\n- Se o personagem morrer para um monstro durante uma oscilação de conexão ou até **10 segundos após ela**, não perderá:\n  - Experiência\n  - Skills\n  - Magic Level\n  - Blessings\n\n- A morte continua acontecendo normalmente.\n- O personagem retorna ao templo.\n- Uma mensagem informa que a morte foi perdoada.\n\n⚠️ **Continua valendo**\n- Apenas para mortes causadas por monstros.\n- Sem PvP recente.\n- Sem Skull.\n- Sem PZ Lock.\n\n---\n\n**4. 🏠 HIRELINGS — PRODUÇÃO ENCANTADA**\n\n🛠️ **Correções**\n\n✅ Hirelings com nomes iguais agora funcionam corretamente.\n- Cada hireling possui sua própria produção independente.\n- Agora é possível utilizar todos os hirelings disponíveis simultaneamente.\n\n✅ Corrigido um problema ao iniciar produções em vários hirelings da mesma house.\n\n✅ Corrigida a contagem de vagas da oficina após a coleta de produções antigas.\n\n✨ **Melhorias**\n- O menu agora exibe o nome do hireling durante a produção.\n- Fica mais fácil identificar com qual hireling você está interagindo.\n\n📌 **Lembrete**\n- Cada hireling continua produzindo apenas uma receita por vez.\n- Para produzir receitas diferentes simultaneamente, utilize hirelings diferentes.",
+      "attachments": []
+    },
+    {
       "id": "1569551278328250470",
       "timestamp": "2026-11-10T03:16:25.606000+00:00",
       "title": "",
@@ -65,11 +72,11 @@
       "attachments": [
         {
           "name": "Gravando_2026-10-29_012454.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6af4882e&is=6af336ae&hm=d7f44178c3af32d55c942fed883ce2829a85bed4a9b296fe841f365fa88b9761&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6af530ee&is=6af3df6e&hm=bd51f67612df1734230484cbcb3273c0123bea340344981a791ae4ca6b79e0b0&"
         },
         {
           "name": "rarity_celestial_gem.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6af4882e&is=6af336ae&hm=a363f008600d3c5e39e461281787f83de9749c5059558f386655d769063d72aa&"
+          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6af530ee&is=6af3df6e&hm=26ccc4e8f7f2c45b9db42869c595f0d2a8ede3df0da84ca1b46e9a8cdd210672&"
         }
       ]
     },
@@ -85,13 +92,6 @@
       "timestamp": "2026-10-29T03:25:57.159000+00:00",
       "title": "",
       "content": "# 📜 CHANGELOG — 29/10  - @here\n\n**1.** 📋 **TASK BOARD**  \n- Corrigido o problema que mostrava zero itens mesmo quando o jogador já possuía a quantidade necessária.  \n- As tarefas agora reconhecem os itens na backpack, stash e depot, incluindo aqueles obtidos antes de iniciar a tarefa.  \n- A correção também vale para tarefas em andamento. Não é necessário mover os itens para atualizar a contagem.  \n\n---\n\n**2.** 👨‍🍳 **NPC JEAN PIERRE**  \n- Corrigido o diálogo que impedia os jogadores de se tornarem aprendizes e pedirem receitas.  \n- Corrigida a preparação dos pratos, utilizando os ingredientes corretos de cada receita.  \n- Refazer pratos não altera mais o progresso da quest.  \n- Corrigida a entrega do **Carrot Cake**.  \n- **Demonic Candy Balls** agora entrega 5 unidades.  \n- Liberada a segunda preparação de cada prato no primeiro ano da quest, mantendo o limite anual nas próximas repetições.  \n\n---\n\n**3.** 💍 **BUFF NOS RINGS DA QUEST**  \n- Os rings da quest receberam buff em **critical, life leech e mana leech**.  \n\n---\n\n**4.** 🗿 **DARK TOTEM**  \n- Agora aparece com **100% do HP**.  \n- Nada mais foi alterado, apenas o HP inicial.  \n\n---\n\n**5.** 🏹 **QUIVER BIS T1**  \n- Melhorado o desempenho do **Quiver BIS T1**.  \n\n---\n\n**6.** 🛠️ **QUEST YALAHARI**  \n- Corrigido o problema que impedia pegar as **boots do monk**.  \n\n---\n\n**7.** ⚔️ **HUNTS CUSTOM — NECESSIDADES**  \n- **Primal, Soulwar e Sanguine** → Hazard 10 e nível 800+  \n- **Elf Fire/Ice** → Hazard 3 e nível 300+  \n- **New Libraries** → Hazard 3 e nível 600+  \n\n---\n\n**8.** 🗺️ **ALTERAÇÕES NO MAPA**  \n- Nova hunt **Sanguines**, com necessidade de Hazard 10+ para acessar.  \n- **Ingol** agora possui 4 opções de andares.",
-      "attachments": []
-    },
-    {
-      "id": "1564843573101199513",
-      "timestamp": "2026-10-28T03:29:41.215000+00:00",
-      "title": "",
-      "content": "# 📜 CHANGELOG — 28/10  -- ||@here||\n\n**1.** 🔧 **CORREÇÃO — NPC TAINTER**  \n- Corrigido o problema que impedia a exibição do ícone ao receber taints da Rotten Blood pelo Tainter.  \n- O ícone agora aparece em qualquer local, incluindo o da **Final Taint**.  \n- Ao remover as taints, o ícone é atualizado ou removido automaticamente.  \n\n---\n\n**2.** ✨ **CORREÇÃO — DIVINE BARRAGE E ETHEREAL BARRAGE**  \n- **Exori dir san (Divine Barrage)** e **Exori dir moe (Ethereal Barrage)** agora caem no lugar que você mirar com o crosshair ou o cursor, como o **Death Echo**.  \n- Antes iam sempre no monstro atacado e não saíam sem alvo. Agora você escolhe onde a área explode, dentro do alcance da magia e com visão livre até o local.  \n- Se usar sem mirar, a magia vai no alvo atacado, como antes.  \n- Com a opção *Aim at Target* ligada na Cyclopedia, elas continuam indo sempre no alvo.  \n- O dano, a área e os bônus da Roda permanecem iguais.  \n\n---\n\n**3.** 🧑‍🍳 **NPC JEAN PIERRE**  \n- Agora conversa com todos os jogadores durante o ano inteiro.  \n- Não é mais necessário acesso especial ou esperar até agosto.",
       "attachments": []
     }
   ]
