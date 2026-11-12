@@ -357,7 +357,7 @@
             icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg>',
             items: [
                 { url: 'divergence-system.html', title: 'Divergence', description: 'Divergence: level 400, Hazard 3, bosses elementais, custos e recompensas por faixa.', image: 'assets/media/menu/divergence-system.gif' },
-                { url: 'invasao-de-minibosses.html', title: 'Invasão de Minibosses', description: 'Avisos na tela, 30 minutos para concluir e Golden Raid Tokens como recompensa.', image: 'assets/media/trinket-badges/golden-raid-token.gif' },
+                { url: 'golden-raid-event.html', title: 'Golden Raid Event', description: 'Mina Dourada: 40 bosses por dia, Golden Raid Tokens, acesso gratuito e Event Reset.', image: 'assets/media/trinket-badges/golden-raid-token.gif' },
                 { url: 'tasks-system.html', title: 'Tasks', description: 'Bounty Tasks, baús por dificuldade, Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop.', image: 'assets/media/items-wiki/portables/portable task book.gif' },
                 { url: 'outfit-mount-bonus.html', title: 'Outfit & Mount Bônus', description: 'Obtenha cosméticos e use !outfitbonus para distribuir pontos em bônus de Cosmetic Mastery.', image: 'assets/media/menu/outfits.gif' },
                 { url: 'stones-guia-completo.html', title: 'Rarity & Elemental Stones', description: 'Identificação progressiva, slots, ferramentas e bônus das elemental stones.', image: 'assets/media/menu/stones-guia-completo.gif' },

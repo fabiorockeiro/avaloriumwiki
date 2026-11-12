@@ -16,7 +16,7 @@ O menu lateral e o drawer mobile recebem as mesmas seções via `assets/js/wiki.
 
 | Ícone/imagem | Página | URL | Descrição |
 |---|---|---|---|
-| `assets/media/trinket-badges/golden-raid-token.gif` | Invasão de Minibosses | `invasao-de-minibosses.html` | Avisos na tela anunciam a Invasão de Minibosses: você tem 30 minutos para concluí-la. Veja os 36 bosses, seus respawns e os minimapas. |
+| `assets/media/trinket-badges/golden-raid-token.gif` | Golden Raid Event | `golden-raid-event.html` | Golden Raid Event na Mina Dourada: acesso gratuito, 40 bosses por dia, tempo VIP e free, resgate de Golden Raid Tokens e uso do Event Reset. |
 | `assets/media/menu/outfits.gif` | Outfit & Mount Bônus | `outfit-mount-bonus.html` | Obtenha outfits e montarias no mapa global, quests, Store e Hunting Task Shop. Use !outfitbonus para investir em Cosmetic Mastery. |
 | `assets/media/items-wiki/portables/portable task book.gif` | Tasks | `tasks-system.html` | Bounty Tasks, baús por dificuldade, bônus do Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop. |
 | `assets/media/menu/divergence-system.gif` | Divergence | `divergence-system.html` | Divergence: level 400, Hazard 3, bosses elementais, custos e recompensas por faixa. Tokens para o Seller e craft. |

@@ -1,6 +1,8 @@
 # Inventário visual
 
-Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome funcional inicial é o próprio nome do arquivo; confirme nomes ambíguos no jogo antes de renomear. A planilha CSV contém uma linha por arquivo.
+Este inventário cobre todo arquivo GIF, PNG, JPG e WEBP em `assets/media`. O nome funcional inicial é o próprio nome do arquivo; confirme nomes ambíguos no jogo antes de renomear. A planilha CSV contém uma linha por arquivo.
+
+A pasta `golden-raid-event` inclui quatro prints WEBP, contabilizados no total do grupo.
 
 ## Resumo por pasta
 
@@ -49,7 +51,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | `items-wiki/Rarity System + Stone system` | 11 | 0 | 0 | 11 | 2 | 9 |
 | `items-wiki/Rarity System + Stone system/Stones elementais` | 14 | 0 | 0 | 14 | 0 | 14 |
 | `menu` | 29 | 0 | 0 | 29 | 26 | 3 |
-| `miniboss-invasions` | 21 | 52 | 0 | 73 | 73 | 0 |
+| `golden-raid-event` | 0 | 1 | 0 | 5 | 5 | 0 |
 | `outfit-mount-bonus` | 0 | 4 | 0 | 4 | 4 | 0 |
 | `placeholders` | 1 | 0 | 1 | 2 | 1 | 1 |
 | `rarity-system` | 0 | 2 | 0 | 2 | 1 | 1 |
@@ -98,7 +100,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | spell-badge-upgrade.gif | GIF | `assets/media/articles/spell-badge-upgrade.gif` | `spell-badge-upgrade.html` |
 | Background site.jpg | JPG | `assets/media/brand/Background site.jpg` | **Sem referência literal** |
 | Parcelamento.png | PNG | `assets/media/brand/Parcelamento.png` | **Sem referência literal** |
-| avalorium-logo.png | PNG | `assets/media/brand/avalorium-logo.png` | `ammo.html`, `amulets.html`, `animus-mastery-soulpit.html`, `armors.html`, `aumento-das-taints.html`, `backpacks.html`, `boots.html`, `cadeia.html`, `castle-war.html`, `category-colecionaveis.html`, `category-guias-e-utilidades.html`, `category-itens-e-equipamentos.html`, `category-scripts-zerobot.html`, `category-sistemas-do-servidor.html`, `character-upgrades.html`, `comandos-do-servidor.html`, `dark-totem-daily.html`, `divergence-system.html`, `dolls.html`, `exalted-forge.html`, `fabio-rockeiro-scripts.html`, `helmets.html`, `hireling-enchanter.html`, `hunts-custom.html`, `index.html`, `invasao-de-minibosses.html`, `legs.html`, `monster-hunter.html`, `mounts.html`, `outfit-mount-bonus.html`, `outfits.html`, `portables.html`, `reliquary-system.html`, `rings.html`, `roulette-system.html`, `rune-system.html`, `search.html`, `shields.html`, `sistema-de-craft.html`, `spell-badge-upgrade.html`, `stamina.html`, `stones-guia-completo.html`, `tasks-system.html`, `upgrade-stones.html`, `voucher-system.html`, `weapons.html` |
+| avalorium-logo.png | PNG | `assets/media/brand/avalorium-logo.png` | `ammo.html`, `amulets.html`, `animus-mastery-soulpit.html`, `armors.html`, `aumento-das-taints.html`, `backpacks.html`, `boots.html`, `cadeia.html`, `castle-war.html`, `category-colecionaveis.html`, `category-guias-e-utilidades.html`, `category-itens-e-equipamentos.html`, `category-scripts-zerobot.html`, `category-sistemas-do-servidor.html`, `character-upgrades.html`, `comandos-do-servidor.html`, `dark-totem-daily.html`, `divergence-system.html`, `dolls.html`, `exalted-forge.html`, `fabio-rockeiro-scripts.html`, `helmets.html`, `hireling-enchanter.html`, `hunts-custom.html`, `index.html`, `golden-raid-event.html`, `legs.html`, `monster-hunter.html`, `mounts.html`, `outfit-mount-bonus.html`, `outfits.html`, `portables.html`, `reliquary-system.html`, `rings.html`, `roulette-system.html`, `rune-system.html`, `search.html`, `shields.html`, `sistema-de-craft.html`, `spell-badge-upgrade.html`, `stamina.html`, `stones-guia-completo.html`, `tasks-system.html`, `upgrade-stones.html`, `voucher-system.html`, `weapons.html` |
 | avalorium-wordmark.png | PNG | `assets/media/brand/avalorium-wordmark.png` | `index.html` |
 | fenrir-guardian-clean-v2.png | PNG | `assets/media/brand/fenrir-guardian-clean-v2.png` | `index.html` |
 | fenrir-guardian-clean.png | PNG | `assets/media/brand/fenrir-guardian-clean.png` | **Sem referência literal** |
@@ -107,7 +109,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | prisoner.png | PNG | `assets/media/cadeia/prisoner.png` | `cadeia.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | castle-war-icon-transparent.png | PNG | `assets/media/castle-war/castle-war-icon-transparent.png` | `castle-war.html`, `category-sistemas-do-servidor.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | castle-war-icon.png | PNG | `assets/media/castle-war/castle-war-icon.png` | **Sem referência literal** |
-| character-upgrades.gif | GIF | `assets/media/character-upgrades/character-upgrades.gif` | `category-sistemas-do-servidor.html`, `character-upgrades.html`, `index.html`, `invasao-de-minibosses.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| character-upgrades.gif | GIF | `assets/media/character-upgrades/character-upgrades.gif` | `category-sistemas-do-servidor.html`, `character-upgrades.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | hunting-task-shop-token.png | PNG | `assets/media/character-upgrades/hunting-task-shop-token.png` | `character-upgrades.html` |
 | zahir-golden-raid-token.png | PNG | `assets/media/character-upgrades/zahir-golden-raid-token.png` | `character-upgrades.html` |
 | ancient-claws.png | PNG | `assets/media/craft-progression/ancient-claws.png` | `sistema-de-craft.html` |
@@ -609,79 +611,11 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | spell-badge-upgrade.gif | GIF | `assets/media/menu/spell-badge-upgrade.gif` | **Sem referência literal** |
 | stones-guia-completo.gif | GIF | `assets/media/menu/stones-guia-completo.gif` | `category-sistemas-do-servidor.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | weapons.gif | GIF | `assets/media/menu/weapons.gif` | `category-itens-e-equipamentos.html` |
-| 01-original.png | PNG | `assets/media/miniboss-invasions/01-original.png` | `invasao-de-minibosses.html` |
-| 01-sprite.gif | GIF | `assets/media/miniboss-invasions/01-sprite.gif` | `invasao-de-minibosses.html` |
-| 02-original.png | PNG | `assets/media/miniboss-invasions/02-original.png` | `invasao-de-minibosses.html` |
-| 02-sprite.gif | GIF | `assets/media/miniboss-invasions/02-sprite.gif` | `invasao-de-minibosses.html` |
-| 03-original.png | PNG | `assets/media/miniboss-invasions/03-original.png` | `invasao-de-minibosses.html` |
-| 03-sprite.gif | GIF | `assets/media/miniboss-invasions/03-sprite.gif` | `invasao-de-minibosses.html` |
-| 04-original.png | PNG | `assets/media/miniboss-invasions/04-original.png` | `invasao-de-minibosses.html` |
-| 04-sprite.gif | GIF | `assets/media/miniboss-invasions/04-sprite.gif` | `invasao-de-minibosses.html` |
-| 05-original.png | PNG | `assets/media/miniboss-invasions/05-original.png` | `invasao-de-minibosses.html` |
-| 05-sprite.gif | GIF | `assets/media/miniboss-invasions/05-sprite.gif` | `invasao-de-minibosses.html` |
-| 06-original.png | PNG | `assets/media/miniboss-invasions/06-original.png` | `invasao-de-minibosses.html` |
-| 06-sprite.gif | GIF | `assets/media/miniboss-invasions/06-sprite.gif` | `invasao-de-minibosses.html` |
-| 07-original.png | PNG | `assets/media/miniboss-invasions/07-original.png` | `invasao-de-minibosses.html` |
-| 07-sprite.gif | GIF | `assets/media/miniboss-invasions/07-sprite.gif` | `invasao-de-minibosses.html` |
-| 08-original.png | PNG | `assets/media/miniboss-invasions/08-original.png` | `invasao-de-minibosses.html` |
-| 08-sprite.gif | GIF | `assets/media/miniboss-invasions/08-sprite.gif` | `invasao-de-minibosses.html` |
-| 09-original.png | PNG | `assets/media/miniboss-invasions/09-original.png` | `invasao-de-minibosses.html` |
-| 09-sprite.gif | GIF | `assets/media/miniboss-invasions/09-sprite.gif` | `invasao-de-minibosses.html` |
-| 10-original.png | PNG | `assets/media/miniboss-invasions/10-original.png` | `invasao-de-minibosses.html` |
-| 10-sprite.gif | GIF | `assets/media/miniboss-invasions/10-sprite.gif` | `invasao-de-minibosses.html` |
-| 11-original.png | PNG | `assets/media/miniboss-invasions/11-original.png` | `invasao-de-minibosses.html` |
-| 11-sprite.gif | GIF | `assets/media/miniboss-invasions/11-sprite.gif` | `invasao-de-minibosses.html` |
-| 12-original.png | PNG | `assets/media/miniboss-invasions/12-original.png` | `invasao-de-minibosses.html` |
-| 12-sprite.gif | GIF | `assets/media/miniboss-invasions/12-sprite.gif` | `invasao-de-minibosses.html` |
-| 13-original.png | PNG | `assets/media/miniboss-invasions/13-original.png` | `invasao-de-minibosses.html` |
-| 13-sprite.gif | GIF | `assets/media/miniboss-invasions/13-sprite.gif` | `invasao-de-minibosses.html` |
-| 14-original.png | PNG | `assets/media/miniboss-invasions/14-original.png` | `invasao-de-minibosses.html` |
-| 14-sprite.gif | GIF | `assets/media/miniboss-invasions/14-sprite.gif` | `invasao-de-minibosses.html` |
-| 15-original.png | PNG | `assets/media/miniboss-invasions/15-original.png` | `invasao-de-minibosses.html` |
-| 15-sprite.gif | GIF | `assets/media/miniboss-invasions/15-sprite.gif` | `invasao-de-minibosses.html` |
-| 16-original.png | PNG | `assets/media/miniboss-invasions/16-original.png` | `invasao-de-minibosses.html` |
-| adlerauge-original.png | PNG | `assets/media/miniboss-invasions/adlerauge-original.png` | `invasao-de-minibosses.html` |
-| adlerauge-sprite.gif | GIF | `assets/media/miniboss-invasions/adlerauge-sprite.gif` | `invasao-de-minibosses.html` |
-| ancient-lion-knight-original.png | PNG | `assets/media/miniboss-invasions/ancient-lion-knight-original.png` | `invasao-de-minibosses.html` |
-| ancient-lion-knight-sprite.gif | GIF | `assets/media/miniboss-invasions/ancient-lion-knight-sprite.gif` | `invasao-de-minibosses.html` |
-| countess-sorrow-original.png | PNG | `assets/media/miniboss-invasions/countess-sorrow-original.png` | `invasao-de-minibosses.html` |
-| countess-sorrow-sprite.png | PNG | `assets/media/miniboss-invasions/countess-sorrow-sprite.png` | `invasao-de-minibosses.html` |
-| feroxa-original.png | PNG | `assets/media/miniboss-invasions/feroxa-original.png` | `invasao-de-minibosses.html` |
-| feroxa-sprite.png | PNG | `assets/media/miniboss-invasions/feroxa-sprite.png` | `invasao-de-minibosses.html` |
-| gralvalon-original.png | PNG | `assets/media/miniboss-invasions/gralvalon-original.png` | `invasao-de-minibosses.html` |
-| gralvalon-sprite.gif | GIF | `assets/media/miniboss-invasions/gralvalon-sprite.gif` | `invasao-de-minibosses.html` |
-| grand-chaplain-gaunder-original.png | PNG | `assets/media/miniboss-invasions/grand-chaplain-gaunder-original.png` | `invasao-de-minibosses.html` |
-| grand-chaplain-gaunder-sprite.png | PNG | `assets/media/miniboss-invasions/grand-chaplain-gaunder-sprite.png` | `invasao-de-minibosses.html` |
-| guard-captain-quaid-original.png | PNG | `assets/media/miniboss-invasions/guard-captain-quaid-original.png` | `invasao-de-minibosses.html` |
-| guard-captain-quaid-sprite.png | PNG | `assets/media/miniboss-invasions/guard-captain-quaid-sprite.png` | `invasao-de-minibosses.html` |
-| jailer-original.png | PNG | `assets/media/miniboss-invasions/jailer-original.png` | `invasao-de-minibosses.html` |
-| jailer-sprite.png | PNG | `assets/media/miniboss-invasions/jailer-sprite.png` | `invasao-de-minibosses.html` |
-| malvaroth-original.png | PNG | `assets/media/miniboss-invasions/malvaroth-original.png` | `invasao-de-minibosses.html` |
-| malvaroth-sprite.gif | GIF | `assets/media/miniboss-invasions/malvaroth-sprite.gif` | `invasao-de-minibosses.html` |
-| michael-the-stalwart-original.png | PNG | `assets/media/miniboss-invasions/michael-the-stalwart-original.png` | `invasao-de-minibosses.html` |
-| michael-the-stalwart-sprite.gif | GIF | `assets/media/miniboss-invasions/michael-the-stalwart-sprite.gif` | `invasao-de-minibosses.html` |
-| mozradek-original.png | PNG | `assets/media/miniboss-invasions/mozradek-original.png` | `invasao-de-minibosses.html` |
-| mozradek-sprite.png | PNG | `assets/media/miniboss-invasions/mozradek-sprite.png` | `invasao-de-minibosses.html` |
-| mr-punish-original.png | PNG | `assets/media/miniboss-invasions/mr-punish-original.png` | `invasao-de-minibosses.html` |
-| mr-punish-sprite.png | PNG | `assets/media/miniboss-invasions/mr-punish-sprite.png` | `invasao-de-minibosses.html` |
-| orc-helmet-original.png | PNG | `assets/media/miniboss-invasions/orc-helmet-original.png` | `invasao-de-minibosses.html` |
-| orc-helmet-sprite.png | PNG | `assets/media/miniboss-invasions/orc-helmet-sprite.png` | `invasao-de-minibosses.html` |
-| orc-shield-original.png | PNG | `assets/media/miniboss-invasions/orc-shield-original.png` | `invasao-de-minibosses.html` |
-| orc-shield-sprite.png | PNG | `assets/media/miniboss-invasions/orc-shield-sprite.png` | `invasao-de-minibosses.html` |
-| preceptor-lazare-original.png | PNG | `assets/media/miniboss-invasions/preceptor-lazare-original.png` | `invasao-de-minibosses.html` |
-| preceptor-lazare-sprite.png | PNG | `assets/media/miniboss-invasions/preceptor-lazare-sprite.png` | `invasao-de-minibosses.html` |
-| the-horned-fox-original.png | PNG | `assets/media/miniboss-invasions/the-horned-fox-original.png` | `invasao-de-minibosses.html` |
-| the-horned-fox-sprite.png | PNG | `assets/media/miniboss-invasions/the-horned-fox-sprite.png` | `invasao-de-minibosses.html` |
-| the-imperor-original.png | PNG | `assets/media/miniboss-invasions/the-imperor-original.png` | `invasao-de-minibosses.html` |
-| the-imperor-sprite.png | PNG | `assets/media/miniboss-invasions/the-imperor-sprite.png` | `invasao-de-minibosses.html` |
-| the-plasmother-original.png | PNG | `assets/media/miniboss-invasions/the-plasmother-original.png` | `invasao-de-minibosses.html` |
-| the-plasmother-sprite.png | PNG | `assets/media/miniboss-invasions/the-plasmother-sprite.png` | `invasao-de-minibosses.html` |
-| twisterror-original.png | PNG | `assets/media/miniboss-invasions/twisterror-original.png` | `invasao-de-minibosses.html` |
-| twisterror-sprite.gif | GIF | `assets/media/miniboss-invasions/twisterror-sprite.gif` | `invasao-de-minibosses.html` |
-| white-pale-original.png | PNG | `assets/media/miniboss-invasions/white-pale-original.png` | `invasao-de-minibosses.html` |
-| white-pale-sprite.png | PNG | `assets/media/miniboss-invasions/white-pale-sprite.png` | `invasao-de-minibosses.html` |
-| zarabustor-original.png | PNG | `assets/media/miniboss-invasions/zarabustor-original.png` | `invasao-de-minibosses.html` |
-| zarabustor-sprite.png | PNG | `assets/media/miniboss-invasions/zarabustor-sprite.png` | `invasao-de-minibosses.html` |
+| entrando-no-evento.webp | WEBP | `assets/media/golden-raid-event/entrando-no-evento.webp` | `golden-raid-event.html` |
+| mapa-da-mina.webp | WEBP | `assets/media/golden-raid-event/mapa-da-mina.webp` | `golden-raid-event.html` |
+| teleport-inicio-do-evento.webp | WEBP | `assets/media/golden-raid-event/teleport-inicio-do-evento.webp` | `golden-raid-event.html` |
+| troque-seus-tokens-no-npc.png | PNG | `assets/media/golden-raid-event/troque-seus-tokens-no-npc.png` | `golden-raid-event.html` |
+| zona-de-teleport.webp | WEBP | `assets/media/golden-raid-event/zona-de-teleport.webp` | `golden-raid-event.html` |
 | game-store.png | PNG | `assets/media/outfit-mount-bonus/game-store.png` | `outfit-mount-bonus.html` |
 | quest-entrance.png | PNG | `assets/media/outfit-mount-bonus/quest-entrance.png` | `outfit-mount-bonus.html` |
 | task-mounts.png | PNG | `assets/media/outfit-mount-bonus/task-mounts.png` | `outfit-mount-bonus.html` |
@@ -803,7 +737,7 @@ Este inventário cobre todo arquivo GIF, PNG e JPG em `assets/media`. O nome fun
 | shop-bonuses.png | PNG | `assets/media/tasks-system/shop-bonuses.png` | `tasks-system.html` |
 | shop-mounts.png | PNG | `assets/media/tasks-system/shop-mounts.png` | `tasks-system.html` |
 | weekly-board.png | PNG | `assets/media/tasks-system/weekly-board.png` | `tasks-system.html` |
-| golden-raid-token.gif | GIF | `assets/media/trinket-badges/golden-raid-token.gif` | `category-sistemas-do-servidor.html`, `character-upgrades.html`, `dark-totem-daily.html`, `index.html`, `invasao-de-minibosses.html`, `spell-badge-upgrade.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
+| golden-raid-token.gif | GIF | `assets/media/trinket-badges/golden-raid-token.gif` | `category-sistemas-do-servidor.html`, `character-upgrades.html`, `dark-totem-daily.html`, `index.html`, `golden-raid-event.html`, `spell-badge-upgrade.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | npc.png | PNG | `assets/media/trinket-badges/npc.png` | `character-upgrades.html`, `spell-badge-upgrade.html` |
 | trinket-slots.png | PNG | `assets/media/trinket-badges/trinket-slots.png` | `character-upgrades.html`, `spell-badge-upgrade.html` |
 | badge-slot.png | PNG | `assets/media/trinket-craft/badge-slot.png` | `sistema-de-craft.html` |
