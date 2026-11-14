@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1571000916486787083",
+      "timestamp": "2026-11-14T03:16:46.276000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 14/11 - @here\n\n**1. 🔨 FORJA — PROTEÇÃO DAS SPELL BADGES**\n- Spell Badges armazenadas dentro da **Trinket** não aparecem mais na Forja.\n- Agora elas ficam protegidas e não podem ser consumidas acidentalmente em:\n  - Fusion\n  - Convergence\n  - Transfer\n\n📌 Para utilizar uma Spell Badge na Forja:\n- Retire a badge da Trinket.\n- Coloque-a na backpack.\n- Ela voltará a aparecer normalmente nas opções da Forja.\n\n⚠️ Importante:\n- Uma badge dentro da Trinket e outra igual na backpack não formam mais um par válido para fusão.\n- Ambas devem estar fora da Trinket.\n\n---\n\n**2. 🎟️ CORREÇÃO — SISTEMA DE VOUCHERS**\n- Corrigido um problema envolvendo os vouchers bônus distribuídos para personagens abaixo do level 1500.\n\n🔧 Antes:\n- Os vouchers do evento ocupavam espaço dentro do limite máximo de vouchers.\n- Isso podia fazer o kit semanal chegar incompleto ou nem ser entregue.\n\n✅ Agora:\n- Os vouchers recebidos em eventos são contabilizados separadamente.\n- O limite é aumentado temporariamente em:\n  - +2 Voucher EXP\n  - +1 Voucher Skill\n- O kit semanal passa a ser entregue normalmente e completo.\n\n📌 A correção também foi aplicada para personagens que já haviam recebido os vouchers do evento antes da atualização.",
+      "attachments": []
+    },
+    {
       "id": "1570640595859542141",
       "timestamp": "2026-11-13T03:24:59.144000+00:00",
       "title": "",
@@ -77,22 +84,6 @@
       "title": "",
       "content": "# 📜 CHANGELOG — 01/11 - ||@here||\n\n**1. 🩸 BAKRAGORE**\n- O boss **Bakragore** agora possui a mesma chance dos minibosses de dropar **essências de todos minibosses**.\n\n---\n\n**2. 📋 TASK BOARD**\n- Adicionados cerca de **15 novos itens** às tasks.\n- A quantidade máxima por tarefa foi aumentada para **40 unidades**.\n\n---\n\n**3. 🛠️ CORREÇÃO — AURAS**\n- Corrigidos os símbolos exibidos nas auras **Sapped Strength** e **Exposed Weakness**.\n- Os ícones estavam invertidos entre si.\n- Os efeitos e valores das habilidades permanecem inalterados.\n\n---\n\n**4. 🎯 PREFERÊNCIAS DE TAREFAS**\n- ✅ Criaturas marcadas como preferidas agora possuem maior chance de aparecer.\n- ❌ Criaturas evitadas aparecem com menor frequência, mas ainda podem ser sorteadas.\n- As opções continuam respeitando a dificuldade selecionada.\n- Não há repetição de criaturas no mesmo sorteio.\n\n---\n\n**5. 🏹 ENCHANTED SPECIALIZED TASK AMULET**\n- Agora pode ser obtido no último baú das tasks (**Master**).\n- Quem já abriu esse baú poderá utilizá-lo novamente para receber apenas o amuleto.\n\n✨ Efeitos:\n- Equipado no slot de amuleto, cada abate conta em dobro para:\n  - Hunting Tasks\n  - Bounty Tasks\n  - Weekly Kill Tasks\n- O bônus acumula com:\n  - Voucher de Task\n  - Double Task Scroll\n\n⏳ Informações:\n- Duração de 1 hora.\n- Fora do slot, o tempo fica pausado.\n- Ao acabar a carga, o bônus é desativado.\n- Pode ser recarregado no **!repair** utilizando **5 Elemental Cores**.\n- Nível mínimo: **500**.\n\n---\n\n**6. 🦵 SISTEMA DE RARIDADE NAS PERNEIRAS**\n- Perneiras de classificação **3 e 4** agora participam do sistema de raridade.\n\n✨ Funcionamento:\n- Passam a nascer com raridade indefinida.\n- A alteração vale para itens na:\n  - Backpack\n  - Corpo do personagem\n  - Depot\n  - House\n  - Chão\n  - Stash\n\n🔮 Agora é possível utilizar:\n- Revelation Potions\n- Identificações de raridade\n\n📌 Os slots vazios poderão aparecer normalmente.\n\n⚠️ As Bonus Stones ainda não funcionam em perneiras até que os bônus desse equipamento sejam definidos.\n\n---\n\n**7. 🏪 STORE**\n- Adicionado o **Task Reroll Scroll** à Store.\n\n📜 Ao utilizar:\n- Concede **5 Task Rerolls**.\n- O limite máximo continua sendo **50 rerolls**.",
       "attachments": []
-    },
-    {
-      "id": "1565928895818113085",
-      "timestamp": "2026-10-31T03:22:22.315000+00:00",
-      "title": "",
-      "content": "||@here||",
-      "attachments": [
-        {
-          "name": "Gravando_2026-10-29_012454.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928894899421204/Gravando_2026-10-29_012454.gif?ex=6af87cae&is=6af72b2e&hm=90798dc895ae2bb1b1116215779826e6f8877eb2757418a337ed804c5fec8b23&"
-        },
-        {
-          "name": "rarity_celestial_gem.gif",
-          "url": "https://cdn.discordapp.com/attachments/1494025735122452630/1565928895381774337/rarity_celestial_gem.gif?ex=6af87cae&is=6af72b2e&hm=e1b9983538f5c19593d1beb863810490c1f0012b1392420ad7a41958fe0b92c5&"
-        }
-      ]
     }
   ]
 }
