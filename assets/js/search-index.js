@@ -9,6 +9,14 @@ window.AVALORIUM_SEARCH_INDEX =
     "image": "assets/media/exalted-forge/exalted-core.gif"
 },
 {
+    "title": "Daily Quests",
+    "description": "Quest diária na Quest Room, spoiler do caminho e 25 possíveis recompensas comuns, raras, épicas e místicas.",
+    "category": "Sistemas do Servidor",
+    "keywords": "daily quests daily quest quest room teleport diaria recompensa comum raro epico mistico golden raid token",
+    "url": "daily-quests.html",
+    "image": "assets/media/daily-quests/chest-of-abundance.gif"
+},
+{
     "title": "Golden Raid Event",
     "description": "Golden Raid Event na Mina Dourada: derrote 40 bosses por dia, resgate Golden Event Tokens e troque por Golden Raid Tokens e outras recompensas.",
     "category": "Sistemas do Servidor",
