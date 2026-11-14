@@ -10,9 +10,9 @@ window.AVALORIUM_SEARCH_INDEX =
 },
 {
     "title": "Golden Raid Event",
-    "description": "Golden Raid Event na Mina Dourada: acesso gratuito, 40 bosses por dia, tempo VIP e free, resgate de Golden Raid Tokens e uso do Event Reset.",
+    "description": "Golden Raid Event na Mina Dourada: derrote 40 bosses por dia, resgate Golden Event Tokens e troque por Golden Raid Tokens e outras recompensas.",
     "category": "Sistemas do Servidor",
-    "keywords": "golden raid event mina dourada minibosses mini bosses token golden event token keeper encerrar 40 bosses tokens diario reset vip free 2 horas 1 hora 30 minutos goldforge master mistress 250000 vida root fear salto sangramento bleed sala eventos gratuito upgrade potions spell badges",
+    "keywords": "golden raid event mina dourada minibosses mini bosses golden event token golden raid token keeper encerrar 40 bosses tokens diario reset vip free 2 horas 1 hora 30 minutos goldforge master mistress 250000 vida boosts outfits itens de house prey cards sala eventos gratuito upgrade potions spell badges",
     "url": "golden-raid-event.html",
     "image": "assets/media/trinket-badges/golden-raid-token.gif"
 },

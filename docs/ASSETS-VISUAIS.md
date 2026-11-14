@@ -28,6 +28,7 @@ A pasta `golden-raid-event` inclui quatro prints WEBP, contabilizados no total d
 | `dark-totem` | 0 | 1 | 0 | 1 | 1 | 0 |
 | `dark-totem/items` | 44 | 0 | 0 | 44 | 44 | 0 |
 | `divergence` | 0 | 5 | 0 | 5 | 5 | 0 |
+| `divergence/rewards` | 3 | 5 | 0 | 8 | 8 | 0 |
 | `exalted-forge` | 5 | 5 | 0 | 10 | 10 | 0 |
 | `hireling-enchanter` | 1 | 4 | 0 | 5 | 5 | 0 |
 | `hunts-custom` | 17 | 0 | 0 | 17 | 17 | 0 |
@@ -51,7 +52,7 @@ A pasta `golden-raid-event` inclui quatro prints WEBP, contabilizados no total d
 | `items-wiki/Rarity System + Stone system` | 11 | 0 | 0 | 11 | 2 | 9 |
 | `items-wiki/Rarity System + Stone system/Stones elementais` | 14 | 0 | 0 | 14 | 0 | 14 |
 | `menu` | 29 | 0 | 0 | 29 | 26 | 3 |
-| `golden-raid-event` | 0 | 1 | 0 | 5 | 5 | 0 |
+| `golden-raid-event` | 1 | 2 | 0 | 7 | 7 | 0 |
 | `outfit-mount-bonus` | 0 | 4 | 0 | 4 | 4 | 0 |
 | `placeholders` | 1 | 0 | 1 | 2 | 1 | 1 |
 | `rarity-system` | 0 | 2 | 0 | 2 | 1 | 1 |
@@ -240,6 +241,14 @@ A pasta `golden-raid-event` inclui quatro prints WEBP, contabilizados no total d
 | craft.png | PNG | `assets/media/divergence/craft.png` | `divergence-system.html` |
 | faixas.png | PNG | `assets/media/divergence/faixas.png` | `divergence-system.html` |
 | seller.png | PNG | `assets/media/divergence/seller.png` | `divergence-system.html` |
+| bronze-exp-scroll.gif | GIF | `assets/media/divergence/rewards/bronze-exp-scroll.gif` | `divergence-system.html` |
+| fierce-wolf-outfit.png | PNG | `assets/media/divergence/rewards/fierce-wolf-outfit.png` | `divergence-system.html` |
+| oficial-coach-outfit.png | PNG | `assets/media/divergence/rewards/oficial-coach-outfit.png` | `divergence-system.html` |
+| old-aura-ancient-outfit.png | PNG | `assets/media/divergence/rewards/old-aura-ancient-outfit.png` | `divergence-system.html` |
+| old-aura-tanker-outfit.png | PNG | `assets/media/divergence/rewards/old-aura-tanker-outfit.png` | `divergence-system.html` |
+| old-aura-warrior-outfit.png | PNG | `assets/media/divergence/rewards/old-aura-warrior-outfit.png` | `divergence-system.html` |
+| scorpion-egg.gif | GIF | `assets/media/divergence/rewards/scorpion-egg.gif` | `divergence-system.html` |
+| silver-exp-scroll.gif | GIF | `assets/media/divergence/rewards/silver-exp-scroll.gif` | `divergence-system.html` |
 | convergence-fusion.png | PNG | `assets/media/exalted-forge/convergence-fusion.png` | `exalted-forge.html` |
 | exalted-core.gif | GIF | `assets/media/exalted-forge/exalted-core.gif` | `category-guias-e-utilidades.html`, `exalted-forge.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | fabio-rockeiro-auto-forja.png | PNG | `assets/media/exalted-forge/fabio-rockeiro-auto-forja.png` | `exalted-forge.html` |
@@ -612,6 +621,8 @@ A pasta `golden-raid-event` inclui quatro prints WEBP, contabilizados no total d
 | stones-guia-completo.gif | GIF | `assets/media/menu/stones-guia-completo.gif` | `category-sistemas-do-servidor.html`, `index.html`, `assets/js/wiki.js`, `assets/js/search-index.js` |
 | weapons.gif | GIF | `assets/media/menu/weapons.gif` | `category-itens-e-equipamentos.html` |
 | entrando-no-evento.webp | WEBP | `assets/media/golden-raid-event/entrando-no-evento.webp` | `golden-raid-event.html` |
+| golden-token-keeper.png | PNG | `assets/media/golden-raid-event/golden-token-keeper.png` | `golden-raid-event.html` |
+| golden-raid-event-reset.gif | GIF | `assets/media/golden-raid-event/golden-raid-event-reset.gif` | `divergence-system.html`, `golden-raid-event.html` |
 | mapa-da-mina.webp | WEBP | `assets/media/golden-raid-event/mapa-da-mina.webp` | `golden-raid-event.html` |
 | teleport-inicio-do-evento.webp | WEBP | `assets/media/golden-raid-event/teleport-inicio-do-evento.webp` | `golden-raid-event.html` |
 | troque-seus-tokens-no-npc.png | PNG | `assets/media/golden-raid-event/troque-seus-tokens-no-npc.png` | `golden-raid-event.html` |
