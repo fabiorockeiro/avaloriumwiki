@@ -2,6 +2,13 @@
   "channelUrl": "https://discord.com/channels/1379133420395036712/1494025735122452630",
   "messages": [
     {
+      "id": "1571726708648837211",
+      "timestamp": "2026-11-16T03:20:48.612000+00:00",
+      "title": "",
+      "content": "# 📜 CHANGELOG — 16/11 - @here\n\n**1. 🎁 DAILY QUEST — AGORA COM 2 RECOMPENSAS**\n- O baú da Daily Quest agora entrega **2 itens por resgate** ao invés de apenas 1.\n\n---\n\n**2. 🐎 QUEST MOUNT — MAIS RÁPIDA**\n- A mecânica da quest foi alterada.\n\n⏱️ Antes:\n- Era necessário sobreviver por 3 minutos para concluir.\n\n⚔️ Agora:\n- As criaturas da sala podem ser derrotadas.\n- Ao eliminar todos os monstros, a quest é concluída imediatamente.\n- O jogador é teleportado para a saída e recebe sua recompensa automaticamente.\n\n---\n\n**3. ⏰ DAILY QUEST — COOLDOWN REDUZIDO**\n- O cooldown da Daily Quest foi reduzido de **24 horas para 23 horas**.\n\n✅ Benefícios:\n- Permite realizar a quest diariamente praticamente no mesmo horário.\n- Evita o atraso gradual que acontecia ao longo dos dias.\n\n📌 Observação:\n- Caso você já tenha resgatado o baú antes da atualização, o próximo resgate ainda seguirá o cooldown antigo.\n- Após esse ciclo, o novo tempo de 23 horas será aplicado normalmente.",
+      "attachments": []
+    },
+    {
       "id": "1571537718964391987",
       "timestamp": "2026-11-15T14:49:49.960000+00:00",
       "title": "",
@@ -76,13 +83,6 @@
       "timestamp": "2026-11-03T03:08:06.087000+00:00",
       "title": "",
       "content": "# 📜 CHANGELOG — 02/11 - @here\n\n**1. 👕 CORREÇÃO — OUTFIT VOLTANDO PARA CITIZEN**\n- Corrigido o problema que fazia alguns personagens aparecerem com o outfit **Citizen** após determinados reinícios do servidor.\n- O servidor agora preserva a escolha de outfit mesmo quando não consegue exibi-lo temporariamente.\n- Quando o problema for resolvido internamente, o outfit correto voltará automaticamente no próximo login.\n- Caso você troque de outfit nesse período, a nova escolha será salva normalmente.\n\n---\n\n**2. ⚡ CORREÇÃO — EXPERIÊNCIA EM PARTY E STAMINA**\n- Corrigido o problema que impedia o ganho de experiência em party após recuperar stamina.\n- Agora personagens que recuperarem stamina através de:\n  - Stamina Bottle\n  - Regeneração\n  - Concoction\n  - Banho\n- Voltarão a ganhar experiência normalmente.\n- A stamina também voltará a ser consumida corretamente.\n\n📊 **Janela de Skills**\n- O XP Rate agora mostra o valor real do bônus de experiência.\n- Quando o personagem não puder receber experiência, a taxa aparecerá como **0% em vermelho**.\n\n---\n\n**3. 🏆 HIGHSCORE DE CHARM POINTS**\n- O ranking agora considera apenas os Charm Points obtidos através do **Bestiário**.\n- Charm Points recebidos por itens da Store não contam mais para o ranking.\n\n✅ Nada mudou no funcionamento dos charms:\n- Os pontos da Store continuam podendo ser usados normalmente.\n- Desbloqueios e upgrades de charms continuam funcionando.\n\n👑 O título **Prince Charming / Princess Charming** agora também utiliza apenas os pontos obtidos no Bestiário.\n\n🔄 Todos os personagens foram recalculados automaticamente com base no progresso atual do Bestiário.\n\n---\n\n📢 **IMPORTANTE — ATUALIZAÇÃO DO CLIENTE**\n- É necessário **atualizar o cliente** para receber todas as correções e alterações desta atualização.\n- Recomendamos salvar suas configurações antes de atualizar o launcher.\n- Caso encontre qualquer problema visual ou funcional, feche completamente o cliente e realize uma nova atualização.",
-      "attachments": []
-    },
-    {
-      "id": "1566650137080627361",
-      "timestamp": "2026-11-02T03:08:19.632000+00:00",
-      "title": "",
-      "content": "# 📜 CHANGELOG — 01/11 - @here\n\n**1. 💰 IGNORE SELL — SLOTS MAIS BARATOS**\n- Cada slot extra do Ignore Sell agora custa **10kk** (antes 75kk).\n- Mantidas as regras atuais:\n  - 50 slots gratuitos\n  - Até 100 slots comprados\n  - Máximo de 150 slots\n  - Compra permanente por personagem\n  - Sem reembolso\n- O pagamento é feito primeiro pela mochila e depois pelo banco.\n- O novo valor aparece na interface do Ignore Sell e no comando **!ignoresell slots**.\n\n---\n\n**2. 🎁 PRIMAL BAG E BAG YOU DESIRE**\n- Ao abrir uma **Primal Bag** ou **Bag You Desire (Soul War)**, seu personagem se transforma no item recebido por **10 segundos**.\n- O item continua sendo enviado normalmente para a **Store Inbox**.\n\n---\n\n**3. ✨ GEMA AUG. DIVINE BARRAGE**\n- Corrigido o efeito da gema **Aug. Divine Barrage (+Dano e +Dano Crítico Extra)**.\n- Agora o bônus fortalece corretamente a magia **Divine Barrage (exori dir san)**.\n- Antes o bônus era aplicado incorretamente à **Divine Missile (exori san)**.\n\n🎨 **Correção visual**\n- O ícone da gema foi atualizado.\n- Agora utiliza a imagem correta da **Divine Barrage**.\n\n⚠️ Jogadores que utilizavam essa gema para fortalecer o **exori san** perceberão que o bônus não será mais aplicado nessa magia.",
       "attachments": []
     }
   ]
