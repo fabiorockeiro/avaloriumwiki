@@ -4924,7 +4924,30 @@ tbody tr:hover td {
 }
 
 .desktop-nav-hunts {
-    width: 440px;
+    width: 400px;
+}
+
+.hunt-menu-icon {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+}
+
+.hunt-menu-icon img {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    image-rendering: pixelated;
+}
+
+[data-hunts-custom-menu] .hunt-menu-icon {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
 }
 
 .desktop-nav-heading {

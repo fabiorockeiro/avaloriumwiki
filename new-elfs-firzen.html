@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Elfs Firzen | Avalorium OT Wiki</title>
+    <meta name="description" content="Portal de level 800 e hazard 10 com o mesmo bestiário do Sanctum.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css?v=updates-position-20261016">
+    <link rel="stylesheet" href="assets/css/layout-consistency.css">
+    <link rel="stylesheet" href="assets/css/content-guides.css">
+    <link rel="stylesheet" href="assets/css/hunts-custom.css">
+</head>
+<body class="layout-standard">
+<a class="skip-link" href="#conteudo">Ir para o conteudo</a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>        </button>
+
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+
+        <form class="top-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>--</strong>
+            <small>online</small>
+        </div>
+
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg><span>YouTube</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
+    </div>
+</header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+
+    <form class="drawer-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg> YouTube</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+
+    <nav class="drawer-menu"></nav>
+</aside>
+    <div class="wiki-shell">
+        <aside class="wiki-sidebar" aria-label="Menu da wiki">
+    <div class="sidebar-sticky">
+        <div class="sidebar-title">
+            <span>Menu da Wiki</span>
+            <small>0 artigos</small>
+        </div>
+    </div>
+</aside>
+        <main class="wiki-main" id="conteudo"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Início</a><span>/</span><a href="hunts-custom.html">Hunts Custom</a><span>/</span><strong>New Elfs Firzen</strong></nav><article class="content-guide hc-guide hc-single"><section class="hero hc-single-hero" id="topo"><div><p class="kicker">Hunt Custom · VIP</p><h1>New Elfs Firzen</h1><p class="lead">Portal de level 800 e hazard 10 com o mesmo bestiário do Sanctum.</p><div class="hc-hero-facts"><span>Level <strong>800</strong></span><span>Hazard <strong>10</strong></span><span>Conta <strong>VIP</strong></span></div></div><img src="assets/media/hunts-custom/menu/firzen.png" alt="Criatura da hunt New Elfs Firzen" loading="eager"></section><nav class="hc-toc" aria-label="Nesta hunt"><a href="#new-elfs">Criaturas e loot</a><a href="#frezee">Frezee</a><a href="#firen">Firen</a><a href="#firzen">Firzen</a><a href="#como-ler">Como ler os números</a></nav><section class="hunt" id="new-elfs">
+<p class="kicker">Hunt · level 800 · hazard 10 · VIP</p>
+<h2>New Elfs Firzen</h2>
+<p>O portal <strong>New Elfs Firzen</strong> pede level 800 e hazard 10. Esta hunt compartilha o bestiário de Frezee, Firen e Firzen com o <a href="sanctum-of-fire-ice.html">Sanctum of Fire &amp; Ice</a>. Abaixo estão os perfis completos dessas três criaturas, com dano, resistências e loot.</p>
+<p>Os três compartilham o mesmo perfil elemental: <span class="neg">físico, energia e terra −5%</span>, fogo e gelo +15%. Imunes a paralisia e enxergam invisibilidade. Stone bag nível 1 sai a 0,02% em todos.</p>
+<article class="creature" id="frezee">
+<header>
+<h3>Frezee</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Frezee" loading="lazy" src="assets/media/hunts-custom/Freezee.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>22.860</strong></div>
+<div class="stat"><span>Vida</span><strong>31.000</strong></div>
+<div class="stat"><span>Velocidade</span><strong>230</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>105 / 105</strong></div>
+<div class="stat"><span>Mitigação</span><strong>3,00</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Teto perto de 900 por segundo. Mix aproximado: gelo 57%, físico 43%.</p>
+<ul class="clean">
+<li>Melee físico até 1.000</li>
+<li>Ice strike 900–1.200, alcance 7</li>
+<li>Icicle berserker 1.100–1.400, área raio 3</li>
+<li>Smokeball de gelo 900–1.200, área no alvo</li>
+<li>Feixe de gelo 900–1.200, comprimento 5</li>
+<li>Ice chain 1.100–1.400</li>
+</ul>
+<p>Sem cura. Imune a troca de outfit.</p>
+</div>
+<div>
+<div class="elem"><span>Físico</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Terra</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Gelo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Sagrado / morte</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">44,80%</td><td>1–2</td></tr>
+<tr><td>Small enchanted sapphire</td><td class="chance">29,50%</td><td>2–3</td></tr>
+<tr><td>Cyan crystal fragment</td><td class="chance">14,75%</td><td>1–3</td></tr>
+<tr><td>Avalanche rune</td><td class="chance">9,95%</td><td>5–9</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">9,31%</td><td>1</td></tr>
+<tr><td>Blue gem</td><td class="chance">7,08%</td><td>1–2</td></tr>
+<tr><td>Ice flower</td><td class="chance">5,31%</td><td>1–3</td></tr>
+<tr><td>Glacier mask</td><td class="chance">3,54%</td><td>1</td></tr>
+<tr><td>Moonlight rod</td><td class="chance">3,19%</td><td>1</td></tr>
+<tr><td>Glacier shoes</td><td class="chance">3,10%</td><td>1</td></tr>
+<tr><td>Glacier amulet</td><td class="chance">1,73%</td><td>1</td></tr>
+<tr><td>Northwind rod</td><td class="chance">1,39%</td><td>1</td></tr>
+<tr><td>Ring of blue plasma</td><td class="chance">0,53%</td><td>1</td></tr>
+<tr><td>Collar of blue plasma</td><td class="chance">0,53%</td><td>1</td></tr>
+<tr><td>Glacier robe</td><td class="chance">0,20%</td><td>1</td></tr>
+<tr><td>Glacier kilt</td><td class="chance">0,20%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="firen">
+<header>
+<h3>Firen</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Firen" loading="lazy" src="assets/media/hunts-custom/Fieren.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>20.150</strong></div>
+<div class="stat"><span>Vida</span><strong>31.500</strong></div>
+<div class="stat"><span>Velocidade</span><strong>230</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>105 / 105</strong></div>
+<div class="stat"><span>Mitigação</span><strong>3,00</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Teto perto de 900 por segundo. Mix aproximado: fogo 67%, físico 33%.</p>
+<ul class="clean">
+<li>Melee físico até 1.000</li>
+<li>Flame strike 900–1.200 a cada 1 s, alcance 7</li>
+<li>Fireball em cruz 1.100–1.400, raio 2</li>
+<li>Blast ball 900–1.200, área raio 3</li>
+<li>Fire berserk 900–1.200, área raio 3</li>
+<li>Fire chain 1.100–1.400</li>
+</ul>
+<p>Sem cura. Imune a troca de outfit. Troca de alvo com peso em quem está com pouca vida e em quem causa mais dano.</p>
+</div>
+<div>
+<div class="elem"><span>Físico</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Terra</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Gelo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Sagrado / morte</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">42,67%</td><td>1–2</td></tr>
+<tr><td>Small enchanted ruby</td><td class="chance">27,36%</td><td>2–3</td></tr>
+<tr><td>Red crystal fragment</td><td class="chance">13,68%</td><td>1–2</td></tr>
+<tr><td>Great fireball rune</td><td class="chance">9,95%</td><td>3–7</td></tr>
+<tr><td>Ultimate health potion</td><td class="chance">9,31%</td><td>1</td></tr>
+<tr><td>Red gem</td><td class="chance">5,47%</td><td>1–2</td></tr>
+<tr><td>Wand of dragonbreath</td><td class="chance">2,96%</td><td>1</td></tr>
+<tr><td>Magma monocle</td><td class="chance">2,88%</td><td>1</td></tr>
+<tr><td>Magma boots</td><td class="chance">2,88%</td><td>1</td></tr>
+<tr><td>Magma amulet</td><td class="chance">1,61%</td><td>1</td></tr>
+<tr><td>Collar of red plasma</td><td class="chance">0,49%</td><td>1</td></tr>
+<tr><td>Ring of red plasma</td><td class="chance">0,49%</td><td>1</td></tr>
+<tr><td>Magma legs</td><td class="chance">0,18%</td><td>1</td></tr>
+<tr><td>Magma coat</td><td class="chance">0,18%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="firzen">
+<header>
+<h3>Firzen</h3>
+<span class="tag melee">híbrido fogo e gelo</span>
+</header><figure class="creature-clip"><img alt="Firzen" loading="lazy" src="assets/media/hunts-custom/Firzen.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>24.290</strong></div>
+<div class="stat"><span>Vida</span><strong>32.500</strong></div>
+<div class="stat"><span>Velocidade</span><strong>230</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>110 / 110</strong></div>
+<div class="stat"><span>Mitigação</span><strong>3,10</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Teto perto de 1.100 por segundo. Mix aproximado: gelo 39%, fogo 32%, físico 29%.</p>
+<ul class="clean">
+<li>Melee físico até 1.100</li>
+<li>Ice strike 1.000–1.300</li>
+<li>Icicle berserker 1.100–1.400, área raio 3</li>
+<li>Smokeball de gelo 900–1.200</li>
+<li>Feixe de gelo 900–1.200</li>
+<li>Flame strike 900–1.200 a cada 1 s</li>
+<li>Fireball em cruz 1.000–1.300</li>
+<li>Blast ball e fire berserk 900–1.200</li>
+<li>Fireice chain: 500–800 por salto, alternando gelo e fogo, até 4 saltos</li>
+<li>Paralisia −600 de velocidade por 20 s</li>
+</ul>
+<p><b>Defesa.</b> Cura 600–1.100 com 25% de chance a cada 2 s. Pode ser iludido.</p>
+</div>
+<div>
+<div class="elem"><span>Físico</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Terra</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Gelo</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Sagrado / morte</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">38,69%</td><td>1–2</td></tr>
+<tr><td>Small enchanted sapphire</td><td class="chance">24,18%</td><td>2–5</td></tr>
+<tr><td>Small enchanted ruby</td><td class="chance">24,18%</td><td>2–5</td></tr>
+<tr><td>Avalanche rune</td><td class="chance">16,85%</td><td>7–15</td></tr>
+<tr><td>Great fireball rune</td><td class="chance">16,85%</td><td>7–15</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">15,78%</td><td>1</td></tr>
+<tr><td>Ultimate health potion</td><td class="chance">15,78%</td><td>1</td></tr>
+<tr><td>Cyan crystal fragment</td><td class="chance">4,84%</td><td>2–5</td></tr>
+<tr><td>Red crystal fragment</td><td class="chance">4,84%</td><td>2–3</td></tr>
+<tr><td>Ice flower</td><td class="chance">4,35%</td><td>1–5</td></tr>
+<tr><td>Blue gem</td><td class="chance">3,87%</td><td>1–2</td></tr>
+<tr><td>Red gem</td><td class="chance">3,87%</td><td>1–3</td></tr>
+<tr><td>Glacier mask</td><td class="chance">2,90%</td><td>1</td></tr>
+<tr><td>Moonlight rod / wand of dragonbreath</td><td class="chance">2,61%</td><td>1</td></tr>
+<tr><td>Glacier shoes / magma monocle / magma boots</td><td class="chance">2,54%</td><td>1</td></tr>
+<tr><td>Glacier amulet / magma amulet</td><td class="chance">1,42%</td><td>1</td></tr>
+<tr><td>Northwind rod</td><td class="chance">1,14%</td><td>1</td></tr>
+<tr><td>Ring e collar de plasma azul ou vermelho</td><td class="chance">0,44% cada</td><td>1</td></tr>
+<tr><td>Glacier robe, glacier kilt, magma legs, magma coat</td><td class="chance">0,16% cada</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+</section><section class="hc-method" id="como-ler">
+<h2>Como ler os números</h2>
+<div class="note">
+    A chance de loot usa a base do servidor: 100.000 = 100%. O valor entre parênteses no dano é o teto do golpe, não a média por segundo. A fatia de cada elemento vem do comentário de balanceamento do monstro. Resistência positiva reduz o dano recebido; valor negativo aumenta. Hazard exigido nos portais é o de Gnomprona Gardens. Todos esses acessos pedem conta VIP.
+  </div>
+</section><nav class="hc-adjacent" aria-label="Outras hunts"><a href="sanctum-of-fire-ice.html"><small>Hunt anterior</small><strong>Sanctum of Fire &amp; Ice</strong></a><a href="hunts-custom.html"><small>Índice</small><strong>Todas as hunts</strong></a><a href="pyramid-of-azhrkhal-three-asuras.html"><small>Próxima hunt</small><strong>Pyramid of Azhr&#x27;khal</strong></a></nav><footer>
+  Números tirados dos scripts de monstro em <code>data-otservbr-global/monster/01_custom</code> e dos portais em <code>special_tiles_custom.lua</code>. Chance de loot na base 100.000.
+</footer></article></main>
+    </div>
+    <footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
+<script src="assets/js/discord-changelog.js?v=20261016"></script>
+<script src="assets/js/wiki.js?v=updates-position-20261016"></script>
+</body>
+</html>

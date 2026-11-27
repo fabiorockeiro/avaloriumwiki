@@ -1,0 +1,60 @@
+.conclave-page { min-width: 0; container-type: inline-size; }
+.conclave-page .article-hero { background: radial-gradient(circle at 85% 15%, rgba(211,167,84,.2), transparent 55%), var(--surface); }
+.conclave-page .article-hero h1 { font: 800 clamp(36px,4vw,56px)/1.1 Inter,sans-serif; }
+.conclave-page .article-hero p { max-width: 62ch; }
+.conclave-page .article-hero-media { display: grid; place-items: center; min-height: 160px; }
+.conclave-page .article-hero-media img { width: clamp(130px,15vw,178px); height: auto; object-fit: contain; filter: drop-shadow(0 0 18px rgba(215,175,97,.19)); }
+.conclave-cta { display: inline-flex; gap: 20px; align-items: center; margin-top: 18px; padding: 11px 16px; border: 1px solid rgba(215,175,97,.5); color: var(--gold-2); background: rgba(215,175,97,.08); font-size: 12px; font-weight: 700; }
+.conclave-cta:hover { background: rgba(215,175,97,.16); }
+.conclave-highlights { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; margin: 22px 0; border: 1px solid var(--line); background: var(--line); }
+.conclave-highlights>div { min-width: 0; padding: 20px 23px; background: var(--surface); }
+.conclave-highlights small { display: block; margin-bottom: 5px; color: var(--muted); font-size: 11px; }
+.conclave-highlights strong { color: var(--gold-2); font-size: clamp(16px,2vw,22px); }
+.conclave-page .content-section { scroll-margin-top: 100px; }
+.conclave-section-heading { margin-bottom: 26px; }
+.conclave-overline { display: block; margin-bottom: 9px; color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: .16em; }
+.conclave-section-heading h2 { margin: 0 0 8px; font: 800 clamp(24px,3vw,32px)/1.25 Inter,sans-serif; }
+.conclave-section-heading p { max-width: 76ch; margin: 0; color: var(--muted); line-height: 1.75; }
+.conclave-table-scroll { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-top: 2px solid var(--gold); scrollbar-color: var(--gold) var(--surface); }
+.conclave-table { width: 100%; min-width: 900px; table-layout: fixed; border-collapse: collapse; background: var(--surface); }
+.conclave-table .conclave-name-column { width: 34%; }
+.conclave-table th, .conclave-table td { padding: 17px 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); vertical-align: middle; text-align: left; }
+.conclave-table tr > :last-child { border-right: 0; }
+.conclave-table tbody tr:last-child > * { border-bottom: 0; }
+.conclave-table thead th { padding: 13px 18px; background: rgba(215,175,97,.09); color: var(--gold-2); font-size: 11px; letter-spacing: .1em; }
+.conclave-table tbody th { background: transparent; color: var(--text); text-transform: none; font-weight: 400; }
+.conclave-table tbody tr:nth-child(even) { background: rgba(255,255,255,.025); }
+.conclave-table tbody tr:hover { background: rgba(215,175,97,.07); }
+.conclave-table-name { display: flex; align-items: flex-start; gap: 12px; }
+.conclave-table-icon { display: grid; flex: 0 0 34px; place-items: center; width: 34px; height: 34px; border: 1px solid rgba(215,175,97,.3); background: rgba(215,175,97,.07); font-size: 19px; }
+.conclave-table-name strong { display: block; margin: 1px 0 5px; color: var(--text); font-size: 14px; line-height: 1.3; }
+.conclave-table-name small { display: block; color: var(--muted); font-size: 11px; line-height: 1.55; }
+.conclave-tier-effect { display: block; min-height: 22px; }
+.conclave-tier-effect strong { display: block; color: var(--gold-2); font-size: 18px; line-height: 1.25; white-space: nowrap; }
+.conclave-tier-effect small { display: block; margin-top: 3px; color: var(--text); font-size: 11px; }
+.conclave-tier-cost { display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; color: var(--muted); font-size: 11px; white-space: nowrap; }
+.conclave-tier-cost img { width: 16px; height: 16px; object-fit: contain; image-rendering: pixelated; }
+.conclave-tier-unavailable { color: var(--muted); text-align: center !important; font-size: 18px; }
+.conclave-note { margin: 22px 0 0; padding: 15px 18px; border-left: 2px solid var(--gold); background: var(--surface); color: var(--muted); font-size: 12px; line-height: 1.7; }
+.conclave-note strong { color: var(--text); }
+.conclave-steps { border-top: 1px solid var(--line); }
+.conclave-steps article { display: grid; grid-template-columns: 50px minmax(0,1fr); gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.conclave-step-index { padding-top: 3px; color: var(--gold); font-size: 12px; font-weight: 800; }
+.conclave-steps h3 { margin: 0 0 5px; color: var(--text); font-size: 17px; }
+.conclave-steps h3 small { margin-left: 8px; color: var(--gold-2); font-size: 11px; font-weight: 600; white-space: nowrap; }
+.conclave-steps p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.conclave-rule-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 15px; margin-top: 24px; }
+.conclave-rule-grid>div { padding: 20px; border: 1px solid var(--line); background: var(--surface); }
+.conclave-rule-grid strong { color: var(--gold-2); }
+.conclave-rule-grid p { margin: 7px 0 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.conclave-rule-grid b { color: var(--text); }
+.conclave-command-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.conclave-command-grid>div { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 5px 16px; min-width: 0; padding: 14px 17px; background: var(--surface); }
+.conclave-command-grid code { color: var(--gold-2); font-size: 12px; white-space: nowrap; }
+.conclave-command-grid span { color: var(--muted); font-size: 11px; }
+.conclave-screenshot { margin: 0; padding: 12px; border: 1px solid var(--line); background: var(--surface); }
+.conclave-screenshot img { display: block; width: 100%; height: auto; }
+.conclave-screenshot figcaption { padding: 12px 3px 2px; color: var(--muted); font-size: 11px; }
+.conclave-page :is(a,button):focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+@container (max-width: 550px) { .conclave-rule-grid, .conclave-command-grid, .conclave-highlights { grid-template-columns: 1fr; } .conclave-highlights>div { padding: 14px 18px; } .conclave-table { min-width: 820px; } .conclave-table th, .conclave-table td { padding: 13px 12px; } }
+@media (max-width: 700px) { .layout-standard .conclave-page .article-hero { grid-template-columns: minmax(0,1fr); } .conclave-page .article-hero-media { grid-row: 1; justify-self: start; min-height: 80px; } .conclave-page .article-hero-media img { width: 84px; } }

@@ -1,2 +1,383 @@
-<!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=hunts-custom.html#fallen"><link rel="canonical" href="hunts-custom.html#fallen"><title>Hunts Custom | Avalorium OT Wiki</title></head><body><p><a href="hunts-custom.html#fallen">Abrir o guia de Hunts Custom</a></p><script>location.replace("hunts-custom.html#fallen");</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fallen Usurpers | Avalorium OT Wiki</title>
+    <meta name="description" content="Os Fallen Usurpers, o Lion Beast e o boss Azkalon.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css?v=updates-position-20261016">
+    <link rel="stylesheet" href="assets/css/layout-consistency.css">
+    <link rel="stylesheet" href="assets/css/content-guides.css">
+    <link rel="stylesheet" href="assets/css/hunts-custom.css">
+</head>
+<body class="layout-standard">
+<a class="skip-link" href="#conteudo">Ir para o conteudo</a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>        </button>
+
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+
+        <form class="top-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>--</strong>
+            <small>online</small>
+        </div>
+
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg><span>YouTube</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
+    </div>
+</header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+
+    <form class="drawer-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg> YouTube</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+
+    <nav class="drawer-menu"></nav>
+</aside>
+    <div class="wiki-shell">
+        <aside class="wiki-sidebar" aria-label="Menu da wiki">
+    <div class="sidebar-sticky">
+        <div class="sidebar-title">
+            <span>Menu da Wiki</span>
+            <small>0 artigos</small>
+        </div>
+    </div>
+</aside>
+        <main class="wiki-main" id="conteudo"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Início</a><span>/</span><a href="hunts-custom.html">Hunts Custom</a><span>/</span><strong>The Fallen Usurpers</strong></nav><article class="content-guide hc-guide hc-single"><section class="hero hc-single-hero" id="topo"><div><p class="kicker">Hunt Custom · VIP</p><h1>The Fallen Usurpers</h1><p class="lead">Os Fallen Usurpers, o Lion Beast e o boss Azkalon.</p><div class="hc-hero-facts"><span>Level <strong>1.200</strong></span><span>Hazard <strong>10</strong></span><span>Conta <strong>VIP</strong></span></div></div><img src="assets/media/hunts-custom/menu/fallen-usurper-knight.png" alt="Criatura da hunt The Fallen Usurpers" loading="eager"></section><nav class="hc-toc" aria-label="Nesta hunt"><a href="#fallen">Criaturas e loot</a><a href="#azkalon">Azkalon</a><a href="#knight">Fallen Usurper Knight</a><a href="#archer">Fallen Usurper Archer</a><a href="#commander">Fallen Usurper Commander</a><a href="#lion">Fallen Lion Beast</a><a href="#warlock">Fallen Usurper Warlock</a><a href="#broodling">Fallen Royal Broodling</a><a href="#como-ler">Como ler os números</a></nav><section class="hunt" id="fallen">
+<p class="kicker">Hunt 5 · level 1.200 · hazard 10 · VIP</p>
+<h2>The Fallen Usurpers</h2>
+<p>Humanos e a fera do leão caído. A defesa elemental é baixa: a pressão vem da cura alta e dos números de dano. Quase todos curam milhares por tick. Morte é a fraqueza recorrente (−5% ou −10%). Special stone material sai por volta de 0,02% e stone bag nível 1 a 0,06%.</p>
+<article class="creature" id="knight">
+<header>
+<h3>Fallen Usurper Knight</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Fallen Usurper Knight" loading="lazy" src="assets/media/hunts-custom/Fallen Usurper Knight.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>58.409</strong></div>
+<div class="stat"><span>Vida</span><strong>80.060</strong></div>
+<div class="stat"><span>Velocidade</span><strong>280</strong></div>
+<div class="stat"><span>Armadura / mitigação</span><strong>135 / 3,20</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico ~86%, fogo ~14%. Troca de alvo com frequência (40%).</p>
+<ul class="clean">
+<li>Melee até 3.510</li>
+<li>Físico no alvo 4.010–5.120</li>
+<li>Fogo em área raio 4, 3.940–5.030</li>
+<li>Físico em área raio 3, 4.340–5.080</li>
+</ul>
+<p><b>Defesa.</b> Cura 7.750–13.950 com 35% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Físico / fogo</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−5%</span></div>
+<div class="elem"><span>Demais</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>Lion crest</td><td class="chance">70%</td><td>19–44</td></tr>
+<tr><td>Gold ingot</td><td class="chance">48,82%</td><td>1</td></tr>
+<tr><td>Red gem / blue gem</td><td class="chance">24,50%</td><td>1–9</td></tr>
+<tr><td>Green gem</td><td class="chance">19,25%</td><td>1–9</td></tr>
+<tr><td>Violet gem</td><td class="chance">15,75%</td><td>1–9</td></tr>
+<tr><td>Lion cloak patch</td><td class="chance">9,79%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,019%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="archer">
+<header>
+<h3>Fallen Usurper Archer</h3>
+<span class="tag ranged">distância 3</span>
+</header><figure class="creature-clip"><img alt="Fallen Usurper Archer" loading="lazy" src="assets/media/hunts-custom/Fallen Usurper Arche.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>64.785</strong></div>
+<div class="stat"><span>Vida</span><strong>92.090</strong></div>
+<div class="stat"><span>Velocidade</span><strong>280</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>128 / 125</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico ~78%, fogo ~22%. O ataque básico já é um tiro físico até 3.470.</p>
+<ul class="clean">
+<li>Fogo no alvo 4.920–6.290, alcance 7</li>
+<li>Físico em área no alvo 4.960–6.340, raio 4</li>
+</ul>
+<p><b>Defesa.</b> Cura 7.700–11.550 com 28% a cada 2 s. Mitigação 3,10.</p>
+</div>
+<div>
+<div class="elem"><span>Físico / fogo / gelo / sagrado</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−10%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Ultimate health potion</td><td class="chance">100%</td><td>até 4</td></tr>
+<tr><td>Meat</td><td class="chance">80,62%</td><td>1</td></tr>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>Elvish bow</td><td class="chance">27,35%</td><td>1</td></tr>
+<tr><td>Red gem / blue gem</td><td class="chance">25,48%</td><td>1–9</td></tr>
+<tr><td>Assassin dagger</td><td class="chance">20,12%</td><td>1</td></tr>
+<tr><td>Green gem</td><td class="chance">20,02%</td><td>1–9</td></tr>
+<tr><td>Broken longbow</td><td class="chance">17,27%</td><td>3–7</td></tr>
+<tr><td>Violet gem</td><td class="chance">16,38%</td><td>1–9</td></tr>
+<tr><td>Lion cloak patch</td><td class="chance">11,99%</td><td>1</td></tr>
+<tr><td>Black pearl</td><td class="chance">10,39%</td><td>7–20</td></tr>
+<tr><td>Ornate crossbow</td><td class="chance">9,31%</td><td>1</td></tr>
+<tr><td>Emerald bangle</td><td class="chance">9,15%</td><td>1</td></tr>
+<tr><td>Coral brooch</td><td class="chance">2,08%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="commander">
+<header>
+<h3>Fallen Usurper Commander</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Fallen Usurper Commander" loading="lazy" src="assets/media/hunts-custom/Fallen Usurper Commander.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>73.567</strong></div>
+<div class="stat"><span>Vida</span><strong>103.590</strong></div>
+<div class="stat"><span>Velocidade</span><strong>360</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>145 / 150</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico ~72%, life drain ~28%. Derruba magic walls. Mitigação 3,40, a mais alta da hunt.</p>
+<ul class="clean">
+<li>Melee até 4.520</li>
+<li>Físico em onda 6.060–7.670</li>
+<li>Físico em área raio 3, 6.060–7.670</li>
+<li>Life drain em X, 5.860–7.410</li>
+<li>Sparks chain 3.850–5.420</li>
+</ul>
+<p><b>Defesa.</b> Cura 7.650–14.540 com 40% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Físico / terra</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−5%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>War axe</td><td class="chance">27,41%</td><td>1</td></tr>
+<tr><td>Red gem / blue gem</td><td class="chance">26,46%</td><td>1–20</td></tr>
+<tr><td>Green gem</td><td class="chance">20,79%</td><td>1–20</td></tr>
+<tr><td>Violet gem</td><td class="chance">17,01%</td><td>1–20</td></tr>
+<tr><td>Lion crest</td><td class="chance">15,12%</td><td>1</td></tr>
+<tr><td>Golden legs</td><td class="chance">8,51%</td><td>1</td></tr>
+<tr><td>Magic plate armor</td><td class="chance">5,67%</td><td>1</td></tr>
+<tr><td>Giant sword</td><td class="chance">4,73%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="lion">
+<header>
+<h3>Fallen Lion Beast</h3>
+<span class="tag melee">sangramento</span>
+</header><figure class="creature-clip"><img alt="Fallen Lion Beast" loading="lazy" src="assets/media/hunts-custom/Corrupted Lion Beast.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>74.261</strong></div>
+<div class="stat"><span>Vida</span><strong>104.490</strong></div>
+<div class="stat"><span>Velocidade</span><strong>320</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>128 / 125</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Físico ~54%, sangramento ~46%.</p>
+<ul class="clean">
+<li>Melee até 3.470</li>
+<li>Físico em área 4.920–6.290 (45% a cada 2 s)</li>
+<li>Lentidão −900 por 5 s, raio 2</li>
+<li>Sangramento em área raio 3: 28.380</li>
+</ul>
+<p><b>Defesa.</b> Cura 4.940–9.170 com 28% a cada 2 s. Imune a sangramento. Fraqueza em fogo.</p>
+</div>
+<div>
+<div class="elem"><span>Terra</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Fogo</span><span class="neg">−10%</span></div>
+<div class="elem"><span>Demais</span><span class="zero">0%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>Red gem</td><td class="chance">20,79%</td><td>1–3</td></tr>
+<tr><td>Blue gem</td><td class="chance">18,90%</td><td>1–3</td></tr>
+<tr><td>Green gem</td><td class="chance">17,01%</td><td>1–3</td></tr>
+<tr><td>Lion crest</td><td class="chance">10,40%</td><td>20–47</td></tr>
+<tr><td>Warrior helmet</td><td class="chance">5,67%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="warlock">
+<header>
+<h3>Fallen Usurper Warlock</h3>
+<span class="tag ranged">distância 3</span>
+</header><figure class="creature-clip"><img alt="Fallen Usurper Warlock" loading="lazy" src="assets/media/hunts-custom/Fallen Usurper Warlock.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>74.955</strong></div>
+<div class="stat"><span>Vida</span><strong>105.390</strong></div>
+<div class="stat"><span>Velocidade</span><strong>280</strong></div>
+<div class="stat"><span>Armadura / mitigação</span><strong>120 / 3,00</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Energia ~65%, fogo ~35%. O ataque básico é energia até 4.520. Foca quem causa mais dano.</p>
+<ul class="clean">
+<li>Fogo no alvo 5.810–7.350, raio 4</li>
+<li>Energia no alvo 6.060–7.670, raio 4</li>
+<li>Extended energy chain 3.790–5.330</li>
+</ul>
+<p><b>Defesa.</b> Cura 10.010–17.880 com 35% a cada 2 s e fica invisível (20%).</p>
+</div>
+<div>
+<div class="elem"><span>Energia / fogo</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Morte</span><span class="neg">−5%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">70%</td><td>1–2</td></tr>
+<tr><td>Underworld rod</td><td class="chance">70%</td><td>1</td></tr>
+<tr><td>Blue robe</td><td class="chance">70%</td><td>1</td></tr>
+<tr><td>Red gem</td><td class="chance">20,79%</td><td>1–3</td></tr>
+<tr><td>Blue gem</td><td class="chance">18,90%</td><td>1–3</td></tr>
+<tr><td>Green gem</td><td class="chance">17,01%</td><td>1–3</td></tr>
+<tr><td>Lion cloak patch</td><td class="chance">7,98%</td><td>1</td></tr>
+<tr><td>Lion crest</td><td class="chance">7,77%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,06%</td><td>1</td></tr>
+<tr><td>Special stone material</td><td class="chance">0,02%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+</section><section class="hunt" id="azkalon">
+<p class="kicker">Boss · archfoe · 10.000.000 de vida</p>
+<h2>Azkalon, The Fallen Usurper King</h2>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>60.000.000</strong></div>
+<div class="stat"><span>Velocidade</span><strong>620</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>180 / 180</strong></div>
+<div class="stat"><span>Mitigação</span><strong>5,50</strong></div>
+</div>
+<p>Resiste 25% a físico, energia, terra, fogo, gelo, sagrado e morte. Cura 12.000–25.000 (25% a cada 2 s) e acelera +1.200 por 7 s. Durante a luta pode manter até 12 invocações entre Knight, Archer e Warlock, com até 4 de cada tipo.</p>
+<p><b>Dano.</b> Mix aproximado: morte 40%, gelo 25%, físico 20%, life drain 8%, mana drain 7%. Teto perto de 12.500 por segundo.</p>
+<ul class="clean">
+<li>Melee 4.500–8.200</li>
+<li>Death explosion 6.500–9.800, raio 6</li>
+<li>Ice wave 6.200–9.200, comprimento 8</li>
+<li>Fallen nova física 5.800–8.800, raio 7</li>
+<li>Death beam 7.000–10.500, linha de 10 sqm</li>
+<li>Ice prison 5.500–8.500 no alvo, raio 5</li>
+<li>Soul rupture 8.000–12.000, raio 8</li>
+<li>Void consumption: mana drain 5.000–8.000, raio 8</li>
+<li>Blood of the Fallen: life drain 7.000–10.000, raio 9</li>
+<li>Crushing blow físico 6.000–9.000</li>
+</ul>
+<h3>Fases da guarda real</h3>
+<p>Ao chegar em <b>60%</b> e de novo em <b>30%</b> de vida, Azkalon fica imune a dano e chama quatro Fallen Royal Broodlings. A imunidade cai quando os quatro morrem. Se um broodling morre com o boss dentro da explosão, Azkalon recupera <b>10% da vida máxima</b> (“Azkalon absorbs the fallen essence!”). Matar a guarda longe do rei evita essa cura.</p>
+<article class="creature" id="broodling">
+<header>
+<h3>Fallen Royal Broodling</h3>
+<span class="tag boss">invocação de fase</span>
+</header>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>0</strong></div>
+<div class="stat"><span>Vida</span><strong>400.000</strong></div>
+<div class="stat"><span>Velocidade</span><strong>480</strong></div>
+<div class="stat"><span>Armadura</span><strong>90</strong></div>
+</div>
+<p>Sem loot e sem corpo. Dano em cerca de metade do rei: waves longas de gelo, fogo, energia e morte, mais áreas de terra, sagrado, mana drain e life drain. Melee 2.250–4.100. O golpe mais alto da ficha é Soul Rupture, 4.000–6.000 em raio 8. Cura 6.000–12.500. Todos os elementos em +15%. Ao morrer, explode numa área larga.</p>
+</article>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop de Azkalon</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Master usurper essence</td><td class="chance">50%</td><td>1</td></tr>
+<tr><td>Crystal coin (duas pilhas)</td><td class="chance">100% cada</td><td>85–100 e 82–100</td></tr>
+<tr><td>Giant ruby, emerald, sapphire, amethyst e topaz</td><td class="chance">50% cada</td><td>5–15</td></tr>
+<tr><td>Boss token</td><td class="chance">25%</td><td>7–15</td></tr>
+<tr><td>Expert WZ token</td><td class="chance">25%</td><td>1–2</td></tr>
+<tr><td>Primal bag / Bag You Desire</td><td class="chance">0,70%</td><td>1</td></tr>
+<tr><td>Bag You Covet</td><td class="chance">0,30%</td><td>1</td></tr>
+<tr><td>Special bag</td><td class="chance">0,30%</td><td>1</td></tr>
+<tr><td>Sanguine upgrade</td><td class="chance">0,08%</td><td>1</td></tr>
+<tr><td>Corrupted void bag</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</section><section class="hc-method" id="como-ler">
+<h2>Como ler os números</h2>
+<div class="note">
+    A chance de loot usa a base do servidor: 100.000 = 100%. O valor entre parênteses no dano é o teto do golpe, não a média por segundo. A fatia de cada elemento vem do comentário de balanceamento do monstro. Resistência positiva reduz o dano recebido; valor negativo aumenta. Hazard exigido nos portais é o de Gnomprona Gardens. Todos esses acessos pedem conta VIP.
+  </div>
+</section><nav class="hc-adjacent" aria-label="Outras hunts"><a href="void-corruption-depths-inner-netherbound.html"><small>Hunt anterior</small><strong>Void Corruption Depths — Netherbound</strong></a><a href="hunts-custom.html"><small>Índice</small><strong>Todas as hunts</strong></a></nav><footer>
+  Números tirados dos scripts de monstro em <code>data-otservbr-global/monster/01_custom</code> e dos portais em <code>special_tiles_custom.lua</code>. Chance de loot na base 100.000.
+</footer></article></main>
+    </div>
+    <footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
+<script src="assets/js/discord-changelog.js?v=20261016"></script>
+<script src="assets/js/wiki.js?v=updates-position-20261016"></script>
+</body>
+</html>

@@ -1,2 +1,314 @@
-<!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=hunts-custom.html#nether"><link rel="canonical" href="hunts-custom.html#nether"><title>Hunts Custom | Avalorium OT Wiki</title></head><body><p><a href="hunts-custom.html#nether">Abrir o guia de Hunts Custom</a></p><script>location.replace("hunts-custom.html#nether");</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void Corruption Depths — Netherbound | Avalorium OT Wiki</title>
+    <meta name="description" content="Segunda zona do abismo, com três criaturas Netherbound e o boss Zy’Thar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/wiki.css?v=updates-position-20261016">
+    <link rel="stylesheet" href="assets/css/layout-consistency.css">
+    <link rel="stylesheet" href="assets/css/content-guides.css">
+    <link rel="stylesheet" href="assets/css/hunts-custom.css">
+</head>
+<body class="layout-standard">
+<a class="skip-link" href="#conteudo">Ir para o conteudo</a>
+<header class="topbar">
+    <div class="topbar-inner">
+        <button class="icon-button mobile-only" type="button" data-drawer-open aria-label="Abrir menu">
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>        </button>
+
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+
+        <form class="top-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>            <input type="search" name="q" value="" placeholder="Buscar sistemas, itens ou comandos">
+        </form>
+
+        <div class="server-pill" title="Players online">
+            <span class="pulse-dot online"></span>
+            <strong>--</strong>
+            <small>online</small>
+        </div>
+
+        <nav class="quick-actions" aria-label="Atalhos do servidor">
+            <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener" title="Download Client"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg><span>Download</span></a>
+            <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener" title="Discord"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg><span>Discord</span></a>
+            <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener" title="Instagram"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg><span>Instagram</span></a>
+            <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg><span>YouTube</span></a>
+            <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener" title="WhatsApp"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg><span>WhatsApp</span></a>
+            <a href="https://avaloriumot.com/index.php/account/donate" target="_blank" rel="noopener" title="Donate"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l2 7H4l2-7Z"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg><span>Donate</span></a>
+        </nav>
+    </div>
+</header>
+<div class="drawer-backdrop" data-drawer-close hidden></div>
+<aside class="mobile-drawer" data-drawer aria-label="Menu mobile" aria-hidden="true">
+    <div class="drawer-head">
+        <a class="brand" href="index.html">
+            <img src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+            <span class="sr-only">Avalorium OT Wiki</span>
+        </a>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Fechar menu"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+
+    <form class="drawer-search" action="search.html" method="get">
+<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.3-4.3"/><circle cx="11" cy="11" r="7"/></svg>        <input type="search" name="q" placeholder="Buscar na wiki">
+    </form>
+
+    <div class="drawer-actions">
+        <a href="https://avaloriumot.com/index.php/downloads" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg> Download</a>
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg> Discord</a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg> Instagram</a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg> YouTube</a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg> WhatsApp</a>
+    </div>
+
+    <nav class="drawer-menu"></nav>
+</aside>
+    <div class="wiki-shell">
+        <aside class="wiki-sidebar" aria-label="Menu da wiki">
+    <div class="sidebar-sticky">
+        <div class="sidebar-title">
+            <span>Menu da Wiki</span>
+            <small>0 artigos</small>
+        </div>
+    </div>
+</aside>
+        <main class="wiki-main" id="conteudo"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Início</a><span>/</span><a href="hunts-custom.html">Hunts Custom</a><span>/</span><strong>Void Corruption Depths — Netherbound</strong></nav><article class="content-guide hc-guide hc-single"><section class="hero hc-single-hero" id="topo"><div><p class="kicker">Hunt Custom · VIP</p><h1>Void Corruption Depths — Netherbound</h1><p class="lead">Segunda zona do abismo, com três criaturas Netherbound e o boss Zy’Thar.</p><div class="hc-hero-facts"><span>Level <strong>1.000</strong></span><span>Hazard <strong>12</strong></span><span>Conta <strong>VIP</strong></span></div></div><img src="assets/media/hunts-custom/menu/netherbound-demon.png" alt="Criatura da hunt Void Corruption Depths — Netherbound" loading="eager"></section><nav class="hc-toc" aria-label="Nesta hunt"><a href="#nether">Criaturas e loot</a><a href="#zythar">Zy’Thar</a><a href="#ndemon">Netherbound Demon</a><a href="#ndragon">Netherbound Dragon</a><a href="#nbrain">Netherbound Brain</a><a href="#como-ler">Como ler os números</a></nav><section class="hunt" id="nether">
+<p class="kicker">Hunt 4 · mesmo portal · level 1.000 · hazard 12</p>
+<h2>Void Corruption Depths — Netherbound</h2>
+<p>Segunda zona, mais vida e golpes mais altos. O dragão e o cérebro usam terra; o demônio usa sagrado e físico. Crystal coin a 60% (2–4) nas três. Primal bag a 0,01% e stone bag nível 1 a 0,05%.</p>
+<article class="creature" id="ndemon">
+<header>
+<h3>Netherbound Demon</h3>
+<span class="tag melee">corpo a corpo</span>
+</header><figure class="creature-clip"><img alt="Netherbound Demon" loading="lazy" src="assets/media/hunts-custom/Netherbound Demon.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>45.490</strong></div>
+<div class="stat"><span>Vida</span><strong>63.760</strong></div>
+<div class="stat"><span>Velocidade</span><strong>320</strong></div>
+<div class="stat"><span>Armadura</span><strong>120</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Sagrado 45%, físico 35%, life drain 20%. Derruba magic walls.</p>
+<ul class="clean">
+<li>Melee até 2.810</li>
+<li>Holy em área raio 8, 3.180–4.060</li>
+<li>Holy no alvo 3.160–4.030</li>
+<li>Físico em área raio 6, 3.590–4.200</li>
+<li>Life drain em linha 3.130–3.990</li>
+</ul>
+<p><b>Defesa.</b> Cura 105–656 (50%) e acelera +840 por 5 s (35%).</p>
+</div>
+<div>
+<div class="elem"><span>Morte</span><span class="pos">+50%</span></div>
+<div class="elem"><span>Sagrado</span><span class="pos">+40%</span></div>
+<div class="elem"><span>Terra</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Fogo</span><span class="pos">+10%</span></div>
+<div class="elem"><span>Físico</span><span class="neg">−15%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−25%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">60%</td><td>2–4</td></tr>
+<tr><td>Underworld rod</td><td class="chance">40,20%</td><td>1</td></tr>
+<tr><td>Supreme health potion</td><td class="chance">31,25%</td><td>1–6</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">28,75%</td><td>1–5</td></tr>
+<tr><td>Blue gem</td><td class="chance">21,75%</td><td>1–4</td></tr>
+<tr><td>Red gem</td><td class="chance">19,50%</td><td>1–4</td></tr>
+<tr><td>Small ruby</td><td class="chance">18,75%</td><td>1–31</td></tr>
+<tr><td>Small sapphire / green gem</td><td class="chance">17,25%</td><td>1–31 / 1–4</td></tr>
+<tr><td>Demon shield</td><td class="chance">3,45%</td><td>1</td></tr>
+<tr><td>Golden armor</td><td class="chance">3,08%</td><td>1</td></tr>
+<tr><td>Giant sword / heavy mace</td><td class="chance">2,93%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,05%</td><td>1</td></tr>
+<tr><td>Verdant heart</td><td class="chance">0,013%</td><td>1</td></tr>
+<tr><td>Primal bag</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="ndragon">
+<header>
+<h3>Netherbound Dragon</h3>
+<span class="tag melee">terra</span>
+</header><figure class="creature-clip"><img alt="Netherbound Dragon" loading="lazy" src="assets/media/hunts-custom/Netherbound Dragon.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>49.360</strong></div>
+<div class="stat"><span>Vida</span><strong>68.540</strong></div>
+<div class="stat"><span>Velocidade</span><strong>300</strong></div>
+<div class="stat"><span>Armadura / mitigação</span><strong>125 / 2,30</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Terra 55%, físico 30%, morte 15%. O ataque básico já é terra. Derruba magic walls.</p>
+<ul class="clean">
+<li>Golpe de terra até 2.670</li>
+<li>Terra em área raio 6, 4.010–5.130</li>
+<li>Físico em área 2.950–3.990</li>
+<li>Extended death chain 3.100–4.190</li>
+<li>Lentidão −800 por 20 s</li>
+</ul>
+<p><b>Defesa.</b> Cura 200–700 com 40% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Terra</span><span class="pos">+30%</span></div>
+<div class="elem"><span>Físico</span><span class="pos">+15%</span></div>
+<div class="elem"><span>Morte</span><span class="pos">+10%</span></div>
+<div class="elem"><span>Energia</span><span class="neg">−10%</span></div>
+<div class="elem"><span>Fogo</span><span class="neg">−25%</span></div>
+<div class="elem"><span>Sagrado</span><span class="neg">−25%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin / small emerald / small topaz</td><td class="chance">60%</td><td>2–4 / 1–26</td></tr>
+<tr><td>Magma clump</td><td class="chance">42,86%</td><td>1–5</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">30,94%</td><td>1–7</td></tr>
+<tr><td>Darklight basalt chunk</td><td class="chance">29,45%</td><td>1</td></tr>
+<tr><td>Blue gem</td><td class="chance">16,77%</td><td>1–7</td></tr>
+<tr><td>White gem</td><td class="chance">14,98%</td><td>1–7</td></tr>
+<tr><td>Dragon lance</td><td class="chance">1,08%</td><td>1</td></tr>
+<tr><td>Royal helmet</td><td class="chance">9,77%</td><td>1</td></tr>
+<tr><td>Dragon slayer</td><td class="chance">9,59%</td><td>1</td></tr>
+<tr><td>Dragon scale mail</td><td class="chance">3,18%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,05%</td><td>1</td></tr>
+<tr><td>Primal bag</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+<article class="creature" id="nbrain">
+<header>
+<h3>Netherbound Brain</h3>
+<span class="tag ranged">distância 4</span>
+</header><figure class="creature-clip"><img alt="Netherbound Brain" loading="lazy" src="assets/media/hunts-custom/Brain Netherbound.gif"/></figure>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>53.387</strong></div>
+<div class="stat"><span>Vida</span><strong>72.060</strong></div>
+<div class="stat"><span>Velocidade</span><strong>315</strong></div>
+<div class="stat"><span>Armadura</span><strong>120</strong></div>
+</div>
+<div class="split">
+<div>
+<p><b>Dano.</b> Terra 70%, morte 20%, físico 10%. Prioriza quem está ferido e quem causa mais dano.</p>
+<ul class="clean">
+<li>Melee até 3.350</li>
+<li>Terra no alvo 4.190–5.300</li>
+<li>Terra em área raio 5, 4.680–5.910</li>
+<li>Death em onda a cada 4 s, 4.380–5.530</li>
+<li>Large death ring 4.640–5.870</li>
+<li>Earth barrage 2.860–4.020</li>
+<li>Extended death chain 2.740–3.850</li>
+</ul>
+<p><b>Defesa.</b> Cura 1.100–2.300 com 18% a cada 2 s.</p>
+</div>
+<div>
+<div class="elem"><span>Terra</span><span class="pos">+40%</span></div>
+<div class="elem"><span>Morte</span><span class="pos">+30%</span></div>
+<div class="elem"><span>Físico</span><span class="pos">+5%</span></div>
+<div class="elem"><span>Sagrado</span><span class="neg">−15%</span></div>
+<div class="elem"><span>Fogo</span><span class="neg">−25%</span></div>
+</div>
+</div>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">60%</td><td>2–4</td></tr>
+<tr><td>Terra rod</td><td class="chance">37,58%</td><td>1</td></tr>
+<tr><td>Dark obsidian splinter</td><td class="chance">31,05%</td><td>1</td></tr>
+<tr><td>Ultimate health potion</td><td class="chance">29,70%</td><td>1–5</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">28,35%</td><td>1–5</td></tr>
+<tr><td>Blue gem</td><td class="chance">21,06%</td><td>1–7</td></tr>
+<tr><td>Onyx chip</td><td class="chance">20,25%</td><td>1–20</td></tr>
+<tr><td>Violet gem</td><td class="chance">18,63%</td><td>1–7</td></tr>
+<tr><td>Small sapphire</td><td class="chance">17,01%</td><td>1–7</td></tr>
+<tr><td>White gem</td><td class="chance">14,58%</td><td>1–3</td></tr>
+<tr><td>Inkwell</td><td class="chance">12,31%</td><td>1–5</td></tr>
+<tr><td>Skull helmet</td><td class="chance">3,40%</td><td>1</td></tr>
+<tr><td>Spellbook of enlightenment</td><td class="chance">3,08%</td><td>1</td></tr>
+<tr><td>Golden armor</td><td class="chance">2,84%</td><td>1</td></tr>
+<tr><td>Piece of dead brain</td><td class="chance">1,75%</td><td>1</td></tr>
+<tr><td>Greenwood coat</td><td class="chance">0,73%</td><td>1</td></tr>
+<tr><td>Stone bag nível 1</td><td class="chance">0,05%</td><td>1</td></tr>
+<tr><td>Primal bag</td><td class="chance">0,01%</td><td>1</td></tr>
+</tbody>
+</table></div>
+</article>
+</section><section class="hunt" id="zythar">
+<p class="kicker">Boss da Void Corruption Depths · archfoe</p>
+<h2>Zy'Thar</h2>
+<div class="stats">
+<div class="stat"><span>Experiência</span><strong>15.000.000</strong></div>
+<div class="stat"><span>Vida</span><strong>5.500.000</strong></div>
+<div class="stat"><span>Velocidade</span><strong>450</strong></div>
+<div class="stat"><span>Armadura / defesa</span><strong>135 / 135</strong></div>
+</div>
+<p>Todos os elementos em +25%. Imune a paralisia e enxerga invisibilidade. Cura 6.250–8.750 (30% a cada 2 s) e acelera +700 por 6 s. Invoca até 4 criaturas: Netherbound Demon e Void Demon Ravager.</p>
+<p><b>Dano base.</b> Mix aproximado morte 50%, gelo 40%, físico 10%. Teto perto de 3.040 por segundo, fora do Doom.</p>
+<ul class="clean">
+<li>Melee 3.170–4.420</li>
+<li>Ice cataclysm 3.100–4.790, área raio 6 no alvo</li>
+<li>Death beam 3.380–5.070, linha de 8 sqm</li>
+<li>Ring of ice 4.030–6.050</li>
+<li>Frozen spear 4.110–5.890 no alvo</li>
+<li>Soul rupture 3.930–5.900, área raio 6</li>
+</ul>
+<p><b>Doom</b>, a cada cerca de 6 s, escolhe um dos quatro ataques telegrafados:</p>
+<ul class="clean">
+<li><b>Abyssal Meteor</b> (morte): marca a área do alvo e cai 5.600–9.600 em 5×5.</li>
+<li><b>Frozen Downpour</b> (gelo): 6 impactos de 3.680–6.170 em 3×3 que seguem o alvo. Com 30% de vida ou menos, sobe para 8 impactos.</li>
+<li><b>Blighted Bloom</b> (terra): anéis que abrem a partir do alvo, 3.900–6.900. O primeiro anel é um 3×3 cheio; os seguintes são só a borda, até raio 4. A folga entre os anéis é o espaço seguro.</li>
+<li><b>Void Cataclysm</b> (morte): só com 30% de vida ou menos. Cinco ondas de impactos aleatórios num raio de 6 sqm ao redor do boss, 4.680–8.580 por golpe.</li>
+</ul>
+<div class="guide-table-scroll"><table>
+<thead><tr><th>Drop</th><th>Chance</th><th>Qtd.</th></tr></thead>
+<tbody>
+<tr><td>Crystal coin</td><td class="chance">60%</td><td>até 200</td></tr>
+<tr><td>Supreme health potion</td><td class="chance">55%</td><td>até 300</td></tr>
+<tr><td>Ultimate mana potion</td><td class="chance">55%</td><td>até 300</td></tr>
+<tr><td>Ultimate spirit potion</td><td class="chance">52%</td><td>até 300</td></tr>
+<tr><td>Blue, red, violet e yellow gem; giant amethyst, emerald, ruby, sapphire e topaz</td><td class="chance">50% cada</td><td>até 20</td></tr>
+<tr><td>Cobalt ridge, darklight figurine, dragon figurine</td><td class="chance">50%</td><td>1</td></tr>
+<tr><td>Fiery tear</td><td class="chance">50%</td><td>até 10</td></tr>
+<tr><td>Golden raid token</td><td class="chance">1,20%</td><td>1–5</td></tr>
+<tr><td>Pinkdemon heart / verdant heart</td><td class="chance">1,00% cada</td><td>1</td></tr>
+<tr><td>Primal bag / Bag You Desire</td><td class="chance">0,70%</td><td>1</td></tr>
+<tr><td>Special bag / Bag You Covet</td><td class="chance">0,50%</td><td>1</td></tr>
+<tr><td>Void upgrade</td><td class="chance">0,10%</td><td>1</td></tr>
+<tr><td>Corrupted void bag</td><td class="chance">0,05%</td><td>1, unique</td></tr>
+</tbody>
+</table></div>
+</section><section class="hc-method" id="como-ler">
+<h2>Como ler os números</h2>
+<div class="note">
+    A chance de loot usa a base do servidor: 100.000 = 100%. O valor entre parênteses no dano é o teto do golpe, não a média por segundo. A fatia de cada elemento vem do comentário de balanceamento do monstro. Resistência positiva reduz o dano recebido; valor negativo aumenta. Hazard exigido nos portais é o de Gnomprona Gardens. Todos esses acessos pedem conta VIP.
+  </div>
+</section><nav class="hc-adjacent" aria-label="Outras hunts"><a href="void-corruption-depths-outer-void.html"><small>Hunt anterior</small><strong>Void Corruption Depths — Outer Void</strong></a><a href="hunts-custom.html"><small>Índice</small><strong>Todas as hunts</strong></a><a href="the-fallen-usurpers.html"><small>Próxima hunt</small><strong>The Fallen Usurpers</strong></a></nav><footer>
+  Números tirados dos scripts de monstro em <code>data-otservbr-global/monster/01_custom</code> e dos portais em <code>special_tiles_custom.lua</code>. Chance de loot na base 100.000.
+</footer></article></main>
+    </div>
+    <footer class="site-footer">
+    <div>
+        <img class="footer-logo" src="assets/media/brand/avalorium-logo.png" alt="Avalorium OT">
+        <strong class="sr-only">Avalorium OT Wiki</strong>
+        <span class="copyright">&copy; 2026 Avalorium OT. Todos os direitos reservados.</span>
+        <span class="footer-credit">Designed by Fábio Rockeiro</span>
+    </div>
+    <nav aria-label="Links sociais">
+        <a href="https://discord.gg/thQYPvRzn" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 17c2 1 6 1 8 0"/><path d="M7 8c3-2 7-2 10 0"/><path d="M9 14h.01M15 14h.01"/><path d="M6 19c-2-5-1-10 1-14 2 .3 3 .9 4 1.5h2c1-.6 2-1.2 4-1.5 2 4 3 9 1 14-2 .6-4 1-6 1s-4-.4-6-1Z"/></svg></a>
+        <a href="https://www.instagram.com/avaloriumot/" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="https://www.youtube.com/@AvaloriumOtserver" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg></a>
+        <a href="https://chat.whatsapp.com/K5eYBL6mgwsEB2O9ZFkyDP" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 19.5 4 21l1.5-4.2A8 8 0 1 1 8.5 19.5Z"/><path d="M9 8c.5 4 3 6.5 7 7"/></svg></a>
+    </nav>
+</footer>
+<script src="assets/js/discord-changelog.js?v=20261016"></script>
+<script src="assets/js/wiki.js?v=updates-position-20261016"></script>
+</body>
+</html>

@@ -343,12 +343,12 @@
     ]);
 
     const huntsCustomMenuItems = [
-        {
-            url: 'hunts-custom.html',
-            title: 'Guia de Hunts Custom',
-            description: 'Acessos, criaturas, resistências, loot e bosses de todas as hunts custom.',
-            image: 'assets/media/hunts-custom/Firzen.gif',
-        },
+        { url: 'sanctum-of-fire-ice.html', title: 'Sanctum of Fire & Ice', description: 'Level 300 · Frezee, Firen e Firzen.', image: 'assets/media/hunts-custom/menu/freezee.png' },
+        { url: 'new-elfs-firzen.html', title: 'New Elfs Firzen', description: 'Level 800 · Hazard 10.', image: 'assets/media/hunts-custom/menu/firzen.png' },
+        { url: 'pyramid-of-azhrkhal-three-asuras.html', title: "Pyramid of Azhr'khal", description: 'Level 900 · Asuras verdadeiras.', image: 'assets/media/hunts-custom/menu/true-cursed-asura.png' },
+        { url: 'void-corruption-depths-outer-void.html', title: 'Void Corruption Depths — Outer Void', description: 'Level 1.000 · Hazard 12.', image: 'assets/media/hunts-custom/menu/void-demon-ravager.png' },
+        { url: 'void-corruption-depths-inner-netherbound.html', title: 'Void Corruption Depths — Netherbound', description: 'Level 1.000 · Hazard 12 · Zy’Thar.', image: 'assets/media/hunts-custom/menu/netherbound-demon.png' },
+        { url: 'the-fallen-usurpers.html', title: 'The Fallen Usurpers', description: 'Level 1.200 · Hazard 10 · Azkalon.', image: 'assets/media/hunts-custom/menu/fallen-usurper-knight.png' },
     ];
 
     const baseMenuSections = [
@@ -357,8 +357,9 @@
             icon: '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M2 12h6M16 12h6"/><path d="m5 5 4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg>',
             items: [
                 { url: 'divergence-system.html', title: 'Divergence', description: 'Divergence: level 400, Hazard 3, bosses elementais, custos e recompensas por faixa.', image: 'assets/media/menu/divergence-system.gif' },
-                { url: 'daily-quests.html', title: 'Daily Quests', description: 'Quest diária na Quest Room, spoiler do caminho e 25 possíveis recompensas por raridade.', image: 'assets/media/daily-quests/chest-of-abundance.gif' },
+                { url: 'daily-quests.html', title: 'Daily Quests', description: 'Quest na Quest Room com cooldown de 23 horas, dois itens por baú e recompensas por raridade.', image: 'assets/media/daily-quests/chest-of-abundance.gif' },
                 { url: 'golden-raid-event.html', title: 'Golden Raid Event', description: 'Mina Dourada: 40 bosses por dia, Golden Event Tokens, recompensas e Event Reset.', image: 'assets/media/trinket-badges/golden-raid-token.gif' },
+                { url: 'conclave.html', title: 'Conclave', description: 'Evento semanal: doe Crystal Coins, libere bônus e vote com o Top 10.', image: 'assets/media/conclave/conclave-emblem.svg' },
                 { url: 'tasks-system.html', title: 'Tasks', description: 'Bounty Tasks, baús por dificuldade, Bounty Talisman e Weekly Tasks para trocar pontos na Hunting Task Shop.', image: 'assets/media/items-wiki/portables/portable task book.gif' },
                 { url: 'outfit-mount-bonus.html', title: 'Outfit & Mount Bônus', description: 'Obtenha cosméticos e use !outfitbonus para distribuir pontos em bônus de Cosmetic Mastery.', image: 'assets/media/menu/outfits.gif' },
                 { url: 'stones-guia-completo.html', title: 'Rarity & Elemental Stones', description: 'Identificação progressiva, slots, ferramentas e bônus das elemental stones.', image: 'assets/media/menu/stones-guia-completo.gif' },
@@ -401,6 +402,16 @@
         `).join('');
     }
 
+    function getHuntsDesktopLinks() {
+        const currentPage = getCurrentPage();
+        return huntsCustomMenuItems.map((item) => `
+            <a class="desktop-nav-link ${item.url === currentPage ? 'active' : ''}" href="${item.url}">
+                <span class="hunt-menu-icon" aria-hidden="true"><img src="${item.image}" alt="" loading="lazy"></span>
+                <span>${item.title}</span>
+            </a>
+        `).join('');
+    }
+
     function injectDesktopNavigation() {
         const topbar = document.querySelector('.topbar');
         if (!topbar || topbar.querySelector('.desktop-nav')) return;
@@ -410,7 +421,7 @@
         const currentPage = getCurrentPage();
         const systemsActive = systems.some((item) => item.url === currentPage);
         const serverInfoActive = serverInfo.some((item) => item.url === currentPage);
-        const huntsActive = huntsCustomMenuItems.some((item) => item.url === currentPage);
+        const huntsActive = currentPage === 'hunts-custom.html' || huntsCustomMenuItems.some((item) => item.url === currentPage);
         const scriptsActive = scriptsZeroBotPages.has(currentPage);
 
         topbar.insertAdjacentHTML('beforeend', `
@@ -440,10 +451,17 @@
                         </div>
                     </div>
 
-                    <a class="desktop-nav-direct ${huntsActive ? 'active' : ''}" href="hunts-custom.html">
-                        <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6M16 16l3 3M19 13l2-2"/></svg>
-                        <span>Hunt Custom</span>
-                    </a>
+                    <div class="desktop-nav-group ${huntsActive ? 'active' : ''}">
+                        <button type="button" class="desktop-nav-trigger" aria-expanded="false">
+                            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6M16 16l3 3M19 13l2-2"/></svg>
+                            <span>Hunt Custom</span>
+                            <svg class="desktop-nav-chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <div class="desktop-nav-dropdown desktop-nav-compact desktop-nav-hunts">
+                            <div class="desktop-nav-heading"><strong>Hunt Custom</strong><span>6 hunts disponíveis</span></div>
+                            ${getHuntsDesktopLinks()}
+                        </div>
+                    </div>
 
                     <a class="desktop-nav-direct ${scriptsActive ? 'active' : ''}" href="fabio-rockeiro-scripts.html">
                         <img src="assets/media/scripts-zerobot/fabio-rockeiro-bot-icon.png" alt="">
@@ -608,23 +626,23 @@
 
     function getHuntsCustomMenu() {
         const currentPage = getCurrentPage();
+        const isOpen = currentPage === 'hunts-custom.html' || huntsCustomMenuItems.some((item) => item.url === currentPage);
+        const links = huntsCustomMenuItems.map((item) => `
+                    <a class="${item.url === currentPage ? 'active' : ''}" href="${item.url}">
+                        <span class="hunt-menu-icon" aria-hidden="true"><img src="${item.image}" alt="" loading="lazy"></span>
+                        <span><strong>${item.title}</strong></span>
+                    </a>
+                `).join('');
         return `
-            <section class="menu-section" data-hunts-custom-menu>
-                <a class="menu-section-button ${currentPage === 'hunts-custom.html' ? 'active' : ''}" href="hunts-custom.html" data-hunts-custom-link>
+            <section class="menu-section ${isOpen ? 'is-open' : ''}" data-hunts-custom-menu>
+                <button type="button" class="menu-section-button" data-section-toggle>
                     <span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><path d="m13 19 6-6"/><path d="m16 16 3 3"/><path d="m19 13 2-2"/></svg></span>
-                    <strong>Hunts Custom</strong>
-                </a>
+                    <strong>Hunt Custom</strong>
+                    <small>${huntsCustomMenuItems.length}</small>
+                </button>
+                <div class="menu-links">${links}</div>
             </section>
         `;
-    }
-
-    function refreshHuntsCustomActiveLinks() {
-        const currentPage = getCurrentPage();
-
-        document.querySelectorAll('[data-hunts-custom-link]').forEach((link) => {
-            const linkPage = new URL(link.href, window.location.href).pathname.split('/').pop().toLowerCase();
-            link.classList.toggle('active', currentPage === linkPage);
-        });
     }
 
     function injectHuntsCustomMenu() {
@@ -643,13 +661,6 @@
             }
         });
 
-        document.querySelectorAll('.sidebar-title small').forEach((counter) => {
-            if (counter.dataset.huntsCustomCounted) return;
-            counter.dataset.huntsCustomCounted = 'true';
-            counter.textContent = counter.textContent.replace(/\d+/, (value) => String(Number(value) + huntsCustomMenuItems.length));
-        });
-
-        refreshHuntsCustomActiveLinks();
     }
 
     injectHuntsCustomMenu();

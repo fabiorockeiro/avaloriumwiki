@@ -1,0 +1,25 @@
+.hc-guide { min-width: 0; }
+.hc-guide .hc-single-hero { display: grid; grid-template-columns: minmax(0, 1fr) 160px; align-items: center; gap: 24px; }
+.hc-single-hero > img { display: block; width: 160px; height: 160px; object-fit: contain; image-rendering: pixelated; }
+.hc-single-hero .lead { margin-bottom: 16px; }
+.hc-hero-facts { display: flex; flex-wrap: wrap; gap: 8px; }
+.hc-hero-facts span { padding: 5px 10px; border: 1px solid rgba(215,175,97,.4); background: rgba(215,175,97,.08); color: var(--guide-muted); font-size: 12px; }
+.hc-hero-facts strong { margin-left: 3px; }
+.hc-hunt-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; margin-top: 18px; }
+.hc-hunt-card { min-width: 0; display: grid; grid-template-columns: 92px minmax(0,1fr) 20px; gap: 18px; align-items: center; min-height: 142px; padding: 18px; border: 1px solid var(--guide-line); border-left: 2px solid #d5aa53; border-radius: 8px; background: linear-gradient(115deg,rgba(213,170,83,.08),transparent 65%),var(--guide-panel); text-decoration: none; color: var(--guide-text) !important; transition: border-color .18s ease, transform .18s ease, background .18s ease; }
+.hc-hunt-card:hover, .hc-hunt-card:focus-visible { border-color: #67d7ef; transform: translateY(-2px); background: linear-gradient(115deg,rgba(103,215,239,.09),transparent 65%),var(--guide-panel); }
+.hc-hunt-card > img { width: 92px; height: 92px; object-fit: contain; image-rendering: pixelated; }
+.hc-hunt-card-body { min-width: 0; display: grid; gap: 7px; font-size: 12px; line-height: 1.5; }
+.hc-hunt-card-body > strong { color: #f7e8be; font-size: 16px; line-height: 1.35; }
+.hc-hunt-meta { color: #67d7ef; font-size: 11px; font-weight: 700; }
+.hc-hunt-arrow { align-self: start; color: #67d7ef; font-size: 20px; }
+.hc-guide .hc-method { border-left: 3px solid #55cce9; }
+.hc-guide .hc-method h2 { margin-top: 0; }
+.hc-guide .hc-method .note { margin-bottom: 0; }
+.hc-adjacent { display: grid !important; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px !important; margin-top: 28px !important; }
+.hc-adjacent a { display: grid !important; align-content: center; gap: 4px; min-height: 70px; padding: 12px 16px !important; }
+.hc-adjacent a small { color: var(--guide-muted); }
+.hc-adjacent a strong { color: #f7e8be; }
+@media (max-width: 800px) { .hc-hunt-grid { grid-template-columns: minmax(0,1fr); } }
+@media (max-width: 700px) { .hc-guide .hc-single-hero { grid-template-columns: minmax(0,1fr); } .hc-single-hero > img { grid-row: 1; width: 120px; height: 120px; } .hc-adjacent { grid-template-columns: minmax(0,1fr); } }
+@media (max-width: 440px) { .hc-hunt-card { grid-template-columns: 72px minmax(0,1fr) 14px; gap: 11px; min-height: 114px; padding: 12px; } .hc-hunt-card > img { width: 72px; height: 72px; } .hc-hunt-card-body > strong { font-size: 14px; } }

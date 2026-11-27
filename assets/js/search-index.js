@@ -1,6 +1,14 @@
 window.AVALORIUM_SEARCH_INDEX =
 [
 {
+    "title": "Conclave",
+    "description": "Evento semanal de doações em Crystal Coins para liberar e votar em bônus de EXP, loot, skills, tasks e mais.",
+    "category": "Sistemas do Servidor",
+    "keywords": "conclave doacao doadores crystal coin gold bonus convocacao deliberacao proclamacao consagracao task board bestiary skill training exp event loot monster stamina regen protecao morte exaltation forge boss drop votar",
+    "url": "conclave.html",
+    "image": "assets/media/conclave/conclave-emblem.svg"
+},
+{
     "title": "Tiers",
     "description": "Bônus por tier de equipamentos e Spell Badges, fusão e convergence na forja do Avalorium.",
     "category": "Server Info",
@@ -10,9 +18,9 @@ window.AVALORIUM_SEARCH_INDEX =
 },
 {
     "title": "Daily Quests",
-    "description": "Quest diária na Quest Room, spoiler do caminho e 25 possíveis recompensas comuns, raras, épicas e místicas.",
+    "description": "Quest diária na Quest Room: cooldown de 23 horas, dois itens por baú e recompensas comuns, raras, épicas e místicas.",
     "category": "Sistemas do Servidor",
-    "keywords": "daily quests daily quest quest room teleport diaria recompensa comum raro epico mistico golden raid token",
+    "keywords": "daily quests daily quest quest room teleport diaria recompensa comum raro epico mistico golden raid token cooldown 23 horas bau 2 itens",
     "url": "daily-quests.html",
     "image": "assets/media/daily-quests/chest-of-abundance.gif"
 },
@@ -186,11 +194,59 @@ window.AVALORIUM_SEARCH_INDEX =
     },
     {
         "title": "Hunts Custom",
-        "description": "Guia completo das hunts custom: acesso, dano, resistências, loot e bosses de Firzen a Azkalon.",
+        "description": "Índice das seis hunts custom, com páginas individuais de acesso, criaturas, resistências e loot.",
         "category": "Hunts Custom",
         "keywords": "hunts custom sanctum fire ice firzen frezee firen pyramid asuras true cursed blessed enrage outer void netherbound zythar fallen usurpers azkalon criaturas dano resistencias loot boss vip hazard",
         "url": "hunts-custom.html",
-        "image": "assets/media/hunts-custom/Firzen.gif"
+        "image": "assets/media/hunts-custom/menu/firzen.png"
+    },
+    {
+        "title": "Sanctum of Fire & Ice",
+        "description": "Hunt custom de level 300 com Frezee, Firen e Firzen: dano, resistências e loot.",
+        "category": "Hunts Custom",
+        "keywords": "sanctum fire ice elf frezee firen firzen level 300 vip hunt custom loot",
+        "url": "sanctum-of-fire-ice.html",
+        "image": "assets/media/hunts-custom/menu/freezee.png"
+    },
+    {
+        "title": "New Elfs Firzen",
+        "description": "Hunt de level 800 e hazard 10 com Frezee, Firen e Firzen.",
+        "category": "Hunts Custom",
+        "keywords": "new elfs firzen level 800 hazard 10 frezee firen vip hunt custom loot",
+        "url": "new-elfs-firzen.html",
+        "image": "assets/media/hunts-custom/menu/firzen.png"
+    },
+    {
+        "title": "Pyramid of Azhr'khal",
+        "description": "Hunt de level 900 e hazard 10 com as três True Asuras.",
+        "category": "Hunts Custom",
+        "keywords": "pyramid azhr khal asuras true cursed blessed enrage level 900 hazard 10 vip hunt custom loot",
+        "url": "pyramid-of-azhrkhal-three-asuras.html",
+        "image": "assets/media/hunts-custom/menu/true-cursed-asura.png"
+    },
+    {
+        "title": "Void Corruption Depths — Outer Void",
+        "description": "Hunt de level 1.000 e hazard 12 com Ravager, Brute e Riftcaster.",
+        "category": "Hunts Custom",
+        "keywords": "outer void corruption depths ravager brute riftcaster level 1000 hazard 12 vip hunt custom loot",
+        "url": "void-corruption-depths-outer-void.html",
+        "image": "assets/media/hunts-custom/menu/void-demon-ravager.png"
+    },
+    {
+        "title": "Void Corruption Depths — Netherbound",
+        "description": "Hunt de level 1.000 e hazard 12 com criaturas Netherbound e o boss Zy'Thar.",
+        "category": "Hunts Custom",
+        "keywords": "netherbound void corruption depths demon dragon brain zy thar level 1000 hazard 12 vip hunt custom loot",
+        "url": "void-corruption-depths-inner-netherbound.html",
+        "image": "assets/media/hunts-custom/menu/netherbound-demon.png"
+    },
+    {
+        "title": "The Fallen Usurpers",
+        "description": "Hunt de level 1.200 e hazard 10 com os Fallen Usurpers e o boss Azkalon.",
+        "category": "Hunts Custom",
+        "keywords": "fallen usurpers knight archer warlock commander lion beast azkalon level 1200 hazard 10 vip hunt custom loot",
+        "url": "the-fallen-usurpers.html",
+        "image": "assets/media/hunts-custom/menu/fallen-usurper-knight.png"
     },
     {
         "title":  "FABIO ROCKEIRO - SCRIPTS e DOWNLOADS",
